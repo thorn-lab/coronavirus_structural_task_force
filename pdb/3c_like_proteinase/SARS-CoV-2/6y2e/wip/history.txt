@@ -1,0 +1,84 @@
+Start from PDB entry.
+
+*Notes*
+0.9184 -> 0.2 e- anomalous signal for sulphur, but data sets have high redundancy - use anom. signal to confirm ion, cys and met residue sites?
+
+SCALA has been used. Possibly better results with XSCALE, AIMLESS?
+
+*PDB-REDO*
+PDB files do not load in several web services as chain name "AAA". Would recommend to adhere to 2008 wwPDB standard and change this to "A".
+Changed chain id from AAA to A.
+-> M0rk_final.pdb
+
+*AUSPEX*
+Beam stop mask not correct (would like to look at intensities)
+
+*WHAT IF (on original file)*
+According to the bond length, the cell is likely 0.5%-0.6% too big due to an error in wavelength or detector distance. Correcting this may avoid some problems with geometry.
+
+Omega angles and other geometry values are sub-optimal. The large difference between R and R-free indicates that the weighting factor in REFMAC should have been lower to guarantee a stronger adherence to ideal geometry. This is also indicated by the following formula:
+
+*Weighting calculation*
+R(free) / R(work) = sqrt(1+(0.025*1.5*resolution^3*(1-solventcontent))/1-(0.025*1.5*resolution^3*(1-solventcontent))
+
+R(free) / R(work) = 0.222/0.171 = 1.29
+(solventcontent = 0.38; resolution = 1.75)
+sqrt(1+(0.025*1.5*resolution^3*(1-solventcontent))/1-(0.025*1.5*resolution^3*(1-solventcontent)) =  1.133 -> R(free) / R(work) needs to be smaller!
+
+*Changes after PDB-REDO*
+starting from M0rk_final.pdb
+Changed CRYST card to:
+CRYST1  114.509   53.473   44.565  90.00 101.251  90.00 C 1 2 1 
+
+AAA  26 THR rotamer change to m
+AAA  41 HIS disordered with flip
+AAA  45-48 needs to be real-space-refined to avoid internal hydrophobic clashes 
+AAA  47 GLU side chain should not be at full occupancy; rotamer uncommon
+AAA  69 GLN flip
+AAA  74 GLN different side chain conformation, perhaps flip
+AAA  87 LEU sidechain needs to rotate to rotamer mt 
+AAA  96 PRO unusual puckering -> changed to most common rotamer
+AAA 110 GLN different rotamer
+AAA 127 GLN side chain flip!!
+AAA 128 CYS something is bound to S (perhaps raddam?) - ask Elspeth? Split residue.
+
+AAA 154 TYR side chain does not fit; different residue or disordered; Ramachandran outlier
+AAA 165 MET Conformation B terminal CH3 needs to point somewhere else, and rotamer is an outlier
+AAA 203 ASN side chain flip!!
+AAA 217 ARG needs to go into green density: change to rotamer mtm-85
+AAA 222 ARG side chain not at full occupancy, poor packing
+AAA 223 PHE half the side chain has no density -> other residue?
+AAA 228 ASN other residue?
+AAA 246 HIS flip and put water in green blob next to N
+AAA 254 SER might be THR or disordered SER
+AAA 288 GLU is disordered and AAA 401 HOH is wrong; NH has no hydrogen bonding partner
+AAA 303-304 can be adjusted with real space refine to better fit the density.
+AAA 306 ASN flip; is this side chain the correct residue? - maybe main chain and side chain positions need to be changed!
+If 306 happens to be the last residue, OXT is missing (but I don't think it's the last.)
+AAA 404 HOH is an ion
+AAA 410 HOH perhaps an ion?
+AAA 437 HOH perhaps an ion
+AAA 450 HOH lower occupancy or delete
+AAA 487 HOH perhaps an ion
+AAA 488 HOH perhaps an ion
+AAA 493 HOH perhaps an ion
+AAA 521 HOH too close to HOH 592: alternative positions, or other small molecule
+AAA 533 HOH too close to HOH 682: alternative positions, or other small molecule
+AAA 556 HOH is an ion
+AAA 582 HOH perhaps an ion
+AAA 652 HOH delete
+AAA 667 HOH delete
+
+Refinement remarks:
+try sphere refine on resi 101 to remove clash with 157?
+227-229 geometry not ideal
+
+
+
+6y2f:
+AUSPEX: Beam stop mask not correct
+(would like to look at intensities)
+
+6y2g:
+AUSPEX: Beam stop mask not correct
+(would like to look at intensities)
