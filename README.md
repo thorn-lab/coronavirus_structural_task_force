@@ -44,22 +44,33 @@ pdb  protein name      virus name pdbid
 
 In each pdbid directory, there may one or several of the following subfolders:
 validation/
-This folder contains [pdb-redo](https://pdb-redo.eu/) (including whatcheck) and phenix.xtriage results.
+This folder contains [pdb-redo](https://pdb-redo.eu/) (including [whatcheck](https://swift.cmbi.umcn.nl/gv/whatcheck/)) and [phenix.xtriage](https://www.phenix-online.org/documentation/reference/xtriage.html#how-xtriage-works) results.
 
 auspex/
 These are results of the analysis of deposited data with [AUSPEX](www.auspex.de)
 
 haruspex/
-These are results for the splitting of Cryo-EM maps accorindg to secondary structure with the neural network [Haruspex]()
+These are results for the splitting of Cryo-EM maps accorindg to secondary structure with the neural network [Haruspex](https://github.com/thorn-lab/haruspex)
 
 isolde/
 These are manual re-refinements from isolde, done by Tristan Croll.
 
 ## References
-PDB-REDO: Joosten RP, Long F, Murshudov GN, Perrakis A. The PDB_REDO server for macromolecular structure model optimization. IUCrJ. 2014 May 30;1(Pt 4):213-20. <br>
+PDB-REDO: Joosten, R.P., Long, F., Murshudov, G.N., Perrakis, A. (2014) The PDB_REDO server for macromolecular structure model optimization.  IUCrJ 1, 213-220. <br>
 ISOLDE: <br>
-PHENIX:XTRIAGE: <br>
-WHATCHECK: <br>
-AUSPEX: <>
+PHENIX: Zwart, P.H., Grosse-Kunstleve, R.W., Adams, P.D. (2005) XTRIAGE: Xtriage   and   Fest:   automatic   assessment   of   X-ray   data   and substructure structure factor estimation. CCP4 newsletter 43 <br>
+WHATCHECK: Hooft, R.W.W., Vriend, G., Sander, C., Abola, E.E. WHATCHECK: Errors in protein structures. (1996) Nature 381, 272-272.<br>
+AUSPEX: Thorn, A., Parkhurst, J.M., Emsley, P., Nicholls, R., Evans, G., Vollmar, M., Murshudov, G.N. (2017) AUSPEX: a graphical tool for X-ray diffraction data analysis, Acta Cryst D73, 729-737. <br> 
+HARUSPEX: Mostosi, P., Schindelin, H., Kollmannsberger, P., Thorn, A. Haruspex: A Neural Network for the Automatic Identification of Oligonucleotides and Protein Secondary Structure in Cryo‐EM Maps. (2020) Angewandte Chem. (Int. Ed.). https://doi.org/10.1002/ange.202000421
 
 
+## References
+
+If you would like to contact us, please write to:
+
+Dr. Andrea Thorn
+andrea.thorn@uni-wuerzburg.de
+Rudolf Virchow Center, University of Wuerzburg
+Josef-Schneider-Str. 2
+97080 Wuerzburg
+Germany
