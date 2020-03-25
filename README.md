@@ -37,7 +37,7 @@ This folder contains [pdb-redo](https://pdb-redo.eu/) (including [whatcheck](htt
 
 
 isolde/<br>
-These are manual re-refinements from isolde, done by Tristan Croll.
+These are manual re-refinements from [ISOLDE](https://isolde.cimr.cam.ac.uk/what-isolde/), done by Tristan Croll.
 
 auspex/<br>
 These are results of the analysis of deposited data with [AUSPEX](www.auspex.de)
