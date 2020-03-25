@@ -1,0 +1,336 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.51
+_lib_update       11/07/18
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+Z3E      Z3E '.                                   ' .                  29  14 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-ECQ  CYS      .        .        ECQ      .        .
+ bond_CYS-SG_=_ECQ-CMK
+VAL-Z3E  VAL      .        .        Z3E      .        .
+ bond_VAL-C_=_Z3E-N
+Z3E-LEU  Z3E      .        .        LEU      .        .
+ bond_Z3E-C_=_LEU-N
+LEU-ECQ  LEU      .        .        ECQ      .        .
+ bond_LEU-C_=_ECQ-N
+LEU-KCQ  LEU      .        .        KCQ      .        .
+ bond_LEU-C_=_KCQ-N
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_Z3E
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ Z3E           O      O    O         0.000     22.758    2.126   -3.685
+ Z3E           C      C    C1        0.000     23.953    2.208   -3.415
+ Z3E           H      H    H         0.000     24.591    1.350   -3.544
+ Z3E           CA     C    CH1       0.000     24.549    3.533   -2.891
+ Z3E           HA     H    H         0.000     25.586    3.337   -2.583
+ Z3E           N      N    NT2       0.000     24.579    4.549   -3.945
+ Z3E           HN2    H    H         0.000     24.191    4.151   -4.815
+ Z3E           HN1    H    H         0.000     24.981    5.422   -3.568
+ Z3E           CB     C    CH1       0.000     23.762    4.039   -1.634
+ Z3E           HB     H    H         0.000     22.698    4.134   -1.892
+ Z3E           CG2    C    CH3       0.000     23.910    3.036   -0.473
+ Z3E           HG23   H    H         0.000     23.524    2.093   -0.765
+ Z3E           HG22   H    H         0.000     24.934    2.932   -0.220
+ Z3E           HG21   H    H         0.000     23.374    3.387    0.372
+ Z3E           OG1    O    O2        0.000     24.262    5.321   -1.232
+ Z3E           C7     C    CH2       0.000     23.226    6.319   -1.234
+ Z3E           H71    H    H         0.000     22.544    6.119   -0.405
+ Z3E           H72    H    H         0.000     22.679    6.256   -2.177
+ Z3E           C1     C    CR6       0.000     23.821    7.718   -1.080
+ Z3E           C6     C    CR16      0.000     23.600    8.464    0.092
+ Z3E           H6     H    H         0.000     23.003    8.040    0.890
+ Z3E           C5     C    CR16      0.000     24.144    9.752    0.242
+ Z3E           H5     H    H         0.000     23.960   10.315    1.149
+ Z3E           C4     C    CR16      0.000     24.925   10.308   -0.782
+ Z3E           H4     H    H         0.000     25.347   11.300   -0.675
+ Z3E           C3     C    CR16      0.000     25.151    9.562   -1.943
+ Z3E           H3     H    H         0.000     25.757    9.980   -2.737
+ Z3E           C2     C    CR16      0.000     24.603    8.278   -2.093
+ Z3E           H2     H    H         0.000     24.788    7.717   -3.001
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ Z3E      O      n/a    C      START
+ Z3E      C      O      CA     .
+ Z3E      H      C      .      .
+ Z3E      CA     C      CB     .
+ Z3E      HA     CA     .      .
+ Z3E      N      CA     HN1    .
+ Z3E      HN2    N      .      .
+ Z3E      HN1    N      .      .
+ Z3E      CB     CA     OG1    .
+ Z3E      HB     CB     .      .
+ Z3E      CG2    CB     HG21   .
+ Z3E      HG23   CG2    .      .
+ Z3E      HG22   CG2    .      .
+ Z3E      HG21   CG2    .      .
+ Z3E      OG1    CB     C7     .
+ Z3E      C7     OG1    C1     .
+ Z3E      H71    C7     .      .
+ Z3E      H72    C7     .      .
+ Z3E      C1     C7     C6     .
+ Z3E      C6     C1     C5     .
+ Z3E      H6     C6     .      .
+ Z3E      C5     C6     C4     .
+ Z3E      H5     C5     .      .
+ Z3E      C4     C5     C3     .
+ Z3E      H4     C4     .      .
+ Z3E      C3     C4     C2     .
+ Z3E      H3     C3     .      .
+ Z3E      C2     C3     H2     .
+ Z3E      H2     C2     .      END
+ Z3E      C1     C2     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ Z3E      C      O         double      1.220    0.020
+ Z3E      CA     C         single      1.510    0.020
+ Z3E      N      CA        single      1.475    0.020
+ Z3E      C1     C2        aromatic    1.390    0.020
+ Z3E      C6     C1        aromatic    1.390    0.020
+ Z3E      C1     C7        single      1.511    0.020
+ Z3E      C2     C3        aromatic    1.390    0.020
+ Z3E      C3     C4        aromatic    1.390    0.020
+ Z3E      C4     C5        aromatic    1.390    0.020
+ Z3E      C5     C6        aromatic    1.390    0.020
+ Z3E      C7     OG1       single      1.426    0.020
+ Z3E      CB     CA        single      1.524    0.020
+ Z3E      OG1    CB        single      1.426    0.020
+ Z3E      CG2    CB        single      1.524    0.020
+ Z3E      H      C         single      1.077    0.020
+ Z3E      HN1    N         single      1.033    0.020
+ Z3E      HN2    N         single      1.033    0.020
+ Z3E      H2     C2        single      1.083    0.020
+ Z3E      H3     C3        single      1.083    0.020
+ Z3E      H4     C4        single      1.083    0.020
+ Z3E      H5     C5        single      1.083    0.020
+ Z3E      H6     C6        single      1.083    0.020
+ Z3E      H71    C7        single      1.092    0.020
+ Z3E      H72    C7        single      1.092    0.020
+ Z3E      HA     CA        single      1.099    0.020
+ Z3E      HB     CB        single      1.099    0.020
+ Z3E      HG21   CG2       single      1.059    0.020
+ Z3E      HG22   CG2       single      1.059    0.020
+ Z3E      HG23   CG2       single      1.059    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ Z3E      O      C      H       123.000    3.000
+ Z3E      O      C      CA      120.500    3.000
+ Z3E      H      C      CA      120.000    3.000
+ Z3E      C      CA     HA      108.810    3.000
+ Z3E      C      CA     N       109.500    3.000
+ Z3E      C      CA     CB      109.470    3.000
+ Z3E      HA     CA     N       109.500    3.000
+ Z3E      HA     CA     CB      108.340    3.000
+ Z3E      N      CA     CB      109.500    3.000
+ Z3E      CA     N      HN2     109.500    3.000
+ Z3E      CA     N      HN1     109.500    3.000
+ Z3E      HN2    N      HN1     109.500    3.000
+ Z3E      CA     CB     HB      108.340    3.000
+ Z3E      CA     CB     CG2     111.000    3.000
+ Z3E      CA     CB     OG1     109.470    3.000
+ Z3E      HB     CB     CG2     108.340    3.000
+ Z3E      HB     CB     OG1     109.470    3.000
+ Z3E      CG2    CB     OG1     109.470    3.000
+ Z3E      CB     CG2    HG23    109.470    3.000
+ Z3E      CB     CG2    HG22    109.470    3.000
+ Z3E      CB     CG2    HG21    109.470    3.000
+ Z3E      HG23   CG2    HG22    109.470    3.000
+ Z3E      HG23   CG2    HG21    109.470    3.000
+ Z3E      HG22   CG2    HG21    109.470    3.000
+ Z3E      CB     OG1    C7      111.800    3.000
+ Z3E      OG1    C7     H71     109.470    3.000
+ Z3E      OG1    C7     H72     109.470    3.000
+ Z3E      OG1    C7     C1      109.470    3.000
+ Z3E      H71    C7     H72     107.900    3.000
+ Z3E      H71    C7     C1      109.470    3.000
+ Z3E      H72    C7     C1      109.470    3.000
+ Z3E      C7     C1     C6      120.000    3.000
+ Z3E      C7     C1     C2      120.000    3.000
+ Z3E      C6     C1     C2      120.000    3.000
+ Z3E      C1     C6     H6      120.000    3.000
+ Z3E      C1     C6     C5      120.000    3.000
+ Z3E      H6     C6     C5      120.000    3.000
+ Z3E      C6     C5     H5      120.000    3.000
+ Z3E      C6     C5     C4      120.000    3.000
+ Z3E      H5     C5     C4      120.000    3.000
+ Z3E      C5     C4     H4      120.000    3.000
+ Z3E      C5     C4     C3      120.000    3.000
+ Z3E      H4     C4     C3      120.000    3.000
+ Z3E      C4     C3     H3      120.000    3.000
+ Z3E      C4     C3     C2      120.000    3.000
+ Z3E      H3     C3     C2      120.000    3.000
+ Z3E      C3     C2     H2      120.000    3.000
+ Z3E      C3     C2     C1      120.000    3.000
+ Z3E      H2     C2     C1      120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ Z3E      var_1            O      C      CA     CB                54.195           20.000   3
+ Z3E      var_2            C      CA     N      HN1              180.000           20.000   3
+ Z3E      var_3            C      CA     CB     OG1              180.000           20.000   3
+ Z3E      var_4            CA     CB     CG2    HG21             180.000           20.000   3
+ Z3E      var_5            CA     CB     OG1    C7               121.716           20.000   3
+ Z3E      var_6            CB     OG1    C7     C1              -168.626           20.000   3
+ Z3E      var_7            OG1    C7     C1     C6                 0.000           20.000   2
+ Z3E      CONST_1          C7     C1     C2     C3                 0.000            0.000   0
+ Z3E      CONST_2          C7     C1     C6     C5                 0.000            0.000   0
+ Z3E      CONST_3          C1     C6     C5     C4                 0.000            0.000   0
+ Z3E      CONST_4          C6     C5     C4     C3                 0.000            0.000   0
+ Z3E      CONST_5          C5     C4     C3     C2                 0.000            0.000   0
+ Z3E      CONST_6          C4     C3     C2     C1                 0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ Z3E      chir_01          CA     C      N      CB        negativ
+ Z3E      chir_02          CB     CA     OG1    CG2       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ Z3E      plan-1            C         0.020
+ Z3E      plan-1            O         0.020
+ Z3E      plan-1            CA        0.020
+ Z3E      plan-1            H         0.020
+ Z3E      plan-2            C1        0.020
+ Z3E      plan-2            C2        0.020
+ Z3E      plan-2            C6        0.020
+ Z3E      plan-2            C7        0.020
+ Z3E      plan-2            C3        0.020
+ Z3E      plan-2            C4        0.020
+ Z3E      plan-2            C5        0.020
+ Z3E      plan-2            H2        0.020
+ Z3E      plan-2            H3        0.020
+ Z3E      plan-2            H4        0.020
+ Z3E      plan-2            H5        0.020
+ Z3E      plan-2            H6        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-ECQ
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-ECQ  1 SG      2 CMK       .           1.930    0.020
+#
+data_link_VAL-Z3E
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ VAL-Z3E  1 C       2 N         .           1.340    0.020
+#
+data_link_Z3E-LEU
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ Z3E-LEU  1 C       2 N         .           1.340    0.020
+#
+data_link_LEU-ECQ
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ LEU-ECQ  1 C       2 N         .           1.390    0.020
+#
+data_link_LEU-KCQ
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ LEU-KCQ  1 C       2 N         .           1.360    0.020
+# ------------------------------------------------------
