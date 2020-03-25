@@ -1,0 +1,30 @@
+- most glycans poorly modelled (flipped 180 degrees, poorly/un-restrained N-glycosidic bond angles, etc.) 
+- Receptor binding domain very weakly resolved - structure degraded fairly severely compared to 6m0j
+- Isolated single leucine in the B0AT (residue 707 of chains A and C) causes problems for ISOLDE: currently no built-in parameterisations for free amino acids, and adding a user ligand called LEU causes handling of normal leucine residues to fail. To work with this model in ISOLDE, rename it to LEN and load the included LEN.xml using ISOLDE's "Load custom residue definition(s)" button. Don't forget to rename it back to LEU when done. I'll work on fixing this bug for later releases.
+- Overall the model as deposited was systematically offset ~1.5A from the map.
+- rebuilt the receptor binding domain and ACE2 chains using my rebuild of 6m0j as a reference. For the RBD, I used both distance and torsion-based restraints due to the fact that much of the density for this domain is uninterpretable at the atomic scale. For ACE2 (much better resolved, and showing evidence of an inter-domain conformational change compared to 6m0j) I used only torsion restraints initially, before manually working through and releasing these where the map clearly disagreed with the restraints.
+- Rebuilt B0AT chain A directly according to the density map (map is mostly good quality in this region, and the model mostly required only fairly minor changes).
+- Used the rebuilt chain A as reference model (distance and torsion) for ISOLDE to automatically pull chain C into shape.
+
+- as well as the final model, I have uploaded a ChimeraX session which you should be able to load in ChimeraX 0.92 with ISOLDE installed. This contains the working coordinates with all current restraints applied, and a copy of the revised 6m0j used as reference. To add the map, do the following on the ChimeraX command line:
+
+open 30039 from emdb
+clipper assoc #3 to #1
+
+If you also load LEN.xml as specified at once, this should be ready to work with further in ISOLDE if you so desire.
+
+Original MolProbity score: 2.21
+Map-model CC (overall, after rigid-body fit):
+***********************
+  CC_mask  : 0.6244
+  CC_volume: 0.6246
+  CC_peaks : 0.4019
+
+
+Revised MolProbity score: 0.74
+Map-model CC (overall):
+***********************
+  CC_mask  : 0.6349
+  CC_volume: 0.6346
+  CC_peaks : 0.4065
+
