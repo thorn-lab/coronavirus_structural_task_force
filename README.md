@@ -6,19 +6,19 @@ A global public resource for the structures from beta-coronavirus with a focus o
 
 ## Contributors
 
-This is a collaborative effort. These are the current contributors (in order of joining):
-University of Wuerzburg, Germany -
-[Andrea Thorn - group leader](https://www.uni-wuerzburg.de/en/rvz/research/associated-research-groups/thorn-group/)
-Yunyun Gao - postdoc in the AUSPEX (www.auspex.de)
-Kristopher Nolte - biochemistry B.Sc. student
-Ferdinand Kirsten - biochemistry B.Sc. student
-Sabrina Staeb - biochemistry M.Sc. student
-
-European Synchrotron Facility, Grenoble, France -
-Gianluca Santoni - postdoc in the Experiments Section
-
-CIMR, University of Cambridge, UK -
-[Tristan Croll - Research associate](https://isolde.cimr.cam.ac.uk/what-isolde/)
+This is a collaborative effort. These are the current contributors (in order of joining):<br>
+University of Wuerzburg, Germany -<br>
+[Andrea Thorn - group leader](https://www.uni-wuerzburg.de/en/rvz/research/associated-research-groups/thorn-group/)<br>
+Yunyun Gao - postdoc in the AUSPEX (www.auspex.de)<br>
+Kristopher Nolte - biochemistry B.Sc. student<br>
+Ferdinand Kirsten - biochemistry B.Sc. student<br>
+Sabrina Staeb - biochemistry M.Sc. student<br>
+<br>
+European Synchrotron Facility, Grenoble, France -<br>
+Gianluca Santoni - Serial crystallography data scientist<br>
+<br>
+CIMR, University of Cambridge, UK -<br>
+[Tristan Croll - Research associate](https://isolde.cimr.cam.ac.uk/what-isolde/)<br>
 
 
 ## What is this?
@@ -44,8 +44,22 @@ pdb  protein name      virus name pdbid
 
 In each pdbid directory, there may one or several of the following subfolders:
 validation/
-This folder contains 
+This folder contains [pdb-redo](https://pdb-redo.eu/) (including whatcheck) and phenix.xtriage results.
+
+auspex/
+These are results of the analysis of deposited data with [AUSPEX](www.auspex.de)
+
+haruspex/
+These are results for the splitting of Cryo-EM maps accorindg to secondary structure with the neural network [Haruspex]()
 
 isolde/
 These are manual re-refinements from isolde, done by Tristan Croll.
+
+## References
+PDB-REDO: Joosten RP, Long F, Murshudov GN, Perrakis A. The PDB_REDO server for macromolecular structure model optimization. IUCrJ. 2014 May 30;1(Pt 4):213-20. <br>
+ISOLDE: <br>
+PHENIX:XTRIAGE: <br>
+WHATCHECK: <br>
+AUSPEX: <>
+
 
