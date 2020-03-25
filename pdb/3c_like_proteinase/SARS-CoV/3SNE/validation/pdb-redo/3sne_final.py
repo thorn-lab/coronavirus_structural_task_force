@@ -1,0 +1,27 @@
+# Guided tour for COOT written by PDB_REDO
+# Please cite: Joosten et al. 'PDB_REDO: constructive validation, more than just looking for errors' Acta Cryst., D68, 484-496 (2012)
+interesting_things_gui ("PDB_REDO results",[
+["H-bond flip HIS A  41 " ,  24.791 ,  34.987 ,  -7.027],
+["H-bond flip ASN A  53 " ,  35.341 ,  33.492 , -16.455],
+["H-bond flip GLN A  69 " ,  19.859 ,  20.914 ,   4.014],
+["H-bond flip HIS A  80 " ,  26.709 ,  20.546 , -12.514],
+["H-bond flip GLN A 127 " ,   0.328 ,  40.847 ,  -7.086],
+["H-bond flip HIS A 134 " ,  14.114 ,  46.711 , -17.409],
+["H-bond flip HIS A 164 " ,  19.839 ,  36.598 , -10.065],
+["H-bond flip ASN A 214 " , -14.599 ,  49.548 ,  -5.752],
+["H-bond flip GLN A 273 " ,  -2.730 ,  70.075 , -16.775],
+["Changed rotamer ARG A  60 " ,  36.483 ,  24.608 , -10.063],
+["Changed rotamer ASN A  72 " ,  13.749 ,  16.636 ,   7.093],
+["Changed rotamer GLN A  74 " ,  19.807 ,  14.923 ,   1.555],
+["Changed rotamer PRO A 168 " ,  23.489 ,  51.557 ,  -4.810],
+["Changed rotamer LEU A 177 " ,  12.097 ,  30.359 , -14.836],
+["Changed rotamer PRO A 184 " ,  21.088 ,  47.349 , -18.782],
+["Changed rotamer ARG A 188 " ,  29.443 ,  41.456 , -11.363],
+["Changed rotamer GLN A 189 " ,  29.856 ,  42.787 ,  -5.808],
+["Changed rotamer LEU A 232 " ,   2.085 ,  67.690 , -24.941],
+["Changed rotamer LYS A 236 " ,   5.416 ,  68.087 , -18.457],
+["Changed rotamer LEU A 262 " ,  -9.753 ,  60.255 , -25.166],
+["Changed rotamer LYS A 269 " ,  -4.918 ,  65.966 , -18.477],
+["Changed rotamer LEU A 272 " ,  -0.891 ,  65.453 , -13.813],
+["Removed HOH A1018 " ,   5.813 ,  69.350 , -14.777],
+])

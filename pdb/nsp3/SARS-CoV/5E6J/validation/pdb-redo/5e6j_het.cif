@@ -1,0 +1,353 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.51
+_lib_update       11/07/18
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+5MW      5MW '.                                   ' .                  30  14 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-AYE  CYS      .        .        AYE      .        .
+ bond_CYS-SG_=_AYE-C2
+HIS-NI   HIS      .        .        NI       .        .
+ bond_HIS-NE2_=_NI-NI
+GLY-5MW  GLY      .        .        5MW      .        .
+ bond_GLY-C_=_5MW-N
+5MW-GLN  5MW      .        .        GLN      .        .
+ bond_5MW-C_=_GLN-N
+5MW-GLY  5MW      .        .        GLY      .        .
+ bond_5MW-N5_=_GLY-C
+GLY-AYE  GLY      .        .        AYE      .        .
+ bond_GLY-C_=_AYE-N1
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_5MW
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ 5MW           O      O    O         0.000    132.061   -0.065  290.995
+ 5MW           C      C    C1        0.000    132.139    0.340  289.848
+ 5MW           H      H    H         0.000    131.301    0.223  289.182
+ 5MW           CA     C    CH1       0.000    133.402    1.005  289.354
+ 5MW           HA     H    H         0.000    133.237    1.385  288.336
+ 5MW           N      N    NT2       0.000    133.732    2.097  290.217
+ 5MW           HN2    H    H         0.000    133.025    2.159  290.963
+ 5MW           HN1    H    H         0.000    134.593    2.545  289.875
+ 5MW           CB     C    CH2       0.000    134.554    0.043  289.343
+ 5MW           HB1    H    H         0.000    134.513   -0.568  290.248
+ 5MW           HB2    H    H         0.000    135.487    0.610  289.331
+ 5MW           CG     C    CH2       0.000    134.489   -0.856  288.119
+ 5MW           HG1    H    H         0.000    135.511   -1.074  287.802
+ 5MW           HG2    H    H         0.000    133.971   -0.314  287.326
+ 5MW           CD     C    CH2       0.000    133.756   -2.161  288.408
+ 5MW           HD1    H    H         0.000    132.826   -2.198  287.837
+ 5MW           HD2    H    H         0.000    133.530   -2.231  289.474
+ 5MW           N2     N    NR5       0.000    134.635   -3.303  288.007
+ 5MW           N3     N    NR15      0.000    135.962   -3.468  288.364
+ 5MW           HN3    H    H         0.000    136.517   -2.824  288.963
+ 5MW           N1     N    NRD5      0.000    136.428   -4.653  287.780
+ 5MW           C2     C    CR15      0.000    134.269   -4.397  287.190
+ 5MW           H2     H    H         0.000    133.296   -4.563  286.745
+ 5MW           C1     C    CR5       0.000    135.384   -5.225  287.060
+ 5MW           C8     C    CH2       0.000    135.473   -6.590  286.232
+ 5MW           H81    H    H         0.000    136.361   -6.570  285.596
+ 5MW           H82    H    H         0.000    134.582   -6.693  285.609
+ 5MW           N5     N    NT2       0.000    135.557   -7.708  287.144
+ 5MW           HN52   H    H         0.000    135.539   -7.357  288.113
+ 5MW           HN51   H    H         0.000    135.614   -8.583  286.603
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ 5MW      O      n/a    C      START
+ 5MW      C      O      CA     .
+ 5MW      H      C      .      .
+ 5MW      CA     C      CB     .
+ 5MW      HA     CA     .      .
+ 5MW      N      CA     HN1    .
+ 5MW      HN2    N      .      .
+ 5MW      HN1    N      .      .
+ 5MW      CB     CA     CG     .
+ 5MW      HB1    CB     .      .
+ 5MW      HB2    CB     .      .
+ 5MW      CG     CB     CD     .
+ 5MW      HG1    CG     .      .
+ 5MW      HG2    CG     .      .
+ 5MW      CD     CG     N2     .
+ 5MW      HD1    CD     .      .
+ 5MW      HD2    CD     .      .
+ 5MW      N2     CD     C2     .
+ 5MW      N3     N2     N1     .
+ 5MW      HN3    N3     .      .
+ 5MW      N1     N3     .      .
+ 5MW      C2     N2     C1     .
+ 5MW      H2     C2     .      .
+ 5MW      C1     C2     C8     .
+ 5MW      C8     C1     N5     .
+ 5MW      H81    C8     .      .
+ 5MW      H82    C8     .      .
+ 5MW      N5     C8     HN51   .
+ 5MW      HN52   N5     .      .
+ 5MW      HN51   N5     .      END
+ 5MW      N1     C1     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ 5MW      N      CA        single      1.475    0.020
+ 5MW      CA     C         single      1.510    0.020
+ 5MW      CB     CA        single      1.524    0.020
+ 5MW      C      O         double      1.220    0.020
+ 5MW      CG     CB        single      1.524    0.020
+ 5MW      CD     CG        single      1.524    0.020
+ 5MW      N2     CD        single      1.462    0.020
+ 5MW      N1     C1        aromatic    1.350    0.020
+ 5MW      N1     N3        single      1.402    0.020
+ 5MW      C1     C2        aromatic    1.387    0.020
+ 5MW      C8     C1        single      1.510    0.020
+ 5MW      C2     N2        single      1.337    0.020
+ 5MW      N3     N2        single      1.400    0.020
+ 5MW      N5     C8        single      1.472    0.020
+ 5MW      HN1    N         single      1.033    0.020
+ 5MW      HN2    N         single      1.033    0.020
+ 5MW      HA     CA        single      1.099    0.020
+ 5MW      H      C         single      1.077    0.020
+ 5MW      HB1    CB        single      1.092    0.020
+ 5MW      HB2    CB        single      1.092    0.020
+ 5MW      HG1    CG        single      1.092    0.020
+ 5MW      HG2    CG        single      1.092    0.020
+ 5MW      HD1    CD        single      1.092    0.020
+ 5MW      HD2    CD        single      1.092    0.020
+ 5MW      H2     C2        single      1.083    0.020
+ 5MW      HN3    N3        single      1.040    0.020
+ 5MW      H81    C8        single      1.092    0.020
+ 5MW      H82    C8        single      1.092    0.020
+ 5MW      HN51   N5        single      1.033    0.020
+ 5MW      HN52   N5        single      1.033    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ 5MW      O      C      H       123.000    3.000
+ 5MW      O      C      CA      120.500    3.000
+ 5MW      H      C      CA      120.000    3.000
+ 5MW      C      CA     HA      108.810    3.000
+ 5MW      C      CA     N       109.500    3.000
+ 5MW      C      CA     CB      109.470    3.000
+ 5MW      HA     CA     N       109.500    3.000
+ 5MW      HA     CA     CB      108.340    3.000
+ 5MW      N      CA     CB      109.500    3.000
+ 5MW      CA     N      HN2     109.500    3.000
+ 5MW      CA     N      HN1     109.500    3.000
+ 5MW      HN2    N      HN1     109.500    3.000
+ 5MW      CA     CB     HB1     109.470    3.000
+ 5MW      CA     CB     HB2     109.470    3.000
+ 5MW      CA     CB     CG      111.000    3.000
+ 5MW      HB1    CB     HB2     107.900    3.000
+ 5MW      HB1    CB     CG      109.470    3.000
+ 5MW      HB2    CB     CG      109.470    3.000
+ 5MW      CB     CG     HG1     109.470    3.000
+ 5MW      CB     CG     HG2     109.470    3.000
+ 5MW      CB     CG     CD      111.000    3.000
+ 5MW      HG1    CG     HG2     107.900    3.000
+ 5MW      HG1    CG     CD      109.470    3.000
+ 5MW      HG2    CG     CD      109.470    3.000
+ 5MW      CG     CD     HD1     109.470    3.000
+ 5MW      CG     CD     HD2     109.470    3.000
+ 5MW      CG     CD     N2      109.500    3.000
+ 5MW      HD1    CD     HD2     107.900    3.000
+ 5MW      HD1    CD     N2      109.500    3.000
+ 5MW      HD2    CD     N2      109.500    3.000
+ 5MW      CD     N2     N3      108.000    3.000
+ 5MW      CD     N2     C2      126.000    3.000
+ 5MW      N3     N2     C2      108.000    3.000
+ 5MW      N2     N3     HN3     108.000    3.000
+ 5MW      N2     N3     N1      108.000    3.000
+ 5MW      HN3    N3     N1      108.000    3.000
+ 5MW      N3     N1     C1      108.000    3.000
+ 5MW      N2     C2     H2      126.000    3.000
+ 5MW      N2     C2     C1      108.000    3.000
+ 5MW      H2     C2     C1      126.000    3.000
+ 5MW      C2     C1     C8      126.000    3.000
+ 5MW      C2     C1     N1      108.000    3.000
+ 5MW      C8     C1     N1      126.000    3.000
+ 5MW      C1     C8     H81     109.470    3.000
+ 5MW      C1     C8     H82     109.470    3.000
+ 5MW      C1     C8     N5      109.500    3.000
+ 5MW      H81    C8     H82     107.900    3.000
+ 5MW      H81    C8     N5      109.500    3.000
+ 5MW      H82    C8     N5      109.500    3.000
+ 5MW      C8     N5     HN52    109.500    3.000
+ 5MW      C8     N5     HN51    109.500    3.000
+ 5MW      HN52   N5     HN51    109.500    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ 5MW      var_1            O      C      CA     CB                64.900           20.000   3
+ 5MW      var_2            C      CA     N      HN1              180.000           20.000   3
+ 5MW      var_3            C      CA     CB     CG               180.000           20.000   3
+ 5MW      var_4            CA     CB     CG     CD               180.000           20.000   3
+ 5MW      var_5            CB     CG     CD     N2               180.000           20.000   3
+ 5MW      var_6            CG     CD     N2     C2              -129.736           20.000   3
+ 5MW      CONST_1          CD     N2     N3     N1              -179.517            0.000   0
+ 5MW      CONST_2          N2     N3     N1     C1                -0.091            0.000   0
+ 5MW      CONST_3          N3     N1     C1     C2                 0.000            0.000   0
+ 5MW      CONST_4          CD     N2     C2     C1               180.000            0.000   0
+ 5MW      CONST_5          N2     C2     C1     C8                 0.000            0.000   0
+ 5MW      var_7            C2     C1     C8     N5                 0.000           20.000   2
+ 5MW      var_8            C1     C8     N5     HN51             180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ 5MW      chir_01          CA     N      C      CB        positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ 5MW      plan-1            C         0.020
+ 5MW      plan-1            CA        0.020
+ 5MW      plan-1            O         0.020
+ 5MW      plan-1            H         0.020
+ 5MW      plan-2            N1        0.020
+ 5MW      plan-2            C1        0.020
+ 5MW      plan-2            N3        0.020
+ 5MW      plan-2            C2        0.020
+ 5MW      plan-2            N2        0.020
+ 5MW      plan-2            C8        0.020
+ 5MW      plan-2            H2        0.020
+ 5MW      plan-2            CD        0.020
+ 5MW      plan-2            HN3       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-AYE
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-AYE  1 SG      2 C2        .           1.670    0.020
+#
+data_link_HIS-NI
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ HIS-NI   1 NE2     2 NI        .           1.970    0.020
+#
+data_link_GLY-5MW
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ GLY-5MW  1 C       2 N         .           1.330    0.020
+#
+data_link_5MW-GLN
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ 5MW-GLN  1 C       2 N         .           1.330    0.020
+#
+data_link_5MW-GLY
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ 5MW-GLY  1 N5      2 C         .           1.340    0.020
+#
+data_link_GLY-AYE
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ GLY-AYE  1 C       2 N1        .           1.420    0.020
+# ------------------------------------------------------

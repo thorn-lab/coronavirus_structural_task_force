@@ -1,0 +1,26 @@
+# Guided tour for Coot written by PDB_REDO
+# Please cite: Joosten et al. 'PDB_REDO: constructive validation, more than just looking for errors' Acta Cryst., D68, 484-496 (2012)
+interesting_things_gui ("PDB_REDO results",[
+["H-bond flip GLN A  23 " ,  14.153 ,   3.389 ,  -1.387],
+["H-bond flip GLN A  60 " ,  -5.783 ,   0.643 ,   1.333],
+["Changed rotamer LYS A  70 " ,  -9.941 , -11.667 ,  10.205],
+["H-bond flip GLN A  82 " ,   0.105 ,  -9.476 ,  -1.521],
+["H-bond flip GLN A 156 " ,  19.915 ,  12.799 ,   9.324],
+["Changed rotamer VAL A 158 " ,  16.103 ,   8.648 ,  14.268],
+["Removed HOH A 315 " , -10.830 ,  -0.998 ,  -0.072],
+["Removed HOH A 329 " ,   9.471 ,  -5.737 ,  -7.410],
+["Removed HOH A 356 " , -12.750 ,  -3.281 ,   5.662],
+["Removed HOH A 362 " ,  16.082 ,   1.728 ,  -4.051],
+["Removed HOH A 378 " ,   5.916 , -12.992 ,  -3.398],
+["Removed HOH A 381 " ,  24.479 ,  10.847 ,   8.791],
+["Removed HOH A 405 " ,  22.463 ,  16.113 ,   6.084],
+["Removed HOH A 409 " ,  23.377 ,   2.052 ,  -7.405],
+["Removed HOH A 428 " ,  -5.381 ,   0.605 ,  19.517],
+["Removed HOH A 439 " ,  22.743 ,  -9.842 ,   4.556],
+["Removed HOH A 451 " ,  29.310 ,   0.486 ,  -4.956],
+["Removed HOH A 452 " ,   8.851 ,  -5.731 ,  13.028],
+["Removed HOH A 453 " ,  -4.646 ,  -7.803 ,  -3.666],
+["Removed HOH A 454 " ,  11.503 ,  12.169 ,   9.653],
+["Removed HOH A 460 " ,  -1.930 , -14.245 ,  10.687],
+["Removed HOH A 464 " ,  -3.793 , -14.578 ,   8.013],
+])
