@@ -1,0 +1,739 @@
+##-------------------------------------------##
+## WARNING:                                  ##
+## Number of residues unspecified            ##
+##-------------------------------------------##
+
+
+Effective parameters: 
+#phil __ON__
+scaling {
+  input {
+    asu_contents {
+      sequence_file = None
+      n_residues = None
+      n_bases = None
+      n_sites = 5
+      n_copies_per_asu = None
+    }
+    xray_data {
+      file_name = "/mntdirect/_data_id30a3_inhouse/gianluca/coronavirus_structural_task_force/pdb/3c_like_proteinase/SARS-CoV/2C3S/2c3s_original.mtz"
+      obs_labels = None
+      calc_labels = None
+      unit_cell = 107.7419968 44.88199997 54.23099899 90 90 90
+      space_group = "P 21 21 2"
+      high_resolution = None
+      low_resolution = None
+      completeness_as_non_anomalous = True
+      reference {
+        data {
+          file_name = None
+          labels = None
+          unit_cell = None
+          space_group = None
+        }
+        structure {
+          file_name = None
+        }
+      }
+    }
+    parameters {
+      reporting {
+        verbose = 1
+        log = "logfile.log"
+        loggraphs = False
+      }
+      merging {
+        n_bins = 10
+        skip_merging = False
+      }
+      misc_twin_parameters {
+        missing_symmetry {
+          sigma_inflation = 1.25
+        }
+        twinning_with_ncs {
+          perform_analyses = False
+          n_bins = 7
+        }
+        twin_test_cuts {
+          low_resolution = 10
+          high_resolution = None
+          isigi_cut = 3
+          completeness_cut = 0.85
+        }
+        apply_basic_filters_prior_to_twin_analysis = True
+      }
+    }
+    optional {
+      hklout = None
+      hklout_type = mtz sca *Auto
+      label_extension = "massaged"
+      aniso {
+        action = *remove_aniso None
+        final_b = *eigen_min eigen_mean user_b_iso
+        b_iso = None
+      }
+      outlier {
+        action = *extreme basic beamstop None
+        parameters {
+          basic_wilson {
+            level = 1e-06
+          }
+          extreme_wilson {
+            level = 0.01
+          }
+          beamstop {
+            level = 0.001
+            d_min = 10
+          }
+        }
+      }
+      symmetry {
+        action = detwin twin *None
+        twinning_parameters {
+          twin_law = None
+          fraction = None
+        }
+      }
+    }
+  }
+  gui {
+    result_file = None
+    output_dir = None
+    job_title = None
+  }
+}
+#phil __END__
+
+
+Symmetry, cell and reflection file content summary
+
+Miller array info: /mntdirect/_data_id30a3_inhouse/gianluca/coronavirus_structural_task_force/pdb/3c_like_proteinase/SARS-CoV/2C3S/2c3s_original.mtz:FP,SIGFP
+Observation type: xray.amplitude
+Type of data: double, size=20976
+Type of sigmas: double, size=20976
+Number of Miller indices: 20976
+Anomalous flag: False
+Unit cell: (107.742, 44.882, 54.231, 90, 90, 90)
+Space group: P 21 21 2 (No. 18)
+Systematic absences: 0
+Centric reflections: 2632
+Resolution range: 48.4408 1.90001
+Completeness in resolution range: 0.97886
+Completeness with d_max=infinity: 0.978769
+Wavelength: 0.0000
+
+################################################################################
+#                               Basic statistics                               #
+################################################################################
+
+=================== Solvent content and Matthews coefficient ==================
+
+
+ Number of residues unknown, assuming 50% solvent content
+
+  Best guess :  240 residues in the ASU
+
+ Caution: this estimate is based on the distribution of solvent content across
+ structures in the PDB, but it does not take into account the resolution of
+ the data (which is strongly correlated with solvent content) or the physical
+ properties of the model (such as oligomerization state, et cetera).  If you
+ encounter problems with molecular replacement and/or refinement, you may need
+ to consider the possibility that the ASU contents are different than expected.
+
+
+======================== Data strength and completeness =======================
+
+Overall <I/sigma> for this dataset is    20.5
+
+              ----------Completeness at I/sigma cutoffs----------
+
+
+ The following table lists the completeness in various resolution ranges,
+ after applying a I/sigI cut. Miller indices for which individual I/sigI
+ values are larger than the value specified in the top row of the table, are
+ retained, while other intensities are discarded. The resulting completeness
+ profiles are an indication of the strength of the data.
+
+
+                          **********WARNING**********
+
+Please be aware that the input data were given as amplitudes and squared for
+the purposes of this analysis, therefore the numbers displayed here are less
+reliable than the values calculated from the raw intensities.
+  ----------------------------------------------------------------------------------------
+  | Completeness and data strength                                                       |
+  |--------------------------------------------------------------------------------------|
+  | Res. range   | I/sigI>1  | I/sigI>2  | I/sigI>3  | I/sigI>5  | I/sigI>10 | I/sigI>15 |
+  |--------------------------------------------------------------------------------------|
+  | 48.46 - 4.68 |  98.3     |  97.5     |  97.4     |  96.7     |  95.6     |  93.6     |
+  | 4.68 - 3.72  |  99.6     |  99.0     |  98.4     |  98.0     |  96.3     |  94.3     |
+  | 3.72 - 3.25  |  99.2     |  98.5     |  97.9     |  96.6     |  93.2     |  89.5     |
+  | 3.25 - 2.95  |  98.0     |  96.1     |  94.8     |  92.2     |  86.7     |  82.2     |
+  | 2.95 - 2.74  |  98.3     |  95.7     |  94.1     |  90.5     |  83.0     |  75.6     |
+  | 2.74 - 2.58  |  98.5     |  94.8     |  92.6     |  88.3     |  78.7     |  67.9     |
+  | 2.58 - 2.45  |  98.6     |  92.1     |  90.3     |  85.5     |  72.4     |  60.0     |
+  | 2.45 - 2.34  |  98.3     |  90.9     |  88.2     |  81.6     |  66.2     |  51.8     |
+  | 2.34 - 2.25  |  97.3     |  89.1     |  85.7     |  77.4     |  58.3     |  42.3     |
+  | 2.25 - 2.17  |  97.9     |  86.1     |  81.5     |  73.0     |  51.0     |  33.0     |
+  | 2.17 - 2.11  |  96.6     |  84.8     |  79.5     |  68.3     |  46.1     |  25.8     |
+  | 2.11 - 2.05  |  96.9     |  79.0     |  72.9     |  58.2     |  33.4     |  18.0     |
+  | 2.05 - 1.99  |  94.2     |  67.6     |  59.1     |  45.5     |  20.5     |   8.7     |
+  | 1.99 - 1.94  |  88.3     |  57.5     |  48.1     |  32.3     |  11.4     |   3.8     |
+  ----------------------------------------------------------------------------------------
+
+  The completeness of data for which I/sig(I)>3.00, exceeds 85 %
+  for resolution ranges lower than 2.25A.
+  The data are cut at this resolution for the potential twin tests and
+  intensity statistics.
+
+
+            ----------Low resolution completeness analyses----------
+
+The following table shows the completeness of the data to 5.0 A.  Poor
+low-resolution completeness often leads to map distortions and other
+difficulties, and is typically caused by problems with the crystal orientation
+during data collection, overexposure of frames, interference with the beamstop,
+or omission of reflections by data-processing software.
+  ---------------------------------------------------------
+  | Resolution range  | N(obs)/N(possible) | Completeness |
+  ---------------------------------------------------------
+  | 48.4430 - 10.7399 | [137/149]          | 0.919        |
+  | 10.7399 -  8.5398 | [134/137]          | 0.978        |
+  |  8.5398 -  7.4647 | [131/131]          | 1.000        |
+  |  7.4647 -  6.7842 | [130/130]          | 1.000        |
+  |  6.7842 -  6.2991 | [127/127]          | 1.000        |
+  |  6.2991 -  5.9284 | [128/128]          | 1.000        |
+  |  5.9284 -  5.6320 | [118/118]          | 1.000        |
+  |  5.6320 -  5.3871 | [123/123]          | 1.000        |
+  |  5.3871 -  5.1800 | [134/134]          | 1.000        |
+  |  5.1800 -  5.0014 | [110/110]          | 1.000        |
+  ---------------------------------------------------------
+
+                 ----------Completeness (log-binning)----------
+
+The table below presents an alternative overview of data completeness, using
+the entire resolution range but on a logarithmic scale.  This is more sensitive
+to missing low-resolution data (and is complementary to the separate table
+showing low-resolution completeness only).
+  --------------------------------------------------
+  | Resolution        | Reflections | Completeness |
+  --------------------------------------------------
+  | 48.4408 - 12.0619 | 100/110     | 90.9%        |
+  | 11.9853 - 9.4962  | 101/104     | 97.1%        |
+  | 9.4700 - 7.5325   | 189/191     | 99.0%        |
+  | 7.5120 - 5.9629   | 385/385     | 100.0%       |
+  | 5.9591 - 4.7252   | 740/740     | 100.0%       |
+  | 4.7209 - 3.7429   | 1445/1445   | 100.0%       |
+  | 3.7425 - 2.9666   | 2870/2870   | 100.0%       |
+  | 2.9650 - 2.3495   | 5650/5651   | 100.0%       |
+  | 2.3492 - 1.9000   | 9496/9933   | 95.6%        |
+  --------------------------------------------------
+
+               ----------Analysis of resolution limits----------
+
+Your data have been examined to determine the resolution limits of the data
+along the reciprocal space axes (a*, b*, and c*).  These are expected to vary
+slightly depending on unit cell parameters and overall resolution, but should
+never be significantly different for complete data.  (This is distinct from the
+amount of anisotropy present in the data, which changes the effective
+resolution but does not actually exclude reflections.)
+
+    overall d_min                = 1.900
+    d_min along a*               = 1.959
+    d_min along b*               = 1.951
+    d_min along c*               = 2.009
+    max. difference between axes = 0.057
+
+Resolution limits are within expected tolerances.
+
+================================== Input data =================================
+
+
+                          ----------Summary----------
+
+              File name:                   2c3s_original.mtz
+            Data labels:                            FP,SIGFP
+            Space group:                           P 21 21 2
+              Unit cell: 107.742, 44.882, 54.231, 90, 90, 90
+              Data type:                      xray.amplitude
+             Resolution:                   48.4408 - 1.90001
+              Anomalous:                               False
+  Number of reflections:                               20976
+           Completeness:                              97.88%
+
+  Completeness should be used to determine if there is sufficient data for
+  refinement and/or model-building. A value greater than 90% is generally
+  desired, while a value less than 75% is considered poor. Values in between
+  will provide less than optimal results.
+  
+
+===================== Absolute scaling and Wilson analysis ====================
+
+
+        ----------Maximum likelihood isotropic Wilson scaling----------
+
+ ML estimate of overall B value of /mntdirect/_data_id30a3_inhouse/gianluca/coronavirus_structural_task_force/pdb/3c_like_proteinase/SARS-CoV/2C3S/2c3s_original.mtz:FP,SIGFP:
+   27.92 A**2
+ Estimated -log of scale factor of /mntdirect/_data_id30a3_inhouse/gianluca/coronavirus_structural_task_force/pdb/3c_like_proteinase/SARS-CoV/2C3S/2c3s_original.mtz:FP,SIGFP:
+    0.59
+ The overall B value ("Wilson B-factor", derived from the Wilson plot) gives
+ an isotropic approximation for the falloff of intensity as a function of
+ resolution.  Note that this approximation may be misleading for anisotropic
+ data (where the crystal is poorly ordered along an axis).  The Wilson B is
+ strongly correlated with refined atomic B-factors but these may differ by
+ a significant amount, especially if anisotropy is present.
+
+       ----------Maximum likelihood anisotropic Wilson scaling----------
+
+ML estimate of overall B_cart value:
+  27.75,  0.00,  0.00
+         28.14,  0.00
+                27.86
+
+Equivalent representation as U_cif:
+   0.35, -0.00, -0.00
+          0.36,  0.00
+                 0.35
+
+Eigen analyses of B-cart:
+  -------------------------------------------------
+  | Eigenvector | Value   | Vector                |
+  -------------------------------------------------
+  | 1           |  28.139 | ( 0.00,  1.00,  0.00) |
+  | 2           |  27.857 | ( 0.00, -0.00,  1.00) |
+  | 3           |  27.755 | ( 1.00, -0.00, -0.00) |
+  -------------------------------------------------
+ML estimate of  -log of scale factor:
+   0.59
+
+                    ----------Anisotropy analyses----------
+
+
+ For the resolution shell spanning between 1.98 - 1.90 Angstrom,
+ the mean I/sigI is equal to  3.94. 44.2 % of these intensities have
+ an I/sigI > 3. When sorting these intensities by their anisotropic
+ correction factor and analysing the I/sigI behavior for this ordered
+ list, we can gauge the presence of 'anisotropy induced noise amplification'
+ in reciprocal space.
+
+ The quarter of Intensities *least* affected by the anisotropy correction show
+
+    <I/sigI>                 :   4.17e+00
+    Fraction of I/sigI > 3   :   4.73e-01     ( Z =     1.39 )
+  The quarter of Intensities *most* affected by the anisotropy correction show
+
+    <I/sigI>                 :   3.26e+00
+    Fraction of I/sigI > 3   :   3.50e-01     ( Z =     4.16 )
+ Z-scores are computed on the basis of a Bernoulli model assuming independence
+ of weak reflections with respect to anisotropy.
+
+                        ----------Wilson plot----------
+
+ The Wilson plot shows the falloff in intensity as a function in resolution;
+ this is used to calculate the overall B-factor ("Wilson B-factor") for the
+ data shown above.  The expected plot is calculated based on analysis of
+ macromolecule structures in the PDB, and the distinctive appearance is due to
+ the non-random arrangement of atoms in the crystal.  Some variation is
+ natural, but major deviations from the expected plot may indicate pathological
+ data (including ice rings, detector problems, or processing errors).
+
+                  ----------Mean intensity analyses----------
+
+ Inspired by: Morris et al. (2004). J. Synch. Rad.11, 56-59.
+ The following resolution shells are worrisome:
+  -----------------------------------------------------------------
+  | Mean intensity by shell (outliers)                            |
+  |---------------------------------------------------------------|
+  | d_spacing     | z_score       | completeness  | <Iobs>/<Iexp> |
+  |---------------------------------------------------------------|
+  |     2.653     |    4.59       |    1.00       |      0.784    |
+  |     2.582     |    4.53       |    1.00       |      0.794    |
+  -----------------------------------------------------------------
+
+ Possible reasons for the presence of the reported unexpected low or elevated
+ mean intensity in a given resolution bin are :
+   - missing overloaded or weak reflections
+   - suboptimal data processing
+   - satellite (ice) crystals
+   - NCS
+   - translational pseudo symmetry (detected elsewhere)
+   - outliers (detected elsewhere)
+   - ice rings (detected elsewhere)
+   - other problems
+ Note that the presence of abnormalities in a certain region of reciprocal
+ space might confuse the data validation algorithm throughout a large region
+ of reciprocal space, even though the data are acceptable in those areas.
+
+
+
+                     ----------Possible outliers----------
+
+  Inspired by: Read, Acta Cryst. (1999). D55, 1759-1764
+
+Acentric reflections:
+            None
+
+Centric reflections:
+            None
+
+
+                 ----------Ice ring related problems----------
+
+ The following statistics were obtained from ice-ring insensitive resolution
+ ranges:
+
+    mean bin z_score      : 1.57
+        ( rms deviation   : 1.26 )
+    mean bin completeness : 0.99
+        ( rms deviation   : 0.02 )
+
+ The following table shows the Wilson plot Z-scores and completeness for
+ observed data in ice-ring sensitive areas.  The expected relative intensity
+ is the theoretical intensity of crystalline ice at the given resolution.
+ Large z-scores and high completeness in these resolution ranges might
+ be a reason to re-assess your data processsing if ice rings were present.
+
+  -------------------------------------------------------------
+  | d_spacing | Expected rel. I | Data Z-score | Completeness |
+  -------------------------------------------------------------
+  |     3.897 |      1.000      |    0.16      |    1.00      |
+  |     3.669 |      0.750      |    3.61      |    1.00      |
+  |     3.441 |      0.530      |    1.63      |    1.00      |
+  |     2.671 |      0.170      |    4.59      |    1.00      |
+  |     2.249 |      0.390      |    0.84      |    1.00      |
+  |     2.072 |      0.300      |    0.53      |    1.00      |
+  |     1.948 |      0.040      |    1.08      |    0.82      |
+  |     1.918 |      0.180      |    0.67      |    0.79      |
+  -------------------------------------------------------------
+ Abnormalities in mean intensity or completeness at resolution ranges with a
+ relative ice ring intensity lower than 0.10 will be ignored.
+ At 1.92 A there is a lower completeness than expected from the rest of the
+ data set.
+ Even though the completeness is lower than expected, the mean intensity is
+ still reasonable at this resolution.
+ As there was only 1 ice-ring related warning, it is not clear whether or not
+ ice ring related features are really present.
+
+
+################################################################################
+#                        Twinning and symmetry analyses                        #
+################################################################################
+
+============================= Systematic absences =============================
+
+
+             ----------Table of systematic absence rules----------
+
+ The following table gives information about systematic absences allowed for
+ the specified intensity point group.
+
+ For each operator, the reflections are split in three classes:
+
+
+  Systematic absence: Reflections that are absent for this operator.
+  Non absence       : Reflections of the same type (i.e. (0,0,l)) as above, but they
+                      should be present.
+  Other reflections : All other reflections.
+
+For each class, the <I/sigI> is reported, as well as the number of
+violations. A violation is a reflection that is absent when it is expected
+to be present for a particular space group, or present when it is
+expected to be absent. The criteria are:
+
+  Systematic absence violation: I/sigI > 3.0
+  Non absence violation       : I/sigI < 3.0
+  Other relections violation  : I/sigI < 3.0
+
+Operators with low associated violations for *both* systematically absent and
+non absent reflections, are likely to be true screw axis or glide planes. Both
+the number of violations and their percentages are given.  The number of
+violations within the 'other reflections' class, can be used as a comparison
+for the number of violations in the non-absent class.
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  | Operator | # expected systematic absences | <I/sigI> (violations) | # expected non absences | <I/sigI> (violations) | # other reflections | <I/sigI> (violations)  | Score    |
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  | 2_0 (a)  |        0                       |     0.00  (0,  0.0%)  |       18                |    19.86  (3, 16.7%)  |    12803            |    28.47  (824,  6.4%) | 9.78e-01 |
+  | 2_1 (a)  |        0                       |     0.00  (0,  0.0%)  |       18                |    19.86  (3, 16.7%)  |    12803            |    28.47  (824,  6.4%) | 9.78e-01 |
+  | 2_0 (b)  |        0                       |     0.00  (0,  0.0%)  |        7                |    27.76  (0,  0.0%)  |    12814            |    28.46  (827,  6.5%) | 1.28e+00 |
+  | 2_1 (b)  |        0                       |     0.00  (0,  0.0%)  |        7                |    27.76  (0,  0.0%)  |    12814            |    28.46  (827,  6.5%) | 1.28e+00 |
+  | 2_0 (c)  |        0                       |     0.00  (0,  0.0%)  |       19                |    16.11  (2, 10.5%)  |    12802            |    28.47  (825,  6.4%) | 1.29e+00 |
+  | 2_1 (c)  |        9                       |    20.92  (8, 88.9%)  |       10                |    11.78  (1, 10.0%)  |    12802            |    28.47  (825,  6.4%) | 1.13e+01 |
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                 ----------Space group identification----------
+
+Analyses of the absences table indicates a number of likely space group
+candidates, which are listed below. For each space group, the number of
+systematic absence violations are listed under the '+++' column. The number of
+non-absence violations (weak reflections) are listed under '---'. The last
+column is a likelihood based score for the particular space group.  Note that
+enantiomorphic spacegroups will have equal scores. Also, if absences were
+removed while processing the data, they will be regarded as missing
+information, rather then as enforcing that absence in the space group choices.
+
+  ------------------------------------------------------------------------------------
+  | space group | #  absent | <Z>_absent | <Z/sigZ>_absent | +++ | --- | score       |
+  ------------------------------------------------------------------------------------
+  | P 2 2 2     | 0         |     0.00   |     0.00        |  0  |  5  |  0.000e+00  |
+  | P 21 2 2    | 0         |     0.00   |     0.00        |  0  |  5  |  0.000e+00  |
+  | P 2 21 2    | 0         |     0.00   |     0.00        |  0  |  5  |  0.000e+00  |
+  | P 21 21 2   | 0         |     0.00   |     0.00        |  0  |  5  |  0.000e+00  |
+  | P 2 2 21    | 9         |     2.15   |    20.92        |  8  |  4  |  1.005e+01  |
+  | P 2 21 21   | 9         |     2.15   |    20.92        |  8  |  4  |  1.005e+01  |
+  | P 21 2 21   | 9         |     2.15   |    20.92        |  8  |  4  |  1.005e+01  |
+  | P 21 21 21  | 9         |     2.15   |    20.92        |  8  |  4  |  1.005e+01  |
+  ------------------------------------------------------------------------------------
+
+           ----------List of individual systematic absences----------
+
+ Note: this analysis uses the original input data rather than the filtered data
+ used for twinning detection; therefore, the results shown here may include
+ more reflections than shown above.
+
+ Also note that the input data were amplitudes, which means that weaker
+ reflections may have been modified by French-Wilson treatment or discarded
+ altogether, and the original intensities will not be recovered.
+
+P 2 2 2: no systematic absences possible
+P 2 2 21
+  (   0,    0,    5): i/sigi =   27.1
+  (   0,    0,    7): i/sigi =   30.6
+  (   0,    0,    9): i/sigi =   27.5
+  (   0,    0,   11): i/sigi =   27.1
+  (   0,    0,   13): i/sigi =   27.2
+  (   0,    0,   15): i/sigi =   26.0
+  (   0,    0,   17): i/sigi =   25.6
+  (   0,    0,   19): i/sigi =    6.2
+  (   0,    0,   21): i/sigi =   15.2
+  (   0,    0,   23): i/sigi =    0.7
+  (   0,    0,   25): i/sigi =    0.8
+P 21 2 2: no absences found
+P 2 21 2: no absences found
+P 21 21 2 (input space group): no absences found
+P 2 21 21
+  (   0,    0,    5): i/sigi =   27.1
+  (   0,    0,    7): i/sigi =   30.6
+  (   0,    0,    9): i/sigi =   27.5
+  (   0,    0,   11): i/sigi =   27.1
+  (   0,    0,   13): i/sigi =   27.2
+  (   0,    0,   15): i/sigi =   26.0
+  (   0,    0,   17): i/sigi =   25.6
+  (   0,    0,   19): i/sigi =    6.2
+  (   0,    0,   21): i/sigi =   15.2
+  (   0,    0,   23): i/sigi =    0.7
+  (   0,    0,   25): i/sigi =    0.8
+P 21 2 21
+  (   0,    0,    5): i/sigi =   27.1
+  (   0,    0,    7): i/sigi =   30.6
+  (   0,    0,    9): i/sigi =   27.5
+  (   0,    0,   11): i/sigi =   27.1
+  (   0,    0,   13): i/sigi =   27.2
+  (   0,    0,   15): i/sigi =   26.0
+  (   0,    0,   17): i/sigi =   25.6
+  (   0,    0,   19): i/sigi =    6.2
+  (   0,    0,   21): i/sigi =   15.2
+  (   0,    0,   23): i/sigi =    0.7
+  (   0,    0,   25): i/sigi =    0.8
+P 21 21 21
+  (   0,    0,    5): i/sigi =   27.1
+  (   0,    0,    7): i/sigi =   30.6
+  (   0,    0,    9): i/sigi =   27.5
+  (   0,    0,   11): i/sigi =   27.1
+  (   0,    0,   13): i/sigi =   27.2
+  (   0,    0,   15): i/sigi =   26.0
+  (   0,    0,   17): i/sigi =   25.6
+  (   0,    0,   19): i/sigi =    6.2
+  (   0,    0,   21): i/sigi =   15.2
+  (   0,    0,   23): i/sigi =    0.7
+  (   0,    0,   25): i/sigi =    0.8
+
+=============== Diagnostic tests for twinning and pseudosymmetry ==============
+
+Using data between 10.00 to 2.25 Angstrom.
+
+                     ----------Patterson analyses----------
+
+ Largest Patterson peak with length larger than 15 Angstrom:
+ Frac. coord.              :    0.148   -0.495    0.000
+ Distance to origin        :   27.332
+ Height relative to origin :    5.482 %
+ p_value(height)           :    8.266e-01
+
+Explanation
+ The p-value, the probability that a peak of the specified height or larger
+ is found in a Patterson function of a macromolecule that does not have any
+ translational pseudo-symmetry, is equal to 8.266e-01.  p_values smaller than
+ 0.05 might indicate weak translational pseudo symmetry, or the self vector of
+ a large anomalous scatterer such as Hg, whereas values smaller than 1e-3 are
+ a very strong indication for the presence of translational pseudo symmetry.
+
+
+                  ----------Wilson ratio and moments----------
+
+Acentric reflections:
+
+
+   <I^2>/<I>^2    :1.950   (untwinned: 2.000; perfect twin 1.500)
+   <F>^2/<F^2>    :0.794   (untwinned: 0.785; perfect twin 0.885)
+   <|E^2 - 1|>    :0.725   (untwinned: 0.736; perfect twin 0.541)
+
+Centric reflections:
+
+
+   <I^2>/<I>^2    :3.063   (untwinned: 3.000; perfect twin 2.000)
+   <F>^2/<F^2>    :0.639   (untwinned: 0.637; perfect twin 0.785)
+   <|E^2 - 1|>    :0.966   (untwinned: 0.968; perfect twin 0.736)
+
+
+               ----------NZ test for twinning and TNCS----------
+
+
+The NZ test is diagnostic for both twinning and translational NCS.  Note
+however that if both are present, the effects may cancel each other out,
+therefore the results of the Patterson analysis and L-test also need to be
+considered.
+
+
+  Maximum deviation acentric      :  0.012
+  Maximum deviation centric       :  0.012
+
+  <NZ(obs)-NZ(twinned)>_acentric  : -0.007
+  <NZ(obs)-NZ(twinned)>_centric   : +0.002
+
+  ----------------------------------------------------------------------------------------------------------
+  | NZ test                                                                                                |
+  |--------------------------------------------------------------------------------------------------------|
+  | z                  | Acentric observed  | Acentric untwinned | Centric observed   | Centric untwinned  |
+  |--------------------------------------------------------------------------------------------------------|
+  | 0                  | 0                  | 0                  | 0                  | 0                  |
+  | 0.1                | 0.0886632          | 0.0952             | 0.250529           | 0.2481             |
+  | 0.2                | 0.173392           | 0.1813             | 0.336681           | 0.3453             |
+  | 0.3                | 0.249154           | 0.2592             | 0.413848           | 0.4187             |
+  | 0.4                | 0.320523           | 0.3297             | 0.470402           | 0.4738             |
+  | 0.5                | 0.384848           | 0.3935             | 0.513742           | 0.5205             |
+  | 0.6                | 0.440388           | 0.4512             | 0.562896           | 0.5614             |
+  | 0.7                | 0.491628           | 0.5034             | 0.609408           | 0.5972             |
+  | 0.8                | 0.544789           | 0.5507             | 0.640063           | 0.6289             |
+  | 0.9                | 0.588983           | 0.5934             | 0.66649            | 0.6572             |
+  | 1                  | 0.627413           | 0.6321             | 0.689746           | 0.6833             |
+  ----------------------------------------------------------------------------------------------------------
+
+
+                  ----------L test for acentric data----------
+
+Using difference vectors (dh,dk,dl) of the form:
+    (2hp, 2kp, 2lp)
+where hp, kp, and lp are random signed integers such that
+    2 <= |dh| + |dk| + |dl| <= 8
+  Mean |L|   :0.484  (untwinned: 0.500; perfect twin: 0.375)
+  Mean  L^2  :0.317  (untwinned: 0.333; perfect twin: 0.200)
+
+ The distribution of |L| values indicates a twin fraction of
+ 0.00. Note that this estimate is not as reliable as obtained
+ via a Britton plot or H-test if twin laws are available.
+
+  ---------------------------------------------------------------------------------------------------------------------------------
+  | L test, acentric data                                                                                                         |
+  |-------------------------------------------------------------------------------------------------------------------------------|
+  | |l|                           | Observed                      | Acentric theory               | Acentric theory, perfect twin |
+  |-------------------------------------------------------------------------------------------------------------------------------|
+  | 0                             | 0.00979852                    | 0                             | 0                             |
+  | 0.02                          | 0.0293956                     | 0.02                          | 0.029996                      |
+  | 0.04                          | 0.0495431                     | 0.04                          | 0.059968                      |
+  | 0.06                          | 0.0695805                     | 0.06                          | 0.089892                      |
+  | 0.08                          | 0.0890675                     | 0.08                          | 0.119744                      |
+  | 0.1                           | 0.110756                      | 0.1                           | 0.1495                        |
+  | 0.12                          | 0.132996                      | 0.12                          | 0.179136                      |
+  | 0.14                          | 0.154795                      | 0.14                          | 0.208628                      |
+  | 0.16                          | 0.175052                      | 0.16                          | 0.237952                      |
+  | 0.18                          | 0.196631                      | 0.18                          | 0.267084                      |
+  | 0.2                           | 0.21854                       | 0.2                           | 0.296                         |
+  | 0.22                          | 0.237697                      | 0.22                          | 0.324676                      |
+  | 0.24                          | 0.260377                      | 0.24                          | 0.353088                      |
+  | 0.26                          | 0.281075                      | 0.26                          | 0.381212                      |
+  | 0.28                          | 0.301222                      | 0.28                          | 0.409024                      |
+  | 0.3                           | 0.320159                      | 0.3                           | 0.4365                        |
+  | 0.32                          | 0.339756                      | 0.32                          | 0.463616                      |
+  | 0.34                          | 0.363206                      | 0.34                          | 0.490348                      |
+  | 0.36                          | 0.382583                      | 0.36                          | 0.516672                      |
+  | 0.38                          | 0.40196                       | 0.38                          | 0.542564                      |
+  | 0.4                           | 0.421447                      | 0.4                           | 0.568                         |
+  | 0.42                          | 0.440603                      | 0.42                          | 0.592956                      |
+  | 0.44                          | 0.45932                       | 0.44                          | 0.617408                      |
+  | 0.46                          | 0.480678                      | 0.46                          | 0.641332                      |
+  | 0.48                          | 0.500495                      | 0.48                          | 0.664704                      |
+  | 0.5                           | 0.518221                      | 0.5                           | 0.6875                        |
+  | 0.52                          | 0.535836                      | 0.52                          | 0.709696                      |
+  | 0.54                          | 0.554663                      | 0.54                          | 0.731268                      |
+  | 0.56                          | 0.57492                       | 0.56                          | 0.752192                      |
+  | 0.58                          | 0.596719                      | 0.58                          | 0.772444                      |
+  | 0.6                           | 0.615766                      | 0.6                           | 0.792                         |
+  | 0.62                          | 0.638005                      | 0.62                          | 0.810836                      |
+  | 0.64                          | 0.658813                      | 0.64                          | 0.828928                      |
+  | 0.66                          | 0.679621                      | 0.66                          | 0.846252                      |
+  | 0.68                          | 0.700429                      | 0.68                          | 0.862784                      |
+  | 0.7                           | 0.720137                      | 0.7                           | 0.8785                        |
+  | 0.72                          | 0.738082                      | 0.72                          | 0.893376                      |
+  | 0.74                          | 0.756798                      | 0.74                          | 0.907388                      |
+  | 0.76                          | 0.776506                      | 0.76                          | 0.920512                      |
+  | 0.78                          | 0.796103                      | 0.78                          | 0.932724                      |
+  | 0.8                           | 0.81625                       | 0.8                           | 0.944                         |
+  | 0.82                          | 0.835077                      | 0.82                          | 0.954316                      |
+  | 0.84                          | 0.854784                      | 0.84                          | 0.963648                      |
+  | 0.86                          | 0.87394                       | 0.86                          | 0.971972                      |
+  | 0.88                          | 0.892877                      | 0.88                          | 0.979264                      |
+  | 0.9                           | 0.912694                      | 0.9                           | 0.9855                        |
+  | 0.92                          | 0.932511                      | 0.92                          | 0.990656                      |
+  | 0.94                          | 0.951888                      | 0.94                          | 0.994708                      |
+  | 0.96                          | 0.970825                      | 0.96                          | 0.997632                      |
+  | 0.98                          | 0.989101                      | 0.98                          | 0.999404                      |
+  ---------------------------------------------------------------------------------------------------------------------------------
+
+ Reference:
+  J. Padilla & T. O. Yeates. A statistic for local intensity differences:
+  robustness to anisotropy and pseudo-centering and utility for detecting
+  twinning. Acta Crystallogr. D59, 1124-30, 2003.
+
+
+================================== Twin laws ==================================
+
+
+                  ----------Twin law identification----------
+
+
+No twin laws are possible for this crystal lattice.
+
+
+================== Twinning and intensity statistics summary ==================
+
+
+                       ----------Final verdict----------
+
+
+The largest off-origin peak in the Patterson function is 5.48% of the
+height of the origin peak. No significant pseudotranslation is detected.
+
+The results of the L-test indicate that the intensity statistics behave as
+expected. No twinning is suspected.
+
+            ----------Statistics independent of twin laws----------
+
+  <I^2>/<I>^2 : 1.950  (untwinned: 2.0, perfect twin: 1.5)
+  <F>^2/<F^2> : 0.794  (untwinned: 0.785, perfect twin: 0.885)
+  <|E^2-1|>   : 0.725  (untwinned: 0.736, perfect twin: 0.541)
+  <|L|>       : 0.484  (untwinned: 0.500; perfect twin: 0.375)
+  <L^2>       : 0.317  (untwinned: 0.333; perfect twin: 0.200)
+  Multivariate Z score L-test: 1.782
+
+
+ The multivariate Z score is a quality measure of the given spread in
+ intensities. Good to reasonable data are expected to have a Z score lower
+ than 3.5.  Large values can indicate twinning, but small values do not
+ necessarily exclude it.  Note that the expected values for perfect twinning
+ are for merohedrally twinned structures, and deviations from untwinned will
+ be larger for perfect higher-order twinning.
+
+
+No (pseudo)merohedral twin laws were found.
+
