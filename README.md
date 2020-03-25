@@ -7,7 +7,11 @@ A global public resource for the structures from beta-coronavirus with a focus o
 ## What is this?
 
 This repository is a global public resource for the structures from beta-coronavirus with a focus on SARS-CoV and SARS-CoV-2.
-
+You can find here:
+* The original files for 19 of the 28 proteins in SARS-CoV and SARS-CoV, over 300 different structures.
+* Re-refined structures from different contributors
+* Validation statistics for these and the original structural models
+* Diagnostic data for the quality of the experimental data
 
 ## Why?
 
@@ -24,9 +28,10 @@ You can find the structures in a folder like this:
 ```
 pdb/3c_like_proteinase/SARS-CoV-2/5re5
 ```
-Following the scheme<br>
+Following the scheme:
+```
 pdb/protein name/virus name/pdbid
-
+```
 In each pdbid directory, there may one or several of the following subfolders:<br><br>
 validation/<br>
 This folder contains [pdb-redo](https://pdb-redo.eu/) (including [whatcheck](https://swift.cmbi.umcn.nl/gv/whatcheck/)) and [phenix.xtriage](https://www.phenix-online.org/documentation/reference/xtriage.html#how-xtriage-works) results.
@@ -39,7 +44,7 @@ auspex/<br>
 These are results of the analysis of deposited data with [AUSPEX](www.auspex.de)
 
 haruspex/<br>
-These are results for the splitting of Cryo-EM maps accorindg to secondary structure with the neural network [Haruspex](https://github.com/thorn-lab/haruspex)
+These are results for the splitting of Cryo-EM maps according to secondary structure with the neural network [Haruspex](https://github.com/thorn-lab/haruspex)
 ## Contributors
 
 This is a collaborative effort. These are the current contributors (in order of joining):<br>
@@ -56,17 +61,16 @@ Gianluca Santoni - Serial crystallography data scientist<br>
 CIMR, University of Cambridge, UK -<br>
 [Tristan Croll - Research associate](https://isolde.cimr.cam.ac.uk/what-isolde/)<br>
 
-
 ## References
-PDB-REDO: Joosten, R.P., Long, F., Murshudov, G.N., Perrakis, A. (2014) The PDB_REDO server for macromolecular structure model optimization.  IUCrJ 1, 213-220. <br>
-ISOLDE: <br>
-PHENIX: Zwart, P.H., Grosse-Kunstleve, R.W., Adams, P.D. (2005) XTRIAGE: Xtriage   and   Fest:   automatic   assessment   of   X-ray   data   and substructure structure factor estimation. CCP4 newsletter 43 <br>
+**PDB-REDO**: Joosten, R.P., Long, F., Murshudov, G.N., Perrakis, A. (2014) The PDB_REDO server for macromolecular structure model optimization. *IUCrJ* 1, 213-220. <br>
+**ISOLDE**: Croll, T.I. (2018) ISOLDE: a physically realistic environment for model building into low-resolution electron-density maps. *Acta D*74, 519-530 <br>
+**PHENIX.XTRIAGE**: Zwart, P.H., Grosse-Kunstleve, R.W., Adams, P.D. (2005) XTRIAGE: Xtriage   and   Fest:   automatic   assessment   of   X-ray   data   and substructure structure factor estimation. *CCP4 newsletter* 43 <br>
 WHATCHECK: Hooft, R.W.W., Vriend, G., Sander, C., Abola, E.E. WHATCHECK: Errors in protein structures. (1996) Nature 381, 272-272.<br>
-AUSPEX: Thorn, A., Parkhurst, J.M., Emsley, P., Nicholls, R., Evans, G., Vollmar, M., Murshudov, G.N. (2017) AUSPEX: a graphical tool for X-ray diffraction data analysis, Acta Cryst D73, 729-737. <br> 
-HARUSPEX: Mostosi, P., Schindelin, H., Kollmannsberger, P., Thorn, A. Haruspex: A Neural Network for the Automatic Identification of Oligonucleotides and Protein Secondary Structure in Cryo‐EM Maps. (2020) Angewandte Chem. (Int. Ed.). https://doi.org/10.1002/ange.202000421
+**AUSPEX**: Thorn, A., Parkhurst, J.M., Emsley, P., Nicholls, R., Evans, G., Vollmar, M., Murshudov, G.N. (2017) AUSPEX: a graphical tool for X-ray diffraction data analysis, *Acta Cryst* D73, 729-737. <br> 
+**HARUSPEX**: Mostosi, P., Schindelin, H., Kollmannsberger, P., Thorn, A. Haruspex: A Neural Network for the Automatic Identification of Oligonucleotides and Protein Secondary Structure in Cryo‐EM Maps. (2020) *Angew. Chem. (Int. Ed.)* https://doi.org/10.1002/ange.202000421
 
 
-## References
+## Contact information
 
 If you would like to contact us, please write to:
 
