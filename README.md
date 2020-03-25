@@ -4,23 +4,6 @@
 
 A global public resource for the structures from beta-coronavirus with a focus on SARS-CoV and SARS-CoV-2.
 
-## Contributors
-
-This is a collaborative effort. These are the current contributors (in order of joining):<br>
-University of Wuerzburg, Germany -<br>
-[Andrea Thorn - group leader](https://www.uni-wuerzburg.de/en/rvz/research/associated-research-groups/thorn-group/)<br>
-Yunyun Gao - postdoc in the AUSPEX (www.auspex.de)<br>
-Kristopher Nolte - biochemistry B.Sc. student<br>
-Ferdinand Kirsten - biochemistry B.Sc. student<br>
-Sabrina Staeb - biochemistry M.Sc. student<br>
-<br>
-European Synchrotron Facility, Grenoble, France -<br>
-Gianluca Santoni - Serial crystallography data scientist<br>
-<br>
-CIMR, University of Cambridge, UK -<br>
-[Tristan Croll - Research associate](https://isolde.cimr.cam.ac.uk/what-isolde/)<br>
-
-
 ## What is this?
 
 This repository is a global public resource for the structures from beta-coronavirus with a focus on SARS-CoV and SARS-CoV-2.
@@ -38,22 +21,41 @@ This is a project in progress. While we strongly suggest users to work with Git 
 ## Folder stucture
 
 You can find the structures in a folder like this:
+```
 pdb/3c_like_proteinase/SARS-CoV-2/5re5
-___ __________________ __________ ____
-pdb  protein name      virus name pdbid
+```
+Following the scheme<br>
+pdb/protein name/virus name/pdbid
 
-In each pdbid directory, there may one or several of the following subfolders:
-validation/
+In each pdbid directory, there may one or several of the following subfolders:<br><br>
+validation/<br>
 This folder contains [pdb-redo](https://pdb-redo.eu/) (including [whatcheck](https://swift.cmbi.umcn.nl/gv/whatcheck/)) and [phenix.xtriage](https://www.phenix-online.org/documentation/reference/xtriage.html#how-xtriage-works) results.
 
-auspex/
+
+isolde/<br>
+These are manual re-refinements from isolde, done by Tristan Croll.
+
+auspex/<br>
 These are results of the analysis of deposited data with [AUSPEX](www.auspex.de)
 
-haruspex/
+haruspex/<br>
 These are results for the splitting of Cryo-EM maps accorindg to secondary structure with the neural network [Haruspex](https://github.com/thorn-lab/haruspex)
+## Contributors
 
-isolde/
-These are manual re-refinements from isolde, done by Tristan Croll.
+This is a collaborative effort. These are the current contributors (in order of joining):<br>
+University of Wuerzburg, Germany -<br>
+[Andrea Thorn - group leader](https://www.uni-wuerzburg.de/en/rvz/research/associated-research-groups/thorn-group/)<br>
+Yunyun Gao - postdoc in the AUSPEX (www.auspex.de)<br>
+Kristopher Nolte - biochemistry B.Sc. student<br>
+Ferdinand Kirsten - biochemistry B.Sc. student<br>
+Sabrina Staeb - biochemistry M.Sc. student<br>
+<br>
+European Synchrotron Facility, Grenoble, France -<br>
+Gianluca Santoni - Serial crystallography data scientist<br>
+<br>
+CIMR, University of Cambridge, UK -<br>
+[Tristan Croll - Research associate](https://isolde.cimr.cam.ac.uk/what-isolde/)<br>
+
 
 ## References
 PDB-REDO: Joosten, R.P., Long, F., Murshudov, G.N., Perrakis, A. (2014) The PDB_REDO server for macromolecular structure model optimization.  IUCrJ 1, 213-220. <br>
