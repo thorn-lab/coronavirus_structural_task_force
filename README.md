@@ -15,10 +15,9 @@ You can find here:
 
 ## Why?
 
-During this time of crisis, we basically decided to put or brains to where our hearts are. We hope to make a small difference for the cure of COVID-19.
+We are methods developers in structural biology. During this time of crisis, we  decided to put or brains to where our hearts are. We hope this can make a (small) difference for the cure of COVID-19.
 
-
-## Download for non git users
+## Download for non-git users
 
 This is a project in progress. While we strongly suggest users to work with Git so that they can synchronize with us conveniently, there is also a possibility to fetch the most recent update as a zip package by clicking the Green Button "Clone or download" and "Download Zip".
 
