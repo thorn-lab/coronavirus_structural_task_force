@@ -29,6 +29,9 @@ In each folder, is a file **directory_info.txt**. It contains information on the
 
 You can find the structures in a folder named like this: `pdb/3c_like_proteinase/SARS-CoV-2/5re5`<br>
 Following the scheme: `pdb/protein name/virus name/pdbid`<br><br>
+
+We do not host Cryo-EM maps, as they are too large. Please download these maps from EMDB@EMBL_EBI: https://www.ebi.ac.uk/pdbe/emdb/<br>
+
 In each `pdbid/` directory, there may one or several of the following subfolders:<br>
 
 `validation/`<br>
@@ -52,7 +55,9 @@ re-processing and re-refinement of several SARS-CoV-2 structures<br><br>
 https://www.diamond.ac.uk/covid-19/for-scientists.html<br>
 Info on Diamond work on main protease; related: https://covid.postera.ai/covid<br><br>
 https://www.ebi.ac.uk/ena/pathogens/covid-19<br>
-Data resources held at EMBL-EBI relating to the COVID-19 outbreak, including sequences of outbreak isolates and records relating to coronavirus biology. 
+Data resources held at EMBL-EBI relating to the COVID-19 outbreak, including sequences of outbreak isolates and records relating to coronavirus biology
+https://www.rcsb.org/news?year=2020&article=5e74d55d2d410731e9944f52&feature=true
+Varius links to COVID-19/SARS-CoV-2 Resources from RCSB PDB
 
 ## Contributors
 
