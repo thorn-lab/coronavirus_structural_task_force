@@ -13,7 +13,7 @@ You can find here:
 * Validation statistics for these and the original structural models
 * Diagnostic data for the quality of the experimental data
 
-(*) Please be aware that XXXX
+(*) Please be aware that while there is potential to improve some structures, this is not meant as criticism of the great achievements of the research groups who were able to initially elucidate these structures. It merely reflects on the potential to push our methods to their limit.
 
 ## Why?
 
