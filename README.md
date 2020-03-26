@@ -44,6 +44,11 @@ These are results of the analysis of deposited data with [AUSPEX](www.auspex.de)
 
 haruspex/<br>
 These are results for the splitting of Cryo-EM maps according to secondary structure with the neural network [Haruspex](https://github.com/thorn-lab/haruspex)
+
+## Further resources elsewhere
+
+
+
 ## Contributors
 
 This is a collaborative effort. These are the current contributors (in order of joining):<br>
@@ -59,6 +64,8 @@ Gianluca Santoni - Serial crystallography data scientist<br>
 <br>
 CIMR, University of Cambridge, UK -<br>
 [Tristan Croll - Research associate](https://isolde.cimr.cam.ac.uk/what-isolde/)<br>
+Duke University
+[The Richardson Laboratory](http://kinemage.biochem.duke.edu/)
 
 ## References
 **PDB-REDO**: Joosten, R.P., Long, F., Murshudov, G.N., Perrakis, A. (2014) The PDB_REDO server for macromolecular structure model optimization. *IUCrJ* 1, 213-220. <br>
