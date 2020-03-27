@@ -56,6 +56,8 @@ https://www.diamond.ac.uk/covid-19/for-scientists.html<br>
 Info on Diamond work on main protease; related: https://covid.postera.ai/covid<br><br>
 https://www.ebi.ac.uk/ena/pathogens/covid-19<br>
 Data resources held at EMBL-EBI relating to the COVID-19 outbreak, including sequences of outbreak isolates and records relating to coronavirus biology
+http://www.hecbiosim.ac.uk/covid-19
+Links for covid19 related research that falls into biomolecular modelling and simulation 
 https://www.rcsb.org/news?year=2020&article=5e74d55d2d410731e9944f52&feature=true
 Varius links to COVID-19/SARS-CoV-2 Resources from RCSB PDB
 
