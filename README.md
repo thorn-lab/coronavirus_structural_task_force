@@ -63,11 +63,11 @@ Varius links to COVID-19/SARS-CoV-2 Resources from RCSB PDB
 
 This is a collaborative effort. These are the current contributors (in order of joining):<br>
 University of Wuerzburg, Germany -<br>
-[Andrea Thorn - group leader](https://www.uni-wuerzburg.de/en/rvz/research/associated-research-groups/thorn-group/)<br>
-Yunyun Gao - postdoc in the AUSPEX (www.auspex.de)<br>
-Kristopher Nolte - biochemistry B.Sc. student<br>
-Ferdinand Kirsten - biochemistry B.Sc. student<br>
-Sabrina Stäb - biochemistry M.Sc. student<br>
+[Andrea Thorn - Group leader](https://www.uni-wuerzburg.de/en/rvz/research/associated-research-groups/thorn-group/)<br>
+Yunyun Gao - Postdoc in the AUSPEX project(www.auspex.de)<br>
+Kristopher Nolte - Biochemistry B.Sc. student<br>
+Ferdinand Kirsten - Biochemistry B.Sc. student<br>
+Sabrina Stäb - Biochemistry M.Sc. student<br>
 <br>
 European Synchrotron Facility, Grenoble, France -<br>
 Gianluca Santoni - Serial crystallography data scientist<br>
@@ -77,7 +77,7 @@ CIMR, University of Cambridge, UK -<br>
 Duke University
 [The Richardson Laboratory](http://kinemage.biochem.duke.edu/)
 
-We would also like to thank for their advice: Manfred Weiss *(HBZ BESSY, Berlin, Germany)* , James Holton (ALS/Lawrence Berkeley National Laboratory, Berkeley, USA), Gerard Bricogne *(Global Phasing, Cambridge, UK)*, Clemens Vonrhein *(Global Phasing, Freiburg, Germany)*, Robbie P. Joosten *(The Netherlands Cancer Institute, Amsterdam, Netherlands)*, Sameer Velankar *(European Potein Data Bank, Cambridge, UK)*.
+We would also like to thank: Manfred Weiss *(HBZ BESSY, Berlin, Germany)* , James Holton *(ALS/Lawrence Berkeley National Laboratory, Berkeley, USA)*, Gerard Bricogne *(Global Phasing, Cambridge, UK)*, Clemens Vonrhein *(Global Phasing, Freiburg, Germany)*, Robbie P. Joosten *(The Netherlands Cancer Institute, Amsterdam, Netherlands)*, Sameer Velankar *(European Potein Data Bank, Cambridge, UK)*.
 
 ## References
 **PDB-REDO**: Joosten, R.P., Long, F., Murshudov, G.N., Perrakis, A. (2014) The PDB_REDO server for macromolecular structure model optimization. *IUCrJ* 1, 213-220. <br>
@@ -102,4 +102,4 @@ Josef-Schneider-Str. 2<br>
 97080 Wuerzburg<br>
 Germany<br>
 <br>
-The contents of this repository for research and educational purposes. As a general rule, we do not render any medical advice.
+The contents of this repository website are for research and educational purposes only. As a general rule, we do not render any medical advice.
