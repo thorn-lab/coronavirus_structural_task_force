@@ -67,7 +67,7 @@ University of Wuerzburg, Germany -<br>
 Yunyun Gao - postdoc in the AUSPEX (www.auspex.de)<br>
 Kristopher Nolte - biochemistry B.Sc. student<br>
 Ferdinand Kirsten - biochemistry B.Sc. student<br>
-Sabrina Staeb - biochemistry M.Sc. student<br>
+Sabrina Stäb - biochemistry M.Sc. student<br>
 <br>
 European Synchrotron Facility, Grenoble, France -<br>
 Gianluca Santoni - Serial crystallography data scientist<br>
@@ -77,7 +77,7 @@ CIMR, University of Cambridge, UK -<br>
 Duke University
 [The Richardson Laboratory](http://kinemage.biochem.duke.edu/)
 
-We would also like to thank for their advice: Manfred Weiss *(HBZ BESSY, Berlin, Germany)* Gerard Bricogne *(Global Phasing, Cambridge, UK)*, Clemens Vonrhein *(Global Phasing, Freiburg, Germany)*, Robbie P. Joosten *(The Netherlands Cancer Institute, Amsterdam, Netherlands)*, Sameer Velankar *(European Potein Data Bank, Cambridge, UK)*.
+We would also like to thank for their advice: Manfred Weiss *(HBZ BESSY, Berlin, Germany)* , James Holton (ALS/Lawrence Berkeley National Laboratory, Berkeley, USA), Gerard Bricogne *(Global Phasing, Cambridge, UK)*, Clemens Vonrhein *(Global Phasing, Freiburg, Germany)*, Robbie P. Joosten *(The Netherlands Cancer Institute, Amsterdam, Netherlands)*, Sameer Velankar *(European Potein Data Bank, Cambridge, UK)*.
 
 ## References
 **PDB-REDO**: Joosten, R.P., Long, F., Murshudov, G.N., Perrakis, A. (2014) The PDB_REDO server for macromolecular structure model optimization. *IUCrJ* 1, 213-220. <br>
