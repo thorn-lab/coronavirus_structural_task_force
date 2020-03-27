@@ -8,7 +8,7 @@ A global public resource for the structures from beta-coronavirus with a focus o
 
 This repository is a global public resource for the structures from beta-coronavirus with a focus on SARS-CoV and SARS-CoV-2.
 You can find here:
-* The original files for 19 of the 28 proteins in SARS-CoV and SARS-CoV, over 300 different structures.
+* The original files for 19 of the 28 proteins in SARS-CoV and SARS-CoV-2, over 300 different structures.
 * Re-refined structures from different contributors(*)
 * Validation statistics for these and the original structural models
 * Diagnostic data for the quality of the experimental data
@@ -17,7 +17,7 @@ You can find here:
 
 ## Why?
 
-We are methods developers in structural biology. During this time of crisis, we  decided to put or brains to where our hearts are. We hope this can make a (small) difference for the cure of COVID-19.
+We are methods developers in structural biology. During this time of crisis, we decided to put our brains to where our hearts are. We hope this can make a (small) difference for the cure of COVID-19.
 
 ## Download for non-git users
 
