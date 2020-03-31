@@ -1,0 +1,131 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.51
+_lib_update       11/07/18
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+HVB      HVB '.                                   ' .                  12   5 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_HVB
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ HVB           N5     N    N         0.000      8.523   -4.964   26.462
+ HVB           HN5    H    H         0.000      9.019   -5.219   27.248
+ HVB           C3     C    C         0.000      9.038   -5.176   25.193
+ HVB           N4     N    N         0.000     10.203   -5.727   25.115
+ HVB           HN4    H    H         0.000     10.584   -5.886   24.263
+ HVB           C2     C    CH2       0.000      8.148   -4.725   24.034
+ HVB           H21    H    H         0.000      7.152   -4.486   24.412
+ HVB           H22    H    H         0.000      8.073   -5.529   23.299
+ HVB           C1     C    CH3       0.000      8.757   -3.486   23.377
+ HVB           H13    H    H         0.000      8.830   -2.704   24.089
+ HVB           H12    H    H         0.000      9.724   -3.716   23.009
+ HVB           H11    H    H         0.000      8.143   -3.170   22.573
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ HVB      N5     n/a    C3     START
+ HVB      HN5    N5     .      .
+ HVB      C3     N5     C2     .
+ HVB      N4     C3     HN4    .
+ HVB      HN4    N4     .      .
+ HVB      C2     C3     C1     .
+ HVB      H21    C2     .      .
+ HVB      H22    C2     .      .
+ HVB      C1     C2     H11    .
+ HVB      H13    C1     .      .
+ HVB      H12    C1     .      .
+ HVB      H11    C1     .      END
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ HVB      C1     C2        single      1.513    0.020
+ HVB      C2     C3        single      1.510    0.020
+ HVB      N4     C3        deloc       1.330    0.020
+ HVB      C3     N5        deloc       1.330    0.020
+ HVB      H11    C1        single      1.059    0.020
+ HVB      H12    C1        single      1.059    0.020
+ HVB      H13    C1        single      1.059    0.020
+ HVB      H21    C2        single      1.092    0.020
+ HVB      H22    C2        single      1.092    0.020
+ HVB      HN4    N4        single      0.954    0.020
+ HVB      HN5    N5        single      0.954    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ HVB      HN5    N5     C3      120.000    3.000
+ HVB      N5     C3     N4      120.000    3.000
+ HVB      N5     C3     C2      116.500    3.000
+ HVB      N4     C3     C2      116.500    3.000
+ HVB      C3     N4     HN4     120.000    3.000
+ HVB      C3     C2     H21     109.470    3.000
+ HVB      C3     C2     H22     109.470    3.000
+ HVB      C3     C2     C1      109.500    3.000
+ HVB      H21    C2     H22     107.900    3.000
+ HVB      H21    C2     C1      109.470    3.000
+ HVB      H22    C2     C1      109.470    3.000
+ HVB      C2     C1     H13     109.470    3.000
+ HVB      C2     C1     H12     109.470    3.000
+ HVB      C2     C1     H11     109.470    3.000
+ HVB      H13    C1     H12     109.470    3.000
+ HVB      H13    C1     H11     109.470    3.000
+ HVB      H12    C1     H11     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ HVB      CONST_1          HN5    N5     C3     C2               180.000            0.000   0
+ HVB      CONST_2          N5     C3     N4     HN4              180.000            0.000   0
+ HVB      var_1            N5     C3     C2     C1               180.000           20.000   3
+ HVB      var_2            C3     C2     C1     H11              180.000           20.000   3
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ HVB      plan-1            C3        0.020
+ HVB      plan-1            C2        0.020
+ HVB      plan-1            N4        0.020
+ HVB      plan-1            N5        0.020
+ HVB      plan-1            HN4       0.020
+ HVB      plan-1            HN5       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

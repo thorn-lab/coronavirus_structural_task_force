@@ -1,0 +1,264 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.51
+_lib_update       11/07/18
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+JJG      JJG '.                                   ' .                  32  15 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_JJG
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ JJG           H142   H    H         0.000     26.708  -11.726    8.611
+ JJG           C14    C    CH2       0.000     27.723  -11.836    8.223
+ JJG           H141   H    H         0.000     28.441  -11.618    9.016
+ JJG           C15    C    CH2       0.000     27.926  -10.844    7.090
+ JJG           H152   H    H         0.000     29.007  -10.767    6.954
+ JJG           H151   H    H         0.000     27.538   -9.892    7.457
+ JJG           O13    O    O2        0.000     27.907  -13.120    7.779
+ JJG           C12    C    CH2       0.000     27.026  -13.442    6.758
+ JJG           H121   H    H         0.000     26.016  -13.404    7.172
+ JJG           H122   H    H         0.000     27.250  -14.463    6.441
+ JJG           C11    C    CH2       0.000     27.121  -12.504    5.560
+ JJG           H111   H    H         0.000     26.187  -12.617    5.006
+ JJG           H112   H    H         0.000     27.951  -12.867    4.950
+ JJG           N10    N    NT        0.000     27.322  -11.155    5.868
+ JJG           C09    C    CH2       0.000     26.409  -10.336    5.492
+ JJG           H091   H    H         0.000     26.770   -9.334    5.734
+ JJG           H092   H    H         0.000     25.525  -10.558    6.093
+ JJG           C08    C    CH2       0.000     26.048  -10.406    4.002
+ JJG           H081   H    H         0.000     26.665  -11.160    3.509
+ JJG           H082   H    H         0.000     26.221   -9.434    3.535
+ JJG           S07    S    S2        0.000     24.293  -10.855    3.841
+ JJG           C04    C    CR6       0.000     23.392   -9.493    4.615
+ JJG           C03    C    CR16      0.000     23.671   -8.198    4.220
+ JJG           H03    H    H         0.000     24.412   -8.012    3.452
+ JJG           C02    C    CR16      0.000     23.005   -7.146    4.805
+ JJG           H02    H    H         0.000     23.224   -6.133    4.492
+ JJG           C05    C    CR16      0.000     22.456   -9.732    5.602
+ JJG           H05    H    H         0.000     22.246  -10.746    5.918
+ JJG           C06    C    CR16      0.000     21.784   -8.665    6.188
+ JJG           H06    H    H         0.000     21.045   -8.849    6.958
+ JJG           C01    C    CR16      0.000     22.057   -7.370    5.791
+ JJG           H01    H    H         0.000     21.535   -6.537    6.246
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ JJG      H142   n/a    C14    START
+ JJG      C14    H142   O13    .
+ JJG      H141   C14    .      .
+ JJG      C15    C14    H151   .
+ JJG      H152   C15    .      .
+ JJG      H151   C15    .      .
+ JJG      O13    C14    C12    .
+ JJG      C12    O13    C11    .
+ JJG      H121   C12    .      .
+ JJG      H122   C12    .      .
+ JJG      C11    C12    N10    .
+ JJG      H111   C11    .      .
+ JJG      H112   C11    .      .
+ JJG      N10    C11    C09    .
+ JJG      C09    N10    C08    .
+ JJG      H091   C09    .      .
+ JJG      H092   C09    .      .
+ JJG      C08    C09    S07    .
+ JJG      H081   C08    .      .
+ JJG      H082   C08    .      .
+ JJG      S07    C08    C04    .
+ JJG      C04    S07    C05    .
+ JJG      C03    C04    C02    .
+ JJG      H03    C03    .      .
+ JJG      C02    C03    H02    .
+ JJG      H02    C02    .      .
+ JJG      C05    C04    C06    .
+ JJG      H05    C05    .      .
+ JJG      C06    C05    C01    .
+ JJG      H06    C06    .      .
+ JJG      C01    C06    H01    .
+ JJG      H01    C01    .      END
+ JJG      C15    N10    .    ADD
+ JJG      C01    C02    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ JJG      C15    N10       single      1.469    0.020
+ JJG      C15    C14       single      1.524    0.020
+ JJG      C01    C02       aromatic    1.390    0.020
+ JJG      C01    C06       aromatic    1.390    0.020
+ JJG      C02    C03       aromatic    1.390    0.020
+ JJG      C03    C04       aromatic    1.390    0.020
+ JJG      C05    C04       aromatic    1.390    0.020
+ JJG      C04    S07       single      1.695    0.020
+ JJG      C06    C05       aromatic    1.390    0.020
+ JJG      S07    C08       single      1.762    0.020
+ JJG      C08    C09       single      1.524    0.020
+ JJG      C09    N10       single      1.469    0.020
+ JJG      N10    C11       single      1.469    0.020
+ JJG      C11    C12       single      1.524    0.020
+ JJG      C12    O13       single      1.426    0.020
+ JJG      O13    C14       single      1.426    0.020
+ JJG      H151   C15       single      1.092    0.020
+ JJG      H152   C15       single      1.092    0.020
+ JJG      H01    C01       single      1.083    0.020
+ JJG      H02    C02       single      1.083    0.020
+ JJG      H03    C03       single      1.083    0.020
+ JJG      H05    C05       single      1.083    0.020
+ JJG      H06    C06       single      1.083    0.020
+ JJG      H081   C08       single      1.092    0.020
+ JJG      H082   C08       single      1.092    0.020
+ JJG      H091   C09       single      1.092    0.020
+ JJG      H092   C09       single      1.092    0.020
+ JJG      H111   C11       single      1.092    0.020
+ JJG      H112   C11       single      1.092    0.020
+ JJG      H121   C12       single      1.092    0.020
+ JJG      H122   C12       single      1.092    0.020
+ JJG      H141   C14       single      1.092    0.020
+ JJG      C14    H142      single      1.092    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ JJG      H142   C14    H141    107.900    3.000
+ JJG      H142   C14    C15     109.470    3.000
+ JJG      H142   C14    O13     109.470    3.000
+ JJG      H141   C14    C15     109.470    3.000
+ JJG      H141   C14    O13     109.470    3.000
+ JJG      C15    C14    O13     109.470    3.000
+ JJG      C14    C15    H152    109.470    3.000
+ JJG      C14    C15    H151    109.470    3.000
+ JJG      C14    C15    N10     109.470    3.000
+ JJG      H152   C15    H151    107.900    3.000
+ JJG      H152   C15    N10     109.470    3.000
+ JJG      H151   C15    N10     109.470    3.000
+ JJG      C14    O13    C12     111.800    3.000
+ JJG      O13    C12    H121    109.470    3.000
+ JJG      O13    C12    H122    109.470    3.000
+ JJG      O13    C12    C11     109.470    3.000
+ JJG      H121   C12    H122    107.900    3.000
+ JJG      H121   C12    C11     109.470    3.000
+ JJG      H122   C12    C11     109.470    3.000
+ JJG      C12    C11    H111    109.470    3.000
+ JJG      C12    C11    H112    109.470    3.000
+ JJG      C12    C11    N10     109.470    3.000
+ JJG      H111   C11    H112    107.900    3.000
+ JJG      H111   C11    N10     109.470    3.000
+ JJG      H112   C11    N10     109.470    3.000
+ JJG      C11    N10    C09     109.470    3.000
+ JJG      C11    N10    C15     109.470    3.000
+ JJG      C09    N10    C15     109.470    3.000
+ JJG      N10    C09    H091    109.470    3.000
+ JJG      N10    C09    H092    109.470    3.000
+ JJG      N10    C09    C08     109.470    3.000
+ JJG      H091   C09    H092    107.900    3.000
+ JJG      H091   C09    C08     109.470    3.000
+ JJG      H092   C09    C08     109.470    3.000
+ JJG      C09    C08    H081    109.470    3.000
+ JJG      C09    C08    H082    109.470    3.000
+ JJG      C09    C08    S07     109.500    3.000
+ JJG      H081   C08    H082    107.900    3.000
+ JJG      H081   C08    S07     109.500    3.000
+ JJG      H082   C08    S07     109.500    3.000
+ JJG      C08    S07    C04     104.900    3.000
+ JJG      S07    C04    C03     120.000    3.000
+ JJG      S07    C04    C05     120.000    3.000
+ JJG      C03    C04    C05     120.000    3.000
+ JJG      C04    C03    H03     120.000    3.000
+ JJG      C04    C03    C02     120.000    3.000
+ JJG      H03    C03    C02     120.000    3.000
+ JJG      C03    C02    H02     120.000    3.000
+ JJG      C03    C02    C01     120.000    3.000
+ JJG      H02    C02    C01     120.000    3.000
+ JJG      C04    C05    H05     120.000    3.000
+ JJG      C04    C05    C06     120.000    3.000
+ JJG      H05    C05    C06     120.000    3.000
+ JJG      C05    C06    H06     120.000    3.000
+ JJG      C05    C06    C01     120.000    3.000
+ JJG      H06    C06    C01     120.000    3.000
+ JJG      C06    C01    H01     120.000    3.000
+ JJG      C06    C01    C02     120.000    3.000
+ JJG      H01    C01    C02     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ JJG      var_1            H142   C14    C15    N10              180.000           20.000   3
+ JJG      var_2            C14    C15    N10    C11              -28.218           20.000   3
+ JJG      var_3            H142   C14    O13    C12              180.000           20.000   3
+ JJG      var_4            C14    O13    C12    C11               57.334           20.000   3
+ JJG      var_5            O13    C12    C11    N10              180.000           20.000   3
+ JJG      var_6            C12    C11    N10    C09             -118.573           20.000   3
+ JJG      var_7            C11    N10    C09    C08              -53.504           20.000   3
+ JJG      var_8            N10    C09    C08    S07              180.000           20.000   3
+ JJG      var_9            C09    C08    S07    C04               62.912           20.000   3
+ JJG      var_10           C08    S07    C04    C05             -127.206           20.000   3
+ JJG      CONST_1          S07    C04    C03    C02                0.000            0.000   0
+ JJG      CONST_2          C04    C03    C02    C01                0.000            0.000   0
+ JJG      CONST_3          S07    C04    C05    C06                0.000            0.000   0
+ JJG      CONST_4          C04    C05    C06    C01                0.000            0.000   0
+ JJG      CONST_5          C05    C06    C01    C02                0.000            0.000   0
+ JJG      CONST_6          C06    C01    C02    C03                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ JJG      chir_01          N10    C15    C09    C11       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ JJG      plan-1            C01       0.020
+ JJG      plan-1            C02       0.020
+ JJG      plan-1            C06       0.020
+ JJG      plan-1            H01       0.020
+ JJG      plan-1            C03       0.020
+ JJG      plan-1            C04       0.020
+ JJG      plan-1            C05       0.020
+ JJG      plan-1            H02       0.020
+ JJG      plan-1            H03       0.020
+ JJG      plan-1            S07       0.020
+ JJG      plan-1            H05       0.020
+ JJG      plan-1            H06       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

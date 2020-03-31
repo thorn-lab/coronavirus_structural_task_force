@@ -1,0 +1,286 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.51
+_lib_update       11/07/18
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+T3J      T3J '.                                   ' .                  29  16 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-T3J  CYS      .        .        T3J      .        .
+ bond_CYS-SG_=_T3J-C03
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_T3J
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ T3J           O01    O    O         0.000      5.958   -4.393   19.659
+ T3J           C02    C    C         0.000      6.744   -3.488   19.910
+ T3J           C03    C    CH3       0.000      7.381   -2.718   18.785
+ T3J           H033   H    H         0.000      7.938   -3.380   18.173
+ T3J           H032   H    H         0.000      6.628   -2.251   18.204
+ T3J           H031   H    H         0.000      8.028   -1.979   19.183
+ T3J           N05    N    N         0.000      7.077   -3.150   21.175
+ T3J           C17    C    CH2       0.000      7.955   -2.046   21.555
+ T3J           H172   H    H         0.000      7.375   -1.121   21.569
+ T3J           H171   H    H         0.000      8.756   -1.960   20.817
+ T3J           C06    C    CH2       0.000      6.530   -3.861   22.340
+ T3J           H061   H    H         0.000      5.858   -4.648   21.992
+ T3J           H062   H    H         0.000      5.973   -3.154   22.958
+ T3J           C07    C    CH2       0.000      7.645   -4.473   23.154
+ T3J           H071   H    H         0.000      7.860   -5.463   22.747
+ T3J           H072   H    H         0.000      7.299   -4.572   24.185
+ T3J           O08    O    O2        0.000      8.835   -3.672   23.122
+ T3J           C09    C    CH1       0.000      8.556   -2.292   22.933
+ T3J           H09    H    H         0.000      7.824   -1.980   23.690
+ T3J           C10    C    CR6       0.000      9.839   -1.533   23.172
+ T3J           C16    C    CR16      0.000     10.892   -1.566   22.270
+ T3J           H16    H    H         0.000     10.804   -2.158   21.367
+ T3J           C15    C    CR16      0.000     12.053   -0.854   22.507
+ T3J           H15    H    H         0.000     12.873   -0.873   21.800
+ T3J           C11    C    CR16      0.000      9.978   -0.779   24.324
+ T3J           H11    H    H         0.000      9.167   -0.748   25.040
+ T3J           C12    C    CSP       0.000     11.132   -0.067   24.575
+ T3J           C13    C    CR6       0.000     12.135   -0.126   23.659
+ T3J           F14    F    F         0.000     13.270    0.576   23.914
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ T3J      O01    n/a    C02    START
+ T3J      C02    O01    N05    .
+ T3J      C03    C02    H031   .
+ T3J      H033   C03    .      .
+ T3J      H032   C03    .      .
+ T3J      H031   C03    .      .
+ T3J      N05    C02    C06    .
+ T3J      C17    N05    H171   .
+ T3J      H172   C17    .      .
+ T3J      H171   C17    .      .
+ T3J      C06    N05    C07    .
+ T3J      H061   C06    .      .
+ T3J      H062   C06    .      .
+ T3J      C07    C06    O08    .
+ T3J      H071   C07    .      .
+ T3J      H072   C07    .      .
+ T3J      O08    C07    C09    .
+ T3J      C09    O08    C10    .
+ T3J      H09    C09    .      .
+ T3J      C10    C09    C11    .
+ T3J      C16    C10    C15    .
+ T3J      H16    C16    .      .
+ T3J      C15    C16    H15    .
+ T3J      H15    C15    .      .
+ T3J      C11    C10    C12    .
+ T3J      H11    C11    .      .
+ T3J      C12    C11    C13    .
+ T3J      C13    C12    F14    .
+ T3J      F14    C13    .      END
+ T3J      C13    C15    .    ADD
+ T3J      C17    C09    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ T3J      C10    C09       single      1.480    0.020
+ T3J      C11    C10       aromatic    1.390    0.020
+ T3J      C16    C10       aromatic    1.390    0.020
+ T3J      C13    C15       aromatic    1.390    0.020
+ T3J      C13    C12       double      1.285    0.020
+ T3J      F14    C13       single      1.345    0.020
+ T3J      C15    C16       aromatic    1.390    0.020
+ T3J      C17    C09       single      1.524    0.020
+ T3J      C17    N05       single      1.455    0.020
+ T3J      C03    C02       single      1.500    0.020
+ T3J      N05    C02       single      1.330    0.020
+ T3J      C02    O01       double      1.220    0.020
+ T3J      C07    C06       single      1.524    0.020
+ T3J      C06    N05       single      1.455    0.020
+ T3J      O08    C07       single      1.426    0.020
+ T3J      C09    O08       single      1.426    0.020
+ T3J      C12    C11       aromatic    1.285    0.020
+ T3J      H15    C15       single      1.083    0.020
+ T3J      H171   C17       single      1.092    0.020
+ T3J      H172   C17       single      1.092    0.020
+ T3J      H031   C03       single      1.059    0.020
+ T3J      H032   C03       single      1.059    0.020
+ T3J      H033   C03       single      1.059    0.020
+ T3J      H061   C06       single      1.092    0.020
+ T3J      H062   C06       single      1.092    0.020
+ T3J      H071   C07       single      1.092    0.020
+ T3J      H072   C07       single      1.092    0.020
+ T3J      H09    C09       single      1.099    0.020
+ T3J      H11    C11       single      1.083    0.020
+ T3J      H16    C16       single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ T3J      O01    C02    C03     123.000    3.000
+ T3J      O01    C02    N05     123.000    3.000
+ T3J      C03    C02    N05     116.500    3.000
+ T3J      C02    C03    H033    109.470    3.000
+ T3J      C02    C03    H032    109.470    3.000
+ T3J      C02    C03    H031    109.470    3.000
+ T3J      H033   C03    H032    109.470    3.000
+ T3J      H033   C03    H031    109.470    3.000
+ T3J      H032   C03    H031    109.470    3.000
+ T3J      C02    N05    C17     127.000    3.000
+ T3J      C02    N05    C06     127.000    3.000
+ T3J      C17    N05    C06     120.000    3.000
+ T3J      N05    C17    H172    109.470    3.000
+ T3J      N05    C17    H171    109.470    3.000
+ T3J      N05    C17    C09     105.000    3.000
+ T3J      H172   C17    H171    107.900    3.000
+ T3J      H172   C17    C09     109.470    3.000
+ T3J      H171   C17    C09     109.470    3.000
+ T3J      N05    C06    H061    109.470    3.000
+ T3J      N05    C06    H062    109.470    3.000
+ T3J      N05    C06    C07     105.000    3.000
+ T3J      H061   C06    H062    107.900    3.000
+ T3J      H061   C06    C07     109.470    3.000
+ T3J      H062   C06    C07     109.470    3.000
+ T3J      C06    C07    H071    109.470    3.000
+ T3J      C06    C07    H072    109.470    3.000
+ T3J      C06    C07    O08     109.470    3.000
+ T3J      H071   C07    H072    107.900    3.000
+ T3J      H071   C07    O08     109.470    3.000
+ T3J      H072   C07    O08     109.470    3.000
+ T3J      C07    O08    C09     111.800    3.000
+ T3J      O08    C09    H09     109.470    3.000
+ T3J      O08    C09    C10     109.470    3.000
+ T3J      O08    C09    C17     109.470    3.000
+ T3J      H09    C09    C10     109.470    3.000
+ T3J      H09    C09    C17     108.340    3.000
+ T3J      C10    C09    C17     109.470    3.000
+ T3J      C09    C10    C16     120.000    3.000
+ T3J      C09    C10    C11     120.000    3.000
+ T3J      C16    C10    C11     120.000    3.000
+ T3J      C10    C16    H16     120.000    3.000
+ T3J      C10    C16    C15     120.000    3.000
+ T3J      H16    C16    C15     120.000    3.000
+ T3J      C16    C15    H15     120.000    3.000
+ T3J      C16    C15    C13     120.000    3.000
+ T3J      H15    C15    C13     120.000    3.000
+ T3J      C10    C11    H11     120.000    3.000
+ T3J      C10    C11    C12     120.000    3.000
+ T3J      H11    C11    C12     120.000    3.000
+ T3J      C11    C12    C13     180.000    3.000
+ T3J      C12    C13    F14     120.000    3.000
+ T3J      C12    C13    C15     120.000    3.000
+ T3J      F14    C13    C15     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ T3J      var_1            O01    C02    C03    H031             180.000           20.000   3
+ T3J      var_2            O01    C02    N05    C06              180.000           20.000   2
+ T3J      var_3            C02    N05    C17    C09             -156.705           20.000   3
+ T3J      var_4            N05    C17    C09    O08              180.000           20.000   3
+ T3J      var_5            C02    N05    C06    C07              120.271           20.000   3
+ T3J      var_6            N05    C06    C07    O08              180.000           20.000   3
+ T3J      var_7            C06    C07    O08    C09               28.438           20.000   3
+ T3J      var_8            C07    O08    C09    C10              169.681           20.000   3
+ T3J      var_9            O08    C09    C10    C11             -107.606           20.000   3
+ T3J      CONST_1          C09    C10    C16    C15                0.000            0.000   0
+ T3J      CONST_2          C10    C16    C15    C13                0.000            0.000   0
+ T3J      CONST_3          C09    C10    C11    C12                0.000            0.000   0
+ T3J      CONST_4          C10    C11    C12    C13               -0.079            0.000   0
+ T3J      CONST_5          C11    C12    C13    F14             -179.881            0.000   0
+ T3J      CONST_6          C12    C13    C15    C16                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ T3J      chir_01          C09    C10    C17    O08       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ T3J      plan-1            C10       0.020
+ T3J      plan-1            C09       0.020
+ T3J      plan-1            C11       0.020
+ T3J      plan-1            C16       0.020
+ T3J      plan-1            C13       0.020
+ T3J      plan-1            C15       0.020
+ T3J      plan-1            C12       0.020
+ T3J      plan-1            F14       0.020
+ T3J      plan-1            H15       0.020
+ T3J      plan-1            H11       0.020
+ T3J      plan-1            H16       0.020
+ T3J      plan-2            C02       0.020
+ T3J      plan-2            C03       0.020
+ T3J      plan-2            N05       0.020
+ T3J      plan-2            O01       0.020
+ T3J      plan-3            N05       0.020
+ T3J      plan-3            C17       0.020
+ T3J      plan-3            C02       0.020
+ T3J      plan-3            C06       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-T3J
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-T3J  1 SG      2 C03       .           1.810    0.020
+# ------------------------------------------------------

@@ -1,0 +1,305 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.51
+_lib_update       11/07/18
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+T7J      T7J '.                                   ' .                  31  18 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-T7J  CYS      .        .        T7J      .        .
+ bond_CYS-SG_=_T7J-C09
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_T7J
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ T7J           O16    O    OS       -1.000      4.518   -8.011   24.671
+ T7J           S14    S    ST        0.000      3.989   -6.915   23.905
+ T7J           C13    C    CSP       0.000      4.352   -5.403   24.698
+ T7J           O15    O    OS       -1.000      2.602   -6.974   23.527
+ T7J           C17    C    C1        0.000      5.003   -6.578   22.480
+ T7J           H17    H    H         0.000      5.409   -7.291   21.783
+ T7J           C11    C    CH1       0.000      5.172   -5.053   22.460
+ T7J           H11    H    H         0.000      4.401   -4.610   21.814
+ T7J           C12    C    C1        0.000      4.978   -4.558   23.888
+ T7J           H12    H    H         0.000      5.323   -3.592   24.217
+ T7J           N06    N    N         0.000      6.490   -4.659   21.979
+ T7J           C07    C    C         0.000      6.715   -4.353   20.670
+ T7J           O08    O    O         0.000      5.909   -4.634   19.795
+ T7J           C09    C    CH3       0.000      8.006   -3.631   20.357
+ T7J           H093   H    H         0.000      8.033   -2.707   20.877
+ T7J           H092   H    H         0.000      8.829   -4.227   20.659
+ T7J           H091   H    H         0.000      8.069   -3.449   19.315
+ T7J           C05    C    CR6       0.000      7.563   -4.603   22.923
+ T7J           C04    C    CR16      0.000      7.915   -5.748   23.632
+ T7J           H04    H    H         0.000      7.387   -6.678   23.462
+ T7J           C03    C    CR16      0.000      8.939   -5.690   24.552
+ T7J           H03    H    H         0.000      9.208   -6.583   25.103
+ T7J           C18    C    CR16      0.000      8.242   -3.408   23.155
+ T7J           H18    H    H         0.000      7.963   -2.508   22.622
+ T7J           C19    C    CR16      0.000      9.274   -3.384   24.072
+ T7J           H19    H    H         0.000      9.817   -2.462   24.237
+ T7J           C02    C    CR6       0.000      9.628   -4.518   24.786
+ T7J           C01    C    CH3       0.000     10.734   -4.492   25.777
+ T7J           H013   H    H         0.000     11.631   -4.218   25.290
+ T7J           H012   H    H         0.000     10.508   -3.787   26.532
+ T7J           H011   H    H         0.000     10.839   -5.453   26.207
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ T7J      O16    n/a    S14    START
+ T7J      S14    O16    C17    .
+ T7J      C13    S14    .      .
+ T7J      O15    S14    .      .
+ T7J      C17    S14    C11    .
+ T7J      H17    C17    .      .
+ T7J      C11    C17    N06    .
+ T7J      H11    C11    .      .
+ T7J      C12    C11    H12    .
+ T7J      H12    C12    .      .
+ T7J      N06    C11    C05    .
+ T7J      C07    N06    C09    .
+ T7J      O08    C07    .      .
+ T7J      C09    C07    H091   .
+ T7J      H093   C09    .      .
+ T7J      H092   C09    .      .
+ T7J      H091   C09    .      .
+ T7J      C05    N06    C18    .
+ T7J      C04    C05    C03    .
+ T7J      H04    C04    .      .
+ T7J      C03    C04    H03    .
+ T7J      H03    C03    .      .
+ T7J      C18    C05    C19    .
+ T7J      H18    C18    .      .
+ T7J      C19    C18    C02    .
+ T7J      H19    C19    .      .
+ T7J      C02    C19    C01    .
+ T7J      C01    C02    H011   .
+ T7J      H013   C01    .      .
+ T7J      H012   C01    .      .
+ T7J      H011   C01    .      END
+ T7J      C13    C12    .    ADD
+ T7J      C02    C03    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ T7J      C13    C12       double      1.255    0.020
+ T7J      C13    S14       double      1.490    0.020
+ T7J      C11    C17       single      1.510    0.020
+ T7J      C17    S14       double      1.565    0.020
+ T7J      C01    C02       single      1.506    0.020
+ T7J      C02    C03       aromatic    1.390    0.020
+ T7J      C02    C19       aromatic    1.390    0.020
+ T7J      C03    C04       aromatic    1.390    0.020
+ T7J      C04    C05       aromatic    1.390    0.020
+ T7J      C18    C05       aromatic    1.390    0.020
+ T7J      C05    N06       single      1.400    0.020
+ T7J      C09    C07       single      1.500    0.020
+ T7J      C07    N06       single      1.330    0.020
+ T7J      O08    C07       double      1.220    0.020
+ T7J      C12    C11       single      1.510    0.020
+ T7J      N06    C11       single      1.455    0.020
+ T7J      C19    C18       aromatic    1.390    0.020
+ T7J      O15    S14       deloc       1.480    0.020
+ T7J      S14    O16       deloc       1.480    0.020
+ T7J      H17    C17       single      1.077    0.020
+ T7J      H011   C01       single      1.059    0.020
+ T7J      H012   C01       single      1.059    0.020
+ T7J      H013   C01       single      1.059    0.020
+ T7J      H03    C03       single      1.083    0.020
+ T7J      H04    C04       single      1.083    0.020
+ T7J      H091   C09       single      1.059    0.020
+ T7J      H092   C09       single      1.059    0.020
+ T7J      H093   C09       single      1.059    0.020
+ T7J      H11    C11       single      1.099    0.020
+ T7J      H12    C12       single      1.077    0.020
+ T7J      H18    C18       single      1.083    0.020
+ T7J      H19    C19       single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ T7J      O16    S14    C13     109.500    3.000
+ T7J      O16    S14    O15     109.500    3.000
+ T7J      O16    S14    C17     109.500    3.000
+ T7J      C13    S14    O15     109.500    3.000
+ T7J      C13    S14    C17     109.500    3.000
+ T7J      O15    S14    C17     109.500    3.000
+ T7J      S14    C13    C12     180.000    3.000
+ T7J      S14    C17    H17     120.000    3.000
+ T7J      S14    C17    C11     120.000    3.000
+ T7J      H17    C17    C11     120.000    3.000
+ T7J      C17    C11    H11     108.810    3.000
+ T7J      C17    C11    C12     109.500    3.000
+ T7J      C17    C11    N06     111.600    3.000
+ T7J      H11    C11    C12     108.810    3.000
+ T7J      H11    C11    N06     109.470    3.000
+ T7J      C12    C11    N06     111.600    3.000
+ T7J      C11    C12    H12     120.000    3.000
+ T7J      C11    C12    C13     120.000    3.000
+ T7J      H12    C12    C13     120.000    3.000
+ T7J      C11    N06    C07     121.000    3.000
+ T7J      C11    N06    C05     120.000    3.000
+ T7J      C07    N06    C05     120.000    3.000
+ T7J      N06    C07    O08     123.000    3.000
+ T7J      N06    C07    C09     116.500    3.000
+ T7J      O08    C07    C09     123.000    3.000
+ T7J      C07    C09    H093    109.470    3.000
+ T7J      C07    C09    H092    109.470    3.000
+ T7J      C07    C09    H091    109.470    3.000
+ T7J      H093   C09    H092    109.470    3.000
+ T7J      H093   C09    H091    109.470    3.000
+ T7J      H092   C09    H091    109.470    3.000
+ T7J      N06    C05    C04     120.000    3.000
+ T7J      N06    C05    C18     120.000    3.000
+ T7J      C04    C05    C18     120.000    3.000
+ T7J      C05    C04    H04     120.000    3.000
+ T7J      C05    C04    C03     120.000    3.000
+ T7J      H04    C04    C03     120.000    3.000
+ T7J      C04    C03    H03     120.000    3.000
+ T7J      C04    C03    C02     120.000    3.000
+ T7J      H03    C03    C02     120.000    3.000
+ T7J      C05    C18    H18     120.000    3.000
+ T7J      C05    C18    C19     120.000    3.000
+ T7J      H18    C18    C19     120.000    3.000
+ T7J      C18    C19    H19     120.000    3.000
+ T7J      C18    C19    C02     120.000    3.000
+ T7J      H19    C19    C02     120.000    3.000
+ T7J      C19    C02    C01     120.000    3.000
+ T7J      C19    C02    C03     120.000    3.000
+ T7J      C01    C02    C03     120.000    3.000
+ T7J      C02    C01    H013    109.470    3.000
+ T7J      C02    C01    H012    109.470    3.000
+ T7J      C02    C01    H011    109.470    3.000
+ T7J      H013   C01    H012    109.470    3.000
+ T7J      H013   C01    H011    109.470    3.000
+ T7J      H012   C01    H011    109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ T7J      var_1            O16    S14    C13    C12              125.745           20.000   3
+ T7J      var_2            S14    C13    C12    C11                2.991           20.000   3
+ T7J      var_3            O16    S14    C17    C11             -134.379           20.000   3
+ T7J      var_4            S14    C17    C11    N06              144.888           20.000   3
+ T7J      var_5            C17    C11    C12    C13              -18.728           20.000   3
+ T7J      var_6            C17    C11    N06    C05                0.000           20.000   3
+ T7J      var_7            C11    N06    C07    C09              180.000           20.000   2
+ T7J      var_8            N06    C07    C09    H091             180.000           20.000   3
+ T7J      var_9            C11    N06    C05    C18             -119.824           20.000   3
+ T7J      CONST_1          N06    C05    C04    C03                0.000            0.000   0
+ T7J      CONST_2          C05    C04    C03    C02                0.000            0.000   0
+ T7J      CONST_3          N06    C05    C18    C19                0.000            0.000   0
+ T7J      CONST_4          C05    C18    C19    C02                0.000            0.000   0
+ T7J      CONST_5          C18    C19    C02    C01                0.000            0.000   0
+ T7J      CONST_6          C19    C02    C03    C04                0.000            0.000   0
+ T7J      var_10           C19    C02    C01    H011             180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ T7J      chir_01          C11    C17    C12    N06       negativ
+ T7J      chir_02          S14    C13    C17    O15       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ T7J      plan-1            C17       0.020
+ T7J      plan-1            C11       0.020
+ T7J      plan-1            S14       0.020
+ T7J      plan-1            H17       0.020
+ T7J      plan-2            C02       0.020
+ T7J      plan-2            C01       0.020
+ T7J      plan-2            C03       0.020
+ T7J      plan-2            C19       0.020
+ T7J      plan-2            C04       0.020
+ T7J      plan-2            C05       0.020
+ T7J      plan-2            C18       0.020
+ T7J      plan-2            H03       0.020
+ T7J      plan-2            H04       0.020
+ T7J      plan-2            N06       0.020
+ T7J      plan-2            H18       0.020
+ T7J      plan-2            H19       0.020
+ T7J      plan-3            C07       0.020
+ T7J      plan-3            C09       0.020
+ T7J      plan-3            N06       0.020
+ T7J      plan-3            O08       0.020
+ T7J      plan-4            C12       0.020
+ T7J      plan-4            C13       0.020
+ T7J      plan-4            C11       0.020
+ T7J      plan-4            H12       0.020
+ T7J      plan-5            N06       0.020
+ T7J      plan-5            C05       0.020
+ T7J      plan-5            C07       0.020
+ T7J      plan-5            C11       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-T7J
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-T7J  1 SG      2 C09       .           1.810    0.020
+# ------------------------------------------------------
