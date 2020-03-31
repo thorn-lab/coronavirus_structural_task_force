@@ -1,0 +1,252 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.51
+_lib_update       11/07/18
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+JGY      JGY '.                                   ' .                  27  15 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_JGY
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ JGY           O08    O    O         0.000      4.640   -0.155   -9.262
+ JGY           C07    C    C         0.000      4.628   -1.243   -8.805
+ JGY           C05    C    CR5       0.000      5.385   -1.481   -7.476
+ JGY           C04    C    CSP       0.000      5.297   -2.604   -6.641
+ JGY           C03    C    CR15      0.000      6.119   -2.381   -5.597
+ JGY           H03    H    H         0.000      6.292   -3.046   -4.760
+ JGY           N06    N    NRD5      0.000      6.213   -0.648   -6.938
+ JGY           N02    N    NR5       0.000      6.676   -1.193   -5.788
+ JGY           C01    C    CH3       0.000      7.639   -0.559   -4.874
+ JGY           H013   H    H         0.000      8.543   -0.374   -5.392
+ JGY           H012   H    H         0.000      7.238    0.354   -4.521
+ JGY           H011   H    H         0.000      7.823   -1.205   -4.057
+ JGY           N09    N    NH1       0.000      3.883   -2.328   -9.474
+ JGY           HN09   H    H         0.000      3.866   -3.251   -9.065
+ JGY           C10    C    CH2       0.000      3.158   -2.069  -10.746
+ JGY           H101   H    H         0.000      2.919   -1.006  -10.824
+ JGY           H102   H    H         0.000      2.235   -2.652  -10.769
+ JGY           C11    C    CH1       0.000      4.033   -2.471  -11.894
+ JGY           H11    H    H         0.000      5.001   -1.955  -11.824
+ JGY           C12    C    C1        0.000      3.304   -2.108  -13.337
+ JGY           H12    H    H         0.000      2.599   -1.315  -13.523
+ JGY           O15    O    O2        0.000      4.218   -3.763  -11.881
+ JGY           C14    C    CH2       0.000      4.259   -4.204  -13.366
+ JGY           H141   H    H         0.000      3.602   -5.058  -13.544
+ JGY           H142   H    H         0.000      5.275   -4.457  -13.676
+ JGY           C13    C    C1        0.000      3.748   -2.964  -14.194
+ JGY           H13    H    H         0.000      3.766   -2.853  -15.265
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ JGY      O08    n/a    C07    START
+ JGY      C07    O08    N09    .
+ JGY      C05    C07    N06    .
+ JGY      C04    C05    C03    .
+ JGY      C03    C04    H03    .
+ JGY      H03    C03    .      .
+ JGY      N06    C05    N02    .
+ JGY      N02    N06    C01    .
+ JGY      C01    N02    H011   .
+ JGY      H013   C01    .      .
+ JGY      H012   C01    .      .
+ JGY      H011   C01    .      .
+ JGY      N09    C07    C10    .
+ JGY      HN09   N09    .      .
+ JGY      C10    N09    C11    .
+ JGY      H101   C10    .      .
+ JGY      H102   C10    .      .
+ JGY      C11    C10    O15    .
+ JGY      H11    C11    .      .
+ JGY      C12    C11    H12    .
+ JGY      H12    C12    .      .
+ JGY      O15    C11    C14    .
+ JGY      C14    O15    C13    .
+ JGY      H141   C14    .      .
+ JGY      H142   C14    .      .
+ JGY      C13    C14    H13    .
+ JGY      H13    C13    .      END
+ JGY      C13    C12    .    ADD
+ JGY      N02    C03    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ JGY      C10    N09       single      1.450    0.020
+ JGY      C11    C10       single      1.524    0.020
+ JGY      C13    C12       double      1.330    0.020
+ JGY      C13    C14       single      1.510    0.020
+ JGY      C01    N02       single      1.485    0.020
+ JGY      N02    C03       single      1.337    0.020
+ JGY      N02    N06       single      1.402    0.020
+ JGY      C03    C04       double      1.335    0.020
+ JGY      C04    C05       aromatic    1.335    0.020
+ JGY      N06    C05       deloc       1.350    0.020
+ JGY      C05    C07       single      1.490    0.020
+ JGY      C07    O08       double      1.220    0.020
+ JGY      N09    C07       single      1.330    0.020
+ JGY      C12    C11       single      1.510    0.020
+ JGY      O15    C11       single      1.426    0.020
+ JGY      C14    O15       single      1.426    0.020
+ JGY      H101   C10       single      1.092    0.020
+ JGY      H102   C10       single      1.092    0.020
+ JGY      H13    C13       single      1.077    0.020
+ JGY      H011   C01       single      1.059    0.020
+ JGY      H012   C01       single      1.059    0.020
+ JGY      H013   C01       single      1.059    0.020
+ JGY      H03    C03       single      1.083    0.020
+ JGY      HN09   N09       single      1.010    0.020
+ JGY      H11    C11       single      1.099    0.020
+ JGY      H12    C12       single      1.077    0.020
+ JGY      H141   C14       single      1.092    0.020
+ JGY      H142   C14       single      1.092    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ JGY      O08    C07    C05     120.500    3.000
+ JGY      O08    C07    N09     123.000    3.000
+ JGY      C05    C07    N09     120.000    3.000
+ JGY      C07    C05    C04     108.000    3.000
+ JGY      C07    C05    N06     126.000    3.000
+ JGY      C04    C05    N06     108.000    3.000
+ JGY      C05    C04    C03     180.000    3.000
+ JGY      C04    C03    H03     108.000    3.000
+ JGY      C04    C03    N02     108.000    3.000
+ JGY      H03    C03    N02     126.000    3.000
+ JGY      C05    N06    N02     108.000    3.000
+ JGY      N06    N02    C01     108.000    3.000
+ JGY      N06    N02    C03     108.000    3.000
+ JGY      C01    N02    C03     126.000    3.000
+ JGY      N02    C01    H013    109.470    3.000
+ JGY      N02    C01    H012    109.470    3.000
+ JGY      N02    C01    H011    109.470    3.000
+ JGY      H013   C01    H012    109.470    3.000
+ JGY      H013   C01    H011    109.470    3.000
+ JGY      H012   C01    H011    109.470    3.000
+ JGY      C07    N09    HN09    120.000    3.000
+ JGY      C07    N09    C10     121.500    3.000
+ JGY      HN09   N09    C10     118.500    3.000
+ JGY      N09    C10    H101    109.470    3.000
+ JGY      N09    C10    H102    109.470    3.000
+ JGY      N09    C10    C11     110.000    3.000
+ JGY      H101   C10    H102    107.900    3.000
+ JGY      H101   C10    C11     109.470    3.000
+ JGY      H102   C10    C11     109.470    3.000
+ JGY      C10    C11    H11     108.340    3.000
+ JGY      C10    C11    C12     109.470    3.000
+ JGY      C10    C11    O15     109.470    3.000
+ JGY      H11    C11    C12     108.810    3.000
+ JGY      H11    C11    O15     109.470    3.000
+ JGY      C12    C11    O15     109.500    3.000
+ JGY      C11    C12    H12     120.000    3.000
+ JGY      C11    C12    C13     120.000    3.000
+ JGY      H12    C12    C13     120.000    3.000
+ JGY      C11    O15    C14     111.800    3.000
+ JGY      O15    C14    H141    109.470    3.000
+ JGY      O15    C14    H142    109.470    3.000
+ JGY      O15    C14    C13     109.500    3.000
+ JGY      H141   C14    H142    107.900    3.000
+ JGY      H141   C14    C13     109.470    3.000
+ JGY      H142   C14    C13     109.470    3.000
+ JGY      C14    C13    H13     120.000    3.000
+ JGY      C14    C13    C12     120.000    3.000
+ JGY      H13    C13    C12     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ JGY      var_1            O08    C07    C05    N06              -12.194           20.000   3
+ JGY      CONST_1          C07    C05    C04    C03             -179.667            0.000   0
+ JGY      CONST_2          C05    C04    C03    N02               -0.119            0.000   0
+ JGY      CONST_3          C07    C05    N06    N02                0.000            0.000   0
+ JGY      CONST_4          C05    N06    N02    C01             -179.831            0.000   0
+ JGY      CONST_5          N06    N02    C03    C04              180.000            0.000   0
+ JGY      var_2            N06    N02    C01    H011             180.000           20.000   3
+ JGY      var_3            O08    C07    N09    C10              180.000           20.000   2
+ JGY      var_4            C07    N09    C10    C11                0.000           20.000   3
+ JGY      var_5            N09    C10    C11    O15              180.000           20.000   3
+ JGY      var_6            C10    C11    C12    C13             -151.435           20.000   3
+ JGY      var_7            C10    C11    O15    C14              144.099           20.000   3
+ JGY      var_8            C11    O15    C14    C13              -12.100           20.000   3
+ JGY      var_9            O15    C14    C13    C12               -8.916           20.000   3
+ JGY      var_10           C14    C13    C12    C11               22.026           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ JGY      chir_01          C11    C10    C12    O15       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ JGY      plan-1            C13       0.020
+ JGY      plan-1            C12       0.020
+ JGY      plan-1            C14       0.020
+ JGY      plan-1            H13       0.020
+ JGY      plan-1            H12       0.020
+ JGY      plan-2            N02       0.020
+ JGY      plan-2            C01       0.020
+ JGY      plan-2            C03       0.020
+ JGY      plan-2            N06       0.020
+ JGY      plan-2            C04       0.020
+ JGY      plan-2            C05       0.020
+ JGY      plan-2            H03       0.020
+ JGY      plan-2            C07       0.020
+ JGY      plan-3            C07       0.020
+ JGY      plan-3            C05       0.020
+ JGY      plan-3            O08       0.020
+ JGY      plan-3            N09       0.020
+ JGY      plan-3            HN09      0.020
+ JGY      plan-4            N09       0.020
+ JGY      plan-4            C10       0.020
+ JGY      plan-4            C07       0.020
+ JGY      plan-4            HN09      0.020
+ JGY      plan-5            C12       0.020
+ JGY      plan-5            C13       0.020
+ JGY      plan-5            C11       0.020
+ JGY      plan-5            H12       0.020
+ JGY      plan-5            H13       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

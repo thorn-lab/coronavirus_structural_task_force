@@ -1,0 +1,283 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.51
+_lib_update       11/07/18
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+T4M      T4M '.                                   ' .                  26  16 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-T4M  CYS      .        .        T4M      .        .
+ bond_CYS-SG_=_T4M-C3
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_T4M
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ T4M           O      O    O         0.000      5.606   -5.162   20.023
+ T4M           C2     C    C         0.000      6.483   -4.438   20.499
+ T4M           C3     C    CH3       0.000      6.850   -3.264   19.601
+ T4M           H33    H    H         0.000      7.208   -3.624   18.669
+ T4M           H32    H    H         0.000      5.995   -2.658   19.435
+ T4M           H31    H    H         0.000      7.606   -2.681   20.064
+ T4M           N      N    N         0.000      7.139   -4.763   21.625
+ T4M           C1     C    CH1       0.000      7.407   -3.909   22.792
+ T4M           H10    H    H         0.000      8.400   -4.188   23.171
+ T4M           C      C    CH3       0.000      7.472   -2.432   22.422
+ T4M           H3     H    H         0.000      8.248   -2.278   21.717
+ T4M           H2     H    H         0.000      6.548   -2.133   22.000
+ T4M           H1     H    H         0.000      7.667   -1.859   23.291
+ T4M           C4     C    C         0.000      6.415   -4.156   23.921
+ T4M           C13    C    C         0.000      6.843   -4.152   25.297
+ T4M           C12    C    C1        0.000      8.185   -3.936   25.718
+ T4M           H12    H    H         0.000      8.946   -3.756   24.977
+ T4M           C11    C    C1        0.000      8.531   -3.952   27.037
+ T4M           H11    H    H         0.000      9.557   -3.790   27.323
+ T4M           C10    C    CSP       0.000      7.561   -4.178   28.023
+ T4M           C9     C    CSP       0.000      6.266   -4.383   27.675
+ T4M           C8     C    C         0.000      5.869   -4.377   26.316
+ T4M           C7     C    CSP       0.000      4.520   -4.595   25.953
+ T4M           C6     C    CSP       0.000      4.138   -4.593   24.653
+ T4M           C5     C    C1        0.000      5.088   -4.377   23.638
+ T4M           H5     H    H         0.000      4.767   -4.385   22.610
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ T4M      O      n/a    C2     START
+ T4M      C2     O      N      .
+ T4M      C3     C2     H31    .
+ T4M      H33    C3     .      .
+ T4M      H32    C3     .      .
+ T4M      H31    C3     .      .
+ T4M      N      C2     C1     .
+ T4M      C1     N      C4     .
+ T4M      H10    C1     .      .
+ T4M      C      C1     H1     .
+ T4M      H3     C      .      .
+ T4M      H2     C      .      .
+ T4M      H1     C      .      .
+ T4M      C4     C1     C13    .
+ T4M      C13    C4     C12    .
+ T4M      C12    C13    C11    .
+ T4M      H12    C12    .      .
+ T4M      C11    C12    C10    .
+ T4M      H11    C11    .      .
+ T4M      C10    C11    C9     .
+ T4M      C9     C10    C8     .
+ T4M      C8     C9     C7     .
+ T4M      C7     C8     C6     .
+ T4M      C6     C7     C5     .
+ T4M      C5     C6     H5     .
+ T4M      H5     C5     .      END
+ T4M      C4     C5     .    ADD
+ T4M      C8     C13    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ T4M      C4     C5        aromatic    1.340    0.020
+ T4M      C13    C4        aromatic    1.330    0.020
+ T4M      C4     C1        single      1.500    0.020
+ T4M      C5     C6        aromatic    1.255    0.020
+ T4M      C6     C7        double      1.180    0.020
+ T4M      C7     C8        aromatic    1.255    0.020
+ T4M      C8     C13       aromatic    1.330    0.020
+ T4M      C8     C9        aromatic    1.255    0.020
+ T4M      C10    C11       aromatic    1.255    0.020
+ T4M      C9     C10       double      1.180    0.020
+ T4M      C12    C13       aromatic    1.340    0.020
+ T4M      C1     N         single      1.455    0.020
+ T4M      N      C2        deloc       1.330    0.020
+ T4M      C      C1        single      1.524    0.020
+ T4M      C2     O         double      1.220    0.020
+ T4M      C11    C12       aromatic    1.330    0.020
+ T4M      C3     C2        single      1.500    0.020
+ T4M      H5     C5        single      1.077    0.020
+ T4M      H1     C         single      1.059    0.020
+ T4M      H2     C         single      1.059    0.020
+ T4M      H3     C         single      1.059    0.020
+ T4M      H10    C1        single      1.099    0.020
+ T4M      H11    C11       single      1.077    0.020
+ T4M      H12    C12       single      1.077    0.020
+ T4M      H31    C3        single      1.059    0.020
+ T4M      H32    C3        single      1.059    0.020
+ T4M      H33    C3        single      1.059    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ T4M      O      C2     C3      123.000    3.000
+ T4M      O      C2     N       123.000    3.000
+ T4M      C3     C2     N       116.500    3.000
+ T4M      C2     C3     H33     109.470    3.000
+ T4M      C2     C3     H32     109.470    3.000
+ T4M      C2     C3     H31     109.470    3.000
+ T4M      H33    C3     H32     109.470    3.000
+ T4M      H33    C3     H31     109.470    3.000
+ T4M      H32    C3     H31     109.470    3.000
+ T4M      C2     N      C1      121.000    3.000
+ T4M      N      C1     H10     109.470    3.000
+ T4M      N      C1     C       109.500    3.000
+ T4M      N      C1     C4      111.600    3.000
+ T4M      H10    C1     C       108.340    3.000
+ T4M      H10    C1     C4      108.810    3.000
+ T4M      C      C1     C4      109.470    3.000
+ T4M      C1     C      H3      109.470    3.000
+ T4M      C1     C      H2      109.470    3.000
+ T4M      C1     C      H1      109.470    3.000
+ T4M      H3     C      H2      109.470    3.000
+ T4M      H3     C      H1      109.470    3.000
+ T4M      H2     C      H1      109.470    3.000
+ T4M      C1     C4     C13     120.000    3.000
+ T4M      C1     C4     C5      120.000    3.000
+ T4M      C13    C4     C5      120.000    3.000
+ T4M      C4     C13    C12     120.000    3.000
+ T4M      C4     C13    C8      120.000    3.000
+ T4M      C12    C13    C8      120.000    3.000
+ T4M      C13    C12    H12     120.000    3.000
+ T4M      C13    C12    C11     120.000    3.000
+ T4M      H12    C12    C11     120.000    3.000
+ T4M      C12    C11    H11     120.000    3.000
+ T4M      C12    C11    C10     120.000    3.000
+ T4M      H11    C11    C10     120.000    3.000
+ T4M      C11    C10    C9      180.000    3.000
+ T4M      C10    C9     C8      180.000    3.000
+ T4M      C9     C8     C7      120.000    3.000
+ T4M      C9     C8     C13     120.000    3.000
+ T4M      C7     C8     C13     120.000    3.000
+ T4M      C8     C7     C6      180.000    3.000
+ T4M      C7     C6     C5      180.000    3.000
+ T4M      C6     C5     H5      120.000    3.000
+ T4M      C6     C5     C4      120.000    3.000
+ T4M      H5     C5     C4      120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ T4M      var_1            O      C2     C3     H31              180.000           20.000   3
+ T4M      CONST_1          O      C2     N      C1               180.000            0.000   0
+ T4M      var_2            C2     N      C1     C4                 0.000           20.000   3
+ T4M      var_3            N      C1     C      H1               180.000           20.000   3
+ T4M      var_4            N      C1     C4     C13              180.000           20.000   3
+ T4M      var_5            C1     C4     C5     C6              -179.223           20.000   3
+ T4M      var_6            C1     C4     C13    C12               -0.520           20.000   3
+ T4M      var_7            C4     C13    C12    C11             -179.591           20.000   3
+ T4M      var_8            C13    C12    C11    C10               -0.305           20.000   3
+ T4M      var_9            C12    C11    C10    C9                -0.020           20.000   3
+ T4M      var_10           C11    C10    C9     C8                 0.181           20.000   3
+ T4M      var_11           C10    C9     C8     C7               179.791           20.000   3
+ T4M      var_12           C9     C8     C13    C4               179.754           20.000   3
+ T4M      var_13           C9     C8     C7     C6              -179.837           20.000   3
+ T4M      var_14           C8     C7     C6     C5                 0.241           20.000   3
+ T4M      var_15           C7     C6     C5     C4                -0.375           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ T4M      chir_01          C1     C4     N      C         negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ T4M      plan-1            C4        0.020
+ T4M      plan-1            C5        0.020
+ T4M      plan-1            C13       0.020
+ T4M      plan-1            C1        0.020
+ T4M      plan-1            H5        0.020
+ T4M      plan-2            C5        0.020
+ T4M      plan-2            C4        0.020
+ T4M      plan-2            C6        0.020
+ T4M      plan-2            H5        0.020
+ T4M      plan-3            C8        0.020
+ T4M      plan-3            C7        0.020
+ T4M      plan-3            C13       0.020
+ T4M      plan-3            C9        0.020
+ T4M      plan-4            C13       0.020
+ T4M      plan-4            C4        0.020
+ T4M      plan-4            C8        0.020
+ T4M      plan-4            C12       0.020
+ T4M      plan-4            H12       0.020
+ T4M      plan-5            N         0.020
+ T4M      plan-5            C1        0.020
+ T4M      plan-5            C2        0.020
+ T4M      plan-5            O         0.020
+ T4M      plan-5            C3        0.020
+ T4M      plan-6            C11       0.020
+ T4M      plan-6            C10       0.020
+ T4M      plan-6            C12       0.020
+ T4M      plan-6            H11       0.020
+ T4M      plan-6            H12       0.020
+ T4M      plan-7            C12       0.020
+ T4M      plan-7            C13       0.020
+ T4M      plan-7            C11       0.020
+ T4M      plan-7            H12       0.020
+ T4M      plan-7            H11       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-T4M
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-T4M  1 SG      2 C3        .           1.820    0.020
+# ------------------------------------------------------

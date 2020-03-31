@@ -1,0 +1,216 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.51
+_lib_update       11/07/18
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+T54      T54 '.                                   ' .                  22  13 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_T54
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ T54           O03    O    O         0.000      9.330    1.303   21.126
+ T54           C02    C    C         0.000      9.673    1.800   22.179
+ T54           N01    N    NH2       0.000     10.469    3.035   22.181
+ T54           H012   H    H         0.000     10.758    3.513   21.307
+ T54           H011   H    H         0.000     10.783    3.494   23.056
+ T54           C04    C    CR5       0.000      9.295    1.139   23.547
+ T54           C08    C    CR5       0.000      9.863   -0.426   23.620
+ T54           C07    C    CR15      0.000      8.933   -1.154   22.945
+ T54           H07    H    H         0.000      9.095   -2.018   22.313
+ T54           C06    C    CH2       0.000      7.570   -0.455   23.293
+ T54           H061   H    H         0.000      7.068   -0.943   24.131
+ T54           H062   H    H         0.000      6.898   -0.430   22.433
+ T54           C05    C    CR15      0.000      7.971    1.051   23.708
+ T54           H05    H    H         0.000      7.303    1.833   24.048
+ T54           C09    C    CR5       0.000     11.285   -0.517   23.013
+ T54           C13    C    CR15      0.000     11.652   -1.512   22.085
+ T54           H13    H    H         0.000     11.025   -2.300   21.687
+ T54           S12    S    S2        0.000     13.340   -1.206   21.711
+ T54           C11    C    CR15      0.000     13.548    0.185   22.754
+ T54           H11    H    H         0.000     14.452    0.766   22.889
+ T54           C10    C    CR15      0.000     12.298    0.400   23.386
+ T54           H10    H    H         0.000     12.131    1.200   24.097
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ T54      O03    n/a    C02    START
+ T54      C02    O03    C04    .
+ T54      N01    C02    H011   .
+ T54      H012   N01    .      .
+ T54      H011   N01    .      .
+ T54      C04    C02    C08    .
+ T54      C08    C04    C09    .
+ T54      C07    C08    C06    .
+ T54      H07    C07    .      .
+ T54      C06    C07    C05    .
+ T54      H061   C06    .      .
+ T54      H062   C06    .      .
+ T54      C05    C06    H05    .
+ T54      H05    C05    .      .
+ T54      C09    C08    C13    .
+ T54      C13    C09    S12    .
+ T54      H13    C13    .      .
+ T54      S12    C13    C11    .
+ T54      C11    S12    C10    .
+ T54      H11    C11    .      .
+ T54      C10    C11    H10    .
+ T54      H10    C10    .      END
+ T54      C10    C09    .    ADD
+ T54      C04    C05    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ T54      C10    C09       aromatic    1.387    0.020
+ T54      C10    C11       aromatic    1.380    0.020
+ T54      C13    C09       aromatic    1.387    0.020
+ T54      S12    C13       single      1.745    0.020
+ T54      C04    C02       single      1.490    0.020
+ T54      N01    C02       single      1.332    0.020
+ T54      C02    O03       double      1.220    0.020
+ T54      C04    C05       double      1.387    0.020
+ T54      C08    C04       single      1.490    0.020
+ T54      C05    C06       single      1.507    0.020
+ T54      C06    C07       single      1.507    0.020
+ T54      C07    C08       aromatic    1.387    0.020
+ T54      C09    C08       single      1.490    0.020
+ T54      C11    S12       single      1.745    0.020
+ T54      H10    C10       single      1.083    0.020
+ T54      H13    C13       single      1.083    0.020
+ T54      H05    C05       single      1.083    0.020
+ T54      H061   C06       single      1.092    0.020
+ T54      H062   C06       single      1.092    0.020
+ T54      H07    C07       single      1.083    0.020
+ T54      H11    C11       single      1.083    0.020
+ T54      H011   N01       single      1.010    0.020
+ T54      H012   N01       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ T54      O03    C02    N01     123.000    3.000
+ T54      O03    C02    C04     120.500    3.000
+ T54      N01    C02    C04     120.000    3.000
+ T54      C02    N01    H012    120.000    3.000
+ T54      C02    N01    H011    120.000    3.000
+ T54      H012   N01    H011    120.000    3.000
+ T54      C02    C04    C08     117.000    3.000
+ T54      C02    C04    C05     126.000    3.000
+ T54      C08    C04    C05     108.000    3.000
+ T54      C04    C08    C07     108.000    3.000
+ T54      C04    C08    C09     108.000    3.000
+ T54      C07    C08    C09     108.000    3.000
+ T54      C08    C07    H07     126.000    3.000
+ T54      C08    C07    C06     108.000    3.000
+ T54      H07    C07    C06     126.000    3.000
+ T54      C07    C06    H061    109.470    3.000
+ T54      C07    C06    H062    109.470    3.000
+ T54      C07    C06    C05     109.500    3.000
+ T54      H061   C06    H062    107.900    3.000
+ T54      H061   C06    C05     109.470    3.000
+ T54      H062   C06    C05     109.470    3.000
+ T54      C06    C05    H05     126.000    3.000
+ T54      C06    C05    C04     108.000    3.000
+ T54      H05    C05    C04     126.000    3.000
+ T54      C08    C09    C13     108.000    3.000
+ T54      C08    C09    C10     108.000    3.000
+ T54      C13    C09    C10     108.000    3.000
+ T54      C09    C13    H13     126.000    3.000
+ T54      C09    C13    S12     108.000    3.000
+ T54      H13    C13    S12     108.000    3.000
+ T54      C13    S12    C11      97.226    3.000
+ T54      S12    C11    H11     108.000    3.000
+ T54      S12    C11    C10     108.000    3.000
+ T54      H11    C11    C10     126.000    3.000
+ T54      C11    C10    H10     126.000    3.000
+ T54      C11    C10    C09     108.000    3.000
+ T54      H10    C10    C09     126.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ T54      CONST_1          O03    C02    N01    H011             180.000            0.000   0
+ T54      var_1            O03    C02    C04    C08               57.336           20.000   3
+ T54      CONST_2          C02    C04    C05    C06                0.000            0.000   0
+ T54      CONST_3          C02    C04    C08    C09                0.000            0.000   0
+ T54      CONST_4          C04    C08    C07    C06                0.000            0.000   0
+ T54      CONST_5          C08    C07    C06    C05               23.334            0.000   0
+ T54      CONST_6          C07    C06    C05    C04                2.330            0.000   0
+ T54      var_2            C04    C08    C09    C13                0.000           20.000   2
+ T54      CONST_7          C08    C09    C13    S12                0.000            0.000   0
+ T54      CONST_8          C09    C13    S12    C11                0.240            0.000   0
+ T54      CONST_9          C13    S12    C11    C10               -0.020            0.000   0
+ T54      CONST_10         S12    C11    C10    C09               -0.234            0.000   0
+ T54      CONST_11         C11    C10    C09    C08                0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ T54      plan-1            C10       0.020
+ T54      plan-1            C09       0.020
+ T54      plan-1            C11       0.020
+ T54      plan-1            H10       0.020
+ T54      plan-1            C13       0.020
+ T54      plan-1            S12       0.020
+ T54      plan-1            H13       0.020
+ T54      plan-1            C08       0.020
+ T54      plan-1            H11       0.020
+ T54      plan-2            C02       0.020
+ T54      plan-2            C04       0.020
+ T54      plan-2            N01       0.020
+ T54      plan-2            O03       0.020
+ T54      plan-2            H012      0.020
+ T54      plan-2            H011      0.020
+ T54      plan-3            C04       0.020
+ T54      plan-3            C02       0.020
+ T54      plan-3            C05       0.020
+ T54      plan-3            C08       0.020
+ T54      plan-3            C06       0.020
+ T54      plan-3            C07       0.020
+ T54      plan-3            H05       0.020
+ T54      plan-3            H07       0.020
+ T54      plan-3            C09       0.020
+ T54      plan-4            N01       0.020
+ T54      plan-4            C02       0.020
+ T54      plan-4            H011      0.020
+ T54      plan-4            H012      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
