@@ -3,9 +3,6 @@
 #p is the protein folder
 #x is the virus/pdbid path to the folder
 #c is the pdb code
-#e is the entry in lower case (for pdb_redo)
-
-
 
 cd pdb
 
@@ -81,18 +78,3 @@ do
      cd ..
 done
 cd ..
-
-#     for x in */*/* ;
-#     do
-#         c=`basename $x`;
-#         echo $x
-#         e="${c,,}" ;
-#         cd $x ;
-#         cd validation
-#         mkdir pdb-redo
-#         cd pdb-redo
-#         wget https://pdb-redo.eu/db/$e.zip
-#         unzip $e.zip
-#         rm $e.zip
-#         cd $base
-#     done
