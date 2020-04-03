@@ -24,16 +24,16 @@ We are methods developers in structural biology. During this time of crisis, we 
 This is a project in progress. While we strongly suggest users to work with Git so that they can synchronize with us conveniently, there is also a possibility to fetch the most recent update as a zip package by clicking the Green Button "Clone or download" and "Download Zip". 
 ## Download for non-git users
 
-This is a project in progress. While we strongly suggest users to work with Git so that they can synchronize with us conveniently, there is also a possibility to fetch the most recent update as a zip package by clicking the Green Button "Clone or download" and "Download Zip". If you only want a part of the data (for example a certain PDB entry or a certain file type from all PDB entries), then you download the python script git_fetch.py[https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/utils/git_fetch.py]. You need a working python to use it, and it works like this from your command line:<br>
+This is a project in progress. While we strongly suggest users to work with Git so that they can synchronize with us conveniently, there is also a possibility to fetch the most recent update as a zip package by clicking the Green Button "Clone or download" and "Download Zip". If you only want a part of the data (for example a certain PDB entry or a certain file type from all PDB entries), then you download the python script git_fetch.py[https://github.com/thorn-lab/coronavirus_structural_task_force/raw/master/utils/git_fetch.py]. You need a working python to use it, and it works like this from your command line:<br>
 Usage:<br>
 ```python git_fetch.py -A kw1,kw2 [-P prefix_dir]```
 <br><br>
 Examples:<br>
-Download all txt files in 6vww entry: ```python get_fetch.py -A 6vww,txt```
+Download all txt files in 6vww entry: ```python git_fetch.py -A 6vww,txt```
 <br>
-Download all reflection files for all PDB entries to /home/user: ```python get_fetch.py -A -sf.mtz -P /home/user```
+Download all reflection files for all PDB entries to /home/user: ```python git_fetch.py -A -sf.mtz -P /home/user```
 <br>
-Download all data in the methyltransferase subdirectory: ```python get_fetch.py -A methyltransferase```
+Download all data in the methyltransferase subdirectory: ```python git_fetch.py -A methyltransferase```
 
 ## Folder stucture 
 
