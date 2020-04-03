@@ -64,15 +64,15 @@ re-processing and re-refinement of several SARS-CoV-2 structures<br><br>
 https://www.diamond.ac.uk/covid-19/for-scientists.html<br>
 Info on Diamond work on main protease; related: https://covid.postera.ai/covid<br><br>
 https://www.ebi.ac.uk/ena/pathogens/covid-19<br>
-Data resources held at EMBL-EBI relating to the COVID-19 outbreak, including sequences of outbreak isolates and records relating to coronavirus biology
-http://www.hecbiosim.ac.uk/covid-19
-Links for covid19 related research that falls into biomolecular modelling and simulation 
-https://www.rcsb.org/news?year=2020&article=5e74d55d2d410731e9944f52&feature=true
-Varius links to COVID-19/SARS-CoV-2 Resources from RCSB PDB
-https://www.compbiomed.eu/compbiomed-and-coronavirus/
-CompBioMed is a consortium redirecting research effort and funding to computational investigations that will improve our understanding of the SARS-CoV-2 virus, COVID-19, and accelerate the development of treatment options, including antiviral drugs and vaccines.
-http://predictioncenter.org/caspcommons/index.cgi
-SARS-2-CoV structure modeling initiative
+Data resources held at EMBL-EBI relating to the COVID-19 outbreak, including sequences of outbreak isolates and records relating to coronavirus biology<br>
+http://www.hecbiosim.ac.uk/covid-19<br>
+Links for covid19 related research that falls into biomolecular modelling and simulation <br>
+https://www.rcsb.org/news?year=2020&article=5e74d55d2d410731e9944f52&feature=true<br>
+Varius links to COVID-19/SARS-CoV-2 Resources from RCSB PDB<br>
+https://www.compbiomed.eu/compbiomed-and-coronavirus/<br>
+CompBioMed is a consortium redirecting research effort and funding to computational investigations that will improve our understanding of the SARS-CoV-2 virus, COVID-19, and accelerate the development of treatment options, including antiviral drugs and vaccines.<br>
+http://predictioncenter.org/caspcommons/index.cgi<br>
+SARS-2-CoV structure modelling initiative<br>
 
 ## Contributors
 
