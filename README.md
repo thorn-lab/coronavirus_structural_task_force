@@ -1,4 +1,4 @@
-![logo](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/outreach/banner.png)
+![logo](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/outreach/banner_schmal.png)
 
 # CORONAVIRUS STRUCTURAL TASKFORCE
 
