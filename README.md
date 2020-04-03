@@ -64,15 +64,15 @@ re-processing and re-refinement of several SARS-CoV-2 structures<br><br>
 https://www.diamond.ac.uk/covid-19/for-scientists.html<br>
 Info on Diamond work on main protease; related: https://covid.postera.ai/covid<br><br>
 https://www.ebi.ac.uk/ena/pathogens/covid-19<br>
-Data resources held at EMBL-EBI relating to the COVID-19 outbreak, including sequences of outbreak isolates and records relating to coronavirus biology<br>
+Data resources held at EMBL-EBI relating to the COVID-19 outbreak, including sequences of outbreak isolates and records relating to coronavirus biology<br><br>
 http://www.hecbiosim.ac.uk/covid-19<br>
-Links for covid19 related research that falls into biomolecular modelling and simulation <br>
+Links for covid19 related research that falls into biomolecular modelling and simulation <br><br>
 https://www.rcsb.org/news?year=2020&article=5e74d55d2d410731e9944f52&feature=true<br>
-Varius links to COVID-19/SARS-CoV-2 Resources from RCSB PDB<br>
+Varius links to COVID-19/SARS-CoV-2 Resources from RCSB PDB<br><br>
 https://www.compbiomed.eu/compbiomed-and-coronavirus/<br>
-CompBioMed is a consortium redirecting research effort and funding to computational investigations that will improve our understanding of the SARS-CoV-2 virus, COVID-19, and accelerate the development of treatment options, including antiviral drugs and vaccines.<br>
+CompBioMed is a consortium redirecting research effort and funding to computational investigations that will improve our understanding of the SARS-CoV-2 virus, COVID-19, and accelerate the development of treatment options, including antiviral drugs and vaccines.<br><br>
 http://predictioncenter.org/caspcommons/index.cgi<br>
-SARS-2-CoV structure modelling initiative<br>
+SARS-2-CoV structure modelling initiative<br><br>
 
 ## Contributors
 
@@ -92,7 +92,7 @@ CIMR, University of Cambridge, UK -<br>
 Duke University -<br>
 [The Richardson Laboratory](http://kinemage.biochem.duke.edu/)<br><br>
 Diamond Light Source, UK -<br>
-[Sam Horrell - Postdoctoral Researcher]<br>
+Sam Horrell - Postdoctoral Researcher<br>
 
 We would also like to thank: Manfred Weiss *(HBZ BESSY, Berlin, Germany)* , James Holton *(ALS/Lawrence Berkeley National Laboratory, Berkeley, USA)*, Gerard Bricogne *(Global Phasing, Cambridge, UK)*, Clemens Vonrhein *(Global Phasing, Freiburg, Germany)*, Robbie P. Joosten *(The Netherlands Cancer Institute, Amsterdam, Netherlands)*, Sameer Velankar *(European Potein Data Bank, Cambridge, UK)*.
 
