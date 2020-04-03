@@ -21,7 +21,19 @@ We are methods developers in structural biology. During this time of crisis, we 
 
 ## Download for non-git users
 
-This is a project in progress. While we strongly suggest users to work with Git so that they can synchronize with us conveniently, there is also a possibility to fetch the most recent update as a zip package by clicking the Green Button "Clone or download" and "Download Zip".
+This is a project in progress. While we strongly suggest users to work with Git so that they can synchronize with us conveniently, there is also a possibility to fetch the most recent update as a zip package by clicking the Green Button "Clone or download" and "Download Zip". 
+## Download for non-git users
+
+This is a project in progress. While we strongly suggest users to work with Git so that they can synchronize with us conveniently, there is also a possibility to fetch the most recent update as a zip package by clicking the Green Button "Clone or download" and "Download Zip". If you only want a part of the data (for example a certain PDB entry or a certain file type from all PDB entries), then you download the python script git_fetch.py[https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/utils/git_fetch.py]. You need a working python to use it, and it works like this from your command line:<br>
+Usage:<br>
+```python git_fetch.py -A kw1,kw2 [-P prefix_dir]```
+<br><br>
+Examples:<br>
+Download all txt files in 6vww entry: ```python get_fetch.py -A 6vww,txt```
+<br>
+Download all reflection files for all PDB entries to /home/user: ```python get_fetch.py -A -sf.mtz -P /home/user```
+<br>
+Download all data in the methyltransferase subdirectory: ```python get_fetch.py -A methyltransferase```
 
 ## Folder stucture 
 
@@ -40,14 +52,11 @@ This folder contains currently output from [phenix.xtriage](https://www.phenix-o
 `validation/pdb-redo/`<br>
 This folder contains [pdb-redo](https://pdb-redo.eu/) results (including [whatcheck](https://swift.cmbi.umcn.nl/gv/whatcheck/)). PDB-REDO is a procedure to optimise crystallographic structure models, providing algorithms that make a fully automated decision making system for refinement, rebuilding and validation. 
 
-`isolde/`<br>
-These are manual re-refinements from [ISOLDE](https://isolde.cimr.cam.ac.uk/what-isolde/) in [ChimeraX](https://www.cgl.ucsf.edu/chimerax/), done by Tristan Croll. Structures were energy-minimised, visually checked residue-by-residue and, where necessary, rebuilt. Crystal structures were further refined with [phenix.refine](https://www.phenix-online.org/documentation/reference/refinement.html).
-
-`auspex/`<br>
+`validation/auspex/`<br>
 These are results of the analysis of deposited diffraction data with [AUSPEX](www.auspex.de). AUSPEX can help to detect problems in experimental setup, integration, scaling and conversion from intensities to amplitudes.
 
-`haruspex/`<br>
-These are results for the splitting of Cryo-EM maps according to secondary structure with the neural network [Haruspex](https://github.com/thorn-lab/haruspex)
+`isolde/`<br>
+These are manual re-refinements from [ISOLDE](https://isolde.cimr.cam.ac.uk/what-isolde/) in [ChimeraX](https://www.cgl.ucsf.edu/chimerax/), done by Tristan Croll. Structures were energy-minimised, visually checked residue-by-residue and, where necessary, rebuilt. Crystal structures were further refined with [phenix.refine](https://www.phenix-online.org/documentation/reference/refinement.html).
 
 ## Further resources
 https://www.globalphasing.com/buster/wiki/index.cgi?Covid19<br>
@@ -60,13 +69,17 @@ http://www.hecbiosim.ac.uk/covid-19
 Links for covid19 related research that falls into biomolecular modelling and simulation 
 https://www.rcsb.org/news?year=2020&article=5e74d55d2d410731e9944f52&feature=true
 Varius links to COVID-19/SARS-CoV-2 Resources from RCSB PDB
+https://www.compbiomed.eu/compbiomed-and-coronavirus/
+CompBioMed is a consortium redirecting research effort and funding to computational investigations that will improve our understanding of the SARS-CoV-2 virus, COVID-19, and accelerate the development of treatment options, including antiviral drugs and vaccines.
+http://predictioncenter.org/caspcommons/index.cgi
+SARS-2-CoV structure modeling initiative
 
 ## Contributors
 
-This is a collaborative effort. These are the current contributors (in order of joining):<br>
+This is a collaborative effort. These are the current contributors (in order of joining):<br><br>
 University of Wuerzburg, Germany -<br>
 [Andrea Thorn - Group leader](https://www.uni-wuerzburg.de/en/rvz/research/associated-research-groups/thorn-group/)<br>
-Yunyun Gao - Postdoc in the AUSPEX project(www.auspex.de)<br>
+Yunyun Gao - Postdoc in the AUSPEX project (www.auspex.de)<br>
 Kristopher Nolte - Biochemistry B.Sc. student<br>
 Ferdinand Kirsten - Biochemistry B.Sc. student<br>
 Sabrina Stäb - Biochemistry M.Sc. student<br>
@@ -75,9 +88,11 @@ European Synchrotron Facility, Grenoble, France -<br>
 Gianluca Santoni - Serial crystallography data scientist<br>
 <br>
 CIMR, University of Cambridge, UK -<br>
-[Tristan Croll - Research associate](https://isolde.cimr.cam.ac.uk/what-isolde/)<br>
-Duke University
-[The Richardson Laboratory](http://kinemage.biochem.duke.edu/)
+[Tristan Croll - Research associate](https://isolde.cimr.cam.ac.uk/what-isolde/)<br><br>
+Duke University -<br>
+[The Richardson Laboratory](http://kinemage.biochem.duke.edu/)<br><br>
+Diamond Light Source, UK -<br>
+[Sam Horrell - Postdoctoral Researcher]<br>
 
 We would also like to thank: Manfred Weiss *(HBZ BESSY, Berlin, Germany)* , James Holton *(ALS/Lawrence Berkeley National Laboratory, Berkeley, USA)*, Gerard Bricogne *(Global Phasing, Cambridge, UK)*, Clemens Vonrhein *(Global Phasing, Freiburg, Germany)*, Robbie P. Joosten *(The Netherlands Cancer Institute, Amsterdam, Netherlands)*, Sameer Velankar *(European Potein Data Bank, Cambridge, UK)*.
 
