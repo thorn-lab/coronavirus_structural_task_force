@@ -58,6 +58,9 @@ These are results of the analysis of deposited diffraction data with [AUSPEX](ww
 `isolde/`<br>
 These are manual re-refinements from [ISOLDE](https://isolde.cimr.cam.ac.uk/what-isolde/) in [ChimeraX](https://www.cgl.ucsf.edu/chimerax/), done by Tristan Croll. Structures were energy-minimised, visually checked residue-by-residue and, where necessary, rebuilt. Crystal structures were further refined with [phenix.refine](https://www.phenix-online.org/documentation/reference/refinement.html).
 
+## Bored? 
+Watch us refine structures! https://www.twitch.tv/taskforcec19
+
 ## Further resources
 https://www.ebi.ac.uk/pdbe/covid-19<br>
 All available PDB data for SARS-CoV-2 proteins, highlighting small molecule binding sites and protein-protein interactions<br><br>
