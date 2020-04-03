@@ -59,6 +59,8 @@ These are results of the analysis of deposited diffraction data with [AUSPEX](ww
 These are manual re-refinements from [ISOLDE](https://isolde.cimr.cam.ac.uk/what-isolde/) in [ChimeraX](https://www.cgl.ucsf.edu/chimerax/), done by Tristan Croll. Structures were energy-minimised, visually checked residue-by-residue and, where necessary, rebuilt. Crystal structures were further refined with [phenix.refine](https://www.phenix-online.org/documentation/reference/refinement.html).
 
 ## Further resources
+https://www.ebi.ac.uk/pdbe/covid-19<br>
+All available PDB data for SARS-CoV-2 proteins, highlighting small molecule binding sites and protein-protein interactions<br><br>
 https://www.globalphasing.com/buster/wiki/index.cgi?Covid19<br>
 re-processing and re-refinement of several SARS-CoV-2 structures<br><br>
 https://www.diamond.ac.uk/covid-19/for-scientists.html<br>
@@ -73,6 +75,11 @@ https://www.compbiomed.eu/compbiomed-and-coronavirus/<br>
 CompBioMed is a consortium redirecting research effort and funding to computational investigations that will improve our understanding of the SARS-CoV-2 virus, COVID-19, and accelerate the development of treatment options, including antiviral drugs and vaccines.<br><br>
 http://predictioncenter.org/caspcommons/index.cgi<br>
 SARS-2-CoV structure modelling initiative<br><br>
+https://instruct-eric.eu/news/resources-information-and-collaborations-to-support-covid-19-research/<br>
+Resources, funding and collaborations regarding COVID-19 research<br><br><br>
+https://falconierivisuals.com/wp-content/uploads/2020/03/20034_SARSCoV2_Spike_InfographicFalconieriV5-scaled.jpg<br>
+Poster on Spike protein function<br>
+
 
 ## Contributors
 
