@@ -24,7 +24,7 @@ We are methods developers in structural biology. During this time of crisis, we 
 This is a project in progress. While we strongly suggest users to work with Git so that they can synchronize with us conveniently, there is also a possibility to fetch the most recent update as a zip package by clicking the Green Button "Clone or download" and "Download Zip". 
 ## Download for non-git users
 
-This is a project in progress. While we strongly suggest users to work with Git so that they can synchronize with us conveniently, there is also a possibility to fetch the most recent update as a zip package by clicking the Green Button "Clone or download" and "Download Zip". If you only want a part of the data (for example a certain PDB entry or a certain file type from all PDB entries), then you download the python script git_fetch.py[https://github.com/thorn-lab/coronavirus_structural_task_force/raw/master/utils/git_fetch.py]. You need a working python to use it, and it works like this from your command line:<br>
+This is a project in progress. While we strongly suggest users to work with Git so that they can synchronize with us conveniently, there is also a possibility to fetch the most recent update as a zip package by clicking the Green Button "Clone or download" and "Download Zip". If you only want a part of the data (for example a certain PDB entry or a certain file type from all PDB entries), then you download the python script [git_fetch.py](https://github.com/thorn-lab/coronavirus_structural_task_force/raw/master/utils/git_fetch.py). You need a working python to use it, and it works like this from your command line:<br>
 Usage:<br>
 ```python git_fetch.py -A kw1,kw2 [-P prefix_dir]```
 <br><br>
