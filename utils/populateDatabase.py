@@ -3,19 +3,15 @@ import sqlite3
 import os
 
 
-conn = sqlite3.connect(":memory:")
+conn = sqlite3.connect("stats.db")
 
 c = conn.cursor()
 
-c.execute("""CREATE TABLE stats (pdbid text, 
-                                 datapath text, 
-                                 protein text'
-                                 virus text'
-                                 method text,
-                                 resolution real,
-                                 fsc real,
-                                 rwork real,
-                                 rfree real)""")
+c.execute("""CREATE TABLE stats (pdbid text, datapath text,
+                                 protein text,
+                                 virus text,
+                                 method text, 
+                                 resolution real, rwork real, rfree real)""")
 
 conn.commit()
 
@@ -53,19 +49,22 @@ def fillTheDB(workdir):
                         rfree = None
                         rwork = None
                         #fsc = mmcif_dict['_entry_for_fsc']
-                        resolution = None
+                        resolution = mmcif_dict['_em_3d_reconstruction.resolution']
                     elif method == 'SOLUTION NMR':
                         rfree = None
                         rwork = None
                         #fsc = mmcif_dict['_entry_for_fsc']
                         resolution = None
                     parsed_values=(code, path, protein, virus , method, resolution , rwork, rfree)                    
-                    print(parsed_values)
+                    c.execute('INSERT INTO stats VALUES(?,?,?,?,?,?,?,?)',parsed_values)
 pwd = os.getcwd()
 fillTheDB(pwd)
 
-for row in c.execute('SELECT * FROM stats ORDER BY rfree'):
-    print(row)
+with conn:
+    for row in c.execute('SELECT * FROM stats WHERE method = ELECTRON MICROSCOPY'):
+        print(row)
+        print('hi!')
+print('Done!')
 
 
-# conn.commit()
+
