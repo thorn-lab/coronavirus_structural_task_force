@@ -1,0 +1,568 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.44
+_lib_update       30/05/14
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+02J      02J '.                                   ' .                  13   8 .
+PJE      PJE '.                                   ' .                  28  13 .
+010      010 '.                                   ' .                  16   8 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+02J-ALA  02J      .        .        ALA      .        .
+ bond_02J-C41_=_ALA-N
+LEU-PJE  LEU      .        .        PJE      .        .
+ bond_LEU-C_=_PJE-N5
+PJE-010  PJE      .        .        010      .        .
+ bond_PJE-C22_=_010-O
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_02J
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ 02J           O42    O    O         0.000     10.358   50.847  -21.270
+ 02J           C41    C    C1        0.000      9.572   49.985  -21.623
+ 02J           H41    H    H         0.000      9.915   48.981  -21.809
+ 02J           C3     C    CR5       0.000      8.143   50.328  -21.794
+ 02J           C4     C    CR15      0.000      7.425   51.309  -21.073
+ 02J           H4     H    H         0.000      7.790   51.949  -20.279
+ 02J           N2     N    NRD5      0.000      7.366   49.722  -22.753
+ 02J           O1     O    O2        0.000      6.081   50.351  -22.619
+ 02J           C5     C    CR5       0.000      6.153   51.267  -21.609
+ 02J           C6     C    CH3       0.000      4.998   52.129  -21.163
+ 02J           H63    H    H         0.000      4.670   52.728  -21.973
+ 02J           H62    H    H         0.000      4.202   51.512  -20.836
+ 02J           H61    H    H         0.000      5.310   52.753  -20.366
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ 02J      O42    n/a    C41    START
+ 02J      C41    O42    C3     .
+ 02J      H41    C41    .      .
+ 02J      C3     C41    N2     .
+ 02J      C4     C3     H4     .
+ 02J      H4     C4     .      .
+ 02J      N2     C3     O1     .
+ 02J      O1     N2     C5     .
+ 02J      C5     O1     C6     .
+ 02J      C6     C5     H61    .
+ 02J      H63    C6     .      .
+ 02J      H62    C6     .      .
+ 02J      H61    C6     .      END
+ 02J      C4     C5     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ 02J      C4     C5        aromatic    1.387    0.020
+ 02J      C4     C3        aromatic    1.387    0.020
+ 02J      C6     C5        single      1.506    0.020
+ 02J      C5     O1        single      1.370    0.020
+ 02J      O1     N2        single      1.337    0.020
+ 02J      N2     C3        aromatic    1.350    0.020
+ 02J      C3     C41       single      1.483    0.020
+ 02J      C41    O42       double      1.220    0.020
+ 02J      H4     C4        single      1.083    0.020
+ 02J      H61    C6        single      1.059    0.020
+ 02J      H62    C6        single      1.059    0.020
+ 02J      H63    C6        single      1.059    0.020
+ 02J      H41    C41       single      1.077    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ 02J      O42    C41    H41     123.000    3.000
+ 02J      O42    C41    C3      120.000    3.000
+ 02J      H41    C41    C3      120.000    3.000
+ 02J      C41    C3     C4      108.000    3.000
+ 02J      C41    C3     N2      108.000    3.000
+ 02J      C4     C3     N2      108.000    3.000
+ 02J      C3     C4     H4      126.000    3.000
+ 02J      C3     C4     C5      108.000    3.000
+ 02J      H4     C4     C5      126.000    3.000
+ 02J      C3     N2     O1      108.000    3.000
+ 02J      N2     O1     C5      120.000    3.000
+ 02J      O1     C5     C6      108.000    3.000
+ 02J      O1     C5     C4      108.000    3.000
+ 02J      C6     C5     C4      108.000    3.000
+ 02J      C5     C6     H63     109.470    3.000
+ 02J      C5     C6     H62     109.470    3.000
+ 02J      C5     C6     H61     109.470    3.000
+ 02J      H63    C6     H62     109.470    3.000
+ 02J      H63    C6     H61     109.470    3.000
+ 02J      H62    C6     H61     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ 02J      var_1            O42    C41    C3     N2               146.773           20.000   3
+ 02J      CONST_1          C41    C3     C4     C5                 0.000            0.000   0
+ 02J      CONST_2          C3     C4     C5     O1                 0.000            0.000   0
+ 02J      CONST_3          C41    C3     N2     O1                 0.000            0.000   0
+ 02J      CONST_4          C3     N2     O1     C5                -0.424            0.000   0
+ 02J      CONST_5          N2     O1     C5     C6              -179.751            0.000   0
+ 02J      var_2            O1     C5     C6     H61              180.000           20.000   3
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ 02J      plan-1            C4        0.020
+ 02J      plan-1            C5        0.020
+ 02J      plan-1            C3        0.020
+ 02J      plan-1            H4        0.020
+ 02J      plan-1            O1        0.020
+ 02J      plan-1            N2        0.020
+ 02J      plan-1            C6        0.020
+ 02J      plan-1            C41       0.020
+ 02J      plan-1            H41       0.020
+ 02J      plan-2            C41       0.020
+ 02J      plan-2            C3        0.020
+ 02J      plan-2            O42       0.020
+ 02J      plan-2            H41       0.020
+#
+data_comp_PJE
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ PJE           O7     O    O         0.000     22.011   49.778  -29.690
+ PJE           C22    C    C1        0.000     20.957   50.076  -29.140
+ PJE           H22    H    H         0.000     20.598   51.091  -29.150
+ PJE           C21    C    CH2       0.000     20.181   48.994  -28.454
+ PJE           H211   H    H         0.000     20.313   48.045  -28.978
+ PJE           H212   H    H         0.000     19.120   49.249  -28.428
+ PJE           C20    C    CH2       0.000     20.709   48.869  -27.035
+ PJE           H201   H    H         0.000     21.602   49.492  -26.955
+ PJE           H202   H    H         0.000     20.980   47.824  -26.871
+ PJE           C19    C    CH1       0.000     19.689   49.302  -25.986
+ PJE           H19    H    H         0.000     19.264   50.268  -26.292
+ PJE           N5     N    NT2       0.000     18.598   48.314  -25.917
+ PJE           HN52   H    H         0.000     18.776   47.556  -26.596
+ PJE           HN51   H    H         0.000     17.910   48.610  -25.206
+ PJE           C25    C    CH2       0.000     20.314   49.466  -24.585
+ PJE           H251   H    H         0.000     21.341   49.826  -24.673
+ PJE           H252   H    H         0.000     20.309   48.510  -24.058
+ PJE           C26    C    CH1       0.000     19.459   50.510  -23.786
+ PJE           H26    H    H         0.000     18.405   50.199  -23.800
+ PJE           C29    C    C         0.000     19.931   50.595  -22.354
+ PJE           O8     O    O         0.000     20.269   49.589  -21.693
+ PJE           N6     N    N         0.000     19.889   51.886  -22.000
+ PJE           C28    C    CH2       0.000     19.087   52.796  -22.947
+ PJE           H281   H    H         0.000     19.403   53.839  -23.005
+ PJE           H282   H    H         0.000     17.999   52.751  -22.862
+ PJE           C27    C    CH2       0.000     19.567   51.998  -24.305
+ PJE           H272   H    H         0.000     20.596   52.206  -24.606
+ PJE           H271   H    H         0.000     18.904   52.135  -25.162
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ PJE      O7     n/a    C22    START
+ PJE      C22    O7     C21    .
+ PJE      H22    C22    .      .
+ PJE      C21    C22    C20    .
+ PJE      H211   C21    .      .
+ PJE      H212   C21    .      .
+ PJE      C20    C21    C19    .
+ PJE      H201   C20    .      .
+ PJE      H202   C20    .      .
+ PJE      C19    C20    C25    .
+ PJE      H19    C19    .      .
+ PJE      N5     C19    HN51   .
+ PJE      HN52   N5     .      .
+ PJE      HN51   N5     .      .
+ PJE      C25    C19    C26    .
+ PJE      H251   C25    .      .
+ PJE      H252   C25    .      .
+ PJE      C26    C25    C29    .
+ PJE      H26    C26    .      .
+ PJE      C29    C26    N6     .
+ PJE      O8     C29    .      .
+ PJE      N6     C29    C28    .
+ PJE      C28    N6     C27    .
+ PJE      H281   C28    .      .
+ PJE      H282   C28    .      .
+ PJE      C27    C28    H271   .
+ PJE      H272   C27    .      .
+ PJE      H271   C27    .      END
+ PJE      C26    C27    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ PJE      C19    C20       single      1.524    0.020
+ PJE      C25    C19       single      1.524    0.020
+ PJE      N5     C19       single      1.475    0.020
+ PJE      C20    C21       single      1.524    0.020
+ PJE      C21    C22       single      1.510    0.020
+ PJE      C22    O7        double      1.220    0.020
+ PJE      C26    C25       single      1.524    0.020
+ PJE      C26    C27       single      1.524    0.020
+ PJE      C29    C26       single      1.500    0.020
+ PJE      C27    C28       single      1.524    0.020
+ PJE      C28    N6        single      1.455    0.020
+ PJE      N6     C29       deloc       1.330    0.020
+ PJE      O8     C29       aromatic    1.220    0.020
+ PJE      H19    C19       single      1.099    0.020
+ PJE      H201   C20       single      1.092    0.020
+ PJE      H202   C20       single      1.092    0.020
+ PJE      H211   C21       single      1.092    0.020
+ PJE      H212   C21       single      1.092    0.020
+ PJE      H22    C22       single      1.077    0.020
+ PJE      H251   C25       single      1.092    0.020
+ PJE      H252   C25       single      1.092    0.020
+ PJE      H26    C26       single      1.099    0.020
+ PJE      H271   C27       single      1.092    0.020
+ PJE      H272   C27       single      1.092    0.020
+ PJE      H281   C28       single      1.092    0.020
+ PJE      H282   C28       single      1.092    0.020
+ PJE      HN51   N5        single      1.033    0.020
+ PJE      HN52   N5        single      1.033    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ PJE      O7     C22    H22     123.000    3.000
+ PJE      O7     C22    C21     120.500    3.000
+ PJE      H22    C22    C21     120.000    3.000
+ PJE      C22    C21    H211    109.470    3.000
+ PJE      C22    C21    H212    109.470    3.000
+ PJE      C22    C21    C20     109.470    3.000
+ PJE      H211   C21    H212    107.900    3.000
+ PJE      H211   C21    C20     109.470    3.000
+ PJE      H212   C21    C20     109.470    3.000
+ PJE      C21    C20    H201    109.470    3.000
+ PJE      C21    C20    H202    109.470    3.000
+ PJE      C21    C20    C19     111.000    3.000
+ PJE      H201   C20    H202    107.900    3.000
+ PJE      H201   C20    C19     109.470    3.000
+ PJE      H202   C20    C19     109.470    3.000
+ PJE      C20    C19    H19     108.340    3.000
+ PJE      C20    C19    N5      109.500    3.000
+ PJE      C20    C19    C25     109.470    3.000
+ PJE      H19    C19    N5      109.500    3.000
+ PJE      H19    C19    C25     108.340    3.000
+ PJE      N5     C19    C25     109.500    3.000
+ PJE      C19    N5     HN52    109.500    3.000
+ PJE      C19    N5     HN51    109.500    3.000
+ PJE      HN52   N5     HN51    109.500    3.000
+ PJE      C19    C25    H251    109.470    3.000
+ PJE      C19    C25    H252    109.470    3.000
+ PJE      C19    C25    C26     111.000    3.000
+ PJE      H251   C25    H252    107.900    3.000
+ PJE      H251   C25    C26     109.470    3.000
+ PJE      H252   C25    C26     109.470    3.000
+ PJE      C25    C26    H26     108.340    3.000
+ PJE      C25    C26    C29     109.470    3.000
+ PJE      C25    C26    C27     109.470    3.000
+ PJE      H26    C26    C29     108.810    3.000
+ PJE      H26    C26    C27     108.340    3.000
+ PJE      C29    C26    C27     109.470    3.000
+ PJE      C26    C29    O8      120.500    3.000
+ PJE      C26    C29    N6      116.500    3.000
+ PJE      O8     C29    N6      123.000    3.000
+ PJE      C29    N6     C28     127.000    3.000
+ PJE      N6     C28    H281    109.470    3.000
+ PJE      N6     C28    H282    109.470    3.000
+ PJE      N6     C28    C27     105.000    3.000
+ PJE      H281   C28    H282    107.900    3.000
+ PJE      H281   C28    C27     109.470    3.000
+ PJE      H282   C28    C27     109.470    3.000
+ PJE      C28    C27    H272    109.470    3.000
+ PJE      C28    C27    H271    109.470    3.000
+ PJE      C28    C27    C26     111.000    3.000
+ PJE      H272   C27    H271    107.900    3.000
+ PJE      H272   C27    C26     109.470    3.000
+ PJE      H271   C27    C26     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ PJE      var_1            O7     C22    C21    C20               86.867           20.000   3
+ PJE      var_2            C22    C21    C20    C19              180.000           20.000   3
+ PJE      var_3            C21    C20    C19    C25              180.000           20.000   3
+ PJE      var_4            C20    C19    N5     HN51             180.000           20.000   3
+ PJE      var_5            C20    C19    C25    C26              180.000           20.000   3
+ PJE      var_6            C19    C25    C26    C29              180.000           20.000   3
+ PJE      var_7            C25    C26    C27    C28              180.000           20.000   3
+ PJE      var_8            C25    C26    C29    N6               180.000           20.000   3
+ PJE      var_9            C26    C29    N6     C28              180.000           20.000   2
+ PJE      var_10           C29    N6     C28    C27              -36.806           20.000   3
+ PJE      var_11           N6     C28    C27    C26              180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ PJE      chir_01          C19    C20    C25    N5        positiv
+ PJE      chir_02          C26    C25    C27    C29       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ PJE      plan-1            C22       0.020
+ PJE      plan-1            C21       0.020
+ PJE      plan-1            O7        0.020
+ PJE      plan-1            H22       0.020
+ PJE      plan-2            N6        0.020
+ PJE      plan-2            C28       0.020
+ PJE      plan-2            C29       0.020
+ PJE      plan-3            C29       0.020
+ PJE      plan-3            C26       0.020
+ PJE      plan-3            N6        0.020
+ PJE      plan-3            O8        0.020
+#
+data_comp_010
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ 010           O      O    OH1       0.000     20.465   51.464  -29.129
+ 010           HO     H    H         0.000     21.039   50.840  -29.597
+ 010           C      C    CH2       0.000     19.419   51.924  -30.018
+ 010           H1     H    H         0.000     18.868   51.042  -30.351
+ 010           H2     H    H         0.000     19.907   52.392  -30.875
+ 010           C6     C    CR6       0.000     18.441   52.930  -29.367
+ 010           C1     C    CR16      0.000     17.475   52.503  -28.421
+ 010           H10    H    H         0.000     17.432   51.458  -28.141
+ 010           C5     C    CR16      0.000     18.465   54.303  -29.723
+ 010           H5     H    H         0.000     19.185   54.658  -30.450
+ 010           C4     C    CR16      0.000     17.560   55.207  -29.138
+ 010           H4     H    H         0.000     17.590   56.253  -29.417
+ 010           C3     C    CR16      0.000     16.617   54.764  -28.194
+ 010           H3     H    H         0.000     15.928   55.467  -27.743
+ 010           C2     C    CR16      0.000     16.573   53.409  -27.840
+ 010           H20    H    H         0.000     15.844   53.061  -27.119
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ 010      O      n/a    C      START
+ 010      HO     O      .      .
+ 010      C      O      C6     .
+ 010      H1     C      .      .
+ 010      H2     C      .      .
+ 010      C6     C      C5     .
+ 010      C1     C6     H10    .
+ 010      H10    C1     .      .
+ 010      C5     C6     C4     .
+ 010      H5     C5     .      .
+ 010      C4     C5     C3     .
+ 010      H4     C4     .      .
+ 010      C3     C4     C2     .
+ 010      H3     C3     .      .
+ 010      C2     C3     H20    .
+ 010      H20    C2     .      END
+ 010      C1     C2     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ 010      C      O         single      1.432    0.020
+ 010      C6     C         single      1.511    0.020
+ 010      C1     C2        aromatic    1.390    0.020
+ 010      C1     C6        aromatic    1.390    0.020
+ 010      C2     C3        aromatic    1.390    0.020
+ 010      C3     C4        aromatic    1.390    0.020
+ 010      C4     C5        aromatic    1.390    0.020
+ 010      C5     C6        aromatic    1.390    0.020
+ 010      H1     C         single      1.092    0.020
+ 010      H2     C         single      1.092    0.020
+ 010      HO     O         single      0.967    0.020
+ 010      H10    C1        single      1.083    0.020
+ 010      H20    C2        single      1.083    0.020
+ 010      H3     C3        single      1.083    0.020
+ 010      H4     C4        single      1.083    0.020
+ 010      H5     C5        single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ 010      HO     O      C       109.470    3.000
+ 010      O      C      H1      109.470    3.000
+ 010      O      C      H2      109.470    3.000
+ 010      O      C      C6      109.500    3.000
+ 010      H1     C      H2      107.900    3.000
+ 010      H1     C      C6      109.470    3.000
+ 010      H2     C      C6      109.470    3.000
+ 010      C      C6     C1      120.000    3.000
+ 010      C      C6     C5      120.000    3.000
+ 010      C1     C6     C5      120.000    3.000
+ 010      C6     C1     H10     120.000    3.000
+ 010      C6     C1     C2      120.000    3.000
+ 010      H10    C1     C2      120.000    3.000
+ 010      C6     C5     H5      120.000    3.000
+ 010      C6     C5     C4      120.000    3.000
+ 010      H5     C5     C4      120.000    3.000
+ 010      C5     C4     H4      120.000    3.000
+ 010      C5     C4     C3      120.000    3.000
+ 010      H4     C4     C3      120.000    3.000
+ 010      C4     C3     H3      120.000    3.000
+ 010      C4     C3     C2      120.000    3.000
+ 010      H3     C3     C2      120.000    3.000
+ 010      C3     C2     H20     120.000    3.000
+ 010      C3     C2     C1      120.000    3.000
+ 010      H20    C2     C1      120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ 010      var_1            HO     O      C      C6               180.000           20.000   3
+ 010      var_2            O      C      C6     C5                 0.000           20.000   2
+ 010      CONST_1          C      C6     C1     C2                 0.000            0.000   0
+ 010      CONST_2          C6     C1     C2     C3                 0.000            0.000   0
+ 010      CONST_3          C      C6     C5     C4                 0.000            0.000   0
+ 010      CONST_4          C6     C5     C4     C3                 0.000            0.000   0
+ 010      CONST_5          C5     C4     C3     C2                 0.000            0.000   0
+ 010      CONST_6          C4     C3     C2     C1                 0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ 010      plan-1            C1        0.020
+ 010      plan-1            C2        0.020
+ 010      plan-1            C6        0.020
+ 010      plan-1            H10       0.020
+ 010      plan-1            C3        0.020
+ 010      plan-1            C4        0.020
+ 010      plan-1            C5        0.020
+ 010      plan-1            H20       0.020
+ 010      plan-1            H4        0.020
+ 010      plan-1            H5        0.020
+ 010      plan-1            H3        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_02J-ALA
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ 02J-ALA  1 C41     2 N         .           1.260    0.020
+#
+data_link_LEU-PJE
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ LEU-PJE  1 C       2 N5        .           1.260    0.020
+#
+data_link_PJE-010
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ PJE-010  1 C22     2 O         .           1.330    0.020
+# ------------------------------------------------------

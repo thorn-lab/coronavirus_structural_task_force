@@ -1,0 +1,289 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.51
+_lib_update       11/07/18
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+T6V      T6V '.                                   ' .                  28  17 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-T6V  CYS      .        .        T6V      .        .
+ bond_CYS-SG_=_T6V-C03
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_T6V
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ T6V           O17    O    OS       -1.000      2.492   -6.343   24.254
+ T6V           S15    S    ST        0.000      3.870   -6.731   24.118
+ T6V           O16    O    OS       -1.000      4.441   -7.530   25.170
+ T6V           C14    C    CSP       0.000      4.141   -7.490   22.569
+ T6V           C13    C    C1        0.000      5.163   -6.916   21.960
+ T6V           H13    H    H         0.000      5.853   -7.439   21.318
+ T6V           C18    C    C1        0.000      4.897   -5.319   23.766
+ T6V           H18    H    H         0.000      5.205   -4.548   24.452
+ T6V           C12    C    CH1       0.000      5.251   -5.434   22.271
+ T6V           H12    H    H         0.000      4.490   -4.902   21.683
+ T6V           N05    N    N         0.000      6.566   -4.899   21.935
+ T6V           C02    C    C         0.000      6.766   -4.319   20.705
+ T6V           O01    O    O         0.000      5.831   -4.054   19.959
+ T6V           C03    C    CH3       0.000      8.186   -4.026   20.284
+ T6V           H033   H    H         0.000      8.632   -3.360   20.977
+ T6V           H032   H    H         0.000      8.741   -4.928   20.256
+ T6V           H031   H    H         0.000      8.187   -3.583   19.321
+ T6V           C06    C    CR6       0.000      7.614   -4.988   22.919
+ T6V           C11    C    CR16      0.000      7.602   -4.141   24.025
+ T6V           H11    H    H         0.000      6.827   -3.392   24.123
+ T6V           C10    C    CR16      0.000      8.580   -4.255   25.000
+ T6V           H10    H    H         0.000      8.565   -3.593   25.857
+ T6V           C07    C    CR16      0.000      8.605   -5.963   22.825
+ T6V           H07    H    H         0.000      8.612   -6.650   21.987
+ T6V           C08    C    CR16      0.000      9.582   -6.053   23.803
+ T6V           H08    H    H         0.000     10.363   -6.799   23.714
+ T6V           C09    C    CR16      0.000      9.570   -5.203   24.887
+ T6V           H09    H    H         0.000     10.337   -5.281   25.647
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ T6V      O17    n/a    S15    START
+ T6V      S15    O17    C18    .
+ T6V      O16    S15    .      .
+ T6V      C14    S15    C13    .
+ T6V      C13    C14    H13    .
+ T6V      H13    C13    .      .
+ T6V      C18    S15    C12    .
+ T6V      H18    C18    .      .
+ T6V      C12    C18    N05    .
+ T6V      H12    C12    .      .
+ T6V      N05    C12    C06    .
+ T6V      C02    N05    C03    .
+ T6V      O01    C02    .      .
+ T6V      C03    C02    H031   .
+ T6V      H033   C03    .      .
+ T6V      H032   C03    .      .
+ T6V      H031   C03    .      .
+ T6V      C06    N05    C07    .
+ T6V      C11    C06    C10    .
+ T6V      H11    C11    .      .
+ T6V      C10    C11    H10    .
+ T6V      H10    C10    .      .
+ T6V      C07    C06    C08    .
+ T6V      H07    C07    .      .
+ T6V      C08    C07    C09    .
+ T6V      H08    C08    .      .
+ T6V      C09    C08    H09    .
+ T6V      H09    C09    .      END
+ T6V      C10    C09    .    ADD
+ T6V      C13    C12    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ T6V      C10    C09       aromatic    1.390    0.020
+ T6V      C10    C11       aromatic    1.390    0.020
+ T6V      C13    C12       single      1.510    0.020
+ T6V      C13    C14       double      1.255    0.020
+ T6V      C03    C02       single      1.500    0.020
+ T6V      C02    N05       single      1.330    0.020
+ T6V      O01    C02       double      1.220    0.020
+ T6V      C07    C06       aromatic    1.390    0.020
+ T6V      C11    C06       aromatic    1.390    0.020
+ T6V      C06    N05       single      1.400    0.020
+ T6V      C08    C07       aromatic    1.390    0.020
+ T6V      C09    C08       aromatic    1.390    0.020
+ T6V      C12    C18       single      1.510    0.020
+ T6V      N05    C12       single      1.455    0.020
+ T6V      C14    S15       double      1.490    0.020
+ T6V      C18    S15       double      1.565    0.020
+ T6V      O16    S15       deloc       1.480    0.020
+ T6V      S15    O17       deloc       1.480    0.020
+ T6V      H10    C10       single      1.083    0.020
+ T6V      H13    C13       single      1.077    0.020
+ T6V      H031   C03       single      1.059    0.020
+ T6V      H032   C03       single      1.059    0.020
+ T6V      H033   C03       single      1.059    0.020
+ T6V      H07    C07       single      1.083    0.020
+ T6V      H08    C08       single      1.083    0.020
+ T6V      H09    C09       single      1.083    0.020
+ T6V      H11    C11       single      1.083    0.020
+ T6V      H12    C12       single      1.099    0.020
+ T6V      H18    C18       single      1.077    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ T6V      O17    S15    O16     109.500    3.000
+ T6V      O17    S15    C14     109.500    3.000
+ T6V      O17    S15    C18     109.500    3.000
+ T6V      O16    S15    C14     109.500    3.000
+ T6V      O16    S15    C18     109.500    3.000
+ T6V      C14    S15    C18     109.500    3.000
+ T6V      S15    C14    C13     180.000    3.000
+ T6V      C14    C13    H13     120.000    3.000
+ T6V      C14    C13    C12     120.000    3.000
+ T6V      H13    C13    C12     120.000    3.000
+ T6V      S15    C18    H18     120.000    3.000
+ T6V      S15    C18    C12     120.000    3.000
+ T6V      H18    C18    C12     120.000    3.000
+ T6V      C18    C12    H12     108.810    3.000
+ T6V      C18    C12    N05     111.600    3.000
+ T6V      C18    C12    C13     109.500    3.000
+ T6V      H12    C12    N05     109.470    3.000
+ T6V      H12    C12    C13     108.810    3.000
+ T6V      N05    C12    C13     111.600    3.000
+ T6V      C12    N05    C02     121.000    3.000
+ T6V      C12    N05    C06     120.000    3.000
+ T6V      C02    N05    C06     120.000    3.000
+ T6V      N05    C02    O01     123.000    3.000
+ T6V      N05    C02    C03     116.500    3.000
+ T6V      O01    C02    C03     123.000    3.000
+ T6V      C02    C03    H033    109.470    3.000
+ T6V      C02    C03    H032    109.470    3.000
+ T6V      C02    C03    H031    109.470    3.000
+ T6V      H033   C03    H032    109.470    3.000
+ T6V      H033   C03    H031    109.470    3.000
+ T6V      H032   C03    H031    109.470    3.000
+ T6V      N05    C06    C11     120.000    3.000
+ T6V      N05    C06    C07     120.000    3.000
+ T6V      C11    C06    C07     120.000    3.000
+ T6V      C06    C11    H11     120.000    3.000
+ T6V      C06    C11    C10     120.000    3.000
+ T6V      H11    C11    C10     120.000    3.000
+ T6V      C11    C10    H10     120.000    3.000
+ T6V      C11    C10    C09     120.000    3.000
+ T6V      H10    C10    C09     120.000    3.000
+ T6V      C06    C07    H07     120.000    3.000
+ T6V      C06    C07    C08     120.000    3.000
+ T6V      H07    C07    C08     120.000    3.000
+ T6V      C07    C08    H08     120.000    3.000
+ T6V      C07    C08    C09     120.000    3.000
+ T6V      H08    C08    C09     120.000    3.000
+ T6V      C08    C09    H09     120.000    3.000
+ T6V      C08    C09    C10     120.000    3.000
+ T6V      H09    C09    C10     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ T6V      var_1            O17    S15    C14    C13              128.529           20.000   3
+ T6V      var_2            S15    C14    C13    C12              -33.716           20.000   3
+ T6V      var_3            C14    C13    C12    C18               39.634           20.000   3
+ T6V      var_4            O17    S15    C18    C12             -105.286           20.000   3
+ T6V      var_5            S15    C18    C12    N05             -148.098           20.000   3
+ T6V      var_6            C18    C12    N05    C06                0.000           20.000   3
+ T6V      var_7            C12    N05    C02    C03              180.000           20.000   2
+ T6V      var_8            N05    C02    C03    H031             180.000           20.000   3
+ T6V      var_9            C12    N05    C06    C07              101.871           20.000   3
+ T6V      CONST_1          N05    C06    C11    C10                0.000            0.000   0
+ T6V      CONST_2          C06    C11    C10    C09                0.000            0.000   0
+ T6V      CONST_3          C11    C10    C09    C08                0.000            0.000   0
+ T6V      CONST_4          N05    C06    C07    C08                0.000            0.000   0
+ T6V      CONST_5          C06    C07    C08    C09                0.000            0.000   0
+ T6V      CONST_6          C07    C08    C09    C10                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ T6V      chir_01          C12    C13    C18    N05       negativ
+ T6V      chir_02          S15    C14    C18    O16       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ T6V      plan-1            C10       0.020
+ T6V      plan-1            C09       0.020
+ T6V      plan-1            C11       0.020
+ T6V      plan-1            H10       0.020
+ T6V      plan-1            C06       0.020
+ T6V      plan-1            C07       0.020
+ T6V      plan-1            C08       0.020
+ T6V      plan-1            N05       0.020
+ T6V      plan-1            H07       0.020
+ T6V      plan-1            H08       0.020
+ T6V      plan-1            H09       0.020
+ T6V      plan-1            H11       0.020
+ T6V      plan-2            C13       0.020
+ T6V      plan-2            C12       0.020
+ T6V      plan-2            C14       0.020
+ T6V      plan-2            H13       0.020
+ T6V      plan-3            C02       0.020
+ T6V      plan-3            C03       0.020
+ T6V      plan-3            N05       0.020
+ T6V      plan-3            O01       0.020
+ T6V      plan-4            C18       0.020
+ T6V      plan-4            C12       0.020
+ T6V      plan-4            S15       0.020
+ T6V      plan-4            H18       0.020
+ T6V      plan-5            N05       0.020
+ T6V      plan-5            C02       0.020
+ T6V      plan-5            C06       0.020
+ T6V      plan-5            C12       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-T6V
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-T6V  1 SG      2 C03       .           1.810    0.020
+# ------------------------------------------------------

@@ -1,0 +1,302 @@
+Results from PDB-REDO --local --xyzin=6vxs_refine_12.pdb --mtzin=6vxs_refine_12.mtz --nproc=7 --dirout=pdb-redo
+ __   __   __      __   ___  __   __    __   __  __ 
+|__) |  \ |__) __ |__) |__  |  \ /  \    /    _)  / 
+|    |__/ |__)    |  \ |___ |__/ \__/   /  o /__ /  
+ 
+****** Optimisation setup ******
+-PDB-REDO will optimise the structure model in /data/id30a3/inhouse/gianluca/coronavirus_structural_task_force/pdb/nsp3/SARS-CoV-2/6vxs/isolde/6vxs_refine_12.pdb
+-Using the experimental data in /data/id30a3/inhouse/gianluca/coronavirus_structural_task_force/pdb/nsp3/SARS-CoV-2/6vxs/isolde/6vxs_refine_12.mtz
+-Using a maximum of 7 CPU cores where possible
+-During the process your structure model will be called '6dui'
+-The final result will be written to /data/id30a3/inhouse/gianluca/coronavirus_structural_task_force/pdb/nsp3/SARS-CoV-2/6vxs/isolde/pdb-redo
+ 
+ 
+****** Parsing input files ******
+-Preparing the structure model
+ o Performing DEFY flips
+ o Checking carbohydrates
+   * Running carbonanza
+ o Running Platonyzer
+ o Running prepper
+ 
+WARNING!
+------------
+Your input coordinate file has phenix.refine-specific format errors. Trying to compensate.
+Diagnostic output from prepper:
+ 
+Trying to parse '**'
+Error parsing PDB at line 2
+Error trying to load file "/home/esrf/opid30/pdb-redo/tempdir/6dui/6dui_platonyzed.pdb"
+Not a valid integer in PDB record
+ 
+ o Running prepper
+   * Occupancies reset     : 0
+   * B-factors reset       : 0
+   * Deleted (hetero) atoms: 0
+   * Deleted ANISOU records: 0
+   * Deleted LINK   records: 0
+   * Added   LINK   records: 0
+   * Fixed   LINK   records: 0
+   * Renamed water atoms   : 0
+-Checking reflection data
+ o Anomalous data will be used to calculate anomalous maps
+-Extracting data from the PDB file
+ o TLS groups created  :   2
+ o TLS groups extracted:  16
+ o Extracting the amino acid sequence
+ o BlastP is missing or not configured properly
+ o Cannot generate homology-based restraints
+-Creating MTZ file
+ 
+ 
+****** Structure model and data details ******
+Cell axes            : 30.391 37.896 65.400
+Cell angles          : 84.37 82.11 90.11
+Space group          : P 1
+Resolution (pdb)     : 2.03
+Resolution (data)    : 2.03
+Lowest resolution    : 37.71
+Reported Rfactor     : 0.2016
+Reported R-free      : 0.2398
+Average B-factor     : 25.83
+Wilson B from SFcheck: 31.10
+Solvent percentage   : 38.77
+Solvent model        : SIMP
+VdW probe            : 1.11
+Ion probe            : 1.11
+Shrinkage            : 0.90
+Reflections (data)   : 15782
+Work set size        : 15026
+Test set size (data) : 528 (3.3%)
+Test set size (used) : 756
+Completeness (pdb)   : 57.0
+Completeness (used)  : 84.7
+Wavelength           : 1.00000
+Refinement tool      : PHENIX_(DEV_3768:_???)
+Deposition year      : 2000
+ 
+ 
+****** R(-free) recalculation ******
+-Recalculating R-factors with original TLS tensors    (R-free = 0.2675)
+-Recalculating R-factors without original TLS tensors (R-free = 0.2374)
+ o Recalculating the R-factor without TLS tensors gives the best result
+ 
+ 
+****** R-factor and R-free details ******
+Calculated R     : 0.2025
+Calculated R-free: 0.2374
+'Unbiased' R-free: 0.2716
+sigma(R-free)    : 0.0086
+R-free Z-score   : 3.98
+ 
+ 
+****** Backbone correction ******
+-Running fixDMC
+ o The sequence is untrusted, no OXT atoms can be added
+ o FixDMC added 0 missing backbone atoms
+ 
+ 
+****** Solvent mask optimisation ******
+-Running Refmac grid search
+ o VDW probe: 1.0
+ o Ion probe: 0.7
+ o Shrinkage: 0.7
+ 
+ 
+****** Refinement settings ******
+-B-factor model
+ o Number of atoms      : 2715
+ o Number of reflections: 15026
+ o Reflections per atom : 5.5
+ o B-factor type        : ISOTropic
+ o TLS-models           : used
+-Non-crystallographic symmetry
+ o Using local NCS restraints
+-Twinning
+ o No twinning detected
+-High Refmac bond length or bond angle RMSZ detected
+ o Bond length RMSZ: 1.195
+ o Bond angle RMSZ : 1.040
+ o Geometric targets will be relaxed
+ 
+ 
+****** TLS group optimisation ******
+-Testing 2 TLS group definition(s)
+ o Tested tls groups from REDO.tls (R-free = 0.2607)
+ o Tested tls groups from 6dui.tls (R-free = 0.2656)
+-Filtering results
+ o TLS group definition 6dui.tls causes over-fitting
+-TLS groups in REDO.tls will be used in refinement
+ 
+ 
+****** B-weight optimisation ******
+-Testing B-factor restraint weights: 1.50 1.20 1.00 0.80 0.50 0.30 0.10
+ o Performed B-weight test with weight 1.50 (R-free = 0.2448)
+ o Performed B-weight test with weight 1.20 (R-free = 0.2421)
+ o Performed B-weight test with weight 1.00 (R-free = 0.2399)
+ o Performed B-weight test with weight 0.80 (R-free = 0.2365)
+ o Performed B-weight test with weight 0.50 (R-free = 0.2301)
+ o Performed B-weight test with weight 0.30 (R-free = 0.2253)
+ o Performed B-weight test with weight 0.10 (R-free = 0.2268)
+-Selecting best B weight
+ o Best B weight: 0.30
+ 
+ 
+****** Structure re-refinement ******
+-Refining with geometric restraint weights: 0.01 0.03 0.05 0.10 0.30 0.50 0.70
+ o Performed refinement with MATRIX weight 0.01 (R-free = 0.2343)
+ o Performed refinement with MATRIX weight 0.03 (R-free = 0.2229)
+ o Performed refinement with MATRIX weight 0.05 (R-free = 0.2216)
+ o Performed refinement with MATRIX weight 0.10 (R-free = 0.2240)
+ o Performed refinement with MATRIX weight 0.30 (R-free = 0.2337)
+ o Performed refinement with MATRIX weight 0.50 (R-free = 0.2392)
+ o Performed refinement with MATRIX weight 0.70 (R-free = 0.2439)
+-Selecting best geometric restraint weight
+ o Best geometric restraint weight: 0.05
+ 
+ 
+****** Re-refinement details ******
+Best matrix weight: 0.05
+Resulting R-factor: 0.1759
+Resulting R-free  : 0.2216
+'Unbiased' R-free : 0.2359
+sigma(R-free)     : 0.0081
+R-free Z-score    : 1.77
+ 
+ 
+****** Model validation ******
+-Validating the input model with WHAT_CHECK
+-Validating the re-refined model with WHAT_CHECK
+ o Validation failed
+ o Validation failed
+ 
+ 
+****** Validation details ******
+                                     Before  After
+1st generation packing quality     : NA NA
+2nd generation packing quality     : NA NA
+Ramachandran plot appearance       : NA NA
+chi-1/chi-2 rotamer normality      : NA NA
+Backbone conformation              : NA NA
+ 
+Bond length RMS Z-score            : NA NA
+Bond angle RMS Z-score             : NA NA
+ 
+Total number of bumps              : NA NA
+Weighted bump severity score       : NA NA
+ 
+Unsatisfied H-bond donors/acceptors: NA NA
+H-bond satisfaction fraction       : NA NA
+ 
+ 
+****** Structure rebuilding ******
+-Assigning secondary structure with DSSP
+-Removing waters without density
+-Performing peptide flips
+-Refitting side chains
+-Validation-based rebuilding
+ o Validation-based rebuilding failed
+ 
+ 
+****** Rebuilding details ******
+Loops added        : 0
+Waters removed     : 12
+Peptides flipped   : 0
+Side chains built  : 0
+Side chains flipped: 0
+Chirality fixes    : 0
+ 
+ 
+****** Carbohydrate (re)building ******
+-Running carbivore
+ o Carbivore failed, no carbohydrates (rebuilt)
+ 
+ 
+****** Final refinement ******
+-Updating metal restraints
+-Final restraint weight optimisation with MATRIX weights: 0.05 0.07 0.03
+ o Performed 20-cycle refinement with MATRIX weight 0.05 (R-free = 0.2232)
+ o Performed 20-cycle refinement with MATRIX weight 0.07 (R-free = 0.2234)
+ o Performed 20-cycle refinement with MATRIX weight 0.03 (R-free = 0.2262)
+ 
+ 
+****** Final refinement details ******
+Best matrix weight: 0.05
+Resulting R-factor: 0.1738
+Resulting R-free  : 0.2232
+'Unbiased' R-free : 0.2331
+sigma(R-free)     : 0.0081
+R-free Z-score    : 1.22
+ 
+ 
+****** Reciprocal space correlation ******
+                              Before  Final  Z-score
+Work correlation coefficient: 0.935   0.948  9.96
+Free correlation coefficient: 0.908   0.913  0.57
+ 
+ 
+****** Validation details ******
+-Running DSSP
+-Running WHAT_CHECK
+ o Validation failed
+                                     Before  Re-ref  Final
+1st generation packing quality     : NA NA NA
+2nd generation packing quality     : NA NA NA
+Ramachandran plot appearance       : NA NA NA
+chi-1/chi-2 rotamer normality      : NA NA NA
+Backbone conformation              : NA NA NA
+ 
+Bond length RMS Z-score            : NA NA NA
+Bond angle RMS Z-score             : NA NA NA
+ 
+Total number of bumps              : NA NA NA
+Weighted bump severity score       : NA NA NA
+ 
+Unsatisfied H-bond donors/acceptors: NA NA NA
+H-bond satisfaction fraction       : NA NA NA
+ 
+ 
+****** Protein side chain details ******
+-Analysing model changes
+ 
+Changed rotamers     : 17
+Hydrogen bond flips  : 22
+Cis-trans flips      : 0
+Trans-cis flips      : 0
+Peptides fixed       : 0
+Peptides distorted   : 0
+ 
+ 
+****** Electron density map details ******
+-Analysing density maps
+ 
+                       Better Worse
+Real-space CC        : 5 0
+Real-space R-factor  : 7 0
+EDIAm density fit    : 71 38
+OPIA density coverage: 0 0
+ 
+****** Ligand validation ******
+ 
+****** Ligand validation details (NHE A 202) ******
+ 
+                                    Before  Final
+Real-space R-factor               : 0.119   0.075
+Real-space correlation            : 0.937   0.971
+EDIAm density fit                 : 0.619   0.774
+OPIA density coverage (%)         : 53.8    53.8
+ 
+ 
+****** Ligand validation details (NHE B 203) ******
+ 
+                                    Before  Final
+Real-space R-factor               : 0.110   0.088
+Real-space correlation            : 0.933   0.964
+EDIAm density fit                 : 0.734   0.801
+OPIA density coverage (%)         : 30.8    61.5
+ 
+ 
+****** Creating final output ******
+-YASARA not installed, cannot make visualisation scenes
+-Creating Refmac command script
+-Consolidating results

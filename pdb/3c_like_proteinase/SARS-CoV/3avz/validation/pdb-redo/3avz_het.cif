@@ -1,0 +1,208 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.51
+_lib_update       11/07/18
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+HSV      HSV '.                                   ' .                  17  10 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+ALC-HSV  ALC      .        .        HSV      .        .
+ bond_ALC-C_=_HSV-N
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_HSV
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ HSV           O      O    O         0.000    -21.343  -44.757    0.175
+ HSV           C      C    C1        0.000    -20.972  -44.051    1.113
+ HSV           H      H    H         0.000    -20.521  -44.508    1.977
+ HSV           CA     C    CH1       0.000    -21.144  -42.536    1.065
+ HSV           HA     H    H         0.000    -21.570  -42.267    0.088
+ HSV           N      N    NT2       0.000    -22.056  -42.076    2.105
+ HSV           HN2    H    H         0.000    -22.388  -42.887    2.650
+ HSV           HN1    H    H         0.000    -22.151  -41.050    2.046
+ HSV           CB     C    CH2       0.000    -19.784  -41.849    1.203
+ HSV           HB1    H    H         0.000    -19.072  -42.417    0.600
+ HSV           HB2    H    H         0.000    -19.497  -41.908    2.255
+ HSV           CG     C    CR5       0.000    -19.783  -40.418    0.763
+ HSV           CD2    C    CSP       0.000    -20.733  -39.672    0.152
+ HSV           NE2    N    NRD5      0.000    -20.211  -38.414   -0.026
+ HSV           CE1    C    CR15      0.000    -18.982  -38.388    0.459
+ HSV           HE1    H    H         0.000    -18.320  -37.531    0.461
+ HSV           ND1    N    NRD5      0.000    -18.699  -39.585    0.941
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ HSV      O      n/a    C      START
+ HSV      C      O      CA     .
+ HSV      H      C      .      .
+ HSV      CA     C      CB     .
+ HSV      HA     CA     .      .
+ HSV      N      CA     HN1    .
+ HSV      HN2    N      .      .
+ HSV      HN1    N      .      .
+ HSV      CB     CA     CG     .
+ HSV      HB1    CB     .      .
+ HSV      HB2    CB     .      .
+ HSV      CG     CB     CD2    .
+ HSV      CD2    CG     NE2    .
+ HSV      NE2    CD2    CE1    .
+ HSV      CE1    NE2    ND1    .
+ HSV      HE1    CE1    .      .
+ HSV      ND1    CE1    .      END
+ HSV      CG     ND1    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ HSV      N      CA        single      1.475    0.020
+ HSV      CB     CA        single      1.524    0.020
+ HSV      CA     C         single      1.510    0.020
+ HSV      CG     CB        single      1.510    0.020
+ HSV      CG     ND1       aromatic    1.350    0.020
+ HSV      CD2    CG        double      1.335    0.020
+ HSV      ND1    CE1       aromatic    1.350    0.020
+ HSV      NE2    CD2       aromatic    1.292    0.020
+ HSV      CE1    NE2       deloc       1.350    0.020
+ HSV      C      O         double      1.220    0.020
+ HSV      HN1    N         single      1.033    0.020
+ HSV      HN2    N         single      1.033    0.020
+ HSV      HA     CA        single      1.099    0.020
+ HSV      HB1    CB        single      1.092    0.020
+ HSV      HB2    CB        single      1.092    0.020
+ HSV      HE1    CE1       single      1.083    0.020
+ HSV      H      C         single      1.077    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ HSV      O      C      H       123.000    3.000
+ HSV      O      C      CA      120.500    3.000
+ HSV      H      C      CA      120.000    3.000
+ HSV      C      CA     HA      108.810    3.000
+ HSV      C      CA     N       109.500    3.000
+ HSV      C      CA     CB      109.470    3.000
+ HSV      HA     CA     N       109.500    3.000
+ HSV      HA     CA     CB      108.340    3.000
+ HSV      N      CA     CB      109.500    3.000
+ HSV      CA     N      HN2     109.500    3.000
+ HSV      CA     N      HN1     109.500    3.000
+ HSV      HN2    N      HN1     109.500    3.000
+ HSV      CA     CB     HB1     109.470    3.000
+ HSV      CA     CB     HB2     109.470    3.000
+ HSV      CA     CB     CG      109.470    3.000
+ HSV      HB1    CB     HB2     107.900    3.000
+ HSV      HB1    CB     CG      109.470    3.000
+ HSV      HB2    CB     CG      109.470    3.000
+ HSV      CB     CG     CD2     108.000    3.000
+ HSV      CB     CG     ND1     126.000    3.000
+ HSV      CD2    CG     ND1     108.000    3.000
+ HSV      CG     CD2    NE2     180.000    3.000
+ HSV      CD2    NE2    CE1     108.000    3.000
+ HSV      NE2    CE1    HE1     126.000    3.000
+ HSV      NE2    CE1    ND1     108.000    3.000
+ HSV      HE1    CE1    ND1     126.000    3.000
+ HSV      CE1    ND1    CG      108.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ HSV      var_1            O      C      CA     CB              -121.243           20.000   3
+ HSV      var_2            C      CA     N      HN1              180.000           20.000   3
+ HSV      var_3            C      CA     CB     CG               180.000           20.000   3
+ HSV      var_4            CA     CB     CG     CD2                0.000           20.000   2
+ HSV      CONST_1          CB     CG     ND1    CE1                0.000            0.000   0
+ HSV      CONST_2          CB     CG     CD2    NE2             -179.980            0.000   0
+ HSV      CONST_3          CG     CD2    NE2    CE1                0.000            0.000   0
+ HSV      CONST_4          CD2    NE2    CE1    ND1                0.000            0.000   0
+ HSV      CONST_5          NE2    CE1    ND1    CG                 0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ HSV      chir_01          CA     N      CB     C         negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ HSV      plan-1            CG        0.020
+ HSV      plan-1            CB        0.020
+ HSV      plan-1            ND1       0.020
+ HSV      plan-1            CD2       0.020
+ HSV      plan-1            CE1       0.020
+ HSV      plan-1            NE2       0.020
+ HSV      plan-1            HE1       0.020
+ HSV      plan-2            C         0.020
+ HSV      plan-2            CA        0.020
+ HSV      plan-2            O         0.020
+ HSV      plan-2            H         0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_ALC-HSV
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ ALC-HSV  1 C       2 N         .           1.330    0.020
+# ------------------------------------------------------

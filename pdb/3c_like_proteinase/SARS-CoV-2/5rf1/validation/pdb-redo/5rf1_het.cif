@@ -1,0 +1,177 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.51
+_lib_update       11/07/18
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+T5G      T5G '.                                   ' .                  17  11 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_T5G
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ T5G           BR     BR   BR        0.000     13.437   -0.702   22.657
+ T5G           C      C    CR6       0.000     12.639    1.050   23.117
+ T5G           C5     C    CR16      0.000     13.336    2.198   22.754
+ T5G           H5     H    H         0.000     14.301    2.123   22.268
+ T5G           C1     C    CR16      0.000     11.401    1.119   23.762
+ T5G           H1     H    H         0.000     10.873    0.219   24.050
+ T5G           C2     C    CR16      0.000     10.861    2.392   24.027
+ T5G           H2     H    H         0.000      9.904    2.463   24.527
+ T5G           C3     C    CR6       0.000     11.533    3.579   23.659
+ T5G           C4     C    CR16      0.000     12.777    3.446   23.024
+ T5G           H4     H    H         0.000     13.319    4.338   22.735
+ T5G           S      S    ST        0.000     10.874    5.103   23.951
+ T5G           O      O    OS       -0.500     10.402    5.162   25.279
+ T5G           O1     O    OS       -0.500     11.762    6.113   23.479
+ T5G           N      N    NT2       0.000      9.554    5.104   22.977
+ T5G           HN2    H    H         0.000      9.491    4.204   22.470
+ T5G           HN1    H    H         0.000      9.052    6.005   23.067
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ T5G      BR     n/a    C      START
+ T5G      C      BR     C1     .
+ T5G      C5     C      H5     .
+ T5G      H5     C5     .      .
+ T5G      C1     C      C2     .
+ T5G      H1     C1     .      .
+ T5G      C2     C1     C3     .
+ T5G      H2     C2     .      .
+ T5G      C3     C2     S      .
+ T5G      C4     C3     H4     .
+ T5G      H4     C4     .      .
+ T5G      S      C3     N      .
+ T5G      O      S      .      .
+ T5G      O1     S      .      .
+ T5G      N      S      HN1    .
+ T5G      HN2    N      .      .
+ T5G      HN1    N      .      END
+ T5G      C4     C5     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ T5G      C4     C5        aromatic    1.390    0.020
+ T5G      C4     C3        aromatic    1.390    0.020
+ T5G      C5     C         aromatic    1.390    0.020
+ T5G      N      S         single      1.610    0.020
+ T5G      C1     C         aromatic    1.390    0.020
+ T5G      C      BR        single      1.890    0.020
+ T5G      O      S         deloc       1.480    0.020
+ T5G      C2     C1        aromatic    1.390    0.020
+ T5G      C3     C2        aromatic    1.390    0.020
+ T5G      S      C3        double      1.595    0.020
+ T5G      O1     S         deloc       1.480    0.020
+ T5G      H4     C4        single      1.083    0.020
+ T5G      H5     C5        single      1.083    0.020
+ T5G      HN1    N         single      1.033    0.020
+ T5G      HN2    N         single      1.033    0.020
+ T5G      H1     C1        single      1.083    0.020
+ T5G      H2     C2        single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ T5G      BR     C      C5      120.000    3.000
+ T5G      BR     C      C1      120.000    3.000
+ T5G      C5     C      C1      120.000    3.000
+ T5G      C      C5     H5      120.000    3.000
+ T5G      C      C5     C4      120.000    3.000
+ T5G      H5     C5     C4      120.000    3.000
+ T5G      C      C1     H1      120.000    3.000
+ T5G      C      C1     C2      120.000    3.000
+ T5G      H1     C1     C2      120.000    3.000
+ T5G      C1     C2     H2      120.000    3.000
+ T5G      C1     C2     C3      120.000    3.000
+ T5G      H2     C2     C3      120.000    3.000
+ T5G      C2     C3     C4      120.000    3.000
+ T5G      C2     C3     S       120.000    3.000
+ T5G      C4     C3     S       120.000    3.000
+ T5G      C3     C4     H4      120.000    3.000
+ T5G      C3     C4     C5      120.000    3.000
+ T5G      H4     C4     C5      120.000    3.000
+ T5G      C3     S      O       109.500    3.000
+ T5G      C3     S      O1      109.500    3.000
+ T5G      C3     S      N       109.500    3.000
+ T5G      O      S      O1      109.500    3.000
+ T5G      O      S      N       109.500    3.000
+ T5G      O1     S      N       109.500    3.000
+ T5G      S      N      HN2     109.500    3.000
+ T5G      S      N      HN1     109.500    3.000
+ T5G      HN2    N      HN1     109.500    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ T5G      CONST_1          BR     C      C5     C4                 0.000            0.000   0
+ T5G      CONST_2          BR     C      C1     C2                 0.000            0.000   0
+ T5G      CONST_3          C      C1     C2     C3                 0.000            0.000   0
+ T5G      CONST_4          C1     C2     C3     S                  0.000            0.000   0
+ T5G      CONST_5          C2     C3     C4     C5                 0.000            0.000   0
+ T5G      CONST_6          C3     C4     C5     C                  0.000            0.000   0
+ T5G      var_1            C2     C3     S      N                -65.826           20.000   3
+ T5G      var_2            C3     S      N      HN1              180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ T5G      chir_01          S      N      O      C3        negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ T5G      plan-1            C4        0.020
+ T5G      plan-1            C5        0.020
+ T5G      plan-1            C3        0.020
+ T5G      plan-1            H4        0.020
+ T5G      plan-1            C         0.020
+ T5G      plan-1            C1        0.020
+ T5G      plan-1            C2        0.020
+ T5G      plan-1            H5        0.020
+ T5G      plan-1            BR        0.020
+ T5G      plan-1            H1        0.020
+ T5G      plan-1            H2        0.020
+ T5G      plan-1            S         0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
