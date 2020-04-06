@@ -1,0 +1,22 @@
+#Refmac command script from PDB-REDO 7.27
+#
+#Use of riding hydrogens
+make hydrogen ALL
+#B-factor model selection
+refi bref ISOT
+#Solvent related settings
+scal type SIMP lssc function a sigma n
+solvent YES
+solvent vdwprobe 1.0 ionprobe 0.9 rshrink 0.9
+tlsd waters exclude
+#Restraint weights
+weight  MATRIX .002
+temp 1.50
+#NCS handling
+ncsr local
+ncsr align level 0.90 iterate N rmslevel 2.00
+ncsr neighbours exclude
+
+#Other restraints
+ridg dist sigm 0.10
+

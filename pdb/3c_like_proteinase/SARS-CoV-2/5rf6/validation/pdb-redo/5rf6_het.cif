@@ -1,0 +1,237 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.51
+_lib_update       11/07/18
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+NTG      NTG '.                                   ' .                  28  15 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_NTG
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ NTG           N1     N    NS        0.000      9.980    1.480   21.333
+ NTG           C1     C    CSP       0.000      9.839    0.515   21.943
+ NTG           C2     C    CR6       0.000      9.669   -0.635   22.734
+ NTG           C3     C    CR16      0.000      8.965   -0.532   23.922
+ NTG           H3     H    H         0.000      8.479    0.397   24.196
+ NTG           C4     C    CR16      0.000      8.892   -1.641   24.760
+ NTG           H4     H    H         0.000      8.342   -1.577   25.690
+ NTG           N2     N    NRD6      0.000     10.282   -1.780   22.312
+ NTG           C6     C    CR16      0.000     10.201   -2.839   23.136
+ NTG           H6     H    H         0.000     10.680   -3.757   22.819
+ NTG           C5     C    CR6       0.000      9.529   -2.848   24.404
+ NTG           N3     N    N         0.000      9.607   -4.030   25.233
+ NTG           C11    C    CH2       0.000      8.780   -4.134   26.467
+ NTG           H111   H    H         0.000      8.696   -3.125   26.876
+ NTG           H112   H    H         0.000      9.334   -4.764   27.165
+ NTG           C10    C    CH2       0.000      7.363   -4.724   26.247
+ NTG           H101   H    H         0.000      6.741   -3.944   25.803
+ NTG           H102   H    H         0.000      6.959   -4.998   27.223
+ NTG           O1     O    O2        0.000      7.372   -5.853   25.408
+ NTG           C9     C    CH2       0.000      7.512   -5.637   24.007
+ NTG           H91    H    H         0.000      7.213   -4.614   23.770
+ NTG           H92    H    H         0.000      6.869   -6.337   23.470
+ NTG           C8     C    CH2       0.000      8.977   -5.856   23.587
+ NTG           H81    H    H         0.000      9.142   -5.324   22.648
+ NTG           H82    H    H         0.000      9.127   -6.926   23.430
+ NTG           C7     C    CH2       0.000      9.966   -5.350   24.644
+ NTG           H72    H    H         0.000     10.943   -5.281   24.160
+ NTG           H71    H    H         0.000     10.005   -6.104   25.433
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ NTG      N1     n/a    C1     START
+ NTG      C1     N1     C2     .
+ NTG      C2     C1     N2     .
+ NTG      C3     C2     C4     .
+ NTG      H3     C3     .      .
+ NTG      C4     C3     H4     .
+ NTG      H4     C4     .      .
+ NTG      N2     C2     C6     .
+ NTG      C6     N2     C5     .
+ NTG      H6     C6     .      .
+ NTG      C5     C6     N3     .
+ NTG      N3     C5     C11    .
+ NTG      C11    N3     C10    .
+ NTG      H111   C11    .      .
+ NTG      H112   C11    .      .
+ NTG      C10    C11    O1     .
+ NTG      H101   C10    .      .
+ NTG      H102   C10    .      .
+ NTG      O1     C10    C9     .
+ NTG      C9     O1     C8     .
+ NTG      H91    C9     .      .
+ NTG      H92    C9     .      .
+ NTG      C8     C9     C7     .
+ NTG      H81    C8     .      .
+ NTG      H82    C8     .      .
+ NTG      C7     C8     H71    .
+ NTG      H72    C7     .      .
+ NTG      H71    C7     .      END
+ NTG      N3     C7     .    ADD
+ NTG      C4     C5     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ NTG      C1     N1        triple      1.158    0.020
+ NTG      N3     C5        single      1.400    0.020
+ NTG      N3     C7        single      1.455    0.020
+ NTG      C11    N3        single      1.455    0.020
+ NTG      C4     C5        aromatic    1.390    0.020
+ NTG      C4     C3        aromatic    1.390    0.020
+ NTG      C5     C6        aromatic    1.390    0.020
+ NTG      C6     N2        aromatic    1.337    0.020
+ NTG      C7     C8        single      1.524    0.020
+ NTG      C8     C9        single      1.524    0.020
+ NTG      C10    C11       single      1.524    0.020
+ NTG      O1     C10       single      1.426    0.020
+ NTG      C2     C1        single      1.285    0.020
+ NTG      C3     C2        aromatic    1.390    0.020
+ NTG      N2     C2        aromatic    1.350    0.020
+ NTG      C9     O1        single      1.426    0.020
+ NTG      H4     C4        single      1.083    0.020
+ NTG      H6     C6        single      1.083    0.020
+ NTG      H71    C7        single      1.092    0.020
+ NTG      H72    C7        single      1.092    0.020
+ NTG      H81    C8        single      1.092    0.020
+ NTG      H82    C8        single      1.092    0.020
+ NTG      H101   C10       single      1.092    0.020
+ NTG      H102   C10       single      1.092    0.020
+ NTG      H111   C11       single      1.092    0.020
+ NTG      H112   C11       single      1.092    0.020
+ NTG      H3     C3        single      1.083    0.020
+ NTG      H91    C9        single      1.092    0.020
+ NTG      H92    C9        single      1.092    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ NTG      N1     C1     C2      180.000    3.000
+ NTG      C1     C2     C3      120.000    3.000
+ NTG      C1     C2     N2      120.000    3.000
+ NTG      C3     C2     N2      120.000    3.000
+ NTG      C2     C3     H3      120.000    3.000
+ NTG      C2     C3     C4      120.000    3.000
+ NTG      H3     C3     C4      120.000    3.000
+ NTG      C3     C4     H4      120.000    3.000
+ NTG      C3     C4     C5      120.000    3.000
+ NTG      H4     C4     C5      120.000    3.000
+ NTG      C2     N2     C6      120.000    3.000
+ NTG      N2     C6     H6      120.000    3.000
+ NTG      N2     C6     C5      120.000    3.000
+ NTG      H6     C6     C5      120.000    3.000
+ NTG      C6     C5     N3      120.000    3.000
+ NTG      C6     C5     C4      120.000    3.000
+ NTG      N3     C5     C4      120.000    3.000
+ NTG      C5     N3     C11     120.000    3.000
+ NTG      C5     N3     C7      120.000    3.000
+ NTG      C11    N3     C7      120.000    3.000
+ NTG      N3     C11    H111    109.470    3.000
+ NTG      N3     C11    H112    109.470    3.000
+ NTG      N3     C11    C10     105.000    3.000
+ NTG      H111   C11    H112    107.900    3.000
+ NTG      H111   C11    C10     109.470    3.000
+ NTG      H112   C11    C10     109.470    3.000
+ NTG      C11    C10    H101    109.470    3.000
+ NTG      C11    C10    H102    109.470    3.000
+ NTG      C11    C10    O1      109.470    3.000
+ NTG      H101   C10    H102    107.900    3.000
+ NTG      H101   C10    O1      109.470    3.000
+ NTG      H102   C10    O1      109.470    3.000
+ NTG      C10    O1     C9      111.800    3.000
+ NTG      O1     C9     H91     109.470    3.000
+ NTG      O1     C9     H92     109.470    3.000
+ NTG      O1     C9     C8      109.470    3.000
+ NTG      H91    C9     H92     107.900    3.000
+ NTG      H91    C9     C8      109.470    3.000
+ NTG      H92    C9     C8      109.470    3.000
+ NTG      C9     C8     H81     109.470    3.000
+ NTG      C9     C8     H82     109.470    3.000
+ NTG      C9     C8     C7      111.000    3.000
+ NTG      H81    C8     H82     107.900    3.000
+ NTG      H81    C8     C7      109.470    3.000
+ NTG      H82    C8     C7      109.470    3.000
+ NTG      C8     C7     H72     109.470    3.000
+ NTG      C8     C7     H71     109.470    3.000
+ NTG      C8     C7     N3      105.000    3.000
+ NTG      H72    C7     H71     107.900    3.000
+ NTG      H72    C7     N3      109.470    3.000
+ NTG      H71    C7     N3      109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ NTG      var_1            N1     C1     C2     N2                68.492           20.000   3
+ NTG      CONST_1          C1     C2     C3     C4                 0.000            0.000   0
+ NTG      CONST_2          C2     C3     C4     C5                 0.000            0.000   0
+ NTG      CONST_3          C3     C4     C5     C6                 0.000            0.000   0
+ NTG      CONST_4          C1     C2     N2     C6                 0.000            0.000   0
+ NTG      CONST_5          C2     N2     C6     C5                 0.000            0.000   0
+ NTG      CONST_6          N2     C6     C5     N3                 0.000            0.000   0
+ NTG      var_2            C6     C5     N3     C11             -172.110           20.000   3
+ NTG      var_3            C5     N3     C7     C8               -61.927           20.000   3
+ NTG      var_4            C5     N3     C11    C10               87.924           20.000   3
+ NTG      var_5            N3     C11    C10    O1               180.000           20.000   3
+ NTG      var_6            C11    C10    O1     C9               -76.783           20.000   3
+ NTG      var_7            C10    O1     C9     C8                98.607           20.000   3
+ NTG      var_8            O1     C9     C8     C7               180.000           20.000   3
+ NTG      var_9            C9     C8     C7     N3               180.000           20.000   3
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ NTG      plan-1            N3        0.020
+ NTG      plan-1            C5        0.020
+ NTG      plan-1            C7        0.020
+ NTG      plan-1            C11       0.020
+ NTG      plan-2            C4        0.020
+ NTG      plan-2            C5        0.020
+ NTG      plan-2            C3        0.020
+ NTG      plan-2            H4        0.020
+ NTG      plan-2            C6        0.020
+ NTG      plan-2            C2        0.020
+ NTG      plan-2            N2        0.020
+ NTG      plan-2            N3        0.020
+ NTG      plan-2            H6        0.020
+ NTG      plan-2            C1        0.020
+ NTG      plan-2            H3        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

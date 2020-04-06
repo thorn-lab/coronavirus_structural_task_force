@@ -1,0 +1,303 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.51
+_lib_update       11/07/18
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+T4J      T4J '.                                   ' .                  33  18 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-T4J  CYS      .        .        T4J      .        .
+ bond_CYS-SG_=_T4J-C
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_T4J
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ T4J           O1     O    O         0.000      3.764   -7.862   24.776
+ T4J           C8     C    C         0.000      3.332   -6.805   24.320
+ T4J           N1     N    N         0.000      2.064   -6.661   23.905
+ T4J           C9     C    CH2       0.000      1.557   -5.457   23.235
+ T4J           H91    H    H         0.000      1.161   -5.739   22.257
+ T4J           H92    H    H         0.000      2.383   -4.754   23.103
+ T4J           C10    C    CH2       0.000      0.465   -4.807   24.055
+ T4J           H101   H    H         0.000      0.174   -3.881   23.555
+ T4J           H102   H    H         0.000      0.876   -4.574   25.039
+ T4J           S      S    S2        0.000     -0.974   -5.869   24.239
+ T4J           C11    C    CH2       0.000     -0.088   -7.283   24.911
+ T4J           H111   H    H         0.000     -0.800   -8.103   25.019
+ T4J           H112   H    H         0.000      0.294   -7.002   25.894
+ T4J           C12    C    CH2       0.000      1.059   -7.723   24.030
+ T4J           H122   H    H         0.000      0.666   -7.971   23.042
+ T4J           H121   H    H         0.000      1.518   -8.610   24.471
+ T4J           C6     C    CR6       0.000      4.261   -5.633   24.197
+ T4J           C5     C    CR16      0.000      4.257   -4.618   25.146
+ T4J           H5     H    H         0.000      3.582   -4.676   25.991
+ T4J           C7     C    CR16      0.000      5.121   -5.546   23.102
+ T4J           H7     H    H         0.000      5.121   -6.318   22.342
+ T4J           C2     C    CR6       0.000      5.979   -4.456   22.997
+ T4J           C3     C    CR16      0.000      5.970   -3.445   23.951
+ T4J           H30    H    H         0.000      6.635   -2.596   23.853
+ T4J           C4     C    CR16      0.000      5.108   -3.533   25.021
+ T4J           H4     H    H         0.000      5.096   -2.750   25.768
+ T4J           N      N    N         0.000      6.856   -4.315   21.910
+ T4J           C1     C    C         0.000      6.559   -4.409   20.616
+ T4J           O      O    O         0.000      5.463   -4.241   20.114
+ T4J           C      C    CH3       0.000      7.777   -4.766   19.829
+ T4J           H3     H    H         0.000      8.513   -4.017   19.961
+ T4J           H2     H    H         0.000      8.153   -5.696   20.166
+ T4J           H1     H    H         0.000      7.524   -4.837   18.803
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ T4J      O1     n/a    C8     START
+ T4J      C8     O1     C6     .
+ T4J      N1     C8     C9     .
+ T4J      C9     N1     C10    .
+ T4J      H91    C9     .      .
+ T4J      H92    C9     .      .
+ T4J      C10    C9     S      .
+ T4J      H101   C10    .      .
+ T4J      H102   C10    .      .
+ T4J      S      C10    C11    .
+ T4J      C11    S      C12    .
+ T4J      H111   C11    .      .
+ T4J      H112   C11    .      .
+ T4J      C12    C11    H121   .
+ T4J      H122   C12    .      .
+ T4J      H121   C12    .      .
+ T4J      C6     C8     C7     .
+ T4J      C5     C6     H5     .
+ T4J      H5     C5     .      .
+ T4J      C7     C6     C2     .
+ T4J      H7     C7     .      .
+ T4J      C2     C7     N      .
+ T4J      C3     C2     C4     .
+ T4J      H30    C3     .      .
+ T4J      C4     C3     H4     .
+ T4J      H4     C4     .      .
+ T4J      N      C2     C1     .
+ T4J      C1     N      C      .
+ T4J      O      C1     .      .
+ T4J      C      C1     H1     .
+ T4J      H3     C      .      .
+ T4J      H2     C      .      .
+ T4J      H1     C      .      END
+ T4J      N1     C12    .    ADD
+ T4J      C4     C5     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ T4J      N1     C8        single      1.330    0.020
+ T4J      N1     C12       single      1.455    0.020
+ T4J      C9     N1        single      1.455    0.020
+ T4J      C4     C5        aromatic    1.390    0.020
+ T4J      C4     C3        aromatic    1.390    0.020
+ T4J      C5     C6        aromatic    1.390    0.020
+ T4J      C7     C6        aromatic    1.390    0.020
+ T4J      C6     C8        single      1.500    0.020
+ T4J      C2     C7        aromatic    1.390    0.020
+ T4J      C8     O1        double      1.220    0.020
+ T4J      C10    C9        single      1.524    0.020
+ T4J      S      C10       single      1.762    0.020
+ T4J      C1     N         deloc       1.330    0.020
+ T4J      N      C2        single      1.400    0.020
+ T4J      C      C1        single      1.500    0.020
+ T4J      O      C1        double      1.220    0.020
+ T4J      C12    C11       single      1.524    0.020
+ T4J      C11    S         single      1.762    0.020
+ T4J      C3     C2        aromatic    1.390    0.020
+ T4J      H4     C4        single      1.083    0.020
+ T4J      H5     C5        single      1.083    0.020
+ T4J      H7     C7        single      1.083    0.020
+ T4J      H101   C10       single      1.092    0.020
+ T4J      H102   C10       single      1.092    0.020
+ T4J      H1     C         single      1.059    0.020
+ T4J      H2     C         single      1.059    0.020
+ T4J      H3     C         single      1.059    0.020
+ T4J      H111   C11       single      1.092    0.020
+ T4J      H112   C11       single      1.092    0.020
+ T4J      H121   C12       single      1.092    0.020
+ T4J      H122   C12       single      1.092    0.020
+ T4J      H30    C3        single      1.083    0.020
+ T4J      H91    C9        single      1.092    0.020
+ T4J      H92    C9        single      1.092    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ T4J      O1     C8     N1      123.000    3.000
+ T4J      O1     C8     C6      120.500    3.000
+ T4J      N1     C8     C6      120.000    3.000
+ T4J      C8     N1     C9      127.000    3.000
+ T4J      C8     N1     C12     127.000    3.000
+ T4J      C9     N1     C12     120.000    3.000
+ T4J      N1     C9     H91     109.470    3.000
+ T4J      N1     C9     H92     109.470    3.000
+ T4J      N1     C9     C10     105.000    3.000
+ T4J      H91    C9     H92     107.900    3.000
+ T4J      H91    C9     C10     109.470    3.000
+ T4J      H92    C9     C10     109.470    3.000
+ T4J      C9     C10    H101    109.470    3.000
+ T4J      C9     C10    H102    109.470    3.000
+ T4J      C9     C10    S       109.500    3.000
+ T4J      H101   C10    H102    107.900    3.000
+ T4J      H101   C10    S       109.500    3.000
+ T4J      H102   C10    S       109.500    3.000
+ T4J      C10    S      C11      96.220    3.000
+ T4J      S      C11    H111    109.500    3.000
+ T4J      S      C11    H112    109.500    3.000
+ T4J      S      C11    C12     109.500    3.000
+ T4J      H111   C11    H112    107.900    3.000
+ T4J      H111   C11    C12     109.470    3.000
+ T4J      H112   C11    C12     109.470    3.000
+ T4J      C11    C12    H122    109.470    3.000
+ T4J      C11    C12    H121    109.470    3.000
+ T4J      C11    C12    N1      105.000    3.000
+ T4J      H122   C12    H121    107.900    3.000
+ T4J      H122   C12    N1      109.470    3.000
+ T4J      H121   C12    N1      109.470    3.000
+ T4J      C8     C6     C5      120.000    3.000
+ T4J      C8     C6     C7      120.000    3.000
+ T4J      C5     C6     C7      120.000    3.000
+ T4J      C6     C5     H5      120.000    3.000
+ T4J      C6     C5     C4      120.000    3.000
+ T4J      H5     C5     C4      120.000    3.000
+ T4J      C6     C7     H7      120.000    3.000
+ T4J      C6     C7     C2      120.000    3.000
+ T4J      H7     C7     C2      120.000    3.000
+ T4J      C7     C2     C3      120.000    3.000
+ T4J      C7     C2     N       120.000    3.000
+ T4J      C3     C2     N       120.000    3.000
+ T4J      C2     C3     H30     120.000    3.000
+ T4J      C2     C3     C4      120.000    3.000
+ T4J      H30    C3     C4      120.000    3.000
+ T4J      C3     C4     H4      120.000    3.000
+ T4J      C3     C4     C5      120.000    3.000
+ T4J      H4     C4     C5      120.000    3.000
+ T4J      C2     N      C1      120.000    3.000
+ T4J      N      C1     O       123.000    3.000
+ T4J      N      C1     C       116.500    3.000
+ T4J      O      C1     C       123.000    3.000
+ T4J      C1     C      H3      109.470    3.000
+ T4J      C1     C      H2      109.470    3.000
+ T4J      C1     C      H1      109.470    3.000
+ T4J      H3     C      H2      109.470    3.000
+ T4J      H3     C      H1      109.470    3.000
+ T4J      H2     C      H1      109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ T4J      var_1            O1     C8     N1     C9               180.000           20.000   2
+ T4J      var_2            C8     N1     C12    C11              118.432           20.000   3
+ T4J      var_3            C8     N1     C9     C10             -117.903           20.000   3
+ T4J      var_4            N1     C9     C10    S                180.000           20.000   3
+ T4J      var_5            C9     C10    S      C11               54.657           20.000   3
+ T4J      var_6            C10    S      C11    C12              -54.203           20.000   3
+ T4J      var_7            S      C11    C12    N1               180.000           20.000   3
+ T4J      var_8            O1     C8     C6     C7                81.567           20.000   3
+ T4J      CONST_1          C8     C6     C5     C4                 0.000            0.000   0
+ T4J      CONST_2          C8     C6     C7     C2                 0.000            0.000   0
+ T4J      CONST_3          C6     C7     C2     N                  0.000            0.000   0
+ T4J      CONST_4          C7     C2     C3     C4                 0.000            0.000   0
+ T4J      CONST_5          C2     C3     C4     C5                 0.000            0.000   0
+ T4J      CONST_6          C3     C4     C5     C6                 0.000            0.000   0
+ T4J      var_9            C7     C2     N      C1                49.953           20.000   3
+ T4J      CONST_7          C2     N      C1     C                180.000            0.000   0
+ T4J      var_10           N      C1     C      H1               180.000           20.000   3
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ T4J      plan-1            N1        0.020
+ T4J      plan-1            C8        0.020
+ T4J      plan-1            C12       0.020
+ T4J      plan-1            C9        0.020
+ T4J      plan-2            C4        0.020
+ T4J      plan-2            C5        0.020
+ T4J      plan-2            C3        0.020
+ T4J      plan-2            H4        0.020
+ T4J      plan-2            C6        0.020
+ T4J      plan-2            C7        0.020
+ T4J      plan-2            C2        0.020
+ T4J      plan-2            H5        0.020
+ T4J      plan-2            C8        0.020
+ T4J      plan-2            H7        0.020
+ T4J      plan-2            N         0.020
+ T4J      plan-2            H30       0.020
+ T4J      plan-3            C8        0.020
+ T4J      plan-3            N1        0.020
+ T4J      plan-3            C6        0.020
+ T4J      plan-3            O1        0.020
+ T4J      plan-4            N         0.020
+ T4J      plan-4            C1        0.020
+ T4J      plan-4            C2        0.020
+ T4J      plan-4            C         0.020
+ T4J      plan-4            O         0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-T4J
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-T4J  1 SG      2 C         .           1.800    0.020
+# ------------------------------------------------------

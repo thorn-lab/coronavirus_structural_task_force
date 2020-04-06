@@ -1,0 +1,265 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.51
+_lib_update       11/07/18
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+LWA      LWA '.                                   ' .                  29  17 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_LWA
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ LWA           O1     O    O         0.000     22.305    2.393    8.616
+ LWA           C7     C    C         0.000     23.055    2.668    7.736
+ LWA           C8     C    C         0.000     22.744    2.303    6.270
+ LWA           O2     O    O2        0.000     23.580    3.266    5.273
+ LWA           C11    C    CH2       0.000     24.482    2.533    4.751
+ LWA           H111   H    H         0.000     25.375    2.457    5.375
+ LWA           H112   H    H         0.000     24.766    2.865    3.750
+ LWA           C10    C    CH2       0.000     23.806    1.175    4.664
+ LWA           H101   H    H         0.000     24.501    0.339    4.559
+ LWA           H102   H    H         0.000     23.040    1.109    3.889
+ LWA           C9     C    C1        0.000     23.151    1.121    6.030
+ LWA           H9     H    H         0.000     23.051    0.259    6.667
+ LWA           N1     N    NH1       0.000     24.301    3.352    8.016
+ LWA           HN1    H    H         0.000     24.922    3.577    7.252
+ LWA           C2     C    CR6       0.000     24.676    3.720    9.358
+ LWA           C3     C    CR16      0.000     24.793    5.054    9.684
+ LWA           H3     H    H         0.000     24.597    5.814    8.938
+ LWA           C4     C    CR16      0.000     25.160    5.419   10.964
+ LWA           H4     H    H         0.000     25.250    6.468   11.218
+ LWA           C1     C    CR16      0.000     24.938    2.747   10.304
+ LWA           H1     H    H         0.000     24.855    1.700   10.040
+ LWA           C      C    CR16      0.000     25.306    3.110   11.590
+ LWA           H      H    H         0.000     25.509    2.346   12.331
+ LWA           C5     C    CR6       0.000     25.415    4.451   11.930
+ LWA           C6     C    C         0.000     25.840    4.825   13.355
+ LWA           O      O    O         0.000     26.179    3.969   14.109
+ LWA           N      N    NH2       0.000     25.865    6.199   13.818
+ LWA           HN20   H    H         0.000     25.597    6.989   13.209
+ LWA           HN10   H    H         0.000     26.151    6.450   14.778
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ LWA      O1     n/a    C7     START
+ LWA      C7     O1     N1     .
+ LWA      C8     C7     O2     .
+ LWA      O2     C8     C11    .
+ LWA      C11    O2     C10    .
+ LWA      H111   C11    .      .
+ LWA      H112   C11    .      .
+ LWA      C10    C11    C9     .
+ LWA      H101   C10    .      .
+ LWA      H102   C10    .      .
+ LWA      C9     C10    H9     .
+ LWA      H9     C9     .      .
+ LWA      N1     C7     C2     .
+ LWA      HN1    N1     .      .
+ LWA      C2     N1     C1     .
+ LWA      C3     C2     C4     .
+ LWA      H3     C3     .      .
+ LWA      C4     C3     H4     .
+ LWA      H4     C4     .      .
+ LWA      C1     C2     C      .
+ LWA      H1     C1     .      .
+ LWA      C      C1     C5     .
+ LWA      H      C      .      .
+ LWA      C5     C      C6     .
+ LWA      C6     C5     N      .
+ LWA      O      C6     .      .
+ LWA      N      C6     HN10   .
+ LWA      HN20   N      .      .
+ LWA      HN10   N      .      END
+ LWA      C4     C5     .    ADD
+ LWA      C8     C9     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ LWA      N1     C7        single      1.330    0.020
+ LWA      C2     N1        single      1.350    0.020
+ LWA      C4     C5        aromatic    1.390    0.020
+ LWA      C4     C3        aromatic    1.390    0.020
+ LWA      C6     C5        single      1.500    0.020
+ LWA      C5     C         aromatic    1.390    0.020
+ LWA      N      C6        single      1.332    0.020
+ LWA      O      C6        double      1.220    0.020
+ LWA      C8     C7        single      1.460    0.020
+ LWA      C7     O1        double      1.220    0.020
+ LWA      C8     C9        double      1.340    0.020
+ LWA      O2     C8        single      1.454    0.020
+ LWA      C10    C11       single      1.524    0.020
+ LWA      C9     C10       single      1.510    0.020
+ LWA      C      C1        aromatic    1.390    0.020
+ LWA      C1     C2        aromatic    1.390    0.020
+ LWA      C11    O2        single      1.426    0.020
+ LWA      C3     C2        aromatic    1.390    0.020
+ LWA      HN1    N1        single      1.010    0.020
+ LWA      H4     C4        single      1.083    0.020
+ LWA      H101   C10       single      1.092    0.020
+ LWA      H102   C10       single      1.092    0.020
+ LWA      HN10   N         single      1.010    0.020
+ LWA      HN20   N         single      1.010    0.020
+ LWA      H      C         single      1.083    0.020
+ LWA      H1     C1        single      1.083    0.020
+ LWA      H111   C11       single      1.092    0.020
+ LWA      H112   C11       single      1.092    0.020
+ LWA      H3     C3        single      1.083    0.020
+ LWA      H9     C9        single      1.077    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ LWA      O1     C7     C8      120.500    3.000
+ LWA      O1     C7     N1      123.000    3.000
+ LWA      C8     C7     N1      120.000    3.000
+ LWA      C7     C8     O2      120.000    3.000
+ LWA      C7     C8     C9      120.000    3.000
+ LWA      O2     C8     C9      120.000    3.000
+ LWA      C8     O2     C11     120.000    3.000
+ LWA      O2     C11    H111    109.470    3.000
+ LWA      O2     C11    H112    109.470    3.000
+ LWA      O2     C11    C10     109.470    3.000
+ LWA      H111   C11    H112    107.900    3.000
+ LWA      H111   C11    C10     109.470    3.000
+ LWA      H112   C11    C10     109.470    3.000
+ LWA      C11    C10    H101    109.470    3.000
+ LWA      C11    C10    H102    109.470    3.000
+ LWA      C11    C10    C9      109.470    3.000
+ LWA      H101   C10    H102    107.900    3.000
+ LWA      H101   C10    C9      109.470    3.000
+ LWA      H102   C10    C9      109.470    3.000
+ LWA      C10    C9     H9      120.000    3.000
+ LWA      C10    C9     C8      120.500    3.000
+ LWA      H9     C9     C8      120.000    3.000
+ LWA      C7     N1     HN1     120.000    3.000
+ LWA      C7     N1     C2      120.000    3.000
+ LWA      HN1    N1     C2      120.000    3.000
+ LWA      N1     C2     C3      120.000    3.000
+ LWA      N1     C2     C1      120.000    3.000
+ LWA      C3     C2     C1      120.000    3.000
+ LWA      C2     C3     H3      120.000    3.000
+ LWA      C2     C3     C4      120.000    3.000
+ LWA      H3     C3     C4      120.000    3.000
+ LWA      C3     C4     H4      120.000    3.000
+ LWA      C3     C4     C5      120.000    3.000
+ LWA      H4     C4     C5      120.000    3.000
+ LWA      C2     C1     H1      120.000    3.000
+ LWA      C2     C1     C       120.000    3.000
+ LWA      H1     C1     C       120.000    3.000
+ LWA      C1     C      H       120.000    3.000
+ LWA      C1     C      C5      120.000    3.000
+ LWA      H      C      C5      120.000    3.000
+ LWA      C      C5     C6      120.000    3.000
+ LWA      C      C5     C4      120.000    3.000
+ LWA      C6     C5     C4      120.000    3.000
+ LWA      C5     C6     O       120.500    3.000
+ LWA      C5     C6     N       120.000    3.000
+ LWA      O      C6     N       123.000    3.000
+ LWA      C6     N      HN20    120.000    3.000
+ LWA      C6     N      HN10    120.000    3.000
+ LWA      HN20   N      HN10    120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ LWA      var_1            O1     C7     C8     O2               157.667           20.000   3
+ LWA      var_2            C7     C8     C9     C10             -137.621           20.000   3
+ LWA      var_3            C7     C8     O2     C11              108.671           20.000   3
+ LWA      var_4            C8     O2     C11    C10               32.814           20.000   3
+ LWA      var_5            O2     C11    C10    C9               180.000           20.000   3
+ LWA      var_6            C11    C10    C9     C8                38.041           20.000   3
+ LWA      var_7            O1     C7     N1     C2               180.000           20.000   2
+ LWA      var_8            C7     N1     C2     C1                65.633           20.000   3
+ LWA      CONST_1          N1     C2     C3     C4                 0.000            0.000   0
+ LWA      CONST_2          C2     C3     C4     C5                 0.000            0.000   0
+ LWA      CONST_3          C3     C4     C5     C                  0.000            0.000   0
+ LWA      CONST_4          N1     C2     C1     C                  0.000            0.000   0
+ LWA      CONST_5          C2     C1     C      C5                 0.000            0.000   0
+ LWA      CONST_6          C1     C      C5     C6                 0.000            0.000   0
+ LWA      var_9            C      C5     C6     N               -174.591           20.000   3
+ LWA      CONST_7          C5     C6     N      HN10             180.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ LWA      plan-1            N1        0.020
+ LWA      plan-1            C7        0.020
+ LWA      plan-1            C2        0.020
+ LWA      plan-1            HN1       0.020
+ LWA      plan-2            C4        0.020
+ LWA      plan-2            C5        0.020
+ LWA      plan-2            C3        0.020
+ LWA      plan-2            H4        0.020
+ LWA      plan-2            C         0.020
+ LWA      plan-2            C1        0.020
+ LWA      plan-2            C2        0.020
+ LWA      plan-2            C6        0.020
+ LWA      plan-2            H         0.020
+ LWA      plan-2            H1        0.020
+ LWA      plan-2            N1        0.020
+ LWA      plan-2            H3        0.020
+ LWA      plan-2            HN1       0.020
+ LWA      plan-3            C6        0.020
+ LWA      plan-3            C5        0.020
+ LWA      plan-3            N         0.020
+ LWA      plan-3            O         0.020
+ LWA      plan-3            HN20      0.020
+ LWA      plan-3            HN10      0.020
+ LWA      plan-4            C7        0.020
+ LWA      plan-4            N1        0.020
+ LWA      plan-4            C8        0.020
+ LWA      plan-4            O1        0.020
+ LWA      plan-4            HN1       0.020
+ LWA      plan-5            C8        0.020
+ LWA      plan-5            C7        0.020
+ LWA      plan-5            C9        0.020
+ LWA      plan-5            O2        0.020
+ LWA      plan-5            H9        0.020
+ LWA      plan-6            N         0.020
+ LWA      plan-6            C6        0.020
+ LWA      plan-6            HN10      0.020
+ LWA      plan-6            HN20      0.020
+ LWA      plan-7            C9        0.020
+ LWA      plan-7            C8        0.020
+ LWA      plan-7            C10       0.020
+ LWA      plan-7            H9        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
