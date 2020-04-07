@@ -133,7 +133,7 @@ _entity.pdbx_fragment
 _entity.details 
 1 polymer     man 'Sodium-dependent neutral amino acid transporter B(0)AT1' 73289.359 2  ?         ? ? ? 
 2 polymer     man 'Angiotensin-converting enzyme 2'                         93756.062 2  3.4.17.23 ? ? ? 
-3 polymer     man '2019-nCoV Receptor Binding Domain'                       25122.336 2  ?         ? ? ? 
+3 polymer     man 'SARS-coV-2 Receptor Binding Domain'                      25122.336 2  ?         ? ? ? 
 4 non-polymer man N-ACETYL-D-GLUCOSAMINE                                    221.208   44 ?         ? ? ? 
 5 non-polymer nat LEUCINE                                                   131.173   2  ?         ? ? ? 
 6 non-polymer nat 'ZINC ION'                                                65.409    2  ?         ? ? ? 
@@ -1959,12 +1959,13 @@ _entity_src_gen.expression_system_id
 _entity_src_gen.plasmid_name 
 _entity_src_gen.plasmid_details 
 _entity_src_gen.pdbx_description 
-1 1 sample 'Biological sequence' 1 654 Human              ? 'SLC6A19, B0AT1'       ? ? ? ? ? ? 'Homo sapiens' 9606    ? ? ? ? ? ? 
-? ? 'Homo sapiens' 9606 ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? 
-2 1 sample 'Biological sequence' 1 814 Human              ? 'ACE2, UNQ868/PRO1885' ? ? ? ? ? ? 'Homo sapiens' 9606    ? ? ? ? ? ? 
-? ? 'Homo sapiens' 9606 ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? 
-3 1 sample 'Biological sequence' 1 223 2019-nCoV,COVID-19 ? ?                      ? ? ? ? ? ? SARS-CoV-2     2697049 ? ? ? ? ? ? 
-? ? 'Homo sapiens' 9606 ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? 
+1 1 sample 'Biological sequence' 1 654 Human                         ? 'SLC6A19, B0AT1'       ? ? ? ? ? ? 'Homo sapiens' 9606    ? 
+? ? ? ? ? ? ? 'Homo sapiens' 9606 ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? 
+2 1 sample 'Biological sequence' 1 814 Human                         ? 'ACE2, UNQ868/PRO1885' ? ? ? ? ? ? 'Homo sapiens' 9606    ? 
+? ? ? ? ? ? ? 'Homo sapiens' 9606 ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? 
+3 1 sample 'Biological sequence' 1 223 SARS-coV-2,2019-nCoV,COVID-19 ? ?                      ? ? ? ? ? ? 
+'Severe acute respiratory syndrome coronavirus 2' 2697049 ? ? ? ? ? ? ? ? 'Homo sapiens' 9606 ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? 
+? ? ? 
 # 
 loop_
 _struct_ref.id 
@@ -31748,6 +31749,7 @@ _pdbx_audit_revision_history.minor_revision
 _pdbx_audit_revision_history.revision_date 
 1 'Structure model' 1 0 2020-03-11 
 2 'Structure model' 1 1 2020-03-18 
+3 'Structure model' 1 2 2020-04-01 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -31757,33 +31759,46 @@ _pdbx_audit_revision_details.type                'Initial release'
 _pdbx_audit_revision_details.description         ? 
 _pdbx_audit_revision_details.details             ? 
 # 
-_pdbx_audit_revision_group.ordinal             1 
-_pdbx_audit_revision_group.revision_ordinal    2 
-_pdbx_audit_revision_group.data_content_type   'Structure model' 
-_pdbx_audit_revision_group.group               'Database references' 
+loop_
+_pdbx_audit_revision_group.ordinal 
+_pdbx_audit_revision_group.revision_ordinal 
+_pdbx_audit_revision_group.data_content_type 
+_pdbx_audit_revision_group.group 
+1 2 'Structure model' 'Database references' 
+2 3 'Structure model' 'Source and taxonomy' 
+3 3 'Structure model' 'Structure summary'   
 # 
 loop_
 _pdbx_audit_revision_category.ordinal 
 _pdbx_audit_revision_category.revision_ordinal 
 _pdbx_audit_revision_category.data_content_type 
 _pdbx_audit_revision_category.category 
-1 2 'Structure model' citation        
-2 2 'Structure model' citation_author 
+1 2 'Structure model' citation                         
+2 2 'Structure model' citation_author                  
+3 3 'Structure model' em_entity_assembly               
+4 3 'Structure model' em_entity_assembly_naturalsource 
+5 3 'Structure model' entity                           
+6 3 'Structure model' entity_src_gen                   
 # 
 loop_
 _pdbx_audit_revision_item.ordinal 
 _pdbx_audit_revision_item.revision_ordinal 
 _pdbx_audit_revision_item.data_content_type 
 _pdbx_audit_revision_item.item 
-1 2 'Structure model' '_citation.country'                 
-2 2 'Structure model' '_citation.journal_abbrev'          
-3 2 'Structure model' '_citation.journal_id_ASTM'         
-4 2 'Structure model' '_citation.journal_id_CSD'          
-5 2 'Structure model' '_citation.journal_id_ISSN'         
-6 2 'Structure model' '_citation.pdbx_database_id_DOI'    
-7 2 'Structure model' '_citation.pdbx_database_id_PubMed' 
-8 2 'Structure model' '_citation.title'                   
-9 2 'Structure model' '_citation.year'                    
+1  2 'Structure model' '_citation.country'                             
+2  2 'Structure model' '_citation.journal_abbrev'                      
+3  2 'Structure model' '_citation.journal_id_ASTM'                     
+4  2 'Structure model' '_citation.journal_id_CSD'                      
+5  2 'Structure model' '_citation.journal_id_ISSN'                     
+6  2 'Structure model' '_citation.pdbx_database_id_DOI'                
+7  2 'Structure model' '_citation.pdbx_database_id_PubMed'             
+8  2 'Structure model' '_citation.title'                               
+9  2 'Structure model' '_citation.year'                                
+10 3 'Structure model' '_em_entity_assembly.name'                      
+11 3 'Structure model' '_em_entity_assembly_naturalsource.organism'    
+12 3 'Structure model' '_entity.pdbx_description'                      
+13 3 'Structure model' '_entity_src_gen.gene_src_common_name'          
+14 3 'Structure model' '_entity_src_gen.pdbx_gene_src_scientific_name' 
 # 
 _pdbx_entry_details.entry_id                 6M17 
 _pdbx_entry_details.nonpolymer_details       ? 
@@ -31834,9 +31849,9 @@ _em_entity_assembly.entity_id_list
 _em_entity_assembly.synonym 
 _em_entity_assembly.oligomeric_details 
 1 0 'cryo EM map of the complex of 2019-nCoV RBD with the ACE2-B0AT1 complex'                                   
-'the 2019-nCoV RBD/ACE2-B0AT1 complex' RECOMBINANT COMPLEX 1,2,3 ? ? 
+'the SARS-coV-2 RBD/ACE2-B0AT1 complex' RECOMBINANT COMPLEX 1,2,3 ? ? 
 2 1 'cryo EM map of the complex of 2019-nCoV RBD with the ACE2-B0AT1 complex, focused refined on 2019-nCoV RBD' 
-'the 2019-nCoV RBD'                    RECOMBINANT COMPLEX 3     ? ? 
+'the SARS-coV-2 RBD'                    RECOMBINANT COMPLEX 3     ? ? 
 3 1 'cryo EM map of the complex of 2019-nCoV RBD with the ACE2-B0AT1 complex, focused refined on ACE2-B0AT1'    ACE2-B0AT1 
 RECOMBINANT COMPLEX 1,2   ? ? 
 # 
@@ -32390,8 +32405,8 @@ _em_entity_assembly_naturalsource.organelle
 _em_entity_assembly_naturalsource.organism 
 _em_entity_assembly_naturalsource.strain 
 _em_entity_assembly_naturalsource.tissue 
-1 2 ? ? 2697049 ? ? SARS-CoV-2     ? ? 
-2 3 ? ? 9606    ? ? 'Homo sapiens' ? ? 
+1 2 ? ? 2697049 ? ? 'Severe acute respiratory syndrome coronavirus 2' ? ? 
+2 3 ? ? 9606    ? ? 'Homo sapiens'                                    ? ? 
 # 
 loop_
 _em_entity_assembly_recombinant.id 

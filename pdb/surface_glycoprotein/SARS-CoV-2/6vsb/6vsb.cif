@@ -3,7 +3,7 @@ data_6VSB
 _entry.id   6VSB 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.323 
+_audit_conform.dict_version    5.324 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
@@ -63,10 +63,10 @@ _citation.journal_id_CSD            0038
 _citation.journal_id_ISSN           1095-9203 
 _citation.journal_full              ? 
 _citation.journal_issue             ? 
-_citation.journal_volume            ? 
+_citation.journal_volume            367 
 _citation.language                  ? 
-_citation.page_first                ? 
-_citation.page_last                 ? 
+_citation.page_first                1260 
+_citation.page_last                 1263 
 _citation.title                     'Cryo-EM structure of the 2019-nCoV spike in the prefusion conformation.' 
 _citation.year                      2020 
 _citation.database_id_CSD           ? 
@@ -138,8 +138,8 @@ _entity.pdbx_ec
 _entity.pdbx_mutation 
 _entity.pdbx_fragment 
 _entity.details 
-1 polymer     man 'Spike glycoprotein'   142399.375 3  ? 'K986P, V987P, R682G, R683S, R685S' ? ? 
-2 non-polymer man N-ACETYL-D-GLUCOSAMINE 221.208    61 ? ?                                   ? ? 
+1 polymer     man 'SARS-CoV-2 spike glycoprotein' 142399.375 3  ? 'K986P, V987P, R682G, R683S, R685S' ? ? 
+2 non-polymer man N-ACETYL-D-GLUCOSAMINE          221.208    61 ? ?                                   ? ? 
 # 
 _entity_poly.entity_id                      1 
 _entity_poly.type                           'polypeptide(L)' 
@@ -1486,7 +1486,7 @@ _entity_src_gen.pdbx_alt_source_flag               sample
 _entity_src_gen.pdbx_seq_type                      'Biological sequence' 
 _entity_src_gen.pdbx_beg_seq_num                   1 
 _entity_src_gen.pdbx_end_seq_num                   1288 
-_entity_src_gen.gene_src_common_name               COVID-19 
+_entity_src_gen.gene_src_common_name               SARS-CoV-2 
 _entity_src_gen.gene_src_genus                     ? 
 _entity_src_gen.pdbx_gene_src_gene                 ? 
 _entity_src_gen.gene_src_species                   ? 
@@ -1495,7 +1495,7 @@ _entity_src_gen.gene_src_tissue                    ?
 _entity_src_gen.gene_src_tissue_fraction           ? 
 _entity_src_gen.gene_src_details                   ? 
 _entity_src_gen.pdbx_gene_src_fragment             ? 
-_entity_src_gen.pdbx_gene_src_scientific_name      2019-nCoV 
+_entity_src_gen.pdbx_gene_src_scientific_name      'Severe acute respiratory syndrome coronavirus 2' 
 _entity_src_gen.pdbx_gene_src_ncbi_taxonomy_id     2697049 
 _entity_src_gen.pdbx_gene_src_variant              ? 
 _entity_src_gen.pdbx_gene_src_cell_line            ? 
@@ -29461,6 +29461,8 @@ _pdbx_audit_revision_history.minor_revision
 _pdbx_audit_revision_history.revision_date 
 1 'Structure model' 1 0 2020-02-26 
 2 'Structure model' 1 1 2020-03-04 
+3 'Structure model' 1 2 2020-03-25 
+4 'Structure model' 1 3 2020-04-01 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -29470,27 +29472,45 @@ _pdbx_audit_revision_details.type                'Initial release'
 _pdbx_audit_revision_details.description         ? 
 _pdbx_audit_revision_details.details             ? 
 # 
-_pdbx_audit_revision_group.ordinal             1 
-_pdbx_audit_revision_group.revision_ordinal    2 
-_pdbx_audit_revision_group.data_content_type   'Structure model' 
-_pdbx_audit_revision_group.group               'Database references' 
+loop_
+_pdbx_audit_revision_group.ordinal 
+_pdbx_audit_revision_group.revision_ordinal 
+_pdbx_audit_revision_group.data_content_type 
+_pdbx_audit_revision_group.group 
+1 2 'Structure model' 'Database references' 
+2 3 'Structure model' 'Database references' 
+3 4 'Structure model' 'Source and taxonomy' 
+4 4 'Structure model' 'Structure summary'   
 # 
 loop_
 _pdbx_audit_revision_category.ordinal 
 _pdbx_audit_revision_category.revision_ordinal 
 _pdbx_audit_revision_category.data_content_type 
 _pdbx_audit_revision_category.category 
-1 2 'Structure model' citation        
-2 2 'Structure model' citation_author 
+1 2 'Structure model' citation                         
+2 2 'Structure model' citation_author                  
+3 3 'Structure model' citation                         
+4 4 'Structure model' em_entity_assembly               
+5 4 'Structure model' em_entity_assembly_naturalsource 
+6 4 'Structure model' entity                           
+7 4 'Structure model' entity_src_gen                   
 # 
 loop_
 _pdbx_audit_revision_item.ordinal 
 _pdbx_audit_revision_item.revision_ordinal 
 _pdbx_audit_revision_item.data_content_type 
 _pdbx_audit_revision_item.item 
-1 2 'Structure model' '_citation.pdbx_database_id_PubMed' 
-2 2 'Structure model' '_citation.title'                   
-3 2 'Structure model' '_citation_author.name'             
+1  2 'Structure model' '_citation.pdbx_database_id_PubMed'             
+2  2 'Structure model' '_citation.title'                               
+3  2 'Structure model' '_citation_author.name'                         
+4  3 'Structure model' '_citation.journal_volume'                      
+5  3 'Structure model' '_citation.page_first'                          
+6  3 'Structure model' '_citation.page_last'                           
+7  4 'Structure model' '_em_entity_assembly.name'                      
+8  4 'Structure model' '_em_entity_assembly_naturalsource.organism'    
+9  4 'Structure model' '_entity.pdbx_description'                      
+10 4 'Structure model' '_entity_src_gen.gene_src_common_name'          
+11 4 'Structure model' '_entity_src_gen.pdbx_gene_src_scientific_name' 
 # 
 _pdbx_entry_details.entry_id                 6VSB 
 _pdbx_entry_details.nonpolymer_details       ? 
@@ -29533,7 +29553,7 @@ _em_buffer.name          ?
 _em_entity_assembly.id                   1 
 _em_entity_assembly.parent_id            0 
 _em_entity_assembly.details              ? 
-_em_entity_assembly.name                 'spike glycoprotein' 
+_em_entity_assembly.name                 'SARS-CoV-2 spike glycoprotein' 
 _em_entity_assembly.source               RECOMBINANT 
 _em_entity_assembly.type                 COMPLEX 
 _em_entity_assembly.entity_id_list       1 
@@ -31472,7 +31492,7 @@ _em_entity_assembly_naturalsource.cellular_location    ?
 _em_entity_assembly_naturalsource.ncbi_tax_id          2697049 
 _em_entity_assembly_naturalsource.organ                ? 
 _em_entity_assembly_naturalsource.organelle            ? 
-_em_entity_assembly_naturalsource.organism             2019-nCoV 
+_em_entity_assembly_naturalsource.organism             'Severe acute respiratory syndrome coronavirus 2' 
 _em_entity_assembly_naturalsource.strain               ? 
 _em_entity_assembly_naturalsource.tissue               ? 
 # 
