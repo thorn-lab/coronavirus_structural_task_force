@@ -9,6 +9,6 @@ outlist = open('mxList.txt', 'w')
 print('path, Rfree', file=outlist)
 with conn:
     for row in c.execute('SELECT * FROM stats WHERE method=? ORDER BY protein, rfree',('X-RAY DIFFRACTION',)):
-        print(row[1],row[-1], file=outlist)
+        print(row[1],row[-1])
 print('Done!')
 

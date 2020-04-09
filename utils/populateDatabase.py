@@ -1,7 +1,6 @@
-import Bio.PDB as bio
 import sqlite3
 import os
-
+from gemmi import cif
 
 conn = sqlite3.connect("stats.db")
 
@@ -11,7 +10,9 @@ c.execute("""CREATE TABLE stats (pdbid text, datapath text,
                                  protein text,
                                  virus text,
                                  method text, 
-                                 resolution real, rwork real, rfree real)""")
+                                 resolution real, 
+                                 rwork real, 
+                                 rfree real)""")
 
 conn.commit()
 
@@ -26,45 +27,67 @@ def fillTheDB(workdir):
                 l = root.split('/')
                 with conn:
                     try:
-                        mmcif_dict = bio.MMCIF2Dict.MMCIF2Dict(folder+'/'+f+'_original.cif')
-
-                        # c.execute('INSERT INTO stats VALUES (?,?,?,?,?,?,?)', parsed_values)
+                        d = cif.read(folder+'/'+f+'.cif')
+                        block = d.sole_block()
                     except:
-                        mmcif_dict = bio.MMCIF2Dict.MMCIF2Dict(folder+'/'+f+'.cif')
+                        break
                     code = f
                     path = folder
                     virus = l[-1]
                     protein = l[-2]
-                    method =  mmcif_dict['_exptl.method']
+                    b = block.find_values('_exptl.method')
+                    method = b.str(0)
+                    rfree = 0
+                    rwork = 0
+                    resolution = 0
                     if method == 'X-RAY DIFFRACTION':
-                        rfree = float(mmcif_dict['_refine.ls_R_factor_R_free'])
-                        rwork = float(mmcif_dict['_refine.ls_R_factor_R_work'])
+                        print(method)
+                        rfree = float(block.find_value('_refine.ls_R_factor_R_free'))
+                        rwork = float(block.find_value('_refine.ls_R_factor_R_work'))
                         #fsc = mmcif_dict['_entry_for_fsc']
                         try:
-                            resolution = float(mmcif_dict['_reflns.d_resolution_high'])
+                            resolution = float(block.find_value('_reflns.d_resolution_high'))
                         except:
                             resolution = None
-                        
                     elif method =='ELECTRON MICROSCOPY':
+                        print(method)
                         rfree = None
                         rwork = None
                         #fsc = mmcif_dict['_entry_for_fsc']
-                        resolution = mmcif_dict['_em_3d_reconstruction.resolution']
+                        resolution = block.find_value('_em_3d_reconstruction.resolution')
                     elif method == 'SOLUTION NMR':
                         rfree = None
                         rwork = None
                         #fsc = mmcif_dict['_entry_for_fsc']
                         resolution = None
+                    else:
+                        print('something terribly wrong here')
                     parsed_values=(code, path, protein, virus , method, resolution , rwork, rfree)                    
                     c.execute('INSERT INTO stats VALUES(?,?,?,?,?,?,?,?)',parsed_values)
 pwd = os.getcwd()
+print(pwd)
 fillTheDB(pwd)
 
+
+
+outlist = open('mxList.txt', 'w') 
+print('path, Rfree', file=outlist)
 with conn:
-    for row in c.execute('SELECT * FROM stats WHERE method = ELECTRON MICROSCOPY'):
-        print(row)
-        print('hi!')
+    for row in c.execute('SELECT * FROM stats WHERE method=? ORDER BY protein, rfree',('X-RAY DIFFRACTION',)):
+        print(row[1],row[-1], file=outlist)
+print('Done!')
+
+emlist = open('emList.txt', 'w') 
+print('path, resolution', file=emlist)
+with conn:
+    for row in c.execute('SELECT * FROM stats WHERE method=? ORDER BY protein, resolution',('ELECTRON MICROSCOPY',)):
+        print(row[1],row[-3], file=emlist)
 print('Done!')
 
 
-
+full_db = open('stats.csv', 'w') 
+print('pdb, path, protein, virus , method, resolution , rwork, rfree', file=full_db)
+with conn:
+    for row in c.execute('SELECT * FROM stats ORDER BY protein'):
+        print(str(row), file=full_db)
+print('Done!')
