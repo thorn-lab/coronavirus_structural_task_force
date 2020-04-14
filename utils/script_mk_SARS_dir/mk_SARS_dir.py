@@ -6,7 +6,7 @@ import collections
 
 '''
 This script does this task:
-<It will search for all compare all PDB entrys of a taxonomy with the protein sequences
+<It will compare all PDB entrys of a taxonomy with the protein sequences
 in /FASTA Files and create a Repository of all PDB entrys which are alligned with the proteins sequences
 and the taxonomy. Structure: protein_name/taxo_name/id. In each ID folder you will find a mtz, cif and pdb file>
 And was written in 2020 by Kristopher Nolte, Thorn Lab, University of Wuerzburg
