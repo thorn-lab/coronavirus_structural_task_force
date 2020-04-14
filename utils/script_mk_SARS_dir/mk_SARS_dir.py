@@ -5,6 +5,13 @@ import os
 import collections
 
 '''
+This script does this task:
+<It will search for all compare all PDB entrys of a taxonomy with the protein sequences
+in /FASTA Files and create a Repository of all PDB entrys which are alligned with the proteins sequences
+and the taxonomy. Structure: protein_name/taxo_name/id. In each ID folder you will find a mtz, cif and pdb file>
+And was written in 2020 by Kristopher Nolte, Thorn Lab, University of Wuerzburg
+as part of the Coronavirus Structural Taskforce, insidecorona.net
+
 Fasta Files/*.fasta is the document with  fasta entrys
 The folders are named after the protein_name and the taxo_names in the fasta. You have to rename them there if you want. You can see at line 64 how they are seperated
 '''
