@@ -3,7 +3,7 @@ data_2BEZ
 _entry.id   2BEZ 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.280 
+_audit_conform.dict_version    5.324 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
@@ -26,7 +26,7 @@ _pdbx_database_status.process_site                    PDBE
 _pdbx_database_status.SG_entry                        . 
 _pdbx_database_status.recvd_initial_deposition_date   2004-12-02 
 _pdbx_database_status.pdb_format_compatible           Y 
-_pdbx_database_status.status_code_sf                  ? 
+_pdbx_database_status.status_code_sf                  REL 
 _pdbx_database_status.status_code_mr                  ? 
 _pdbx_database_status.status_code_cs                  ? 
 _pdbx_database_status.methods_development_category    ? 
@@ -61,12 +61,13 @@ loop_
 _citation_author.citation_id 
 _citation_author.name 
 _citation_author.ordinal 
-primary 'Supekar, V.M.'    1 
-primary 'Bruckmann, C.'    2 
-primary 'Ingallinella, P.' 3 
-primary 'Bianchi, E.'      4 
-primary 'Pessi, A.'        5 
-primary 'Carfi, A.'        6 
+_citation_author.identifier_ORCID 
+primary 'Supekar, V.M.'    1 ? 
+primary 'Bruckmann, C.'    2 ? 
+primary 'Ingallinella, P.' 3 ? 
+primary 'Bianchi, E.'      4 ? 
+primary 'Pessi, A.'        5 ? 
+primary 'Carfi, A.'        6 ? 
 # 
 _cell.entry_id           2BEZ 
 _cell.length_a           37.345 
@@ -95,16 +96,16 @@ _entity.pdbx_ec
 _entity.pdbx_mutation 
 _entity.pdbx_fragment 
 _entity.details 
-1 polymer     man 'E2 GLYCOPROTEIN' 8426.370 1  ? ? 'RESIDUES 896-972'   ? 
-2 polymer     man 'E2 GLYCOPROTEIN' 4554.011 1  ? ? 'RESIDUES 1142-1183' ? 
-3 non-polymer syn GLYCEROL          92.094   1  ? ? ?                    ? 
-4 water       nat water             18.015   78 ? ? ?                    ? 
+1 polymer     man 'Spike glycoprotein' 8426.370 1  ? ? 'RESIDUES 896-972'   ? 
+2 polymer     man 'Spike glycoprotein' 4554.011 1  ? ? 'RESIDUES 1142-1183' ? 
+3 non-polymer syn GLYCEROL             92.094   1  ? ? ?                    ? 
+4 water       nat water                18.015   78 ? ? ?                    ? 
 # 
 loop_
 _entity_name_com.entity_id 
 _entity_name_com.name 
-1 'SARS CORE FUSION PROTEIN, SPIKE GLYCOPROTEIN' 
-2 'SARS CORE FUSION PROTEIN, SPIKE GLYCOPROTEIN' 
+1 'S glycoprotein,E2,Peplomer protein' 
+2 'S glycoprotein,E2,Peplomer protein' 
 # 
 loop_
 _entity_poly.entity_id 
@@ -294,22 +295,22 @@ _entity_src_gen.expression_system_id
 _entity_src_gen.plasmid_name 
 _entity_src_gen.plasmid_details 
 _entity_src_gen.pdbx_description 
-1 1 sample ? ? ? HCOV-SARS ? ? ? URBANI ? ? ? ? 'SARS CORONAVIRUS' 228330 ? ? ? ? ? ? ? ? 'ESCHERICHIA COLI' 511693 ? ? ? ? ? ? 
-BL21 ? ? ? ? ? ? ? ? PMAL ? ? ? ? ? 
-2 1 sample ? ? ? HCOV-SARS ? ? ? URBANI ? ? ? ? 'SARS CORONAVIRUS' 228330 ? ? ? ? ? ? ? ? 'ESCHERICHIA COLI' 511693 ? ? ? ? ? ? 
-BL21 ? ? ? ? ? ? ? ? PMAL ? ? ? ? ? 
+1 1 sample 'Biological sequence' 1 77 SARS-CoV ? 'S, 2' ? ? ? ? ? ? 'Human SARS coronavirus' 694009 ? ? ? ? ? ? ? ? 
+'ESCHERICHIA COLI' 511693 ? ? ? ? ? ? BL21 ? ? ? ? ? ? ? ? PMAL ? ? ? ? ? 
+2 1 sample 'Biological sequence' 1 42 SARS-CoV ? 'S, 2' ? ? ? ? ? ? 'Human SARS coronavirus' 694009 ? ? ? ? ? ? ? ? 
+'ESCHERICHIA COLI' 511693 ? ? ? ? ? ? BL21 ? ? ? ? ? ? ? ? PMAL ? ? ? ? ? 
 # 
 loop_
 _struct_ref.id 
 _struct_ref.db_name 
 _struct_ref.db_code 
+_struct_ref.pdbx_db_accession 
+_struct_ref.pdbx_db_isoform 
 _struct_ref.entity_id 
 _struct_ref.pdbx_seq_one_letter_code 
 _struct_ref.pdbx_align_begin 
-_struct_ref.pdbx_db_accession 
-_struct_ref.pdbx_db_isoform 
-1 UNP VGL2_CVHSA 1 ? ? P59594 ? 
-2 UNP VGL2_CVHSA 2 ? ? P59594 ? 
+1 UNP SPIKE_CVHSA P59594 ? 1 NVLYENQKQIANQFNKAISQIQESLTTTSTALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRLDKVEAE 896  
+2 UNP SPIKE_CVHSA P59594 ? 2 TSPDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQ                                    1142 
 # 
 loop_
 _struct_ref_seq.align_id 
@@ -1912,6 +1913,7 @@ _pdbx_audit_revision_history.revision_date
 2 'Structure model' 1 1 2011-05-08 
 3 'Structure model' 1 2 2011-07-13 
 4 'Structure model' 1 3 2017-06-28 
+5 'Structure model' 1 4 2020-04-15 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -1919,6 +1921,7 @@ _pdbx_audit_revision_details.data_content_type   'Structure model'
 _pdbx_audit_revision_details.provider            repository 
 _pdbx_audit_revision_details.type                'Initial release' 
 _pdbx_audit_revision_details.description         ? 
+_pdbx_audit_revision_details.details             ? 
 # 
 loop_
 _pdbx_audit_revision_group.ordinal 
@@ -1928,16 +1931,43 @@ _pdbx_audit_revision_group.group
 1 2 'Structure model' 'Version format compliance' 
 2 3 'Structure model' 'Version format compliance' 
 3 4 'Structure model' 'Refinement description'    
+4 5 'Structure model' 'Database references'       
+5 5 'Structure model' Other                       
+6 5 'Structure model' 'Source and taxonomy'       
+7 5 'Structure model' 'Structure summary'         
 # 
-_pdbx_audit_revision_category.ordinal             1 
-_pdbx_audit_revision_category.revision_ordinal    4 
-_pdbx_audit_revision_category.data_content_type   'Structure model' 
-_pdbx_audit_revision_category.category            software 
+loop_
+_pdbx_audit_revision_category.ordinal 
+_pdbx_audit_revision_category.revision_ordinal 
+_pdbx_audit_revision_category.data_content_type 
+_pdbx_audit_revision_category.category 
+1 4 'Structure model' software             
+2 5 'Structure model' entity               
+3 5 'Structure model' entity_name_com      
+4 5 'Structure model' entity_src_gen       
+5 5 'Structure model' pdbx_database_status 
+6 5 'Structure model' struct_ref           
 # 
-_pdbx_audit_revision_item.ordinal             1 
-_pdbx_audit_revision_item.revision_ordinal    4 
-_pdbx_audit_revision_item.data_content_type   'Structure model' 
-_pdbx_audit_revision_item.item                '_software.name' 
+loop_
+_pdbx_audit_revision_item.ordinal 
+_pdbx_audit_revision_item.revision_ordinal 
+_pdbx_audit_revision_item.data_content_type 
+_pdbx_audit_revision_item.item 
+1  4 'Structure model' '_software.name'                                 
+2  5 'Structure model' '_entity.pdbx_description'                       
+3  5 'Structure model' '_entity_name_com.name'                          
+4  5 'Structure model' '_entity_src_gen.gene_src_common_name'           
+5  5 'Structure model' '_entity_src_gen.gene_src_strain'                
+6  5 'Structure model' '_entity_src_gen.pdbx_beg_seq_num'               
+7  5 'Structure model' '_entity_src_gen.pdbx_end_seq_num'               
+8  5 'Structure model' '_entity_src_gen.pdbx_gene_src_gene'             
+9  5 'Structure model' '_entity_src_gen.pdbx_gene_src_ncbi_taxonomy_id' 
+10 5 'Structure model' '_entity_src_gen.pdbx_gene_src_scientific_name'  
+11 5 'Structure model' '_entity_src_gen.pdbx_seq_type'                  
+12 5 'Structure model' '_pdbx_database_status.status_code_sf'           
+13 5 'Structure model' '_struct_ref.db_code'                            
+14 5 'Structure model' '_struct_ref.pdbx_align_begin'                   
+15 5 'Structure model' '_struct_ref.pdbx_seq_one_letter_code'           
 # 
 loop_
 _software.name 
