@@ -25,6 +25,8 @@ def parse_args():
 def git_fetch(relpath, args):
     accept = args.accept.split(',')
     prefix = args.dir_prefix
+    if prefix is None:
+        prefix = os.getcwd()
     for file in relpath:
         if all(_ in file for _ in accept):
             call(['wget', '-x', '-nH','--no-check-certificate', 

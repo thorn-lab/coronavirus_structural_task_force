@@ -3,7 +3,7 @@ data_6Y84
 _entry.id   6Y84 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.322 
+_audit_conform.dict_version    5.324 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
@@ -39,11 +39,12 @@ _audit_author.identifier_ORCID
 'Aragao, D.'            9  ? 
 'Williams, M.'          10 ? 
 'Flaig, R.'             11 ? 
-'Hall, D.'              12 ? 
-'McAauley, K.'          13 ? 
-'Stuart, D.I.'          14 ? 
-'von Delft, F.'         15 ? 
-'Walsh, M.A.'           16 ? 
+'Hall, D.R.'            12 ? 
+'McAuley, K.E.'         13 ? 
+'Mazzorana, M.'         14 ? 
+'Stuart, D.I.'          15 ? 
+'von Delft, F.'         16 ? 
+'Walsh, M.A.'           17 ? 
 # 
 _citation.abstract                  ? 
 _citation.abstract_id_CAS           ? 
@@ -486,11 +487,11 @@ _entity_src_gen.pdbx_alt_source_flag               sample
 _entity_src_gen.pdbx_seq_type                      'Biological sequence' 
 _entity_src_gen.pdbx_beg_seq_num                   1 
 _entity_src_gen.pdbx_end_seq_num                   306 
-_entity_src_gen.gene_src_common_name               ? 
+_entity_src_gen.gene_src_common_name               'Wuhan seafood market pneumonia virus' 
 _entity_src_gen.gene_src_genus                     ? 
 _entity_src_gen.pdbx_gene_src_gene                 ? 
 _entity_src_gen.gene_src_species                   ? 
-_entity_src_gen.gene_src_strain                    COVID-19 
+_entity_src_gen.gene_src_strain                    ? 
 _entity_src_gen.gene_src_tissue                    ? 
 _entity_src_gen.gene_src_tissue_fraction           ? 
 _entity_src_gen.gene_src_details                   ? 
@@ -1029,7 +1030,7 @@ _refine_ls_shell.pdbx_fsc_free                    ?
 # 
 _struct.entry_id                     6Y84 
 _struct.title                        
-'COVID-19 main protease with unliganded active site (2019-nCoV, coronavirus disease 2019, SARS-CoV-2)' 
+'SARS-CoV-2 main protease with unliganded active site (2019-nCoV, coronavirus disease 2019, COVID-19)' 
 _struct.pdbx_descriptor              'Non-structural polyprotein 1ab' 
 _struct.pdbx_model_details           ? 
 _struct.pdbx_formula_weight          ? 
@@ -7605,19 +7606,53 @@ _pdbx_struct_special_symmetry.label_asym_id   F
 _pdbx_struct_special_symmetry.label_comp_id   HOH 
 _pdbx_struct_special_symmetry.label_seq_id    . 
 # 
-_pdbx_audit_revision_history.ordinal             1 
-_pdbx_audit_revision_history.data_content_type   'Structure model' 
-_pdbx_audit_revision_history.major_revision      1 
-_pdbx_audit_revision_history.minor_revision      0 
-_pdbx_audit_revision_history.revision_date       2020-03-11 
+loop_
+_pdbx_audit_revision_history.ordinal 
+_pdbx_audit_revision_history.data_content_type 
+_pdbx_audit_revision_history.major_revision 
+_pdbx_audit_revision_history.minor_revision 
+_pdbx_audit_revision_history.revision_date 
+1 'Structure model' 1 0 2020-03-11 
+2 'Structure model' 1 1 2020-03-25 
 # 
-_pdbx_audit_revision_details.ordinal             1 
-_pdbx_audit_revision_details.revision_ordinal    1 
-_pdbx_audit_revision_details.data_content_type   'Structure model' 
-_pdbx_audit_revision_details.provider            repository 
-_pdbx_audit_revision_details.type                'Initial release' 
-_pdbx_audit_revision_details.description         ? 
-_pdbx_audit_revision_details.details             ? 
+loop_
+_pdbx_audit_revision_details.ordinal 
+_pdbx_audit_revision_details.revision_ordinal 
+_pdbx_audit_revision_details.data_content_type 
+_pdbx_audit_revision_details.provider 
+_pdbx_audit_revision_details.type 
+_pdbx_audit_revision_details.description 
+_pdbx_audit_revision_details.details 
+1 1 'Structure model' repository 'Initial release'        ?                ?                
+2 2 'Structure model' author     'Coordinate replacement' 'Atomic clashes' 'atomic clashes' 
+# 
+loop_
+_pdbx_audit_revision_group.ordinal 
+_pdbx_audit_revision_group.revision_ordinal 
+_pdbx_audit_revision_group.data_content_type 
+_pdbx_audit_revision_group.group 
+1 2 'Structure model' 'Refinement description' 
+2 2 'Structure model' 'Source and taxonomy'    
+3 2 'Structure model' 'Structure summary'      
+# 
+loop_
+_pdbx_audit_revision_category.ordinal 
+_pdbx_audit_revision_category.revision_ordinal 
+_pdbx_audit_revision_category.data_content_type 
+_pdbx_audit_revision_category.category 
+1 2 'Structure model' audit_author   
+2 2 'Structure model' entity_src_gen 
+3 2 'Structure model' software       
+4 2 'Structure model' struct         
+# 
+loop_
+_pdbx_audit_revision_item.ordinal 
+_pdbx_audit_revision_item.revision_ordinal 
+_pdbx_audit_revision_item.data_content_type 
+_pdbx_audit_revision_item.item 
+1 2 'Structure model' '_entity_src_gen.gene_src_common_name' 
+2 2 'Structure model' '_entity_src_gen.gene_src_strain'      
+3 2 'Structure model' '_struct.title'                        
 # 
 _pdbx_refine_tls.id               1 
 _pdbx_refine_tls.pdbx_refine_id   'X-RAY DIFFRACTION' 
@@ -7725,21 +7760,20 @@ _software.os_version
 _software.type 
 _software.version 
 _software.pdbx_ordinal 
-? 'data scaling'    ? ? ? ? ? ? ? ? ? ? ? Aimless     ? ? ? 0.7.4   1 
-? phasing           ? ? ? ? ? ? ? ? ? ? ? MOLREP      ? ? ? .       2 
-? refinement        ? ? ? ? ? ? ? ? ? ? ? BUSTER      ? ? ? .       3 
-? 'data extraction' ? ? ? ? ? ? ? ? ? ? ? PDB_EXTRACT ? ? ? 3.25    4 
-? 'data reduction'  ? ? ? ? ? ? ? ? ? ? ? DIALS       ? ? ? .       5 
-? 'data reduction'  ? ? ? ? ? ? ? ? ? ? ? xia2        ? ? ? .       6 
-? 'model building'  ? ? ? ? ? ? ? ? ? ? ? Coot        ? ? ? .       7 
-? refinement        ? ? ? ? ? ? ? ? ? ? ? REFMAC      ? ? ? 7.0.078 8 
+? refinement        ? ? ? ? ? ? ? ? ? ? ? BUSTER      ? ? ? .     1 
+? 'data scaling'    ? ? ? ? ? ? ? ? ? ? ? Aimless     ? ? ? 0.7.4 2 
+? phasing           ? ? ? ? ? ? ? ? ? ? ? MOLREP      ? ? ? .     3 
+? 'data extraction' ? ? ? ? ? ? ? ? ? ? ? PDB_EXTRACT ? ? ? 3.25  4 
+? 'data reduction'  ? ? ? ? ? ? ? ? ? ? ? DIALS       ? ? ? .     5 
+? 'data reduction'  ? ? ? ? ? ? ? ? ? ? ? xia2        ? ? ? .     6 
+? 'model building'  ? ? ? ? ? ? ? ? ? ? ? Coot        ? ? ? .     7 
 # 
 _pdbx_entry_details.entry_id                 6Y84 
-_pdbx_entry_details.has_ligand_of_interest   N 
-_pdbx_entry_details.compound_details         ? 
-_pdbx_entry_details.source_details           ? 
 _pdbx_entry_details.nonpolymer_details       ? 
 _pdbx_entry_details.sequence_details         ? 
+_pdbx_entry_details.compound_details         ? 
+_pdbx_entry_details.source_details           ? 
+_pdbx_entry_details.has_ligand_of_interest   N 
 # 
 loop_
 _pdbx_validate_torsion.id 

@@ -21,9 +21,6 @@ We are methods developers in structural biology. During this time of crisis, we 
 
 ## Download for non-git users
 
-This is a project in progress. While we strongly suggest users to work with Git so that they can synchronize with us conveniently, there is also a possibility to fetch the most recent update as a zip package by clicking the Green Button "Clone or download" and "Download Zip". 
-## Download for non-git users
-
 This is a project in progress. While we strongly suggest users to work with Git so that they can synchronize with us conveniently, there is also a possibility to fetch the most recent update as a zip package by clicking the Green Button "Clone or download" and "Download Zip". If you only want a part of the data (for example a certain PDB entry or a certain file type from all PDB entries), then you download the python script [git_fetch.py](https://github.com/thorn-lab/coronavirus_structural_task_force/raw/master/utils/git_fetch.py). You need a working python to use it, and it works like this from your command line:<br>
 Usage:<br>
 ```python git_fetch.py -A kw1,kw2 [-P prefix_dir]```
@@ -64,6 +61,8 @@ Watch us refine structures! https://www.twitch.tv/taskforcec19
 ## Further resources
 https://www.ebi.ac.uk/pdbe/covid-19<br>
 All available PDB data for SARS-CoV-2 proteins, highlighting small molecule binding sites and protein-protein interactions<br><br>
+https://www-structmed.cimr.cam.ac.uk/COVID19_Open_Structures.html<br>
+The COVID-19 Open Structures initiative enables biologists with unsolved or partly solved structures to elucidate them much quicker in an open-science effort.<br><br>
 https://www.globalphasing.com/buster/wiki/index.cgi?Covid19<br>
 re-processing and re-refinement of several SARS-CoV-2 structures<br><br>
 https://www.diamond.ac.uk/covid-19/for-scientists.html<br>
