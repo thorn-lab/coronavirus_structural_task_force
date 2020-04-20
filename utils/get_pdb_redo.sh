@@ -15,7 +15,11 @@ do
     echo $x
     e="${c,,}" ;
     cd $x ;
-    cd validation
+    if [ -d validation ] ; then
+       cd validation
+    else
+	mkdir validation
+	cd validation
     ls
     if [ -d pdb-redo ] ; then
        echo "Nothing to do here"
