@@ -1,8 +1,9 @@
 import sqlite3
 import os
+import csv
 from gemmi import cif
 
-conn = sqlite3.connect("stats.db")
+conn = sqlite3.connect(":memory:")
 
 c = conn.cursor()
 
@@ -78,24 +79,29 @@ fillTheDB(pwd)
 
 
 
-outlist = open('mxList.txt', 'w') 
-print('path, Rfree', file=outlist)
-with conn:
-    for row in c.execute('SELECT * FROM stats WHERE method=? ORDER BY protein, rfree',('X-RAY DIFFRACTION',)):
-        print(row[1],row[-1], file=outlist)
-print('Done!')
+# outlist = open('mxList.txt', 'w') 
+# print('path, Rfree', file=outlist)
+# with conn:
+#     for row in c.execute('SELECT * FROM stats WHERE method=? ORDER BY protein, rfree',('X-RAY DIFFRACTION',)):
+#         print(row[1],row[-1], file=outlist)
+# print('Done!')
 
-emlist = open('emList.txt', 'w') 
-print('path, resolution', file=emlist)
-with conn:
-    for row in c.execute('SELECT * FROM stats WHERE method=? ORDER BY protein, resolution',('ELECTRON MICROSCOPY',)):
-        print(row[1],row[-4], file=emlist)
-print('Done!')
+# emlist = open('emList.txt', 'w') 
+# print('path, resolution', file=emlist)
+# with conn:
+#     for row in c.execute('SELECT * FROM stats WHERE method=? ORDER BY protein, resolution',('ELECTRON MICROSCOPY',)):
+#         print(row[1],row[-4], file=emlist)
+# print('Done!')
 
 
-full_db = open('stats.csv', 'w') 
-print('pdb, path, protein, virus , method, resolution ,rmsd rwork, rfree', file=full_db)
-with conn:
-    for row in c.execute('SELECT * FROM stats ORDER BY protein'):
-        print(str(row), file=full_db)
+
+
+# print('pdb, path, protein, virus , method, resolution ,rmsd rwork, rfree', file=full_db)
+
+with open('stats.csv', 'w', newline='') as csvfile:
+    full_db = csv.writer(csvfile, dialect='excel')
+    full_db.writerow(['pdb', 'path', 'protein', 'virus' , 'method', 'resolution' ,'rmsd', 'rwork', 'rfree'])
+    with conn:
+        for row in c.execute('SELECT * FROM stats ORDER BY protein'):
+            full_db.writerow(row)
 print('Done!')
