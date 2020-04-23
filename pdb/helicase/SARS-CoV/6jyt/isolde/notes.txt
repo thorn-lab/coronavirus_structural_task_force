@@ -1,0 +1,45 @@
+Original model has numerous quite severe (albeit local) problems:
+
+- spurious non-proline cis/twisted peptide bonds at A281-282, A285-286, A350-351, A353-354, A439-440, 
+  A551-552, B-1-0, B189-190, B206-207, B467-468
+- high clashscore of 28.7
+- only 79.6% of residues in favoured portion of Ramachandran plot (should be near 98%)
+- C-terminal domains (~439 to end) nearly unresolved and severely distorted
+- Some long loops were modelled despite having no discernable density.
+
+Rebuilt well-resolved regions directly into density. Trimmed off unresolved loops. 
+In the MERS equivalent of this complex (5wwp) the C-terminal domain is well-resolved (but needed 
+substantial rebuilding in its own right). After rebuilding, I used this (chain A, residues 439 to end)
+as a reference model (distance and torsion-based) to improve the poorly-resolved C-terminal domains
+in 6jyt. Given the poor density it cannot be said that these domains are perfect, but application of 
+the restraints substantially improved both R-factors and geometry.
+
+Original model:
+
+  Ramachandran outliers =   4.97 %
+                favored =  79.60 %
+  Rotamer outliers      =   0.77 %
+  C-beta deviations     =     1
+  Clashscore            =  28.71
+  RMS(bonds)            =   0.0138
+  RMS(angles)           =   1.69
+  MolProbity score      =   2.69
+  Resolution            =   2.80
+  R-work                =   0.2380
+  R-free                =   0.2930
+ 
+Revised model:
+
+  Ramachandran outliers =   0.00 %
+                favored =  96.01 %
+  Rotamer outliers      =   0.79 %
+  C-beta deviations     =     0
+  Clashscore            =   2.65
+  RMS(bonds)            =   0.0106
+  RMS(angles)           =   1.19
+  MolProbity score      =   1.33
+  Resolution            =   2.80
+  R-work                =   0.2325
+  R-free                =   0.2688
+ 
+ 
