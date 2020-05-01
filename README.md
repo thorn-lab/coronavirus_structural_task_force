@@ -52,6 +52,9 @@ This folder contains [pdb-redo](https://pdb-redo.eu/) results (including [whatch
 `validation/auspex/`<br>
 These are results of the analysis of deposited diffraction data with [AUSPEX](www.auspex.de). AUSPEX can help to detect problems in experimental setup, integration, scaling and conversion from intensities to amplitudes.
 
+`ccpem/`<br>
+These are manual re-refinements made with the [CCP-EM suite](https://www.ccpem.ac.uk/), done by Agnel Praveen Joseph. Maps were optimized with LocScale, then refined with refmac and Coot and validated with Validation:Model in the CCP-EM interface.
+
 `isolde/`<br>
 These are manual re-refinements from [ISOLDE](https://isolde.cimr.cam.ac.uk/what-isolde/) in [ChimeraX](https://www.cgl.ucsf.edu/chimerax/), done by Tristan Croll. Structures were energy-minimised, visually checked residue-by-residue and, where necessary, rebuilt. Crystal structures were further refined with [phenix.refine](https://www.phenix-online.org/documentation/reference/refinement.html).
 
@@ -104,6 +107,8 @@ Duke University -<br>
 [The Richardson Laboratory](http://kinemage.biochem.duke.edu/)<br><br>
 Diamond Light Source, UK -<br>
 Sam Horrell - Postdoctoral Researcher<br>
+CCP_EM, STFC, UK -<br>
+Agnel Praveen Joseph - Researcher<br>
 
 We would also like to thank: Manfred Weiss *(HBZ BESSY, Berlin, Germany)* , James Holton *(ALS/Lawrence Berkeley National Laboratory, Berkeley, USA)*, Gerard Bricogne *(Global Phasing, Cambridge, UK)*, Clemens Vonrhein *(Global Phasing, Freiburg, Germany)*, Robbie P. Joosten *(The Netherlands Cancer Institute, Amsterdam, Netherlands)*, Sameer Velankar *(European Potein Data Bank, Cambridge, UK)*.
 
@@ -115,10 +120,13 @@ We would also like to thank: Manfred Weiss *(HBZ BESSY, Berlin, Germany)* , Jame
 **phenix.xtriage**: Zwart, P.H., Grosse-Kunstleve, R.W., Adams, P.D. (2005) XTRIAGE: Xtriage   and   Fest:   automatic   assessment   of   X-ray   data   and substructure structure factor estimation. *CCP4 newsletter* 43 <br>
 WHATCHECK: Hooft, R.W.W., Vriend, G., Sander, C., Abola, E.E. WHATCHECK: Errors in protein structures. (1996) Nature 381, 272-272.<br>
 **phenix.refine**: Afonine, P.V., Grosse-Kunstleve, R.W., Echols, N., Headd, J.J., Moriarty, N.W., Mustyakimov, M., Terwilliger, T.C., Urzhumtsev, A., Zwart, P.H., Adams, P.D. (2012) Towards automated crystallographic structure refinement with phenix.refine. *Acta Cryst. D*68, 352-367.<br>
-**AUSPEX**: Thorn, A., Parkhurst, J.M., Emsley, P., Nicholls, R., Evans, G., Vollmar, M., Murshudov, G.N. (2017) AUSPEX: a graphical tool for X-ray diffraction data analysis, *Acta Cryst* D73, 729-737. <br> 
-**HARUSPEX**: Mostosi, P., Schindelin, H., Kollmannsberger, P., Thorn, A. Haruspex: A Neural Network for the Automatic Identification of Oligonucleotides and Protein Secondary Structure in Cryo‐EM Maps. (2020) *Angew. Chem. (Int. Ed.)* https://doi.org/10.1002/ange.202000421
-
-
+**AUSPEX**: Thorn, A., Parkhurst, J.M., Emsley, P., Nicholls, R., Evans, G., Vollmar, M., Murshudov, G.N. (2017) AUSPEX: a graphical tool for X-ray diffraction data analysis, *Acta Cryst D*73, 729-737. <br> 
+**HARUSPEX**: Mostosi, P., Schindelin, H., Kollmannsberger, P., Thorn, A. (2020) Haruspex: A Neural Network for the Automatic Identification of Oligonucleotides and Protein Secondary Structure in Cryo‐EM Maps. *Angew. Chem. (Int. Ed.)* https://doi.org/10.1002/ange.202000421
+**CCP-EM**: Burnley. T., Palmer, C.M., Winn, M.D. (2017) Recent developments in the CCP-EM software suite. *Acta Cryst. D*73, 469 - 477. 
+**REFMAC**: Murshudov, G.N., Vagin, A.A., Dodson, E.J. (1997) Refinement of Macromolecular Structures by the Maximum-Likelihood method. *Acta Cryst. D*53, 240-255.  
+**COOT**: Emsley, P., Lohkamp, B., Scott, W.G., Cowtan, K. (2010) Features and Development of Coot. *Acta Cryst D*66, 486-501
+**LOCSCALE**: Jakobi, A. J., Wilmann, M., Sachse, C. (2017) Model-based local density sharpening of cryo-EM maps. *Elife* 6:e27131 doi: 10.7554/eLife.27131
+<br>
 ## Contact information
 
 If you would like to contact us, please write to:
