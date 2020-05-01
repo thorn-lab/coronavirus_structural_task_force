@@ -69,7 +69,7 @@ The COVID-19 Open Structures initiative enables biologists with unsolved or part
 https://www.globalphasing.com/buster/wiki/index.cgi?Covid19<br>
 re-processing and re-refinement of several SARS-CoV-2 structures<br><br>
 https://covid-19.bioreproducibility.org/<br>
-A resource providing assessment of the quality of SARS-CoV-2 drug target models, including corrected versions of some of these models 
+A resource providing assessment of the quality of SARS-CoV-2 drug target models, including corrected versions of some of these models<br><br> 
 https://www.diamond.ac.uk/covid-19/for-scientists.html<br>
 Info on Diamond work on main protease; related: https://covid.postera.ai/covid<br><br>
 https://www.ebi.ac.uk/ena/pathogens/covid-19<br>
