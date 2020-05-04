@@ -1,4 +1,4 @@
-# Folder 3c_like_proteinase
+# Folder methyltransferase-nsp10
 ## Sequence_information
 
 nsp10:

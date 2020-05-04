@@ -1,4 +1,4 @@
-# Folder 3c_like_proteinase
+# Folder endornase
 ## Sequence_information
 
 >NP_828872.1 nsp15-pp1ab (endoRNAse) [Severe acute respiratory syndrome-related coronavirus]

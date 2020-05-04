@@ -1,4 +1,4 @@
-# Folder 3c_like_proteinase
+# Folder rna_polymerase
 ## Sequence_information
 
 >NP_828869.1 nsp12-pp1ab (RdRp) [Severe acute respiratory syndrome-related coronavirus]

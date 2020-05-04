@@ -1,4 +1,4 @@
-# Folder 3c_like_proteinase
+# Folder nucleocapsid_protein
 ## Sequence_information
 
 >NP_828858.1 nucleocapsid protein [Severe acute respiratory syndrome-related coronavirus]

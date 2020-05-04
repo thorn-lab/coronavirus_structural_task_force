@@ -1,4 +1,4 @@
-# Folder 3c_like_proteinase
+# Folder surface_glycoprotein
 ## Sequence_information
 
 >NP_828851.1 E2 glycoprotein precursor [Severe acute respiratory syndrome-related coronavirus]

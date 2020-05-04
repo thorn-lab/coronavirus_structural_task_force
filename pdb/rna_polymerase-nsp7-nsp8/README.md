@@ -1,4 +1,4 @@
-# Folder 3c_like_proteinase
+# Folder rna_polymerase-nsp7-nsp8
 ## Sequence_information
 
 nsp7:

@@ -1,4 +1,4 @@
-# Folder 3c_like_proteinase
+# Folder hypothetical protein sars7a
 ## Sequence_information
 
 >NP_828857.1 hypothetical protein sars7a [Severe acute respiratory syndrome-related coronavirus]

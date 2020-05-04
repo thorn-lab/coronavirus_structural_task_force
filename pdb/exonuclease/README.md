@@ -1,4 +1,4 @@
-# Folder 3c_like_proteinase
+# Folder exonuclease
 ## Sequence_information
 
 >NP_828871.1 nsp14-pp1ab (nuclease ExoN homolog) [Severe acute respiratory syndrome-related coronavirus]

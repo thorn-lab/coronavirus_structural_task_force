@@ -1,4 +1,4 @@
-# Folder 3c_like_proteinase
+# Folder nsp3
 ## Sequence_information
 
 >NP_828862.2 nsp3-pp1a/pp1ab [Severe acute respiratory syndrome-related coronavirus]
