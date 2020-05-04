@@ -8,3 +8,32 @@ From: https://www.ncbi.nlm.nih.gov/protein/29837498
 From: https://www.ncbi.nlm.nih.gov/protein/1802476809
 
 Sequence identity: 96.00%
+
+#proteome_information
+
+From https://www.ncbi.nlm.nih.gov/nuccore/1798174254
+(SARS-CoV-2 proteome):
+
+mat_peptide     10055..10972
+                     /gene="ORF1ab"
+                     /locus_tag="GU280_gp01"
+                     /product="3C-like proteinase"
+                     /note="nsp5A_3CLpro and nsp5B_3CLpro; main proteinase
+                     (Mpro); mediates cleavages downstream of nsp4. 3D
+                     structure of the SARSr-CoV homolog has been determined
+                     (Yang et al., 2003); produced by both pp1a and pp1ab"
+                     /protein_id="YP_009725301.1"
+
+
+From https://www.ncbi.nlm.nih.gov/nuccore/30271926
+(SARS-CoV proteome):
+mat_peptide      9985..10902
+                      /gene="orf1ab"
+                      /locus_tag="sars1"
+                      /product="3C-like proteinase"
+                      /experiment="experimental evidence, no additional details
+                      recorded"
+                      /note="mediates cleavages downstream from nsp4-pp1a/pp1ab.
+                      3D structure has been determined (Yang et al., 2003); main
+                      proteinase (Mpro); nsp5-pp1a/pp1ab (3CL-PRO)"
+                      /protein_id="NP_828863.1"
