@@ -8,6 +8,3 @@ From: https://www.ncbi.nlm.nih.gov/protein/29837498
 From: https://www.ncbi.nlm.nih.gov/protein/1802476809
 
 Sequence identity: 96.00%
-
-
-
