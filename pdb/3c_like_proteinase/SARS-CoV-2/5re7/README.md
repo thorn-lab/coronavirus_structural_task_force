@@ -12,9 +12,25 @@
 
 5re7_DiffractionImages.html - link to the raw diffraction data 
 
-or **Click** [here](https://zenodo.org/record/3730531) 
+or **Click** [here](  <body>
+      <script type="text/javascript">
+    window.location.href = "https://zenodo.org/record/3730531) 
+
+## Data Summary
+|   | Resolution | Completeness| I/$\boldsymbol{\sigma}$ |
+|---|-------------:|----------------:|--------------:|
+|   |1.79|99.5  %|<img width=50/>6.100|
+
+|   | **R-work**| **R-free**   
+|---|-------------:|----------------:|           
+||0.1670|0.2250|
+
+|   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
+|---|-------------:|----------------:|
+||1.59|0.33 %|
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/5re7
  
 **PDBr**: https://www.rcsb.org/structure/5re7 
+

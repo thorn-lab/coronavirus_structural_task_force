@@ -12,9 +12,25 @@
 
 5rfx_DiffractionImages.html - link to the raw diffraction data 
 
-or **Click** [here](https://zenodo.org/record/3731539) 
+or **Click** [here](  <body>
+      <script type="text/javascript">
+    window.location.href = "https://zenodo.org/record/3731539) 
+
+## Data Summary
+|   | Resolution | Completeness| I/$\boldsymbol{\sigma}$ |
+|---|-------------:|----------------:|--------------:|
+|   |1.55|99.1  %|<img width=50/>5.800|
+
+|   | **R-work**| **R-free**   
+|---|-------------:|----------------:|           
+||0.1840|0.2160|
+
+|   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
+|---|-------------:|----------------:|
+||1.27|0.33 %|
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/5rfx
  
 **PDBr**: https://www.rcsb.org/structure/5rfx 
+

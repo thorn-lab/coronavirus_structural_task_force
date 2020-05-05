@@ -12,9 +12,25 @@
 
 6w9c_DiffractionImages.html - link to the raw diffraction data 
 
-or **Click** [here](https://doi.org/10.18430/m36w9c) 
+or **Click** [here](  <body>
+      <script type="text/javascript">
+    window.location.href = "https://doi.org/10.18430/m36w9c) 
+
+## Data Summary
+|   | Resolution | Completeness| I/$\boldsymbol{\sigma}$ |
+|---|-------------:|----------------:|--------------:|
+|   |2.70|57.1  %|<img width=50/>4.900|
+
+|   | **R-work**| **R-free**   
+|---|-------------:|----------------:|           
+||0.2350|0.3090|
+
+|   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
+|---|-------------:|----------------:|
+||2.70|0.54 %|
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/6w9c
  
 **PDBr**: https://www.rcsb.org/structure/6w9c 
+

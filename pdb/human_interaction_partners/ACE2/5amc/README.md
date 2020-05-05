@@ -12,7 +12,21 @@
 
 --<br> 
 
+## Data Summary
+|   | Resolution | Completeness| I/$\boldsymbol{\sigma}$ |
+|---|-------------:|----------------:|--------------:|
+|   |1.65|91.74 %|<img width=50/>6.40 |
+
+|   | **R-work**| **R-free**   
+|---|-------------:|----------------:|           
+||0.2077|0.2417|
+
+|   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
+|---|-------------:|----------------:|
+||0.90|0.17 %|
+
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/5amc
  
 **PDBr**: https://www.rcsb.org/structure/5amc 
+

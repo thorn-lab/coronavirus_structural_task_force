@@ -12,7 +12,21 @@
 
 --<br> 
 
+## Data Summary
+|   | Resolution | Completeness| I/$\boldsymbol{\sigma}$ |
+|---|-------------:|----------------:|--------------:|
+|   |2.36|97.0  %|<img width=50/>11.80|
+
+|   | **R-work**| **R-free**   
+|---|-------------:|----------------:|           
+||0.2010|0.2430|
+
+|   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
+|---|-------------:|----------------:|
+||1.39|0.17 %|
+
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/3atw
  
 **PDBr**: https://www.rcsb.org/structure/3atw 
+

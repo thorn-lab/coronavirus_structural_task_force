@@ -12,9 +12,25 @@
 
 6w61_DiffractionImages.html - link to the raw diffraction data 
 
-or **Click** [here](https://doi.org/10.18430/m36w61) 
+or **Click** [here](  <body>
+      <script type="text/javascript">
+    window.location.href = "https://doi.org/10.18430/m36w61) 
+
+## Data Summary
+|   | Resolution | Completeness| I/$\boldsymbol{\sigma}$ |
+|---|-------------:|----------------:|--------------:|
+|   |2.00|99.7  %|<img width=50/>37.10|
+
+|   | **R-work**| **R-free**   
+|---|-------------:|----------------:|           
+||0.1710|0.1930|
+
+|   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
+|---|-------------:|----------------:|
+||1.50|0.00 %|
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/6w61
  
 **PDBr**: https://www.rcsb.org/structure/6w61 
+

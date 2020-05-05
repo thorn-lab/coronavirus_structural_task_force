@@ -12,9 +12,25 @@
 
 6vyo_DiffractionImages.html - link to the raw diffraction data 
 
-or **Click** [here](https://doi.org/10.18430/m36vyo) 
+or **Click** [here](  <body>
+      <script type="text/javascript">
+    window.location.href = "https://doi.org/10.18430/m36vyo) 
+
+## Data Summary
+|   | Resolution | Completeness| I/$\boldsymbol{\sigma}$ |
+|---|-------------:|----------------:|--------------:|
+|   |1.70|87.3  %|<img width=50/>6.900|
+
+|   | **R-work**| **R-free**   
+|---|-------------:|----------------:|           
+||0.1600|0.2050|
+
+|   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
+|---|-------------:|----------------:|
+||1.08|0.00 %|
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/6vyo
  
 **PDBr**: https://www.rcsb.org/structure/6vyo 
+
