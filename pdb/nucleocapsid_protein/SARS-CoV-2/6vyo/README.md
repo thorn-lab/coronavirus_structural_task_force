@@ -12,12 +12,10 @@
 
 6vyo_DiffractionImages.html - link to the raw diffraction data 
 
-or **Click** [here](  <body>
-      <script type="text/javascript">
-    window.location.href = "https://doi.org/10.18430/m36vyo) 
+or **Click** [here](https://doi.org/10.18430/m36vyo) 
 
 ## Data Summary
-|   | Resolution | Completeness| I/$\boldsymbol{\sigma}$ |
+|   | Resolution | Completeness| I/$sigma$ |
 |---|-------------:|----------------:|--------------:|
 |   |1.70|87.3  %|<img width=50/>6.900|
 

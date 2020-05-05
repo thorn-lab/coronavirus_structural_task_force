@@ -13,7 +13,7 @@
 --<br> 
 
 ## Data Summary
-|   | Resolution | Completeness| I/$\boldsymbol{\sigma}$ |
+|   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
 |   |2.00|95.2  %|<img width=50/>24.30|
 

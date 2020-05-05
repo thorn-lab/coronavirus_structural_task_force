@@ -12,12 +12,10 @@
 
 5rep_DiffractionImages.html - link to the raw diffraction data 
 
-or **Click** [here](  <body>
-      <script type="text/javascript">
-    window.location.href = "https://zenodo.org/record/3730960) 
+or **Click** [here](https://zenodo.org/record/3730960) 
 
 ## Data Summary
-|   | Resolution | Completeness| I/$\boldsymbol{\sigma}$ |
+|   | Resolution | Completeness| I/$sigma$ |
 |---|-------------:|----------------:|--------------:|
 |   |1.81|99.6  %|<img width=50/>5.300|
 

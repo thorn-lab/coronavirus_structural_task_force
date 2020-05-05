@@ -12,12 +12,10 @@
 
 6w4b_DiffractionImages.html - link to the raw diffraction data 
 
-or **Click** [here](  <body>
-      <script type="text/javascript">
-    window.location.href = "https://doi.org/10.18430/m36w4b) 
+or **Click** [here](https://doi.org/10.18430/m36w4b) 
 
 ## Data Summary
-|   | Resolution | Completeness| I/$\boldsymbol{\sigma}$ |
+|   | Resolution | Completeness| I/$sigma$ |
 |---|-------------:|----------------:|--------------:|
 |   |2.95|97.1  %|<img width=50/>17.40|
 
