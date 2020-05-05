@@ -15,7 +15,7 @@
 or **Click** [here](https://zenodo.org/record/3730489) 
 
 ## Data Summary
-|   | Resolution | Completeness| I/$sigma$ |
+|   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
 |   |2.07|99.8  %|<img width=50/>4.100|
 

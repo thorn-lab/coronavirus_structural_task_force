@@ -15,7 +15,7 @@
 or **Click** [here](https://doi.org/10.18430/m36vxs) 
 
 ## Data Summary
-|   | Resolution | Completeness| I/$sigma$ |
+|   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
 |   |2.03|84.8  %|<img width=50/>8.440|
 
