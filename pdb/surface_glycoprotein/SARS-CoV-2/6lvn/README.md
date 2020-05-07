@@ -15,7 +15,7 @@
 ## Data Summary
 |   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
-|   |2.47 <img src="https://latex.codecogs.com/svg.latex?{\mbox{\normalfont\AA}}"/>|99.3  %|<img width=50/>19.06|
+|   |2.47 ![](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/outreach/ang.svg)|99.3  %|<img width=50/>19.06|
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
