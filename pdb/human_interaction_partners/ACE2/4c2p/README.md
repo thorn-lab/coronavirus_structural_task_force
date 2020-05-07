@@ -19,11 +19,11 @@
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
-||0.2110|0.2470|
+||  0.2110|  0.2470|
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
-||1.13|0.00 %|
+||  1.13|  0.00 %|
 
 **Auspex** Pathologies: missing line, missing rings
 

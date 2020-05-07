@@ -21,11 +21,11 @@ or **Click** [here](https://zenodo.org/record/3731502)
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
-||0.2070|0.2970|
+||  0.2070|  0.2970|
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
-||1.89|0.66 %|
+||  1.89|  0.66 %|
 
 **Auspex** Pathologies: 
 

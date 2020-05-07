@@ -19,11 +19,11 @@
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
-||0.2080|0.2480|
+||  0.2080|  0.2480|
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
-||2.80|0.88 %|
+||  2.80|  0.88 %|
 
 **Auspex** Pathologies: bad or missing beam stop, missing line, manhatten
 

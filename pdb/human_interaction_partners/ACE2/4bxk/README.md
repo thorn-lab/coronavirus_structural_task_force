@@ -19,11 +19,11 @@
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
-||0.1865|0.2197|
+||  0.1865|  0.2197|
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
-||1.24|0.25 %|
+||  1.24|  0.25 %|
 
 **Auspex** Pathologies: missing line, terracing
 

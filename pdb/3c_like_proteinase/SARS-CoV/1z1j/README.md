@@ -15,15 +15,15 @@
 ## Data Summary
 |   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
-|   |2.80 Å|  04- %|<img width=50/>NULL |
+|   |2.80 Å|      %|<img width=50/>NULL |
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
-||0.2140|0.2990|
+||  0.2140|  0.2990|
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
-||3.58|5.76 %|
+||  3.58|  5.76 %|
 
 **Auspex** Pathologies: 
 

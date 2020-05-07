@@ -19,11 +19,11 @@
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
-||0.1870|0.2790|
+||  0.1870|  0.2790|
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
-||2.29|1.03 %|
+||  2.29|  1.03 %|
 
 **Auspex** Pathologies: bad or missing beam stop mask, terracing, missing line
 

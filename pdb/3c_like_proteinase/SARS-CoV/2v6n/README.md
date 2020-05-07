@@ -19,11 +19,11 @@
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
-||0.1640|0.2110|
+||  0.1640|  0.2110|
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
-||1.24|0.00 %|
+||  1.24|  0.00 %|
 
 **Auspex** Pathologies: ice rings, manhattan, missing line
 

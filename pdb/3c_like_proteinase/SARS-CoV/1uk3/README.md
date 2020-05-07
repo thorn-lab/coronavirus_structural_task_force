@@ -15,15 +15,15 @@
 ## Data Summary
 |   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
-|   |2.40 Å|  14- %|<img width=50/>NULL |
+|   |2.40 Å|      %|<img width=50/>NULL |
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
-||0.2290|0.2450|
+||  0.2290|  0.2450|
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
-||3.05|2.34 %|
+||  3.05|  2.34 %|
 
 **Auspex** Pathologies: bad or missing beam stop mask
 

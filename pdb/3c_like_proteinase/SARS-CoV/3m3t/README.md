@@ -15,15 +15,15 @@
 ## Data Summary
 |   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
-|   |2.90 Å|  10- %|<img width=50/>21.10|
+|   |2.90 Å|      %|<img width=50/>21.10|
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
-||0.1850|0.2730|
+||  0.1850|  0.2730|
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
-||2.68|1.97 %|
+||  2.68|  1.97 %|
 
 **Auspex** Pathologies: terracing
 

@@ -21,11 +21,11 @@ or **Click** [here](https://zenodo.org/record/3731010)
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
-||0.1750|0.2510|
+||  0.1750|  0.2510|
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
-||1.52|0.66 %|
+||  1.52|  0.66 %|
 
 **Auspex** Pathologies: missing line
 

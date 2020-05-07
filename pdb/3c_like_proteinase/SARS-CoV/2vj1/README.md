@@ -19,11 +19,11 @@
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
-||0.1830|0.2560|
+||  0.1830|  0.2560|
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
-||2.76|0.67 %|
+||  2.76|  0.67 %|
 
 **Auspex** Pathologies: manhattan, missing line
 

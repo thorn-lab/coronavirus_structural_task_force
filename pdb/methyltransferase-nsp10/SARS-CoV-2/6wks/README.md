@@ -15,8 +15,7 @@
 ## Data Summary
 |   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
-|   |UBLI Å|">
-<h %|<img width=50/>//EN"|
+|   |UBLI Å| HTML %|<img width=50/>DTD H|
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           

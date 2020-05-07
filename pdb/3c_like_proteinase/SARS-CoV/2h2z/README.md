@@ -15,15 +15,15 @@
 ## Data Summary
 |   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
-|   |1.60 Å|  20- %|<img width=50/>NULL |
+|   |1.60 Å|      %|<img width=50/>NULL |
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
-||0.2010|0.2140|
+||  0.2010|  0.2140|
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
-||1.36|0.00 %|
+||  1.36|  0.00 %|
 
 **Auspex** Pathologies: ice rings, manhattan, terracing
 

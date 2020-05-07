@@ -19,11 +19,11 @@
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
-||0.2150|0.2410|
+||  0.2150|  0.2410|
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
-||1.80|0.33 %|
+||  1.80|  0.33 %|
 
 **Auspex** Pathologies: manhattan, , terracing
 

@@ -15,15 +15,15 @@
 ## Data Summary
 |   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
-|   |1.9  Å|  12- %|<img width=50/>4.600|
+|   |1.9  Å|      %|<img width=50/>4.600|
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
-||0.2256|0.2643|
+||  0.2256|  0.2643|
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
-||2.35|1.34 %|
+||  2.35|  1.34 %|
 
 **Auspex** Pathologies: missing line, terracing
 

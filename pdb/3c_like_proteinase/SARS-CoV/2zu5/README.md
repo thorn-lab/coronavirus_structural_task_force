@@ -15,15 +15,15 @@
 ## Data Summary
 |   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
-|   |1.65 Å|  12- %|<img width=50/>16.63|
+|   |1.65 Å|ITOR  %|<img width=50/>16.63|
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
-||0.1830|0.2080|
+||  0.1830|  0.2080|
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
-||1.71|0.00 %|
+||  1.71|  0.00 %|
 
 **Auspex** Pathologies: manhattan
 

@@ -19,11 +19,11 @@
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
-||0.2060|0.2540|
+||  0.2060|  0.2540|
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
-||1.95|0.33 %|
+||  1.95|  0.33 %|
 
 **Auspex** Pathologies: ice rings, manhattan, terracing
 

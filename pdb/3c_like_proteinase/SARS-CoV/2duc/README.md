@@ -15,15 +15,15 @@
 ## Data Summary
 |   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
-|   |1.70 Å|  21- %|<img width=50/>12.00|
+|   |1.70 Å|      %|<img width=50/>12.00|
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
-||0.1940|0.2210|
+||  0.1940|  0.2210|
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
-||1.66|0.33 %|
+||  1.66|  0.33 %|
 
 **Auspex** Pathologies: ice rings, manhatten
 

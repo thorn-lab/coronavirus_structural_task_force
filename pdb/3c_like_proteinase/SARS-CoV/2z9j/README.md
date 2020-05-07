@@ -15,15 +15,15 @@
 ## Data Summary
 |   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
-|   |1.95 Å|  20- %|<img width=50/>20.10|
+|   |1.95 Å|      %|<img width=50/>20.10|
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
-||0.1940|0.2480|
+||  0.1940|  0.2480|
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
-||2.33|0.17 %|
+||  2.33|  0.17 %|
 
 **Auspex** Pathologies: ice rings
 

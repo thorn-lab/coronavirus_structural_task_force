@@ -15,15 +15,15 @@
 ## Data Summary
 |   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
-|   |2.70 Å|  08- %|<img width=50/>NULL |
+|   |2.70 Å|      %|<img width=50/>NULL |
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
-||0.2090|0.2820|
+||  0.2090|  0.2820|
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
-||3.18|1.84 %|
+||  3.18|  1.84 %|
 
 **Auspex** Pathologies: manhattan, bad or missing beam stop mask
 

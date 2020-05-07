@@ -19,11 +19,11 @@
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
-||0.2250|0.2860|
+||  0.2250|  0.2860|
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
-||2.51|0.00 %|
+||  2.51|  0.00 %|
 
 **Auspex** Pathologies: bad or missing beam stop mask, ice rings, manhattan, missing line
 

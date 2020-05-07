@@ -19,11 +19,11 @@
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
-||0.2070|0.2350|
+||  0.2070|  0.2350|
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
-||1.05|0.12 %|
+||  1.05|  0.12 %|
 
 **Auspex** Pathologies: ice rings, missing line
 

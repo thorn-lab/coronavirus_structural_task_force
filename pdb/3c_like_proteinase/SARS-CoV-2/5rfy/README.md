@@ -21,11 +21,11 @@ or **Click** [here](https://zenodo.org/record/3731546)
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
-||0.2100|0.2770|
+||  0.2100|  0.2770|
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
-||1.61|0.00 %|
+||  1.61|  0.00 %|
 
 **Auspex** Pathologies: ice rings, missing line
 

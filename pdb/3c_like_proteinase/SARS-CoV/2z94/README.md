@@ -15,15 +15,15 @@
 ## Data Summary
 |   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
-|   |1.78 Å|  17- %|<img width=50/>15.60|
+|   |1.78 Å|      %|<img width=50/>15.60|
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
-||0.1910|0.2240|
+||  0.1910|  0.2240|
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
-||1.99|0.00 %|
+||  1.99|  0.00 %|
 
 **Auspex** Pathologies: manhatten
 
