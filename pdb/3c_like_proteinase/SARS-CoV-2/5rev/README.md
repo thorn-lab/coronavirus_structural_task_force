@@ -17,7 +17,7 @@ or **Click** [here](https://zenodo.org/record/3731000)
 ## Data Summary
 |   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
-|   |1.60 ![](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/outreach/ang.svg)|97.9  %|<img width=50/>6.200|
+|   |1.60 Å|97.9  %|<img width=50/>6.200|
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
