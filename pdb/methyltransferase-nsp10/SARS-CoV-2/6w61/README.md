@@ -17,7 +17,8 @@ or **Click** [here](https://doi.org/10.18430/m36w61)
 ## Data Summary
 |   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
-|   |2.00|99.7  %|<img width=50/>37.10|
+|   |2.00 <img src="https://latex.codecogs.com/svg.latex?{\mbox{
+ormalfont\AA}}"/>|99.7  %|<img width=50/>37.10|
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           

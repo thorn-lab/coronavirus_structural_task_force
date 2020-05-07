@@ -15,7 +15,8 @@
 ## Data Summary
 |   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
-|   |1.80|  29- %|<img width=50/>17.10|
+|   |1.80 <img src="https://latex.codecogs.com/svg.latex?{\mbox{
+ormalfont\AA}}"/>|  29- %|<img width=50/>17.10|
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
