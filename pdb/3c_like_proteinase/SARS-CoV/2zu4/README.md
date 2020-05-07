@@ -25,6 +25,10 @@
 |---|-------------:|----------------:|
 ||2.72|0.99 %|
 
+**Auspex** Pathologies: manhatten
+
+ 
+
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/2zu4
  

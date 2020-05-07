@@ -25,6 +25,10 @@
 |---|-------------:|----------------:|
 ||1.36|0.00 %|
 
+**Auspex** Pathologies: ice rings, manhattan, terracing
+
+ 
+
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/2h2z
  

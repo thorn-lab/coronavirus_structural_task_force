@@ -25,6 +25,10 @@
 |---|-------------:|----------------:|
 ||1.80|0.33 %|
 
+**Auspex** Pathologies: manhattan, , terracing
+
+ 
+
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/2gz8
  

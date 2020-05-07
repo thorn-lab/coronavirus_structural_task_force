@@ -25,6 +25,10 @@
 |---|-------------:|----------------:|
 ||2.38|2.69 %|
 
+**Auspex** Pathologies: missing ring
+
+ 
+
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/5nfy
  

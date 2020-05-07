@@ -25,6 +25,10 @@
 |---|-------------:|----------------:|
 ||0.84|0.00 %|
 
+ 
+
+ 
+
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/6f9u
  

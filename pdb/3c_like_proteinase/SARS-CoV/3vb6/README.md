@@ -25,6 +25,10 @@
 |---|-------------:|----------------:|
 ||2.31|0.99 %|
 
+**Auspex** Pathologies: bad or missing beam stop mask, terracing
+
+ 
+
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/3vb6
  

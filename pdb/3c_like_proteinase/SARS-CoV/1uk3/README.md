@@ -25,6 +25,10 @@
 |---|-------------:|----------------:|
 ||3.05|2.34 %|
 
+**Auspex** Pathologies: bad or missing beam stop mask
+
+ 
+
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/1uk3
  

@@ -25,6 +25,10 @@
 |---|-------------:|----------------:|
 ||1.13|0.00 %|
 
+**Auspex** Pathologies: missing line, missing rings
+
+ 
+
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/4c2p
  

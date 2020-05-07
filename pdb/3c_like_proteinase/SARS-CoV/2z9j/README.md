@@ -25,6 +25,10 @@
 |---|-------------:|----------------:|
 ||2.33|0.17 %|
 
+**Auspex** Pathologies: ice rings
+
+ 
+
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/2z9j
  

@@ -25,6 +25,10 @@
 |---|-------------:|----------------:|
 ||1.72|0.33 %|
 
+**Auspex** Pathologies: ice rings, terracing
+
+ 
+
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/3vb7
  

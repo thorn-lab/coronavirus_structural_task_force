@@ -27,6 +27,10 @@ or **Click** [here](https://zenodo.org/record/3731502)
 |---|-------------:|----------------:|
 ||1.89|0.66 %|
 
+**Auspex** Pathologies: 
+
+ 
+
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/5rfp
  

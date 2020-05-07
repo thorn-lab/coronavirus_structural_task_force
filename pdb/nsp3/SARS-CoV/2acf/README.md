@@ -25,6 +25,10 @@
 |---|-------------:|----------------:|
 ||1.23|0.14 %|
 
+**Auspex** Pathologies: missing line, terracing
+
+ 
+
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/2acf
  

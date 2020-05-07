@@ -27,6 +27,10 @@ or **Click** [here](https://zenodo.org/record/3730929)
 |---|-------------:|----------------:|
 ||1.33|0.33 %|
 
+**Auspex** Pathologies: missing line
+
+ 
+
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/5rek
  

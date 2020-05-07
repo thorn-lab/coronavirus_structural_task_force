@@ -25,6 +25,10 @@
 |---|-------------:|----------------:|
 ||1.96|0.49 %|
 
+**Auspex** Pathologies: terracing
+
+ 
+
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/3snd
  

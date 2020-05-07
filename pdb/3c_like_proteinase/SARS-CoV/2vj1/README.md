@@ -25,6 +25,10 @@
 |---|-------------:|----------------:|
 ||2.76|0.67 %|
 
+**Auspex** Pathologies: manhattan, missing line
+
+ 
+
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/2vj1
  

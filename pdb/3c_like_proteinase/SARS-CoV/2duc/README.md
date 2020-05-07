@@ -25,6 +25,10 @@
 |---|-------------:|----------------:|
 ||1.66|0.33 %|
 
+**Auspex** Pathologies: ice rings, manhatten
+
+ 
+
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/2duc
  

@@ -25,6 +25,10 @@
 |---|-------------:|----------------:|
 ||--|--|
 
+ 
+
+ 
+
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/6y2g
  

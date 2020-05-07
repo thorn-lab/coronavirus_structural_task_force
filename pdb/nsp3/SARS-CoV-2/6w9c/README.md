@@ -27,6 +27,10 @@ or **Click** [here](https://doi.org/10.18430/m36w9c)
 |---|-------------:|----------------:|
 ||2.70|0.54 %|
 
+ 
+
+ 
+
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/6w9c
  

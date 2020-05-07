@@ -25,6 +25,10 @@
 |---|-------------:|----------------:|
 ||0.90|0.17 %|
 
+**Auspex** Pathologies: missing line
+
+ 
+
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/5amc
  

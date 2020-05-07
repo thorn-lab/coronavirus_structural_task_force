@@ -25,6 +25,10 @@
 |---|-------------:|----------------:|
 ||1.98|0.33 %|
 
+**Auspex** Pathologies: manhattan, missing line, terracing
+
+ 
+
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/2gz9
  

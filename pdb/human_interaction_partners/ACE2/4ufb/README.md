@@ -25,6 +25,10 @@
 |---|-------------:|----------------:|
 ||1.05|0.12 %|
 
+**Auspex** Pathologies: ice rings, missing line
+
+ 
+
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/4ufb
  

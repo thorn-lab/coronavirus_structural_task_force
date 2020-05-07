@@ -25,6 +25,10 @@
 |---|-------------:|----------------:|
 ||1.24|0.00 %|
 
+**Auspex** Pathologies: ice rings, manhattan, missing line
+
+ 
+
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/2v6n
  

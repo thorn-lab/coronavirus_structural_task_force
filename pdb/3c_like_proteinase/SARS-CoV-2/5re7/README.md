@@ -27,6 +27,10 @@ or **Click** [here](https://zenodo.org/record/3730531)
 |---|-------------:|----------------:|
 ||1.59|0.33 %|
 
+**Auspex** Pathologies: missing line, , If you would like more infosS about these problems, go to https://www.auspex.de/pathol/, , remarks: , , Annotated by Sabrina Stäb
+
+ 
+
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/5re7
  

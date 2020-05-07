@@ -25,6 +25,10 @@
 |---|-------------:|----------------:|
 ||2.59|2.48 %|
 
+**Auspex** Pathologies: 
+
+ 
+
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/5ek0
  
