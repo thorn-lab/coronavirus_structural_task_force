@@ -17,8 +17,7 @@ or **Click** [here](https://doi.org/10.18430/m36vxs)
 ## Data Summary
 |   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
-|   |2.03 <img src="https://latex.codecogs.com/svg.latex?{\mbox{
-ormalfont\AA}}"/>|84.8  %|<img width=50/>8.440|
+|   |2.03 <img src="https://latex.codecogs.com/svg.latex?{\mbox{\normalfont\AA}}"/>|84.8  %|<img width=50/>8.440|
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           

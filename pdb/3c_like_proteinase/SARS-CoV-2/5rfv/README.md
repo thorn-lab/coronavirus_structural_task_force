@@ -17,8 +17,7 @@ or **Click** [here](https://zenodo.org/record/3731531)
 ## Data Summary
 |   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
-|   |1.48 <img src="https://latex.codecogs.com/svg.latex?{\mbox{
-ormalfont\AA}}"/>|96.0  %|<img width=50/>6.200|
+|   |1.48 <img src="https://latex.codecogs.com/svg.latex?{\mbox{\normalfont\AA}}"/>|96.0  %|<img width=50/>6.200|
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
