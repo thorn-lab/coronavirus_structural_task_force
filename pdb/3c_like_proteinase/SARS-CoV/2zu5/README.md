@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  1.71|  0.00 %|
 
-**Auspex** Pathologies: manhattan
+**Auspex Pathologies**: manhattan
 
  
 

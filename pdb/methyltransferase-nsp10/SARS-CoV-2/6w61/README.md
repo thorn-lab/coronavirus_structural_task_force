@@ -27,7 +27,7 @@ or **Click** [here](https://doi.org/10.18430/m36w61)
 |---|-------------:|----------------:|
 ||  1.50|  0.00 %|
 
-**Auspex** Pathologies: 
+**Auspex Pathologies**: 
 
  
 

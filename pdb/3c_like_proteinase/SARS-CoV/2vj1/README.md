@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  2.76|  0.67 %|
 
-**Auspex** Pathologies: manhattan, missing line
+**Auspex Pathologies**: manhattan, missing line
 
  
 

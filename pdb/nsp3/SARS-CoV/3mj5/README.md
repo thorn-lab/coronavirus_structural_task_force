@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  2.80|  0.88 %|
 
-**Auspex** Pathologies: bad or missing beam stop, missing line, manhatten
+**Auspex Pathologies**: bad or missing beam stop, missing line, manhatten
 
  
 

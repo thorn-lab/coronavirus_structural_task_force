@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  3.28|  3.30 %|
 
-**Auspex** Pathologies: bad or missing beam stop mask, manhattan, missing line
+**Auspex Pathologies**: bad or missing beam stop mask, manhattan, missing line
 
  
 

@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  2.35|  1.34 %|
 
-**Auspex** Pathologies: missing line, terracing
+**Auspex Pathologies**: missing line, terracing
 
  
 

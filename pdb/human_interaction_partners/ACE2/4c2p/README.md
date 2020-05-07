@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  1.13|  0.00 %|
 
-**Auspex** Pathologies: missing line, missing rings
+**Auspex Pathologies**: missing line, missing rings
 
  
 

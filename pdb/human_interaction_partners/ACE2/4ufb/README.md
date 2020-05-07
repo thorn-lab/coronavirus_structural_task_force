@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  1.05|  0.12 %|
 
-**Auspex** Pathologies: ice rings, missing line
+**Auspex Pathologies**: ice rings, missing line
 
  
 

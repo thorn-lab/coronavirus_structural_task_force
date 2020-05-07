@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  2.92|  1.64 %|
 
-**Auspex** Pathologies: missing line, manhatten
+**Auspex Pathologies**: missing line, manhatten
 
  
 

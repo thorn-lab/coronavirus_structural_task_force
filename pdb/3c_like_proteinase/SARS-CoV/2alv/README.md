@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  2.68|  1.67 %|
 
-**Auspex** Pathologies: missing line, bad or missing beam stop mask
+**Auspex Pathologies**: missing line, bad or missing beam stop mask
 
  
 

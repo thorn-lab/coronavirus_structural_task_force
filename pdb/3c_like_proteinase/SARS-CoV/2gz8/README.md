@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  1.80|  0.33 %|
 
-**Auspex** Pathologies: manhattan, , terracing
+**Auspex Pathologies**: manhattan, , terracing
 
  
 

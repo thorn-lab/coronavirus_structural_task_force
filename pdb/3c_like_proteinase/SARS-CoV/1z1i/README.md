@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  3.68|  7.36 %|
 
-**Auspex** Pathologies: manhatten
+**Auspex Pathologies**: manhatten
 
  
 

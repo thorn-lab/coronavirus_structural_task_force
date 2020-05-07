@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  3.40|  0.23 %|
 
-**Auspex** Pathologies: 
+**Auspex Pathologies**: 
 
  
 

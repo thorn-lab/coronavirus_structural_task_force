@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  1.36|  0.00 %|
 
-**Auspex** Pathologies: ice rings, manhattan, terracing
+**Auspex Pathologies**: ice rings, manhattan, terracing
 
  
 

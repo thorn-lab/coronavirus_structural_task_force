@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  1.46|  0.66 %|
 
-**Auspex** Pathologies: missing line
+**Auspex Pathologies**: missing line
 
  
 

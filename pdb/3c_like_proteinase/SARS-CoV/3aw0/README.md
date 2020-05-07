@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  2.51|  0.00 %|
 
-**Auspex** Pathologies: bad or missing beam stop mask, ice rings, manhattan, missing line
+**Auspex Pathologies**: bad or missing beam stop mask, ice rings, manhattan, missing line
 
  
 

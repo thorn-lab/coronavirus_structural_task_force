@@ -27,7 +27,7 @@ or **Click** [here](https://zenodo.org/record/3731495)
 |---|-------------:|----------------:|
 ||  2.18|  0.33 %|
 
-**Auspex** Pathologies: ice rings, , missing line
+**Auspex Pathologies**: ice rings, , missing line
 
  
 

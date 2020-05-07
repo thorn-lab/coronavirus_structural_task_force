@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  2.85|  0.66 %|
 
-**Auspex** Pathologies: manhatten , missing line, terracing
+**Auspex Pathologies**: manhatten , missing line, terracing
 
  
 

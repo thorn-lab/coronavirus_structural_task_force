@@ -27,7 +27,7 @@ or **Click** [here](https://zenodo.org/record/3731246)
 |---|-------------:|----------------:|
 ||  1.21|  0.33 %|
 
-**Auspex** Pathologies: missing line
+**Auspex Pathologies**: missing line
 
  
 

@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  2.38|  2.69 %|
 
-**Auspex** Pathologies: missing ring
+**Auspex Pathologies**: missing ring
 
  
 

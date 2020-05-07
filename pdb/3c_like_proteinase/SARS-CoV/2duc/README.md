@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  1.66|  0.33 %|
 
-**Auspex** Pathologies: ice rings, manhatten
+**Auspex Pathologies**: ice rings, manhatten
 
  
 

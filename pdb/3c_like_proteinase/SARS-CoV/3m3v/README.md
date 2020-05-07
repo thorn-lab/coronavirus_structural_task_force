@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  3.17|  3.14 %|
 
-**Auspex** Pathologies: ice rings, manhattan
+**Auspex Pathologies**: ice rings, manhattan
 
  
 

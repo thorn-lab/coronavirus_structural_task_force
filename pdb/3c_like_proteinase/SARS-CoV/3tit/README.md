@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  1.34|  0.00 %|
 
-**Auspex** Pathologies: ice rings
+**Auspex Pathologies**: ice rings
 
  
 

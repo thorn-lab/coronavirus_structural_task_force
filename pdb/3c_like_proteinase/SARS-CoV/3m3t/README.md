@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  2.68|  1.97 %|
 
-**Auspex** Pathologies: terracing
+**Auspex Pathologies**: terracing
 
  
 

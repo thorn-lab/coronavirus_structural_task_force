@@ -27,7 +27,7 @@ or **Click** [here](https://zenodo.org/record/3730762)
 |---|-------------:|----------------:|
 ||  1.87|  0.66 %|
 
-**Auspex** Pathologies: 
+**Auspex Pathologies**: 
 
  
 

@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  1.72|  0.33 %|
 
-**Auspex** Pathologies: ice rings, terracing
+**Auspex Pathologies**: ice rings, terracing
 
  
 

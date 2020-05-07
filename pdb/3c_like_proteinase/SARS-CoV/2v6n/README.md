@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  1.24|  0.00 %|
 
-**Auspex** Pathologies: ice rings, manhattan, missing line
+**Auspex Pathologies**: ice rings, manhattan, missing line
 
  
 

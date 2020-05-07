@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  1.71|  0.17 %|
 
-**Auspex** Pathologies: bad or missing beam stop mask, terracing
+**Auspex Pathologies**: bad or missing beam stop mask, terracing
 
  
 
