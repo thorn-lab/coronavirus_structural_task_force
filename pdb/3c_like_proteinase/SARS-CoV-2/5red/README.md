@@ -27,7 +27,7 @@ or **Click** [here](https://zenodo.org/record/3730603)
 |---|-------------:|----------------:|
 ||  1.47|  0.33 %|
 
-**Auspex Pathologies**: missing line(For more information, read)
+**Auspex Pathologies**: missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV-2/5red/validation/auspex/5red_auspex_comments.txt))
 
  
 

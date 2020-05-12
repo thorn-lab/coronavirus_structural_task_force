@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  1.79|  0.00 %|
 
-**Auspex Pathologies**: bad or missing beam stop mask, , ice rings, missing line(For more information, read)
+**Auspex Pathologies**: bad or missing beam stop mask, , ice rings, missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/3f9f/validation/auspex/3f9f_auspex_comments.txt))
 
  
 

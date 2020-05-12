@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  2.21|  0.00 %|
 
-**Auspex Pathologies**: bad or missing beam stop mask, , manhattan, missing line, terracing(For more information, read)
+**Auspex Pathologies**: bad or missing beam stop mask, , manhattan, missing line, terracing (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/4hi3/validation/auspex/4hi3_auspex_comments.txt))
 
  
 

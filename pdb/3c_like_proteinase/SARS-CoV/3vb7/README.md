@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  1.72|  0.33 %|
 
-**Auspex Pathologies**: ice rings, terracing(For more information, read)
+**Auspex Pathologies**: ice rings, terracing (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/3vb7/validation/auspex/3vb7_auspex_comments.txt))
 
  
 

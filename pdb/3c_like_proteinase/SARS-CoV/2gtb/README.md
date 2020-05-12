@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  2.57|  1.35 %|
 
-**Auspex Pathologies**: missing line(For more information, read)
+**Auspex Pathologies**: missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/2gtb/validation/auspex/2gtb_auspex_comments.txt))
 
  
 

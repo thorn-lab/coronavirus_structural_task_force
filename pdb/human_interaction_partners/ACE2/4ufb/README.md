@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  1.05|  0.12 %|
 
-**Auspex Pathologies**: ice rings, missing line(For more information, read)
+**Auspex Pathologies**: ice rings, missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/ACE2/4ufb/validation/auspex/4ufb_auspex_comments.txt))
 
  
 

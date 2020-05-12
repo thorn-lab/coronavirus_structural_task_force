@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  1.39|  0.17 %|
 
-**Auspex Pathologies**: manhattan, missing line, terracing(For more information, read)
+**Auspex Pathologies**: manhattan, missing line, terracing (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/3atw/validation/auspex/3atw_auspex_comments.txt))
 
  
 

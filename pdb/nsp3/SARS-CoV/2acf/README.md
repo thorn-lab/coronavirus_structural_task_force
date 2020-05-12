@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  1.23|  0.14 %|
 
-**Auspex Pathologies**: missing line, terracing(For more information, read)
+**Auspex Pathologies**: missing line, terracing (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp3/SARS-CoV/2acf/validation/auspex/2acf_auspex_comments.txt))
 
  
 

@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  2.16|  0.49 %|
 
-**Auspex Pathologies**: manhatten(For more information, read)
+**Auspex Pathologies**: manhatten (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/2amd/validation/auspex/2amd_auspex_comments.txt))
 
  
 

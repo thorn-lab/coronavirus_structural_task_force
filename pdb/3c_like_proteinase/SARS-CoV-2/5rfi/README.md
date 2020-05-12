@@ -27,7 +27,7 @@ or **Click** [here](https://zenodo.org/record/3731383)
 |---|-------------:|----------------:|
 ||  1.25|  0.33 %|
 
-**Auspex Pathologies**: ice rings, missing line(For more information, read)
+**Auspex Pathologies**: ice rings, missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV-2/5rfi/validation/auspex/5rfi_auspex_comments.txt))
 
  
 

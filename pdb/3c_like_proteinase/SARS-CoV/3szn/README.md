@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  1.22|  0.00 %|
 
-**Auspex Pathologies**: terracing(For more information, read)
+**Auspex Pathologies**: terracing (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/3szn/validation/auspex/3szn_auspex_comments.txt))
 
  
 

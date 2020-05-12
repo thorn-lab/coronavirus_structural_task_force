@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  2.29|  1.31 %|
 
-**Auspex Pathologies**: ice rings			(For more information, read)
+**Auspex Pathologies**: ice rings			 (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp3/SARS-CoV/2wct/validation/auspex/2wct_auspex_comments.txt))
 
  
 

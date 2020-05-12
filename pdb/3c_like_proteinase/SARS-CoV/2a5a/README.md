@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  2.92|  1.64 %|
 
-**Auspex Pathologies**: missing line, manhatten(For more information, read)
+**Auspex Pathologies**: missing line, manhatten (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/2a5a/validation/auspex/2a5a_auspex_comments.txt))
 
  
 

@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  3.28|  3.30 %|
 
-**Auspex Pathologies**: bad or missing beam stop mask, manhattan, missing line(For more information, read)
+**Auspex Pathologies**: bad or missing beam stop mask, manhattan, missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/2qc2/validation/auspex/2qc2_auspex_comments.txt))
 
  
 
