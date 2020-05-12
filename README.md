@@ -121,10 +121,10 @@ We would also like to thank: Manfred Weiss *(HBZ BESSY, Berlin, Germany)* , Jame
 WHATCHECK: Hooft, R.W.W., Vriend, G., Sander, C., Abola, E.E. WHATCHECK: Errors in protein structures. (1996) Nature 381, 272-272.<br>
 **phenix.refine**: Afonine, P.V., Grosse-Kunstleve, R.W., Echols, N., Headd, J.J., Moriarty, N.W., Mustyakimov, M., Terwilliger, T.C., Urzhumtsev, A., Zwart, P.H., Adams, P.D. (2012) Towards automated crystallographic structure refinement with phenix.refine. *Acta Cryst. D*68, 352-367.<br>
 **AUSPEX**: Thorn, A., Parkhurst, J.M., Emsley, P., Nicholls, R., Evans, G., Vollmar, M., Murshudov, G.N. (2017) AUSPEX: a graphical tool for X-ray diffraction data analysis, *Acta Cryst D*73, 729-737. <br> 
-**HARUSPEX**: Mostosi, P., Schindelin, H., Kollmannsberger, P., Thorn, A. (2020) Haruspex: A Neural Network for the Automatic Identification of Oligonucleotides and Protein Secondary Structure in Cryo‐EM Maps. *Angew. Chem. (Int. Ed.)* https://doi.org/10.1002/ange.202000421
-**CCP-EM**: Burnley. T., Palmer, C.M., Winn, M.D. (2017) Recent developments in the CCP-EM software suite. *Acta Cryst. D*73, 469 - 477. 
-**REFMAC**: Murshudov, G.N., Vagin, A.A., Dodson, E.J. (1997) Refinement of Macromolecular Structures by the Maximum-Likelihood method. *Acta Cryst. D*53, 240-255.  
-**COOT**: Emsley, P., Lohkamp, B., Scott, W.G., Cowtan, K. (2010) Features and Development of Coot. *Acta Cryst D*66, 486-501
+**HARUSPEX**: Mostosi, P., Schindelin, H., Kollmannsberger, P., Thorn, A. (2020) Haruspex: A Neural Network for the Automatic Identification of Oligonucleotides and Protein Secondary Structure in Cryo‐EM Maps. *Angew. Chem. (Int. Ed.)* https://doi.org/10.1002/ange.202000421<br>
+**CCP-EM**: Burnley. T., Palmer, C.M., Winn, M.D. (2017) Recent developments in the CCP-EM software suite. *Acta Cryst. D*73, 469 - 477. <br>
+**REFMAC**: Murshudov, G.N., Vagin, A.A., Dodson, E.J. (1997) Refinement of Macromolecular Structures by the Maximum-Likelihood method. *Acta Cryst. D*53, 240-255. <br> 
+**COOT**: Emsley, P., Lohkamp, B., Scott, W.G., Cowtan, K. (2010) Features and Development of Coot. *Acta Cryst D*66, 486-501 <br>
 **LOCSCALE**: Jakobi, A. J., Wilmann, M., Sachse, C. (2017) Model-based local density sharpening of cryo-EM maps. *Elife* 6:e27131 doi: 10.7554/eLife.27131
 <br>
 ## Contact information
