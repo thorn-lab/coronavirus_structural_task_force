@@ -7,10 +7,10 @@
 
 ## Comments On The Structure
 `Andrea Thorn`
-Ramachandran outliers
+many Ramachandran outliers
 
 `Vincent Chen`
-ar crystal structures in the PDB which have a similar fold to 2gdt (3zbd and 5xbc, for example) from different viruses.  It doesn't directly say whether 2gdt is correct, but lends credence to the idea that it might actually be a novel fold.  It might be worth taking a closer look at 3zbd and 5xbc though, for a start.
+Similar crystal structures in the PDB which have a similar fold to 2gdt (3zbd and 5xbc, for example) from different viruses.  It doesn't directly say whether 2gdt is correct, but lends credence to the idea that it might actually be a novel fold.  It might be worth taking a closer look at 3zbd and 5xbc though, for a start.
 
 
 

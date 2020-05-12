@@ -34,7 +34,7 @@ or **Click** [here](https://zenodo.org/record/3730578)
 
 ## Comments On The Structure
 `Tristan Croll`
-igand in PDB 5REB is established well enough in the density to be believable, and the conformation looks right.
+The ligand in PDB 5REB is established well enough in the density to be believable, and the conformation looks right.
 
 PDB-REDO gets the ligand wrong- a potential bug. Given its definition in the PDB it is not an aromatic ring, but a piperidine.
 
