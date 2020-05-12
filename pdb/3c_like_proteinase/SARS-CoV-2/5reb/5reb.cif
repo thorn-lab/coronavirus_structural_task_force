@@ -3,7 +3,7 @@ data_5REB
 _entry.id   5REB 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.324 
+_audit_conform.dict_version    5.325 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
@@ -23,6 +23,7 @@ _pdbx_database_status.process_site                    RCSB
 _pdbx_database_status.SG_entry                        ? 
 _pdbx_database_status.pdb_format_compatible           Y 
 _pdbx_database_status.methods_development_category    ? 
+_pdbx_database_status.status_code_nmr_data            ? 
 # 
 loop_
 _audit_author.name 
@@ -115,10 +116,13 @@ _entity.pdbx_ec
 _entity.pdbx_mutation 
 _entity.pdbx_fragment 
 _entity.details 
-1 polymer     man 'SARS-CoV-2 main protease'                33825.547 1   ? ? ? ? 
-2 non-polymer syn 'DIMETHYL SULFOXIDE'                      78.133    3   ? ? ? ? 
-3 non-polymer syn '1-[(thiophen-3-yl)methyl]piperidin-4-ol' 197.297   1   ? ? ? ? 
-4 water       nat water                                     18.015    341 ? ? ? ? 
+1 polymer     man '3C-like proteinase'                      33825.547 1   3.4.22.-,3.4.22.69 ? ? ? 
+2 non-polymer syn 'DIMETHYL SULFOXIDE'                      78.133    3   ?                  ? ? ? 
+3 non-polymer syn '1-[(thiophen-3-yl)methyl]piperidin-4-ol' 197.297   1   ?                  ? ? ? 
+4 water       nat water                                     18.015    341 ?                  ? ? ? 
+# 
+_entity_name_com.entity_id   1 
+_entity_name_com.name        'SARS-CoV-2 main protease' 
 # 
 _entity_poly.entity_id                      1 
 _entity_poly.type                           'polypeptide(L)' 
@@ -457,9 +461,9 @@ _entity_src_gen.pdbx_alt_source_flag               sample
 _entity_src_gen.pdbx_seq_type                      'Biological sequence' 
 _entity_src_gen.pdbx_beg_seq_num                   1 
 _entity_src_gen.pdbx_end_seq_num                   306 
-_entity_src_gen.gene_src_common_name               'SARS-CoV-2,2019-nCoV,COVID-19 virus' 
+_entity_src_gen.gene_src_common_name               2019-nCoV 
 _entity_src_gen.gene_src_genus                     ? 
-_entity_src_gen.pdbx_gene_src_gene                 ? 
+_entity_src_gen.pdbx_gene_src_gene                 'rep, 1a-1b' 
 _entity_src_gen.gene_src_species                   ? 
 _entity_src_gen.gene_src_strain                    ? 
 _entity_src_gen.gene_src_tissue                    ? 
@@ -501,13 +505,18 @@ _entity_src_gen.plasmid_details                    ?
 _entity_src_gen.pdbx_description                   ? 
 # 
 _struct_ref.id                         1 
-_struct_ref.db_name                    PDB 
-_struct_ref.db_code                    5REB 
-_struct_ref.pdbx_db_accession          5REB 
+_struct_ref.db_name                    UNP 
+_struct_ref.db_code                    R1AB_SARS2 
+_struct_ref.pdbx_db_accession          P0DTD1 
 _struct_ref.pdbx_db_isoform            ? 
 _struct_ref.entity_id                  1 
-_struct_ref.pdbx_seq_one_letter_code   ? 
-_struct_ref.pdbx_align_begin           1 
+_struct_ref.pdbx_seq_one_letter_code   
+;SGFRKMAFPSGKVEGCMVQVTCGTTTLNGLWLDDVVYCPRHVICTSEDMLNPNYEDLLIRKSNHNFLVQAGNVQLRVIGH
+SMQNCVLKLKVDTANPKTPKYKFVRIQPGQTFSVLACYNGSPSGVYQCAMRPNFTIKGSFLNGSCGSVGFNIDYDCVSFC
+YMHHMELPTGVHAGTDLEGNFYGPFVDRQTAQAAGTDTTITVNVLAWLYAAVINGDRWFLNRFTTTLNDFNLVAMKYNYE
+PLTQDHVDILGPLSAQTGIAVLDMCASLKELLQNGMNGRTILGSALLEDEFTPFDVVRQCSGVTFQ
+;
+_struct_ref.pdbx_align_begin           3264 
 # 
 _struct_ref_seq.align_id                      1 
 _struct_ref_seq.ref_id                        1 
@@ -517,10 +526,10 @@ _struct_ref_seq.seq_align_beg                 1
 _struct_ref_seq.pdbx_seq_align_beg_ins_code   ? 
 _struct_ref_seq.seq_align_end                 306 
 _struct_ref_seq.pdbx_seq_align_end_ins_code   ? 
-_struct_ref_seq.pdbx_db_accession             5REB 
-_struct_ref_seq.db_align_beg                  1 
+_struct_ref_seq.pdbx_db_accession             P0DTD1 
+_struct_ref_seq.db_align_beg                  3264 
 _struct_ref_seq.pdbx_db_align_beg_ins_code    ? 
-_struct_ref_seq.db_align_end                  306 
+_struct_ref_seq.db_align_end                  3569 
 _struct_ref_seq.pdbx_db_align_end_ins_code    ? 
 _struct_ref_seq.pdbx_auth_seq_align_beg       1 
 _struct_ref_seq.pdbx_auth_seq_align_end       306 
@@ -4522,6 +4531,7 @@ _pdbx_audit_revision_history.minor_revision
 _pdbx_audit_revision_history.revision_date 
 1 'Structure model' 1 0 2020-03-25 
 2 'Structure model' 1 1 2020-04-08 
+3 'Structure model' 1 2 2020-05-06 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -4538,6 +4548,9 @@ _pdbx_audit_revision_group.data_content_type
 _pdbx_audit_revision_group.group 
 1 2 'Structure model' 'Database references' 
 2 2 'Structure model' 'Structure summary'   
+3 3 'Structure model' 'Database references' 
+4 3 'Structure model' 'Source and taxonomy' 
+5 3 'Structure model' 'Structure summary'   
 # 
 loop_
 _pdbx_audit_revision_category.ordinal 
@@ -4546,11 +4559,30 @@ _pdbx_audit_revision_category.data_content_type
 _pdbx_audit_revision_category.category 
 1 2 'Structure model' entity                    
 2 2 'Structure model' pdbx_related_exp_data_set 
+3 3 'Structure model' entity                    
+4 3 'Structure model' entity_name_com           
+5 3 'Structure model' entity_src_gen            
+6 3 'Structure model' struct_ref                
+7 3 'Structure model' struct_ref_seq            
 # 
-_pdbx_audit_revision_item.ordinal             1 
-_pdbx_audit_revision_item.revision_ordinal    2 
-_pdbx_audit_revision_item.data_content_type   'Structure model' 
-_pdbx_audit_revision_item.item                '_entity.pdbx_description' 
+loop_
+_pdbx_audit_revision_item.ordinal 
+_pdbx_audit_revision_item.revision_ordinal 
+_pdbx_audit_revision_item.data_content_type 
+_pdbx_audit_revision_item.item 
+1  2 'Structure model' '_entity.pdbx_description'             
+2  3 'Structure model' '_entity.pdbx_description'             
+3  3 'Structure model' '_entity.pdbx_ec'                      
+4  3 'Structure model' '_entity_src_gen.gene_src_common_name' 
+5  3 'Structure model' '_entity_src_gen.pdbx_gene_src_gene'   
+6  3 'Structure model' '_struct_ref.db_code'                  
+7  3 'Structure model' '_struct_ref.db_name'                  
+8  3 'Structure model' '_struct_ref.pdbx_align_begin'         
+9  3 'Structure model' '_struct_ref.pdbx_db_accession'        
+10 3 'Structure model' '_struct_ref.pdbx_seq_one_letter_code' 
+11 3 'Structure model' '_struct_ref_seq.db_align_beg'         
+12 3 'Structure model' '_struct_ref_seq.db_align_end'         
+13 3 'Structure model' '_struct_ref_seq.pdbx_db_accession'    
 # 
 _phasing.method   MR 
 # 

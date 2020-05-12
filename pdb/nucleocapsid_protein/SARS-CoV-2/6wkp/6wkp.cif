@@ -137,10 +137,13 @@ _entity.pdbx_ec
 _entity.pdbx_mutation 
 _entity.pdbx_fragment 
 _entity.details 
-1 polymer     man 'SARS-CoV-2 nucleocapsid protein'      14102.780 4  ? ? 'RNA-binding domain' ? 
-2 non-polymer syn 'ZINC ION'                             65.409    4  ? ? ?                    ? 
-3 non-polymer syn '2-(N-MORPHOLINO)-ETHANESULFONIC ACID' 195.237   2  ? ? ?                    ? 
-4 water       nat water                                  18.015    37 ? ? ?                    ? 
+1 polymer     man 'SARS-CoV-2 nucleocapsid protein'      14102.780 4  ? ? 'RNA-binding domain (UNP residues 47-173)' ? 
+2 non-polymer syn 'ZINC ION'                             65.409    4  ? ? ?                                          ? 
+3 non-polymer syn '2-(N-MORPHOLINO)-ETHANESULFONIC ACID' 195.237   2  ? ? ?                                          ? 
+4 water       nat water                                  18.015    37 ? ? ?                                          ? 
+# 
+_entity_name_com.entity_id   1 
+_entity_name_com.name        'Nucleoprotein,Nucleocapsid protein,Protein N' 
 # 
 _entity_poly.entity_id                      1 
 _entity_poly.type                           'polypeptide(L)' 
@@ -297,7 +300,7 @@ _entity_src_gen.pdbx_alt_source_flag               sample
 _entity_src_gen.pdbx_seq_type                      'Biological sequence' 
 _entity_src_gen.pdbx_beg_seq_num                   1 
 _entity_src_gen.pdbx_end_seq_num                   128 
-_entity_src_gen.gene_src_common_name               SARS-CoV-2 
+_entity_src_gen.gene_src_common_name               2019-nCoV 
 _entity_src_gen.gene_src_genus                     ? 
 _entity_src_gen.pdbx_gene_src_gene                 ? 
 _entity_src_gen.gene_src_species                   ? 
@@ -341,13 +344,16 @@ _entity_src_gen.plasmid_details                    ?
 _entity_src_gen.pdbx_description                   ? 
 # 
 _struct_ref.id                         1 
-_struct_ref.db_name                    PDB 
-_struct_ref.db_code                    6WKP 
-_struct_ref.pdbx_db_accession          6WKP 
+_struct_ref.db_name                    UNP 
+_struct_ref.db_code                    NCAP_SARS2 
+_struct_ref.pdbx_db_accession          P0DTC9 
 _struct_ref.pdbx_db_isoform            ? 
 _struct_ref.entity_id                  1 
-_struct_ref.pdbx_seq_one_letter_code   ? 
-_struct_ref.pdbx_align_begin           1 
+_struct_ref.pdbx_seq_one_letter_code   
+;NNTASWFTALTQHGKEDLKFPRGQGVPINTNSSPDDQIGYYRRATRRIRGGDGKMKDLSPRWYFYYLGTGPEAGLPYGAN
+KDGIIWVATEGALNTPKDHIGTRNPANNAAIVLQLPQGTTLPKGFYA
+;
+_struct_ref.pdbx_align_begin           47 
 # 
 loop_
 _struct_ref_seq.align_id 
@@ -365,10 +371,29 @@ _struct_ref_seq.db_align_end
 _struct_ref_seq.pdbx_db_align_end_ins_code 
 _struct_ref_seq.pdbx_auth_seq_align_beg 
 _struct_ref_seq.pdbx_auth_seq_align_end 
-1 1 6WKP A 1 ? 128 ? 6WKP 46 ? 173 ? 46 173 
-2 1 6WKP B 1 ? 128 ? 6WKP 46 ? 173 ? 46 173 
-3 1 6WKP C 1 ? 128 ? 6WKP 46 ? 173 ? 46 173 
-4 1 6WKP D 1 ? 128 ? 6WKP 46 ? 173 ? 46 173 
+1 1 6WKP A 2 ? 128 ? P0DTC9 47 ? 173 ? 47 173 
+2 1 6WKP B 2 ? 128 ? P0DTC9 47 ? 173 ? 47 173 
+3 1 6WKP C 2 ? 128 ? P0DTC9 47 ? 173 ? 47 173 
+4 1 6WKP D 2 ? 128 ? P0DTC9 47 ? 173 ? 47 173 
+# 
+loop_
+_struct_ref_seq_dif.align_id 
+_struct_ref_seq_dif.pdbx_pdb_id_code 
+_struct_ref_seq_dif.mon_id 
+_struct_ref_seq_dif.pdbx_pdb_strand_id 
+_struct_ref_seq_dif.seq_num 
+_struct_ref_seq_dif.pdbx_pdb_ins_code 
+_struct_ref_seq_dif.pdbx_seq_db_name 
+_struct_ref_seq_dif.pdbx_seq_db_accession_code 
+_struct_ref_seq_dif.db_mon_id 
+_struct_ref_seq_dif.pdbx_seq_db_seq_num 
+_struct_ref_seq_dif.details 
+_struct_ref_seq_dif.pdbx_auth_seq_num 
+_struct_ref_seq_dif.pdbx_ordinal 
+1 6WKP MET A 1 ? UNP P0DTC9 ? ? 'initiating methionine' 46 1 
+2 6WKP MET B 1 ? UNP P0DTC9 ? ? 'initiating methionine' 46 2 
+3 6WKP MET C 1 ? UNP P0DTC9 ? ? 'initiating methionine' 46 3 
+4 6WKP MET D 1 ? UNP P0DTC9 ? ? 'initiating methionine' 46 4 
 # 
 loop_
 _chem_comp.id 
@@ -8926,11 +8951,14 @@ _pdbx_struct_conn_angle.value_esd
 20 OD2 ? D ASP 37  ? D ASP 82  ? 1_555 ZN ? J ZN . ? D ZN 202 ? 1_555 O   ? M HOH .   ? C HOH 305 ? 1_555 114.8 ? 
 21 NE2 ? D HIS 100 ? D HIS 145 ? 1_555 ZN ? J ZN . ? D ZN 202 ? 1_555 O   ? M HOH .   ? C HOH 305 ? 1_555 124.2 ? 
 # 
-_pdbx_audit_revision_history.ordinal             1 
-_pdbx_audit_revision_history.data_content_type   'Structure model' 
-_pdbx_audit_revision_history.major_revision      1 
-_pdbx_audit_revision_history.minor_revision      0 
-_pdbx_audit_revision_history.revision_date       2020-04-29 
+loop_
+_pdbx_audit_revision_history.ordinal 
+_pdbx_audit_revision_history.data_content_type 
+_pdbx_audit_revision_history.major_revision 
+_pdbx_audit_revision_history.minor_revision 
+_pdbx_audit_revision_history.revision_date 
+1 'Structure model' 1 0 2020-04-29 
+2 'Structure model' 1 1 2020-05-06 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -8939,6 +8967,44 @@ _pdbx_audit_revision_details.provider            repository
 _pdbx_audit_revision_details.type                'Initial release' 
 _pdbx_audit_revision_details.description         ? 
 _pdbx_audit_revision_details.details             ? 
+# 
+loop_
+_pdbx_audit_revision_group.ordinal 
+_pdbx_audit_revision_group.revision_ordinal 
+_pdbx_audit_revision_group.data_content_type 
+_pdbx_audit_revision_group.group 
+1 2 'Structure model' 'Database references' 
+2 2 'Structure model' 'Source and taxonomy' 
+3 2 'Structure model' 'Structure summary'   
+# 
+loop_
+_pdbx_audit_revision_category.ordinal 
+_pdbx_audit_revision_category.revision_ordinal 
+_pdbx_audit_revision_category.data_content_type 
+_pdbx_audit_revision_category.category 
+1 2 'Structure model' entity             
+2 2 'Structure model' entity_name_com    
+3 2 'Structure model' entity_src_gen     
+4 2 'Structure model' struct_ref         
+5 2 'Structure model' struct_ref_seq     
+6 2 'Structure model' struct_ref_seq_dif 
+# 
+loop_
+_pdbx_audit_revision_item.ordinal 
+_pdbx_audit_revision_item.revision_ordinal 
+_pdbx_audit_revision_item.data_content_type 
+_pdbx_audit_revision_item.item 
+1  2 'Structure model' '_entity.pdbx_fragment'                   
+2  2 'Structure model' '_entity_src_gen.gene_src_common_name'    
+3  2 'Structure model' '_struct_ref.db_code'                     
+4  2 'Structure model' '_struct_ref.db_name'                     
+5  2 'Structure model' '_struct_ref.pdbx_align_begin'            
+6  2 'Structure model' '_struct_ref.pdbx_db_accession'           
+7  2 'Structure model' '_struct_ref.pdbx_seq_one_letter_code'    
+8  2 'Structure model' '_struct_ref_seq.db_align_beg'            
+9  2 'Structure model' '_struct_ref_seq.pdbx_auth_seq_align_beg' 
+10 2 'Structure model' '_struct_ref_seq.pdbx_db_accession'       
+11 2 'Structure model' '_struct_ref_seq.seq_align_beg'           
 # 
 loop_
 _pdbx_refine_tls.id 

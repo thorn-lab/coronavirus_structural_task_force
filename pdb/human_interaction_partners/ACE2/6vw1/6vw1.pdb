@@ -6,12 +6,13 @@ COMPND   2 MOLECULE: ANGIOTENSIN-CONVERTING ENZYME 2;
 COMPND   3 CHAIN: A, B;                                                         
 COMPND   4 SYNONYM: ACE-RELATED CARBOXYPEPTIDASE,ANGIOTENSIN-CONVERTING ENZYME  
 COMPND   5 HOMOLOG,ACEH,METALLOPROTEASE MPROT15;                                
-COMPND   6 EC: 3.4.17.23;                                                       
+COMPND   6 EC: 3.4.17.23,3.4.17.-;                                              
 COMPND   7 ENGINEERED: YES;                                                     
 COMPND   8 MOL_ID: 2;                                                           
 COMPND   9 MOLECULE: SARS-COV-2 CHIMERIC RBD;                                   
 COMPND  10 CHAIN: E, F;                                                         
-COMPND  11 ENGINEERED: YES                                                      
+COMPND  11 SYNONYM: S GLYCOPROTEIN,E2,PEPLOMER PROTEIN;                         
+COMPND  12 ENGINEERED: YES                                                      
 SOURCE    MOL_ID: 1;                                                            
 SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   
 SOURCE   3 ORGANISM_COMMON: HUMAN;                                              
@@ -22,17 +23,19 @@ SOURCE   7 EXPRESSION_SYSTEM_COMMON: FALL ARMYWORM;
 SOURCE   8 EXPRESSION_SYSTEM_TAXID: 7108;                                       
 SOURCE   9 EXPRESSION_SYSTEM_VECTOR_TYPE: BACULOVIRUS;                          
 SOURCE  10 MOL_ID: 2;                                                           
-SOURCE  11 ORGANISM_SCIENTIFIC: SEVERE ACUTE RESPIRATORY SYNDROME CORONAVIRUS   
-SOURCE  12 2;                                                                   
-SOURCE  13 ORGANISM_COMMON: SARS-COV-2,2019-NCOV,COVID-19;                      
-SOURCE  14 ORGANISM_TAXID: 2697049;                                             
-SOURCE  15 EXPRESSION_SYSTEM: SPODOPTERA FRUGIPERDA;                            
-SOURCE  16 EXPRESSION_SYSTEM_COMMON: FALL ARMYWORM;                             
-SOURCE  17 EXPRESSION_SYSTEM_TAXID: 7108;                                       
-SOURCE  18 EXPRESSION_SYSTEM_VECTOR_TYPE: BACULOVIRUS                           
+SOURCE  11 ORGANISM_SCIENTIFIC: HUMAN SARS CORONAVIRUS, SEVERE ACUTE            
+SOURCE  12 RESPIRATORY SYNDROME CORONAVIRUS 2;                                  
+SOURCE  13 ORGANISM_COMMON: SARS-COV, 2019-NCOV;                                
+SOURCE  14 ORGANISM_TAXID: 694009, 2697049;                                     
+SOURCE  15 GENE: S, 2;                                                          
+SOURCE  16 EXPRESSION_SYSTEM: SPODOPTERA FRUGIPERDA;                            
+SOURCE  17 EXPRESSION_SYSTEM_COMMON: FALL ARMYWORM;                             
+SOURCE  18 EXPRESSION_SYSTEM_TAXID: 7108;                                       
+SOURCE  19 EXPRESSION_SYSTEM_VECTOR_TYPE: BACULOVIRUS                           
 KEYWDS    CORONAVIRUS, CELL INVASION                                            
 EXPDTA    X-RAY DIFFRACTION                                                     
 AUTHOR    J.SHANG,G.YE,K.SHI,Y.S.WAN,H.AIHARA,F.LI                              
+REVDAT   5   06-MAY-20 6VW1    1       COMPND SOURCE DBREF                      
 REVDAT   4   15-APR-20 6VW1    1       TITLE  COMPND JRNL                       
 REVDAT   3   08-APR-20 6VW1    1       AUTHOR JRNL                              
 REVDAT   2   11-MAR-20 6VW1    1       SOURCE                                   
@@ -834,8 +837,12 @@ REMARK 800 SITE_DESCRIPTION: binding site for Poly-Saccharide residues NAG F
 REMARK 800  601 through NAG F 602 bound to ASN F 343                            
 DBREF  6VW1 A   19   615  UNP    Q9BYF1   ACE2_HUMAN      19    615             
 DBREF  6VW1 B   19   615  UNP    Q9BYF1   ACE2_HUMAN      19    615             
-DBREF  6VW1 E  319   535  PDB    6VW1     6VW1           319    535             
-DBREF  6VW1 F  319   535  PDB    6VW1     6VW1           319    535             
+DBREF  6VW1 E  319   454  UNP    P59594   SPIKE_CVHSA    306    441             
+DBREF  6VW1 E  455   518  UNP    P0DTC2   SPIKE_SARS2    455    518             
+DBREF  6VW1 E  519   535  UNP    P59594   SPIKE_CVHSA    505    521             
+DBREF  6VW1 F  319   454  UNP    P59594   SPIKE_CVHSA    306    441             
+DBREF  6VW1 F  455   518  UNP    P0DTC2   SPIKE_SARS2    455    518             
+DBREF  6VW1 F  519   535  UNP    P59594   SPIKE_CVHSA    505    521             
 SEQRES   1 A  597  SER THR ILE GLU GLU GLN ALA LYS THR PHE LEU ASP LYS          
 SEQRES   2 A  597  PHE ASN HIS GLU ALA GLU ASP LEU PHE TYR GLN SER SER          
 SEQRES   3 A  597  LEU ALA SER TRP ASN TYR ASN THR ASN ILE THR GLU GLU          

@@ -185,12 +185,15 @@ _entity.pdbx_ec
 _entity.pdbx_mutation 
 _entity.pdbx_fragment 
 _entity.details 
-1 polymer man 'SARS-CoV-2 main protease' 33825.547 1  ? ? ? ? 
+1 polymer man 'main protease' 33825.547 1  3.4.19.12,3.4.22.-,3.4.22.69,2.7.7.48,3.6.4.12,3.6.4.13,3.1.13.-,3.1.-.-,2.1.1.- ? ? ? 
 2 polymer syn 
 ;N-[(5-METHYLISOXAZOL-3-YL)CARBONYL]ALANYL-L-VALYL-N~1~-((1R,2Z)-4-(BENZYLOXY)-4-OXO-1-{[(3R)-2-OXOPYRROLIDIN-3-YL]METHYL}BUT-2-ENYL)-L-LEUCINAMIDE
 ;
-680.791   1  ? ? ? ? 
-3 water   nat water 18.015    84 ? ? ? ? 
+680.791   1  ?                                                                                ? ? ? 
+3 water   nat water 18.015    84 ?                                                                                ? ? ? 
+# 
+_entity_name_com.entity_id   1 
+_entity_name_com.name        'pp1ab,ORF1ab polyprotein' 
 # 
 loop_
 _entity_poly.entity_id 
@@ -539,9 +542,9 @@ _entity_src_gen.pdbx_alt_source_flag               sample
 _entity_src_gen.pdbx_seq_type                      'Biological sequence' 
 _entity_src_gen.pdbx_beg_seq_num                   1 
 _entity_src_gen.pdbx_end_seq_num                   306 
-_entity_src_gen.gene_src_common_name               SARS-CoV-2 
+_entity_src_gen.gene_src_common_name               2019-nCoV 
 _entity_src_gen.gene_src_genus                     ? 
-_entity_src_gen.pdbx_gene_src_gene                 ? 
+_entity_src_gen.pdbx_gene_src_gene                 'rep, 1a-1b' 
 _entity_src_gen.gene_src_species                   ? 
 _entity_src_gen.gene_src_strain                    ? 
 _entity_src_gen.gene_src_tissue                    ? 
@@ -601,8 +604,14 @@ _struct_ref.pdbx_db_isoform
 _struct_ref.entity_id 
 _struct_ref.pdbx_seq_one_letter_code 
 _struct_ref.pdbx_align_begin 
-1 PDB 6LU7 6LU7 ? 1 ? 1 
-2 PDB 6LU7 6LU7 ? 2 ? 1 
+1 UNP R1AB_SARS2 P0DTD1 ? 1 
+;SGFRKMAFPSGKVEGCMVQVTCGTTTLNGLWLDDVVYCPRHVICTSEDMLNPNYEDLLIRKSNHNFLVQAGNVQLRVIGH
+SMQNCVLKLKVDTANPKTPKYKFVRIQPGQTFSVLACYNGSPSGVYQCAMRPNFTIKGSFLNGSCGSVGFNIDYDCVSFC
+YMHHMELPTGVHAGTDLEGNFYGPFVDRQTAQAAGTDTTITVNVLAWLYAAVINGDRWFLNRFTTTLNDFNLVAMKYNYE
+PLTQDHVDILGPLSAQTGIAVLDMCASLKELLQNGMNGRTILGSALLEDEFTPFDVVRQCSGVTFQ
+;
+3264 
+2 PDB 6LU7       6LU7   ? 2 ? 1    
 # 
 loop_
 _struct_ref_seq.align_id 
@@ -620,8 +629,8 @@ _struct_ref_seq.db_align_end
 _struct_ref_seq.pdbx_db_align_end_ins_code 
 _struct_ref_seq.pdbx_auth_seq_align_beg 
 _struct_ref_seq.pdbx_auth_seq_align_end 
-1 1 6LU7 A 1 ? 306 ? 6LU7 1 ? 306 ? 1 306 
-2 2 6LU7 C 1 ? 6   ? 6LU7 1 ? 6   ? 1 6   
+1 1 6LU7 A 1 ? 306 ? P0DTD1 3264 ? 3569 ? 1 306 
+2 2 6LU7 C 1 ? 6   ? 6LU7   1    ? 6    ? 1 6   
 # 
 loop_
 _chem_comp.id 
@@ -1059,7 +1068,7 @@ _refine_ls_shell.pdbx_fsc_free
 # 
 _struct.entry_id                     6LU7 
 _struct.title                        'The crystal structure of COVID-19 main protease in complex with an inhibitor N3' 
-_struct.pdbx_descriptor              'SARS-CoV-2 main protease, 02J-ALA-VAL-LEU-EUC' 
+_struct.pdbx_descriptor              'SARS-CoV-2 main protease, 02J-ALA-VAL-LEU-PJE-010' 
 _struct.pdbx_model_details           ? 
 _struct.pdbx_formula_weight          ? 
 _struct.pdbx_formula_weight_method   ? 
@@ -4314,6 +4323,7 @@ _pdbx_audit_revision_history.revision_date
 5 'Structure model' 2 3 2020-03-11 
 6 'Structure model' 2 4 2020-03-18 
 7 'Structure model' 2 5 2020-04-22 
+8 'Structure model' 2 6 2020-05-06 
 # 
 loop_
 _pdbx_audit_revision_details.ordinal 
@@ -4345,6 +4355,9 @@ _pdbx_audit_revision_group.group
 12 5 'Structure model' 'Structure summary'      
 13 6 'Structure model' 'Database references'    
 14 7 'Structure model' 'Database references'    
+15 8 'Structure model' 'Database references'    
+16 8 'Structure model' 'Source and taxonomy'    
+17 8 'Structure model' 'Structure summary'      
 # 
 loop_
 _pdbx_audit_revision_category.ordinal 
@@ -4379,6 +4392,12 @@ _pdbx_audit_revision_category.category
 26 6 'Structure model' citation_author              
 27 7 'Structure model' citation                     
 28 7 'Structure model' citation_author              
+29 8 'Structure model' entity                       
+30 8 'Structure model' entity_name_com              
+31 8 'Structure model' entity_src_gen               
+32 8 'Structure model' struct                       
+33 8 'Structure model' struct_ref                   
+34 8 'Structure model' struct_ref_seq               
 # 
 loop_
 _pdbx_audit_revision_item.ordinal 
@@ -4437,6 +4456,19 @@ _pdbx_audit_revision_item.item
 50 6 'Structure model' '_citation.pdbx_database_id_DOI'                 
 51 6 'Structure model' '_citation.title'                                
 52 6 'Structure model' '_citation.year'                                 
+53 8 'Structure model' '_entity.pdbx_description'                       
+54 8 'Structure model' '_entity.pdbx_ec'                                
+55 8 'Structure model' '_entity_src_gen.gene_src_common_name'           
+56 8 'Structure model' '_entity_src_gen.pdbx_gene_src_gene'             
+57 8 'Structure model' '_struct.pdbx_descriptor'                        
+58 8 'Structure model' '_struct_ref.db_code'                            
+59 8 'Structure model' '_struct_ref.db_name'                            
+60 8 'Structure model' '_struct_ref.pdbx_align_begin'                   
+61 8 'Structure model' '_struct_ref.pdbx_db_accession'                  
+62 8 'Structure model' '_struct_ref.pdbx_seq_one_letter_code'           
+63 8 'Structure model' '_struct_ref_seq.db_align_beg'                   
+64 8 'Structure model' '_struct_ref_seq.db_align_end'                   
+65 8 'Structure model' '_struct_ref_seq.pdbx_db_accession'              
 # 
 loop_
 _software.citation_id 
