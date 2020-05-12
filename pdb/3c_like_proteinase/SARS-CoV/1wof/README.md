@@ -25,9 +25,11 @@
 |---|-------------:|----------------:|
 ||  2.04|  0.33 %|
 
-**Auspex Pathologies**: 
+**Auspex Pathologies**: all good(For more information, read)
 
  
+
+
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/1wof

@@ -25,9 +25,11 @@
 |---|-------------:|----------------:|
 ||  2.80|  0.88 %|
 
-**Auspex Pathologies**: bad or missing beam stop, missing line, manhatten
+**Auspex Pathologies**: bad or missing beam stop, missing line, manhatten(For more information, read)
 
  
+
+
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/3mj5

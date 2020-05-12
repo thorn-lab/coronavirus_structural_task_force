@@ -25,9 +25,11 @@
 |---|-------------:|----------------:|
 ||  2.92|  1.64 %|
 
-**Auspex Pathologies**: missing line, manhatten
+**Auspex Pathologies**: missing line, manhatten(For more information, read)
 
  
+
+
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/2a5a

@@ -25,9 +25,11 @@
 |---|-------------:|----------------:|
 ||  1.73|  0.00 %|
 
-**Auspex Pathologies**: bad or missing beam stop mask, ice rings
+**Auspex Pathologies**: bad or missing beam stop mask, ice rings(For more information, read)
 
  
+
+
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/4tww

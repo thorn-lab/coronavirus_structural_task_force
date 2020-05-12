@@ -25,9 +25,11 @@
 |---|-------------:|----------------:|
 ||  2.85|  0.66 %|
 
-**Auspex Pathologies**: manhatten , missing line, terracing
+**Auspex Pathologies**: manhatten , missing line, terracing(For more information, read)
 
  
+
+
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/2a5i

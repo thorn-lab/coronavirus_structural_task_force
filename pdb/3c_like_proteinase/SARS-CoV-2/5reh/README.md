@@ -27,9 +27,11 @@ or **Click** [here](https://zenodo.org/record/3730762)
 |---|-------------:|----------------:|
 ||  1.87|  0.66 %|
 
-**Auspex Pathologies**: 
+**Auspex Pathologies**: all good(For more information, read)
 
  
+
+
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/5reh

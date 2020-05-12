@@ -25,9 +25,11 @@
 |---|-------------:|----------------:|
 ||  3.11|  2.67 %|
 
-**Auspex Pathologies**: bad or missing beam stop mask
+**Auspex Pathologies**: bad or missing beam stop mask(For more information, read)
 
  
+
+
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/1uk2

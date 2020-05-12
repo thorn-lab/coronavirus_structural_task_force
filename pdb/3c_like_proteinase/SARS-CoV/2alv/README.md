@@ -25,9 +25,11 @@
 |---|-------------:|----------------:|
 ||  2.68|  1.67 %|
 
-**Auspex Pathologies**: missing line, bad or missing beam stop mask
+**Auspex Pathologies**: missing line, bad or missing beam stop mask(For more information, read)
 
  
+
+
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/2alv

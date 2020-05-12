@@ -25,9 +25,11 @@
 |---|-------------:|----------------:|
 ||  1.22|  0.00 %|
 
-**Auspex Pathologies**: terracing
+**Auspex Pathologies**: terracing(For more information, read)
 
  
+
+
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/3szn

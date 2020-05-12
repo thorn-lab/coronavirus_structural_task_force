@@ -25,9 +25,11 @@
 |---|-------------:|----------------:|
 ||  3.17|  3.14 %|
 
-**Auspex Pathologies**: ice rings, manhattan
+**Auspex Pathologies**: ice rings, manhattan(For more information, read)
 
  
+
+
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/3m3v

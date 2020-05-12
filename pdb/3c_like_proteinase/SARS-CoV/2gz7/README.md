@@ -25,9 +25,11 @@
 |---|-------------:|----------------:|
 ||  2.07|  0.00 %|
 
-**Auspex Pathologies**: missing line
+**Auspex Pathologies**: missing line(For more information, read)
 
  
+
+
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/2gz7

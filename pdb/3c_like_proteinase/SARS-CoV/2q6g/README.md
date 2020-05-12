@@ -25,9 +25,11 @@
 |---|-------------:|----------------:|
 ||  2.79|  0.49 %|
 
-**Auspex Pathologies**: manhattan
+**Auspex Pathologies**: manhattan(For more information, read)
 
  
+
+
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/2q6g

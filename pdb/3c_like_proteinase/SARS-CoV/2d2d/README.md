@@ -25,9 +25,11 @@
 |---|-------------:|----------------:|
 ||  3.18|  1.84 %|
 
-**Auspex Pathologies**: manhattan, bad or missing beam stop mask
+**Auspex Pathologies**: manhattan, bad or missing beam stop mask(For more information, read)
 
  
+
+
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/2d2d

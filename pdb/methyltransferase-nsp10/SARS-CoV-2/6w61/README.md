@@ -27,9 +27,11 @@ or **Click** [here](https://doi.org/10.18430/m36w61)
 |---|-------------:|----------------:|
 ||  1.50|  0.00 %|
 
-**Auspex Pathologies**: 
+**Auspex Pathologies**: all good(For more information, read)
 
  
+
+
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/6w61
