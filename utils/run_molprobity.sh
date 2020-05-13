@@ -18,17 +18,23 @@ do
     echo $x
     e="${c,,}" ;
     cd $x ;
-    if [ -f validation/molprobity/molprobity.out ] ; then
+    if [ -f validation/molprobity/clashscore.txt ] ; then
        echo "Nothing to do here"
     else
-	if [ -f $c.mtz ] ; then
+	if [ -f validation/molprobity/molprobity.out ] ; then
+	    phenix.clashscore $c.pdb > validation/molprobity/clashscore.txt
+	    rm validation/molprobity/molprobity_probe.txt
+	else
+	    if [ -f $c.mtz ]; then
 	    echo 'reflections here'
 	    mkdir validation
 	    mkdir validation/molprobity
 	    phenix.molprobity $c.pdb
+	    
 	    rm molprobity_probe.txt
 	    mv molprobity* validation/molprobity/
-	    phenix.clashscore $c.pdb
+	    phenix.clashscore $c.pdb > validation/molprobity/clashscore.txt
+            fi
         fi
     fi
 
