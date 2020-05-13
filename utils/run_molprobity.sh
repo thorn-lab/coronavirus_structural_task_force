@@ -23,9 +23,12 @@ do
     else
 	if [ -f $c.mtz ] ; then
 	    echo 'reflections here'
+	    mkdir validation
 	    mkdir validation/molprobity
 	    phenix.molprobity $c.pdb
+	    rm molprobity_probe.txt
 	    mv molprobity* validation/molprobity/
+	    phenix.clashscore $c.pdb
         fi
     fi
 
