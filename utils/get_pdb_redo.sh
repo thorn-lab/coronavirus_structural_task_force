@@ -22,10 +22,11 @@ do
     else
 	wget https://pdb-redo.eu/db/$e.zip
     fi
-    if [ -f $e.zip  ] ; then
+    
+    if [ -f $e.zip ] ; then
         mkdir validation
 	mkdir validation/pdb-redo
-	mv $e.zip /validation/pdb-redo
+	mv $e.zip validation/pdb-redo/
 	cd validation/pdb-redo
 	unzip $e.zip
 	rm $e.zip
