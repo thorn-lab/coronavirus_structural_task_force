@@ -7,7 +7,8 @@ conn = sqlite3.connect("stats.db")
 
 c = conn.cursor()
 
-c.execute("""CREATE TABLE stats (pdbid text, datapath text,
+c.execute("""CREATE TABLE stats (pdbid text, 
+								datapath text,
                                  protein text,
                                  virus text,
                                  method text, 
@@ -18,7 +19,7 @@ c.execute("""CREATE TABLE stats (pdbid text, datapath text,
                                  rfree real)""")
 
 conn.commit()
-
+url = 'https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master'
 
 #function to walk the data structure and fill the database
 
@@ -39,7 +40,7 @@ def fillTheDB(workdir):
                     except:
                         break
                     code = f
-                    path = folder
+                    path = url+folder[2:]
                     virus = l[-1]
                     protein = l[-2]
                     b = block.find_values('_exptl.method')
