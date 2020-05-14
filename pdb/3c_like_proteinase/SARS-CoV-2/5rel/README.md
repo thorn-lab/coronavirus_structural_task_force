@@ -21,11 +21,11 @@ or **Click** [here](https://zenodo.org/record/3730940)
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
-||--|--|
+||  0.1820|  0.2200|
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
-||--|--|
+||  1.38|  0.33 %|
 
 **Auspex Pathologies**: missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV-2/5rel/validation/auspex/5rel_auspex_comments.txt))
 
