@@ -25,9 +25,11 @@
 |---|-------------:|----------------:|
 ||  2.54|  1.34 %|
 
-**Auspex Pathologies**: 
+**Auspex Pathologies**: all good (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/2z9l/validation/auspex/2z9l_auspex_comments.txt))
 
  
+
+
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/2z9l

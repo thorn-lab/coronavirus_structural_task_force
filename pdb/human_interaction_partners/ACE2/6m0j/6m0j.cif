@@ -129,15 +129,18 @@ _entity.pdbx_ec
 _entity.pdbx_mutation 
 _entity.pdbx_fragment 
 _entity.details 
-1 polymer     man 'Angiotensin-converting enzyme 2'    69982.562 1  3.4.17.23 ? ? ? 
-2 polymer     man 'SARS-CoV-2 receptor-binding domain' 25951.219 1  ?         ? ? ? 
-3 non-polymer syn 'ZINC ION'                           65.409    1  ?         ? ? ? 
-4 non-polymer man 'CHLORIDE ION'                       35.453    1  ?         ? ? ? 
-5 non-polymer nat N-ACETYL-D-GLUCOSAMINE               221.208   5  ?         ? ? ? 
-6 water       nat water                                18.015    80 ?         ? ? ? 
+1 polymer     man 'Angiotensin-converting enzyme 2' 69982.562 1  3.4.17.23,3.4.17.- ? ? ? 
+2 polymer     man 'Spike receptor binding domain'   25951.219 1  ?                  ? ? ? 
+3 non-polymer syn 'ZINC ION'                        65.409    1  ?                  ? ? ? 
+4 non-polymer man 'CHLORIDE ION'                    35.453    1  ?                  ? ? ? 
+5 non-polymer nat N-ACETYL-D-GLUCOSAMINE            221.208   5  ?                  ? ? ? 
+6 water       nat water                             18.015    80 ?                  ? ? ? 
 # 
-_entity_name_com.entity_id   1 
-_entity_name_com.name        'ACE-related carboxypeptidase,Angiotensin-converting enzyme homolog,ACEH,Metalloprotease MPROT15' 
+loop_
+_entity_name_com.entity_id 
+_entity_name_com.name 
+1 'ACE-related carboxypeptidase,Angiotensin-converting enzyme homolog,ACEH,Metalloprotease MPROT15' 
+2 'S glycoprotein,E2,Peplomer protein'                                                              
 # 
 loop_
 _entity_poly.entity_id 
@@ -1066,9 +1069,9 @@ _entity_src_gen.expression_system_id
 _entity_src_gen.plasmid_name 
 _entity_src_gen.plasmid_details 
 _entity_src_gen.pdbx_description 
-1 1 sample 'Biological sequence' 1 603 Human                   ? 'ACE2, UNQ868/PRO1885' ? ? ? ? ? ? 'Homo sapiens' 9606    ? ? ? ? 
-? ? ? ? 'Trichoplusia ni' 7111 ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? 
-2 1 sample 'Biological sequence' 1 229 '2019-nCoV, SARS-CoV-2' ? ?                      ? ? ? ? ? ? 
+1 1 sample 'Biological sequence' 1 603 Human     ? 'ACE2, UNQ868/PRO1885' ? ? ? ? ? ? 'Homo sapiens' 9606    ? ? ? ? ? ? ? ? 
+'Trichoplusia ni' 7111 ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? 
+2 1 sample 'Biological sequence' 1 229 2019-nCoV ? 'S, 2'                 ? ? ? ? ? ? 
 'Severe acute respiratory syndrome coronavirus 2' 2697049 ? ? ? ? ? ? ? ? 'Trichoplusia ni' 7111 ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? 
 ? ? ? ? 
 # 
@@ -1081,7 +1084,7 @@ _struct_ref.pdbx_db_isoform
 _struct_ref.entity_id 
 _struct_ref.pdbx_seq_one_letter_code 
 _struct_ref.pdbx_align_begin 
-1 UNP ACE2_HUMAN Q9BYF1 ? 1 
+1 UNP ACE2_HUMAN  Q9BYF1 ? 1 
 ;STIEEQAKTFLDKFNHEAEDLFYQSSLASWNYNTNITEENVQNMNNAGDKWSAFLKEQSTLAQMYPLQEIQNLTVKLQLQ
 ALQQNGSSVLSEDKSKRLNTILNTMSTIYSTGKVCNPDNPQECLLLEPGLNEIMANSLDYNERLWAWESWRSEVGKQLRP
 LYEEYVVLKNEMARANHYEDYGDYWRGDYEVNGVDGYDYSRGQLIEDVEHTFEEIKPLYEHLHAYVRAKLMNAYPSYISP
@@ -1091,8 +1094,13 @@ KSIGLLSPDFQEDNETEINFLLKQALTIVGTLPFTYMLEKWRWMVFKGEIPKDQWMKKWWEMKREIVGVVEPVPHDETYC
 DPASLFHVSNDYSFIRYYTRTLYQFQFQEALCQAAKHEGPLHKCDISNSTEAGQKLFNMLRLGKSEPWTLALENVVGAKN
 MNVRPLLNYFEPLFTWLKDQNKNSFVGWSTDWSPYAD
 ;
-19 
-2 PDB 6M0J       6M0J   ? 2 ? 1  
+19  
+2 UNP SPIKE_SARS2 P0DTC2 ? 2 
+;RVQPTESIVRFPNITNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYAD
+SFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRLFRKSNLKPFERDISTEIYQAGST
+PCNGVEGFNCYFPLQSYGFQPTNGVGYQPYRVVVLSFELLHAPATVCGPKKSTNLVKNKCVNF
+;
+319 
 # 
 loop_
 _struct_ref_seq.align_id 
@@ -1111,7 +1119,7 @@ _struct_ref_seq.pdbx_db_align_end_ins_code
 _struct_ref_seq.pdbx_auth_seq_align_beg 
 _struct_ref_seq.pdbx_auth_seq_align_end 
 1 1 6M0J A 1 ? 597 ? Q9BYF1 19  ? 615 ? 19  615 
-2 2 6M0J E 1 ? 229 ? 6M0J   319 ? 547 ? 319 547 
+2 2 6M0J E 1 ? 223 ? P0DTC2 319 ? 541 ? 319 541 
 # 
 loop_
 _struct_ref_seq_dif.align_id 
@@ -1127,12 +1135,18 @@ _struct_ref_seq_dif.pdbx_seq_db_seq_num
 _struct_ref_seq_dif.details 
 _struct_ref_seq_dif.pdbx_auth_seq_num 
 _struct_ref_seq_dif.pdbx_ordinal 
-1 6M0J HIS A 598 ? UNP Q9BYF1 ? ? 'expression tag' 616 1 
-1 6M0J HIS A 599 ? UNP Q9BYF1 ? ? 'expression tag' 617 2 
-1 6M0J HIS A 600 ? UNP Q9BYF1 ? ? 'expression tag' 618 3 
-1 6M0J HIS A 601 ? UNP Q9BYF1 ? ? 'expression tag' 619 4 
-1 6M0J HIS A 602 ? UNP Q9BYF1 ? ? 'expression tag' 620 5 
-1 6M0J HIS A 603 ? UNP Q9BYF1 ? ? 'expression tag' 621 6 
+1 6M0J HIS A 598 ? UNP Q9BYF1 ? ? 'expression tag' 616 1  
+1 6M0J HIS A 599 ? UNP Q9BYF1 ? ? 'expression tag' 617 2  
+1 6M0J HIS A 600 ? UNP Q9BYF1 ? ? 'expression tag' 618 3  
+1 6M0J HIS A 601 ? UNP Q9BYF1 ? ? 'expression tag' 619 4  
+1 6M0J HIS A 602 ? UNP Q9BYF1 ? ? 'expression tag' 620 5  
+1 6M0J HIS A 603 ? UNP Q9BYF1 ? ? 'expression tag' 621 6  
+2 6M0J HIS E 224 ? UNP P0DTC2 ? ? 'expression tag' 542 7  
+2 6M0J HIS E 225 ? UNP P0DTC2 ? ? 'expression tag' 543 8  
+2 6M0J HIS E 226 ? UNP P0DTC2 ? ? 'expression tag' 544 9  
+2 6M0J HIS E 227 ? UNP P0DTC2 ? ? 'expression tag' 545 10 
+2 6M0J HIS E 228 ? UNP P0DTC2 ? ? 'expression tag' 546 11 
+2 6M0J HIS E 229 ? UNP P0DTC2 ? ? 'expression tag' 547 12 
 # 
 loop_
 _chem_comp.id 
@@ -9592,6 +9606,7 @@ _pdbx_audit_revision_history.revision_date
 1 'Structure model' 1 0 2020-03-18 
 2 'Structure model' 2 0 2020-04-08 
 3 'Structure model' 2 1 2020-04-15 
+4 'Structure model' 2 2 2020-05-06 
 # 
 loop_
 _pdbx_audit_revision_details.ordinal 
@@ -9609,15 +9624,18 @@ _pdbx_audit_revision_group.ordinal
 _pdbx_audit_revision_group.revision_ordinal 
 _pdbx_audit_revision_group.data_content_type 
 _pdbx_audit_revision_group.group 
-1 2 'Structure model' Advisory                  
-2 2 'Structure model' 'Atomic model'            
-3 2 'Structure model' 'Data collection'         
-4 2 'Structure model' 'Database references'     
-5 2 'Structure model' 'Derived calculations'    
-6 2 'Structure model' 'Non-polymer description' 
-7 2 'Structure model' 'Refinement description'  
-8 2 'Structure model' 'Structure summary'       
-9 3 'Structure model' 'Database references'     
+1  2 'Structure model' Advisory                  
+2  2 'Structure model' 'Atomic model'            
+3  2 'Structure model' 'Data collection'         
+4  2 'Structure model' 'Database references'     
+5  2 'Structure model' 'Derived calculations'    
+6  2 'Structure model' 'Non-polymer description' 
+7  2 'Structure model' 'Refinement description'  
+8  2 'Structure model' 'Structure summary'       
+9  3 'Structure model' 'Database references'     
+10 4 'Structure model' 'Database references'     
+11 4 'Structure model' 'Source and taxonomy'     
+12 4 'Structure model' 'Structure summary'       
 # 
 loop_
 _pdbx_audit_revision_category.ordinal 
@@ -9650,6 +9668,12 @@ _pdbx_audit_revision_category.category
 24 2 'Structure model' struct_site                 
 25 2 'Structure model' struct_site_gen             
 26 3 'Structure model' citation                    
+27 4 'Structure model' entity                      
+28 4 'Structure model' entity_name_com             
+29 4 'Structure model' entity_src_gen              
+30 4 'Structure model' struct_ref                  
+31 4 'Structure model' struct_ref_seq              
+32 4 'Structure model' struct_ref_seq_dif          
 # 
 loop_
 _pdbx_audit_revision_item.ordinal 
@@ -9701,6 +9725,19 @@ _pdbx_audit_revision_item.item
 43 2 'Structure model' '_struct_mon_prot_cis.pdbx_omega_angle'          
 44 3 'Structure model' '_citation.pdbx_database_id_PubMed'              
 45 3 'Structure model' '_citation.title'                                
+46 4 'Structure model' '_entity.pdbx_description'                       
+47 4 'Structure model' '_entity.pdbx_ec'                                
+48 4 'Structure model' '_entity_src_gen.gene_src_common_name'           
+49 4 'Structure model' '_entity_src_gen.pdbx_gene_src_gene'             
+50 4 'Structure model' '_struct_ref.db_code'                            
+51 4 'Structure model' '_struct_ref.db_name'                            
+52 4 'Structure model' '_struct_ref.pdbx_align_begin'                   
+53 4 'Structure model' '_struct_ref.pdbx_db_accession'                  
+54 4 'Structure model' '_struct_ref.pdbx_seq_one_letter_code'           
+55 4 'Structure model' '_struct_ref_seq.db_align_end'                   
+56 4 'Structure model' '_struct_ref_seq.pdbx_auth_seq_align_end'        
+57 4 'Structure model' '_struct_ref_seq.pdbx_db_accession'              
+58 4 'Structure model' '_struct_ref_seq.seq_align_end'                  
 # 
 loop_
 _software.citation_id 

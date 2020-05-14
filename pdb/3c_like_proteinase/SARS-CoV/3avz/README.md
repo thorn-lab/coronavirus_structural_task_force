@@ -25,9 +25,11 @@
 |---|-------------:|----------------:|
 ||  3.00|  0.00 %|
 
-**Auspex Pathologies**: manhattan, missing line
+**Auspex Pathologies**: manhattan, missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/3avz/validation/auspex/3avz_auspex_comments.txt))
 
  
+
+
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/3avz

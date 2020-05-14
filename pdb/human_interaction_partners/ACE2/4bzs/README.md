@@ -25,9 +25,11 @@
 |---|-------------:|----------------:|
 ||  1.28|  0.16 %|
 
-**Auspex Pathologies**: missing line, manhattan
+**Auspex Pathologies**: missing line, manhattan (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/ACE2/4bzs/validation/auspex/4bzs_auspex_comments.txt))
 
  
+
+
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/4bzs

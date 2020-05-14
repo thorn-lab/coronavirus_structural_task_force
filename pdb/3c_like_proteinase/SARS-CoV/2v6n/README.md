@@ -25,9 +25,11 @@
 |---|-------------:|----------------:|
 ||  1.24|  0.00 %|
 
-**Auspex Pathologies**: ice rings, manhattan, missing line
+**Auspex Pathologies**: ice rings, manhattan, missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/2v6n/validation/auspex/2v6n_auspex_comments.txt))
 
  
+
+
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/2v6n

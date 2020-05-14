@@ -25,9 +25,11 @@
 |---|-------------:|----------------:|
 ||  1.99|  0.50 %|
 
-**Auspex Pathologies**: manhattan, missing line, terracing
+**Auspex Pathologies**: manhattan, missing line, terracing (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/2gt7/validation/auspex/2gt7_auspex_comments.txt))
 
  
+
+
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/2gt7

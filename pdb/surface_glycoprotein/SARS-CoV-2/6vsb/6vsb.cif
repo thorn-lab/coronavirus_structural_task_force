@@ -3,7 +3,7 @@ data_6VSB
 _entry.id   6VSB 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.324 
+_audit_conform.dict_version    5.325 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
@@ -30,6 +30,7 @@ _pdbx_database_status.SG_entry                        N
 _pdbx_database_status.deposit_site                    RCSB 
 _pdbx_database_status.process_site                    RCSB 
 _pdbx_database_status.status_code_cs                  ? 
+_pdbx_database_status.status_code_nmr_data            ? 
 _pdbx_database_status.methods_development_category    ? 
 _pdbx_database_status.pdb_format_compatible           Y 
 # 
@@ -140,6 +141,9 @@ _entity.pdbx_fragment
 _entity.details 
 1 polymer     man 'SARS-CoV-2 spike glycoprotein' 142399.375 3  ? 'K986P, V987P, R682G, R683S, R685S' ? ? 
 2 non-polymer man N-ACETYL-D-GLUCOSAMINE          221.208    61 ? ?                                   ? ? 
+# 
+_entity_name_com.entity_id   1 
+_entity_name_com.name        'S glycoprotein,E2,Peplomer protein' 
 # 
 _entity_poly.entity_id                      1 
 _entity_poly.type                           'polypeptide(L)' 
@@ -1486,9 +1490,9 @@ _entity_src_gen.pdbx_alt_source_flag               sample
 _entity_src_gen.pdbx_seq_type                      'Biological sequence' 
 _entity_src_gen.pdbx_beg_seq_num                   1 
 _entity_src_gen.pdbx_end_seq_num                   1288 
-_entity_src_gen.gene_src_common_name               SARS-CoV-2 
+_entity_src_gen.gene_src_common_name               2019-nCoV 
 _entity_src_gen.gene_src_genus                     ? 
-_entity_src_gen.pdbx_gene_src_gene                 ? 
+_entity_src_gen.pdbx_gene_src_gene                 'S, 2' 
 _entity_src_gen.gene_src_species                   ? 
 _entity_src_gen.gene_src_strain                    ? 
 _entity_src_gen.gene_src_tissue                    ? 
@@ -1530,12 +1534,29 @@ _entity_src_gen.plasmid_details                    ?
 _entity_src_gen.pdbx_description                   ? 
 # 
 _struct_ref.id                         1 
-_struct_ref.db_name                    PDB 
-_struct_ref.db_code                    6VSB 
-_struct_ref.pdbx_db_accession          6VSB 
+_struct_ref.db_name                    UNP 
+_struct_ref.db_code                    SPIKE_SARS2 
+_struct_ref.pdbx_db_accession          P0DTC2 
 _struct_ref.pdbx_db_isoform            ? 
 _struct_ref.entity_id                  1 
-_struct_ref.pdbx_seq_one_letter_code   ? 
+_struct_ref.pdbx_seq_one_letter_code   
+;MFVFLVLLPLVSSQCVNLTTRTQLPPAYTNSFTRGVYYPDKVFRSSVLHSTQDLFLPFFSNVTWFHAIHVSGTNGTKRFD
+NPVLPFNDGVYFASTEKSNIIRGWIFGTTLDSKTQSLLIVNNATNVVIKVCEFQFCNDPFLGVYYHKNNKSWMESEFRVY
+SSANNCTFEYVSQPFLMDLEGKQGNFKNLREFVFKNIDGYFKIYSKHTPINLVRDLPQGFSALEPLVDLPIGINITRFQT
+LLALHRSYLTPGDSSSGWTAGAAAYYVGYLQPRTFLLKYNENGTITDAVDCALDPLSETKCTLKSFTVEKGIYQTSNFRV
+QPTESIVRFPNITNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSF
+VIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRLFRKSNLKPFERDISTEIYQAGSTPC
+NGVEGFNCYFPLQSYGFQPTNGVGYQPYRVVVLSFELLHAPATVCGPKKSTNLVKNKCVNFNFNGLTGTGVLTESNKKFL
+PFQQFGRDIADTTDAVRDPQTLEILDITPCSFGGVSVITPGTNTSNQVAVLYQDVNCTEVPVAIHADQLTPTWRVYSTGS
+NVFQTRAGCLIGAEHVNNSYECDIPIGAGICASYQTQTNSPRRARSVASQSIIAYTMSLGAENSVAYSNNSIAIPTNFTI
+SVTTEILPVSMTKTSVDCTMYICGDSTECSNLLLQYGSFCTQLNRALTGIAVEQDKNTQEVFAQVKQIYKTPPIKDFGGF
+NFSQILPDPSKPSKRSFIEDLLFNKVTLADAGFIKQYGDCLGDIAARDLICAQKFNGLTVLPPLLTDEMIAQYTSALLAG
+TITSGWTFGAGAALQIPFAMQMAYRFNGIGVTQNVLYENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALN
+TLVKQLSSNFGAISSVLNDILSRLDKVEAEVQIDRLITGRLQSLQTYVTQQLIRAAEIRASANLAATKMSECVLGQSKRV
+DFCGKGYHLMSFPQSAPHGVVFLHVTYVPAQEKNFTTAPAICHDGKAHFPREGVFVSNGTHWFVTQRNFYEPQIITTDNT
+FVSGNCDVVIGIVNNTVYDPLQPELDSFKEELDKYFKNHTSPDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDL
+QELGKYEQ
+;
 _struct_ref.pdbx_align_begin           1 
 # 
 loop_
@@ -1554,9 +1575,279 @@ _struct_ref_seq.db_align_end
 _struct_ref_seq.pdbx_db_align_end_ins_code 
 _struct_ref_seq.pdbx_auth_seq_align_beg 
 _struct_ref_seq.pdbx_auth_seq_align_end 
-1 1 6VSB A 1 ? 1288 ? 6VSB 1 ? 1288 ? 1 1288 
-2 1 6VSB B 1 ? 1288 ? 6VSB 1 ? 1288 ? 1 1288 
-3 1 6VSB C 1 ? 1288 ? 6VSB 1 ? 1288 ? 1 1288 
+1 1 6VSB A 1 ? 1208 ? P0DTC2 1 ? 1208 ? 1 1208 
+2 1 6VSB B 1 ? 1208 ? P0DTC2 1 ? 1208 ? 1 1208 
+3 1 6VSB C 1 ? 1208 ? P0DTC2 1 ? 1208 ? 1 1208 
+# 
+loop_
+_struct_ref_seq_dif.align_id 
+_struct_ref_seq_dif.pdbx_pdb_id_code 
+_struct_ref_seq_dif.mon_id 
+_struct_ref_seq_dif.pdbx_pdb_strand_id 
+_struct_ref_seq_dif.seq_num 
+_struct_ref_seq_dif.pdbx_pdb_ins_code 
+_struct_ref_seq_dif.pdbx_seq_db_name 
+_struct_ref_seq_dif.pdbx_seq_db_accession_code 
+_struct_ref_seq_dif.db_mon_id 
+_struct_ref_seq_dif.pdbx_seq_db_seq_num 
+_struct_ref_seq_dif.details 
+_struct_ref_seq_dif.pdbx_auth_seq_num 
+_struct_ref_seq_dif.pdbx_ordinal 
+1 6VSB GLY A 682  ? UNP P0DTC2 ARG 682 'engineered mutation' 682  1   
+1 6VSB SER A 683  ? UNP P0DTC2 ARG 683 'engineered mutation' 683  2   
+1 6VSB SER A 685  ? UNP P0DTC2 ARG 685 'engineered mutation' 685  3   
+1 6VSB PRO A 986  ? UNP P0DTC2 LYS 986 'engineered mutation' 986  4   
+1 6VSB PRO A 987  ? UNP P0DTC2 VAL 987 'engineered mutation' 987  5   
+1 6VSB GLY A 1209 ? UNP P0DTC2 ?   ?   'expression tag'      1209 6   
+1 6VSB SER A 1210 ? UNP P0DTC2 ?   ?   'expression tag'      1210 7   
+1 6VSB GLY A 1211 ? UNP P0DTC2 ?   ?   'expression tag'      1211 8   
+1 6VSB TYR A 1212 ? UNP P0DTC2 ?   ?   'expression tag'      1212 9   
+1 6VSB ILE A 1213 ? UNP P0DTC2 ?   ?   'expression tag'      1213 10  
+1 6VSB PRO A 1214 ? UNP P0DTC2 ?   ?   'expression tag'      1214 11  
+1 6VSB GLU A 1215 ? UNP P0DTC2 ?   ?   'expression tag'      1215 12  
+1 6VSB ALA A 1216 ? UNP P0DTC2 ?   ?   'expression tag'      1216 13  
+1 6VSB PRO A 1217 ? UNP P0DTC2 ?   ?   'expression tag'      1217 14  
+1 6VSB ARG A 1218 ? UNP P0DTC2 ?   ?   'expression tag'      1218 15  
+1 6VSB ASP A 1219 ? UNP P0DTC2 ?   ?   'expression tag'      1219 16  
+1 6VSB GLY A 1220 ? UNP P0DTC2 ?   ?   'expression tag'      1220 17  
+1 6VSB GLN A 1221 ? UNP P0DTC2 ?   ?   'expression tag'      1221 18  
+1 6VSB ALA A 1222 ? UNP P0DTC2 ?   ?   'expression tag'      1222 19  
+1 6VSB TYR A 1223 ? UNP P0DTC2 ?   ?   'expression tag'      1223 20  
+1 6VSB VAL A 1224 ? UNP P0DTC2 ?   ?   'expression tag'      1224 21  
+1 6VSB ARG A 1225 ? UNP P0DTC2 ?   ?   'expression tag'      1225 22  
+1 6VSB LYS A 1226 ? UNP P0DTC2 ?   ?   'expression tag'      1226 23  
+1 6VSB ASP A 1227 ? UNP P0DTC2 ?   ?   'expression tag'      1227 24  
+1 6VSB GLY A 1228 ? UNP P0DTC2 ?   ?   'expression tag'      1228 25  
+1 6VSB GLU A 1229 ? UNP P0DTC2 ?   ?   'expression tag'      1229 26  
+1 6VSB TRP A 1230 ? UNP P0DTC2 ?   ?   'expression tag'      1230 27  
+1 6VSB VAL A 1231 ? UNP P0DTC2 ?   ?   'expression tag'      1231 28  
+1 6VSB LEU A 1232 ? UNP P0DTC2 ?   ?   'expression tag'      1232 29  
+1 6VSB LEU A 1233 ? UNP P0DTC2 ?   ?   'expression tag'      1233 30  
+1 6VSB SER A 1234 ? UNP P0DTC2 ?   ?   'expression tag'      1234 31  
+1 6VSB THR A 1235 ? UNP P0DTC2 ?   ?   'expression tag'      1235 32  
+1 6VSB PHE A 1236 ? UNP P0DTC2 ?   ?   'expression tag'      1236 33  
+1 6VSB LEU A 1237 ? UNP P0DTC2 ?   ?   'expression tag'      1237 34  
+1 6VSB GLY A 1238 ? UNP P0DTC2 ?   ?   'expression tag'      1238 35  
+1 6VSB ARG A 1239 ? UNP P0DTC2 ?   ?   'expression tag'      1239 36  
+1 6VSB SER A 1240 ? UNP P0DTC2 ?   ?   'expression tag'      1240 37  
+1 6VSB LEU A 1241 ? UNP P0DTC2 ?   ?   'expression tag'      1241 38  
+1 6VSB GLU A 1242 ? UNP P0DTC2 ?   ?   'expression tag'      1242 39  
+1 6VSB VAL A 1243 ? UNP P0DTC2 ?   ?   'expression tag'      1243 40  
+1 6VSB LEU A 1244 ? UNP P0DTC2 ?   ?   'expression tag'      1244 41  
+1 6VSB PHE A 1245 ? UNP P0DTC2 ?   ?   'expression tag'      1245 42  
+1 6VSB GLN A 1246 ? UNP P0DTC2 ?   ?   'expression tag'      1246 43  
+1 6VSB GLY A 1247 ? UNP P0DTC2 ?   ?   'expression tag'      1247 44  
+1 6VSB PRO A 1248 ? UNP P0DTC2 ?   ?   'expression tag'      1248 45  
+1 6VSB GLY A 1249 ? UNP P0DTC2 ?   ?   'expression tag'      1249 46  
+1 6VSB HIS A 1250 ? UNP P0DTC2 ?   ?   'expression tag'      1250 47  
+1 6VSB HIS A 1251 ? UNP P0DTC2 ?   ?   'expression tag'      1251 48  
+1 6VSB HIS A 1252 ? UNP P0DTC2 ?   ?   'expression tag'      1252 49  
+1 6VSB HIS A 1253 ? UNP P0DTC2 ?   ?   'expression tag'      1253 50  
+1 6VSB HIS A 1254 ? UNP P0DTC2 ?   ?   'expression tag'      1254 51  
+1 6VSB HIS A 1255 ? UNP P0DTC2 ?   ?   'expression tag'      1255 52  
+1 6VSB HIS A 1256 ? UNP P0DTC2 ?   ?   'expression tag'      1256 53  
+1 6VSB HIS A 1257 ? UNP P0DTC2 ?   ?   'expression tag'      1257 54  
+1 6VSB SER A 1258 ? UNP P0DTC2 ?   ?   'expression tag'      1258 55  
+1 6VSB ALA A 1259 ? UNP P0DTC2 ?   ?   'expression tag'      1259 56  
+1 6VSB TRP A 1260 ? UNP P0DTC2 ?   ?   'expression tag'      1260 57  
+1 6VSB SER A 1261 ? UNP P0DTC2 ?   ?   'expression tag'      1261 58  
+1 6VSB HIS A 1262 ? UNP P0DTC2 ?   ?   'expression tag'      1262 59  
+1 6VSB PRO A 1263 ? UNP P0DTC2 ?   ?   'expression tag'      1263 60  
+1 6VSB GLN A 1264 ? UNP P0DTC2 ?   ?   'expression tag'      1264 61  
+1 6VSB PHE A 1265 ? UNP P0DTC2 ?   ?   'expression tag'      1265 62  
+1 6VSB GLU A 1266 ? UNP P0DTC2 ?   ?   'expression tag'      1266 63  
+1 6VSB LYS A 1267 ? UNP P0DTC2 ?   ?   'expression tag'      1267 64  
+1 6VSB GLY A 1268 ? UNP P0DTC2 ?   ?   'expression tag'      1268 65  
+1 6VSB GLY A 1269 ? UNP P0DTC2 ?   ?   'expression tag'      1269 66  
+1 6VSB GLY A 1270 ? UNP P0DTC2 ?   ?   'expression tag'      1270 67  
+1 6VSB SER A 1271 ? UNP P0DTC2 ?   ?   'expression tag'      1271 68  
+1 6VSB GLY A 1272 ? UNP P0DTC2 ?   ?   'expression tag'      1272 69  
+1 6VSB GLY A 1273 ? UNP P0DTC2 ?   ?   'expression tag'      1273 70  
+1 6VSB GLY A 1274 ? UNP P0DTC2 ?   ?   'expression tag'      1274 71  
+1 6VSB GLY A 1275 ? UNP P0DTC2 ?   ?   'expression tag'      1275 72  
+1 6VSB SER A 1276 ? UNP P0DTC2 ?   ?   'expression tag'      1276 73  
+1 6VSB GLY A 1277 ? UNP P0DTC2 ?   ?   'expression tag'      1277 74  
+1 6VSB GLY A 1278 ? UNP P0DTC2 ?   ?   'expression tag'      1278 75  
+1 6VSB SER A 1279 ? UNP P0DTC2 ?   ?   'expression tag'      1279 76  
+1 6VSB ALA A 1280 ? UNP P0DTC2 ?   ?   'expression tag'      1280 77  
+1 6VSB TRP A 1281 ? UNP P0DTC2 ?   ?   'expression tag'      1281 78  
+1 6VSB SER A 1282 ? UNP P0DTC2 ?   ?   'expression tag'      1282 79  
+1 6VSB HIS A 1283 ? UNP P0DTC2 ?   ?   'expression tag'      1283 80  
+1 6VSB PRO A 1284 ? UNP P0DTC2 ?   ?   'expression tag'      1284 81  
+1 6VSB GLN A 1285 ? UNP P0DTC2 ?   ?   'expression tag'      1285 82  
+1 6VSB PHE A 1286 ? UNP P0DTC2 ?   ?   'expression tag'      1286 83  
+1 6VSB GLU A 1287 ? UNP P0DTC2 ?   ?   'expression tag'      1287 84  
+1 6VSB LYS A 1288 ? UNP P0DTC2 ?   ?   'expression tag'      1288 85  
+2 6VSB GLY B 682  ? UNP P0DTC2 ARG 682 'engineered mutation' 682  86  
+2 6VSB SER B 683  ? UNP P0DTC2 ARG 683 'engineered mutation' 683  87  
+2 6VSB SER B 685  ? UNP P0DTC2 ARG 685 'engineered mutation' 685  88  
+2 6VSB PRO B 986  ? UNP P0DTC2 LYS 986 'engineered mutation' 986  89  
+2 6VSB PRO B 987  ? UNP P0DTC2 VAL 987 'engineered mutation' 987  90  
+2 6VSB GLY B 1209 ? UNP P0DTC2 ?   ?   'expression tag'      1209 91  
+2 6VSB SER B 1210 ? UNP P0DTC2 ?   ?   'expression tag'      1210 92  
+2 6VSB GLY B 1211 ? UNP P0DTC2 ?   ?   'expression tag'      1211 93  
+2 6VSB TYR B 1212 ? UNP P0DTC2 ?   ?   'expression tag'      1212 94  
+2 6VSB ILE B 1213 ? UNP P0DTC2 ?   ?   'expression tag'      1213 95  
+2 6VSB PRO B 1214 ? UNP P0DTC2 ?   ?   'expression tag'      1214 96  
+2 6VSB GLU B 1215 ? UNP P0DTC2 ?   ?   'expression tag'      1215 97  
+2 6VSB ALA B 1216 ? UNP P0DTC2 ?   ?   'expression tag'      1216 98  
+2 6VSB PRO B 1217 ? UNP P0DTC2 ?   ?   'expression tag'      1217 99  
+2 6VSB ARG B 1218 ? UNP P0DTC2 ?   ?   'expression tag'      1218 100 
+2 6VSB ASP B 1219 ? UNP P0DTC2 ?   ?   'expression tag'      1219 101 
+2 6VSB GLY B 1220 ? UNP P0DTC2 ?   ?   'expression tag'      1220 102 
+2 6VSB GLN B 1221 ? UNP P0DTC2 ?   ?   'expression tag'      1221 103 
+2 6VSB ALA B 1222 ? UNP P0DTC2 ?   ?   'expression tag'      1222 104 
+2 6VSB TYR B 1223 ? UNP P0DTC2 ?   ?   'expression tag'      1223 105 
+2 6VSB VAL B 1224 ? UNP P0DTC2 ?   ?   'expression tag'      1224 106 
+2 6VSB ARG B 1225 ? UNP P0DTC2 ?   ?   'expression tag'      1225 107 
+2 6VSB LYS B 1226 ? UNP P0DTC2 ?   ?   'expression tag'      1226 108 
+2 6VSB ASP B 1227 ? UNP P0DTC2 ?   ?   'expression tag'      1227 109 
+2 6VSB GLY B 1228 ? UNP P0DTC2 ?   ?   'expression tag'      1228 110 
+2 6VSB GLU B 1229 ? UNP P0DTC2 ?   ?   'expression tag'      1229 111 
+2 6VSB TRP B 1230 ? UNP P0DTC2 ?   ?   'expression tag'      1230 112 
+2 6VSB VAL B 1231 ? UNP P0DTC2 ?   ?   'expression tag'      1231 113 
+2 6VSB LEU B 1232 ? UNP P0DTC2 ?   ?   'expression tag'      1232 114 
+2 6VSB LEU B 1233 ? UNP P0DTC2 ?   ?   'expression tag'      1233 115 
+2 6VSB SER B 1234 ? UNP P0DTC2 ?   ?   'expression tag'      1234 116 
+2 6VSB THR B 1235 ? UNP P0DTC2 ?   ?   'expression tag'      1235 117 
+2 6VSB PHE B 1236 ? UNP P0DTC2 ?   ?   'expression tag'      1236 118 
+2 6VSB LEU B 1237 ? UNP P0DTC2 ?   ?   'expression tag'      1237 119 
+2 6VSB GLY B 1238 ? UNP P0DTC2 ?   ?   'expression tag'      1238 120 
+2 6VSB ARG B 1239 ? UNP P0DTC2 ?   ?   'expression tag'      1239 121 
+2 6VSB SER B 1240 ? UNP P0DTC2 ?   ?   'expression tag'      1240 122 
+2 6VSB LEU B 1241 ? UNP P0DTC2 ?   ?   'expression tag'      1241 123 
+2 6VSB GLU B 1242 ? UNP P0DTC2 ?   ?   'expression tag'      1242 124 
+2 6VSB VAL B 1243 ? UNP P0DTC2 ?   ?   'expression tag'      1243 125 
+2 6VSB LEU B 1244 ? UNP P0DTC2 ?   ?   'expression tag'      1244 126 
+2 6VSB PHE B 1245 ? UNP P0DTC2 ?   ?   'expression tag'      1245 127 
+2 6VSB GLN B 1246 ? UNP P0DTC2 ?   ?   'expression tag'      1246 128 
+2 6VSB GLY B 1247 ? UNP P0DTC2 ?   ?   'expression tag'      1247 129 
+2 6VSB PRO B 1248 ? UNP P0DTC2 ?   ?   'expression tag'      1248 130 
+2 6VSB GLY B 1249 ? UNP P0DTC2 ?   ?   'expression tag'      1249 131 
+2 6VSB HIS B 1250 ? UNP P0DTC2 ?   ?   'expression tag'      1250 132 
+2 6VSB HIS B 1251 ? UNP P0DTC2 ?   ?   'expression tag'      1251 133 
+2 6VSB HIS B 1252 ? UNP P0DTC2 ?   ?   'expression tag'      1252 134 
+2 6VSB HIS B 1253 ? UNP P0DTC2 ?   ?   'expression tag'      1253 135 
+2 6VSB HIS B 1254 ? UNP P0DTC2 ?   ?   'expression tag'      1254 136 
+2 6VSB HIS B 1255 ? UNP P0DTC2 ?   ?   'expression tag'      1255 137 
+2 6VSB HIS B 1256 ? UNP P0DTC2 ?   ?   'expression tag'      1256 138 
+2 6VSB HIS B 1257 ? UNP P0DTC2 ?   ?   'expression tag'      1257 139 
+2 6VSB SER B 1258 ? UNP P0DTC2 ?   ?   'expression tag'      1258 140 
+2 6VSB ALA B 1259 ? UNP P0DTC2 ?   ?   'expression tag'      1259 141 
+2 6VSB TRP B 1260 ? UNP P0DTC2 ?   ?   'expression tag'      1260 142 
+2 6VSB SER B 1261 ? UNP P0DTC2 ?   ?   'expression tag'      1261 143 
+2 6VSB HIS B 1262 ? UNP P0DTC2 ?   ?   'expression tag'      1262 144 
+2 6VSB PRO B 1263 ? UNP P0DTC2 ?   ?   'expression tag'      1263 145 
+2 6VSB GLN B 1264 ? UNP P0DTC2 ?   ?   'expression tag'      1264 146 
+2 6VSB PHE B 1265 ? UNP P0DTC2 ?   ?   'expression tag'      1265 147 
+2 6VSB GLU B 1266 ? UNP P0DTC2 ?   ?   'expression tag'      1266 148 
+2 6VSB LYS B 1267 ? UNP P0DTC2 ?   ?   'expression tag'      1267 149 
+2 6VSB GLY B 1268 ? UNP P0DTC2 ?   ?   'expression tag'      1268 150 
+2 6VSB GLY B 1269 ? UNP P0DTC2 ?   ?   'expression tag'      1269 151 
+2 6VSB GLY B 1270 ? UNP P0DTC2 ?   ?   'expression tag'      1270 152 
+2 6VSB SER B 1271 ? UNP P0DTC2 ?   ?   'expression tag'      1271 153 
+2 6VSB GLY B 1272 ? UNP P0DTC2 ?   ?   'expression tag'      1272 154 
+2 6VSB GLY B 1273 ? UNP P0DTC2 ?   ?   'expression tag'      1273 155 
+2 6VSB GLY B 1274 ? UNP P0DTC2 ?   ?   'expression tag'      1274 156 
+2 6VSB GLY B 1275 ? UNP P0DTC2 ?   ?   'expression tag'      1275 157 
+2 6VSB SER B 1276 ? UNP P0DTC2 ?   ?   'expression tag'      1276 158 
+2 6VSB GLY B 1277 ? UNP P0DTC2 ?   ?   'expression tag'      1277 159 
+2 6VSB GLY B 1278 ? UNP P0DTC2 ?   ?   'expression tag'      1278 160 
+2 6VSB SER B 1279 ? UNP P0DTC2 ?   ?   'expression tag'      1279 161 
+2 6VSB ALA B 1280 ? UNP P0DTC2 ?   ?   'expression tag'      1280 162 
+2 6VSB TRP B 1281 ? UNP P0DTC2 ?   ?   'expression tag'      1281 163 
+2 6VSB SER B 1282 ? UNP P0DTC2 ?   ?   'expression tag'      1282 164 
+2 6VSB HIS B 1283 ? UNP P0DTC2 ?   ?   'expression tag'      1283 165 
+2 6VSB PRO B 1284 ? UNP P0DTC2 ?   ?   'expression tag'      1284 166 
+2 6VSB GLN B 1285 ? UNP P0DTC2 ?   ?   'expression tag'      1285 167 
+2 6VSB PHE B 1286 ? UNP P0DTC2 ?   ?   'expression tag'      1286 168 
+2 6VSB GLU B 1287 ? UNP P0DTC2 ?   ?   'expression tag'      1287 169 
+2 6VSB LYS B 1288 ? UNP P0DTC2 ?   ?   'expression tag'      1288 170 
+3 6VSB GLY C 682  ? UNP P0DTC2 ARG 682 'engineered mutation' 682  171 
+3 6VSB SER C 683  ? UNP P0DTC2 ARG 683 'engineered mutation' 683  172 
+3 6VSB SER C 685  ? UNP P0DTC2 ARG 685 'engineered mutation' 685  173 
+3 6VSB PRO C 986  ? UNP P0DTC2 LYS 986 'engineered mutation' 986  174 
+3 6VSB PRO C 987  ? UNP P0DTC2 VAL 987 'engineered mutation' 987  175 
+3 6VSB GLY C 1209 ? UNP P0DTC2 ?   ?   'expression tag'      1209 176 
+3 6VSB SER C 1210 ? UNP P0DTC2 ?   ?   'expression tag'      1210 177 
+3 6VSB GLY C 1211 ? UNP P0DTC2 ?   ?   'expression tag'      1211 178 
+3 6VSB TYR C 1212 ? UNP P0DTC2 ?   ?   'expression tag'      1212 179 
+3 6VSB ILE C 1213 ? UNP P0DTC2 ?   ?   'expression tag'      1213 180 
+3 6VSB PRO C 1214 ? UNP P0DTC2 ?   ?   'expression tag'      1214 181 
+3 6VSB GLU C 1215 ? UNP P0DTC2 ?   ?   'expression tag'      1215 182 
+3 6VSB ALA C 1216 ? UNP P0DTC2 ?   ?   'expression tag'      1216 183 
+3 6VSB PRO C 1217 ? UNP P0DTC2 ?   ?   'expression tag'      1217 184 
+3 6VSB ARG C 1218 ? UNP P0DTC2 ?   ?   'expression tag'      1218 185 
+3 6VSB ASP C 1219 ? UNP P0DTC2 ?   ?   'expression tag'      1219 186 
+3 6VSB GLY C 1220 ? UNP P0DTC2 ?   ?   'expression tag'      1220 187 
+3 6VSB GLN C 1221 ? UNP P0DTC2 ?   ?   'expression tag'      1221 188 
+3 6VSB ALA C 1222 ? UNP P0DTC2 ?   ?   'expression tag'      1222 189 
+3 6VSB TYR C 1223 ? UNP P0DTC2 ?   ?   'expression tag'      1223 190 
+3 6VSB VAL C 1224 ? UNP P0DTC2 ?   ?   'expression tag'      1224 191 
+3 6VSB ARG C 1225 ? UNP P0DTC2 ?   ?   'expression tag'      1225 192 
+3 6VSB LYS C 1226 ? UNP P0DTC2 ?   ?   'expression tag'      1226 193 
+3 6VSB ASP C 1227 ? UNP P0DTC2 ?   ?   'expression tag'      1227 194 
+3 6VSB GLY C 1228 ? UNP P0DTC2 ?   ?   'expression tag'      1228 195 
+3 6VSB GLU C 1229 ? UNP P0DTC2 ?   ?   'expression tag'      1229 196 
+3 6VSB TRP C 1230 ? UNP P0DTC2 ?   ?   'expression tag'      1230 197 
+3 6VSB VAL C 1231 ? UNP P0DTC2 ?   ?   'expression tag'      1231 198 
+3 6VSB LEU C 1232 ? UNP P0DTC2 ?   ?   'expression tag'      1232 199 
+3 6VSB LEU C 1233 ? UNP P0DTC2 ?   ?   'expression tag'      1233 200 
+3 6VSB SER C 1234 ? UNP P0DTC2 ?   ?   'expression tag'      1234 201 
+3 6VSB THR C 1235 ? UNP P0DTC2 ?   ?   'expression tag'      1235 202 
+3 6VSB PHE C 1236 ? UNP P0DTC2 ?   ?   'expression tag'      1236 203 
+3 6VSB LEU C 1237 ? UNP P0DTC2 ?   ?   'expression tag'      1237 204 
+3 6VSB GLY C 1238 ? UNP P0DTC2 ?   ?   'expression tag'      1238 205 
+3 6VSB ARG C 1239 ? UNP P0DTC2 ?   ?   'expression tag'      1239 206 
+3 6VSB SER C 1240 ? UNP P0DTC2 ?   ?   'expression tag'      1240 207 
+3 6VSB LEU C 1241 ? UNP P0DTC2 ?   ?   'expression tag'      1241 208 
+3 6VSB GLU C 1242 ? UNP P0DTC2 ?   ?   'expression tag'      1242 209 
+3 6VSB VAL C 1243 ? UNP P0DTC2 ?   ?   'expression tag'      1243 210 
+3 6VSB LEU C 1244 ? UNP P0DTC2 ?   ?   'expression tag'      1244 211 
+3 6VSB PHE C 1245 ? UNP P0DTC2 ?   ?   'expression tag'      1245 212 
+3 6VSB GLN C 1246 ? UNP P0DTC2 ?   ?   'expression tag'      1246 213 
+3 6VSB GLY C 1247 ? UNP P0DTC2 ?   ?   'expression tag'      1247 214 
+3 6VSB PRO C 1248 ? UNP P0DTC2 ?   ?   'expression tag'      1248 215 
+3 6VSB GLY C 1249 ? UNP P0DTC2 ?   ?   'expression tag'      1249 216 
+3 6VSB HIS C 1250 ? UNP P0DTC2 ?   ?   'expression tag'      1250 217 
+3 6VSB HIS C 1251 ? UNP P0DTC2 ?   ?   'expression tag'      1251 218 
+3 6VSB HIS C 1252 ? UNP P0DTC2 ?   ?   'expression tag'      1252 219 
+3 6VSB HIS C 1253 ? UNP P0DTC2 ?   ?   'expression tag'      1253 220 
+3 6VSB HIS C 1254 ? UNP P0DTC2 ?   ?   'expression tag'      1254 221 
+3 6VSB HIS C 1255 ? UNP P0DTC2 ?   ?   'expression tag'      1255 222 
+3 6VSB HIS C 1256 ? UNP P0DTC2 ?   ?   'expression tag'      1256 223 
+3 6VSB HIS C 1257 ? UNP P0DTC2 ?   ?   'expression tag'      1257 224 
+3 6VSB SER C 1258 ? UNP P0DTC2 ?   ?   'expression tag'      1258 225 
+3 6VSB ALA C 1259 ? UNP P0DTC2 ?   ?   'expression tag'      1259 226 
+3 6VSB TRP C 1260 ? UNP P0DTC2 ?   ?   'expression tag'      1260 227 
+3 6VSB SER C 1261 ? UNP P0DTC2 ?   ?   'expression tag'      1261 228 
+3 6VSB HIS C 1262 ? UNP P0DTC2 ?   ?   'expression tag'      1262 229 
+3 6VSB PRO C 1263 ? UNP P0DTC2 ?   ?   'expression tag'      1263 230 
+3 6VSB GLN C 1264 ? UNP P0DTC2 ?   ?   'expression tag'      1264 231 
+3 6VSB PHE C 1265 ? UNP P0DTC2 ?   ?   'expression tag'      1265 232 
+3 6VSB GLU C 1266 ? UNP P0DTC2 ?   ?   'expression tag'      1266 233 
+3 6VSB LYS C 1267 ? UNP P0DTC2 ?   ?   'expression tag'      1267 234 
+3 6VSB GLY C 1268 ? UNP P0DTC2 ?   ?   'expression tag'      1268 235 
+3 6VSB GLY C 1269 ? UNP P0DTC2 ?   ?   'expression tag'      1269 236 
+3 6VSB GLY C 1270 ? UNP P0DTC2 ?   ?   'expression tag'      1270 237 
+3 6VSB SER C 1271 ? UNP P0DTC2 ?   ?   'expression tag'      1271 238 
+3 6VSB GLY C 1272 ? UNP P0DTC2 ?   ?   'expression tag'      1272 239 
+3 6VSB GLY C 1273 ? UNP P0DTC2 ?   ?   'expression tag'      1273 240 
+3 6VSB GLY C 1274 ? UNP P0DTC2 ?   ?   'expression tag'      1274 241 
+3 6VSB GLY C 1275 ? UNP P0DTC2 ?   ?   'expression tag'      1275 242 
+3 6VSB SER C 1276 ? UNP P0DTC2 ?   ?   'expression tag'      1276 243 
+3 6VSB GLY C 1277 ? UNP P0DTC2 ?   ?   'expression tag'      1277 244 
+3 6VSB GLY C 1278 ? UNP P0DTC2 ?   ?   'expression tag'      1278 245 
+3 6VSB SER C 1279 ? UNP P0DTC2 ?   ?   'expression tag'      1279 246 
+3 6VSB ALA C 1280 ? UNP P0DTC2 ?   ?   'expression tag'      1280 247 
+3 6VSB TRP C 1281 ? UNP P0DTC2 ?   ?   'expression tag'      1281 248 
+3 6VSB SER C 1282 ? UNP P0DTC2 ?   ?   'expression tag'      1282 249 
+3 6VSB HIS C 1283 ? UNP P0DTC2 ?   ?   'expression tag'      1283 250 
+3 6VSB PRO C 1284 ? UNP P0DTC2 ?   ?   'expression tag'      1284 251 
+3 6VSB GLN C 1285 ? UNP P0DTC2 ?   ?   'expression tag'      1285 252 
+3 6VSB PHE C 1286 ? UNP P0DTC2 ?   ?   'expression tag'      1286 253 
+3 6VSB GLU C 1287 ? UNP P0DTC2 ?   ?   'expression tag'      1287 254 
+3 6VSB LYS C 1288 ? UNP P0DTC2 ?   ?   'expression tag'      1288 255 
 # 
 loop_
 _chem_comp.id 
@@ -29463,6 +29754,7 @@ _pdbx_audit_revision_history.revision_date
 2 'Structure model' 1 1 2020-03-04 
 3 'Structure model' 1 2 2020-03-25 
 4 'Structure model' 1 3 2020-04-01 
+5 'Structure model' 1 4 2020-05-06 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -29481,19 +29773,27 @@ _pdbx_audit_revision_group.group
 2 3 'Structure model' 'Database references' 
 3 4 'Structure model' 'Source and taxonomy' 
 4 4 'Structure model' 'Structure summary'   
+5 5 'Structure model' 'Database references' 
+6 5 'Structure model' 'Source and taxonomy' 
+7 5 'Structure model' 'Structure summary'   
 # 
 loop_
 _pdbx_audit_revision_category.ordinal 
 _pdbx_audit_revision_category.revision_ordinal 
 _pdbx_audit_revision_category.data_content_type 
 _pdbx_audit_revision_category.category 
-1 2 'Structure model' citation                         
-2 2 'Structure model' citation_author                  
-3 3 'Structure model' citation                         
-4 4 'Structure model' em_entity_assembly               
-5 4 'Structure model' em_entity_assembly_naturalsource 
-6 4 'Structure model' entity                           
-7 4 'Structure model' entity_src_gen                   
+1  2 'Structure model' citation                         
+2  2 'Structure model' citation_author                  
+3  3 'Structure model' citation                         
+4  4 'Structure model' em_entity_assembly               
+5  4 'Structure model' em_entity_assembly_naturalsource 
+6  4 'Structure model' entity                           
+7  4 'Structure model' entity_src_gen                   
+8  5 'Structure model' entity_name_com                  
+9  5 'Structure model' entity_src_gen                   
+10 5 'Structure model' struct_ref                       
+11 5 'Structure model' struct_ref_seq                   
+12 5 'Structure model' struct_ref_seq_dif               
 # 
 loop_
 _pdbx_audit_revision_item.ordinal 
@@ -29511,6 +29811,16 @@ _pdbx_audit_revision_item.item
 9  4 'Structure model' '_entity.pdbx_description'                      
 10 4 'Structure model' '_entity_src_gen.gene_src_common_name'          
 11 4 'Structure model' '_entity_src_gen.pdbx_gene_src_scientific_name' 
+12 5 'Structure model' '_entity_src_gen.gene_src_common_name'          
+13 5 'Structure model' '_entity_src_gen.pdbx_gene_src_gene'            
+14 5 'Structure model' '_struct_ref.db_code'                           
+15 5 'Structure model' '_struct_ref.db_name'                           
+16 5 'Structure model' '_struct_ref.pdbx_db_accession'                 
+17 5 'Structure model' '_struct_ref.pdbx_seq_one_letter_code'          
+18 5 'Structure model' '_struct_ref_seq.db_align_end'                  
+19 5 'Structure model' '_struct_ref_seq.pdbx_auth_seq_align_end'       
+20 5 'Structure model' '_struct_ref_seq.pdbx_db_accession'             
+21 5 'Structure model' '_struct_ref_seq.seq_align_end'                 
 # 
 _pdbx_entry_details.entry_id                 6VSB 
 _pdbx_entry_details.nonpolymer_details       ? 

@@ -25,9 +25,11 @@
 |---|-------------:|----------------:|
 ||  1.35|  0.00 %|
 
-**Auspex Pathologies**: 
+**Auspex Pathologies**: all good (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/Cathepsin_L/5mae/validation/auspex/5mae_auspex_comments.txt))
 
  
+
+
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/5mae

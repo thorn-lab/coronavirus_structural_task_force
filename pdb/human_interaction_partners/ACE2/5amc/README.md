@@ -25,9 +25,11 @@
 |---|-------------:|----------------:|
 ||  0.90|  0.17 %|
 
-**Auspex Pathologies**: missing line
+**Auspex Pathologies**: missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/ACE2/5amc/validation/auspex/5amc_auspex_comments.txt))
 
  
+
+
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/5amc

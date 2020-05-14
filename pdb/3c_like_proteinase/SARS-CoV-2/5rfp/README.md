@@ -27,9 +27,11 @@ or **Click** [here](https://zenodo.org/record/3731502)
 |---|-------------:|----------------:|
 ||  1.89|  0.66 %|
 
-**Auspex Pathologies**: 
+**Auspex Pathologies**: all good (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV-2/5rfp/validation/auspex/5rfp_auspex_comments.txt))
 
  
+
+
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/5rfp

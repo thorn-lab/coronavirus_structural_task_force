@@ -27,9 +27,11 @@ or **Click** [here](https://zenodo.org/record/3730610)
 |---|-------------:|----------------:|
 ||  1.55|  0.66 %|
 
-**Auspex Pathologies**: missing line
+**Auspex Pathologies**: missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV-2/5r83/validation/auspex/5r83_auspex_comments.txt))
 
  
+
+
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/5r83

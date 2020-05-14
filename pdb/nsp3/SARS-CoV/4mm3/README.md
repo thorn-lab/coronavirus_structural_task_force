@@ -25,9 +25,11 @@
 |---|-------------:|----------------:|
 ||  2.29|  1.03 %|
 
-**Auspex Pathologies**: bad or missing beam stop mask, terracing, missing line
+**Auspex Pathologies**: bad or missing beam stop mask, terracing, missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp3/SARS-CoV/4mm3/validation/auspex/4mm3_auspex_comments.txt))
 
  
+
+
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/4mm3

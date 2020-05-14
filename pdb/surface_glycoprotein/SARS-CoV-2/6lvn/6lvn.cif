@@ -3,7 +3,7 @@ data_6LVN
 _entry.id   6LVN 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.323 
+_audit_conform.dict_version    5.324 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
@@ -117,8 +117,8 @@ _entity.pdbx_ec
 _entity.pdbx_mutation 
 _entity.pdbx_fragment 
 _entity.details 
-1 polymer man 'SARS-coV-2 S2 subunit' 4011.470 4  ? ? 'HR2 domain' ? 
-2 water   nat water                   18.015   22 ? ? ?            ? 
+1 polymer man 'Spike protein S2' 4011.470 4  ? ? 'HR2 domain' ? 
+2 water   nat water              18.015   22 ? ? ?            ? 
 # 
 _entity_poly.entity_id                      1 
 _entity_poly.type                           'polypeptide(L)' 
@@ -177,9 +177,9 @@ _entity_src_gen.pdbx_alt_source_flag               sample
 _entity_src_gen.pdbx_seq_type                      'Biological sequence' 
 _entity_src_gen.pdbx_beg_seq_num                   1 
 _entity_src_gen.pdbx_end_seq_num                   36 
-_entity_src_gen.gene_src_common_name               'COVID-19 virus' 
+_entity_src_gen.gene_src_common_name               2019-nCoV 
 _entity_src_gen.gene_src_genus                     ? 
-_entity_src_gen.pdbx_gene_src_gene                 ? 
+_entity_src_gen.pdbx_gene_src_gene                 'S, 2' 
 _entity_src_gen.gene_src_species                   ? 
 _entity_src_gen.gene_src_strain                    ? 
 _entity_src_gen.gene_src_tissue                    ? 
@@ -221,13 +221,13 @@ _entity_src_gen.plasmid_details                    ?
 _entity_src_gen.pdbx_description                   ? 
 # 
 _struct_ref.id                         1 
-_struct_ref.db_name                    PDB 
-_struct_ref.db_code                    6LVN 
-_struct_ref.pdbx_db_accession          6LVN 
+_struct_ref.db_name                    UNP 
+_struct_ref.db_code                    SPIKE_SARS2 
+_struct_ref.pdbx_db_accession          P0DTC2 
 _struct_ref.pdbx_db_isoform            ? 
 _struct_ref.entity_id                  1 
-_struct_ref.pdbx_seq_one_letter_code   ? 
-_struct_ref.pdbx_align_begin           1 
+_struct_ref.pdbx_seq_one_letter_code   DISGINASVVNIQKEIDRLNEVAKNLNESLIDLQEL 
+_struct_ref.pdbx_align_begin           1168 
 # 
 loop_
 _struct_ref_seq.align_id 
@@ -245,10 +245,10 @@ _struct_ref_seq.db_align_end
 _struct_ref_seq.pdbx_db_align_end_ins_code 
 _struct_ref_seq.pdbx_auth_seq_align_beg 
 _struct_ref_seq.pdbx_auth_seq_align_end 
-1 1 6LVN A 1 ? 36 ? 6LVN 1 ? 36 ? 1 36 
-2 1 6LVN B 1 ? 36 ? 6LVN 1 ? 36 ? 1 36 
-3 1 6LVN C 1 ? 36 ? 6LVN 1 ? 36 ? 1 36 
-4 1 6LVN D 1 ? 36 ? 6LVN 1 ? 36 ? 1 36 
+1 1 6LVN A 1 ? 36 ? P0DTC2 1168 ? 1203 ? 1 36 
+2 1 6LVN B 1 ? 36 ? P0DTC2 1168 ? 1203 ? 1 36 
+3 1 6LVN C 1 ? 36 ? P0DTC2 1168 ? 1203 ? 1 36 
+4 1 6LVN D 1 ? 36 ? P0DTC2 1168 ? 1203 ? 1 36 
 # 
 loop_
 _chem_comp.id 
@@ -652,7 +652,7 @@ _refine_ls_restr.pdbx_restraint_function
 # 
 _struct.entry_id                     6LVN 
 _struct.title                        'Structure of the 2019-nCoV HR2 Domain' 
-_struct.pdbx_descriptor              '2019-nCoV S2 subunit' 
+_struct.pdbx_descriptor              'Spike protein S2' 
 _struct.pdbx_model_details           ? 
 _struct.pdbx_formula_weight          ? 
 _struct.pdbx_formula_weight_method   ? 
@@ -3165,6 +3165,7 @@ _pdbx_audit_revision_history.minor_revision
 _pdbx_audit_revision_history.revision_date 
 1 'Structure model' 1 0 2020-02-26 
 2 'Structure model' 1 1 2020-04-01 
+3 'Structure model' 1 2 2020-05-06 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -3181,6 +3182,9 @@ _pdbx_audit_revision_group.data_content_type
 _pdbx_audit_revision_group.group 
 1 2 'Structure model' 'Source and taxonomy' 
 2 2 'Structure model' 'Structure summary'   
+3 3 'Structure model' 'Database references' 
+4 3 'Structure model' 'Source and taxonomy' 
+5 3 'Structure model' 'Structure summary'   
 # 
 loop_
 _pdbx_audit_revision_category.ordinal 
@@ -3189,15 +3193,32 @@ _pdbx_audit_revision_category.data_content_type
 _pdbx_audit_revision_category.category 
 1 2 'Structure model' entity         
 2 2 'Structure model' entity_src_gen 
+3 3 'Structure model' entity         
+4 3 'Structure model' entity_src_gen 
+5 3 'Structure model' struct         
+6 3 'Structure model' struct_ref     
+7 3 'Structure model' struct_ref_seq 
 # 
 loop_
 _pdbx_audit_revision_item.ordinal 
 _pdbx_audit_revision_item.revision_ordinal 
 _pdbx_audit_revision_item.data_content_type 
 _pdbx_audit_revision_item.item 
-1 2 'Structure model' '_entity.pdbx_description'                      
-2 2 'Structure model' '_entity_src_gen.gene_src_common_name'          
-3 2 'Structure model' '_entity_src_gen.pdbx_gene_src_scientific_name' 
+1  2 'Structure model' '_entity.pdbx_description'                      
+2  2 'Structure model' '_entity_src_gen.gene_src_common_name'          
+3  2 'Structure model' '_entity_src_gen.pdbx_gene_src_scientific_name' 
+4  3 'Structure model' '_entity.pdbx_description'                      
+5  3 'Structure model' '_entity_src_gen.gene_src_common_name'          
+6  3 'Structure model' '_entity_src_gen.pdbx_gene_src_gene'            
+7  3 'Structure model' '_struct.pdbx_descriptor'                       
+8  3 'Structure model' '_struct_ref.db_code'                           
+9  3 'Structure model' '_struct_ref.db_name'                           
+10 3 'Structure model' '_struct_ref.pdbx_align_begin'                  
+11 3 'Structure model' '_struct_ref.pdbx_db_accession'                 
+12 3 'Structure model' '_struct_ref.pdbx_seq_one_letter_code'          
+13 3 'Structure model' '_struct_ref_seq.db_align_beg'                  
+14 3 'Structure model' '_struct_ref_seq.db_align_end'                  
+15 3 'Structure model' '_struct_ref_seq.pdbx_db_accession'             
 # 
 loop_
 _pdbx_refine_tls.pdbx_refine_id 

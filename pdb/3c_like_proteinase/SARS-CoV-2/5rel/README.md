@@ -17,7 +17,7 @@ or **Click** [here](https://zenodo.org/record/3730940)
 ## Data Summary
 |   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
-|   |-- Å|--|<img width=50/>--|
+|   |1.62 Å|99.5  %|<img width=50/>5.600|
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
@@ -27,9 +27,11 @@ or **Click** [here](https://zenodo.org/record/3730940)
 |---|-------------:|----------------:|
 ||--|--|
 
-**Auspex Pathologies**: missing line
+**Auspex Pathologies**: missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV-2/5rel/validation/auspex/5rel_auspex_comments.txt))
 
  
+
+
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/5rel

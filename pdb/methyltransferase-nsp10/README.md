@@ -1,5 +1,5 @@
 # Folder methyltransferase-nsp10
-## Sequence_information
+## Sequence Information
 
 nsp10:
 
@@ -20,3 +20,6 @@ From: https://www.ncbi.nlm.nih.gov/protein/30133975
 From: https://www.ncbi.nlm.nih.gov/protein/30133975
 
 Sequence identity: 93.00%
+
+## Related Structures
+For individual structures: [nsp10](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp10)

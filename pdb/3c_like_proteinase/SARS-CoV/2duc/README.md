@@ -25,9 +25,11 @@
 |---|-------------:|----------------:|
 ||  1.66|  0.33 %|
 
-**Auspex Pathologies**: ice rings, manhatten
+**Auspex Pathologies**: ice rings, manhatten (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/2duc/validation/auspex/2duc_auspex_comments.txt))
 
  
+
+
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/2duc

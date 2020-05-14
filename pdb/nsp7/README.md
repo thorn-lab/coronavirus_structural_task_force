@@ -8,3 +8,6 @@ From: https://www.ncbi.nlm.nih.gov/protein/29837500
 From: https://www.ncbi.nlm.nih.gov/protein/1826688924
 
 Sequence identity: 99.00%
+
+## Related Structures
+For combined structures of this protein: [nsp8-nsp7](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp8-nsp7), [rna_polymerase-nsp7-nsp8](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/rna_polymerase-nsp7-nsp8)

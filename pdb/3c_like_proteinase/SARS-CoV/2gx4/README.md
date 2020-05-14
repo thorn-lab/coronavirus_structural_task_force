@@ -25,9 +25,11 @@
 |---|-------------:|----------------:|
 ||  1.68|  0.00 %|
 
-**Auspex Pathologies**: manhattan
+**Auspex Pathologies**: manhattan (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/2gx4/validation/auspex/2gx4_auspex_comments.txt))
 
  
+
+
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/2gx4

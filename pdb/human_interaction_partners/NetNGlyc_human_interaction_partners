@@ -1,0 +1,38 @@
+#N-Glycosylation potential of SARS-CoV and SARS-CoV-2 proteins
+
+The prediction was made by using the NetNGlyc 1.0 Server
+R. Gupta, E. Jung and S. Brunak.
+In preparation, 2004.
+
+NetNGlyc searches for potential glycosylation sites.
+Each site it finds will be rated with a potential from 0-1.
+It is using machine Learning so the jury are last 9 neurons in this programm.
+The higher the potential and the more positive jury neurons the more likely it is that there is a sites.
+
+##Result rating:
++ Potential > 0.5
+++ Potential > 0.5 AND Jury agreement (9/9)  OR Potential>0.75
++++ Potential > 0.75 AND Jury agreement
+++++ Potential > 0.90 AND Jury agreement
+
+##human_interaction_partners
+###ACE2
+ID            Position  potential  Jury  result
+Sequence      53 NITE   0.7653     (9/9)   +++
+Sequence      90 NLTV   0.7078     (9/9)   ++
+Sequence     103 NGSS   0.7038     (9/9)   ++
+Sequence     322 NMTQ   0.6681     (9/9)   ++
+Sequence     432 NETE   0.7146     (8/9)   +
+Sequence     546 NSTE   0.4778     (5/9)   -
+Sequence     690 NVSD   0.5963     (7/9)   +
+
+###Cathepsin_L
+ID           Position  potential  Jury    result
+Sequence       2 NPTL   0.7836     (9/9)   +++  WARNING: PRO-X1.
+Sequence     221 NDTG   0.6206     (7/9)   +
+
+###TCP2
+ID           Position   potential  Jury  result
+Sequence     198 NSSM   0.6364     (8/9)   +
+Sequence     611 NSSL   0.5863     (7/9)   +
+Sequence     618 NGSA   0.5273     (5/9)   +

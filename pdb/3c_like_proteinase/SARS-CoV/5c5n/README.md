@@ -25,9 +25,11 @@
 |---|-------------:|----------------:|
 ||  1.73|  0.00 %|
 
-**Auspex Pathologies**: ice rings
+**Auspex Pathologies**: ice rings (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/5c5n/validation/auspex/5c5n_auspex_comments.txt))
 
  
+
+
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/5c5n

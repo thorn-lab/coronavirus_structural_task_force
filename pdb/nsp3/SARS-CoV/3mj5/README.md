@@ -25,9 +25,11 @@
 |---|-------------:|----------------:|
 ||  2.80|  0.88 %|
 
-**Auspex Pathologies**: bad or missing beam stop, missing line, manhatten
+**Auspex Pathologies**: bad or missing beam stop, missing line, manhatten (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp3/SARS-CoV/3mj5/validation/auspex/3mj5_auspex_comments.txt))
 
  
+
+
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/3mj5
