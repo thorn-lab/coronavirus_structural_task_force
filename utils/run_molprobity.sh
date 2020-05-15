@@ -19,21 +19,31 @@ do
     e="${c,,}" ;
     cd $x ;
     if [ -f validation/molprobity/clashscore.txt ] ; then
-       echo "Nothing to do here"
+	phenix.reduce -NOFLIP $c.pdb > validation/molprobity/$c.H.pdb
+	cd validation/molprobity/
+	rama_chart_pdb $c.H.pdb
+	multichart $c.H.pdb
     else
 	if [ -f validation/molprobity/molprobity.out ] ; then
 	    phenix.clashscore $c.pdb > validation/molprobity/clashscore.txt
 	    rm validation/molprobity/molprobity_probe.txt
+       	    phenix.reduce -NOFLIP $c.pdb > validation/molprobity/$c.H.pdb
+	    cd validation/molprobity/
+	    rama_chart_pdb $c.H.pdb
+	    multichart $c.H.pdb
 	else
 	    if [ -f $c.mtz ]; then
 	    echo 'reflections here'
 	    mkdir validation
 	    mkdir validation/molprobity
-	    phenix.molprobity $c.pdb
-	    
+	    phenix.molprobity $c.pdb	    
 	    rm molprobity_probe.txt
 	    mv molprobity* validation/molprobity/
 	    phenix.clashscore $c.pdb > validation/molprobity/clashscore.txt
+    	    phenix.reduce -NOFLIP $c.pdb > validation/molprobity/$c.H.pdb
+	    cd validation/molprobity/
+	    rama_chart_pdb $c.H.pdb
+	    multichart $c.H.pdb
             fi
         fi
     fi
