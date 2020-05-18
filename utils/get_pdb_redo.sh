@@ -5,6 +5,8 @@
 #c is the pdb code
 #e is the entry in lower case (for pdb_redo)
 
+cd ../pdb
+
 
 base=$(pwd)
 
@@ -15,23 +17,20 @@ do
     echo $x
     e="${c,,}" ;
     cd $x ;
-    if [ -d validation ] ; then
-       cd validation
-    else
-	mkdir validation
-	cd validation
-    ls
-    if [ -d pdb-redo ] ; then
+    if [ -d validation/pdb-redo ] ; then
        echo "Nothing to do here"
     else
-        echo 'missing stuff here!' 
-	mkdir pdb-redo
-	cd pdb-redo
 	wget https://pdb-redo.eu/db/$e.zip
+    fi
+    
+    if [ -f $e.zip ] ; then
+        mkdir validation
+	mkdir validation/pdb-redo
+	mv $e.zip validation/pdb-redo/
+	cd validation/pdb-redo
 	unzip $e.zip
 	rm $e.zip
     fi
-
 cd $base
 done
 
