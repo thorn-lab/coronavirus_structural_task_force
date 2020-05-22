@@ -24,6 +24,7 @@ do
 	if [ -f $c.mtz ] ; then
 	    echo 'reflections here'
 	    phenix.xtriage $c.pdb $c.mtz
+            mkdir validation
 	    mv logfile.log validation/Xtriage_output.log
         fi
     fi
