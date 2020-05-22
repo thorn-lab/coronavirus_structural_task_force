@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  1.79|  0.00 %|
 
- 
+**Auspex Pathologies**: all good (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nucleocapsid_protein/SARS-CoV-2/6m3m/validation/auspex/6m3m_auspex_comments.txt))
 
  
 

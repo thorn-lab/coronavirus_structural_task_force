@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  1.70|  0.16 %|
 
- 
+**Auspex Pathologies**: terracing, missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/surface_glycoprotein/SARS-CoV-2/6yla/validation/auspex/6yla_auspex_comments.txt))
 
  
 

@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  1.76|  0.08 %|
 
- 
+**Auspex Pathologies**: terracing, bad or missing beam stop mask (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV-2/6m2n/validation/auspex/6m2n_auspex_comments.txt))
 
  
 

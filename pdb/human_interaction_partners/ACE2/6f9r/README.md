@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  1.09|  0.17 %|
 
- 
+**Auspex Pathologies**: all good (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/ACE2/6f9r/validation/auspex/6f9r_auspex_comments.txt))
 
  
 

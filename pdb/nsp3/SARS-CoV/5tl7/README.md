@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  1.85|  0.26 %|
 
- 
+**Auspex Pathologies**: bad or missing beam stop mask, manhattan (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp3/SARS-CoV/5tl7/validation/auspex/5tl7_auspex_comments.txt))
 
  
 

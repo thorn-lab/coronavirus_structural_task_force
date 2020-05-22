@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  0.93|  0.00 %|
 
- 
+**Auspex Pathologies**: all good (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp3/SARS-CoV-2/6wey/validation/auspex/6wey_auspex_comments.txt))
 
  
 

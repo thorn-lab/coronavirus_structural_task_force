@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  2.63|  1.22 %|
 
- 
+**Auspex Pathologies**: missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/methyltransferase-nsp10/SARS-CoV/3r24/validation/auspex/3r24_auspex_comments.txt))
 
  
 

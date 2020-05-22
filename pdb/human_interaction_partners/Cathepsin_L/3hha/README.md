@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  1.36|  0.12 %|
 
- 
+**Auspex Pathologies**: terracing, manhattan (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/Cathepsin_L/3hha/validation/auspex/3hha_auspex_comments.txt))
 
  
 

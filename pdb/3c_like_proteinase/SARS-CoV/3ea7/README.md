@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  2.84|  0.33 %|
 
- 
+**Auspex Pathologies**: terracing, manhattan (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/3ea7/validation/auspex/3ea7_auspex_comments.txt))
 
  
 

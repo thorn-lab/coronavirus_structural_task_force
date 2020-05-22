@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  1.58|  0.33 %|
 
- 
+**Auspex Pathologies**: missing rings - resolution shells truncated (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV-2/6yt8/validation/auspex/6yt8_auspex_comments.txt))
 
  
 

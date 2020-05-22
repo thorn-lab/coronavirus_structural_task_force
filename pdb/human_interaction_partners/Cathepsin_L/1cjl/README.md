@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  1.81|  0.00 %|
 
- 
+**Auspex Pathologies**: ice rings, missing line, terracing (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/Cathepsin_L/1cjl/validation/auspex/1cjl_auspex_comments.txt))
 
  
 

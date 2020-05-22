@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  2.11|  0.15 %|
 
- 
+**Auspex Pathologies**: missing line, missing rings - resolution shells truncated, bad or missing beam stop mask (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/surface_glycoprotein/SARS-CoV-2/6lxt/validation/auspex/6lxt_auspex_comments.txt))
 
  
 

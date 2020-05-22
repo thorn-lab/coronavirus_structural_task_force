@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  1.41|  0.23 %|
 
- 
+**Auspex Pathologies**: bad or missing beamstop mask (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nucleocapsid_protein/SARS-CoV-2/6wkp/validation/auspex/6wkp_auspex_comments.txt))
 
  
 

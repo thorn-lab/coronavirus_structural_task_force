@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  1.39|  0.00 %|
 
- 
+**Auspex Pathologies**: terracing (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/Cathepsin_L/2xu3/validation/auspex/2xu3_auspex_comments.txt))
 
  
 

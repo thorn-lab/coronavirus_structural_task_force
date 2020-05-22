@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  2.27|  0.00 %|
 
- 
+**Auspex Pathologies**: missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/Cathepsin_L/6f06/validation/auspex/6f06_auspex_comments.txt))
 
  
 

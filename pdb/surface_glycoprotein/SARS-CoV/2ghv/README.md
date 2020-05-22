@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  2.12|  0.55 %|
 
- 
+**Auspex Pathologies**: missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/surface_glycoprotein/SARS-CoV/2ghv/validation/auspex/2ghv_auspex_comments.txt))
 
  
 

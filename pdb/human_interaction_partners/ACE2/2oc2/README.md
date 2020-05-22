@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  1.94|  0.00 %|
 
- 
+**Auspex Pathologies**: bad or missing beam stop mast, missing line, manhattan (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/ACE2/2oc2/validation/auspex/2oc2_auspex_comments.txt))
 
  
 

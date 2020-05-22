@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  1.45|  0.33 %|
 
- 
+**Auspex Pathologies**: bad or missing beam stop mask (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV-2/6y2e/validation/auspex/6y2e_auspex_comments.txt))
 
  
 

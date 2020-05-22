@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  1.76|  0.31 %|
 
- 
+**Auspex Pathologies**: ice rings, missing line, bad or missing beam stop mask (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/Cathepsin_L/2nqd/validation/auspex/2nqd_auspex_comments.txt))
 
  
 

@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  1.70|  0.00 %|
 
- 
+**Auspex Pathologies**: ice rings, missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/surface_glycoprotein/SARS-CoV/6waq/validation/auspex/6waq_auspex_comments.txt))
 
  
 

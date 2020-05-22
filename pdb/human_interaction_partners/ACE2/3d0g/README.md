@@ -25,7 +25,7 @@
 |---|-------------:|----------------:|
 ||  2.88|  1.77 %|
 
- 
+**Auspex Pathologies**: manhattan (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/ACE2/3d0g/validation/auspex/3d0g_auspex_comments.txt))
 
  
 
