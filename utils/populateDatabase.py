@@ -9,6 +9,7 @@ c = conn.cursor()
 
 c.execute("""CREATE TABLE stats (pdbid text, 
 								datapath text,
+                                 github text,
                                  protein text,
                                  virus text,
                                  method text, 
@@ -40,7 +41,8 @@ def fillTheDB(workdir):
                     except:
                         break
                     code = f
-                    path = url+folder[2:]
+                    github = url+folder[2:]
+                    path = folder
                     virus = l[-1]
                     protein = l[-2]
                     b = block.find_values('_exptl.method')
@@ -72,8 +74,8 @@ def fillTheDB(workdir):
                         resolution = None
                     else:
                         print('something terribly wrong here')
-                    parsed_values=(code, path, protein, virus , method, hasRerefinement, resolution , rmsd, rwork, rfree)                    
-                    c.execute('INSERT INTO stats VALUES(?,?,?,?,?,?,?,?,?,?)',parsed_values)
+                    parsed_values=(code, path, github, protein, virus , method, hasRerefinement, resolution , rmsd, rwork, rfree)                    
+                    c.execute('INSERT INTO stats VALUES(?,?,?,?,?,?,?,?,?,?,?)',parsed_values)
 pwd = os.getcwd()
 print(pwd)
 fillTheDB(pwd)
@@ -101,7 +103,7 @@ print('Done!')
 
 with open('stats.csv', 'w', newline='') as csvfile:
     full_db = csv.writer(csvfile, dialect='excel')
-    full_db.writerow(['pdb', 'path', 'protein', 'virus' , 'method', 'resolution' ,'rmsd', 'rwork', 'rfree'])
+    full_db.writerow(['pdb', 'path','url', 'protein', 'virus' , 'method', 'resolution' ,'rmsd', 'rwork', 'rfree'])
     with conn:
         for row in c.execute('SELECT * FROM stats ORDER BY protein'):
             full_db.writerow(row)
