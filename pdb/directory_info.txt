@@ -17,5 +17,17 @@ In the human_interaction_partners folder you will find 3 different human protein
 
 Structures which were revised will be uploaded, you will find the old structures in /old in the protein folder.
 
-In each protein_subfolder you will find a file structure_sequence_alignment.txt with an alignment of the sequence which is found in the pdb file and the sequence from the reference genome. Here you will also find a text-file NetNGlyc. The file contains the result of the program NetNGlyc which predicts glycosylation sites in proteins. You can find more information in the file itself.
+In each protein_subfolderyou will  find a text-file NetNGlyc. The file contains the result of the program NetNGlyc which predicts glycosylation sites in proteins. You can find more information in the file itself.
+In each taxonomy_subfolder you will find a file structure_sequence_alignment.txt with an alignment of the sequence which is found in the pdb file and the sequence from the reference genome.
+
+Here you will also find rmsd.txt, rmsd.png and rmsd.pdf.
+We superposed reference c-alpha-chain onto target-chain based on best matching pair.
+And then calculated the root-mean-square deviation (RMSD) between reference and target coordinates.
+We could not show the RMSD value without showing how much overlap in the structures there was so we show the overlap-weighted-RMSD:
+round(rmsd / overlap * 100, 2)
+The Script RMSD.py which you can find in utils uses the prody libary to match, superpose the chains and calculate the RMSD.
+You can see the results of the calculation in the .txt file, a heatmap visualization in the .png and .pdf files.
+
+
+
 
