@@ -1,0 +1,337 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.51
+_lib_update       11/07/18
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+UB4      UB4 '.                                   ' .                  28  15 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-GVE  CYS      .        .        GVE      .        .
+ bond_CYS-SG_=_GVE-CB
+ACE-UB4  ACE      .        .        UB4      .        .
+ bond_ACE-C_=_UB4-N
+UB4-DPP  UB4      .        .        DPP      .        .
+ bond_UB4-C_=_DPP-N
+GLY-GVE  GLY      .        .        GVE      .        .
+ bond_GLY-C_=_GVE-N
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_UB4
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ UB4           O      O    O         0.000     22.301   71.184    0.582
+ UB4           C      C    C1        0.000     21.770   70.182    0.929
+ UB4           H      H    H         0.000     20.920   70.240    1.587
+ UB4           CA     C    CH1       0.000     22.257   68.821    0.470
+ UB4           HA     H    H         0.000     21.464   68.075    0.624
+ UB4           N      N    NT2       0.000     22.624   68.854   -0.926
+ UB4           HN2    H    H         0.000     22.469   69.804   -1.293
+ UB4           HN1    H    H         0.000     22.951   67.919   -1.211
+ UB4           CB     C    CH2       0.000     23.468   68.462    1.322
+ UB4           HB1    H    H         0.000     23.417   69.043    2.245
+ UB4           HB2    H    H         0.000     24.367   68.739    0.768
+ UB4           CG     C    CH2       0.000     23.514   66.975    1.657
+ UB4           HG1    H    H         0.000     22.552   66.661    2.067
+ UB4           HG2    H    H         0.000     24.300   66.789    2.392
+ UB4           CD     C    C         0.000     23.806   66.190    0.391
+ UB4           SE1    S    ST        0.000     22.681   65.240   -0.416
+ UB4           HSE1   H    H         0.000     22.324   66.215   -1.081
+ UB4           CZ1    C    CT        0.000     24.889   65.333   -1.438
+ UB4           NE1    N    N         0.000     25.011   66.178   -0.274
+ UB4           CZ2    C    CR6       0.000     23.654   64.737   -1.657
+ UB4           CT2    C    CR16      0.000     23.447   63.901   -2.761
+ UB4           HT2    H    H         0.000     22.482   63.438   -2.924
+ UB4           CI2    C    CR16      0.000     24.497   63.671   -3.647
+ UB4           HI2    H    H         0.000     24.352   63.027   -4.506
+ UB4           CI1    C    CR16      0.000     25.738   64.274   -3.424
+ UB4           HI1    H    H         0.000     26.549   64.092   -4.118
+ UB4           CT1    C    CR16      0.000     25.950   65.098   -2.336
+ UB4           HT1    H    H         0.000     26.918   65.557   -2.175
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ UB4      O      n/a    C      START
+ UB4      C      O      CA     .
+ UB4      H      C      .      .
+ UB4      CA     C      CB     .
+ UB4      HA     CA     .      .
+ UB4      N      CA     HN1    .
+ UB4      HN2    N      .      .
+ UB4      HN1    N      .      .
+ UB4      CB     CA     CG     .
+ UB4      HB1    CB     .      .
+ UB4      HB2    CB     .      .
+ UB4      CG     CB     CD     .
+ UB4      HG1    CG     .      .
+ UB4      HG2    CG     .      .
+ UB4      CD     CG     SE1    .
+ UB4      SE1    CD     CZ2    .
+ UB4      HSE1   SE1    .      .
+ UB4      CZ1    SE1    NE1    .
+ UB4      NE1    CZ1    .      .
+ UB4      CZ2    SE1    CT2    .
+ UB4      CT2    CZ2    CI2    .
+ UB4      HT2    CT2    .      .
+ UB4      CI2    CT2    CI1    .
+ UB4      HI2    CI2    .      .
+ UB4      CI1    CI2    CT1    .
+ UB4      HI1    CI1    .      .
+ UB4      CT1    CI1    HT1    .
+ UB4      HT1    CT1    .      END
+ UB4      CD     NE1    .    ADD
+ UB4      CT1    CZ1    .    ADD
+ UB4      CZ2    CZ1    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ UB4      CA     C         single      1.510    0.020
+ UB4      C      O         double      1.220    0.020
+ UB4      CB     CA        single      1.524    0.020
+ UB4      N      CA        single      1.475    0.020
+ UB4      CG     CB        single      1.524    0.020
+ UB4      CD     CG        single      1.510    0.020
+ UB4      CD     NE1       aromatic    1.330    0.020
+ UB4      SE1    CD        double      1.565    0.020
+ UB4      CT1    CZ1       single      1.457    0.020
+ UB4      CT1    CI1       aromatic    1.390    0.020
+ UB4      CT2    CZ2       aromatic    1.390    0.020
+ UB4      CI2    CT2       aromatic    1.390    0.020
+ UB4      CZ2    CZ1       single      1.500    0.020
+ UB4      CZ2    SE1       double      1.595    0.020
+ UB4      NE1    CZ1       single      1.455    0.020
+ UB4      CZ1    SE1       single      1.662    0.020
+ UB4      CI1    CI2       aromatic    1.390    0.020
+ UB4      H      C         single      1.077    0.020
+ UB4      HA     CA        single      1.099    0.020
+ UB4      HB1    CB        single      1.092    0.020
+ UB4      HB2    CB        single      1.092    0.020
+ UB4      HG1    CG        single      1.092    0.020
+ UB4      HG2    CG        single      1.092    0.020
+ UB4      HT1    CT1       single      1.083    0.020
+ UB4      HT2    CT2       single      1.083    0.020
+ UB4      HI1    CI1       single      1.083    0.020
+ UB4      HI2    CI2       single      1.083    0.020
+ UB4      HN1    N         single      1.033    0.020
+ UB4      HN2    N         single      1.033    0.020
+ UB4      HSE1   SE1       single      1.234    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ UB4      O      C      H       123.000    3.000
+ UB4      O      C      CA      120.500    3.000
+ UB4      H      C      CA      120.000    3.000
+ UB4      C      CA     HA      108.810    3.000
+ UB4      C      CA     N       109.500    3.000
+ UB4      C      CA     CB      109.470    3.000
+ UB4      HA     CA     N       109.500    3.000
+ UB4      HA     CA     CB      108.340    3.000
+ UB4      N      CA     CB      109.500    3.000
+ UB4      CA     N      HN2     109.500    3.000
+ UB4      CA     N      HN1     109.500    3.000
+ UB4      HN2    N      HN1     109.500    3.000
+ UB4      CA     CB     HB1     109.470    3.000
+ UB4      CA     CB     HB2     109.470    3.000
+ UB4      CA     CB     CG      111.000    3.000
+ UB4      HB1    CB     HB2     107.900    3.000
+ UB4      HB1    CB     CG      109.470    3.000
+ UB4      HB2    CB     CG      109.470    3.000
+ UB4      CB     CG     HG1     109.470    3.000
+ UB4      CB     CG     HG2     109.470    3.000
+ UB4      CB     CG     CD      109.470    3.000
+ UB4      HG1    CG     HG2     107.900    3.000
+ UB4      HG1    CG     CD      109.470    3.000
+ UB4      HG2    CG     CD      109.470    3.000
+ UB4      CG     CD     SE1     120.000    3.000
+ UB4      CG     CD     NE1     116.500    3.000
+ UB4      SE1    CD     NE1     120.000    3.000
+ UB4      CD     SE1    HSE1    109.500    3.000
+ UB4      CD     SE1    CZ1     109.500    3.000
+ UB4      CD     SE1    CZ2     109.500    3.000
+ UB4      HSE1   SE1    CZ1     109.500    3.000
+ UB4      HSE1   SE1    CZ2     109.500    3.000
+ UB4      CZ1    SE1    CZ2      54.798    3.000
+ UB4      SE1    CZ1    NE1     109.500    3.000
+ UB4      SE1    CZ1    CT1     109.500    3.000
+ UB4      SE1    CZ1    CZ2      60.328    3.000
+ UB4      CT1    CZ1    CZ2     109.500    3.000
+ UB4      NE1    CZ1    CT1     109.500    3.000
+ UB4      NE1    CZ1    CZ2     109.500    3.000
+ UB4      CZ1    NE1    CD      121.000    3.000
+ UB4      SE1    CZ2    CT2     120.000    3.000
+ UB4      SE1    CZ2    CZ1      64.874    3.000
+ UB4      CT2    CZ2    CZ1     120.000    3.000
+ UB4      CZ2    CT2    HT2     120.000    3.000
+ UB4      CZ2    CT2    CI2     120.000    3.000
+ UB4      HT2    CT2    CI2     120.000    3.000
+ UB4      CT2    CI2    HI2     120.000    3.000
+ UB4      CT2    CI2    CI1     120.000    3.000
+ UB4      HI2    CI2    CI1     120.000    3.000
+ UB4      CI2    CI1    HI1     120.000    3.000
+ UB4      CI2    CI1    CT1     120.000    3.000
+ UB4      HI1    CI1    CT1     120.000    3.000
+ UB4      CI1    CT1    HT1     120.000    3.000
+ UB4      CI1    CT1    CZ1     120.000    3.000
+ UB4      HT1    CT1    CZ1     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ UB4      var_1            O      C      CA     CB                79.384           20.000   3
+ UB4      var_2            C      CA     N      HN1              180.000           20.000   3
+ UB4      var_3            C      CA     CB     CG               180.000           20.000   3
+ UB4      var_4            CA     CB     CG     CD               180.000           20.000   3
+ UB4      var_5            CB     CG     CD     SE1              180.000           20.000   3
+ UB4      var_6            CG     CD     NE1    CZ1              180.000           20.000   2
+ UB4      var_7            CG     CD     SE1    CZ2              179.145           20.000   3
+ UB4      var_8            CD     SE1    CZ1    NE1               -0.329           20.000   3
+ UB4      var_9            SE1    CZ1    NE1    CD                 0.384           20.000   3
+ UB4      var_10           CD     SE1    CZ2    CT2              179.625           20.000   3
+ UB4      CONST_1          SE1    CZ2    CT2    CI2                0.000            0.000   0
+ UB4      CONST_2          CZ2    CT2    CI2    CI1                0.000            0.000   0
+ UB4      CONST_3          CT2    CI2    CI1    CT1                0.000            0.000   0
+ UB4      CONST_4          CI2    CI1    CT1    CZ1                0.000            0.000   0
+ UB4      CONST_5          CI1    CT1    CZ1    SE1                0.000            0.000   0
+ UB4      CONST_1          CT1    CZ1    CZ2    CT2                0.079            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ UB4      chir_01          CA     C      CB     N         positiv
+ UB4      chir_02          CZ1    CT1    CZ2    NE1       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ UB4      plan-1            C         0.020
+ UB4      plan-1            CA        0.020
+ UB4      plan-1            O         0.020
+ UB4      plan-1            H         0.020
+ UB4      plan-2            CD        0.020
+ UB4      plan-2            CG        0.020
+ UB4      plan-2            NE1       0.020
+ UB4      plan-2            SE1       0.020
+ UB4      plan-3            CT1       0.020
+ UB4      plan-3            CZ1       0.020
+ UB4      plan-3            CI1       0.020
+ UB4      plan-3            HT1       0.020
+ UB4      plan-3            CT2       0.020
+ UB4      plan-3            CZ2       0.020
+ UB4      plan-3            CI2       0.020
+ UB4      plan-3            HT2       0.020
+ UB4      plan-3            SE1       0.020
+ UB4      plan-3            HI1       0.020
+ UB4      plan-3            HI2       0.020
+ UB4      plan-4            NE1       0.020
+ UB4      plan-4            CD        0.020
+ UB4      plan-4            CZ1       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-GVE
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-GVE  1 SG      2 CB        .           1.810    0.020
+#
+data_link_ACE-UB4
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ ACE-UB4  1 C       2 N         .           1.440    0.020
+#
+data_link_UB4-DPP
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ UB4-DPP  1 C       2 N         .           1.450    0.020
+#
+data_link_GLY-GVE
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ GLY-GVE  1 C       2 N         .           1.450    0.020
+# ------------------------------------------------------
