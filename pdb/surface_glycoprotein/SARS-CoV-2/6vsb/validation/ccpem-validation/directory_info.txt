@@ -1,0 +1,40 @@
+These validation statistics were generated using CCP-EM model validation task implemented by Agnel Praveen Joseph.
+
+Note: Molprobity, CaBLAM and Refmac5 runs use local CCP4 installation. The percentiles reported for Molprobity and Clash score uses all reference data without classifying into resolution ranges . Hence the percentiles may not match the values from the Molprobity server. This will be fixed in the next updates.
+
+
+Directory info
+
+global_report.txt : Summary of outlier statistics and scores from :
+Molprobity (stereochemical quality checks)
+CaBLAM (backbone pseudo-dihedral checks for Ca, carbonyl)
+TEMPy map fit scores
+Refmac5 model-map FSC, FSCavg score
+
+*_cluster_outliers.csv : List of outliers clustered in space. For each chain, the clusters are ranked by  size or the number of outliers. The outliers are reported by :
+Molprobity (stereochemical quality checks)
+CaBLAM (backbone pseudo-dihedral checks for Ca, carbonyl)
+TEMPy SMOC (Per-residue map fit)
+Jpred (sequence based secondary structure prediction)
+
+*_fsc.png : Model-map FSC plot
+*_fsc.csv : Model-map FSC table
+
+outliers_cootscript_*.py : Coot script to list outliers from *_cluster_outliers.txt. Move along the list to try and fix outliers. Tested with Coot v0.9 EL
+
+
+References:
+
+Burnley, T.; Palmer, C. M.; Winn, M. Recent Developments in the CCP-EM Software Suite. Acta Crystallogr. Sect. Struct. Biol. 2017, 73 (Pt 6), 469–477. https://doi.org/10.1107/S2059798317007859.
+
+Williams et al. (2018) MolProbity: More and better reference data for improved all-atom structure validation. Protein Science 27: 293-315
+
+Williams, C. J., Hintze, B. J., Richardson, D. C. & Richardson, J. S.(2013).Comput. Crystallogr. Newsl.4, 33–35. http://phenix-online.org/newsletter/CCN_2013_07.pdf
+
+Joseph, A. P.; Malhotra, S.; Burnley, T.; Wood, C.; Clare, D. K.; Winn, M.; Topf, M. Refinement of Atomic Models in High Resolution EM Reconstructions Using Flex-EM and Local Assessment. Methods San Diego Calif 2016, 100, 42–49. https://doi.org/10.1016/j.ymeth.2016.03.007.
+
+Farabella, I.; Vasishtan, D.; Joseph, A. P.; Pandurangan, A. P.; Sahota, H.; Topf, M. TEMPy: A Python Library for Assessment of Three-Dimensional Electron Microscopy Density Fits. J. Appl. Crystallogr. 2015, 48 (4), 1314–1323.
+
+Murshudov, G. N.; Skubák, P.; Lebedev, A. A.; Pannu, N. S.; Steiner, R. A.; Nicholls, R. A.; Winn, M. D.; Long, F.; Vagin, A. A. REFMAC5 for the Refinement of Macromolecular Crystal Structures. Acta Crystallogr. D Biol. Crystallogr. 2011, 67 (Pt 4), 355–367.
+
+Emsley, P.; Lohkamp, B.; Scott, W. G.; Cowtan, K. Features and Development of Coot. Acta Crystallogr. D Biol. Crystallogr. 2010, 66 (Pt 4), 486–501.
