@@ -1,0 +1,182 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.51
+_lib_update       11/07/18
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+USD      USD '.                                   ' .                  13   8 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-USD  CYS      .        .        USD      .        .
+ bond_CYS-SG_=_USD-C
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_USD
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ USD           N      N    N         0.000      6.134   -5.106   19.773
+ USD           HN     H    H         0.000      6.260   -5.671   19.009
+ USD           C      C    C1        0.000      6.885   -4.076   19.956
+ USD           H      H    H         0.000      7.670   -3.818   19.265
+ USD           C1     C    CR6       0.000      6.610   -3.247   21.189
+ USD           N2     N    NRD6      0.000      7.608   -2.466   21.637
+ USD           C4     C    CR16      0.000      7.366   -1.752   22.750
+ USD           H4     H    H         0.000      8.153   -1.113   23.133
+ USD           C3     C    CR16      0.000      6.168   -1.793   23.426
+ USD           H3     H    H         0.000      5.988   -1.204   24.317
+ USD           C2     C    CR16      0.000      5.212   -2.633   22.894
+ USD           H2     H    H         0.000      4.260   -2.716   23.402
+ USD           N1     N    NRD6      0.000      5.404   -3.353   21.778
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ USD      N      n/a    C      START
+ USD      HN     N      .      .
+ USD      C      N      C1     .
+ USD      H      C      .      .
+ USD      C1     C      N2     .
+ USD      N2     C1     C4     .
+ USD      C4     N2     C3     .
+ USD      H4     C4     .      .
+ USD      C3     C4     C2     .
+ USD      H3     C3     .      .
+ USD      C2     C3     N1     .
+ USD      H2     C2     .      .
+ USD      N1     C2     .      END
+ USD      N1     C1     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ USD      N1     C1        aromatic    1.350    0.020
+ USD      N1     C2        aromatic    1.337    0.020
+ USD      C4     N2        aromatic    1.337    0.020
+ USD      C3     C4        aromatic    1.390    0.020
+ USD      C      N         deloc       1.260    0.020
+ USD      C1     C         single      1.480    0.020
+ USD      N2     C1        aromatic    1.350    0.020
+ USD      C2     C3        aromatic    1.390    0.020
+ USD      H4     C4        single      1.083    0.020
+ USD      HN     N         single      0.954    0.020
+ USD      H      C         single      1.077    0.020
+ USD      H3     C3        single      1.083    0.020
+ USD      H2     C2        single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ USD      HN     N      C       120.000    3.000
+ USD      N      C      H       120.000    3.000
+ USD      N      C      C1      120.000    3.000
+ USD      H      C      C1      120.000    3.000
+ USD      C      C1     N2      120.000    3.000
+ USD      C      C1     N1      120.000    3.000
+ USD      N2     C1     N1      120.000    3.000
+ USD      C1     N2     C4      120.000    3.000
+ USD      N2     C4     H4      120.000    3.000
+ USD      N2     C4     C3      120.000    3.000
+ USD      H4     C4     C3      120.000    3.000
+ USD      C4     C3     H3      120.000    3.000
+ USD      C4     C3     C2      120.000    3.000
+ USD      H3     C3     C2      120.000    3.000
+ USD      C3     C2     H2      120.000    3.000
+ USD      C3     C2     N1      120.000    3.000
+ USD      H2     C2     N1      120.000    3.000
+ USD      C2     N1     C1      120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ USD      CONST_1          HN     N      C      C1               180.000            0.000   0
+ USD      var_1            N      C      C1     N2               158.596           20.000   3
+ USD      CONST_2          C      C1     N2     C4                 0.000            0.000   0
+ USD      CONST_3          C1     N2     C4     C3                 0.000            0.000   0
+ USD      CONST_4          N2     C4     C3     C2                 0.000            0.000   0
+ USD      CONST_5          C4     C3     C2     N1                 0.000            0.000   0
+ USD      CONST_6          C3     C2     N1     C1                 0.000            0.000   0
+ USD      CONST_7          C2     N1     C1     C                  0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ USD      plan-1            N1        0.020
+ USD      plan-1            C1        0.020
+ USD      plan-1            C2        0.020
+ USD      plan-1            C4        0.020
+ USD      plan-1            N2        0.020
+ USD      plan-1            C3        0.020
+ USD      plan-1            H4        0.020
+ USD      plan-1            C         0.020
+ USD      plan-1            H3        0.020
+ USD      plan-1            H2        0.020
+ USD      plan-1            H         0.020
+ USD      plan-2            N         0.020
+ USD      plan-2            C         0.020
+ USD      plan-2            HN        0.020
+ USD      plan-2            C1        0.020
+ USD      plan-2            H         0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-USD
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-USD  1 SG      2 C         .           1.820    0.020
+# ------------------------------------------------------
