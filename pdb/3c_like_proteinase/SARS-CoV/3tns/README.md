@@ -10,11 +10,11 @@
 
 ## Basefolder
 
-3tns.pdb and 3tns.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+3tns.pdb and 3tns.cif - the coordinates of the threedimensional molecular model
 
-3tns-sf.cif - contains deposited diffraction data for this PDB entry, if the structure has been solved with X-ray or neutron crystallography.
+3tns-sf.cif - deposited diffraction data for this PDB entry
 
-3tns.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
+3tns.mtz - structure factors after automatic refinement of molecular model against the diffraction data.
 
 ## Subfolders
 

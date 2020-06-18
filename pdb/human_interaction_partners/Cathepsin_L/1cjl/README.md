@@ -10,11 +10,11 @@
 
 ## Basefolder
 
-1cjl.pdb and 1cjl.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+1cjl.pdb and 1cjl.cif - the coordinates of the threedimensional molecular model
 
-1cjl-sf.cif - contains deposited diffraction data for this PDB entry, if the structure has been solved with X-ray or neutron crystallography.
+1cjl-sf.cif - deposited diffraction data for this PDB entry
 
-1cjl.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
+1cjl.mtz - structure factors after automatic refinement of molecular model against the diffraction data.
 
 ## Subfolders
 

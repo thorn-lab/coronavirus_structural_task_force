@@ -10,11 +10,11 @@
 
 ## Basefolder
 
-6wtt.pdb and 6wtt.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+6wtt.pdb and 6wtt.cif - the coordinates of the threedimensional molecular model
 
-6wtt-sf.cif - contains deposited diffraction data for this PDB entry, if the structure has been solved with X-ray or neutron crystallography.
+6wtt-sf.cif - deposited diffraction data for this PDB entry
 
-6wtt.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
+6wtt.mtz - structure factors after automatic refinement of molecular model against the diffraction data.
 
 ## Subfolders
 

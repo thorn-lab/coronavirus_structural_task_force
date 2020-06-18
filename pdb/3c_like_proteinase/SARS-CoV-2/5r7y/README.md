@@ -10,11 +10,11 @@
 
 ## Basefolder
 
-5r7y.pdb and 5r7y.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+5r7y.pdb and 5r7y.cif - the coordinates of the threedimensional molecular model
 
-5r7y-sf.cif - contains deposited diffraction data for this PDB entry, if the structure has been solved with X-ray or neutron crystallography.
+5r7y-sf.cif - deposited diffraction data for this PDB entry
 
-5r7y.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
+5r7y.mtz - structure factors after automatic refinement of molecular model against the diffraction data.
 
 ## Subfolders
 

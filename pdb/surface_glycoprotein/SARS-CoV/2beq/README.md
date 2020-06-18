@@ -10,11 +10,11 @@
 
 ## Basefolder
 
-2beq.pdb and 2beq.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+2beq.pdb and 2beq.cif - the coordinates of the threedimensional molecular model
 
-2beq-sf.cif - contains deposited diffraction data for this PDB entry, if the structure has been solved with X-ray or neutron crystallography.
+2beq-sf.cif - deposited diffraction data for this PDB entry
 
-2beq.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
+2beq.mtz - structure factors after automatic refinement of molecular model against the diffraction data.
 
 ## Subfolders
 

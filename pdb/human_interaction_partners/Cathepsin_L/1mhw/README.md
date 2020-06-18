@@ -10,11 +10,11 @@
 
 ## Basefolder
 
-1mhw.pdb and 1mhw.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+1mhw.pdb and 1mhw.cif - the coordinates of the threedimensional molecular model
 
-1mhw-sf.cif - contains deposited diffraction data for this PDB entry, if the structure has been solved with X-ray or neutron crystallography.
+1mhw-sf.cif - deposited diffraction data for this PDB entry
 
-1mhw.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
+1mhw.mtz - structure factors after automatic refinement of molecular model against the diffraction data.
 
 ## Subfolders
 

@@ -10,11 +10,11 @@
 
 ## Basefolder
 
-7buy.pdb and 7buy.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+7buy.pdb and 7buy.cif - the coordinates of the threedimensional molecular model
 
-7buy-sf.cif - contains deposited diffraction data for this PDB entry, if the structure has been solved with X-ray or neutron crystallography.
+7buy-sf.cif - deposited diffraction data for this PDB entry
 
-7buy.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
+7buy.mtz - structure factors after automatic refinement of molecular model against the diffraction data.
 
 ## Subfolders
 

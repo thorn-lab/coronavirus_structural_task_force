@@ -10,11 +10,11 @@
 
 ## Basefolder
 
-4ca6.pdb and 4ca6.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+4ca6.pdb and 4ca6.cif - the coordinates of the threedimensional molecular model
 
-4ca6-sf.cif - contains deposited diffraction data for this PDB entry, if the structure has been solved with X-ray or neutron crystallography.
+4ca6-sf.cif - deposited diffraction data for this PDB entry
 
-4ca6.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
+4ca6.mtz - structure factors after automatic refinement of molecular model against the diffraction data.
 
 ## Subfolders
 

@@ -10,11 +10,11 @@
 
 ## Basefolder
 
-6wey.pdb and 6wey.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+6wey.pdb and 6wey.cif - the coordinates of the threedimensional molecular model
 
-6wey-sf.cif - contains deposited diffraction data for this PDB entry, if the structure has been solved with X-ray or neutron crystallography.
+6wey-sf.cif - deposited diffraction data for this PDB entry
 
-6wey.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
+6wey.mtz - structure factors after automatic refinement of molecular model against the diffraction data.
 
 ## Subfolders
 

@@ -10,11 +10,11 @@
 
 ## Basefolder
 
-1q2w.pdb and 1q2w.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+1q2w.pdb and 1q2w.cif - the coordinates of the threedimensional molecular model
 
-1q2w-sf.cif - contains deposited diffraction data for this PDB entry, if the structure has been solved with X-ray or neutron crystallography.
+1q2w-sf.cif - deposited diffraction data for this PDB entry
 
-1q2w.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
+1q2w.mtz - structure factors after automatic refinement of molecular model against the diffraction data.
 
 ## Subfolders
 

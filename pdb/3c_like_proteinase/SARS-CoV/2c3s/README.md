@@ -10,11 +10,11 @@
 
 ## Basefolder
 
-2c3s.pdb and 2c3s.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+2c3s.pdb and 2c3s.cif - the coordinates of the threedimensional molecular model
 
-2c3s-sf.cif - contains deposited diffraction data for this PDB entry, if the structure has been solved with X-ray or neutron crystallography.
+2c3s-sf.cif - deposited diffraction data for this PDB entry
 
-2c3s.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
+2c3s.mtz - structure factors after automatic refinement of molecular model against the diffraction data.
 
 ## Subfolders
 

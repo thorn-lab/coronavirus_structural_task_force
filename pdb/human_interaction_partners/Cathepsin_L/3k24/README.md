@@ -10,11 +10,11 @@
 
 ## Basefolder
 
-3k24.pdb and 3k24.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+3k24.pdb and 3k24.cif - the coordinates of the threedimensional molecular model
 
-3k24-sf.cif - contains deposited diffraction data for this PDB entry, if the structure has been solved with X-ray or neutron crystallography.
+3k24-sf.cif - deposited diffraction data for this PDB entry
 
-3k24.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
+3k24.mtz - structure factors after automatic refinement of molecular model against the diffraction data.
 
 ## Subfolders
 

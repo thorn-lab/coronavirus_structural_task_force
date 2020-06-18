@@ -10,11 +10,11 @@
 
 ## Basefolder
 
-6lu7.pdb and 6lu7.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+6lu7.pdb and 6lu7.cif - the coordinates of the threedimensional molecular model
 
-6lu7-sf.cif - contains deposited diffraction data for this PDB entry, if the structure has been solved with X-ray or neutron crystallography.
+6lu7-sf.cif - deposited diffraction data for this PDB entry
 
-6lu7.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
+6lu7.mtz - structure factors after automatic refinement of molecular model against the diffraction data.
 
 ## Subfolders
 

@@ -10,11 +10,11 @@
 
 ## Basefolder
 
-3ea9.pdb and 3ea9.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+3ea9.pdb and 3ea9.cif - the coordinates of the threedimensional molecular model
 
-3ea9-sf.cif - contains deposited diffraction data for this PDB entry, if the structure has been solved with X-ray or neutron crystallography.
+3ea9-sf.cif - deposited diffraction data for this PDB entry
 
-3ea9.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
+3ea9.mtz - structure factors after automatic refinement of molecular model against the diffraction data.
 
 ## Subfolders
 

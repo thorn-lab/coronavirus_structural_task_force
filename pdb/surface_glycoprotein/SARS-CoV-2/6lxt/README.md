@@ -10,11 +10,11 @@
 
 ## Basefolder
 
-6lxt.pdb and 6lxt.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+6lxt.pdb and 6lxt.cif - the coordinates of the threedimensional molecular model
 
-6lxt-sf.cif - contains deposited diffraction data for this PDB entry, if the structure has been solved with X-ray or neutron crystallography.
+6lxt-sf.cif - deposited diffraction data for this PDB entry
 
-6lxt.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
+6lxt.mtz - structure factors after automatic refinement of molecular model against the diffraction data.
 
 ## Subfolders
 

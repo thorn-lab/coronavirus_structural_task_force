@@ -10,11 +10,11 @@
 
 ## Basefolder
 
-4bzr.pdb and 4bzr.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+4bzr.pdb and 4bzr.cif - the coordinates of the threedimensional molecular model
 
-4bzr-sf.cif - contains deposited diffraction data for this PDB entry, if the structure has been solved with X-ray or neutron crystallography.
+4bzr-sf.cif - deposited diffraction data for this PDB entry
 
-4bzr.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
+4bzr.mtz - structure factors after automatic refinement of molecular model against the diffraction data.
 
 ## Subfolders
 

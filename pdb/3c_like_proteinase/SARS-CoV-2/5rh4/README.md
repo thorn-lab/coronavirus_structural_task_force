@@ -10,11 +10,11 @@
 
 ## Basefolder
 
-5rh4.pdb and 5rh4.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+5rh4.pdb and 5rh4.cif - the coordinates of the threedimensional molecular model
 
-5rh4-sf.cif - contains deposited diffraction data for this PDB entry, if the structure has been solved with X-ray or neutron crystallography.
+5rh4-sf.cif - deposited diffraction data for this PDB entry
 
-5rh4.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
+5rh4.mtz - structure factors after automatic refinement of molecular model against the diffraction data.
 
 ## Subfolders
 

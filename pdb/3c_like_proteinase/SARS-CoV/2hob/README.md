@@ -10,11 +10,11 @@
 
 ## Basefolder
 
-2hob.pdb and 2hob.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+2hob.pdb and 2hob.cif - the coordinates of the threedimensional molecular model
 
-2hob-sf.cif - contains deposited diffraction data for this PDB entry, if the structure has been solved with X-ray or neutron crystallography.
+2hob-sf.cif - deposited diffraction data for this PDB entry
 
-2hob.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
+2hob.mtz - structure factors after automatic refinement of molecular model against the diffraction data.
 
 ## Subfolders
 

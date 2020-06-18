@@ -10,11 +10,11 @@
 
 ## Basefolder
 
-7brp.pdb and 7brp.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+7brp.pdb and 7brp.cif - the coordinates of the threedimensional molecular model
 
-7brp-sf.cif - contains deposited diffraction data for this PDB entry, if the structure has been solved with X-ray or neutron crystallography.
+7brp-sf.cif - deposited diffraction data for this PDB entry
 
-7brp.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
+7brp.mtz - structure factors after automatic refinement of molecular model against the diffraction data.
 
 ## Subfolders
 

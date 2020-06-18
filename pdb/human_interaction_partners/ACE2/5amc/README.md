@@ -10,11 +10,11 @@
 
 ## Basefolder
 
-5amc.pdb and 5amc.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+5amc.pdb and 5amc.cif - the coordinates of the threedimensional molecular model
 
-5amc-sf.cif - contains deposited diffraction data for this PDB entry, if the structure has been solved with X-ray or neutron crystallography.
+5amc-sf.cif - deposited diffraction data for this PDB entry
 
-5amc.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
+5amc.mtz - structure factors after automatic refinement of molecular model against the diffraction data.
 
 ## Subfolders
 

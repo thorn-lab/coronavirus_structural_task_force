@@ -10,11 +10,11 @@
 
 ## Basefolder
 
-1qz8.pdb and 1qz8.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+1qz8.pdb and 1qz8.cif - the coordinates of the threedimensional molecular model
 
-1qz8-sf.cif - contains deposited diffraction data for this PDB entry, if the structure has been solved with X-ray or neutron crystallography.
+1qz8-sf.cif - deposited diffraction data for this PDB entry
 
-1qz8.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
+1qz8.mtz - structure factors after automatic refinement of molecular model against the diffraction data.
 
 ## Subfolders
 

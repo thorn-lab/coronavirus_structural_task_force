@@ -10,11 +10,11 @@
 
 ## Basefolder
 
-2yjb.pdb and 2yjb.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+2yjb.pdb and 2yjb.cif - the coordinates of the threedimensional molecular model
 
-2yjb-sf.cif - contains deposited diffraction data for this PDB entry, if the structure has been solved with X-ray or neutron crystallography.
+2yjb-sf.cif - deposited diffraction data for this PDB entry
 
-2yjb.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
+2yjb.mtz - structure factors after automatic refinement of molecular model against the diffraction data.
 
 ## Subfolders
 

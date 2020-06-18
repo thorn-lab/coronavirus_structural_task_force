@@ -10,11 +10,11 @@
 
 ## Basefolder
 
-5y3q.pdb and 5y3q.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+5y3q.pdb and 5y3q.cif - the coordinates of the threedimensional molecular model
 
-5y3q-sf.cif - contains deposited diffraction data for this PDB entry, if the structure has been solved with X-ray or neutron crystallography.
+5y3q-sf.cif - deposited diffraction data for this PDB entry
 
-5y3q.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
+5y3q.mtz - structure factors after automatic refinement of molecular model against the diffraction data.
 
 ## Subfolders
 

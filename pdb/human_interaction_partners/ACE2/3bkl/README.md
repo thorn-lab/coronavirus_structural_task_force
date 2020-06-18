@@ -10,11 +10,11 @@
 
 ## Basefolder
 
-3bkl.pdb and 3bkl.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+3bkl.pdb and 3bkl.cif - the coordinates of the threedimensional molecular model
 
-3bkl-sf.cif - contains deposited diffraction data for this PDB entry, if the structure has been solved with X-ray or neutron crystallography.
+3bkl-sf.cif - deposited diffraction data for this PDB entry
 
-3bkl.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
+3bkl.mtz - structure factors after automatic refinement of molecular model against the diffraction data.
 
 ## Subfolders
 

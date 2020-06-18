@@ -10,11 +10,11 @@
 
 ## Basefolder
 
-6n4i.pdb and 6n4i.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+6n4i.pdb and 6n4i.cif - the coordinates of the threedimensional molecular model
 
-6n4i-sf.cif - contains deposited diffraction data for this PDB entry, if the structure has been solved with X-ray or neutron crystallography.
+6n4i-sf.cif - deposited diffraction data for this PDB entry
 
-6n4i.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
+6n4i.mtz - structure factors after automatic refinement of molecular model against the diffraction data.
 
 ## Subfolders
 

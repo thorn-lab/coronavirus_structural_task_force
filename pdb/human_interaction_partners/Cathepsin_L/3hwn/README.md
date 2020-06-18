@@ -10,11 +10,11 @@
 
 ## Basefolder
 
-3hwn.pdb and 3hwn.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+3hwn.pdb and 3hwn.cif - the coordinates of the threedimensional molecular model
 
-3hwn-sf.cif - contains deposited diffraction data for this PDB entry, if the structure has been solved with X-ray or neutron crystallography.
+3hwn-sf.cif - deposited diffraction data for this PDB entry
 
-3hwn.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
+3hwn.mtz - structure factors after automatic refinement of molecular model against the diffraction data.
 
 ## Subfolders
 

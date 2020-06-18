@@ -10,11 +10,11 @@
 
 ## Basefolder
 
-3l3n.pdb and 3l3n.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+3l3n.pdb and 3l3n.cif - the coordinates of the threedimensional molecular model
 
-3l3n-sf.cif - contains deposited diffraction data for this PDB entry, if the structure has been solved with X-ray or neutron crystallography.
+3l3n-sf.cif - deposited diffraction data for this PDB entry
 
-3l3n.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
+3l3n.mtz - structure factors after automatic refinement of molecular model against the diffraction data.
 
 ## Subfolders
 
