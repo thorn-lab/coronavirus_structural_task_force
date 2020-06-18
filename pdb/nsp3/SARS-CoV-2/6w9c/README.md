@@ -1,6 +1,14 @@
-# Base folder 6w9c
+# PDB 6w9c
 
-## Files downloaded from wwPDB:
+## Overview
+
+**Protein name:** nsp3
+
+**Organism:** SARS-CoV-2
+
+**Method:** X-ray Diffraction
+
+## Basefolder
 
 6w9c.pdb and 6w9c.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
 
@@ -8,20 +16,32 @@
 
 6w9c.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
 
-## Raw diffraction data
+## Subfolders
 
-6w9c_DiffractionImages.html - link to the raw diffraction data 
+**isolde** - contains manual re-refinements from ISOLDE in ChimeraX, done by Tristan Croll. See details [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp3/SARS-CoV-2/6w9c/isolde/directory_info.txt)
 
-or **Click** [here](https://doi.org/10.18430/m36w9c) 
+**old** - contains files from historical revisions
+
+**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp3/SARS-CoV-2/6w9c/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp3/SARS-CoV-2/6w9c/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp3/SARS-CoV-2/6w9c/validation/molprobity) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp3/SARS-CoV-2/6w9c/validation/Xtriage_output.log) 
+
+## Raw diffraction data are available
+
+**Click** [here](https://doi.org/10.18430/m36w9c) 
 
 ## Data Summary
+Diffraction Data Quality:
+
 |   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
 |   |2.70 Å|57.1  %|<img width=50/>4.900|
 
+Discrepancy between model and data (the lower the better):
+
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
 ||  0.2350|  0.3090|
+
+Geometry validation (the lower, the better):
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
@@ -37,4 +57,6 @@ or **Click** [here](https://doi.org/10.18430/m36w9c)
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/6w9c
  
 **PDBr**: https://www.rcsb.org/structure/6w9c 
+
+**3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=6w9c
 

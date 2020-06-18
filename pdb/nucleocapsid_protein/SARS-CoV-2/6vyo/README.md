@@ -1,6 +1,14 @@
-# Base folder 6vyo
+# PDB 6vyo
 
-## Files downloaded from wwPDB:
+## Overview
+
+**Protein name:** nucleocapsid protein
+
+**Organism:** SARS-CoV-2
+
+**Method:** X-ray Diffraction
+
+## Basefolder
 
 6vyo.pdb and 6vyo.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
 
@@ -8,20 +16,32 @@
 
 6vyo.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
 
-## Raw diffraction data
+## Subfolders
 
-6vyo_DiffractionImages.html - link to the raw diffraction data 
+**isolde** - contains manual re-refinements from ISOLDE in ChimeraX, done by Tristan Croll. See details [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nucleocapsid_protein/SARS-CoV-2/6vyo/isolde/directory_info.txt)
 
-or **Click** [here](https://doi.org/10.18430/m36vyo) 
+**old** - contains files from historical revisions
+
+**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nucleocapsid_protein/SARS-CoV-2/6vyo/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nucleocapsid_protein/SARS-CoV-2/6vyo/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nucleocapsid_protein/SARS-CoV-2/6vyo/validation/molprobity) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nucleocapsid_protein/SARS-CoV-2/6vyo/validation/Xtriage_output.log) [**BUSTER**](https://www.globalphasing.com/buster/wiki/index.cgi?Covid19Pdb6VYO)
+
+## Raw diffraction data are available
+
+**Click** [here](https://doi.org/10.18430/m36vyo) 
 
 ## Data Summary
+Diffraction Data Quality:
+
 |   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
 |   |1.70 Å|87.3  %|<img width=50/>6.900|
 
+Discrepancy between model and data (the lower the better):
+
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
 ||  0.1600|  0.2050|
+
+Geometry validation (the lower, the better):
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
@@ -37,4 +57,6 @@ or **Click** [here](https://doi.org/10.18430/m36vyo)
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/6vyo
  
 **PDBr**: https://www.rcsb.org/structure/6vyo 
+
+**3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=6vyo
 

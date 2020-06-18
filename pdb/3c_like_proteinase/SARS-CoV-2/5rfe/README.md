@@ -1,6 +1,14 @@
-# Base folder 5rfe
+# PDB 5rfe
 
-## Files downloaded from wwPDB:
+## Overview
+
+**Protein name:** 3c like proteinase
+
+**Organism:** SARS-CoV-2
+
+**Method:** X-ray Diffraction
+
+## Basefolder
 
 5rfe.pdb and 5rfe.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
 
@@ -8,20 +16,32 @@
 
 5rfe.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
 
-## Raw diffraction data
+## Subfolders
 
-5rfe_DiffractionImages.html - link to the raw diffraction data 
 
-or **Click** [here](https://zenodo.org/record/3731353) 
+
+**old** - contains files from historical revisions
+
+**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/3c_like_proteinase/SARS-CoV-2/5rfe/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/3c_like_proteinase/SARS-CoV-2/5rfe/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/3c_like_proteinase/SARS-CoV-2/5rfe/validation/molprobity) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV-2/5rfe/validation/Xtriage_output.log) [**BUSTER**](https://www.globalphasing.com/buster/wiki/index.cgi?Covid19Pdb5RFE)
+
+## Raw diffraction data are available
+
+**Click** [here](https://zenodo.org/record/3731353) 
 
 ## Data Summary
+Diffraction Data Quality:
+
 |   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
 |   |1.46 Å|93.8  %|<img width=50/>9.600|
 
+Discrepancy between model and data (the lower the better):
+
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
 ||  0.1770|  0.2140|
+
+Geometry validation (the lower, the better):
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
@@ -37,4 +57,6 @@ or **Click** [here](https://zenodo.org/record/3731353)
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/5rfe
  
 **PDBr**: https://www.rcsb.org/structure/5rfe 
+
+**3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=5rfe
 

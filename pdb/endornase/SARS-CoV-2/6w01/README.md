@@ -1,6 +1,14 @@
-# Base folder 6w01
+# PDB 6w01
 
-## Files downloaded from wwPDB:
+## Overview
+
+**Protein name:** endornase
+
+**Organism:** SARS-CoV-2
+
+**Method:** X-ray Diffraction
+
+## Basefolder
 
 6w01.pdb and 6w01.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
 
@@ -8,20 +16,32 @@
 
 6w01.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
 
-## Raw diffraction data
+## Subfolders
 
-6w01_DiffractionImages.html - link to the raw diffraction data 
 
-or **Click** [here](https://doi.org/10.18430/m36w01) 
+
+**old** - contains files from historical revisions
+
+**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/endornase/SARS-CoV-2/6w01/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/endornase/SARS-CoV-2/6w01/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/endornase/SARS-CoV-2/6w01/validation/molprobity) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/endornase/SARS-CoV-2/6w01/validation/Xtriage_output.log) [**BUSTER**](https://www.globalphasing.com/buster/wiki/index.cgi?Covid19Pdb6W01)
+
+## Raw diffraction data are available
+
+**Click** [here](https://doi.org/10.18430/m36w01) 
 
 ## Data Summary
+Diffraction Data Quality:
+
 |   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
 |   |1.90 Å|98.7  %|<img width=50/>13.11|
 
+Discrepancy between model and data (the lower the better):
+
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
 ||  0.1610|  0.1850|
+
+Geometry validation (the lower, the better):
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
@@ -37,4 +57,6 @@ or **Click** [here](https://doi.org/10.18430/m36w01)
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/6w01
  
 **PDBr**: https://www.rcsb.org/structure/6w01 
+
+**3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=6w01
 

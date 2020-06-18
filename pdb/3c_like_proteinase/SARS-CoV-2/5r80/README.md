@@ -1,6 +1,14 @@
-# Base folder 5r80
+# PDB 5r80
 
-## Files downloaded from wwPDB:
+## Overview
+
+**Protein name:** 3c like proteinase
+
+**Organism:** SARS-CoV-2
+
+**Method:** X-ray Diffraction
+
+## Basefolder
 
 5r80.pdb and 5r80.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
 
@@ -8,20 +16,32 @@
 
 5r80.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
 
-## Raw diffraction data
+## Subfolders
 
-5r80_DiffractionImages.html - link to the raw diffraction data 
 
-or **Click** [here](https://zenodo.org/record/3730487) 
+
+**old** - contains files from historical revisions
+
+**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/3c_like_proteinase/SARS-CoV-2/5r80/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/3c_like_proteinase/SARS-CoV-2/5r80/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/3c_like_proteinase/SARS-CoV-2/5r80/validation/molprobity) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV-2/5r80/validation/Xtriage_output.log) [**BUSTER**](https://www.globalphasing.com/buster/wiki/index.cgi?Covid19Pdb5R80)
+
+## Raw diffraction data are available
+
+**Click** [here](https://zenodo.org/record/3730487) 
 
 ## Data Summary
+Diffraction Data Quality:
+
 |   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
 |   |1.93 Å|98.8  %|<img width=50/>6.000|
 
+Discrepancy between model and data (the lower the better):
+
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
 ||  0.2220|  0.2760|
+
+Geometry validation (the lower, the better):
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
@@ -37,4 +57,6 @@ or **Click** [here](https://zenodo.org/record/3730487)
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/5r80
  
 **PDBr**: https://www.rcsb.org/structure/5r80 
+
+**3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=5r80
 
