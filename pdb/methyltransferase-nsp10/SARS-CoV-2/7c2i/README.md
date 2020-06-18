@@ -58,5 +58,5 @@ No public deposition. --<br>
  
 **PDBr**: https://www.rcsb.org/structure/7c2i 
 
-**Look at the structure with 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=7c2i
+**Structure view with 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=7c2i
 

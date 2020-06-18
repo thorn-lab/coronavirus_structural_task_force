@@ -58,5 +58,5 @@ No public deposition. --<br>
  
 **PDBr**: https://www.rcsb.org/structure/6yun 
 
-**Look at the structure with 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=6yun
+**Structure view with 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=6yun
 

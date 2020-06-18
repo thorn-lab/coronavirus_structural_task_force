@@ -10,11 +10,11 @@
 
 ## Basefolder
 
-6w4b.pdb and 6w4b.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+6w4b.pdb and 6w4b.cif - the coordinates of the threedimensional molecular model
 
-6w4b-sf.cif - contains deposited diffraction data for this PDB entry, if the structure has been solved with X-ray or neutron crystallography.
+6w4b-sf.cif - deposited diffraction data for this PDB entry
 
-6w4b.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
+6w4b.mtz - structure factors after automatic refinement of molecular model against the diffraction data
 
 ## Subfolders
 
@@ -58,5 +58,5 @@ Available. **Click** [here](https://doi.org/10.18430/m36w4b)
  
 **PDBr**: https://www.rcsb.org/structure/6w4b 
 
-**Look at the structure with 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=6w4b
+**Structure view with 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=6w4b
 

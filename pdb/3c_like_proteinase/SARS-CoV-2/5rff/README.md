@@ -10,11 +10,11 @@
 
 ## Basefolder
 
-5rff.pdb and 5rff.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+5rff.pdb and 5rff.cif - the coordinates of the threedimensional molecular model
 
-5rff-sf.cif - contains deposited diffraction data for this PDB entry, if the structure has been solved with X-ray or neutron crystallography.
+5rff-sf.cif - deposited diffraction data for this PDB entry
 
-5rff.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
+5rff.mtz - structure factors after automatic refinement of molecular model against the diffraction data
 
 ## Subfolders
 
@@ -58,5 +58,5 @@ Available. **Click** [here](https://zenodo.org/record/3731366)
  
 **PDBr**: https://www.rcsb.org/structure/5rff 
 
-**Look at the structure with 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=5rff
+**Structure view with 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=5rff
 

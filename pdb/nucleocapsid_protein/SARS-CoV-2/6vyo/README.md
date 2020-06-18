@@ -10,11 +10,11 @@
 
 ## Basefolder
 
-6vyo.pdb and 6vyo.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+6vyo.pdb and 6vyo.cif - the coordinates of the threedimensional molecular model
 
-6vyo-sf.cif - contains deposited diffraction data for this PDB entry, if the structure has been solved with X-ray or neutron crystallography.
+6vyo-sf.cif - deposited diffraction data for this PDB entry
 
-6vyo.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
+6vyo.mtz - structure factors after automatic refinement of molecular model against the diffraction data
 
 ## Subfolders
 
@@ -58,5 +58,5 @@ Available. **Click** [here](https://doi.org/10.18430/m36vyo)
  
 **PDBr**: https://www.rcsb.org/structure/6vyo 
 
-**Look at the structure with 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=6vyo
+**Structure view with 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=6vyo
 

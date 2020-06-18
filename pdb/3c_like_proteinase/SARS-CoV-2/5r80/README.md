@@ -10,11 +10,11 @@
 
 ## Basefolder
 
-5r80.pdb and 5r80.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+5r80.pdb and 5r80.cif - the coordinates of the threedimensional molecular model
 
-5r80-sf.cif - contains deposited diffraction data for this PDB entry, if the structure has been solved with X-ray or neutron crystallography.
+5r80-sf.cif - deposited diffraction data for this PDB entry
 
-5r80.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
+5r80.mtz - structure factors after automatic refinement of molecular model against the diffraction data
 
 ## Subfolders
 
@@ -58,5 +58,5 @@ Available. **Click** [here](https://zenodo.org/record/3730487)
  
 **PDBr**: https://www.rcsb.org/structure/5r80 
 
-**Look at the structure with 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=5r80
+**Structure view with 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=5r80
 
