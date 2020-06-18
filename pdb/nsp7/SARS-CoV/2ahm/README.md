@@ -1,6 +1,14 @@
-# Base folder 2ahm
+# PDB 2ahm
 
-## Files downloaded from wwPDB:
+## Overview
+
+**Protein name:** nsp7
+
+**Organism:** SARS-CoV
+
+**Method:** X-Ray Diffraction
+
+## Basefolder
 
 2ahm.pdb and 2ahm.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
 
@@ -8,18 +16,32 @@
 
 2ahm.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
 
+## Subfolders
+
+
+
+
+
+**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp7/SARS-CoV/2ahm/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp7/SARS-CoV/2ahm/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp7/SARS-CoV/2ahm/validation/molprobity) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp7/SARS-CoV/2ahm/validation/Xtriage_output.log) 
+
 ## Raw diffraction data
 
---<br> 
+No depostition. --<br> 
 
 ## Data Summary
+**Diffraction Data Quality**
+
 |   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
 |   |2.40 Å|N     %|<img width=50/>24.00|
 
+**Discrepancy between model and data (the lower the better)**
+
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
 ||  0.2130|  0.2510|
+
+**Geometry validation (the lower, the better)**
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
@@ -35,4 +57,6 @@
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/2ahm
  
 **PDBr**: https://www.rcsb.org/structure/2ahm 
+
+**Look at the structure with 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=2ahm
 

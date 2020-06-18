@@ -1,6 +1,14 @@
-# Base folder 2vj1
+# PDB 2vj1
 
-## Files downloaded from wwPDB:
+## Overview
+
+**Protein name:** 3c like proteinase
+
+**Organism:** SARS-CoV
+
+**Method:** X-Ray Diffraction
+
+## Basefolder
 
 2vj1.pdb and 2vj1.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
 
@@ -8,18 +16,32 @@
 
 2vj1.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
 
+## Subfolders
+
+
+
+
+
+**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/3c_like_proteinase/SARS-CoV/2vj1/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/3c_like_proteinase/SARS-CoV/2vj1/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/3c_like_proteinase/SARS-CoV/2vj1/validation/molprobity) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/2vj1/validation/Xtriage_output.log) 
+
 ## Raw diffraction data
 
---<br> 
+No depostition. --<br> 
 
 ## Data Summary
+**Diffraction Data Quality**
+
 |   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
 |   |2.25 Å|99.8  %|<img width=50/>12.90|
 
+**Discrepancy between model and data (the lower the better)**
+
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
 ||  0.1830|  0.2560|
+
+**Geometry validation (the lower, the better)**
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
@@ -35,4 +57,6 @@
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/2vj1
  
 **PDBr**: https://www.rcsb.org/structure/2vj1 
+
+**Look at the structure with 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=2vj1
 

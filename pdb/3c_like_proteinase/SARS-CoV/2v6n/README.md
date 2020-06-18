@@ -1,6 +1,14 @@
-# Base folder 2v6n
+# PDB 2v6n
 
-## Files downloaded from wwPDB:
+## Overview
+
+**Protein name:** 3c like proteinase
+
+**Organism:** SARS-CoV
+
+**Method:** X-Ray Diffraction
+
+## Basefolder
 
 2v6n.pdb and 2v6n.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
 
@@ -8,18 +16,32 @@
 
 2v6n.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
 
+## Subfolders
+
+
+
+
+
+**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/3c_like_proteinase/SARS-CoV/2v6n/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/3c_like_proteinase/SARS-CoV/2v6n/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/3c_like_proteinase/SARS-CoV/2v6n/validation/molprobity) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/2v6n/validation/Xtriage_output.log) [**BUSTER**](https://www.globalphasing.com/buster/wiki/index.cgi?Covid19Pdb2V6N)
+
 ## Raw diffraction data
 
---<br> 
+No depostition. --<br> 
 
 ## Data Summary
+**Diffraction Data Quality**
+
 |   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
 |   |1.98 Å|95.6  %|<img width=50/>12.80|
 
+**Discrepancy between model and data (the lower the better)**
+
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
 ||  0.1640|  0.2110|
+
+**Geometry validation (the lower, the better)**
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
@@ -35,4 +57,6 @@
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/2v6n
  
 **PDBr**: https://www.rcsb.org/structure/2v6n 
+
+**Look at the structure with 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=2v6n
 

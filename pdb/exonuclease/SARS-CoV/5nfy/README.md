@@ -1,6 +1,14 @@
-# Base folder 5nfy
+# PDB 5nfy
 
-## Files downloaded from wwPDB:
+## Overview
+
+**Protein name:** exonuclease
+
+**Organism:** SARS-CoV
+
+**Method:** X-Ray Diffraction
+
+## Basefolder
 
 5nfy.pdb and 5nfy.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
 
@@ -8,18 +16,32 @@
 
 5nfy.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
 
+## Subfolders
+
+**isolde** - contains manual re-refinements from ISOLDE in ChimeraX, done by Tristan Croll. See details [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/exonuclease/SARS-CoV/5nfy/isolde/directory_info.txt)
+
+
+
+**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/exonuclease/SARS-CoV/5nfy/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/exonuclease/SARS-CoV/5nfy/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/exonuclease/SARS-CoV/5nfy/validation/molprobity) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/exonuclease/SARS-CoV/5nfy/validation/Xtriage_output.log) 
+
 ## Raw diffraction data
 
---<br> 
+No depostition. --<br> 
 
 ## Data Summary
+**Diffraction Data Quality**
+
 |   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
 |   |3.38 Å|99.5  %|<img width=50/>15.10|
 
+**Discrepancy between model and data (the lower the better)**
+
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
 ||  0.1930|  0.2350|
+
+**Geometry validation (the lower, the better)**
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
@@ -35,4 +57,6 @@
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/5nfy
  
 **PDBr**: https://www.rcsb.org/structure/5nfy 
+
+**Look at the structure with 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=5nfy
 

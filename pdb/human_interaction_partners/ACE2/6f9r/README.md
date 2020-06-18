@@ -1,6 +1,14 @@
-# Base folder 6f9r
+# PDB 6f9r
 
-## Files downloaded from wwPDB:
+## Overview
+
+**Protein name:** human interaction partners
+
+**Organism:** ACE2
+
+**Method:** X-Ray Diffraction
+
+## Basefolder
 
 6f9r.pdb and 6f9r.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
 
@@ -8,18 +16,32 @@
 
 6f9r.mtz - contains structure factors after automatic refinement of molecular model against the diffraction data.
 
+## Subfolders
+
+
+
+
+
+**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/human_interaction_partners/ACE2/6f9r/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/human_interaction_partners/ACE2/6f9r/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/human_interaction_partners/ACE2/6f9r/validation/molprobity) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/ACE2/6f9r/validation/Xtriage_output.log) 
+
 ## Raw diffraction data
 
---<br> 
+No depostition. --<br> 
 
 ## Data Summary
+**Diffraction Data Quality**
+
 |   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
 |   |1.85 Å|98.6  %|<img width=50/>7.700|
 
+**Discrepancy between model and data (the lower the better)**
+
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
 ||  0.1980|  0.2280|
+
+**Geometry validation (the lower, the better)**
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
@@ -35,4 +57,6 @@
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/6f9r
  
 **PDBr**: https://www.rcsb.org/structure/6f9r 
+
+**Look at the structure with 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=6f9r
 

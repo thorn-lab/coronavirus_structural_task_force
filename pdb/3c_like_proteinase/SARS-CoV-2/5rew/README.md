@@ -6,7 +6,7 @@
 
 **Organism:** SARS-CoV-2
 
-**Method:** X-ray Diffraction
+**Method:** X-Ray Diffraction
 
 ## Basefolder
 
@@ -24,24 +24,24 @@
 
 **validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/3c_like_proteinase/SARS-CoV-2/5rew/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/3c_like_proteinase/SARS-CoV-2/5rew/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/3c_like_proteinase/SARS-CoV-2/5rew/validation/molprobity) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV-2/5rew/validation/Xtriage_output.log) [**BUSTER**](https://www.globalphasing.com/buster/wiki/index.cgi?Covid19Pdb5REW)
 
-## Raw diffraction data are available
+## Raw diffraction data
 
-**Click** [here](https://zenodo.org/record/3731006) 
+Avaibale. **Click** [here](https://zenodo.org/record/3731006) 
 
 ## Data Summary
-Diffraction Data Quality:
+**Diffraction Data Quality**
 
 |   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
 |   |1.55 Å|99.2  %|<img width=50/>5.600|
 
-Discrepancy between model and data (the lower the better):
+**Discrepancy between model and data (the lower the better)**
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
 ||  0.1850|  0.2240|
 
-Geometry validation (the lower, the better):
+**Geometry validation (the lower, the better)**
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
@@ -58,5 +58,5 @@ Geometry validation (the lower, the better):
  
 **PDBr**: https://www.rcsb.org/structure/5rew 
 
-**3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=5rew
+**Look at the structure with 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=5rew
 
