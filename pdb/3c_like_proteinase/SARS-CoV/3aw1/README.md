@@ -47,7 +47,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  2.24|  0.00 %|
 
-**Auspex Pathologies**: manhattan, missing line, terracing (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/3aw1/validation/auspex/3aw1_auspex_comments.txt))
+**Auspex Pathologies**<br> manhattan, missing line, terracing (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/3aw1/validation/auspex/3aw1_auspex_comments.txt))
 
  
 

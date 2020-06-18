@@ -47,7 +47,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  1.13|  0.00 %|
 
-**Auspex Pathologies**: missing line, missing rings (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/ACE2/4c2p/validation/auspex/4c2p_auspex_comments.txt))
+**Auspex Pathologies**<br> missing line, missing rings (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/ACE2/4c2p/validation/auspex/4c2p_auspex_comments.txt))
 
  
 

@@ -47,7 +47,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  1.46|  0.00 %|
 
-**Auspex Pathologies**: ice rings (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/5c5o/validation/auspex/5c5o_auspex_comments.txt))
+**Auspex Pathologies**<br> ice rings (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/5c5o/validation/auspex/5c5o_auspex_comments.txt))
 
  
 

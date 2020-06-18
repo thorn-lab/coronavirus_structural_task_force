@@ -47,7 +47,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  2.27|  0.48 %|
 
-**Auspex Pathologies**: missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/surface_glycoprotein/SARS-CoV/2ghw/validation/auspex/2ghw_auspex_comments.txt))
+**Auspex Pathologies**<br> missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/surface_glycoprotein/SARS-CoV/2ghw/validation/auspex/2ghw_auspex_comments.txt))
 
  
 

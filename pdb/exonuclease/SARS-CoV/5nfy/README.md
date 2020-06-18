@@ -47,7 +47,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  2.38|  2.69 %|
 
-**Auspex Pathologies**: missing ring (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/exonuclease/SARS-CoV/5nfy/validation/auspex/5nfy_auspex_comments.txt))
+**Auspex Pathologies**<br> missing ring (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/exonuclease/SARS-CoV/5nfy/validation/auspex/5nfy_auspex_comments.txt))
 
  
 

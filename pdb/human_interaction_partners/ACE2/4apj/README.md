@@ -47,7 +47,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  1.23|  0.34 %|
 
-**Auspex Pathologies**: missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/ACE2/4apj/validation/auspex/4apj_auspex_comments.txt))
+**Auspex Pathologies**<br> missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/ACE2/4apj/validation/auspex/4apj_auspex_comments.txt))
 
  
 

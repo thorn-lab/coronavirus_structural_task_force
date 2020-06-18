@@ -47,7 +47,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  1.51|  0.00 %|
 
-**Auspex Pathologies**: missing line, terracing (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/surface_glycoprotein/SARS-CoV/1zvb/validation/auspex/1zvb_auspex_comments.txt))
+**Auspex Pathologies**<br> missing line, terracing (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/surface_glycoprotein/SARS-CoV/1zvb/validation/auspex/1zvb_auspex_comments.txt))
 
  
 

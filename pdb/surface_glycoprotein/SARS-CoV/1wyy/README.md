@@ -47,7 +47,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  1.90|  0.41 %|
 
-**Auspex Pathologies**: manhatten, missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/surface_glycoprotein/SARS-CoV/1wyy/validation/auspex/1wyy_auspex_comments.txt))
+**Auspex Pathologies**<br> manhatten, missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/surface_glycoprotein/SARS-CoV/1wyy/validation/auspex/1wyy_auspex_comments.txt))
 
  
 

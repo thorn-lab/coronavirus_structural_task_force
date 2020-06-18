@@ -47,7 +47,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  2.56|  0.49 %|
 
-**Auspex Pathologies**: missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/endornase/SARS-CoV/2rhb/validation/auspex/2rhb_auspex_comments.txt))
+**Auspex Pathologies**<br> missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/endornase/SARS-CoV/2rhb/validation/auspex/2rhb_auspex_comments.txt))
 
  
 

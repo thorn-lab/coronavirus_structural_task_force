@@ -47,7 +47,7 @@ Available. **Click** [here](https://doi.org/10.18430/m36vww)
 |---|-------------:|----------------:|
 ||  1.09|  0.00 %|
 
-**Auspex Pathologies**: all good (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/endornase/SARS-CoV-2/6vww/validation/auspex/6vww_auspex_comments.txt))
+**Auspex Pathologies**<br> all good (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/endornase/SARS-CoV-2/6vww/validation/auspex/6vww_auspex_comments.txt))
 
  
 

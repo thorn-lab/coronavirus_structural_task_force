@@ -47,7 +47,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  3.49|  7.13 %|
 
-**Auspex Pathologies**: terracing, manhattan (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/ACE2/3sck/validation/auspex/3sck_auspex_comments.txt))
+**Auspex Pathologies**<br> terracing, manhattan (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/ACE2/3sck/validation/auspex/3sck_auspex_comments.txt))
 
  
 

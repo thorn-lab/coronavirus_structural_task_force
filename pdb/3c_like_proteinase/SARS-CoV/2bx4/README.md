@@ -47,7 +47,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  1.92|  1.35 %|
 
-**Auspex Pathologies**: ice rings, missing line, terracing, manhattan (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/2bx4/validation/auspex/2bx4_auspex_comments.txt))
+**Auspex Pathologies**<br> ice rings, missing line, terracing, manhattan (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/2bx4/validation/auspex/2bx4_auspex_comments.txt))
 
  
 

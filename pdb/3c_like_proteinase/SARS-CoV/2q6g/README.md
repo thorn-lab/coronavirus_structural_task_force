@@ -47,7 +47,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  2.79|  0.49 %|
 
-**Auspex Pathologies**: manhattan (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/2q6g/validation/auspex/2q6g_auspex_comments.txt))
+**Auspex Pathologies**<br> manhattan (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/2q6g/validation/auspex/2q6g_auspex_comments.txt))
 
  
 

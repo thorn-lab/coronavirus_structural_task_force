@@ -47,7 +47,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  2.11|  0.99 %|
 
-**Auspex Pathologies**: terracing (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp3/SARS-CoV/2w2g/validation/auspex/2w2g_auspex_comments.txt))
+**Auspex Pathologies**<br> terracing (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp3/SARS-CoV/2w2g/validation/auspex/2w2g_auspex_comments.txt))
 
  
 

@@ -47,7 +47,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  1.24|  0.00 %|
 
-**Auspex Pathologies**: all good (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp8-nsp7/SARS-CoV-2/6wiq/validation/auspex/6wiq_auspex_comments.txt))
+**Auspex Pathologies**<br> all good (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp8-nsp7/SARS-CoV-2/6wiq/validation/auspex/6wiq_auspex_comments.txt))
 
  
 

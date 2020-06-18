@@ -47,7 +47,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  2.34|  0.24 %|
 
-**Auspex Pathologies**: missing rings (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/Cathepsin_L/6ezx/validation/auspex/6ezx_auspex_comments.txt))
+**Auspex Pathologies**<br> missing rings (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/Cathepsin_L/6ezx/validation/auspex/6ezx_auspex_comments.txt))
 
  
 

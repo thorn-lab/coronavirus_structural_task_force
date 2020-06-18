@@ -47,7 +47,7 @@ Available. **Click** [here](https://doi.org/10.18430/m36vxs)
 |---|-------------:|----------------:|
 ||  1.13|  0.00 %|
 
-**Auspex Pathologies**: all good (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp3/SARS-CoV-2/6vxs/validation/auspex/6vxs_auspex_comments.txt))
+**Auspex Pathologies**<br> all good (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp3/SARS-CoV-2/6vxs/validation/auspex/6vxs_auspex_comments.txt))
 
  
 

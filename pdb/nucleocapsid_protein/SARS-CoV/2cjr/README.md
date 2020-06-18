@@ -47,7 +47,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  3.77|  4.89 %|
 
-**Auspex Pathologies**: manhattan, , terracing (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nucleocapsid_protein/SARS-CoV/2cjr/validation/auspex/2cjr_auspex_comments.txt))
+**Auspex Pathologies**<br> manhattan, , terracing (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nucleocapsid_protein/SARS-CoV/2cjr/validation/auspex/2cjr_auspex_comments.txt))
 
  
 

@@ -47,7 +47,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  1.19|  0.27 %|
 
-**Auspex Pathologies**: n of AUSPEX plots suggeests the following problems: (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp8-nsp7/SARS-CoV-2/6wqd/validation/auspex/6wqd_auspex_comments.txt))
+**Auspex Pathologies**<br> n of AUSPEX plots suggeests the following problems: (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp8-nsp7/SARS-CoV-2/6wqd/validation/auspex/6wqd_auspex_comments.txt))
 
  
 

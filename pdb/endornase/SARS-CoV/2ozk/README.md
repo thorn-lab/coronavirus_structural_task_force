@@ -47,7 +47,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  3.20|  2.37 %|
 
-**Auspex Pathologies**: ice rings, missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/endornase/SARS-CoV/2ozk/validation/auspex/2ozk_auspex_comments.txt))
+**Auspex Pathologies**<br> ice rings, missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/endornase/SARS-CoV/2ozk/validation/auspex/2ozk_auspex_comments.txt))
 
  
 

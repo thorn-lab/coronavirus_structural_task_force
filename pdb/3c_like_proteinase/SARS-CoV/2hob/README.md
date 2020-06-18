@@ -47,7 +47,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  1.40|  0.00 %|
 
-**Auspex Pathologies**: ice rings, manhattan (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/2hob/validation/auspex/2hob_auspex_comments.txt))
+**Auspex Pathologies**<br> ice rings, manhattan (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/2hob/validation/auspex/2hob_auspex_comments.txt))
 
  
 

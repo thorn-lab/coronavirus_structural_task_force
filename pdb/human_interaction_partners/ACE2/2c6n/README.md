@@ -47,7 +47,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  3.67|  3.46 %|
 
-**Auspex Pathologies**: bad or missing beam stop mask (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/ACE2/2c6n/validation/auspex/2c6n_auspex_comments.txt))
+**Auspex Pathologies**<br> bad or missing beam stop mask (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/ACE2/2c6n/validation/auspex/2c6n_auspex_comments.txt))
 
  
 

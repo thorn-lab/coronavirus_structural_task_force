@@ -47,7 +47,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  1.44|  0.64 %|
 
-**Auspex Pathologies**: missing line, terracing (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/Cathepsin_L/1cs8/validation/auspex/1cs8_auspex_comments.txt))
+**Auspex Pathologies**<br> missing line, terracing (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/Cathepsin_L/1cs8/validation/auspex/1cs8_auspex_comments.txt))
 
  
 

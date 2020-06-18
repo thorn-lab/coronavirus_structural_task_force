@@ -47,7 +47,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  2.23|  0.00 %|
 
-**Auspex Pathologies**: terracing, ice rings (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/Cathepsin_L/3h8b/validation/auspex/3h8b_auspex_comments.txt))
+**Auspex Pathologies**<br> terracing, ice rings (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/Cathepsin_L/3h8b/validation/auspex/3h8b_auspex_comments.txt))
 
  
 

@@ -47,7 +47,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  2.14|  0.00 %|
 
-**Auspex Pathologies**: ice rings, bad or missing beam stop mask, terracing (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/3ea8/validation/auspex/3ea8_auspex_comments.txt))
+**Auspex Pathologies**<br> ice rings, bad or missing beam stop mask, terracing (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/3ea8/validation/auspex/3ea8_auspex_comments.txt))
 
  
 
