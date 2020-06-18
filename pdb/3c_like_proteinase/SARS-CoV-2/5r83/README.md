@@ -2,11 +2,11 @@
 
 ## Overview
 
-**Protein name:** 3c like proteinase
+**Protein name**: 3c like proteinase
 
-**Organism:** SARS-CoV-2
+**Organism**: SARS-CoV-2
 
-**Method:** X-Ray Diffraction
+**Method**: X-Ray Diffraction
 
 ## Basefolder
 
@@ -26,7 +26,7 @@
 
 ## Raw diffraction data
 
-Avaibale. **Click** [here](https://zenodo.org/record/3730610) 
+Available. **Click** [here](https://zenodo.org/record/3730610) 
 
 ## Data Summary
 **Diffraction Data Quality**

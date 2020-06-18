@@ -2,11 +2,11 @@
 
 ## Overview
 
-**Protein name:** nsp3
+**Protein name**: nsp3
 
-**Organism:** SARS-CoV-2
+**Organism**: SARS-CoV-2
 
-**Method:** X-Ray Diffraction
+**Method**: X-Ray Diffraction
 
 ## Basefolder
 
@@ -26,7 +26,7 @@
 
 ## Raw diffraction data
 
-Avaibale. **Click** [here](https://doi.org/10.18430/m36w9c) 
+Available. **Click** [here](https://doi.org/10.18430/m36w9c) 
 
 ## Data Summary
 **Diffraction Data Quality**

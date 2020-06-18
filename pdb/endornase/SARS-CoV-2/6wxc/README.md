@@ -2,11 +2,11 @@
 
 ## Overview
 
-**Protein name:** endornase
+**Protein name**: endornase
 
-**Organism:** SARS-CoV-2
+**Organism**: SARS-CoV-2
 
-**Method:** X-Ray Diffraction
+**Method**: X-Ray Diffraction
 
 ## Basefolder
 
@@ -26,7 +26,7 @@
 
 ## Raw diffraction data
 
-No depostition. --<br> 
+No public deposition. --<br> 
 
 ## Data Summary
 **Diffraction Data Quality**

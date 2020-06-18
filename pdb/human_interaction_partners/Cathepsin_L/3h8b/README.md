@@ -2,11 +2,11 @@
 
 ## Overview
 
-**Protein name:** human interaction partners
+**Protein name**: human interaction partners
 
-**Organism:** Cathepsin_L
+**Organism**: Cathepsin_L
 
-**Method:** X-Ray Diffraction
+**Method**: X-Ray Diffraction
 
 ## Basefolder
 
@@ -26,7 +26,7 @@
 
 ## Raw diffraction data
 
-No depostition. --<br> 
+No public deposition. --<br> 
 
 ## Data Summary
 **Diffraction Data Quality**
