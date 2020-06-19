@@ -1,0 +1,98 @@
+ BEAM_DIVERGENCE=   0.20643  BEAM_DIVERGENCE_E.S.D.=   0.02064
+ REFLECTING_RANGE=  0.91775  REFLECTING_RANGE_E.S.D.=  0.13111
+! written by generate_XDS.INP version 0.94 (16-Mar-2020)
+SNRC=50
+JOB=  DEFPIX INTEGRATE CORRECT
+ORGX= 1253.00 ORGY= 1267.00  ! values from frame header; only read by XYCORR, IDXREF     
+
+DETECTOR_DISTANCE= 516.83000 !read by XYCORR, IDXREF. Negative if detector normal points to crystal.               
+OSCILLATION_RANGE= 0.5000   
+STARTING_ANGLE= -90.0000                 
+X-RAY_WAVELENGTH= 0.97918                      
+NAME_TEMPLATE_OF_DATA_FRAMES=/home/dale/Structures/sars-2/nsp3/6w9c/images/IDP51000_6w9c/data/y3_b07b_?????.cbf
+! REFERENCE_DATA_SET=xxx/XDS_ASCII.HKL ! e.g. to ensure consistent indexing  
+DATA_RANGE=2 100 !140  raddam                                                   
+SPOT_RANGE=1 30                                                     
+! BACKGROUND_RANGE=1 10 ! rather use defaults (first 5 degree of rotation)   
+
+SPACE_GROUP_NUMBER=5                   ! 0 if unknown
+UNIT_CELL_CONSTANTS= 190.87  110.28   64.22      90.00   96.30   90.00 ! put correct values if known
+INCLUDE_RESOLUTION_RANGE=50 2.5  ! after CORRECT, insert high resol limit; re-run CORRECT
+! IDXREF now obeys INCLUDE_RESOLUTION_RANGE and EXCLUDE_RESOLUTION_RANGE to exclude ice-rings
+
+!FRIEDEL'S_LAW=FALSE     ! This acts only on the CORRECT step
+! If the anom signal turns out to be, or is known to be, very low or absent,
+! use FRIEDEL'S_LAW=TRUE instead (or comment out the line); re-run CORRECT
+
+! remove the "!" in the following line:
+! STRICT_ABSORPTION_CORRECTION=TRUE
+! if the anomalous signal is strong: in that case, in CORRECT.LP the three
+! "CHI^2-VALUE OF FIT OF CORRECTION FACTORS" values are significantly> 1, e.g. 1.5
+!
+! exclude (mask) untrusted areas of detector, e.g. beamstop shadow :
+! UNTRUSTED_RECTANGLE= 1800 1950 2100 2150 ! x-min x-max y-min y-max ! repeat
+! UNTRUSTED_ELLIPSE= 2034 2070 1850 2240 ! x-min x-max y-min y-max ! if needed
+! UNTRUSTED_QUADRILATERAL= x1 y1 x2 y2 x3 y3 x4 y4 ! see documentation
+!
+! parameters with changes wrt default values:
+TRUSTED_REGION=0.0 1.2 ! partially use corners of detector (0 1.4143: use all pixels)
+VALUE_RANGE_FOR_TRUSTED_DETECTOR_PIXELS=6000. 30000. ! often 7000 or 8000 is ok
+STRONG_PIXEL=4           ! COLSPOT: only use strong reflections (default is 3)
+MINIMUM_NUMBER_OF_PIXELS_IN_A_SPOT=3 ! default of 6 is sometimes too high
+! close spots/long cell axis: reduce SEPMIN and CLUSTER_RADIUS from their defaults of 7 and 3.5
+SEPMIN=4  CLUSTER_RADIUS=2 ! 4 and 2 for Pixel Array Detectors
+! since XDS 01-MAR-2015, POSITION supersedes DISTANCE.
+! nowadays headers are usually correct so refine POSITION in INTEGRATE but not IDXREF if low to medium resolution
+! however, if the spots from COLSPOT extend to 2A then POSITION could, and if 1.5A POSITION should be refined
+REFINE(IDXREF)=CELL BEAM ORIENTATION AXIS  ! add POSITION if high resolution, or DETECTOR_DISTANCE inaccurate
+REFINE(INTEGRATE)= POSITION BEAM ORIENTATION ! AXIS CELL . If 1.5A or higher it is ok to refine CELL
+! REFINE(CORRECT)=CELL BEAM ORIENTATION AXIS POSITION ! Default is: refine everything
+
+! parameters specifically for this detector and beamline:
+DETECTOR= PILATUS MINIMUM_VALID_PIXEL_VALUE=0 OVERLOAD= 1267439  !PILATUS
+SENSOR_THICKNESS= 1
+! attention CCD detectors: for very high resolution (better than 1A) make sure to specify SILICON
+! as about 32* what CORRECT.LP suggests (absorption of phosphor is much higher than that of silicon).
+! Better: read the article http://strucbio.biologie.uni-konstanz.de/xdswiki/index.php/SILICON .
+NX= 2463 NY= 2527  QX= 0.172  QY= 0.172 ! to make CORRECT happy if frames are unavailable
+
+ROTATION_AXIS=-1 0 0  ! if this is wrong, please contact author.
+DIRECTION_OF_DETECTOR_X-AXIS=1 0 0
+DIRECTION_OF_DETECTOR_Y-AXIS=0 1 0
+INCIDENT_BEAM_DIRECTION=0 0 1          ! only read by IDXREF
+FRACTION_OF_POLARIZATION=0.98   ! better value is provided by beamline staff!
+POLARIZATION_PLANE_NORMAL=0 1 0        ! only used by CORRECT
+!used by DEFPIX and CORRECT to exclude ice-reflections / ice rings - uncomment if necessary
+!fine-grained list is in Thorn et al http://journals.iucr.org/d/issues/2017/09/00/hi5647/index.html
+!EXCLUDE_RESOLUTION_RANGE= 3.93 3.87 !ice-ring at 3.897 Angstrom
+!EXCLUDE_RESOLUTION_RANGE= 3.70 3.64 !ice-ring at 3.669 Angstrom
+!EXCLUDE_RESOLUTION_RANGE= 3.47 3.41 !ice-ring at 3.441 Angstrom
+!EXCLUDE_RESOLUTION_RANGE= 2.70 2.64 !ice-ring at 2.671 Angstrom
+!EXCLUDE_RESOLUTION_RANGE= 2.28 2.22 !ice-ring at 2.249 Angstrom
+!EXCLUDE_RESOLUTION_RANGE= 2.102 2.042 !ice-ring at 2.072 Angstrom - strong
+!EXCLUDE_RESOLUTION_RANGE= 1.978 1.918 !ice-ring at 1.948 Angstrom - weak
+!EXCLUDE_RESOLUTION_RANGE= 1.948 1.888 !ice-ring at 1.918 Angstrom - strong
+!EXCLUDE_RESOLUTION_RANGE= 1.913 1.853 !ice-ring at 1.883 Angstrom - weak
+!EXCLUDE_RESOLUTION_RANGE= 1.751 1.691 !ice-ring at 1.721 Angstrom - weak
+! additional ice-ring resolution ranges: 1.524 1.519, 1.473 1.470, 1.444 1.440, 1.372 1.368, 1.367 1.363,
+! 1.299 1.296, 1.275 1.274, 1.261 1.259, 1.224 1.222, 1.171 1.168, 1.124 1.122 (compiled by GlobalPhasing)
+
+NUMBER_OF_PROFILE_GRID_POINTS_ALONG_ALPHA/BETA=13 ! Default is 9 - Increasing may improve data 
+NUMBER_OF_PROFILE_GRID_POINTS_ALONG_GAMMA=13      ! accuracy, particularly if finely-sliced on phi, 
+!                                                   and does not seem to have any downsides. 
+UNTRUSTED_RECTANGLE= 487  495     0 2528
+UNTRUSTED_RECTANGLE= 981  989     0 2528
+UNTRUSTED_RECTANGLE=1475 1483     0 2528
+UNTRUSTED_RECTANGLE=1969 1977     0 2528
+UNTRUSTED_RECTANGLE=   0 2464   195  213
+UNTRUSTED_RECTANGLE=   0 2464   407  425
+UNTRUSTED_RECTANGLE=   0 2464   619  637
+UNTRUSTED_RECTANGLE=   0 2464   831  849
+UNTRUSTED_RECTANGLE=   0 2464  1043 1061
+UNTRUSTED_RECTANGLE=   0 2464  1255 1273
+UNTRUSTED_RECTANGLE=   0 2464  1467 1485
+UNTRUSTED_RECTANGLE=   0 2464  1679 1697
+UNTRUSTED_RECTANGLE=   0 2464  1891 1909
+UNTRUSTED_RECTANGLE=   0 2464  2103 2121
+UNTRUSTED_RECTANGLE=   0 2464  2315 2333
+UNTRUSTED_QUADRILATERAL= 3 1237 1226 1221 1245 1326 5 1359

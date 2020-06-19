@@ -1,0 +1,912 @@
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 7.0.077: AIMLESS            version 0.7.4 : 13/12/18##
+ ###############################################################
+ User: unknown  Run date: 12/ 5/2020 Run time: 23:58:42 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+ as well as any specific reference in the program write-up.
+
+==== Command line arguments ====
+hklin ../eocdgF42qmcTbhYV-SWS-xdsmtz-mrf.mtz
+xmlout aimless_alldata.xml
+scales aimless_alldata.scales1
+plot
+aimless_alldata.plt
+rogues aimless_alldata.rogues
+correlplot aimless_alldata_correl.xmgr
+rogueplot aimless_alldata_rogue.xmgr
+normplot aimless_alldata_norm.xmgr
+anomplot aimless_alldata_anom.xmgr
+hklout aimless_alldata.mtz
+scalepack aimless_alldata.sca
+
+OS type:      linux
+Release Date: 13th December 2018
+
+==== Input command lines ====
+
+ANOMALOUS OFF
+RUN        1 BATCH     2 TO   100
+
+RUN        2 BATCH  1001 TO  1050
+ONLYMERGE
+BINS 10
+SDCORRECTION NOREFINE INDIVIDUAL FIXSDB RUN 1 0.89 0.00 -0.0441
+SDCORRECTION NOREFINE INDIVIDUAL FIXSDB RUN 2 0.98 0.00 0.1093
+!RESOLUTION RUN   1   43.75 2.6572 ! recommended resolution cut based on CC<    0.150
+!RESOLUTION RUN   2   43.75 2.5015 
+
+REJECT SCALE   6 ALL -8 
+REJECT MERGE   6 ALL -8 
+!
+REFINE PARALLEL 8
+!
+SCALES CONSTANT
+REJECT EMAX 0.0
+OUTPUT AVERAGE UNMERGED
+RESTORE aimless.scales
+ANALYSIS CCMINIMUM 0.3 ISIGMINIMUM 0.0
+
+====     End of input    ====
+
+
+        ******************************************************
+        *                                                    *
+        *                      AIMLESS                       *
+        *                       0.7.4                        *
+        *                                                    *
+        *     Scaling & analysis of unmerged intensities     *
+        *     Phil Evans MRC LMB, Cambridge                  *
+        *                                                    *
+        ******************************************************
+
+
+---------------------------------------------------------------
+
+Reading data from HKLIN filename: ../eocdgF42qmcTbhYV-SWS-xdsmtz-mrf.mtz
+
+Reflection list generated from file: ../eocdgF42qmcTbhYV-SWS-xdsmtz-mrf.mtz
+
+Title: From XDS file eocdgF42qmcTbhYV.HKL, XDS run on 12-May-2020 from images
+
+   Space group from HKLIN file : C 1 2 1
+   Cell:   190.95  110.30   64.28   90.00   96.29   90.00
+   Resolution range in file:     43.74        2.50
+
+Time for reading HKLIN: cpu time: 0.08 secs, elapsed time: 0.0 secs
+
+   Resolution range accepted:    43.74        2.50
+
+   Number of reflections  =         28387
+   Number of observations =         65419
+   Number of parts        =         65419
+   Number of batches      =           149
+   Number of datasets     =             1
+
+   
+ * Dataset information *
+      Project: XDSproject Crystal: XDScrystal Dataset: XDSdataset
+         Unit cell:    190.95  110.30   64.28   90.00   96.29   90.00
+         Wavelength:  0.97918
+         Runs:       1      2
+      Run number:   1 consists of batches 2 - 100
+         Resolution range for run:    43.74        2.50
+         Phi range:     0.00 to     0.00   Time range:     0.00 to     0.00
+      Run number:   2 consists of batches 1001 - 1050
+         Resolution range for run:    43.74        2.50
+         Phi range:     0.00 to     0.00   Time range:     0.00 to     0.00
+
+   Average unit cell:   190.95  110.30   64.28   90.00   96.29   90.00
+   
+Summation-integration (or sole) intensities will be used
+
+Outlier rejection parameters:
+In scaling:
+Reflections measured 3 or more times:   6 maximum deviation from weighted mean of all other observations
+Reflections measured twice:   6 maximum deviation from weighted mean
+   Policy for deviant reflections measured twice: KEEP
+No maximum E test
+
+In merging:
+Reflections measured 3 or more times:   6 maximum deviation from weighted mean of all other observations
+Reflections measured twice:   6 maximum deviation from weighted mean
+   Policy for deviant reflections measured twice: KEEP
+No maximum E test
+
+
+Parallisation of refinement:
+Number of processors used for refinement stages =  8 of maximum  8
+
+>>>> Layout of scale factors: <<<<
+
+Run     1
+Single scale factor
+No relative B-factors
+
+Run     2
+Single scale factor
+No relative B-factors
+
+Parameter variances (DIAGONAL) will be used for sigma(I) estimates
+
+
+Scale parameters:
+
+Run     1
+Primary scales and number of observations
+
+Scales:    1.000
+Sd:        0.000
+Nobs:      12654
+
+Run     2
+Primary scales and number of observations
+
+Scales:    0.997
+Sd:        0.000
+Nobs:       8693
+
+
+
+========= Checking for scaling overlaps =========
+
+
+The average fractional overlap = Noverlapped/Ntotal, where Noverlapped is the number of observations
+with equivalent observations in a different rotation range, and Ntotal is the total number of observations
+
+Average fractional overlap between rotation ranges for run     1
+      0.71
+
+Average fractional overlap between rotation ranges for run     2
+      0.98
+
+Overall fractional overlap between rotation ranges  0.80, minimum  0.71
+
+Time for initial scaling: cpu time: 0.02 secs, elapsed time: 0.0 secs
+
+Optimisation and analysis of standard deviations
+================================================
+
+No refinement of SD correction parameters
+                                  Fulls
+    Run                  SdFac    SdB   SdAdd  ISa
+      1   OnlyFulls       0.89   0.00 -0.0441  0.0
+      2   OnlyFulls       0.98   0.00  0.1093  9.3
+
+
+Normal probability analysis of anomalous differences
+====================================================
+        All data                     Data within expected delta  0.90
+   Slope Intercept     Number            Slope Intercept   Number
+      1.13    0.07      11829             1.08    0.07       7475   
+
+Outlier rejection limits for I+ v I-
+    have been adjusted by a factor    3.70 *    1.08
+
+Reflections measured 3 or more times: -31.9 maximum deviation from weighted mean of all other observations
+Reflections measured twice: -31.9 maximum deviation from weighted mean
+   Policy for deviant reflections measured twice: KEEP
+
+Anomalous flag switched OFF in input, anomalous signal is weak
+
+Outlier analysis
+================
+No Emax test
+Number of rejected outliers within I+ || I- sets:     72,  between I+ & I-      0, on |E|max      0
+
+********************
+* Final statistics *
+********************
+
+
+*******************************************************************
+* Merging statistics for dataset XDSproject/XDScrystal/XDSdataset *
+*******************************************************************
+
+Analysis by Batch is in groups of batches, group width    1.00 degrees,   5 batches/group
+
+Time for determination of anisotropic axes: cpu time: 0.54 secs, elapsed time: 1.0 secs
+Multiplicity 2.3 is above threshold 1.5 so deviant reflections measured twice are REJECTED in SD and Chi^2 analysis
+
+Accepted data:
+Number of unique reflections                      28386
+Number of observations                            65347
+
+Number of rejected outliers                          72
+Number of observations rejected on Emax limit         0
+
+
+Scale factors analysed by Batch for each dataset
+================================================
+
+Note that 0k below is calculated for the centre of each rotation range,
+at theta = 0 (for the B-factor)
+Mn(k) is average applied scale, including any input scale
+0k is the scale calculated excluding any input scale
+Analysis by Batch is in groups of batches, group width    1.00 degrees,   5 batches/group
+
+Bdecay comes from a straight line fit to the B-factors within each run
+
+
+$TABLE:  === Scales v rotation range, XDSdataset:
+$GRAPHS:Mn(k) & 0k (theta=0) v. batch:N:1,5,6:
+:Relative Bfactor & Decay v. batch:A:1,8,9:
+ $$
+    N  Run    Phi    Batch     Mn(k)        0k      Number   Bfactor    Bdecay   $$ $$
+    3    1    0.00       4     1.0000     1.0000      2061    0.0000    0.0000
+    8    1    0.00       9     1.0000     1.0000      2193    0.0000    0.0000
+   13    1    0.00      14     1.0000     1.0000      2208    0.0000    0.0000
+   18    1    0.00      19     1.0000     1.0000      2208    0.0000    0.0000
+   23    1    0.00      24     1.0000     1.0000      2208    0.0000    0.0000
+   28    1    0.00      29     1.0000     1.0000      2201    0.0000    0.0000
+   33    1    0.00      34     1.0000     1.0000      2198    0.0000    0.0000
+   38    1    0.00      39     1.0000     1.0000      2207    0.0000    0.0000
+   43    1    0.00      44     1.0000     1.0000      2186    0.0000    0.0000
+   48    1    0.00      49     1.0000     1.0000      2228    0.0000    0.0000
+   53    1    0.00      54     1.0000     1.0000      2198    0.0000    0.0000
+   58    1    0.00      59     1.0000     1.0000      2223    0.0000    0.0000
+   63    1    0.00      64     1.0000     1.0000      2190    0.0000    0.0000
+   68    1    0.00      69     1.0000     1.0000      2168    0.0000    0.0000
+   73    1    0.00      74     1.0000     1.0000      2199    0.0000    0.0000
+   78    1    0.00      79     1.0000     1.0000      2219    0.0000    0.0000
+   83    1    0.00      84     1.0000     1.0000      2192    0.0000    0.0000
+   88    1    0.00      89     1.0000     1.0000      2207    0.0000    0.0000
+   93    1    0.00      94     1.0000     1.0000      2213    0.0000    0.0000
+   97    1    0.00      98     1.0000     1.0000      1692    0.0000    0.0000
+  102    2    0.00    1003     0.9972     0.9972      2050    0.0000    0.0000
+  107    2    0.00    1008     0.9972     0.9972      2238    0.0000    0.0000
+  112    2    0.00    1013     0.9972     0.9972      2222    0.0000    0.0000
+  117    2    0.00    1018     0.9972     0.9972      2216    0.0000    0.0000
+  122    2    0.00    1023     0.9972     0.9972      2205    0.0000    0.0000
+  127    2    0.00    1028     0.9972     0.9972      2254    0.0000    0.0000
+  132    2    0.00    1033     0.9972     0.9972      2171    0.0000    0.0000
+  137    2    0.00    1038     0.9972     0.9972      2236    0.0000    0.0000
+  142    2    0.00    1043     0.9972     0.9972      2199    0.0000    0.0000
+  146    2    0.00    1047     0.9972     0.9972      2157    0.0000    0.0000
+$$
+    N  Run    Phi    Batch     Mn(k)        0k      Number   Bfactor    Bdecay
+
+
+Agreement between batches
+=========================
+
+ Rmerge in this table is the difference from Mn(Imean),
+  but in later tables Rmerge is the difference from Mn(I+),Mn(I-)
+Mean Chi^2 values are calculated for all data, and also
+ excluding observations with large deviations >5sd, including for reflections measured only twice (Chi^2c)
+
+ SmRmerge and SmMaxRes in table are smoothed over   5 batch groups
+
+
+$TABLE:  Analysis against all Batches for all runs, XDSdataset:
+$GRAPHS:Rmerge v Batch for all runs:N:1,15,6:
+:Filtered Mean(Chi^2)(<5sd) v Batch:N:1,14:
+:Mean(Chi^2), Mean(Chi^2)(<5sd) v Batch:N:1,13,14:
+:Cumulative %completeness & Anom%cmpl v Batch:N:1,10,9:
+:Maximum resolution limit, I/sigma > 1.0:A:1,16,11:
+:Imean & RMS Scatter:N:1,3,4:
+:Imean/RMS scatter:N:1,5:
+:Number of rejects:N:1,8:
+:Cumulative multiplicity:N:1,12:
+ $$
+    N   Batch    Mn(I)   RMSdev  I/rms  Rmerge    Number  Nrej Cm%poss  AnoCmp MaxRes CMlplc   Chi^2  Chi^2c SmRmerge SmMaxRes   $$ $$
+    3       4 436229.5  41095.9  10.61   0.061      4082     0     4.5      -    2.62   0.05    0.88    0.86    0.064     2.64
+    8       9 452875.9  39974.6  11.33   0.060      4342     0     9.3     0.0   2.62   0.09    0.89    0.86    0.064     2.64
+   13      14 424969.8  40912.2  10.39   0.066      4404     2    14.1     0.1   2.62   0.14    0.94    0.90    0.064     2.64
+   18      19 434644.2  42351.2  10.26   0.064      4379     0    18.7     0.3   2.67   0.19    0.87    0.85    0.068     2.66
+   23      24 419985.7  44309.8   9.48   0.069      4372     1    23.2     0.5   2.66   0.24    0.89    0.87    0.073     2.69
+   28      29 374344.2  44710.9   8.37   0.082      4382     0    27.5     1.0   2.77   0.29    0.96    0.92    0.079     2.75
+   33      34 362637.2  48636.1   7.46   0.089      4361     0    31.5     1.7   2.84   0.34    0.94    0.93    0.085     2.82
+   38      39 333937.3  49546.8   6.74   0.098      4383     1    35.2     2.6   2.87   0.39    0.97    0.93    0.095     2.86
+   43      44 346750.1  50777.5   6.83   0.092      4348     4    38.4     4.0   2.86   0.43    0.91    0.88    0.104     2.88
+   48      49 312809.8  57782.8   5.41   0.122      3890     2    41.2     5.8   2.92   0.48    1.03    0.99    0.115     2.91
+   53      54 296480.0  65401.2   4.53   0.147      2155     0    43.7     7.8   2.92   0.53    1.17    1.08    0.127     2.96
+   58      59 269493.5  66782.0   4.04   0.157      2055     3    46.2     9.8   3.01   0.58    1.19    1.11    0.149     3.01
+   63      64 274123.9  77683.3   3.53   0.166      2014     0    48.5    11.9   3.10   0.63    1.31    1.21    0.168     3.06
+   68      69 257970.2  75277.4   3.43   0.178      1936     1    50.7    13.9   3.08   0.68    1.29    1.21    0.183     3.12
+   73      74 273557.4  88941.8   3.08   0.194      1918     0    52.8    16.1   3.16   0.72    1.40    1.31    0.200     3.16
+   78      79 222712.1  79419.9   2.80   0.229      1957     1    54.8    18.2   3.22   0.77    1.28    1.26    0.216     3.20
+   83      84 214696.9  89922.3   2.39   0.251      1952     2    56.7    20.3   3.29   0.82    1.36    1.29    0.241     3.25
+   88      89 232016.8  91544.2   2.53   0.237      1999     0    58.6    22.4   3.27   0.87    1.39    1.28    0.271     3.30
+   93      94 225194.3 105024.9   2.14   0.309      2026     0    60.2    24.4   3.34   0.92    1.45    1.37    0.271     3.30
+   97      98 174849.2  98214.3   1.78   0.374      1602     1    61.4    26.0   3.46   0.95    1.43    1.36    0.271     3.30
+  102    1003 440959.8  73995.6   5.96   0.103      3364     2    62.0    26.5   2.61   1.00    0.88    0.86    0.100     2.65
+  107    1008 456862.4  73252.4   6.24   0.098      4412     0    62.1    26.5   2.63   1.05    0.88    0.87    0.100     2.65
+  112    1013 432017.1  76951.6   5.61   0.103      4396     3    62.1    26.6   2.64   1.10    0.94    0.92    0.100     2.65
+  117    1018 427211.1  67825.4   6.30   0.098      4387     0    62.2    26.6   2.67   1.15    0.85    0.84    0.103     2.68
+  122    1023 453523.8  76652.3   5.92   0.098      4364     0    62.2    26.6   2.68   1.20    0.80    0.79    0.110     2.71
+  127    1028 357794.3  67650.9   5.29   0.119      4469     2    62.2    26.6   2.80   1.25    0.86    0.85    0.117     2.77
+  132    1033 376548.0  82712.7   4.55   0.139      4305     0    62.3    26.6   2.83   1.29    0.93    0.91    0.140     2.87
+  137    1038 337470.1  72521.8   4.65   0.141      4437     1    62.3    26.6   2.95   1.34    0.86    0.85    0.168     2.95
+  142    1043 381415.7 158831.8   2.40   0.220      4355     1    62.3    26.7   3.07   1.39    1.02    0.95    0.168     2.95
+  146    1047 286376.3 133301.8   2.15   0.233      4292     0    62.3    26.7   3.20   1.44    1.12    1.11    0.168     2.95
+$$
+    N   Batch    Mn(I)   RMSdev  I/rms  Rmerge    Number  Nrej Cm%poss  AnoCmp MaxRes CMlplc   Chi^2  Chi^2c SmRmerge SmMaxRes
+
+
+Correlation coefficients for anomalous differences & Imean between random half-datasets (CC1/2)
+===============================================================================================
+
+ CC(1/2) values (for Imean and anomalous differences) are calculated by splitting the data randomly in half
+ CC(1/2)v for Imean is calculated from variances, see Assmann, Brehm & Diederichs(2016),J.Appl.Cryst.49,1021-1028)
+ The RMS Correlation Ratio (RCR) is calculated from a scatter plot of pairs of DeltaI(anom)
+ from the two subsets (halves) by comparing the RMS value (excluding extremes) projected on the line 
+ with slope = 1 ('correlation') with the RMS value perpendicular to this ('error').
+ This ratio will be > 1 if there is a significant anomalous signal
+
+ Rsplit = (1/Sqrt(2)) Sum (|I1 - I2|)/0.5*Sum(I1 + I2) where I1,I2 are the half-dataset intensities as for CC(1/2)
+ Note that internal R-factors of any sort are deprecated as metrics for assessment of effective resolution
+
+ Estimates of maximum resolution for intensities and anomalous differences,
+  based on the point at which CC(1/2) falls below a threshold
+
+ Curve fitting as suggested by Ed Pozharski to a tanh function
+  of the form (1/2)(1 - tanh(z)) where z = (s - d0)/r,
+    s = 1/d^2, d0 is the value of s at the half-falloff value, and r controls the steepness of falloff
+
+Estimate of resolution limit for intensities:
+Threshold (see ANALYSIS keyword):   0.30
+Resolution limit determined from a curve fit to the function (1/2)(1 - tanh((s - d0)/r))
+Estimate of the overall resolution limit   2.56A
+        estimated from the point where the fit drops below threshold
+
+Estimate of resolution limit for significant anomalous differences:
+Threshold (see ANALYSIS keyword):   0.15
+Resolution limit determined from a linear fit
+All scores are below the threshold, ie there is no apparent anomalous signal from CCanom
+
+
+$TABLE:  Correlations CC(1/2) within dataset, XDSdataset:
+$GRAPHS: CC(1/2) v resolution, max resolution 2.56, anom 0.00:0|0.159862x-0.10566|1:2,4,7,9,11,12:
+: RMS anomalous correlation ratio :0|0.159862x0|1.24474:2,6:
+: Rsplit :0|0.159862x0|1.80142:2,9:
+ $$
+  N  1/d^2    Dmid CCanom    Nanom   RCRanom   CC1/2   NCC1/2  CC1/2v   Rsplit     CCfit CCanomfit   $$ $$
+  1  0.0080  11.19  0.216      209     1.245   0.996      655   0.996    0.039     1.000    -0.013
+  2  0.0240   6.46  0.094      322     1.098   0.994     1179   0.994    0.067     0.999    -0.010
+  3  0.0400   5.00 -0.046      367     0.955   0.992     1542   0.992    0.071     0.997    -0.007
+  4  0.0560   4.23 -0.106      397     0.900   0.991     1869   0.990    0.084     0.992    -0.004
+  5  0.0719   3.73  0.031      395     1.031   0.974     2114   0.974    0.139     0.981    -0.001
+  6  0.0879   3.37 -0.080      366     0.923   0.953     2274   0.951    0.214     0.952     0.002
+  7  0.1039   3.10  0.041      378     1.042   0.872     2644   0.879    0.395     0.884     0.005
+  8  0.1199   2.89  0.052      333     1.053   0.742     2637   0.759    0.646     0.747     0.008
+  9  0.1359   2.71  0.049      340     1.050   0.558     2973   0.603    1.027     0.534     0.011
+ 10  0.1519   2.57 -0.014      321     0.986   0.290     3160   0.388    1.801     0.308     0.014
+$$
+Overall:            0.013     3428     1.013   0.991    21047   0.853    0.146
+                   CCanom    Nanom   RCRanom   CC1/2   NCC1/2  CC1/2v   Rsplit     CCfit CCanomfit
+
+
+
+Analysis of anisotropy of data
+==============================
+
+Mn(I/sd) and half-dataset correlation coefficients CC(1/2) are analysed by resolution
+within an maxangle of 20 degrees of principal axes of anisotropy
+weighted according to angle, w = [cos(angle) - cos(maxangle)]/[1 - cos(maxangle)],
+   Principal axes:
+      d1:    1.00 a* + 0.00 c*
+      d2: k axis
+      d3:   -0.33 a* + 0.94 c*
+
+Eigenvalues of [B](orth) along principal axes :    5.302   12.640  -17.942
+Difference between maximum and minimum anisotropic B (= 8 pi^2 U)    30.6
+
+ Estimated maximum resolution limits, d1:  2.50, d2:  0.00, d3:  3.37
+ Columns 'CCft' are values from curve-fitting as for overall analysis
+
+
+$TABLE:  Anisotropy analysis of CC(1/2) and I/sd, XDSdataset:
+$GRAPHS: Anisotropic CC(1/2) v resolution:0|0.159862x-0.0566389|1:2,4,5,6,13,14,15:
+: Anisotropic Mn(I/sd) v resolution:0|0.159862x0|38.264:2,7,8,9:
+: Projected CC(1/2) v resolution:0|0.159862x0|1:2,10,11,12:
+ $$
+  N  1/d^2    Dmid    CC:d1   CC:d2   CC:d3  I/sd:d1  I/sd:d2  I/sd:d3    CCp1    CCp2    CCp3  CCft:d1  CCft:d2  CCft:d3   $$ $$
+  1  0.0080  11.19    0.999   0.999   0.999    38.26    38.26    38.26   0.993   0.993   0.995    1.000   -1.896    0.903
+  2  0.0240   6.46    0.997    -      0.913    28.14      -       4.56   0.986   0.987   0.979    0.999   -1.590    0.836
+  3  0.0400   5.00    0.999    -       -       29.48      -       3.01   0.991   0.988   0.914    0.998   -1.285    0.737
+  4  0.0560   4.23    0.996    -       -       27.48      -       2.03   0.989   0.974   0.453    0.996   -0.979    0.604
+  5  0.0719   3.73    0.990    -       -       20.07      -       0.72   0.983   0.937   0.096    0.991   -0.674    0.451
+  6  0.0879   3.37    0.981    -     -0.036    11.33      -       0.33   0.963   0.807   0.065    0.981   -0.368    0.302
+  7  0.1039   3.10    0.957    -      0.683     7.45     3.27     0.14   0.929   0.699   0.023    0.959   -0.062    0.179
+  8  0.1199   2.89    0.916   0.085  -0.017     4.03     2.26     0.09   0.872   0.586  -0.014    0.915    0.243    0.090
+  9  0.1359   2.71    0.857   0.866   0.011     3.12     1.49     0.05   0.812   0.420  -0.023    0.831    0.549    0.032
+ 10  0.1519   2.57    0.671   0.696  -0.057     1.66     1.42    -0.00   0.689    -     -0.368    0.694    0.854   -0.003
+$$
+Overall:              0.996   0.999   0.998    19.42    35.77    12.42   0.991   0.991   0.991    0.0      0.0      0.0  
+                      CC:d1   CC:d2   CC:d3  I/sd:d1  I/sd:d2  I/sd:d3    CCp1    CCp2    CCp3  CCft:d1  CCft:d2  CCft:d3
+
+
+Cumulative CC(1/2) analysed by Batch for each dataset
+=====================================================
+
+Analysis by Batch is in groups of batches, group width    1.00 degrees,   5 batches/group
+
+
+$TABLE:  Cumulative CC(1/2) in resolution ranges vs. Batch:
+$GRAPHS:Cumulative CC(1/2):N:1,4,5,6,7:
+ $$
+    N  Run   Batch 5.59-3.95 3.95-3.23 3.23-2.80 2.80-2.50   $$ $$
+    3    1       4       -         -         -         -  
+    8    1       9      0.99      0.98      0.89      0.80
+   13    1      14      0.99      0.95      0.89      0.34
+   18    1      19      1.00      0.99      0.91      0.74
+   23    1      24      1.00      0.98      0.83      0.61
+   28    1      29      0.99      0.97      0.82      0.57
+   33    1      34      0.99      0.97      0.82      0.63
+   38    1      39      0.99      0.95      0.72      0.57
+   43    1      44      0.99      0.95      0.77      0.42
+   48    1      49      0.99      0.96      0.65      0.29
+   53    1      54      0.99      0.94      0.67      0.32
+   58    1      59      0.98      0.90      0.58      0.25
+   63    1      64      0.99      0.91      0.58      0.20
+   68    1      69      0.99      0.96      0.48      0.24
+   73    1      74      0.99      0.93      0.56      0.18
+   78    1      79      0.98      0.88      0.31      0.20
+   83    1      84      0.98      0.89      0.31      0.12
+   88    1      89      0.98      0.84      0.29      0.07
+   93    1      94      0.97      0.80      0.49      0.01
+   97    1      98      0.96      0.72      0.32      0.02
+  102    2    1003      0.99      0.98      0.90      0.62
+  107    2    1008      0.99      0.98      0.92      0.57
+  112    2    1013      1.00      0.98      0.89      0.55
+  117    2    1018      1.00      0.98      0.90      0.53
+  122    2    1023      0.99      0.98      0.82      0.52
+  127    2    1028      0.99      0.97      0.77      0.38
+  132    2    1033      1.00      0.97      0.77      0.35
+  137    2    1038      0.99      0.96      0.69      0.31
+  142    2    1043      0.99      0.95      0.81      0.18
+  146    2    1047      0.99      0.96      0.67      0.17
+$$
+    N  Run   Batch 5.59-3.95 3.95-3.23 3.23-2.80 2.80-2.50
+
+
+Analysis by 4sinTheta/Lambda^2 bins (all statistics use Mn(I+),Mn(I-)etc)
+=========================================================================
+
+ Rmrg    :- conventional Rmerge = Sum(|Ihl - < Ih >|)/Sum(< Ih >)
+ Rcum    :- Rmrg up to this range
+ Rfull   :- Rmrg for fully-recorded observations only
+ Rmeas   :- multiplicity-independent R = Sum(Sqrt(N/(N-1))(|Ihl - < Ih >|))/Sum(< Ih >)
+ Rpim    :- Precision-indicating R = Sum(Sqrt(1/(N-1))(|Ihl - < Ih >|))/Sum(< Ih >)
+ Nmeas   :- Number of observations used in statistics
+ AvI     :- unmerged Ihl averaged in bin < Ihl >
+ RMSdev  :- rms scatter of observations from mean < Ih >
+ I/RMS   :- < Ihl > / rms scatter  = Av_I/RMSdev
+ sd      :- average standard deviation derived from experimental SDs, after
+             application of SdFac SdB SdAdd 'correction' terms
+ Mn(I/sd):- average < merged< Ih >/sd(< Ih >) > ~= signal/noise
+ Frcbias :- partial bias = Mean( Mn(If) - Ip )/Mean( Mn(I) )
+             for mixed sets only (If is a full if present, else the
+             partial with the smallest number of parts)
+ Chi^2   :- mean goodness of fit, all data
+ Chi^2c  :- mean goodness of fit, excluding large differences
+
+All statistics in this table are relative to the overall mean I+/- (anomalous off)
+Mean Chi^2 values are calculated for all data, and also
+ excluding observations with large deviations >5sd, including for reflections measured only twice
+
+
+$TABLE:  Analysis against resolution, XDSdataset:
+$GRAPHS:I/sigma, Mean Mn(I)/sd(Mn(I)):0|0.159862x0|38.264:2,13,14:
+:Filtered Mean(Chi^2)(<5sd) v Resolution:N:2,17:
+:Mean(Chi^2), Mean(Chi^2)(<5sd) v Resolution:N:2,16,17:
+:Rmerge, Rfull, Rmeas, Rpim v Resolution:0|0.159862x0|2.20441:2,4,5,7,8:
+:Average I, RMSdeviation and Sd:0|0.159862x0|2.01345e+06:2,10,11,12:
+:Fractional bias:0|0.159862x0|1:2,15:
+ $$
+  N  1/d^2    Dmid   Rmrg  Rfull   Rcum  Rmeas   Rpim    Nmeas      AvI  RMSdev    sd  I/RMS Mn(I/sd)  FrcBias  Chi^2 Chi^2c   $$ $$
+  1  0.0080  11.19  0.040  0.040  0.040  0.049  0.028     1923  2013447 173750 127665   11.6     38.3     -      1.65   1.15
+  2  0.0240   6.46  0.063  0.063  0.049  0.077  0.044     3460   768707  76604  77292   10.0     17.7     -      1.13   1.03
+  3  0.0400   5.00  0.068  0.068  0.056  0.083  0.048     4471   868338 100224  91600    8.7     16.4     -      1.10   1.03
+  4  0.0560   4.23  0.081  0.081  0.064  0.100  0.058     5328   819305 106308 101989    7.7     13.7     -      1.10   1.04
+  5  0.0719   3.73  0.131  0.131  0.074  0.163  0.095     5961   443586  88558  92495    5.0      8.2     -      1.04   1.01
+  6  0.0879   3.37  0.208  0.208  0.085  0.261  0.155     6309   233704  73015  83091    3.2      4.9     -      0.96   0.93
+  7  0.1039   3.10  0.372  0.372  0.097  0.466  0.277     7207   108899  58339  69739    1.9      2.7     -      0.95   0.94
+  8  0.1199   2.89  0.627  0.627  0.108  0.787  0.468     7124    55574  49773  60984    1.1      1.6     -      0.90   0.89
+  9  0.1359   2.71  0.989  0.989  0.119  1.253  0.757     7916    32507  44657  57475    0.7      1.0     -      0.91   0.91
+ 10  0.1519   2.57  1.733  1.733  0.132  2.204  1.341     8309    18925  44217  57028    0.4      0.5     -      0.91   0.91
+$$
+Overall:            0.132  0.132  0.132  0.165  0.097    58008   344034  76342  75620    4.5      6.4    0.000   1.00   0.96
+  N  1/d^2    Dmid   Rmrg  Rfull   Rcum  Rmeas   Rpim    Nmeas      AvI  RMSdev    sd  I/RMS Mn(I/sd)  FrcBias  Chi^2 Chi^2c
+
+
+By 4sinTheta/Lambda^2 bins (statistics with and without anomalous)
+==================================================================
+
+Statistics labelled 'Ov' are relative to the overall mean I+/-, ignoring anomalous
+Other statistics are with either I+ or I- sets, for acentrics, ie with anomalous
+
+
+
+$TABLE:  Analysis against resolution, with & without anomalous (Ov), XDSdataset:
+$GRAPHS:Rmerge, Rmeas, Rpim v Resolution:0|0.159862x0|2.20441:2,4,5,8,9,10,11:
+ $$
+  N  1/d^2    Dmid    Rmrg  RmrgOv    Rcum  RcumOv   Rmeas RmeasOv    Rpim  RpimOv    Nmeas   $$ $$
+  1  0.0080  11.19   0.034   0.040   0.034   0.040   0.047   0.049   0.032   0.028     1923
+  2  0.0240   6.46   0.051   0.063   0.042   0.049   0.069   0.077   0.047   0.044     3460
+  3  0.0400   5.00   0.055   0.068   0.047   0.056   0.075   0.083   0.051   0.048     4471
+  4  0.0560   4.23   0.064   0.081   0.052   0.064   0.087   0.100   0.059   0.058     5328
+  5  0.0719   3.73   0.100   0.131   0.060   0.074   0.136   0.163   0.092   0.095     5961
+  6  0.0879   3.37   0.153   0.208   0.068   0.085   0.211   0.261   0.143   0.155     6309
+  7  0.1039   3.10   0.271   0.372   0.077   0.097   0.373   0.466   0.254   0.277     7207
+  8  0.1199   2.89   0.464   0.627   0.085   0.108   0.637   0.787   0.433   0.468     7124
+  9  0.1359   2.71   0.742   0.989   0.095   0.119   1.024   1.253   0.702   0.757     7916
+ 10  0.1519   2.57   1.291   1.733   0.105   0.132   1.783   2.204   1.224   1.341     8309
+$$
+Overall:             0.105   0.132   0.105   0.132   0.144   0.165   0.098   0.097    58008
+  N  1/d^2    Dmid    Rmrg  RmrgOv    Rcum  RcumOv   Rmeas RmeasOv    Rpim  RpimOv    Nmeas
+
+
+By intensity bins
+=================
+All statistics in this table are relative to the overall mean I+/- (anomalous off)
+
+
+$TABLE:  Analysis against intensity, XDSdataset:
+$GRAPHS:Rmerge v Intensity:N:1,2,4,5:
+ $$
+      Imax   Rmrg   Rcum  Rmeas   Rpim    Nmeas      AvI  RMSdev    sd  I/RMS Mn(I/sd)  FrcBias   $$ $$
+      1146  3.926  3.926  4.942  2.955    24527     6186  51863  64133    0.1      0.2     -   
+     87936  0.446  1.253  0.563  0.337     9041    87709  54470  64868    1.6      2.3     -   
+    158755  0.261  0.834  0.331  0.199     4717   159757  58969  67573    2.7      4.1     -   
+    239321  0.183  0.633  0.229  0.136     3320   240382  62612  68401    3.8      6.2     -   
+    333402  0.147  0.499  0.183  0.107     2930   334341  67770  70906    4.9      8.7     -   
+    449779  0.113  0.411  0.141  0.082     2355   449269  70375  72929    6.4     11.2     -   
+    588832  0.093  0.340  0.116  0.067     2257   589907  76759  76823    7.7     14.7     -   
+    781585  0.078  0.283  0.096  0.055     2113   785297  87078  84902    9.0     18.6     -   
+   1075381  0.062  0.225  0.077  0.045     2488  1082719  98150  97136   11.0     24.6     -   
+   2496650  0.042  0.132  0.051  0.029     4260  2514440 179627 174817   14.0     39.5     -   
+$$
+Overall:    0.132  0.132  0.165  0.097    58008   344034  76342  75620    4.5      6.4    0.000
+
+      Imax   Rmrg   Rcum  Rmeas   Rpim    Nmeas      AvI  RMSdev    sd  I/RMS Mn(I/sd)  FrcBias
+
+Rmeas by resolution for each run
+--------------------------------
+
+
+$TABLE:  Analysis against resolution for each run in dataset, XDSdataset:
+$GRAPHS:Rmeas v. resolution for each run:0|0.159862x0|2.74679:2,4,5:
+ $$
+  N  1/d^2    Dmid   Run1   Run2   $$ $$
+  1  0.0080  11.19  0.030  0.079
+  2  0.0240   6.46  0.061  0.101
+  3  0.0400   5.00  0.067  0.109
+  4  0.0560   4.23  0.087  0.120
+  5  0.0719   3.73  0.164  0.163
+  6  0.0879   3.37  0.286  0.225
+  7  0.1039   3.10  0.545  0.363
+  8  0.1199   2.89  0.937  0.588
+  9  0.1359   2.71  1.521  0.915
+ 10  0.1519   2.57  2.747  1.516
+$$
+Overall:            0.164  0.166
+  N  1/d^2    Dmid   Run1   Run2
+
+
+Completeness and multiplicity, including reflections measured only once
+=======================================================================
+
+
+ %poss is completeness in the shell, C%poss in cumulative to that resolution
+ The anomalous completeness values (AnomCmpl) are the percentage of possible anomalous differences measured
+ AnomFrc is the % of measured acentric reflections for which an anomalous difference has been measured
+ Anomalous multiplicity AnoMlt is calculated for reflections with both I+ and I- measured, and is defined as:
+ Sum{[Min(n+, n-) + Dn/(Dn+1)]}/NanomMeasured, where n+, n- are the number of measurements  of I+, I-, Dn = |n+ - n-|
+
+
+
+$TABLE:  Completeness & multiplicity v. resolution, XDSdataset:
+$GRAPHS:Completeness v Resolution :N:2,7,8,10,11:
+:Multiplicity v Resolution:0|0.159862x0|2.66186:2,9,12:
+ $$
+  N  1/d^2    Dmid    Nmeas     Nref    Ncent  %poss C%poss Mlplct   AnoCmp AnoFrc AnoMlt   $$ $$
+  1  0.0080  11.19     2031      763       46   52.3   52.3    2.7     37.6   70.2    1.6
+  2  0.0240   6.46     3753     1472       54   55.3   54.2    2.5     32.7   58.5    1.6
+  3  0.0400   5.00     4910     1981       58   58.2   56.0    2.5     31.4   53.6    1.6
+  4  0.0560   4.23     5873     2414       61   59.5   57.2    2.4     29.7   49.6    1.6
+  5  0.0719   3.73     6632     2785       59   60.9   58.3    2.4     28.4   46.3    1.6
+  6  0.0879   3.37     7147     3112       67   61.5   59.0    2.3     26.0   42.0    1.6
+  7  0.1039   3.10     8147     3584       63   65.2   60.3    2.3     26.6   40.6    1.6
+  8  0.1199   2.89     8213     3726       72   63.0   60.8    2.2     23.1   36.5    1.6
+  9  0.1359   2.71     9089     4146       69   65.9   61.6    2.2     23.6   35.6    1.6
+ 10  0.1519   2.57     9552     4403       78   66.6   62.3    2.2     23.6   35.4    1.6
+$$
+Overall:              65347    28386      627   62.3   62.3    2.3     26.7   42.6    1.6
+                      Nmeas     Nref    Ncent  %poss C%poss Mlplct   AnoCmp AnoFrc AnoMlt
+
+
+Analysis of standard deviations
+===============================
+This analyses the distribution of the normalised deviations
+Delta = (Ihl - Mn(Iothers) )/sqrt[sd(Ihl)**2 + sd(Mn(I))**2]
+If the SD is a true estimate of the error, this distribution should have
+ Mean=0.0 and Sigma=1.0 for all ranges of intensity
+
+The analysis is repeated for ranges of increasing Imean
+The Mean is expected to increase with Imean since the latter
+is a weighted mean and sd(Ihl) & Ihl are correlated
+
+If the Sigma increases with Imean, increase the value of SdAdd
+
+ISa is the predicted asymptotic value of I/sd(I) for large I, see
+ K.Diederichs, Acta Cryst. D66,733
+
+SD corrections:- SdFac * Sqrt[sd(I)**2 + SdB I + (SdAdd I)**2]
+                                  Fulls
+    Run                  SdFac    SdB   SdAdd  ISa
+      1   OnlyFulls       0.89   0.00 -0.0441  0.0
+      2   OnlyFulls       0.98   0.00  0.1093  9.3
+
+
+$TABLE:  Run   1, standard deviation v. Intensity, XDSdataset:
+$GRAPHS: Sigma(scatter/SD), Mn(Chi^2), within   5 sd:N:2,9,10:
+: Sigma(scatter/SD), Mn(Chi^2), within   5 sd, all and within   5 sd:N:2,5,6,9,10:
+
+                         Fulls, all                 Fulls, <  5 sd      
+ $$
+Range  Mn(I)       NF  MnF   SdF   ChiSqF      NFc  MnFc  SdFc ChiSqFc   $$ $$
+   1    1146    15881 -0.02  0.98    0.97    15875 -0.02  0.98    0.97
+   2   87936     5653  0.04  1.01    1.02     5649  0.04  1.01    1.01
+   3  158755     2953  0.01  1.04    1.08     2943  0.01  1.02    1.05
+   4  239321     2061 -0.02  1.07    1.14     2044 -0.02  1.04    1.08
+   5  333402     1809  0.02  1.08    1.17     1799  0.01  1.05    1.11
+   6  449779     1446  0.01  1.11    1.23     1434  0.00  1.09    1.18
+   7  588832     1394  0.05  1.07    1.16     1380  0.05  1.04    1.08
+   8  781585     1281  0.03  1.13    1.27     1266  0.03  1.09    1.20
+   9 1075381     1489  0.06  1.13    1.28     1458  0.06  1.06    1.12
+  10 2496650     2496  0.10  1.25    1.58     2394  0.08  1.10    1.22
+$$
+Overall:        36463  0.01  1.04    1.09    36242  0.01  1.02    1.04
+
+
+
+$TABLE:  Run   2, standard deviation v. Intensity, XDSdataset:
+$GRAPHS: Sigma(scatter/SD), Mn(Chi^2), within   5 sd:N:2,9,10:
+: Sigma(scatter/SD), Mn(Chi^2), within   5 sd, all and within   5 sd:N:2,5,6,9,10:
+
+                         Fulls, all                 Fulls, <  5 sd      
+ $$
+Range  Mn(I)       NF  MnF   SdF   ChiSqF      NFc  MnFc  SdFc ChiSqFc   $$ $$
+   1    1146     8646  0.04  0.87    0.76     8646  0.04  0.87    0.76
+   2   87936     3388 -0.05  0.92    0.86     3387 -0.05  0.92    0.85
+   3  158755     1764  0.01  1.01    1.02     1761 -0.00  1.00    1.00
+   4  239321     1259  0.05  1.05    1.11     1257  0.05  1.04    1.09
+   5  333402     1121 -0.01  1.15    1.31     1118 -0.01  1.13    1.27
+   6  449779      909 -0.01  1.14    1.31      900 -0.01  1.10    1.20
+   7  588832      863 -0.05  1.12    1.25      857 -0.06  1.09    1.18
+   8  781585      832  0.00  1.09    1.19      824 -0.01  1.08    1.15
+   9 1075381      997 -0.01  1.03    1.06      981 -0.05  1.01    1.01
+  10 2496650     1764  0.02  0.85    0.73     1723 -0.01  0.82    0.68
+$$
+Overall:        21543  0.01  0.96    0.92    21454  0.00  0.95    0.89
+
+
+
+$TABLE:  All runs, standard deviation v. Intensity, XDSdataset:
+$GRAPHS: Sigma(scatter/SD), Mn(Chi^2), within   5 sd:N:2,9,10:
+: Sigma(scatter/SD), Mn(Chi^2), within   5 sd, all and within   5 sd:N:2,5,6,9,10:
+
+                         Fulls, all                 Fulls, <  5 sd      
+ $$
+Range  Mn(I)       NF  MnF   SdF   ChiSqF      NFc  MnFc  SdFc ChiSqFc   $$ $$
+   1    1146    24527  0.00  0.95    0.89    24521  0.00  0.94    0.00
+   2   87936     9041  0.00  0.98    0.96     9036  0.00  0.98    0.00
+   3  158755     4717  0.01  1.03    1.04     4704  0.00  1.01    0.00
+   4  239321     3320  0.01  1.06    1.10     3301  0.00  1.04    0.00
+   5  333402     2930  0.01  1.11    1.20     2917  0.01  1.08    0.00
+   6  449779     2355 -0.00  1.12    1.22     2334 -0.00  1.09    0.00
+   7  588832     2257  0.01  1.09    1.16     2237  0.01  1.06    0.00
+   8  781585     2113  0.02  1.11    1.21     2090  0.02  1.09    0.00
+   9 1075381     2486  0.03  1.09    1.14     2439  0.02  1.04    0.00
+  10 2496650     4260  0.07  1.10    1.11     4117  0.04  1.00    0.00
+$$
+Overall:        58006  0.01  1.01    1.00    57696  0.01  0.99    0.00
+
+
+Effect of allowing for parameter variance in estimation of sig(I)
+================================================================
+
+Corrected sd'(I') = Sqrt[sd(I')^2 + I'^2 (sd(k)/k)^2];  I' = kI
+
+Maximum relative correction relSD = (sd'(I') - sd(I'))/sd'(I') =     0.000
+
+Maximum relative sd(scale), sd(k)/k =    0.0004
+    for observation:
+     HKL 76, 0, -1, resolution(A): 2.51, batch: 1039, scale: 0.997, sd(scale): 0.000
+         I': 2599.8, sd(I'): 36997.5, corrected sd'(I'): 36997.5
+
+Analysis by resolution
+
+
+$TABLE: Effect of parameter variance on sd(I):
+$GRAPHS:Mean sd(k)/k and relative Delta(sd(I)) vs. resolution:0|0.159862x0|0.000429071:2,4,5:
+ $$
+  N  1/d^2    Dmid sd(k)/k    relSD   Number   $$ $$
+  1  0.0067  12.26  0.0004    0.000     1455
+  2  0.0189   7.27  0.0004    0.000     2537
+  3  0.0312   5.66  0.0004    0.000     3458
+  4  0.0434   4.80  0.0004    0.000     3852
+  5  0.0557   4.24  0.0004    0.000     4449
+  6  0.0679   3.84  0.0004    0.000     5118
+  7  0.0802   3.53  0.0004    0.000     5094
+  8  0.0924   3.29  0.0004    0.000     5730
+  9  0.1047   3.09  0.0004    0.000     6305
+ 10  0.1170   2.92  0.0004    0.000     6241
+ 11  0.1292   2.78  0.0004    0.000     6638
+ 12  0.1415   2.66  0.0004    0.000     7144
+ 13  0.1537   2.55  0.0004    0.000     7398
+$$
+Overall:            0.0004    0.000    65419
+
+Matrix of correlations of E^2 between runs
+==========================================
+
+Weighted correlation coefficients are calculated for each run pair in resolution ranges,
+  then averaged over bins
+
+Bins in averages over resolution are weighted by number of reflections
+
+Run 1 maximum resolution   2.502 Dataset: XDSproject/XDScrystal/XDSdataset
+Run 2 maximum resolution   2.501 Dataset: XDSproject/XDScrystal/XDSdataset
+
+         Run        2
+Run   1 CC(E^2)   0.797
+          N       18321
+
+
+$TABLE:  ==== Run pair correlations by resolution:
+$GRAPHS:Run pair correlations by resolution:N:2,4:
+ $$
+  N  1/d^2    Dmid   CC2-1   $$ $$
+  1  0.0085  10.85   0.993
+  2  0.0244   6.40   0.984
+  3  0.0404   4.98   0.982
+  4  0.0563   4.21   0.978
+  5  0.0722   3.72   0.964
+  6  0.0882   3.37   0.942
+  7  0.1041   3.10   0.885
+  8  0.1200   2.89   0.787
+  9  0.1360   2.71   0.651
+ 10  0.1519   2.57   0.395
+$$
+Overall:            0.856
+
+==============================================================
+
+<!--SUMMARY_BEGIN--> $TEXT:Result: $$ $$
+Summary data for        Project: XDSproject Crystal: XDScrystal Dataset: XDSdataset
+
+                                           Overall  InnerShell  OuterShell
+Low resolution limit                       43.74     43.74      2.64
+High resolution limit                       2.50      7.91      2.50
+
+Rmerge  (within I+/I-)                     0.105     0.034     1.291
+Rmerge  (all I+ and I-)                    0.132     0.040     1.733
+Rmeas (within I+/I-)                       0.144     0.047     1.783
+Rmeas (all I+ & I-)                        0.165     0.049     2.204
+Rpim (within I+/I-)                        0.098     0.032     1.224
+Rpim (all I+ & I-)                         0.097     0.028     1.341
+Rmerge in top intensity bin                0.042        -         - 
+Total number of observations               65347      2031      9552
+Total number unique                        28386       763      4403
+Mean((I)/sd(I))                              6.4      38.3       0.5
+Mn(I) half-set correlation CC(1/2)         0.991     0.996     0.290
+Completeness                                62.3      52.3      66.6
+Multiplicity                                 2.3       2.7       2.2
+Mean(Chi^2)                                 0.96      1.15      0.91
+
+Anomalous completeness                      26.7      37.6      23.6
+Anomalous multiplicity                       0.7       1.6       1.6
+DelAnom correlation between half-sets      0.013     0.216    -0.014
+Mid-Slope of Anom Normal Probability       1.078       -         -  
+
+Anomalous flag switched OFF in input, anomalous signal is weak
+
+Estimates of resolution limits: overall
+   from half-dataset correlation CC(1/2) >  0.30: limit =  2.56A 
+   from Mn(I/sd) >  0.00:                         limit =  2.50A  == maximum resolution
+   from Mn(I/sd) >  2.00:                         limit =  2.97A 
+
+Estimates of resolution limits in reciprocal lattice directions:
+  Along    1.00 a* + 0.00 c*
+   from half-dataset correlation CC(1/2) >  0.30: limit =  2.50A  == maximum resolution
+   from Mn(I/sd) >  0.00:                         limit =  2.50A  == maximum resolution
+  Along k axis
+   from half-dataset correlation CC(1/2) >  0.30: limit =  0.00A weak or missing data, all observed data below threshold
+   from Mn(I/sd) >  0.00:                         limit =  2.50A  == maximum resolution
+  Along   -0.33 a* + 0.94 c*
+   from half-dataset correlation CC(1/2) >  0.30: limit =  3.37A 
+   from Mn(I/sd) >  0.00:                         limit =  2.58A 
+
+Anisotropic deltaB (i.e. range of principal components), A^2: 30.58
+
+Average unit cell:   190.95  110.30   64.28   90.00   96.29   90.00
+Space group: C 1 2 1
+Average mosaicity:   0.00
+
+Minimum and maximum SD correction factors: Fulls   0.28   2.38 Partials   0.00   0.00
+
+$$ <!--SUMMARY_END-->
+==============================================================
+
+==== Writing merged data for dataset XDSproject/XDScrystal/XDSdataset to file aimless_alldata.mtz
+
+Number of reflections written    28386 maximum resolution    2.501
+
+==== Writing unmerged data for dataset XDSproject/XDScrystal/XDSdataset to file aimless_alldata_unmerged.mtz
+ * Title:
+
+ From XDS file eocdgF42qmcTbhYV.HKL, XDS run on 12-May-2020 from images
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 XDSproject
+          XDScrystal
+          XDSdataset
+            190.9500  110.3000   64.2800   90.0000   96.2930   90.0000
+             0.97918
+
+ * Number of Columns = 13
+
+ * Number of Reflections = 65347
+
+ * Missing value set to NaN in input mtz file
+
+ * Number of Batches = 149
+
+ * Column Labels :
+
+ H K L M/ISYM BATCH I SIGI SCALEUSED SIGSCALEUSED NPART XDET YDET ROT
+
+ * Column Types :
+
+ H H H Y B J Q R R I R R R
+
+ * Associated datasets :
+
+ 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+  190.9500  110.3000   64.2800   90.0000   96.2930   90.0000 
+
+ *  Resolution Range :
+
+    0.00052    0.15986     (     43.737 -      2.501 A )
+
+ * Sort Order :
+
+      1     2     3     4     5
+
+ * Space group = 'C 1 2 1' (number     5)
+
+  (spacegroup is known)
+
+
+Number of observations written =    65347
+
+Number of multiple (overlapped) observations written =        0
+
+$TEXT:Reference: $$ Please cite $$
+P.R.Evans and G.N.Murshudov, 'How good are my data and what is the resolution?' Acta Cryst. D69, 1204-1214  (2013).
+<a href="http://journals.iucr.org/d/issues/2013/07/00/ba5190/index.html">
+<b>PDF</b></a>
+$$
+
+End of aimless job, total time: cpu time: 2.42 secs, elapsed time: 3.0 secs
+

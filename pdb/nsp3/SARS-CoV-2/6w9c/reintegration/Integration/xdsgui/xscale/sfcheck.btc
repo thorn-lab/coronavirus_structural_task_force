@@ -1,0 +1,61 @@
+# --------------------------------
+sfcheck <<stop
+# --------------------------------
+# first line: _DOC <N>,Y "
+#   N - means without DOC-file: "sfcheck.log"
+#   Y - create new file or rewrite if it is old file
+# Also you can redirect output files to special directory
+#                               answer: Y>path/ or >path/
+_DOC  Y
+#
+##
+##  You can define some input files in command string:
+##
+##  sfcheck -f <sf_file> -m <coords file> -po <path_out> -ps <path_scratch>
+##  use "sfcheck -h" to see other options
+##
+##     Keywords:
+##
+#FILE_F: < > - Input file with Fobs
+#               (format  CIF or MAP or BLANC or MTZ)
+#                Extention "dat" - BLANC, "mtz" - MTZ
+#FILE_C: < > - Input model file (format PDB or CIF or BLANC)
+#              Extention "crd" means BLANC file,"cif" - CIFile
+#NOMIT:   <0>        - number of cycles of omit procedure, 2 is a good
+#NCREF:   <0>        - number of cycles of REF
+#                      choice. Note: omit procedure takes time!
+#                      if OUT = Y program creates new SF File
+#                      with omit phases
+#MAP:    <N>/Y       - Y - extract density map will be created
+#OUT:   <N>/Y/A/U    - Y - create new Fobs CIFile (for omit)
+#                      A - with anisothermal correction
+#                      U - CIFile with detwinned data
+#SCL:    <1.0>       - map scale factor
+#INVER:  <N>,Y       - Y mirror map will be used
+#GROUP:   < >        - space group name, use capital letter
+#CELL: <0,0,0,0,0,0> - cell parameters: a,b,c,alpha,beta,gamma
+#NSG:     <1>        - space group number /from <1> to 230 /
+#SETT:    <2>        - setting /1 or 2,for monoclinic and trigonal groups only/
+#PATH_SCR:    < >    - path to scratch files
+#TEST:        <N>,Y  - to save special files (.dst,...)
+#LABIN:
+#F:        < >       - label of F or F(+)
+##                     default:FP
+#SIGF:     < >       - label of sigma F or sigma F(+)
+##                     default:SIGFP
+#F(-):     < >       - label of F(+)
+#SIGF(-):  < >       - label of sigma F(-)
+#FREE:     < >       - label of Free_flag
+#I:        < >       - label of I or I(+)
+#SIGI:     < >       - label of sigma I or  sigma I(+)
+#I(-):     < >       - label of I(-)
+#SIGI(-):  < >       - label of sigma I(-)
+#     Program creates:
+#      (OUT=A) new CIFile of corrected Fobs : sfcheck.hkl
+#      (OUT=U) new CIFile(detwinned data)   : sfcheck.hkl
+#      (NOMIT>0,OUT=Y) new CIFile(omit_ph)  : sfcheck.hkl
+#      (MAP=Y) 2Fobs-Fcal density           : sfcheck_ext.map
+#              or (if input was map) new map: sfcheck.map
+#                                          /both CCP4 format/
+_END
+stop

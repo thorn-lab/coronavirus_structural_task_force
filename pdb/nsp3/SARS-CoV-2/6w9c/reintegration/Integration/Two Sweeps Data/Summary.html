@@ -1,0 +1,511 @@
+<!DOCTYPE HTML PUBLIC
+'-//W3C//DTD XHTML 1.0 Transitional//EN'
+'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<HTML XMLNS=http://www.w3.org/1999/xhtml LANG=en-US XML:LANG=en-US>
+<HEAD PROFILE=http://www.w3.org/2005/10/profile>
+<LINK REV=made HREF=mailto:staraniso&lt&lt;AT&gt&gt;globalphasing.org>
+<LINK REL=icon HREF=/Star-Anise.png>
+<TITLE>eocdgF42qmcTbhYV: STARANISO anisotropy & Bayesian estimation server</TITLE>
+<META HTTP-EQUIV=Content-Type CONTENT='text/html; charset=UTF-8'/>
+<STYLE>input{background:wheat}
+input[type=checkbox]{outline:4px solid navajowhite}
+select{background:wheat}</STYLE>
+
+<SCRIPT>
+var init = []
+function saveInit()
+{ scenes[0].button.style.fontFamily =
+    scenes[1].button.style.fontFamily = 'Courier'
+  for(var j=0, el; el = scenes[0].elements[j++];) init[j] = el.checked
+}
+
+
+function checkButtons(i)
+{ var els = scenes[i].elements
+  if(scenes[i].button.value=='Check all ')
+  { for(var j=0, el; el = els[j++];) el.checked = 1
+    scenes[i].button.value='Check none'
+  }
+  else if(scenes[i].button.value=='Check none')
+  { for(var j=0, el; el = els[j++];) el.checked = 0
+    scenes[i].button.value='Check init'
+  }
+  else
+  { for(var j=0, el; el = els[j++];) el.checked = init[j]
+    scenes[i].button.value='Check all '
+  }
+}
+
+
+function checkScenes(i)
+{ var els = scenes[i].elements
+  var k = 0
+  for(var j=0, el; el = els[j++];)
+    if(el.checked)
+    { k = 1
+      break
+    }
+
+  if(!k)
+  { alert('You must check at least 1 box!')
+    return false
+  }
+}
+</SCRIPT></HEAD>
+
+<BODY ONLOAD=saveInit() STYLE=overflow-y:scroll>
+<TABLE WIDTH=100%><TR>
+<TD><A TARGET=_blank HREF=http://www.globalphasing.com>
+<IMG SRC=/gphl_logo.png WIDTH=170 HEIGHT=80></A>
+<TD ALIGN=center><H2>The STARANISO Server</H2>
+<H3><I>Anisotropy of the Diffraction Limit</I><BR>and<BR>
+<I>Bayesian Estimation of Structure Amplitudes</I></H3>
+<TD ALIGN=right><A HREF=staraniso.cgi><IMG SRC=/Star-Anise.jpg
+WIDTH=171 HEIGHT=136></A></TABLE><HR NOSHADE><BR>
+<UL>
+<P><LI><B><FONT SIZE=+1>Your STARANISO job&nbsp <FONT
+SIZE=+2>eocdgF42qmcTbhYV</FONT>&nbsp for&nbsp <FONT SIZE=+2>'temp-trunc_offset.ahkl'</FONT>&nbsp
+completed successfully.</FONT></B><BR>
+
+<BR><LI><B>Select the color-coded reciprocal lattice scene(s) to view in
+WebGL 3-D:</B>
+<FORM NAME=scenes TARGET=_blank
+ACTION=/cgi-bin/RLViewer_WebGL_scroll.cgi
+ONSUBMIT='return checkScenes(0)'>
+<INPUT TYPE=hidden NAME=name VALUE=Dale Tronrud>
+<INPUT TYPE=hidden NAME=email VALUE=dale@daletronrud.com>
+<INPUT TYPE=hidden NAME=jobID VALUE=eocdgF42qmcTbhYV>
+<INPUT TYPE=hidden NAME=root VALUE=eocdgF42qmcTbhYV-SWS>
+<BR><CENTER>
+
+<DIV STYLE=display:inline-block><INPUT TYPE=checkbox NAME=lpchis
+VALUE='-aniso-masked-mrf,0,-log P(<I>chi</I><SUP>2</SUP>)'><B>Experimental:</B> -log
+P(<I>&chi;</I><SUP>2</SUP>)</DIV> &nbsp&nbsp&nbsp
+
+<DIV STYLE=display:inline-block><INPUT TYPE=checkbox NAME=redund CHECKED
+VALUE=-aniso-merged,0,Redundancy>Redundancy</DIV> &nbsp&nbsp&nbsp
+
+<DIV STYLE=display:inline-block><INPUT TYPE=checkbox NAME=ismean CHECKED
+VALUE='-aniso-merged,1,Mean <I>I/sigma</I>(<I>I</I>)'>Mean
+<I>I/&sigma;</I>(<I>I</I>)</DIV> &nbsp&nbsp&nbsp
+
+<DIV STYLE=display:inline-block><INPUT TYPE=checkbox NAME=cchalf CHECKED
+VALUE='-aniso-merged,2,Weighted CChalf'>Weighted CC&half;</DIV>
+&nbsp&nbsp&nbsp
+
+<DIV STYLE=display:inline-block><INPUT TYPE=checkbox NAME=zchalf
+VALUE='-aniso-merged,3,<I>Z</I>(weighted CChalf)'><I>Z</I>(<I>w</I>CC&half;)</DIV>
+&nbsp&nbsp&nbsp
+
+<DIV STYLE=display:inline-block><INPUT TYPE=checkbox NAME=kldive
+VALUE='-aniso-merged,4,Kullback-Leibler divergence'><B>Experimental:</B>
+Kullback-Leibler divergence</DIV> &nbsp&nbsp&nbsp
+
+<DIV STYLE=display:inline-block><INPUT TYPE=checkbox NAME=cutoff
+VALUE='-aniso-merged,-1,Cut-off surface'>Cut-off surface</DIV> &nbsp&nbsp&nbsp
+
+<DIV STYLE=display:inline-block><INPUT TYPE=checkbox NAME=dwfact CHECKED 
+VALUE='-aniso-merged,5,Debye-Waller factor'>Debye-Waller factor</DIV>
+&nbsp&nbsp&nbsp
+
+<BR><BR><INPUT NAME=button TYPE=button VALUE='Check all '
+ONCLICK=checkButtons(0)> &nbsp&nbsp&nbsp&nbsp
+<INPUT TYPE=submit VALUE='VIEW Reciprocal lattices in WebGL'></TABLE>
+</CENTER></FORM>
+
+<P><UL>This uses our 3-D RLViewer tool (based on <A TARGET=_blank
+HREF=https://www.khronos.org/webgl><B>WebGL</B></A> technology) within
+your browser - no external program or additional tool need be
+installed.&nbsp Note that this opens the viewer in a new window,
+allowing it to be displayed side-by-side with the statistics on this
+page.&nbsp To move a tabbed window to a separate browser instance: drag
+the tab in the tab bar <B>downwards</B> (not sideways) and release it
+where you want it placed (you can also drag it back).</UL>
+<BR><BR><CENTER>
+<FORM TARGET=_blank ACTION=/cgi-bin/download.cgi
+STYLE=display:inline>
+<INPUT TYPE=hidden NAME=jobID VALUE=eocdgF42qmcTbhYV>
+<INPUT TYPE=hidden NAME=root VALUE=eocdgF42qmcTbhYV-SWS>
+<INPUT TYPE=hidden NAME=fn_in VALUE=temp-trunc_offset.ahkl>
+
+<INPUT TYPE=submit VALUE='Download outputs'></FORM> &nbsp&nbsp&nbsp&nbsp
+
+<FORM ACTION=/cgi-bin/staraniso.cgi STYLE=display:inline>
+<INPUT TYPE=hidden NAME=name VALUE="Dale Tronrud">
+<INPUT TYPE=hidden NAME=email VALUE='dale@daletronrud.com'>
+<INPUT TYPE=submit VALUE='Retrieve a previous job'></FORM>
+&nbsp&nbsp&nbsp&nbsp
+<FORM ACTION=/cgi-bin/staraniso.cgi STYLE=display:inline>
+<INPUT TYPE=hidden NAME=init VALUE=1>
+<INPUT TYPE=hidden NAME=agree VALUE=1>
+<INPUT TYPE=hidden NAME=name VALUE="Dale Tronrud">
+<INPUT TYPE=hidden NAME=email VALUE='dale@daletronrud.com'>
+<INPUT TYPE=submit VALUE='Submit a new job'></FORM></CENTER>
+<BR></UL><HR NOSHADE><UL>
+<P><LI><B>Merging statistics table for observed data extracted from the final MRFANA log file:</B><PRE>
+                                                                                     Compl. Spher.   Multiplicity                                   Compl. Ellip. 
+                                                                                     --------------  ------------                                  --------------- 
+            Resolution      #uniq     #Rfac  Rmerge   Rmeas    Rpim   #Isig  I/sigI     all     ano    all    ano CC(1/2)  #CCAno CC(ano)  SigAno    all     ano
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+         43.737 -   7.449     936      2358   0.043   0.052   0.029     936  18.506  0.5229  0.3742   2.68   1.62  0.9941     274 -0.1018   0.821   0.5229  0.3742
+          7.449 -   5.911     936      2221   0.062   0.077   0.044     936  12.089  0.5339  0.3164   2.57   1.66  0.9926     208 -0.0267   0.827   0.5339  0.3164
+          5.911 -   5.210     936      2197   0.070   0.086   0.049     936  11.109  0.5825  0.3453   2.55   1.64  0.9917     197  0.1731   0.786   0.5825  0.3453
+          5.210 -   4.768     937      2119   0.066   0.081   0.046     937  11.508  0.6006  0.3324   2.48   1.63  0.9909     176 -0.0150   0.794   0.6006  0.3324
+          4.768 -   4.415     935      2040   0.070   0.087   0.049     935  11.805  0.5452  0.2663   2.42   1.67  0.9907     159 -0.0728   0.815   0.5452  0.2663
+          4.415 -   4.169     937      2055   0.077   0.095   0.054     937  10.324  0.5893  0.3009   2.42   1.62  0.9918     157  0.2035   0.807   0.5893  0.3009
+          4.169 -   3.970     936      2094   0.088   0.109   0.063     936   9.569  0.6023  0.3043   2.45   1.65  0.9876     153 -0.0971   0.838   0.6023  0.3043
+          3.970 -   3.803     935      2068   0.116   0.145   0.084     935   7.837  0.6040  0.2980   2.43   1.63  0.9771     143  0.0013   0.834   0.6040  0.2980
+          3.803 -   3.658     936      2175   0.131   0.163   0.096     936   7.337  0.5756  0.2992   2.50   1.63  0.9747     144  0.0115   0.787   0.5756  0.2992
+          3.658 -   3.516     937      2171   0.148   0.184   0.107     937   6.690  0.5051  0.2323   2.49   1.69  0.9739     144  0.0221   0.783   0.5051  0.2323
+          3.516 -   3.390     936      2207   0.166   0.206   0.120     936   5.836  0.4919  0.2226   2.53   1.73  0.9706     144  0.0234   0.769   0.4945  0.2234
+          3.390 -   3.275     937      2260   0.200   0.249   0.145     937   5.402  0.4648  0.2094   2.56   1.72  0.9538     137  0.0467   0.763   0.4916  0.2211
+          3.275 -   3.171     936      2217   0.244   0.303   0.177     936   4.337  0.4570  0.1835   2.52   1.77  0.9320     139 -0.2009   0.726   0.4994  0.2080
+          3.171 -   3.076     936      2231   0.282   0.351   0.205     936   3.790  0.4386  0.1637   2.52   1.78  0.9197     142  0.1545   0.871   0.4856  0.1928
+          3.076 -   2.986     935      2178   0.325   0.407   0.241     935   3.047  0.4095  0.1396   2.47   1.79  0.8886     132  0.0547   0.752   0.4622  0.1679
+          2.986 -   2.900     937      2081   0.384   0.482   0.285     937   2.675  0.3812  0.1070   2.39   1.82  0.8724     114  0.1185   0.863   0.4250  0.1204
+          2.900 -   2.809     937      1981   0.393   0.498   0.299     937   2.355  0.3180  0.0650   2.30   1.86  0.8147      75 -0.0128   0.914   0.3220  0.0583
+          2.809 -   2.715     936      1975   0.420   0.538   0.329     936   2.166  0.2704  0.0433   2.28   1.95  0.7748      69  0.3299   0.924   0.2406  0.0228
+          2.715 -   2.615     936      1977   0.484   0.625   0.387     936   1.919  0.2208  0.0295   2.26   1.91  0.7243      49  0.1593   0.890   0.1672  0.0020
+          2.615 -   2.501     936      1927   0.645   0.846   0.540     936   1.392  0.1642  0.0189   2.20   1.75  0.5463      30  0.1671   0.939   0.1160  0.0000
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Total:  43.737 -   2.501   18723     42532   0.102   0.127   0.074   18723   6.985  0.4089  0.1692   2.45   1.69  0.9917    2786 -0.0005   0.811   0.4567  0.2041
+
+</PRE>
+
+<P><LI><B>Merging statistics plots for observed data extracted from the MRFANA
+log file</B> (click image to enlarge):
+<BR><TABLE CELLSPACING=50>
+
+<TR><TD WIDTH=50%><FONT SIZE=+1>Spherical completeness <I>vs.</I> image no.:</FONT>
+<BR><A HREF=/SWS/eocdgF42qmcTbhYV/eocdgF42qmcTbhYV-SWS-stats-obs.log.Completeness_batch.png>
+<IMG SRC=/SWS/eocdgF42qmcTbhYV/eocdgF42qmcTbhYV-SWS-stats-obs.log.Completeness_batch.png WIDTH=100%></A>
+<TD WIDTH=50%><FONT SIZE=+1>Spherical completeness <I>vs.</I> resolution (mean <I>d</I>-spacing):</FONT>
+<BR><A HREF=/SWS/eocdgF42qmcTbhYV/eocdgF42qmcTbhYV-SWS-stats-obs.log.CompletenessSph.png>
+<IMG SRC=/SWS/eocdgF42qmcTbhYV/eocdgF42qmcTbhYV-SWS-stats-obs.log.CompletenessSph.png WIDTH=100%></A>
+
+<TR><TD WIDTH=50%><FONT SIZE=+1>Ellipsoidal completeness <I>vs.</I> image no.:</FONT>
+<BR><A HREF=/SWS/eocdgF42qmcTbhYV/eocdgF42qmcTbhYV-SWS-stats-obs.log.CompletenessEll_batch.png>
+<IMG SRC=/SWS/eocdgF42qmcTbhYV/eocdgF42qmcTbhYV-SWS-stats-obs.log.CompletenessEll_batch.png WIDTH=100%></A>
+<TD WIDTH=50%><FONT SIZE=+1>Ellipsoidal completeness <I>vs.</I> resolution:</FONT>
+<BR><A HREF=/SWS/eocdgF42qmcTbhYV/eocdgF42qmcTbhYV-SWS-stats-obs.log.CompletenessEll.png>
+<IMG SRC=/SWS/eocdgF42qmcTbhYV/eocdgF42qmcTbhYV-SWS-stats-obs.log.CompletenessEll.png WIDTH=100%></A>
+
+<TR><TD WIDTH=50%><FONT SIZE=+1>Merging <I>R</I> values <I>vs.</I> image no.:</FONT>
+<BR><A HREF=/SWS/eocdgF42qmcTbhYV/eocdgF42qmcTbhYV-SWS-stats-obs.log.Rmerge_Rmeas_Rpim_batch.png>
+<IMG SRC=/SWS/eocdgF42qmcTbhYV/eocdgF42qmcTbhYV-SWS-stats-obs.log.Rmerge_Rmeas_Rpim_batch.png WIDTH=100%></A>
+<TD WIDTH=50%><FONT SIZE=+1>Merging <I>R</I> values <I>vs.</I> resolution:</FONT>
+<BR><A HREF=/SWS/eocdgF42qmcTbhYV/eocdgF42qmcTbhYV-SWS-stats-obs.log.Rmerge_Rmeas_Rpim.png>
+<IMG SRC=/SWS/eocdgF42qmcTbhYV/eocdgF42qmcTbhYV-SWS-stats-obs.log.Rmerge_Rmeas_Rpim.png WIDTH=100%></A>
+
+<TR><TD WIDTH=50%><FONT SIZE=+1>CC<SUB>&half;</SUB> <I>vs.</I> resolution:</FONT>
+<BR><A HREF=/SWS/eocdgF42qmcTbhYV/eocdgF42qmcTbhYV-SWS-stats-obs.log.CC12.png>
+<IMG SRC=/SWS/eocdgF42qmcTbhYV/eocdgF42qmcTbhYV-SWS-stats-obs.log.CC12.png WIDTH=100%></A>
+<TD WIDTH=50%><FONT SIZE=+1>CC<SUB>&half;</SUB>ano <I>vs.</I> resolution:</FONT>
+<BR><A HREF=/SWS/eocdgF42qmcTbhYV/eocdgF42qmcTbhYV-SWS-stats-obs.log.CCano.png>
+<IMG SRC=/SWS/eocdgF42qmcTbhYV/eocdgF42qmcTbhYV-SWS-stats-obs.log.CCano.png WIDTH=100%></A>
+
+<TR><TD WIDTH=50%><FONT SIZE=+1>Mean <I>I</I>/&sigma;(<I>I</I>) <I>vs.</I> image no.:</FONT>
+<BR><A HREF=/SWS/eocdgF42qmcTbhYV/eocdgF42qmcTbhYV-SWS-stats-obs.log.I_IsigI_batch.png>
+<IMG SRC=/SWS/eocdgF42qmcTbhYV/eocdgF42qmcTbhYV-SWS-stats-obs.log.I_IsigI_batch.png WIDTH=100%></A>
+<TD WIDTH=50%><FONT SIZE=+1>Mean <I>I</I>/&sigma;(<I>I</I>) <I>vs.</I> resolution:</FONT>
+<BR><A HREF=/SWS/eocdgF42qmcTbhYV/eocdgF42qmcTbhYV-SWS-stats-obs.log.IsigI.png>
+<IMG SRC=/SWS/eocdgF42qmcTbhYV/eocdgF42qmcTbhYV-SWS-stats-obs.log.IsigI.png WIDTH=100%></A>
+
+<TR><TD WIDTH=50%><FONT SIZE=+1>Mean <I>D</I>ano/&sigma;(<I>D</I>ano) <I>vs.</I> resolution:</FONT>
+<BR><A HREF=/SWS/eocdgF42qmcTbhYV/eocdgF42qmcTbhYV-SWS-stats-obs.log.SigAno.png>
+<IMG SRC=/SWS/eocdgF42qmcTbhYV/eocdgF42qmcTbhYV-SWS-stats-obs.log.SigAno.png WIDTH=100%></A>
+<TD WIDTH=50%><FONT SIZE=+1>Spherical multiplicity (redundancy) <I>vs.</I> resolution:</FONT>
+<BR><A HREF=/SWS/eocdgF42qmcTbhYV/eocdgF42qmcTbhYV-SWS-stats-obs.log.MultiplicitySph.png>
+<IMG SRC=/SWS/eocdgF42qmcTbhYV/eocdgF42qmcTbhYV-SWS-stats-obs.log.MultiplicitySph.png WIDTH=100%></A>
+</TABLE>
+
+<BR><LI><B>Summary of merging statistics for observed data:</A></B><DIV STYLE=background-color:PaleGreen><PRE>
+                                              Overall  InnerShell  OuterShell
+  ---------------------------------------------------------------------------
+     Low resolution limit                      43.737      43.737       2.615
+     High resolution limit                      2.501       7.449       2.501
+
+     Rmerge  (all I+ & I-)                      0.102       0.043       0.645
+     Rmerge  (within I+/I-)                     0.087       0.038       0.596
+     Rmeas   (all I+ & I-)                      0.127       0.052       0.846
+     Rmeas   (within I+/I-)                     0.119       0.053       0.805
+     Rpim    (all I+ & I-)                      0.074       0.029       0.540
+     Rpim    (within I+/I-)                     0.080       0.036       0.535
+     Total number of observations               45903        2505        2062
+     Total number unique                        18723         936         936
+     Mean(I)/sd(I)                                7.0        18.5         1.4
+     Completeness (spherical)                    40.9        52.3        16.4
+     Completeness (ellipsoidal)                  45.7        52.3        11.6
+     Multiplicity                                 2.5         2.7         2.2
+     CC(1/2)                                    0.992       0.994       0.546
+
+     Anomalous completeness (spherical)          16.9        37.4         1.9
+     Anomalous completeness (ellipsoidal)        20.4        37.4         0.0
+     Anomalous multiplicity                       1.7         1.6         1.7
+     CC(ano)                                   -0.000      -0.102       0.167
+     |DANO|/sd(DANO)                            0.811       0.821       0.939
+</PRE></DIV><BR></UL><HR NOSHADE><UL>
+<BR><LI><B>Data processing and anisotropy information extracted from the STARANISO log file:</B><PRE>
+
+Using MTZ column labels:      IMEAN  SIGIMEAN  I(+)  SIGI(+)  I(-)  SIGI(-)  N(+)  N(-)  IHALF1  IHALF2
+
+Unit cell and space group:      190.950  110.300   64.280  90.00  96.29  90.00   'C 1 2 1'
+Nominal diffraction range:       43.737  2.501
+Input reflection count:           28387
+
+Diffraction cut-off criterion: Local mean I/sd(I) = 1.20
+
+Diffraction limits & principal axes of ellipsoid fitted to diffraction cut-off surface:
+
+                              3.432         0.7661   0.0000   0.6427       0.972 <B>a*</B> + 0.237 <B>c*</B>
+                              2.237         0.0000   1.0000   0.0000       <B>b*</B>
+                              2.482        -0.6427   0.0000   0.7661      -0.917 <B>a*</B> + 0.400 <B>c*</B>
+
+GoF to ellipsoid (d*):  0.0415    Fraction of surface points fitted:   78.3%  (     3511 /     4484)
+
+Number of unobserved reflections inside ellipsoid:     6501
+Number of observed reflections inside ellipsoid:      16168
+Number of observed reflections outside ellipsoid:      2555
+
+Lowest cut-off diffraction limit:
+            3.991 at reflection   -7    3   16  in direction  -0.395 <B>a*</B> + 0.169 <B>b*</B> + 0.903 <B>c*</B>
+
+Worst diffraction limit after cut-off:
+           21.292 at reflection   -8    2    1  in direction  -0.963 <B>a*</B> + 0.241 <B>b*</B> + 0.120 <B>c*</B>
+
+Best diffraction limit after cut-off:
+            2.501 at reflection   52   30    5  in direction   0.863 <B>a*</B> + 0.498 <B>b*</B> + 0.083 <B>c*</B>
+
+NOTE that because the cut-off surface is likely to be only very approximately ellipsoidal, in part
+due to variations in reflection redundancy arising from the chosen collection strategy, the
+directions of the worst and best diffraction limits may not correspond with the reciprocal axes,
+even in high-symmetry space groups (the only constraint being that the surface must have point
+symmetry at least that of the Laue class).
+
+Fraction of data inside cut-off surface:        66.0%  (    18723 /    28387)
+
+<B><FONT COLOR=red>Fraction of cut-off surface above threshold:    15.7%  (     234 /    1494)
+</FONT></B>
+<B><FONT COLOR=red>WARNING: Diffraction of the input data has probably been truncated due to an inappropriate
+(an)isotropic diffraction cut-off applied in previous processing, or the diffraction pattern may
+have extended beyond the edges of the detector.  In the latter case consider the possibilities of
+either moving the detector closer or swinging it out, having carefully checked in the former case
+that this will not create a risk of spot overlap.
+</FONT></B>
+Fraction of total surface above threshold truncated by cusp(s):               55.4%  (    2481 /    4475)
+
+Scale:                         5.117E-03    [ = factor to place Iobs on same scale as Iprofile/100.]
+Beq:                               68.67    [ = equivalent overall isotropic B factor on Fs.]
+
+                                               B11      B22      B33      B23      B31      B12
+Delta-B tensor:                             -13.49   -22.50    35.99     0.00    -6.90     0.00
+
+Note: the delta-B tensor is the overall anisotropy tensor on Fs after subtraction of Beq from its
+diagonal elements (so trace = 0).
+
+Eigenvalues (E) & eigenvectors of overall anisotropy (B) tensor on Fs:
+
+                              54.24         0.9908   0.0000   0.1355       <B>a*</B> + 0.009 <B>c*</B>
+                              46.17         0.0000   1.0000   0.0000       <B>b*</B>
+                             105.61        -0.1355   0.0000   0.9908      -0.374 <B>a*</B> + 0.928 <B>c*</B>
+
+The eigenvalues and eigenvectors of the overall B tensor are the squares of the lengths and the
+directions of the principal axes of the ellipsoid that represents the tensor.
+
+Delta-B eigenvalues:                   -14.44   -22.50    36.94
+
+The delta-B eigenvalues are the eigenvalues of the overall anisotropy tensor after subtraction of
+Beq (so sum = 0).
+
+Angle & axis of rotation of diffraction-limit ellipsoid relative to anisotropy tensor:
+
+                              32.20         0.0000  -1.0000   0.0000
+
+Anisotropy ratio:             0.866    [ = (Emax - Emin) / Beq ]
+Fractional anisotropy:        0.438    [ = sqrt(1.5 Sum_i (E_i - Beq)^2 / Sum_i E_i^2) ]
+
+Eigenvalues & eigenvectors of redundancy anisotropy tensor:
+
+                               1.20         0.9555   0.0000  -0.2951       0.990 <B>a*</B> - 0.139 <B>c*</B>
+                               0.75         0.0000   1.0000   0.0000       <B>b*</B>
+                               0.46         0.2951   0.0000   0.9555       0.691 <B>a*</B> + 0.723 <B>c*</B>
+
+Eigenvalues & eigenvectors of mean I/sd(I) anisotropy tensor:
+
+                               2.32         0.9900   0.0000  -0.1409       0.996 <B>a*</B> - 0.084 <B>c*</B>
+                               1.62         0.0000   1.0000   0.0000       <B>b*</B>
+                               1.00         0.1409   0.0000   0.9900       0.397 <B>a*</B> + 0.918 <B>c*</B>
+
+Eigenvalues & eigenvectors of weighted CC_1/2 anisotropy tensor:
+
+                              0.367         0.9823   0.0000  -0.1873       0.995 <B>a*</B> - 0.100 <B>c*</B>
+                              0.284         0.0000   1.0000   0.0000       <B>b*</B>
+                              0.184         0.1873   0.0000   0.9823       0.503 <B>a*</B> + 0.864 <B>c*</B>
+
+Eigenvalues & eigenvectors of Z(weighted CC_1/2) anisotropy tensor:
+
+                              59.77         0.9642   0.0000  -0.2651       0.992 <B>a*</B> - 0.128 <B>c*</B>
+                              42.78         0.0000   1.0000   0.0000       <B>b*</B>
+                              28.99         0.2651   0.0000   0.9642       0.646 <B>a*</B> + 0.763 <B>c*</B>
+
+Eigenvalues & eigenvectors of mean K-L divergence anisotropy tensor:
+
+                              0.242         0.9891   0.0000  -0.1472       0.996 <B>a*</B> - 0.086 <B>c*</B>
+                              0.179         0.0000   1.0000   0.0000       <B>b*</B>
+                              0.112         0.1472   0.0000   0.9891       0.412 <B>a*</B> + 0.911 <B>c*</B>
+
+Ranges of redundancy, local mean I/sd(I), local weighted CC_1/2, local Z(weighted CC_1/2), local mean K-L divergence and D-W factor [= exp(-4 pi^2 s~Us)]:
+
+                  Redund  ISmean  CChalf  ZChalf  KLdive  DWfact
+  0   Grey                         Unobservable*
+  1   Blue                          Observable*
+  2   Red|Pink:9       1    1.20  0.5000   45.00   0.193  0.0223
+  3   Orange           2    4.04  0.8881  133.67   0.546  0.0660
+  4   Yellow           3    9.57  0.9479  180.19   0.940  0.1628
+  5   Green            5   14.14  0.9598  207.14   1.144  0.3347
+  6   Cyan             6   18.18  0.9687  229.02   1.299  0.5740
+  7   Magenta          7   22.35  0.9763  254.76   1.617  0.8212
+  8   White            8   24.11  0.9791  268.35   2.059  0.9799
+
+* Refer to <A TARGET=_blank HREF=/staraniso_glossary.html>GLOSSARY</A> for explanation of terminology.
+
+The cut-off surface uses a different color scheme:
+Unmeasured points are blue (inside the fitted surface) or cyan (outside).
+Unobserved points are red (in) or green (out).
+Observed points are orange (in) or white (out).
+The fitted surface is magenta.
+
+Anisotropic S/N ratio:         6.37    [ = max_h | exp(4 pi^2 s~_h delta(B) s_h) - 1 | &lt;I_h/sd(I_h)&gt; ]
+
+The 'anisotropic S/N ratio', unlike the 'anisotropy ratio' or the 'fractional anisotropy' shown
+above, in addition to the anisotropy of the B tensor, takes both the diffraction and the local mean
+I/sd(I) into account.
+
+</PRE>
+
+</UL><HR NOSHADE><UL><BR><LI><B>Instructions for using the
+reciprocal-lattice viewer (hit 'h' in viewer to see on-screen):</B>
+
+<UL><P><LI><B>Mouse:</B><TABLE WIDTH=80%>
+<TR><TD WIDTH=20%>Left-down & drag:<TD>Rotate view.
+<TR><TD>Middle-down & drag:<TD>Translate.
+<TR><TD>Right-down & drag:<TD>Zoom.
+<TR><TD>Wheel:<TD>Adjust <B><I>z</I></B>-clipping depth.
+<TR><TD>Left-down & wheel:<TD>Adjust <B><I>z</I></B>-clipping position.
+
+<TR><TD>&nbsp<TR><TD COLSPAN=2>Most of the mouse actions should also
+work on a touchscreen (<I>e.g.</I> tablet or smartphone), though a
+gesture to emulate the mousewheel may not be available on all
+devices!</TABLE>
+
+<P><LI><B>Keyboard:</B><TABLE WIDTH=80%>
+<TR><TD WIDTH=20%>- =<TD>Adjust point size.
+<TR><TD>0 .. 9<TD>Toggle points in sets 0 (grey) to 9 (pink).
+<TR><TD>c<TD>Reset only translation and <B><I>z</I></B>-clipping so that
+the objects are re-centred.
+<TR><TD>d<TD>Toggle depth-cueing.
+<TR><TD>h<TD>Toggle on-screen help text (all text can be resized by
+clicking anywhere in the caption text above the graphics canvas, then
+use Ctrl/Wheel).
+<TR><TD>i<TD>Reset to initial orientation, translation, zoom and
+<B><I>z</I></B>-clipping.
+<TR><TD>n<TD>Complement point visibilities.
+<TR><TD>p<TD>Make screenshot (PNG): requires pop-ups from server to be
+allowed.
+<TR><TD>q<TD>Stop/start rock/roll.
+<TR><TD>r<TD>Cycle through rock, roll(-), roll(+).
+<TR><TD>s<TD>Toggle d-spacing labels.
+<TR><TD>x<TD>Reset orientation, translation and <B><I>z</I></B>-clipping
+to view down world <B><I>x</I></B> axis (initially to right).
+<TR><TD>y<TD>Ditto for <B><I>y</I></B> axis (initially up).
+<TR><TD>z<TD>Ditto for <B><I>z</I></B> axis (initially towards viewer).
+<TR><TD>Shift-x/y/z<TD>View from negative axis direction.
+<TR><TD>Down/up arrow<TD>Decrease/increase rocking amplitude.
+<TR><TD>Left/right arrow<TD>Decrease/increase rock/roll speed.
+</TABLE></UL>
+
+<BR><BR><LI><FONT COLOR=red><B>IMPORTANT NOTE</B></FONT>
+<P><UL>If you don't see in the local mean <I>I</I>/&sigma;(<I>I</I>)
+plot at least a thin layer of <FONT COLOR=red><B>red</B></FONT> points
+(<I>i.e.</I> representing rejected data) that covers most of an outer
+<SPAN STYLE=background-color:grey><FONT
+COLOR=orange><B>orange</B></FONT></SPAN> spherical or ellipsoidal
+surface (representing the diffraction limit of observed significant data,
+(<I>i.e.</I> ignore any <FONT COLOR=blue><B>dark blue</B></FONT> points
+representing unmeasured data), it means either that there were good data
+beyond the edges of the detector, or (more likely) that the <A
+TARGET=_blank HREF=/staraniso_about.html>advice</A> concerning
+the application of a diffraction cut-off to the data prior to running
+STARANISO was not heeded.&nbsp This should also have shown up as a
+warning in the summary of the anisotropy information extracted from the
+STARANISO log file above.</UL></UL>
+<HR NOSHADE><UL>
+
+<BR><LI><B>Select the color-coded reciprocal lattice scene(s) to view in
+WebGL 3-D:</B>
+<FORM NAME=scenes TARGET=_blank
+ACTION=/cgi-bin/RLViewer_WebGL_scroll.cgi
+ONSUBMIT='return checkScenes(1)'>
+<INPUT TYPE=hidden NAME=name VALUE=Dale Tronrud>
+<INPUT TYPE=hidden NAME=email VALUE=dale@daletronrud.com>
+<INPUT TYPE=hidden NAME=jobID VALUE=eocdgF42qmcTbhYV>
+<INPUT TYPE=hidden NAME=root VALUE=eocdgF42qmcTbhYV-SWS>
+<BR><CENTER>
+
+<DIV STYLE=display:inline-block><INPUT TYPE=checkbox NAME=lpchis
+VALUE='-aniso-masked-mrf,0,-log P(<I>chi</I><SUP>2</SUP>)'><B>Experimental:</B> -log
+P(<I>&chi;</I><SUP>2</SUP>)</DIV> &nbsp&nbsp&nbsp
+
+<DIV STYLE=display:inline-block><INPUT TYPE=checkbox NAME=redund CHECKED
+VALUE=-aniso-merged,0,Redundancy>Redundancy</DIV> &nbsp&nbsp&nbsp
+
+<DIV STYLE=display:inline-block><INPUT TYPE=checkbox NAME=ismean CHECKED
+VALUE='-aniso-merged,1,Mean <I>I/sigma</I>(<I>I</I>)'>Mean
+<I>I/&sigma;</I>(<I>I</I>)</DIV> &nbsp&nbsp&nbsp
+
+<DIV STYLE=display:inline-block><INPUT TYPE=checkbox NAME=cchalf CHECKED
+VALUE='-aniso-merged,2,Weighted CChalf'>Weighted CC&half;</DIV>
+&nbsp&nbsp&nbsp
+
+<DIV STYLE=display:inline-block><INPUT TYPE=checkbox NAME=zchalf
+VALUE='-aniso-merged,3,<I>Z</I>(weighted CChalf)'><I>Z</I>(<I>w</I>CC&half;)</DIV>
+&nbsp&nbsp&nbsp
+
+<DIV STYLE=display:inline-block><INPUT TYPE=checkbox NAME=kldive
+VALUE='-aniso-merged,4,Kullback-Leibler divergence'><B>Experimental:</B>
+Kullback-Leibler divergence</DIV> &nbsp&nbsp&nbsp
+
+<DIV STYLE=display:inline-block><INPUT TYPE=checkbox NAME=cutoff
+VALUE='-aniso-merged,-1,Cut-off surface'>Cut-off surface</DIV> &nbsp&nbsp&nbsp
+
+<DIV STYLE=display:inline-block><INPUT TYPE=checkbox NAME=dwfact CHECKED 
+VALUE='-aniso-merged,5,Debye-Waller factor'>Debye-Waller factor</DIV>
+&nbsp&nbsp&nbsp
+
+<BR><BR><INPUT NAME=button TYPE=button VALUE='Check all '
+ONCLICK=checkButtons(1)> &nbsp&nbsp&nbsp&nbsp
+<INPUT TYPE=submit VALUE='VIEW Reciprocal lattices in WebGL'></TABLE>
+</CENTER></FORM>
+<BR><BR><CENTER>
+<FORM TARGET=_blank ACTION=/cgi-bin/download.cgi
+STYLE=display:inline>
+<INPUT TYPE=hidden NAME=jobID VALUE=eocdgF42qmcTbhYV>
+<INPUT TYPE=hidden NAME=root VALUE=eocdgF42qmcTbhYV-SWS>
+<INPUT TYPE=hidden NAME=fn_in VALUE=temp-trunc_offset.ahkl>
+
+<INPUT TYPE=submit VALUE='Download outputs'></FORM> &nbsp&nbsp&nbsp&nbsp
+
+<FORM ACTION=/cgi-bin/staraniso.cgi STYLE=display:inline>
+<INPUT TYPE=hidden NAME=name VALUE="Dale Tronrud">
+<INPUT TYPE=hidden NAME=email VALUE='dale@daletronrud.com'>
+<INPUT TYPE=submit VALUE='Retrieve a previous job'></FORM>
+&nbsp&nbsp&nbsp&nbsp
+<FORM ACTION=/cgi-bin/staraniso.cgi STYLE=display:inline>
+<INPUT TYPE=hidden NAME=init VALUE=1>
+<INPUT TYPE=hidden NAME=agree VALUE=1>
+<INPUT TYPE=hidden NAME=name VALUE="Dale Tronrud">
+<INPUT TYPE=hidden NAME=email VALUE='dale@daletronrud.com'>
+<INPUT TYPE=submit VALUE='Submit a new job'></FORM></CENTER>
+
+<P><BR><CENTER><FONT SIZE=-1>STARANISO server release v3.317 28-Apr-2020.</FONT></CENTER>
+</BODY></HTML>

@@ -1,0 +1,2319 @@
+%!PS-Adobe-3.0
+%%Creator: SfCheck
+%%DocumentNeededResources: font Times-Roman Symbol Times-Bold Courier
+%%BoundingBox: (atend)
+%%Pages:    2
+%%EndComments
+%%BeginProlog
+%%BeginResource: latin1_prolog
+ 
+% ReEncodeSmall from Adobe Postscript Tutorial and Cookbook
+/reencsmalldict 12 dict def
+/ReEncodeSmall
+ {reencsmalldict begin
+  /newcodesandnames exch def
+  /newfontname exch def
+  /basefontname exch def
+ 
+  /basefontdict basefontname findfont def
+  /newfont basefontdict maxlength dict def
+ 
+  basefontdict
+   {exch dup /FID ne
+     {dup /Encoding eq
+       {exch dup length array copy
+	 newfont 3 1 roll put}
+       {exch newfont 3 1 roll put}
+       ifelse
+     }
+     {pop pop}
+     ifelse
+   }forall
+ 
+  newfont /FontName newfontname put
+  newcodesandnames aload pop
+ 
+  newcodesandnames length 2 idiv
+   {newfont /Encoding get 3 1 roll put}
+   repeat
+ 
+  newfontname newfont definefont pop
+  end
+}def
+%%EndResource
+%%BeginResource: latin1_encoding
+/encode_vector [
+8#040  /space        8#041  /exclam       8#042  /quotedbl     
+8#043  /numbersign   8#044  /dollar       8#045  /percent      
+8#046  /ampersand    8#047  /quoteright   8#050  /parenleft    
+8#051  /parenright   8#052  /asterisk     8#053  /plus         
+8#054  /comma        8#055  /minus        8#056  /period       
+8#057  /slash        8#060  /zero         8#061  /one          
+8#062  /two          8#063  /three        8#064  /four         
+8#065  /five         8#066  /six          8#067  /seven        
+8#070  /eight        8#071  /nine         8#072  /colon        
+8#073  /semicolon    8#074  /less         8#075  /equal        
+8#076  /greater      8#077  /question     8#100  /at           
+8#101  /A            8#102  /B            8#103  /C            
+8#104  /D            8#105  /E            8#106  /F            
+8#107  /G            8#110  /H            8#111  /I            
+8#112  /J            8#113  /K            8#114  /L            
+8#115  /M            8#116  /N            8#117  /O            
+8#120  /P            8#121  /Q            8#122  /R            
+8#123  /S            8#124  /T            8#125  /U            
+8#126  /V            8#127  /W            8#130  /X            
+8#131  /Y            8#132  /Z            8#133  /bracketleft  
+8#134  /backslash    8#135  /bracketright 8#136  /asciicircum  
+8#137  /underscore   8#140  /quoteleft    8#141  /a            
+8#142  /b            8#143  /c            8#144  /d            
+8#145  /e            8#146  /f            8#147  /g            
+8#150  /h            8#151  /i            8#152  /j            
+8#153  /k            8#154  /l            8#155  /m            
+8#156  /n            8#157  /o            8#160  /p            
+8#161  /q            8#162  /r            8#163  /s            
+8#164  /t            8#165  /u            8#166  /v            
+8#167  /w            8#170  /x            8#171  /y            
+8#172  /z            8#173  /braceleft    8#174  /bar          
+8#175  /braceright   8#176  /tilde        8#240  /space        
+8#241  /exclamdown   8#242  /cent         8#243  /sterling     
+8#244  /currency     8#245  /yen          8#246  /brokenbar    
+8#247  /section      8#250  /dieresis     8#251  /copyright    
+8#252  /ordfeminine  8#253  /guillemotleft 8#254  /logicalnot  
+8#255  /hyphen       8#256  /registered   8#257  /macron       
+8#260  /degree       8#261  /plusminus    8#262  /twosuperior  
+8#263  /threesuperior 8#264  /acute       8#265  /mu           
+8#266  /paragraph    8#267  /bullet       8#270  /cedilla      
+8#271  /dotlessi    8#272  /ordmasculine 8#273  /guillemotright
+8#274  /onequarter   8#275  /onehalf      8#276  /threequarters
+8#277  /questiondown 8#300  /Agrave       8#301  /Aacute       
+8#302  /Acircumflex  8#303  /Atilde       8#304  /Adieresis    
+8#305  /Aring        8#306  /AE           8#307  /Ccedilla     
+8#310  /Egrave       8#311  /Eacute       8#312  /Ecircumflex  
+8#313  /Edieresis    8#314  /Igrave       8#315  /Iacute       
+8#316  /Icircumflex  8#317  /Idieresis    8#320  /Eth          
+8#321  /Ntilde       8#322  /Ograve       8#323  /Oacute       
+8#324  /Ocircumflex  8#325  /Otilde       8#326  /Odieresis    
+8#327  /multiply     8#330  /Oslash       8#331  /Ugrave       
+8#332  /Uacute       8#333  /Ucircumflex  8#334  /Udieresis    
+8#335  /Yacute       8#336  /Thorn        8#337  /germandbls   
+8#340  /agrave       8#341  /aacute       8#342  /acircumflex  
+8#343  /atilde       8#344  /adieresis    8#345  /aring        
+8#346  /ae           8#347  /ccedilla     8#350  /egrave       
+8#351  /eacute       8#352  /ecircumflex  8#353  /edieresis    
+8#354  /igrave       8#355  /iacute       8#356  /icircumflex  
+8#357  /idieresis    8#360  /eth          8#361  /ntilde       
+8#362  /ograve       8#363  /oacute       8#364  /ocircumflex  
+8#365  /otilde       8#366  /odieresis    8#367  /divide       
+8#370  /oslash       8#371  /ugrave       8#372  /uacute       
+8#373  /ucircumflex  8#374  /udieresis    8#375  /yacute       
+8#376  /thorn        8#377  /ydieresis    	
+] def
+%%EndResource
+/L { moveto lineto stroke } bind def
+/Col { setrgbcolor } bind def
+/Poly3 { moveto lineto lineto fill } bind def
+/Pl3 { gsave newpath 6 copy Poly3 moveto moveto moveto closepath stroke grestore } bind def
+/Pline3 { gsave newpath 6 copy Poly3 moveto lineto lineto closepath stroke grestore } bind def
+/Poly4 { moveto lineto lineto lineto fill grestore } bind def
+/Pl4 { 8 copy Poly4 moveto moveto moveto moveto closepath stroke } bind def
+/Pline4 { 8 copy Poly4 moveto lineto lineto lineto closepath stroke } bind def
+/Circle { gsave newpath 0.0 setgray 3 copy 0 360 arc fill stroke grestore }
+bind def
+/Circleu { gsave newpath 3 copy 0 360 arc stroke grestore }
+bind def
+/DrawSect
+  { /grayshade exch def
+    /endangle exch def
+    /startangle exch def
+    /radhigh exch def
+    /radlow exch def
+    /cy exch def
+    /cx exch def
+    newpath cx cy radlow startangle endangle arc
+    cx cy radhigh endangle startangle arcn closepath
+    1.415 setmiterlimit
+    gsave grayshade setgray fill grestore
+    stroke
+  } def
+/DrawUSect
+  { /grayshade exch def
+    /endangle exch def
+    /startangle exch def
+    /radhigh exch def
+    /radlow exch def
+    /cy exch def
+    /cx exch def
+    newpath cx cy radlow startangle endangle arc
+    cx cy radhigh endangle startangle arcn closepath
+    1.415 setmiterlimit
+    gsave grayshade setgray fill grestore
+  } def
+/DrawBadSect
+  { /endangle exch def
+    /startangle exch def
+    /radhigh exch def
+    /radlow exch def
+    /cy exch def
+    /cx exch def
+    newpath cx cy radlow startangle endangle arc
+    cx cy radhigh startangle endangle arc closepath
+    1.415 setmiterlimit
+    stroke
+  } def
+/OrthoBox
+  { /grayshade exch def
+    /YHigh exch def
+    /YLow exch def
+    /XRight exch def
+    /XLeft exch def
+    newpath XLeft YHigh moveto XRight YHigh lineto
+    XRight YLow lineto XLeft YLow lineto closepath
+    gsave grayshade setgray fill grestore
+    stroke
+  } def
+/ArrowHead
+  { /WidthHalf exch def
+    /Length exch def
+    /Angle exch def
+    /YBase exch def
+    /XBase exch def
+    gsave XBase YBase translate Angle rotate
+    newpath 0 0 moveto 0 WidthHalf neg lineto
+    Length 0 lineto 0 WidthHalf lineto 0 0 lineto
+    closepath 0 setgray fill grestore
+  } def
+/RightJ {
+  dup /Times-Roman-Extd findfont exch scalefont setfont
+  exch stringwidth pop -1 mul exch pop 0 rmoveto
+ } bind def
+/CCenterRot90 {
+  dup /Courier findfont exch scalefont setfont
+  exch stringwidth pop -2 div exch 3 div exch rmoveto
+ } bind def
+/Rot45 { gsave currentpoint translate 45 rotate } bind def
+/CPrint { /Courier findfont exch scalefont setfont show } bind def
+
+/Print { /Times-Roman-Extd findfont exch scalefont setfont show } bind def
+/Bprint { /Times-Bold findfont exch scalefont setfont show } bind def
+/Gprint { /Symbol findfont exch scalefont setfont show } bind def
+/Center {
+  dup /Times-Roman-Extd findfont exch scalefont setfont
+  exch stringwidth pop -2 div exch -3 div rmoveto
+ } bind def
+/CenterRot90 {
+  dup /Times-Roman-Extd findfont exch scalefont setfont
+  exch stringwidth pop -2 div exch 3 div exch rmoveto
+ } bind def
+/UncenterRot90 {
+  dup /Times-Roman-Extd findfont exch scalefont setfont
+  exch stringwidth } bind def
+/Rot90 { gsave currentpoint translate 90 rotate } bind def
+%%EndProlog
+%%BeginSetup
+1 setlinecap 1 setlinejoin 1 setlinewidth 0 setgray [ ] 0 setdash newpath
+/Times-Roman /Times-Roman-Extd encode_vector ReEncodeSmall
+%%EndSetup
+%%Page:    1    2
+/SfCheckSave save def
+ 30.00 50.00 moveto 550.00  50.00 lineto 550.00 780.00 lineto
+  30.00 780.00 lineto closepath gsave
+gsave 1.0000 setgray fill grestore
+clip newpath
+ 0.10 setlinewidth
+  45.00 771.75 moveto
+("Judge not, that you be not judged" Bible, Matthew, ch.7)
+ 9.0 Print
+ 292.00 759.00 moveto
+(Structure Factor Check)
+25.0 Center
+(Structure Factor Check)
+25.0 Print
+ 292.00 734.00 moveto
+(XXXX)
+20.0 Center
+(XXXX)
+20.0 Print
+  33.00  52.00 moveto
+(SFCHECK 7.05.03)
+ 4.0 Print
+ 1.00 setlinewidth
+  63.00 518.00 257.00 600.00   0.75 OrthoBox
+  78.00 503.00 590.00 548.00   0.95 OrthoBox
+  68.00 288.00 538.00 262.00   0.95 OrthoBox
+ 293.00 513.00 538.00 262.00   0.95 OrthoBox
+  88.00 577.75 moveto
+(Title:)
+ 9.0 Print
+ 138.00 577.75 moveto
+(XXXXXXXX    ?)
+ 9.0 Print
+  88.00 565.75 moveto
+(Date:)
+ 9.0 Print
+ 138.00 565.75 moveto
+(XX-XXX-XX)
+ 9.0 Print
+  88.00 553.75 moveto
+(PDB code:)
+ 9.0 Print
+ 138.00 553.75 moveto
+(XXXX)
+ 9.0 Print
+ 128.00 525.00 moveto
+(Crystal)
+12.0 Bprint
+  78.00 513.50 moveto
+(Cell parameters:)
+10.0 Print
+  88.00 501.50 moveto
+(a:  190.95 A)
+10.0 Print
+ 153.00 501.50 moveto
+(b:  110.30 A)
+10.0 Print
+ 218.00 501.50 moveto
+(c:   64.28 A)
+10.0 Print
+  88.00 489.50 moveto
+(a:)
+10.0 Gprint
+  98.00 489.50 moveto
+(  90.00)
+10.0 Print
+ 153.00 489.50 moveto
+(b:)
+10.0 Gprint
+ 163.00 489.50 moveto
+(  96.29)
+10.0 Print
+ 218.00 489.50 moveto
+(g:)
+10.0 Gprint
+ 228.00 489.50 moveto
+(  90.00)
+10.0 Print
+  78.00 474.50 moveto
+(Space group: C 1 2 1)
+10.0 Print
+ 323.00 525.00 moveto
+(Structure Factors)
+12.0 Bprint
+ 313.00 508.50 moveto
+(Input)
+10.0 Bprint
+ 303.00 496.50 moveto
+(Nominal resolution range:)
+10.0 Print
+ 443.00 496.50 moveto
+(43.7 -  2.50 A)
+10.0 Print
+ 303.00 484.50 moveto
+(Reflections in file:)
+10.0 Print
+ 493.00 484.50 moveto
+(28341)
+10.0 RightJ
+(28341)
+10.0 Print
+ 303.00 472.50 moveto
+(Unique reflections)
+10.0 Print
+ 383.00 472.50 moveto
+(above 0:)
+10.0 Print
+ 493.00 472.50 moveto
+(28341)
+10.0 RightJ
+(28341)
+10.0 Print
+ 383.00 460.50 moveto
+(above 1)
+10.0 Print
+ 415.00 460.50 moveto
+(s:)
+10.0 Gprint
+ 493.00 460.50 moveto
+(22305)
+10.0 RightJ
+(22305)
+10.0 Print
+ 383.00 448.50 moveto
+(above 3)
+10.0 Print
+ 415.00 448.50 moveto
+(s:)
+10.0 Gprint
+ 493.00 448.50 moveto
+(9398)
+10.0 RightJ
+(9398)
+10.0 Print
+ 313.00 431.50 moveto
+(SFCHECK)
+10.0 Bprint
+ 303.00 419.50 moveto
+(Nominal resolution range:)
+10.0 Print
+ 443.00 419.50 moveto
+(43.7 -  2.50 A)
+10.0 Print
+ 328.00 410.00 moveto
+(\\05max. from input data, min. from author\\05)
+ 8.0 Print
+ 303.00 397.50 moveto
+(Used reflections:)
+10.0 Print
+ 493.00 397.50 moveto
+(28341)
+10.0 RightJ
+(28341)
+10.0 Print
+ 303.00 385.50 moveto
+(Completeness:)
+10.0 Print
+ 473.00 385.50 moveto
+(61.8 %)
+10.0 Print
+ 303.00 373.50 moveto
+(R_stand(F) = <)
+10.0 Print
+ 365.00 373.50 moveto
+(s)
+10.0 Gprint
+ 371.00 373.50 moveto
+((F)>/<F> :)
+10.0 Print
+ 473.00 373.50 moveto
+(0.148)
+10.0 Print
+ 303.00 361.50 moveto
+(Anisotropic distribution of Structure Factors)
+10.0 Print
+ 318.00 351.50 moveto
+(ratio of eigen values:)
+10.0 Print
+ 408.00 351.50 moveto
+(0.4881  0.4521  1.0000)
+10.0 Print
+ 303.00 339.50 moveto
+(B_overall (by Patterson):)
+10.0 Print
+ 473.00 339.50 moveto
+(44.A^2)
+10.0 Print
+ 303.00 327.50 moveto
+(Optical resolution:)
+10.0 Print
+ 473.00 327.50 moveto
+(1.96 A)
+10.0 Print
+ 303.00 315.50 moveto
+(Expected opt. resol. for complete data set:)
+10.0 Print
+ 473.00 315.50 moveto
+(1.96 A)
+10.0 Print
+ 303.00 303.50 moveto
+(Estimated minimal error:)
+10.0 Print
+ 473.00 303.50 moveto
+(0.327 A)
+10.0 Print
+ 303.00 291.50 moveto
+(Pseudo-translation is not detected)
+10.0 Print
+ 303.00 279.50 moveto
+(Probably crystal is twinned)
+10.0 Print
+ 303.00 267.50 moveto
+(Twinning fraction:)
+10.0 Print
+ 408.00 267.50 moveto
+(0.091)
+10.0 Print
+grestore stroke
+SfCheckSave restore
+showpage
+%%Page:    2    2
+/SfCheckSave save def
+ 30.00 50.00 moveto 550.00  50.00 lineto 550.00 780.00 lineto
+  30.00 780.00 lineto closepath gsave
+gsave 1.0000 setgray fill grestore
+clip newpath
+ 0.10 setlinewidth
+ 292.00 764.00 moveto
+(Structure Factor Check)
+30.0 Center
+(Structure Factor Check)
+30.0 Print
+ 292.00 734.00 moveto
+(XXXX)
+25.0 Center
+(XXXX)
+25.0 Print
+  33.00  52.00 moveto
+(SFCHECK 7.05.03)
+ 4.0 Print
+    114.00    560.00 translate
+gsave 0.9500 setgray
+   0.00   0.00   0.00 150.00 150.00 150.00 150.00   0.00 Pl4
+ -30.00  60.00 moveto
+(<F>) 15.0 UncenterRot90 Rot90
+(<F>) 15.0 Print
+grestore
+ 2.00 setlinewidth
+   0.00 -35.00  15.00 -35.00 L
+   0.00 -35.00   2.00 Circle
+  15.00 -35.00   2.00 Circle
+  25.00 -37.25 moveto
+(<F>)
+ 9.0 Print
+ 0.60 setlinewidth
+   0.00 -45.00  15.00 -45.00 L
+  25.00 -47.25 moveto
+(Wilson plot (B_overall =  85.2 A^2))
+ 9.0 Print
+ 0.60 setlinewidth
+   0.00   0.00   0.00 150.00 L
+   0.00 150.00 150.00 150.00 L
+ 150.00 150.00 150.00   0.00 L
+ 150.00   0.00   0.00   0.00 L
+   0.00  -7.50 moveto
+(0.00)
+10.0 Center
+(0.00)
+10.0 Print
+   0.00   0.00   0.00  -3.33 L
+  37.50  -7.50 moveto
+(0.10)
+10.0 Center
+(0.10)
+10.0 Print
+  37.50   0.00  37.50  -3.33 L
+  75.00  -7.50 moveto
+(0.20)
+10.0 Center
+(0.20)
+10.0 Print
+  75.00   0.00  75.00  -3.33 L
+ 112.50  -7.50 moveto
+(0.30)
+10.0 Center
+(0.30)
+10.0 Print
+ 112.50   0.00 112.50  -3.33 L
+ 150.00  -7.50 moveto
+(0.40)
+10.0 Center
+(0.40)
+10.0 Print
+ 150.00   0.00 150.00  -3.33 L
+ -15.00  25.00 moveto
+(  500)
+10.0 Center
+(  500)
+10.0 Print
+  -3.33  25.00   0.00  25.00 L
+ -15.00  50.00 moveto
+( 1000)
+10.0 Center
+( 1000)
+10.0 Print
+  -3.33  50.00   0.00  50.00 L
+ -15.00  75.00 moveto
+( 1500)
+10.0 Center
+( 1500)
+10.0 Print
+  -3.33  75.00   0.00  75.00 L
+ -15.00 100.00 moveto
+( 2000)
+10.0 Center
+( 2000)
+10.0 Print
+  -3.33 100.00   0.00 100.00 L
+ -15.00 125.00 moveto
+( 2500)
+10.0 Center
+( 2500)
+10.0 Print
+  -3.33 125.00   0.00 125.00 L
+ -15.00 150.00 moveto
+( 3000)
+10.0 Center
+( 3000)
+10.0 Print
+  -3.33 150.00   0.00 150.00 L
+ -30.00  -7.50 moveto
+(1/d)
+13.0 Center
+(1/d)
+13.0 Print
+ -30.00 -20.00 moveto
+(d)
+13.0 Center
+(d)
+13.0 Print
+  37.50 -20.00 moveto
+(10.00)
+10.0 Center
+(10.00)
+10.0 Print
+  75.00 -20.00 moveto
+(5.00)
+10.0 Center
+(5.00)
+10.0 Print
+ 112.50 -20.00 moveto
+(3.33)
+10.0 Center
+(3.33)
+10.0 Print
+ 150.00 -20.00 moveto
+(2.50)
+10.0 Center
+(2.50)
+10.0 Print
+ 172.50 -20.00 moveto
+(A)
+10.0 Center
+(A)
+10.0 Print
+  12.11 128.65  19.18 124.41 L
+  19.18 124.41  26.25 118.51 L
+  26.25 118.51  33.32 111.18 L
+  33.32 111.18  40.39 102.75 L
+  40.39 102.75  47.47  93.52 L
+  47.47  93.52  54.54  83.85 L
+  54.54  83.85  61.61  74.05 L
+  61.61  74.05  68.68  64.41 L
+  68.68  64.41  75.75  55.18 L
+  75.75  55.18  82.82  46.57 L
+  82.82  46.57  89.89  38.71 L
+  89.89  38.71  96.97  31.69 L
+  96.97  31.69 104.04  25.55 L
+ 104.04  25.55 111.11  20.30 L
+ 111.11  20.30 118.18  15.88 L
+ 118.18  15.88 125.25  12.24 L
+ 125.25  12.24 132.32   9.29 L
+ 132.32   9.29 139.39   6.94 L
+ 139.39   6.94 146.46   5.11 L
+ 2.00 setlinewidth
+  12.11 107.45  19.18  67.06 L
+  12.11 107.45   2.00 Circle
+ 2.00 setlinewidth
+  19.18  67.06  26.25  74.19 L
+  19.18  67.06   2.00 Circle
+ 2.00 setlinewidth
+  26.25  74.19  33.32  79.12 L
+  26.25  74.19   2.00 Circle
+ 2.00 setlinewidth
+  33.32  79.12  40.39  69.75 L
+  33.32  79.12   2.00 Circle
+ 2.00 setlinewidth
+  40.39  69.75  47.47  51.54 L
+  40.39  69.75   2.00 Circle
+ 2.00 setlinewidth
+  47.47  51.54  54.54  42.49 L
+  47.47  51.54   2.00 Circle
+ 2.00 setlinewidth
+  54.54  42.49  61.61  39.22 L
+  54.54  42.49   2.00 Circle
+ 2.00 setlinewidth
+  61.61  39.22  68.68  40.80 L
+  61.61  39.22   2.00 Circle
+ 2.00 setlinewidth
+  68.68  40.80  75.75  45.58 L
+  68.68  40.80   2.00 Circle
+ 2.00 setlinewidth
+  75.75  45.58  82.82  46.70 L
+  75.75  45.58   2.00 Circle
+ 2.00 setlinewidth
+  82.82  46.70  89.89  44.17 L
+  82.82  46.70   2.00 Circle
+ 2.00 setlinewidth
+  89.89  44.17  96.97  34.41 L
+  89.89  44.17   2.00 Circle
+ 2.00 setlinewidth
+  96.97  34.41 104.04  29.81 L
+  96.97  34.41   2.00 Circle
+ 2.00 setlinewidth
+ 104.04  29.81 111.11  23.45 L
+ 104.04  29.81   2.00 Circle
+ 2.00 setlinewidth
+ 111.11  23.45 118.18  17.36 L
+ 111.11  23.45   2.00 Circle
+ 2.00 setlinewidth
+ 118.18  17.36 125.25  12.52 L
+ 118.18  17.36   2.00 Circle
+ 2.00 setlinewidth
+ 125.25  12.52 132.32   9.29 L
+ 125.25  12.52   2.00 Circle
+ 2.00 setlinewidth
+ 132.32   9.29 139.39   6.67 L
+ 132.32   9.29   2.00 Circle
+ 2.00 setlinewidth
+ 139.39   6.67 146.46   4.67 L
+ 139.39   6.67   2.00 Circle
+ 146.46   4.67   2.00 Circle
+ 0.00 setlinewidth
+gsave 0.9500 setgray
+  80.00 136.00  80.00 146.00 145.00 146.00 145.00 136.00 Pl4
+ 145.00 136.75 moveto
+(Wilson Plot)
+13.0 RightJ
+(Wilson Plot)
+13.0 Print
+    230.00      0.00 translate
+gsave 0.9500 setgray
+   0.00   0.00   0.00 150.00 150.00 150.00 150.00   0.00 Pl4
+ -30.00  86.25 moveto
+(A)
+15.0 Print
+ 0.60 setlinewidth
+   0.00   0.00   0.00 150.00 L
+   0.00 150.00 150.00 150.00 L
+ 150.00 150.00 150.00   0.00 L
+ 150.00   0.00   0.00   0.00 L
+   0.00  -7.50 moveto
+(0.00)
+10.0 Center
+(0.00)
+10.0 Print
+   0.00   0.00   0.00  -3.33 L
+  37.50  -7.50 moveto
+(0.10)
+10.0 Center
+(0.10)
+10.0 Print
+  37.50   0.00  37.50  -3.33 L
+  75.00  -7.50 moveto
+(0.20)
+10.0 Center
+(0.20)
+10.0 Print
+  75.00   0.00  75.00  -3.33 L
+ 112.50  -7.50 moveto
+(0.30)
+10.0 Center
+(0.30)
+10.0 Print
+ 112.50   0.00 112.50  -3.33 L
+ 150.00  -7.50 moveto
+(0.40)
+10.0 Center
+(0.40)
+10.0 Print
+ 150.00   0.00 150.00  -3.33 L
+ -15.00  37.50 moveto
+(  1.0)
+10.0 Center
+(  1.0)
+10.0 Print
+  -3.33  37.50   0.00  37.50 L
+ -15.00  75.00 moveto
+(  2.0)
+10.0 Center
+(  2.0)
+10.0 Print
+  -3.33  75.00   0.00  75.00 L
+ -15.00 112.50 moveto
+(  3.0)
+10.0 Center
+(  3.0)
+10.0 Print
+  -3.33 112.50   0.00 112.50 L
+ -15.00 150.00 moveto
+(  4.0)
+10.0 Center
+(  4.0)
+10.0 Print
+  -3.33 150.00   0.00 150.00 L
+ -30.00  -7.50 moveto
+(1/d)
+13.0 Center
+(1/d)
+13.0 Print
+ -30.00 -20.00 moveto
+(d)
+13.0 Center
+(d)
+13.0 Print
+  37.50 -20.00 moveto
+(10.00)
+10.0 Center
+(10.00)
+10.0 Print
+  75.00 -20.00 moveto
+(5.00)
+10.0 Center
+(5.00)
+10.0 Print
+ 112.50 -20.00 moveto
+(3.33)
+10.0 Center
+(3.33)
+10.0 Print
+ 150.00 -20.00 moveto
+(2.50)
+10.0 Center
+(2.50)
+10.0 Print
+ 172.50 -20.00 moveto
+(A)
+10.0 Center
+(A)
+10.0 Print
+ 2.00 setlinewidth
+   0.00 -35.00  15.00 -35.00 L
+   0.00 -35.00   2.00 Circle
+  15.00 -35.00   2.00 Circle
+  25.00 -37.25 moveto
+(Optical resolution)
+ 9.0 Print
+ 0.60 setlinewidth
+   0.00 -45.00  15.00 -45.00 L
+  25.00 -47.25 moveto
+(Optical resolution for atom with B = 0)
+ 9.0 Print
+ 0.60 setlinewidth
+  47.47 135.43  54.54 119.25 L
+  54.54 119.25  61.61 106.41 L
+  61.61 106.41  68.68  95.61 L
+  68.68  95.61  75.75  90.48 L
+  75.75  90.48  82.82  85.02 L
+  82.82  85.02  89.89  80.76 L
+  89.89  80.76  96.97  77.44 L
+  96.97  77.44 104.04  74.85 L
+ 104.04  74.85 111.11  72.79 L
+ 111.11  72.79 118.18  71.14 L
+ 118.18  71.14 125.25  68.31 L
+ 125.25  68.31 132.32  67.36 L
+ 132.32  67.36 139.39  65.14 L
+ 139.39  65.14 146.46  64.63 L
+ 2.00 setlinewidth
+  47.47 135.49  54.54 123.08 L
+  47.47 135.49   2.00 Circle
+  54.54 123.08  61.61 110.64 L
+  54.54 123.08   2.00 Circle
+  61.61 110.64  68.68  98.07 L
+  61.61 110.64   2.00 Circle
+  68.68  98.07  75.75  89.84 L
+  68.68  98.07   2.00 Circle
+  75.75  89.84  82.82  83.41 L
+  75.75  89.84   2.00 Circle
+  82.82  83.41  89.89  80.96 L
+  82.82  83.41   2.00 Circle
+  89.89  80.96  96.97  77.44 L
+  89.89  80.96   2.00 Circle
+  96.97  77.44 104.04  76.59 L
+  96.97  77.44   2.00 Circle
+ 104.04  76.59 111.11  74.74 L
+ 104.04  76.59   2.00 Circle
+ 111.11  74.74 118.18  73.50 L
+ 111.11  74.74   2.00 Circle
+ 118.18  73.50 125.25  74.37 L
+ 118.18  73.50   2.00 Circle
+ 125.25  74.37 132.32  73.92 L
+ 125.25  74.37   2.00 Circle
+ 132.32  73.92 139.39  73.64 L
+ 132.32  73.92   2.00 Circle
+ 139.39  73.64 146.46  73.48 L
+ 139.39  73.64   2.00 Circle
+ 146.46  73.48   2.00 Circle
+ 0.00 setlinewidth
+gsave 0.9500 setgray
+  40.00 136.00  40.00 146.00 145.00 146.00 145.00 136.00 Pl4
+ 145.00 136.75 moveto
+(Optical resolution)
+13.0 RightJ
+(Optical resolution)
+13.0 Print
+   -230.00   -220.00 translate
+gsave 0.9500 setgray
+   0.00   0.00   0.00 150.00 150.00 150.00 150.00   0.00 Pl4
+ 145.00 136.75 moveto
+(Completeness)
+13.0 RightJ
+(Completeness)
+13.0 Print
+ 0.60 setlinewidth
+   0.00   0.00   0.00 150.00 L
+   0.00 150.00 150.00 150.00 L
+ 150.00 150.00 150.00   0.00 L
+ 150.00   0.00   0.00   0.00 L
+   0.00  -7.50 moveto
+(0.00)
+10.0 Center
+(0.00)
+10.0 Print
+   0.00   0.00   0.00  -3.33 L
+  37.50  -7.50 moveto
+(0.10)
+10.0 Center
+(0.10)
+10.0 Print
+  37.50   0.00  37.50  -3.33 L
+  75.00  -7.50 moveto
+(0.20)
+10.0 Center
+(0.20)
+10.0 Print
+  75.00   0.00  75.00  -3.33 L
+ 112.50  -7.50 moveto
+(0.30)
+10.0 Center
+(0.30)
+10.0 Print
+ 112.50   0.00 112.50  -3.33 L
+ 150.00  -7.50 moveto
+(0.40)
+10.0 Center
+(0.40)
+10.0 Print
+ 150.00   0.00 150.00  -3.33 L
+ -15.00  25.00 moveto
+(  0.2)
+10.0 Center
+(  0.2)
+10.0 Print
+  -3.33  25.00   0.00  25.00 L
+ -15.00  50.00 moveto
+(  0.4)
+10.0 Center
+(  0.4)
+10.0 Print
+  -3.33  50.00   0.00  50.00 L
+ -15.00  75.00 moveto
+(  0.6)
+10.0 Center
+(  0.6)
+10.0 Print
+  -3.33  75.00   0.00  75.00 L
+ -15.00 100.00 moveto
+(  0.8)
+10.0 Center
+(  0.8)
+10.0 Print
+  -3.33 100.00   0.00 100.00 L
+ -15.00 125.00 moveto
+(  1.0)
+10.0 Center
+(  1.0)
+10.0 Print
+  -3.33 125.00   0.00 125.00 L
+ -30.00  -7.50 moveto
+(1/d)
+13.0 Center
+(1/d)
+13.0 Print
+ -30.00 -20.00 moveto
+(d)
+13.0 Center
+(d)
+13.0 Print
+  37.50 -20.00 moveto
+(10.00)
+10.0 Center
+(10.00)
+10.0 Print
+  75.00 -20.00 moveto
+(5.00)
+10.0 Center
+(5.00)
+10.0 Print
+ 112.50 -20.00 moveto
+(3.33)
+10.0 Center
+(3.33)
+10.0 Print
+ 150.00 -20.00 moveto
+(2.50)
+10.0 Center
+(2.50)
+10.0 Print
+ 172.50 -20.00 moveto
+(A)
+10.0 Center
+(A)
+10.0 Print
+ 2.00 setlinewidth
+  12.11  63.78  19.18  61.96 L
+  12.11  63.78   2.00 Circle
+ 2.00 setlinewidth
+  19.18  61.96  26.25  53.32 L
+  19.18  61.96   2.00 Circle
+ 2.00 setlinewidth
+  26.25  53.32  33.32  62.69 L
+  26.25  53.32   2.00 Circle
+ 2.00 setlinewidth
+  33.32  62.69  40.39  68.39 L
+  33.32  62.69   2.00 Circle
+ 2.00 setlinewidth
+  40.39  68.39  47.47  70.22 L
+  40.39  68.39   2.00 Circle
+ 2.00 setlinewidth
+  47.47  70.22  54.54  64.01 L
+  47.47  70.22   2.00 Circle
+ 2.00 setlinewidth
+  54.54  64.01  61.61  69.42 L
+  54.54  64.01   2.00 Circle
+ 2.00 setlinewidth
+  61.61  69.42  68.68  73.10 L
+  61.61  69.42   2.00 Circle
+ 2.00 setlinewidth
+  68.68  73.10  75.75  74.27 L
+  68.68  73.10   2.00 Circle
+ 2.00 setlinewidth
+  75.75  74.27  82.82  69.62 L
+  75.75  74.27   2.00 Circle
+ 2.00 setlinewidth
+  82.82  69.62  89.89  74.80 L
+  82.82  69.62   2.00 Circle
+ 2.00 setlinewidth
+  89.89  74.80  96.97  77.18 L
+  89.89  74.80   2.00 Circle
+ 2.00 setlinewidth
+  96.97  77.18 104.04  73.55 L
+  96.97  77.18   2.00 Circle
+ 2.00 setlinewidth
+ 104.04  73.55 111.11  76.18 L
+ 104.04  73.55   2.00 Circle
+ 2.00 setlinewidth
+ 111.11  76.18 118.18  80.67 L
+ 111.11  76.18   2.00 Circle
+ 2.00 setlinewidth
+ 118.18  80.67 125.25  81.24 L
+ 118.18  80.67   2.00 Circle
+ 2.00 setlinewidth
+ 125.25  81.24 132.32  78.00 L
+ 125.25  81.24   2.00 Circle
+ 2.00 setlinewidth
+ 132.32  78.00 139.39  82.58 L
+ 132.32  78.00   2.00 Circle
+ 2.00 setlinewidth
+ 139.39  82.58 146.46  81.08 L
+ 139.39  82.58   2.00 Circle
+ 146.46  81.08   2.00 Circle
+ 2.00 setlinewidth
+  12.11   2.45  19.18   2.54 L
+  10.11   1.25  14.11   1.25  12.11   4.85 Pline3
+ 2.00 setlinewidth
+  19.18   2.54  26.25   2.49 L
+  17.18   1.34  21.18   1.34  19.18   4.94 Pline3
+ 2.00 setlinewidth
+  26.25   2.49  33.32   2.69 L
+  24.25   1.29  28.25   1.29  26.25   4.89 Pline3
+ 2.00 setlinewidth
+  33.32   2.69  40.39   3.01 L
+  31.32   1.49  35.32   1.49  33.32   5.09 Pline3
+ 2.00 setlinewidth
+  40.39   3.01  47.47   4.34 L
+  38.39   1.81  42.39   1.81  40.39   5.41 Pline3
+ 2.00 setlinewidth
+  47.47   4.34  54.54   6.18 L
+  45.47   3.14  49.47   3.14  47.47   6.74 Pline3
+ 2.00 setlinewidth
+  54.54   6.18  61.61   8.00 L
+  52.54   4.98  56.54   4.98  54.54   8.58 Pline3
+ 2.00 setlinewidth
+  61.61   8.00  68.68   7.77 L
+  59.61   6.80  63.61   6.80  61.61  10.40 Pline3
+ 2.00 setlinewidth
+  68.68   7.77  75.75   7.25 L
+  66.68   6.57  70.68   6.57  68.68  10.17 Pline3
+ 2.00 setlinewidth
+  75.75   7.25  82.82   7.36 L
+  73.75   6.05  77.75   6.05  75.75   9.65 Pline3
+ 2.00 setlinewidth
+  82.82   7.36  89.89   9.20 L
+  80.82   6.16  84.82   6.16  82.82   9.76 Pline3
+ 2.00 setlinewidth
+  89.89   9.20  96.97  13.23 L
+  87.89   8.00  91.89   8.00  89.89  11.60 Pline3
+ 2.00 setlinewidth
+  96.97  13.23 104.04  16.50 L
+  94.97  12.03  98.97  12.03  96.97  15.63 Pline3
+ 2.00 setlinewidth
+ 104.04  16.50 111.11  21.86 L
+ 102.04  15.30 106.04  15.30 104.04  18.90 Pline3
+ 2.00 setlinewidth
+ 111.11  21.86 118.18  28.95 L
+ 109.11  20.66 113.11  20.66 111.11  24.26 Pline3
+ 2.00 setlinewidth
+ 118.18  28.95 125.25  37.99 L
+ 116.18  27.75 120.18  27.75 118.18  31.35 Pline3
+ 2.00 setlinewidth
+ 125.25  37.99 132.32  45.82 L
+ 123.25  36.79 127.25  36.79 125.25  40.39 Pline3
+ 2.00 setlinewidth
+ 132.32  45.82 139.39  54.07 L
+ 130.32  44.62 134.32  44.62 132.32  48.22 Pline3
+ 2.00 setlinewidth
+ 139.39  54.07 146.46  60.67 L
+ 137.39  52.87 141.39  52.87 139.39  56.47 Pline3
+ 144.46  59.47 148.46  59.47 146.46  63.07 Pline3
+ 2.00 setlinewidth
+   0.00 -35.00  15.00 -35.00 L
+   0.00 -35.00   2.00 Circle
+  15.00 -35.00   2.00 Circle
+  25.00 -37.25 moveto
+(Completeness)
+ 9.0 Print
+ 2.00 setlinewidth
+   0.00 -45.00  15.00 -45.00 L
+  -2.00 -46.20   2.00 -46.20   0.00 -42.60 Pline3
+  13.00 -46.20  17.00 -46.20  15.00 -42.60 Pline3
+  25.00 -47.25 moveto
+(R_stand(F) = <)
+ 9.0 Print
+  80.00 -47.25 moveto
+(s)
+ 9.0 Gprint
+  85.00 -47.25 moveto
+((F)>/<F>)
+ 9.0 Print
+    230.00      0.00 translate
+gsave 0.9500 setgray
+   0.00   0.00   0.00 150.00 150.00 150.00 150.00   0.00 Pl4
+ -30.00  96.25 moveto
+(H)
+15.0 Print
+ 0.60 setlinewidth
+   0.00   0.00   0.00 150.00 L
+   0.00 150.00 150.00 150.00 L
+ 150.00 150.00 150.00   0.00 L
+ 150.00   0.00   0.00   0.00 L
+   0.00  -7.50 moveto
+(0.0)
+10.0 Center
+(0.0)
+10.0 Print
+   0.00   0.00   0.00  -3.33 L
+  30.00  -7.50 moveto
+(0.2)
+10.0 Center
+(0.2)
+10.0 Print
+  30.00   0.00  30.00  -3.33 L
+  60.00  -7.50 moveto
+(0.4)
+10.0 Center
+(0.4)
+10.0 Print
+  60.00   0.00  60.00  -3.33 L
+  90.00  -7.50 moveto
+(0.6)
+10.0 Center
+(0.6)
+10.0 Print
+  90.00   0.00  90.00  -3.33 L
+ 120.00  -7.50 moveto
+(0.8)
+10.0 Center
+(0.8)
+10.0 Print
+ 120.00   0.00 120.00  -3.33 L
+ 150.00  -7.50 moveto
+(1.0)
+10.0 Center
+(1.0)
+10.0 Print
+ 150.00   0.00 150.00  -3.33 L
+ -15.00  30.00 moveto
+(  0.2)
+10.0 Center
+(  0.2)
+10.0 Print
+  -3.33  30.00   0.00  30.00 L
+ -15.00  60.00 moveto
+(  0.4)
+10.0 Center
+(  0.4)
+10.0 Print
+  -3.33  60.00   0.00  60.00 L
+ -15.00  90.00 moveto
+(  0.6)
+10.0 Center
+(  0.6)
+10.0 Print
+  -3.33  90.00   0.00  90.00 L
+ -15.00 120.00 moveto
+(  0.8)
+10.0 Center
+(  0.8)
+10.0 Print
+  -3.33 120.00   0.00 120.00 L
+ -15.00 150.00 moveto
+(  1.0)
+10.0 Center
+(  1.0)
+10.0 Print
+  -3.33 150.00   0.00 150.00 L
+ 2.00 setlinewidth
+   0.00 -22.50 moveto
+(Cumulative distribution of H)
+10.0 Print
+   0.00 -32.50 moveto
+(H = !I(h1)-I(h2)!/(I(h1)+I(h2)))
+10.0 Print
+   0.00 -42.25 moveto
+(twin-op: 1/2h+3/2k,1/2h-1/2k,-l)
+ 9.0 Print
+   0.00 -52.25 moveto
+(Axis order:    2  Obliquity:   5.46 deg)
+ 9.0 Print
+ 2.00 setlinewidth
+   0.00 -60.00  15.00 -60.00 L
+   0.00 -60.00   2.00 Circle
+  15.00 -60.00   2.00 Circle
+  25.00 -62.25 moveto
+(twinning fraction=  0.091)
+ 9.0 Print
+ 0.60 setlinewidth
+   0.00   0.00 150.00  30.00 L
+ 155.00  27.75 moveto
+(0.4)
+ 9.0 Print
+ 0.60 setlinewidth
+   0.00   0.00 150.00  60.00 L
+ 155.00  57.75 moveto
+(0.3)
+ 9.0 Print
+ 0.60 setlinewidth
+   0.00   0.00 150.00  90.00 L
+ 155.00  87.75 moveto
+(0.2)
+ 9.0 Print
+ 0.60 setlinewidth
+   0.00   0.00 150.00 120.00 L
+ 155.00 117.75 moveto
+(0.1)
+ 9.0 Print
+ 0.60 setlinewidth
+   0.00   0.00 150.00 150.00 L
+ 155.00 147.75 moveto
+(0.0)
+ 9.0 Print
+ 2.00 setlinewidth
+   0.00   0.00   8.36   3.75 L
+   0.00   0.00   2.00 Circle
+ 2.00 setlinewidth
+   8.36   3.75  14.30   7.50 L
+   8.36   3.75   2.00 Circle
+ 2.00 setlinewidth
+  14.30   7.50  19.74  11.25 L
+  14.30   7.50   2.00 Circle
+ 2.00 setlinewidth
+  19.74  11.25  24.70  15.00 L
+  19.74  11.25   2.00 Circle
+ 2.00 setlinewidth
+  24.70  15.00  29.83  18.75 L
+  24.70  15.00   2.00 Circle
+ 2.00 setlinewidth
+  29.83  18.75  34.99  22.50 L
+  29.83  18.75   2.00 Circle
+ 2.00 setlinewidth
+  34.99  22.50  40.03  26.25 L
+  34.99  22.50   2.00 Circle
+ 2.00 setlinewidth
+  40.03  26.25  44.67  30.00 L
+  40.03  26.25   2.00 Circle
+ 2.00 setlinewidth
+  44.67  30.00  49.23  33.75 L
+  44.67  30.00   2.00 Circle
+ 2.00 setlinewidth
+  49.23  33.75  53.98  37.50 L
+  49.23  33.75   2.00 Circle
+ 2.00 setlinewidth
+  53.98  37.50  59.10  41.25 L
+  53.98  37.50   2.00 Circle
+ 2.00 setlinewidth
+  59.10  41.25  63.90  45.00 L
+  59.10  41.25   2.00 Circle
+ 2.00 setlinewidth
+  63.90  45.00  68.59  48.75 L
+  63.90  45.00   2.00 Circle
+ 2.00 setlinewidth
+  68.59  48.75  72.62  52.50 L
+  68.59  48.75   2.00 Circle
+ 2.00 setlinewidth
+  72.62  52.50  76.78  56.25 L
+  72.62  52.50   2.00 Circle
+ 2.00 setlinewidth
+  76.78  56.25  81.29  60.00 L
+  76.78  56.25   2.00 Circle
+ 2.00 setlinewidth
+  81.29  60.00  85.32  63.75 L
+  81.29  60.00   2.00 Circle
+ 2.00 setlinewidth
+  85.32  63.75  89.03  67.50 L
+  85.32  63.75   2.00 Circle
+ 2.00 setlinewidth
+  89.03  67.50  92.89  71.25 L
+  89.03  67.50   2.00 Circle
+ 2.00 setlinewidth
+  92.89  71.25  96.72  75.00 L
+  92.89  71.25   2.00 Circle
+ 2.00 setlinewidth
+  96.72  75.00 100.23  78.75 L
+  96.72  75.00   2.00 Circle
+ 2.00 setlinewidth
+ 100.23  78.75 103.93  82.50 L
+ 100.23  78.75   2.00 Circle
+ 2.00 setlinewidth
+ 103.93  82.50 107.51  86.25 L
+ 103.93  82.50   2.00 Circle
+ 2.00 setlinewidth
+ 107.51  86.25 111.12  90.00 L
+ 107.51  86.25   2.00 Circle
+ 2.00 setlinewidth
+ 111.12  90.00 114.35  93.75 L
+ 111.12  90.00   2.00 Circle
+ 2.00 setlinewidth
+ 114.35  93.75 117.38  97.50 L
+ 114.35  93.75   2.00 Circle
+ 2.00 setlinewidth
+ 117.38  97.50 120.64 101.25 L
+ 117.38  97.50   2.00 Circle
+ 2.00 setlinewidth
+ 120.64 101.25 123.64 105.00 L
+ 120.64 101.25   2.00 Circle
+ 2.00 setlinewidth
+ 123.64 105.00 126.55 108.75 L
+ 123.64 105.00   2.00 Circle
+ 2.00 setlinewidth
+ 126.55 108.75 129.36 112.50 L
+ 126.55 108.75   2.00 Circle
+ 2.00 setlinewidth
+ 129.36 112.50 132.44 116.25 L
+ 129.36 112.50   2.00 Circle
+ 2.00 setlinewidth
+ 132.44 116.25 135.30 120.00 L
+ 132.44 116.25   2.00 Circle
+ 2.00 setlinewidth
+ 135.30 120.00 137.93 123.75 L
+ 135.30 120.00   2.00 Circle
+ 2.00 setlinewidth
+ 137.93 123.75 140.48 127.50 L
+ 137.93 123.75   2.00 Circle
+ 2.00 setlinewidth
+ 140.48 127.50 142.99 131.25 L
+ 140.48 127.50   2.00 Circle
+ 2.00 setlinewidth
+ 142.99 131.25 145.17 135.00 L
+ 142.99 131.25   2.00 Circle
+ 2.00 setlinewidth
+ 145.17 135.00 147.54 138.75 L
+ 145.17 135.00   2.00 Circle
+ 2.00 setlinewidth
+ 147.54 138.75 149.08 142.50 L
+ 147.54 138.75   2.00 Circle
+ 2.00 setlinewidth
+ 149.08 142.50 149.90 146.25 L
+ 149.08 142.50   2.00 Circle
+ 2.00 setlinewidth
+ 149.90 146.25 150.00 150.00 L
+ 149.90 146.25   2.00 Circle
+ 180.00   0.00 moveto
+(Alpha(twinning fraction)= 1/2 - <H>) 10.0 UncenterRot90 Rot90
+(Alpha(twinning fraction)= 1/2 - <H>) 10.0 Print
+grestore
+ 0.00 setlinewidth
+gsave 0.9500 setgray
+  50.00 136.00  50.00 146.00 145.00 146.00 145.00 136.00 Pl4
+ 145.00 136.75 moveto
+(Partial Twinning Test)
+13.0 RightJ
+(Partial Twinning Test)
+13.0 Print
+   -230.00   -220.00 translate
+ 0.00 setlinewidth
+  75.00  60.00   0.00   3.27   0.00   5.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27   5.00  10.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27  10.00  15.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27  15.00  20.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27  20.00  25.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27  25.00  30.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27  30.00  35.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27  35.00  40.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27  40.00  45.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27  45.00  50.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27  50.00  55.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27  55.00  60.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27  60.00  65.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27  65.00  70.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27  70.00  75.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27  75.00  80.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27  80.00  85.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27  85.00  90.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27  90.00  95.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27  95.00 100.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27 100.00 105.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27 105.00 110.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27 110.00 115.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27 115.00 120.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27 120.00 125.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27 125.00 130.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27 130.00 135.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27 135.00 140.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27 140.00 145.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27 145.00 150.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27 150.00 155.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27 155.00 160.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27 160.00 165.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27 165.00 170.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27 170.00 175.00   1.00 DrawUSect
+  75.00  60.00   0.00   3.27 175.00 180.00   1.00 DrawUSect
+  75.00  60.00   3.27   6.56   0.00   5.00   1.00 DrawUSect
+  75.00  60.00   3.27   6.56   5.00  10.00   1.00 DrawUSect
+  75.00  60.00   3.27   6.56  10.00  15.00   1.00 DrawUSect
+  75.00  60.00   3.27   6.56  15.00  20.00   1.00 DrawUSect
+  75.00  60.00   3.27   6.56  20.00  25.00   1.00 DrawUSect
+  75.00  60.00   3.27   6.56  25.00  30.00   1.00 DrawUSect
+  75.00  60.00   3.27   6.56  30.00  35.00   1.00 DrawUSect
+  75.00  60.00   3.27   6.56  35.00  40.00   1.00 DrawUSect
+  75.00  60.00   3.27   6.56  40.00  45.00   0.93 DrawUSect
+  75.00  60.00   3.27   6.56  45.00  50.00   0.93 DrawUSect
+  75.00  60.00   3.27   6.56  50.00  55.00   0.57 DrawUSect
+  75.00  60.00   3.27   6.56  55.00  60.00   0.66 DrawUSect
+  75.00  60.00   3.27   6.56  60.00  65.00   0.65 DrawUSect
+  75.00  60.00   3.27   6.56  65.00  70.00   0.54 DrawUSect
+  75.00  60.00   3.27   6.56  70.00  75.00   0.57 DrawUSect
+  75.00  60.00   3.27   6.56  75.00  80.00   0.42 DrawUSect
+  75.00  60.00   3.27   6.56  80.00  85.00   0.37 DrawUSect
+  75.00  60.00   3.27   6.56  85.00  90.00   0.43 DrawUSect
+  75.00  60.00   3.27   6.56  90.00  95.00   0.35 DrawUSect
+  75.00  60.00   3.27   6.56  95.00 100.00   0.26 DrawUSect
+  75.00  60.00   3.27   6.56 100.00 105.00   0.28 DrawUSect
+  75.00  60.00   3.27   6.56 105.00 110.00   0.26 DrawUSect
+  75.00  60.00   3.27   6.56 110.00 115.00   0.26 DrawUSect
+  75.00  60.00   3.27   6.56 115.00 120.00   0.33 DrawUSect
+  75.00  60.00   3.27   6.56 120.00 125.00   0.34 DrawUSect
+  75.00  60.00   3.27   6.56 125.00 130.00   0.33 DrawUSect
+  75.00  60.00   3.27   6.56 130.00 135.00   0.42 DrawUSect
+  75.00  60.00   3.27   6.56 135.00 140.00   0.47 DrawUSect
+  75.00  60.00   3.27   6.56 140.00 145.00   0.45 DrawUSect
+  75.00  60.00   3.27   6.56 145.00 150.00   0.55 DrawUSect
+  75.00  60.00   3.27   6.56 150.00 155.00   0.56 DrawUSect
+  75.00  60.00   3.27   6.56 155.00 160.00   0.53 DrawUSect
+  75.00  60.00   3.27   6.56 160.00 165.00   0.63 DrawUSect
+  75.00  60.00   3.27   6.56 165.00 170.00   0.70 DrawUSect
+  75.00  60.00   3.27   6.56 170.00 175.00   0.63 DrawUSect
+  75.00  60.00   3.27   6.56 175.00 180.00   0.63 DrawUSect
+  75.00  60.00   6.56   9.87   0.00   5.00   1.00 DrawUSect
+  75.00  60.00   6.56   9.87   5.00  10.00   1.00 DrawUSect
+  75.00  60.00   6.56   9.87  10.00  15.00   1.00 DrawUSect
+  75.00  60.00   6.56   9.87  15.00  20.00   1.00 DrawUSect
+  75.00  60.00   6.56   9.87  20.00  25.00   1.00 DrawUSect
+  75.00  60.00   6.56   9.87  25.00  30.00   0.92 DrawUSect
+  75.00  60.00   6.56   9.87  30.00  35.00   0.84 DrawUSect
+  75.00  60.00   6.56   9.87  35.00  40.00   0.74 DrawUSect
+  75.00  60.00   6.56   9.87  40.00  45.00   0.68 DrawUSect
+  75.00  60.00   6.56   9.87  45.00  50.00   0.68 DrawUSect
+  75.00  60.00   6.56   9.87  50.00  55.00   0.57 DrawUSect
+  75.00  60.00   6.56   9.87  55.00  60.00   0.55 DrawUSect
+  75.00  60.00   6.56   9.87  60.00  65.00   0.45 DrawUSect
+  75.00  60.00   6.56   9.87  65.00  70.00   0.36 DrawUSect
+  75.00  60.00   6.56   9.87  70.00  75.00   0.31 DrawUSect
+  75.00  60.00   6.56   9.87  75.00  80.00   0.25 DrawUSect
+  75.00  60.00   6.56   9.87  80.00  85.00   0.24 DrawUSect
+  75.00  60.00   6.56   9.87  85.00  90.00   0.25 DrawUSect
+  75.00  60.00   6.56   9.87  90.00  95.00   0.19 DrawUSect
+  75.00  60.00   6.56   9.87  95.00 100.00   0.17 DrawUSect
+  75.00  60.00   6.56   9.87 100.00 105.00   0.16 DrawUSect
+  75.00  60.00   6.56   9.87 105.00 110.00   0.16 DrawUSect
+  75.00  60.00   6.56   9.87 110.00 115.00   0.17 DrawUSect
+  75.00  60.00   6.56   9.87 115.00 120.00   0.16 DrawUSect
+  75.00  60.00   6.56   9.87 120.00 125.00   0.18 DrawUSect
+  75.00  60.00   6.56   9.87 125.00 130.00   0.19 DrawUSect
+  75.00  60.00   6.56   9.87 130.00 135.00   0.19 DrawUSect
+  75.00  60.00   6.56   9.87 135.00 140.00   0.20 DrawUSect
+  75.00  60.00   6.56   9.87 140.00 145.00   0.22 DrawUSect
+  75.00  60.00   6.56   9.87 145.00 150.00   0.23 DrawUSect
+  75.00  60.00   6.56   9.87 150.00 155.00   0.29 DrawUSect
+  75.00  60.00   6.56   9.87 155.00 160.00   0.33 DrawUSect
+  75.00  60.00   6.56   9.87 160.00 165.00   0.43 DrawUSect
+  75.00  60.00   6.56   9.87 165.00 170.00   0.48 DrawUSect
+  75.00  60.00   6.56   9.87 170.00 175.00   0.52 DrawUSect
+  75.00  60.00   6.56   9.87 175.00 180.00   0.56 DrawUSect
+  75.00  60.00   9.87  13.22   0.00   5.00   1.00 DrawUSect
+  75.00  60.00   9.87  13.22   5.00  10.00   1.00 DrawUSect
+  75.00  60.00   9.87  13.22  10.00  15.00   1.00 DrawUSect
+  75.00  60.00   9.87  13.22  15.00  20.00   1.00 DrawUSect
+  75.00  60.00   9.87  13.22  20.00  25.00   1.00 DrawUSect
+  75.00  60.00   9.87  13.22  25.00  30.00   0.87 DrawUSect
+  75.00  60.00   9.87  13.22  30.00  35.00   0.71 DrawUSect
+  75.00  60.00   9.87  13.22  35.00  40.00   0.60 DrawUSect
+  75.00  60.00   9.87  13.22  40.00  45.00   0.50 DrawUSect
+  75.00  60.00   9.87  13.22  45.00  50.00   0.45 DrawUSect
+  75.00  60.00   9.87  13.22  50.00  55.00   0.28 DrawUSect
+  75.00  60.00   9.87  13.22  55.00  60.00   0.18 DrawUSect
+  75.00  60.00   9.87  13.22  60.00  65.00   0.14 DrawUSect
+  75.00  60.00   9.87  13.22  65.00  70.00   0.12 DrawUSect
+  75.00  60.00   9.87  13.22  70.00  75.00   0.09 DrawUSect
+  75.00  60.00   9.87  13.22  75.00  80.00   0.10 DrawUSect
+  75.00  60.00   9.87  13.22  80.00  85.00   0.11 DrawUSect
+  75.00  60.00   9.87  13.22  85.00  90.00   0.10 DrawUSect
+  75.00  60.00   9.87  13.22  90.00  95.00   0.10 DrawUSect
+  75.00  60.00   9.87  13.22  95.00 100.00   0.13 DrawUSect
+  75.00  60.00   9.87  13.22 100.00 105.00   0.15 DrawUSect
+  75.00  60.00   9.87  13.22 105.00 110.00   0.14 DrawUSect
+  75.00  60.00   9.87  13.22 110.00 115.00   0.14 DrawUSect
+  75.00  60.00   9.87  13.22 115.00 120.00   0.14 DrawUSect
+  75.00  60.00   9.87  13.22 120.00 125.00   0.13 DrawUSect
+  75.00  60.00   9.87  13.22 125.00 130.00   0.10 DrawUSect
+  75.00  60.00   9.87  13.22 130.00 135.00   0.10 DrawUSect
+  75.00  60.00   9.87  13.22 135.00 140.00   0.08 DrawUSect
+  75.00  60.00   9.87  13.22 140.00 145.00   0.07 DrawUSect
+  75.00  60.00   9.87  13.22 145.00 150.00   0.06 DrawUSect
+  75.00  60.00   9.87  13.22 150.00 155.00   0.06 DrawUSect
+  75.00  60.00   9.87  13.22 155.00 160.00   0.08 DrawUSect
+  75.00  60.00   9.87  13.22 160.00 165.00   0.11 DrawUSect
+  75.00  60.00   9.87  13.22 165.00 170.00   0.19 DrawUSect
+  75.00  60.00   9.87  13.22 170.00 175.00   0.21 DrawUSect
+  75.00  60.00   9.87  13.22 175.00 180.00   0.27 DrawUSect
+  75.00  60.00  13.22  16.63   0.00   5.00   1.00 DrawUSect
+  75.00  60.00  13.22  16.63   5.00  10.00   1.00 DrawUSect
+  75.00  60.00  13.22  16.63  10.00  15.00   1.00 DrawUSect
+  75.00  60.00  13.22  16.63  15.00  20.00   1.00 DrawUSect
+  75.00  60.00  13.22  16.63  20.00  25.00   0.93 DrawUSect
+  75.00  60.00  13.22  16.63  25.00  30.00   0.78 DrawUSect
+  75.00  60.00  13.22  16.63  30.00  35.00   0.67 DrawUSect
+  75.00  60.00  13.22  16.63  35.00  40.00   0.57 DrawUSect
+  75.00  60.00  13.22  16.63  40.00  45.00   0.47 DrawUSect
+  75.00  60.00  13.22  16.63  45.00  50.00   0.30 DrawUSect
+  75.00  60.00  13.22  16.63  50.00  55.00   0.21 DrawUSect
+  75.00  60.00  13.22  16.63  55.00  60.00   0.14 DrawUSect
+  75.00  60.00  13.22  16.63  60.00  65.00   0.11 DrawUSect
+  75.00  60.00  13.22  16.63  65.00  70.00   0.12 DrawUSect
+  75.00  60.00  13.22  16.63  70.00  75.00   0.11 DrawUSect
+  75.00  60.00  13.22  16.63  75.00  80.00   0.11 DrawUSect
+  75.00  60.00  13.22  16.63  80.00  85.00   0.12 DrawUSect
+  75.00  60.00  13.22  16.63  85.00  90.00   0.11 DrawUSect
+  75.00  60.00  13.22  16.63  90.00  95.00   0.10 DrawUSect
+  75.00  60.00  13.22  16.63  95.00 100.00   0.09 DrawUSect
+  75.00  60.00  13.22  16.63 100.00 105.00   0.08 DrawUSect
+  75.00  60.00  13.22  16.63 105.00 110.00   0.07 DrawUSect
+  75.00  60.00  13.22  16.63 110.00 115.00   0.09 DrawUSect
+  75.00  60.00  13.22  16.63 115.00 120.00   0.12 DrawUSect
+  75.00  60.00  13.22  16.63 120.00 125.00   0.15 DrawUSect
+  75.00  60.00  13.22  16.63 125.00 130.00   0.15 DrawUSect
+  75.00  60.00  13.22  16.63 130.00 135.00   0.15 DrawUSect
+  75.00  60.00  13.22  16.63 135.00 140.00   0.13 DrawUSect
+  75.00  60.00  13.22  16.63 140.00 145.00   0.12 DrawUSect
+  75.00  60.00  13.22  16.63 145.00 150.00   0.11 DrawUSect
+  75.00  60.00  13.22  16.63 150.00 155.00   0.11 DrawUSect
+  75.00  60.00  13.22  16.63 155.00 160.00   0.11 DrawUSect
+  75.00  60.00  13.22  16.63 160.00 165.00   0.11 DrawUSect
+  75.00  60.00  13.22  16.63 165.00 170.00   0.13 DrawUSect
+  75.00  60.00  13.22  16.63 170.00 175.00   0.13 DrawUSect
+  75.00  60.00  13.22  16.63 175.00 180.00   0.15 DrawUSect
+  75.00  60.00  16.63  20.10   0.00   5.00   1.00 DrawUSect
+  75.00  60.00  16.63  20.10   5.00  10.00   1.00 DrawUSect
+  75.00  60.00  16.63  20.10  10.00  15.00   1.00 DrawUSect
+  75.00  60.00  16.63  20.10  15.00  20.00   1.00 DrawUSect
+  75.00  60.00  16.63  20.10  20.00  25.00   0.97 DrawUSect
+  75.00  60.00  16.63  20.10  25.00  30.00   0.84 DrawUSect
+  75.00  60.00  16.63  20.10  30.00  35.00   0.69 DrawUSect
+  75.00  60.00  16.63  20.10  35.00  40.00   0.46 DrawUSect
+  75.00  60.00  16.63  20.10  40.00  45.00   0.29 DrawUSect
+  75.00  60.00  16.63  20.10  45.00  50.00   0.21 DrawUSect
+  75.00  60.00  16.63  20.10  50.00  55.00   0.15 DrawUSect
+  75.00  60.00  16.63  20.10  55.00  60.00   0.14 DrawUSect
+  75.00  60.00  16.63  20.10  60.00  65.00   0.13 DrawUSect
+  75.00  60.00  16.63  20.10  65.00  70.00   0.11 DrawUSect
+  75.00  60.00  16.63  20.10  70.00  75.00   0.08 DrawUSect
+  75.00  60.00  16.63  20.10  75.00  80.00   0.11 DrawUSect
+  75.00  60.00  16.63  20.10  80.00  85.00   0.13 DrawUSect
+  75.00  60.00  16.63  20.10  85.00  90.00   0.09 DrawUSect
+  75.00  60.00  16.63  20.10  90.00  95.00   0.06 DrawUSect
+  75.00  60.00  16.63  20.10  95.00 100.00   0.06 DrawUSect
+  75.00  60.00  16.63  20.10 100.00 105.00   0.10 DrawUSect
+  75.00  60.00  16.63  20.10 105.00 110.00   0.08 DrawUSect
+  75.00  60.00  16.63  20.10 110.00 115.00   0.06 DrawUSect
+  75.00  60.00  16.63  20.10 115.00 120.00   0.05 DrawUSect
+  75.00  60.00  16.63  20.10 120.00 125.00   0.04 DrawUSect
+  75.00  60.00  16.63  20.10 125.00 130.00   0.03 DrawUSect
+  75.00  60.00  16.63  20.10 130.00 135.00   0.02 DrawUSect
+  75.00  60.00  16.63  20.10 135.00 140.00   0.03 DrawUSect
+  75.00  60.00  16.63  20.10 140.00 145.00   0.02 DrawUSect
+  75.00  60.00  16.63  20.10 145.00 150.00   0.01 DrawUSect
+  75.00  60.00  16.63  20.10 150.00 155.00   0.02 DrawUSect
+  75.00  60.00  16.63  20.10 155.00 160.00   0.04 DrawUSect
+  75.00  60.00  16.63  20.10 160.00 165.00   0.07 DrawUSect
+  75.00  60.00  16.63  20.10 165.00 170.00   0.07 DrawUSect
+  75.00  60.00  16.63  20.10 170.00 175.00   0.11 DrawUSect
+  75.00  60.00  16.63  20.10 175.00 180.00   0.12 DrawUSect
+  75.00  60.00  20.10  23.65   0.00   5.00   1.00 DrawUSect
+  75.00  60.00  20.10  23.65   5.00  10.00   1.00 DrawUSect
+  75.00  60.00  20.10  23.65  10.00  15.00   1.00 DrawUSect
+  75.00  60.00  20.10  23.65  15.00  20.00   1.00 DrawUSect
+  75.00  60.00  20.10  23.65  20.00  25.00   0.86 DrawUSect
+  75.00  60.00  20.10  23.65  25.00  30.00   0.63 DrawUSect
+  75.00  60.00  20.10  23.65  30.00  35.00   0.48 DrawUSect
+  75.00  60.00  20.10  23.65  35.00  40.00   0.20 DrawUSect
+  75.00  60.00  20.10  23.65  40.00  45.00   0.13 DrawUSect
+  75.00  60.00  20.10  23.65  45.00  50.00   0.13 DrawUSect
+  75.00  60.00  20.10  23.65  50.00  55.00   0.16 DrawUSect
+  75.00  60.00  20.10  23.65  55.00  60.00   0.13 DrawUSect
+  75.00  60.00  20.10  23.65  60.00  65.00   0.09 DrawUSect
+  75.00  60.00  20.10  23.65  65.00  70.00   0.09 DrawUSect
+  75.00  60.00  20.10  23.65  70.00  75.00   0.08 DrawUSect
+  75.00  60.00  20.10  23.65  75.00  80.00   0.08 DrawUSect
+  75.00  60.00  20.10  23.65  80.00  85.00   0.07 DrawUSect
+  75.00  60.00  20.10  23.65  85.00  90.00   0.06 DrawUSect
+  75.00  60.00  20.10  23.65  90.00  95.00   0.05 DrawUSect
+  75.00  60.00  20.10  23.65  95.00 100.00   0.04 DrawUSect
+  75.00  60.00  20.10  23.65 100.00 105.00   0.04 DrawUSect
+  75.00  60.00  20.10  23.65 105.00 110.00   0.04 DrawUSect
+  75.00  60.00  20.10  23.65 110.00 115.00   0.05 DrawUSect
+  75.00  60.00  20.10  23.65 115.00 120.00   0.06 DrawUSect
+  75.00  60.00  20.10  23.65 120.00 125.00   0.08 DrawUSect
+  75.00  60.00  20.10  23.65 125.00 130.00   0.10 DrawUSect
+  75.00  60.00  20.10  23.65 130.00 135.00   0.09 DrawUSect
+  75.00  60.00  20.10  23.65 135.00 140.00   0.07 DrawUSect
+  75.00  60.00  20.10  23.65 140.00 145.00   0.09 DrawUSect
+  75.00  60.00  20.10  23.65 145.00 150.00   0.09 DrawUSect
+  75.00  60.00  20.10  23.65 150.00 155.00   0.11 DrawUSect
+  75.00  60.00  20.10  23.65 155.00 160.00   0.08 DrawUSect
+  75.00  60.00  20.10  23.65 160.00 165.00   0.06 DrawUSect
+  75.00  60.00  20.10  23.65 165.00 170.00   0.02 DrawUSect
+  75.00  60.00  20.10  23.65 170.00 175.00   0.01 DrawUSect
+  75.00  60.00  20.10  23.65 175.00 180.00   0.01 DrawUSect
+  75.00  60.00  23.65  27.30   0.00   5.00   1.00 DrawUSect
+  75.00  60.00  23.65  27.30   5.00  10.00   1.00 DrawUSect
+  75.00  60.00  23.65  27.30  10.00  15.00   1.00 DrawUSect
+  75.00  60.00  23.65  27.30  15.00  20.00   1.00 DrawUSect
+  75.00  60.00  23.65  27.30  20.00  25.00   1.00 DrawUSect
+  75.00  60.00  23.65  27.30  25.00  30.00   0.65 DrawUSect
+  75.00  60.00  23.65  27.30  30.00  35.00   0.26 DrawUSect
+  75.00  60.00  23.65  27.30  35.00  40.00   0.18 DrawUSect
+  75.00  60.00  23.65  27.30  40.00  45.00   0.13 DrawUSect
+  75.00  60.00  23.65  27.30  45.00  50.00   0.02 DrawUSect
+  75.00  60.00  23.65  27.30  50.00  55.00   0.17 DrawUSect
+  75.00  60.00  23.65  27.30  55.00  60.00   0.09 DrawUSect
+  75.00  60.00  23.65  27.30  60.00  65.00   0.02 DrawUSect
+  75.00  60.00  23.65  27.30  65.00  70.00   0.08 DrawUSect
+  75.00  60.00  23.65  27.30  70.00  75.00   0.03 DrawUSect
+  75.00  60.00  23.65  27.30  75.00  80.00   0.09 DrawUSect
+  75.00  60.00  23.65  27.30  80.00  85.00   0.03 DrawUSect
+  75.00  60.00  23.65  27.30  85.00  90.00   0.05 DrawUSect
+  75.00  60.00  23.65  27.30  90.00  95.00   0.10 DrawUSect
+  75.00  60.00  23.65  27.30  95.00 100.00   0.07 DrawUSect
+  75.00  60.00  23.65  27.30 100.00 105.00   0.05 DrawUSect
+  75.00  60.00  23.65  27.30 105.00 110.00   0.07 DrawUSect
+  75.00  60.00  23.65  27.30 110.00 115.00   0.06 DrawUSect
+  75.00  60.00  23.65  27.30 115.00 120.00   0.06 DrawUSect
+  75.00  60.00  23.65  27.30 120.00 125.00   0.05 DrawUSect
+  75.00  60.00  23.65  27.30 125.00 130.00   0.03 DrawUSect
+  75.00  60.00  23.65  27.30 130.00 135.00   0.05 DrawUSect
+  75.00  60.00  23.65  27.30 135.00 140.00   0.03 DrawUSect
+  75.00  60.00  23.65  27.30 140.00 145.00   0.07 DrawUSect
+  75.00  60.00  23.65  27.30 145.00 150.00   0.04 DrawUSect
+  75.00  60.00  23.65  27.30 150.00 155.00   0.06 DrawUSect
+  75.00  60.00  23.65  27.30 155.00 160.00   0.06 DrawUSect
+  75.00  60.00  23.65  27.30 160.00 165.00   0.08 DrawUSect
+  75.00  60.00  23.65  27.30 165.00 170.00   0.04 DrawUSect
+  75.00  60.00  23.65  27.30 170.00 175.00   0.00 DrawUSect
+  75.00  60.00  23.65  27.30 175.00 180.00   0.13 DrawUSect
+  75.00  60.00  27.30  31.07   0.00   5.00   1.00 DrawUSect
+  75.00  60.00  27.30  31.07   5.00  10.00   1.00 DrawUSect
+  75.00  60.00  27.30  31.07  10.00  15.00   1.00 DrawUSect
+  75.00  60.00  27.30  31.07  15.00  20.00   1.00 DrawUSect
+  75.00  60.00  27.30  31.07  20.00  25.00   0.99 DrawUSect
+  75.00  60.00  27.30  31.07  25.00  30.00   0.55 DrawUSect
+  75.00  60.00  27.30  31.07  30.00  35.00   0.26 DrawUSect
+  75.00  60.00  27.30  31.07  35.00  40.00   0.12 DrawUSect
+  75.00  60.00  27.30  31.07  40.00  45.00   0.14 DrawUSect
+  75.00  60.00  27.30  31.07  45.00  50.00   0.05 DrawUSect
+  75.00  60.00  27.30  31.07  50.00  55.00   0.10 DrawUSect
+  75.00  60.00  27.30  31.07  55.00  60.00   0.05 DrawUSect
+  75.00  60.00  27.30  31.07  60.00  65.00   0.05 DrawUSect
+  75.00  60.00  27.30  31.07  65.00  70.00   0.06 DrawUSect
+  75.00  60.00  27.30  31.07  70.00  75.00   0.08 DrawUSect
+  75.00  60.00  27.30  31.07  75.00  80.00   0.01 DrawUSect
+  75.00  60.00  27.30  31.07  80.00  85.00   0.08 DrawUSect
+  75.00  60.00  27.30  31.07  85.00  90.00   0.08 DrawUSect
+  75.00  60.00  27.30  31.07  90.00  95.00   0.05 DrawUSect
+  75.00  60.00  27.30  31.07  95.00 100.00   0.05 DrawUSect
+  75.00  60.00  27.30  31.07 100.00 105.00   0.04 DrawUSect
+  75.00  60.00  27.30  31.07 105.00 110.00   0.10 DrawUSect
+  75.00  60.00  27.30  31.07 110.00 115.00   0.03 DrawUSect
+  75.00  60.00  27.30  31.07 115.00 120.00   0.06 DrawUSect
+  75.00  60.00  27.30  31.07 120.00 125.00   0.02 DrawUSect
+  75.00  60.00  27.30  31.07 125.00 130.00   0.08 DrawUSect
+  75.00  60.00  27.30  31.07 130.00 135.00   0.07 DrawUSect
+  75.00  60.00  27.30  31.07 135.00 140.00   0.07 DrawUSect
+  75.00  60.00  27.30  31.07 140.00 145.00   0.01 DrawUSect
+  75.00  60.00  27.30  31.07 145.00 150.00   0.07 DrawUSect
+  75.00  60.00  27.30  31.07 150.00 155.00   0.05 DrawUSect
+  75.00  60.00  27.30  31.07 155.00 160.00   0.05 DrawUSect
+  75.00  60.00  27.30  31.07 160.00 165.00   0.01 DrawUSect
+  75.00  60.00  27.30  31.07 165.00 170.00   0.00 DrawUSect
+  75.00  60.00  27.30  31.07 170.00 175.00   0.03 DrawUSect
+  75.00  60.00  27.30  31.07 175.00 180.00   0.09 DrawUSect
+  75.00  60.00  31.07  34.97   0.00   5.00   1.00 DrawUSect
+  75.00  60.00  31.07  34.97   5.00  10.00   1.00 DrawUSect
+  75.00  60.00  31.07  34.97  10.00  15.00   1.00 DrawUSect
+  75.00  60.00  31.07  34.97  15.00  20.00   1.00 DrawUSect
+  75.00  60.00  31.07  34.97  20.00  25.00   0.88 DrawUSect
+  75.00  60.00  31.07  34.97  25.00  30.00   0.40 DrawUSect
+  75.00  60.00  31.07  34.97  30.00  35.00   0.09 DrawUSect
+  75.00  60.00  31.07  34.97  35.00  40.00   0.11 DrawUSect
+  75.00  60.00  31.07  34.97  40.00  45.00   0.04 DrawUSect
+  75.00  60.00  31.07  34.97  45.00  50.00   0.05 DrawUSect
+  75.00  60.00  31.07  34.97  50.00  55.00   0.14 DrawUSect
+  75.00  60.00  31.07  34.97  55.00  60.00   0.03 DrawUSect
+  75.00  60.00  31.07  34.97  60.00  65.00   0.08 DrawUSect
+  75.00  60.00  31.07  34.97  65.00  70.00   0.02 DrawUSect
+  75.00  60.00  31.07  34.97  70.00  75.00   0.10 DrawUSect
+  75.00  60.00  31.07  34.97  75.00  80.00   0.08 DrawUSect
+  75.00  60.00  31.07  34.97  80.00  85.00   0.05 DrawUSect
+  75.00  60.00  31.07  34.97  85.00  90.00   0.04 DrawUSect
+  75.00  60.00  31.07  34.97  90.00  95.00   0.08 DrawUSect
+  75.00  60.00  31.07  34.97  95.00 100.00   0.07 DrawUSect
+  75.00  60.00  31.07  34.97 100.00 105.00   0.08 DrawUSect
+  75.00  60.00  31.07  34.97 105.00 110.00   0.04 DrawUSect
+  75.00  60.00  31.07  34.97 110.00 115.00   0.05 DrawUSect
+  75.00  60.00  31.07  34.97 115.00 120.00   0.05 DrawUSect
+  75.00  60.00  31.07  34.97 120.00 125.00   0.06 DrawUSect
+  75.00  60.00  31.07  34.97 125.00 130.00   0.02 DrawUSect
+  75.00  60.00  31.07  34.97 130.00 135.00   0.04 DrawUSect
+  75.00  60.00  31.07  34.97 135.00 140.00   0.05 DrawUSect
+  75.00  60.00  31.07  34.97 140.00 145.00   0.07 DrawUSect
+  75.00  60.00  31.07  34.97 145.00 150.00   0.04 DrawUSect
+  75.00  60.00  31.07  34.97 150.00 155.00   0.05 DrawUSect
+  75.00  60.00  31.07  34.97 155.00 160.00   0.05 DrawUSect
+  75.00  60.00  31.07  34.97 160.00 165.00   0.01 DrawUSect
+  75.00  60.00  31.07  34.97 165.00 170.00   0.00 DrawUSect
+  75.00  60.00  31.07  34.97 170.00 175.00   0.01 DrawUSect
+  75.00  60.00  31.07  34.97 175.00 180.00   0.04 DrawUSect
+  75.00  60.00  34.97  39.04   0.00   5.00   1.00 DrawUSect
+  75.00  60.00  34.97  39.04   5.00  10.00   1.00 DrawUSect
+  75.00  60.00  34.97  39.04  10.00  15.00   1.00 DrawUSect
+  75.00  60.00  34.97  39.04  15.00  20.00   1.00 DrawUSect
+  75.00  60.00  34.97  39.04  20.00  25.00   0.76 DrawUSect
+  75.00  60.00  34.97  39.04  25.00  30.00   0.24 DrawUSect
+  75.00  60.00  34.97  39.04  30.00  35.00   0.08 DrawUSect
+  75.00  60.00  34.97  39.04  35.00  40.00   0.11 DrawUSect
+  75.00  60.00  34.97  39.04  40.00  45.00   0.09 DrawUSect
+  75.00  60.00  34.97  39.04  45.00  50.00   0.05 DrawUSect
+  75.00  60.00  34.97  39.04  50.00  55.00   0.07 DrawUSect
+  75.00  60.00  34.97  39.04  55.00  60.00   0.06 DrawUSect
+  75.00  60.00  34.97  39.04  60.00  65.00   0.03 DrawUSect
+  75.00  60.00  34.97  39.04  65.00  70.00   0.06 DrawUSect
+  75.00  60.00  34.97  39.04  70.00  75.00   0.09 DrawUSect
+  75.00  60.00  34.97  39.04  75.00  80.00   0.08 DrawUSect
+  75.00  60.00  34.97  39.04  80.00  85.00   0.10 DrawUSect
+  75.00  60.00  34.97  39.04  85.00  90.00   0.05 DrawUSect
+  75.00  60.00  34.97  39.04  90.00  95.00   0.09 DrawUSect
+  75.00  60.00  34.97  39.04  95.00 100.00   0.02 DrawUSect
+  75.00  60.00  34.97  39.04 100.00 105.00   0.06 DrawUSect
+  75.00  60.00  34.97  39.04 105.00 110.00   0.08 DrawUSect
+  75.00  60.00  34.97  39.04 110.00 115.00   0.09 DrawUSect
+  75.00  60.00  34.97  39.04 115.00 120.00   0.03 DrawUSect
+  75.00  60.00  34.97  39.04 120.00 125.00   0.06 DrawUSect
+  75.00  60.00  34.97  39.04 125.00 130.00   0.07 DrawUSect
+  75.00  60.00  34.97  39.04 130.00 135.00   0.04 DrawUSect
+  75.00  60.00  34.97  39.04 135.00 140.00   0.04 DrawUSect
+  75.00  60.00  34.97  39.04 140.00 145.00   0.07 DrawUSect
+  75.00  60.00  34.97  39.04 145.00 150.00   0.03 DrawUSect
+  75.00  60.00  34.97  39.04 150.00 155.00   0.04 DrawUSect
+  75.00  60.00  34.97  39.04 155.00 160.00   0.05 DrawUSect
+  75.00  60.00  34.97  39.04 160.00 165.00   0.01 DrawUSect
+  75.00  60.00  34.97  39.04 165.00 170.00   0.00 DrawUSect
+  75.00  60.00  34.97  39.04 170.00 175.00   0.01 DrawUSect
+  75.00  60.00  34.97  39.04 175.00 180.00   0.04 DrawUSect
+  75.00  60.00  39.04  43.30   0.00   5.00   1.00 DrawUSect
+  75.00  60.00  39.04  43.30   5.00  10.00   1.00 DrawUSect
+  75.00  60.00  39.04  43.30  10.00  15.00   1.00 DrawUSect
+  75.00  60.00  39.04  43.30  15.00  20.00   1.00 DrawUSect
+  75.00  60.00  39.04  43.30  20.00  25.00   0.58 DrawUSect
+  75.00  60.00  39.04  43.30  25.00  30.00   0.25 DrawUSect
+  75.00  60.00  39.04  43.30  30.00  35.00   0.12 DrawUSect
+  75.00  60.00  39.04  43.30  35.00  40.00   0.10 DrawUSect
+  75.00  60.00  39.04  43.30  40.00  45.00   0.21 DrawUSect
+  75.00  60.00  39.04  43.30  45.00  50.00   0.19 DrawUSect
+  75.00  60.00  39.04  43.30  50.00  55.00   0.07 DrawUSect
+  75.00  60.00  39.04  43.30  55.00  60.00   0.11 DrawUSect
+  75.00  60.00  39.04  43.30  60.00  65.00   0.11 DrawUSect
+  75.00  60.00  39.04  43.30  65.00  70.00   0.09 DrawUSect
+  75.00  60.00  39.04  43.30  70.00  75.00   0.06 DrawUSect
+  75.00  60.00  39.04  43.30  75.00  80.00   0.11 DrawUSect
+  75.00  60.00  39.04  43.30  80.00  85.00   0.09 DrawUSect
+  75.00  60.00  39.04  43.30  85.00  90.00   0.06 DrawUSect
+  75.00  60.00  39.04  43.30  90.00  95.00   0.10 DrawUSect
+  75.00  60.00  39.04  43.30  95.00 100.00   0.08 DrawUSect
+  75.00  60.00  39.04  43.30 100.00 105.00   0.09 DrawUSect
+  75.00  60.00  39.04  43.30 105.00 110.00   0.11 DrawUSect
+  75.00  60.00  39.04  43.30 110.00 115.00   0.05 DrawUSect
+  75.00  60.00  39.04  43.30 115.00 120.00   0.03 DrawUSect
+  75.00  60.00  39.04  43.30 120.00 125.00   0.07 DrawUSect
+  75.00  60.00  39.04  43.30 125.00 130.00   0.07 DrawUSect
+  75.00  60.00  39.04  43.30 130.00 135.00   0.03 DrawUSect
+  75.00  60.00  39.04  43.30 135.00 140.00   0.05 DrawUSect
+  75.00  60.00  39.04  43.30 140.00 145.00   0.04 DrawUSect
+  75.00  60.00  39.04  43.30 145.00 150.00   0.09 DrawUSect
+  75.00  60.00  39.04  43.30 150.00 155.00   0.09 DrawUSect
+  75.00  60.00  39.04  43.30 155.00 160.00   0.03 DrawUSect
+  75.00  60.00  39.04  43.30 160.00 165.00   0.00 DrawUSect
+  75.00  60.00  39.04  43.30 165.00 170.00   0.00 DrawUSect
+  75.00  60.00  39.04  43.30 170.00 175.00   0.00 DrawUSect
+  75.00  60.00  39.04  43.30 175.00 180.00   0.03 DrawUSect
+  75.00  60.00  43.30  47.78   0.00   5.00   1.00 DrawUSect
+  75.00  60.00  43.30  47.78   5.00  10.00   1.00 DrawUSect
+  75.00  60.00  43.30  47.78  10.00  15.00   1.00 DrawUSect
+  75.00  60.00  43.30  47.78  15.00  20.00   0.99 DrawUSect
+  75.00  60.00  43.30  47.78  20.00  25.00   0.48 DrawUSect
+  75.00  60.00  43.30  47.78  25.00  30.00   0.27 DrawUSect
+  75.00  60.00  43.30  47.78  30.00  35.00   0.48 DrawUSect
+  75.00  60.00  43.30  47.78  35.00  40.00   0.68 DrawUSect
+  75.00  60.00  43.30  47.78  40.00  45.00   0.52 DrawUSect
+  75.00  60.00  43.30  47.78  45.00  50.00   0.10 DrawUSect
+  75.00  60.00  43.30  47.78  50.00  55.00   0.12 DrawUSect
+  75.00  60.00  43.30  47.78  55.00  60.00   0.08 DrawUSect
+  75.00  60.00  43.30  47.78  60.00  65.00   0.17 DrawUSect
+  75.00  60.00  43.30  47.78  65.00  70.00   0.07 DrawUSect
+  75.00  60.00  43.30  47.78  70.00  75.00   0.11 DrawUSect
+  75.00  60.00  43.30  47.78  75.00  80.00   0.08 DrawUSect
+  75.00  60.00  43.30  47.78  80.00  85.00   0.07 DrawUSect
+  75.00  60.00  43.30  47.78  85.00  90.00   0.08 DrawUSect
+  75.00  60.00  43.30  47.78  90.00  95.00   0.15 DrawUSect
+  75.00  60.00  43.30  47.78  95.00 100.00   0.12 DrawUSect
+  75.00  60.00  43.30  47.78 100.00 105.00   0.09 DrawUSect
+  75.00  60.00  43.30  47.78 105.00 110.00   0.11 DrawUSect
+  75.00  60.00  43.30  47.78 110.00 115.00   0.07 DrawUSect
+  75.00  60.00  43.30  47.78 115.00 120.00   0.04 DrawUSect
+  75.00  60.00  43.30  47.78 120.00 125.00   0.06 DrawUSect
+  75.00  60.00  43.30  47.78 125.00 130.00   0.08 DrawUSect
+  75.00  60.00  43.30  47.78 130.00 135.00   0.06 DrawUSect
+  75.00  60.00  43.30  47.78 135.00 140.00   0.09 DrawUSect
+  75.00  60.00  43.30  47.78 140.00 145.00   0.04 DrawUSect
+  75.00  60.00  43.30  47.78 145.00 150.00   0.09 DrawUSect
+  75.00  60.00  43.30  47.78 150.00 155.00   0.04 DrawUSect
+  75.00  60.00  43.30  47.78 155.00 160.00   0.02 DrawUSect
+  75.00  60.00  43.30  47.78 160.00 165.00   0.00 DrawUSect
+  75.00  60.00  43.30  47.78 165.00 170.00   0.00 DrawUSect
+  75.00  60.00  43.30  47.78 170.00 175.00   0.01 DrawUSect
+  75.00  60.00  43.30  47.78 175.00 180.00   0.03 DrawUSect
+  75.00  60.00  47.78  52.52   0.00   5.00   1.00 DrawUSect
+  75.00  60.00  47.78  52.52   5.00  10.00   1.00 DrawUSect
+  75.00  60.00  47.78  52.52  10.00  15.00   0.99 DrawUSect
+  75.00  60.00  47.78  52.52  15.00  20.00   0.89 DrawUSect
+  75.00  60.00  47.78  52.52  20.00  25.00   0.79 DrawUSect
+  75.00  60.00  47.78  52.52  25.00  30.00   0.78 DrawUSect
+  75.00  60.00  47.78  52.52  30.00  35.00   0.93 DrawUSect
+  75.00  60.00  47.78  52.52  35.00  40.00   0.81 DrawUSect
+  75.00  60.00  47.78  52.52  40.00  45.00   0.29 DrawUSect
+  75.00  60.00  47.78  52.52  45.00  50.00   0.05 DrawUSect
+  75.00  60.00  47.78  52.52  50.00  55.00   0.17 DrawUSect
+  75.00  60.00  47.78  52.52  55.00  60.00   0.09 DrawUSect
+  75.00  60.00  47.78  52.52  60.00  65.00   0.17 DrawUSect
+  75.00  60.00  47.78  52.52  65.00  70.00   0.12 DrawUSect
+  75.00  60.00  47.78  52.52  70.00  75.00   0.15 DrawUSect
+  75.00  60.00  47.78  52.52  75.00  80.00   0.17 DrawUSect
+  75.00  60.00  47.78  52.52  80.00  85.00   0.19 DrawUSect
+  75.00  60.00  47.78  52.52  85.00  90.00   0.19 DrawUSect
+  75.00  60.00  47.78  52.52  90.00  95.00   0.22 DrawUSect
+  75.00  60.00  47.78  52.52  95.00 100.00   0.20 DrawUSect
+  75.00  60.00  47.78  52.52 100.00 105.00   0.21 DrawUSect
+  75.00  60.00  47.78  52.52 105.00 110.00   0.19 DrawUSect
+  75.00  60.00  47.78  52.52 110.00 115.00   0.11 DrawUSect
+  75.00  60.00  47.78  52.52 115.00 120.00   0.10 DrawUSect
+  75.00  60.00  47.78  52.52 120.00 125.00   0.08 DrawUSect
+  75.00  60.00  47.78  52.52 125.00 130.00   0.07 DrawUSect
+  75.00  60.00  47.78  52.52 130.00 135.00   0.05 DrawUSect
+  75.00  60.00  47.78  52.52 135.00 140.00   0.13 DrawUSect
+  75.00  60.00  47.78  52.52 140.00 145.00   0.11 DrawUSect
+  75.00  60.00  47.78  52.52 145.00 150.00   0.04 DrawUSect
+  75.00  60.00  47.78  52.52 150.00 155.00   0.04 DrawUSect
+  75.00  60.00  47.78  52.52 155.00 160.00   0.02 DrawUSect
+  75.00  60.00  47.78  52.52 160.00 165.00   0.01 DrawUSect
+  75.00  60.00  47.78  52.52 165.00 170.00   0.00 DrawUSect
+  75.00  60.00  47.78  52.52 170.00 175.00   0.00 DrawUSect
+  75.00  60.00  47.78  52.52 175.00 180.00   0.04 DrawUSect
+  75.00  60.00  52.52  57.55   0.00   5.00   0.98 DrawUSect
+  75.00  60.00  52.52  57.55   5.00  10.00   0.75 DrawUSect
+  75.00  60.00  52.52  57.55  10.00  15.00   0.58 DrawUSect
+  75.00  60.00  52.52  57.55  15.00  20.00   0.59 DrawUSect
+  75.00  60.00  52.52  57.55  20.00  25.00   0.94 DrawUSect
+  75.00  60.00  52.52  57.55  25.00  30.00   0.99 DrawUSect
+  75.00  60.00  52.52  57.55  30.00  35.00   1.00 DrawUSect
+  75.00  60.00  52.52  57.55  35.00  40.00   0.80 DrawUSect
+  75.00  60.00  52.52  57.55  40.00  45.00   0.19 DrawUSect
+  75.00  60.00  52.52  57.55  45.00  50.00   0.15 DrawUSect
+  75.00  60.00  52.52  57.55  50.00  55.00   0.26 DrawUSect
+  75.00  60.00  52.52  57.55  55.00  60.00   0.39 DrawUSect
+  75.00  60.00  52.52  57.55  60.00  65.00   0.50 DrawUSect
+  75.00  60.00  52.52  57.55  65.00  70.00   0.56 DrawUSect
+  75.00  60.00  52.52  57.55  70.00  75.00   0.71 DrawUSect
+  75.00  60.00  52.52  57.55  75.00  80.00   0.75 DrawUSect
+  75.00  60.00  52.52  57.55  80.00  85.00   0.79 DrawUSect
+  75.00  60.00  52.52  57.55  85.00  90.00   0.78 DrawUSect
+  75.00  60.00  52.52  57.55  90.00  95.00   0.79 DrawUSect
+  75.00  60.00  52.52  57.55  95.00 100.00   0.74 DrawUSect
+  75.00  60.00  52.52  57.55 100.00 105.00   0.68 DrawUSect
+  75.00  60.00  52.52  57.55 105.00 110.00   0.63 DrawUSect
+  75.00  60.00  52.52  57.55 110.00 115.00   0.38 DrawUSect
+  75.00  60.00  52.52  57.55 115.00 120.00   0.29 DrawUSect
+  75.00  60.00  52.52  57.55 120.00 125.00   0.22 DrawUSect
+  75.00  60.00  52.52  57.55 125.00 130.00   0.12 DrawUSect
+  75.00  60.00  52.52  57.55 130.00 135.00   0.10 DrawUSect
+  75.00  60.00  52.52  57.55 135.00 140.00   0.10 DrawUSect
+  75.00  60.00  52.52  57.55 140.00 145.00   0.11 DrawUSect
+  75.00  60.00  52.52  57.55 145.00 150.00   0.10 DrawUSect
+  75.00  60.00  52.52  57.55 150.00 155.00   0.07 DrawUSect
+  75.00  60.00  52.52  57.55 155.00 160.00   0.03 DrawUSect
+  75.00  60.00  52.52  57.55 160.00 165.00   0.00 DrawUSect
+  75.00  60.00  52.52  57.55 165.00 170.00   0.01 DrawUSect
+  75.00  60.00  52.52  57.55 170.00 175.00   0.00 DrawUSect
+  75.00  60.00  52.52  57.55 175.00 180.00   0.04 DrawUSect
+  75.00  60.00  57.55  62.93   0.00   5.00   0.59 DrawUSect
+  75.00  60.00  57.55  62.93   5.00  10.00   0.23 DrawUSect
+  75.00  60.00  57.55  62.93  10.00  15.00   0.19 DrawUSect
+  75.00  60.00  57.55  62.93  15.00  20.00   0.53 DrawUSect
+  75.00  60.00  57.55  62.93  20.00  25.00   0.94 DrawUSect
+  75.00  60.00  57.55  62.93  25.00  30.00   1.00 DrawUSect
+  75.00  60.00  57.55  62.93  30.00  35.00   1.00 DrawUSect
+  75.00  60.00  57.55  62.93  35.00  40.00   0.75 DrawUSect
+  75.00  60.00  57.55  62.93  40.00  45.00   0.52 DrawUSect
+  75.00  60.00  57.55  62.93  45.00  50.00   0.61 DrawUSect
+  75.00  60.00  57.55  62.93  50.00  55.00   0.79 DrawUSect
+  75.00  60.00  57.55  62.93  55.00  60.00   0.97 DrawUSect
+  75.00  60.00  57.55  62.93  60.00  65.00   0.99 DrawUSect
+  75.00  60.00  57.55  62.93  65.00  70.00   1.00 DrawUSect
+  75.00  60.00  57.55  62.93  70.00  75.00   1.00 DrawUSect
+  75.00  60.00  57.55  62.93  75.00  80.00   1.00 DrawUSect
+  75.00  60.00  57.55  62.93  80.00  85.00   1.00 DrawUSect
+  75.00  60.00  57.55  62.93  85.00  90.00   1.00 DrawUSect
+  75.00  60.00  57.55  62.93  90.00  95.00   1.00 DrawUSect
+  75.00  60.00  57.55  62.93  95.00 100.00   1.00 DrawUSect
+  75.00  60.00  57.55  62.93 100.00 105.00   1.00 DrawUSect
+  75.00  60.00  57.55  62.93 105.00 110.00   1.00 DrawUSect
+  75.00  60.00  57.55  62.93 110.00 115.00   0.99 DrawUSect
+  75.00  60.00  57.55  62.93 115.00 120.00   0.88 DrawUSect
+  75.00  60.00  57.55  62.93 120.00 125.00   0.81 DrawUSect
+  75.00  60.00  57.55  62.93 125.00 130.00   0.57 DrawUSect
+  75.00  60.00  57.55  62.93 130.00 135.00   0.42 DrawUSect
+  75.00  60.00  57.55  62.93 135.00 140.00   0.25 DrawUSect
+  75.00  60.00  57.55  62.93 140.00 145.00   0.16 DrawUSect
+  75.00  60.00  57.55  62.93 145.00 150.00   0.11 DrawUSect
+  75.00  60.00  57.55  62.93 150.00 155.00   0.07 DrawUSect
+  75.00  60.00  57.55  62.93 155.00 160.00   0.01 DrawUSect
+  75.00  60.00  57.55  62.93 160.00 165.00   0.01 DrawUSect
+  75.00  60.00  57.55  62.93 165.00 170.00   0.01 DrawUSect
+  75.00  60.00  57.55  62.93 170.00 175.00   0.03 DrawUSect
+  75.00  60.00  57.55  62.93 175.00 180.00   0.02 DrawUSect
+  75.00  60.00  62.93  68.72   0.00   5.00   0.13 DrawUSect
+  75.00  60.00  62.93  68.72   5.00  10.00   0.09 DrawUSect
+  75.00  60.00  62.93  68.72  10.00  15.00   0.17 DrawUSect
+  75.00  60.00  62.93  68.72  15.00  20.00   0.66 DrawUSect
+  75.00  60.00  62.93  68.72  20.00  25.00   0.83 DrawUSect
+  75.00  60.00  62.93  68.72  25.00  30.00   0.71 DrawUSect
+  75.00  60.00  62.93  68.72  30.00  35.00   0.72 DrawUSect
+  75.00  60.00  62.93  68.72  35.00  40.00   0.89 DrawUSect
+  75.00  60.00  62.93  68.72  40.00  45.00   0.94 DrawUSect
+  75.00  60.00  62.93  68.72  45.00  50.00   1.00 DrawUSect
+  75.00  60.00  62.93  68.72  50.00  55.00   1.00 DrawUSect
+  75.00  60.00  62.93  68.72  55.00  60.00   1.00 DrawUSect
+  75.00  60.00  62.93  68.72  60.00  65.00   1.00 DrawUSect
+  75.00  60.00  62.93  68.72  65.00  70.00   1.00 DrawUSect
+  75.00  60.00  62.93  68.72  70.00  75.00   1.00 DrawUSect
+  75.00  60.00  62.93  68.72  75.00  80.00   1.00 DrawUSect
+  75.00  60.00  62.93  68.72  80.00  85.00   1.00 DrawUSect
+  75.00  60.00  62.93  68.72  85.00  90.00   1.00 DrawUSect
+  75.00  60.00  62.93  68.72  90.00  95.00   1.00 DrawUSect
+  75.00  60.00  62.93  68.72  95.00 100.00   1.00 DrawUSect
+  75.00  60.00  62.93  68.72 100.00 105.00   1.00 DrawUSect
+  75.00  60.00  62.93  68.72 105.00 110.00   1.00 DrawUSect
+  75.00  60.00  62.93  68.72 110.00 115.00   1.00 DrawUSect
+  75.00  60.00  62.93  68.72 115.00 120.00   1.00 DrawUSect
+  75.00  60.00  62.93  68.72 120.00 125.00   1.00 DrawUSect
+  75.00  60.00  62.93  68.72 125.00 130.00   0.99 DrawUSect
+  75.00  60.00  62.93  68.72 130.00 135.00   0.95 DrawUSect
+  75.00  60.00  62.93  68.72 135.00 140.00   0.74 DrawUSect
+  75.00  60.00  62.93  68.72 140.00 145.00   0.50 DrawUSect
+  75.00  60.00  62.93  68.72 145.00 150.00   0.28 DrawUSect
+  75.00  60.00  62.93  68.72 150.00 155.00   0.10 DrawUSect
+  75.00  60.00  62.93  68.72 155.00 160.00   0.00 DrawUSect
+  75.00  60.00  62.93  68.72 160.00 165.00   0.02 DrawUSect
+  75.00  60.00  62.93  68.72 165.00 170.00   0.01 DrawUSect
+  75.00  60.00  62.93  68.72 170.00 175.00   0.00 DrawUSect
+  75.00  60.00  62.93  68.72 175.00 180.00   0.04 DrawUSect
+  75.00  60.00  68.72  75.00   0.00   5.00   0.02 DrawUSect
+  75.00  60.00  68.72  75.00   5.00  10.00   0.01 DrawUSect
+  75.00  60.00  68.72  75.00  10.00  15.00   0.05 DrawUSect
+  75.00  60.00  68.72  75.00  15.00  20.00   0.33 DrawUSect
+  75.00  60.00  68.72  75.00  20.00  25.00   0.39 DrawUSect
+  75.00  60.00  68.72  75.00  25.00  30.00   0.33 DrawUSect
+  75.00  60.00  68.72  75.00  30.00  35.00   0.50 DrawUSect
+  75.00  60.00  68.72  75.00  35.00  40.00   1.00 DrawUSect
+  75.00  60.00  68.72  75.00  40.00  45.00   1.00 DrawUSect
+  75.00  60.00  68.72  75.00  45.00  50.00   1.00 DrawUSect
+  75.00  60.00  68.72  75.00  50.00  55.00   1.00 DrawUSect
+  75.00  60.00  68.72  75.00  55.00  60.00   1.00 DrawUSect
+  75.00  60.00  68.72  75.00  60.00  65.00   1.00 DrawUSect
+  75.00  60.00  68.72  75.00  65.00  70.00   1.00 DrawUSect
+  75.00  60.00  68.72  75.00  70.00  75.00   1.00 DrawUSect
+  75.00  60.00  68.72  75.00  75.00  80.00   1.00 DrawUSect
+  75.00  60.00  68.72  75.00  80.00  85.00   1.00 DrawUSect
+  75.00  60.00  68.72  75.00  85.00  90.00   1.00 DrawUSect
+  75.00  60.00  68.72  75.00  90.00  95.00   1.00 DrawUSect
+  75.00  60.00  68.72  75.00  95.00 100.00   1.00 DrawUSect
+  75.00  60.00  68.72  75.00 100.00 105.00   1.00 DrawUSect
+  75.00  60.00  68.72  75.00 105.00 110.00   1.00 DrawUSect
+  75.00  60.00  68.72  75.00 110.00 115.00   1.00 DrawUSect
+  75.00  60.00  68.72  75.00 115.00 120.00   1.00 DrawUSect
+  75.00  60.00  68.72  75.00 120.00 125.00   1.00 DrawUSect
+  75.00  60.00  68.72  75.00 125.00 130.00   1.00 DrawUSect
+  75.00  60.00  68.72  75.00 130.00 135.00   1.00 DrawUSect
+  75.00  60.00  68.72  75.00 135.00 140.00   1.00 DrawUSect
+  75.00  60.00  68.72  75.00 140.00 145.00   0.99 DrawUSect
+  75.00  60.00  68.72  75.00 145.00 150.00   0.65 DrawUSect
+  75.00  60.00  68.72  75.00 150.00 155.00   0.36 DrawUSect
+  75.00  60.00  68.72  75.00 155.00 160.00   0.13 DrawUSect
+  75.00  60.00  68.72  75.00 160.00 165.00   0.03 DrawUSect
+  75.00  60.00  68.72  75.00 165.00 170.00   0.02 DrawUSect
+  75.00  60.00  68.72  75.00 170.00 175.00   0.02 DrawUSect
+  75.00  60.00  68.72  75.00 175.00 180.00   0.05 DrawUSect
+  75.00  60.00   0.00   0.00 355.00 360.00   1.00 DrawUSect
+ 2.00 setlinewidth
+  75.00  60.00  75.00 Circleu
+ 0.30 setlinewidth
+  75.00  60.00  20.10 Circleu
+  75.00  60.00  43.30 Circleu
+   0.00  60.00 150.00  60.00 L
+  75.00 -15.00  75.00 135.00 L
+ 1.00 setlinewidth
+ 150.00  60.00 160.00  60.00 L
+ 160.00  60.00   0.00  10.00   2.50 ArrowHead
+  75.00  60.00  85.00  85.00   5.00  15.00   1.00 DrawSect
+ 157.10  82.00 105.00  10.00   2.50 ArrowHead
+ 160.00  47.50 moveto
+(q)
+10.0 Gprint
+ 162.00  82.50 moveto
+(j)
+10.0 Gprint
+  88.21  46.79 moveto
+(30 deg)  5.0 UncenterRot90 Rot45
+(30 deg)  5.0 Print
+grestore
+ 104.62  30.38 moveto
+(60 deg)  5.0 UncenterRot90 Rot45
+(60 deg)  5.0 Print
+grestore
+ 126.53   8.47 moveto
+(90 deg)  5.0 UncenterRot90 Rot45
+(90 deg)  5.0 Print
+grestore
+  75.00 165.00 moveto
+(Stereographic projection of)
+13.0 Center
+(Stereographic projection of)
+13.0 Print
+  75.00 150.00 moveto
+(the averaged radial completeness)
+13.0 Center
+(the averaged radial completeness)
+13.0 Print
+  35.00 -42.00 moveto
+(polar coordinates of the)
+ 8.0 Print
+  35.00 -52.00 moveto
+(crystallographical axes)
+ 8.0 Print
+ 1.50 setlinewidth
+ -50.00  30.00 -10.00 -57.00   1.00 OrthoBox
+ 0.60 setlinewidth
+ -50.00 -24.00  30.00 -24.00 L
+ -35.00 -10.00 -35.00 -57.00 L
+ -20.00 -20.25 moveto
+(q)
+ 9.0 Gprint
+  10.00 -20.25 moveto
+(j)
+ 9.0 Gprint
+ -45.00 -32.25 moveto
+(h)
+ 9.0 Print
+  -5.00 -32.25 moveto
+(   83.71)
+ 9.0 RightJ
+(   83.71)
+ 9.0 Print
+  25.00 -32.25 moveto
+(    0.00)
+ 9.0 RightJ
+(    0.00)
+ 9.0 Print
+ -45.00 -42.25 moveto
+(k)
+ 9.0 Print
+  -5.00 -42.25 moveto
+(   90.00)
+ 9.0 RightJ
+(   90.00)
+ 9.0 Print
+  25.00 -42.25 moveto
+(   90.00)
+ 9.0 RightJ
+(   90.00)
+ 9.0 Print
+ -45.00 -52.25 moveto
+(l)
+ 9.0 Print
+  -5.00 -52.25 moveto
+(    0.00)
+ 9.0 RightJ
+(    0.00)
+ 9.0 Print
+  25.00 -52.25 moveto
+(    0.00)
+ 9.0 RightJ
+(    0.00)
+ 9.0 Print
+ -45.00  17.75 moveto
+(0.0)
+ 9.0 Print
+ 1.00 setlinewidth
+ -30.00 -20.00  20.00  30.00   0.90 OrthoBox
+ -30.00 -20.00  30.00  40.00   0.80 OrthoBox
+ -30.00 -20.00  40.00  50.00   0.70 OrthoBox
+ -30.00 -20.00  50.00  60.00   0.60 OrthoBox
+ -30.00 -20.00  60.00  70.00   0.50 OrthoBox
+ -30.00 -20.00  70.00  80.00   0.40 OrthoBox
+ -30.00 -20.00  80.00  90.00   0.30 OrthoBox
+ -30.00 -20.00  90.00 100.00   0.20 OrthoBox
+ -30.00 -20.00 100.00 110.00   0.10 OrthoBox
+ -30.00 -20.00 110.00 120.00   0.00 OrthoBox
+ -45.00 117.75 moveto
+(1.0)
+ 9.0 Print
+ -50.00  30.00 moveto
+(level of completeness) 10.0 UncenterRot90 Rot90
+(level of completeness) 10.0 Print
+grestore
+    230.00      0.00 translate
+gsave 0.9500 setgray
+   0.00   0.00   0.00 150.00 150.00 150.00 150.00   0.00 Pl4
+ 0.60 setlinewidth
+   0.00   0.00   0.00 150.00 L
+   0.00 150.00 150.00 150.00 L
+ 150.00 150.00 150.00   0.00 L
+ 150.00   0.00   0.00   0.00 L
+   0.00  -7.50 moveto
+(0.00)
+10.0 Center
+(0.00)
+10.0 Print
+   0.00   0.00   0.00  -3.33 L
+  37.50  -7.50 moveto
+(0.10)
+10.0 Center
+(0.10)
+10.0 Print
+  37.50   0.00  37.50  -3.33 L
+  75.00  -7.50 moveto
+(0.20)
+10.0 Center
+(0.20)
+10.0 Print
+  75.00   0.00  75.00  -3.33 L
+ 112.50  -7.50 moveto
+(0.30)
+10.0 Center
+(0.30)
+10.0 Print
+ 112.50   0.00 112.50  -3.33 L
+ 150.00  -7.50 moveto
+(0.40)
+10.0 Center
+(0.40)
+10.0 Print
+ 150.00   0.00 150.00  -3.33 L
+ -15.00  37.50 moveto
+(  1.5)
+10.0 Center
+(  1.5)
+10.0 Print
+  -3.33  37.50   0.00  37.50 L
+ -15.00  75.00 moveto
+(  2.0)
+10.0 Center
+(  2.0)
+10.0 Print
+  -3.33  75.00   0.00  75.00 L
+ -15.00 112.50 moveto
+(  2.5)
+10.0 Center
+(  2.5)
+10.0 Print
+  -3.33 112.50   0.00 112.50 L
+ -15.00 150.00 moveto
+(  3.0)
+10.0 Center
+(  3.0)
+10.0 Print
+  -3.33 150.00   0.00 150.00 L
+ -30.00  -7.50 moveto
+(1/d)
+13.0 Center
+(1/d)
+13.0 Print
+ -30.00 -20.00 moveto
+(d)
+13.0 Center
+(d)
+13.0 Print
+  37.50 -20.00 moveto
+(10.00)
+10.0 Center
+(10.00)
+10.0 Print
+  75.00 -20.00 moveto
+(5.00)
+10.0 Center
+(5.00)
+10.0 Print
+ 112.50 -20.00 moveto
+(3.33)
+10.0 Center
+(3.33)
+10.0 Print
+ 150.00 -20.00 moveto
+(2.50)
+10.0 Center
+(2.50)
+10.0 Print
+ 172.50 -20.00 moveto
+(A)
+10.0 Center
+(A)
+10.0 Print
+ 2.00 setlinewidth
+   0.00 -35.00  15.00 -35.00 L
+  -2.00 -36.20   2.00 -36.20   0.00 -32.60 Pline3
+  13.00 -36.20  17.00 -36.20  15.00 -32.60 Pline3
+  25.00 -37.25 moveto
+(twinning test   <I^2   >/<I>^2)
+ 9.0 Print
+ 0.50 setlinewidth
+   0.00 -45.00  15.00 -45.00 L
+  25.00 -47.25 moveto
+(averaged value)
+ 9.0 Print
+   0.00 -57.25 moveto
+(2 - untwinned data ;  1.5 - twinned data)
+ 9.0 Print
+ 0.50 setlinewidth
+  12.11 140.61  19.18 140.61 L
+ 0.50 setlinewidth
+  19.18 140.61  26.25 140.61 L
+ 0.50 setlinewidth
+  26.25 140.61  33.32 140.61 L
+ 0.50 setlinewidth
+  33.32 140.61  40.39 140.61 L
+ 0.50 setlinewidth
+  40.39 140.61  47.47 140.61 L
+ 0.50 setlinewidth
+  47.47 140.61  54.54 140.61 L
+ 0.50 setlinewidth
+  54.54 140.61  61.61 140.61 L
+ 0.50 setlinewidth
+  61.61 140.61  68.68 140.61 L
+ 0.50 setlinewidth
+  68.68 140.61  75.75 140.61 L
+ 0.50 setlinewidth
+  75.75 140.61  82.82 140.61 L
+ 0.50 setlinewidth
+  82.82 140.61  89.89 140.61 L
+ 0.50 setlinewidth
+  89.89 140.61  96.97 140.61 L
+ 0.50 setlinewidth
+  96.97 140.61 104.04 140.61 L
+ 0.50 setlinewidth
+ 104.04 140.61 111.11 140.61 L
+ 0.50 setlinewidth
+ 111.11 140.61 118.18 140.61 L
+ 0.50 setlinewidth
+ 118.18 140.61 125.25 140.61 L
+ 0.50 setlinewidth
+ 125.25 140.61 132.32 140.61 L
+ 0.50 setlinewidth
+ 132.32 140.61 139.39 140.61 L
+ 0.50 setlinewidth
+ 139.39 140.61 146.46 140.61 L
+ 2.00 setlinewidth
+  12.11 111.78  19.18  43.55 L
+  10.11 110.58  14.11 110.58  12.11 114.18 Pline3
+ 2.00 setlinewidth
+  19.18  43.55  26.25  63.34 L
+  17.18  42.35  21.18  42.35  19.18  45.95 Pline3
+ 2.00 setlinewidth
+  26.25  63.34  33.32  81.38 L
+  24.25  62.14  28.25  62.14  26.25  65.74 Pline3
+ 2.00 setlinewidth
+  33.32  81.38  40.39  75.05 L
+  31.32  80.18  35.32  80.18  33.32  83.78 Pline3
+ 2.00 setlinewidth
+  40.39  75.05  47.47  78.21 L
+  38.39  73.85  42.39  73.85  40.39  77.45 Pline3
+ 2.00 setlinewidth
+  47.47  78.21  54.54 101.59 L
+  45.47  77.01  49.47  77.01  47.47  80.61 Pline3
+ 2.00 setlinewidth
+  54.54 101.59  61.61  91.04 L
+  52.54 100.39  56.54 100.39  54.54 103.99 Pline3
+ 2.00 setlinewidth
+  61.61  91.04  68.68  95.35 L
+  59.61  89.84  63.61  89.84  61.61  93.44 Pline3
+ 2.00 setlinewidth
+  68.68  95.35  75.75  86.61 L
+  66.68  94.15  70.68  94.15  68.68  97.75 Pline3
+ 2.00 setlinewidth
+  75.75  86.61  82.82  92.25 L
+  73.75  85.41  77.75  85.41  75.75  89.01 Pline3
+ 2.00 setlinewidth
+  82.82  92.25  89.89 110.01 L
+  80.82  91.05  84.82  91.05  82.82  94.65 Pline3
+ 2.00 setlinewidth
+  89.89 110.01  96.97 112.09 L
+  87.89 108.81  91.89 108.81  89.89 112.41 Pline3
+ 2.00 setlinewidth
+  96.97 112.09 104.04 122.33 L
+  94.97 110.89  98.97 110.89  96.97 114.49 Pline3
+ 2.00 setlinewidth
+ 104.04 122.33 111.11 130.41 L
+ 102.04 121.13 106.04 121.13 104.04 124.73 Pline3
+ 2.00 setlinewidth
+ 111.11 130.41 118.18 147.21 L
+ 109.11 129.21 113.11 129.21 111.11 132.81 Pline3
+ 2.00 setlinewidth
+ 118.18 147.21 125.25 150.00 L
+ 116.18 146.01 120.18 146.01 118.18 149.61 Pline3
+ 2.00 setlinewidth
+ 125.25 150.00 132.32 150.00 L
+ 123.25 148.80 127.25 148.80 125.25 152.40 Pline3
+ 2.00 setlinewidth
+ 132.32 150.00 139.39 150.00 L
+ 130.32 148.80 134.32 148.80 132.32 152.40 Pline3
+ 2.00 setlinewidth
+ 139.39 150.00 146.46 120.53 L
+ 137.39 148.80 141.39 148.80 139.39 152.40 Pline3
+ 144.46 119.33 148.46 119.33 146.46 122.93 Pline3
+ 0.00 setlinewidth
+gsave 0.9500 setgray
+  50.00 136.00  50.00 146.00 145.00 146.00 145.00 136.00 Pl4
+ 145.00 136.75 moveto
+(Perfect Twinning test)
+13.0 RightJ
+(Perfect Twinning test)
+13.0 Print
+grestore stroke
+SfCheckSave restore
+showpage
+%%Trailer
+%%BoundingBox:  29  49 551 781
+%%EOF

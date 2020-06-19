@@ -1,0 +1,72 @@
+Report on nsp3 model 6w9c
+
+Description of the deposited model:
+    The validation report for 6w9c says that the data set goes to 2.7 A resolution and the model has R values of 23.5%/30.9%.  Other than the free R, the sliders are all around the middle.
+	The most obvious problem is that the data completeness is only 57.1%.  Why?
+    PDB-REDO gets 25.09%/29.04%. The main difference in stats is that they restrain the geometry much tighter.	
+	
+Assessment of the deposited model.
+    The crystal contains three molecules in the asu with a 3-fold direct ncs axis pointing along the z coordinate axis. Near the axis the proteins have well ordered structure and the ncs agreement is very good.  Far from the axis the symmetry breaks down and so does the structure.  At the distal tips there is a Zinc binding site and each clearly contains multiple conformations, which makes them very unclear.  The A chain, for example doesn't even have a zinc atom.
+	
+	Each molecule actually has two zinc binding sites.  The first is well ordered and sits directly on the ncs three-fold axis.  The zinc is held by three, equivalent, cystine residues and the fourth ligand is, presumably, a water molecule.  The zinc is in alternative conformations both above and below the plane of the SG atoms.  One conformation was not modeled and neither is the water molecule.  This site is probably a crystallization artifact.
+	
+	The second site is at the distal point of the protein.  It is a four-cystine zinc binding site.  Only the B and C chains have a zinc atom in the model, and neither of them have all four cystines connected.
+	The bond lengths and angles of the SG-ZN ligation were set incorrectly.  In the central zinc two of the SG-ZN distances are around 2.4 A while the third is an amazing 2.7 A!  It is very strange to have this amount of asymmetry when the structure is sitting right on a nearly perfect 3-fold symmetry axis. The CB-SG-ZN angle only a little more than 70 deg!  (It should be around 107 deg.)  In the C chain there are only three links (although there are four cystine residues available) and their distances range from 2.85 to 2.22 A.  Two of the angles are 90 deg or less.
+	
+Assessment of the PDB-REDO model.
+
+    For both this and Tristan's model I was beginning to believe that any refinement with this data set was not going to be useful, so I didn't perform a full characterization.  None of the models differed much in the ordered region, but that didn't give me confidence in their correctness, only that the two new refinements started from the deposited model and, with this data, there wasn't much that could be done.  I focused on the Zinc sites, since they were refined so badly in 6w9c.
+	
+	The geometry of the zinc sites is proper at 2.34 A and 111 deg (I would prefer 107 deg, but good enough).  The C chain zinc is built using all four cystines and the fit to the density is as good or a little better.  The density in this whole region is stronger in this map.  This zinc binding site is very similar to the deposited model in both the A and B chains.
+	
+Assessment of Tristan's model.
+
+	The central zinc has reasonable geometry.  The distal zinc in the C chain is only connected to three cystines, as in the deposited model.  While the lengths here are all about 2.3 A the angles are quite bad with values of 94, 97, and 132 deg.  There is very little density here to fit.
+	
+	Both the PDB-REDO and Tristan's model have free R's about 2% lower than the deposited model.  By looking at the agreement between the three copies of the protein in each I'm guessing that both used ncs restraints (which is demanded at this resolution, at least for the majority of the protein) but this was not done by the depositors.  When I ran test refinements with TNT I found that, starting from the deposited model, just adding ncs resulted in about 2% lower free R.
+
+Assessment of the data collection protocol and images
+    Before attempting any serious refinement I wanted to see if the data could be improved by reprocessing the images.  Anything that could improve the resolution, or completeness (especially!) would help.  Kay was recruited to the project and his help was very useful.  I also had discussions with the Global Phasing people who have their own effort to improve the data for Coronavirus structures.
+	
+	The images can be found at https://proteindiffraction.org/project/IDP51000_6w9c. The citation is https://doi.org/10.18430/m36w9c.
+	
+	The opinions of both Kay and Global Phasing is that this data set was collected using a protocol that was improper in many ways.  The most egregious was that too short of a sweep of phi angles was performed and this resulted in the low completeness.  The other errors probably led to this choice.
+	
+	Basically the conclusion is that the phi range of each image was way too large for this type of detector, and the exposures were too long resulting in radiation damage almost from the first image.  Two sweeps were collected -- oddly enough starting from the same point.  Some radiation damage can be omitted by ignoring the latter images, but the damage is present in all images.
+	
+	Kay integrated the images using xdsgui and sent the results to me.  Since the scattering is very anisotropic I decided to run the data through Global Phasing's STARaniso server to impose an elliptical resolution cutoff.  I used their reports to identify the point in each sweep where the merging statistics begin to rapidly rise, and removed all images after those points.  I found a compromise which lowered the merging stats but only resulted in the loss of 375 reflections (out of about 18,500).  Kay showed that the resolution could be extended to 2.6 A (from 2.7 A).  The completeness of the new data set when the elliptical cutoff was applied dropped to 44.5%.  This is even lower than the deposited data but my hope is that the remaining reflections are of better quality.
+	
+	I called my data set "Two Sweeps - Truncated Data".  The stats reported by STARaniso are:
+		
+	                                           Overall  InnerShell  OuterShell
+  ---------------------------------------------------------------------------
+     Low resolution limit                      41.748      41.748       2.621
+     High resolution limit                      2.502       7.466       2.502
+
+     Rmerge  (all I+ & I-)                      0.096       0.038       0.610
+     Rmerge  (within I+/I-)                     0.081       0.035       0.566
+     Rmeas   (all I+ & I-)                      0.121       0.048       0.804
+     Rmeas   (within I+/I-)                     0.111       0.048       0.764
+     Rpim    (all I+ & I-)                      0.073       0.028       0.517
+     Rpim    (within I+/I-)                     0.075       0.033       0.509
+     Total number of observations               42480        2307        1973
+     Total number unique                        18495         925         925
+     Mean(I)/sd(I)                                7.1        19.4         1.4
+     Completeness (spherical)                    40.4        52.1        15.7
+     Completeness (ellipsoidal)                  44.5        52.1        16.7
+     Multiplicity                                 2.3         2.5         2.1
+     CC(1/2)                                    0.992       0.996       0.569
+
+     Anomalous completeness (spherical)          16.8        37.2         1.8
+     Anomalous completeness (ellipsoidal)        18.4        37.2         0.0
+     Anomalous multiplicity                       1.6         1.5         1.6
+     CC(ano)                                    0.054       0.061       0.110
+     |DANO|/sd(DANO)                            0.798       0.824       0.922
+
+        The full report is in "Two Sweeps - Truncated_ STARANISO anisotropy & Bayesian estimation server.pdf".
+		The new data set is contained in the file cLDhZJlan4c6wZ94-SWS-aniso-merged.mmcif, or .mtz.
+						
+Refinement of new model
+	At this point I was sufficiently depressed that I was not eager to proceed with refinement.  In addition, the model 6wrh was released.  This is also a model of apo nsp3 but is of higher resolution, has one copy in the asu, and it generally ordered from end-to-end.  In addition, the data were collected using a reasonable protocol.  Anyone interested in nsp3 should look at that model instead of anything that could ever be produced from this, sad, data set.
+
+	

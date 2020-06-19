@@ -1,0 +1,1042 @@
+
+
+
+ STARANISO: determines the anisotropy of the I/<J> distribution. 
+ 
+   (Author: I. J. Tickle)
+
+ Copyright (C) 2016-2018 Global Phasing Ltd.
+
+ This software is proprietary to and embodies the confidential
+ technology of Global Phasing Limited (GPhL). Possession, use,
+ duplication or dissemination of the software is authorised
+ only pursuant to a valid written licence from GPhL.
+
+               All rights reserved.
+
+
+ Version     : staraniso 1.0.4 for linux64-ifort made on May 07 2020 at 03:22:00
+
+ Licenced to : Global Phasing Ltd (www)
+
+ Today is                    Tue May 12 21:39:59 2020
+
+
+STARANISO OpenMP version: 2.3.35 (30-Apr-2020)
+
+Ian J. Tickle, Global Phasing Ltd., Cambridge, UK.
+
+
+Command line: 
+
+/home/staraniso/Releases/latest/cgi-bin/staraniso PROFIN cLDhZJ1an4c6wZ94-SWS-debye.pro HKLIN cLDhZJ1an4c6wZ94-SWS-iso-merged.mtz RESOUT cLDhZJ1an4c6wZ94-SWS-merged-aniso.res MSKOUT cLDhZJ1an4c6wZ94-SWS-merged-aniso.msk RLAXES cLDhZJ1an4c6wZ94-SWS-merged-aniso-rlaxes REDUND cLDhZJ1an4c6wZ94-SWS-merged-aniso-redund ELLIPS cLDhZJ1an4c6wZ94-SWS-merged-aniso-ellips ISMEAN cLDhZJ1an4c6wZ94-SWS-merged-aniso-ismean CCHALF cLDhZJ1an4c6wZ94-SWS-merged-aniso-cchalf ZCHALF cLDhZJ1an4c6wZ94-SWS-merged-aniso-zchalf KLDIVE cLDhZJ1an4c6wZ94-SWS-merged-aniso-kldive DWFACT cLDhZJ1an4c6wZ94-SWS-merged-aniso-dwfact MFTNCS cLDhZJ1an4c6wZ94-SWS-merged-aniso-mftncs HKLOUT cLDhZJ1an4c6wZ94-SWS-merged-aniso.mtz
+
+Run on: Tue May 12 21:39:59 2020
+
+
+System info:
+
+Linux staranisoserver 2.6.32-5-xen-amd64 #1 SMP Mon Feb 29 01:05:38 UTC 2016 x86_64 GNU/Linux
+
+
+Environment variable settings:
+
+  1  PROFIN  cLDhZJ1an4c6wZ94-SWS-debye.pro
+  2  HKLIN   cLDhZJ1an4c6wZ94-SWS-iso-merged.mtz
+  3  MSKIN
+  4  HKLOUT  cLDhZJ1an4c6wZ94-SWS-merged-aniso.mtz
+  5  MSKOUT  cLDhZJ1an4c6wZ94-SWS-merged-aniso.msk
+  6  RESOUT  cLDhZJ1an4c6wZ94-SWS-merged-aniso.res
+  7  RLAXES  cLDhZJ1an4c6wZ94-SWS-merged-aniso-rlaxes
+  8  XPCORR
+  9  LPCHIS
+ 10  REDUND  cLDhZJ1an4c6wZ94-SWS-merged-aniso-redund
+ 11  ISMEAN  cLDhZJ1an4c6wZ94-SWS-merged-aniso-ismean
+ 12  CCHALF  cLDhZJ1an4c6wZ94-SWS-merged-aniso-cchalf
+ 13  ZCHALF  cLDhZJ1an4c6wZ94-SWS-merged-aniso-zchalf
+ 14  KLDIVE  cLDhZJ1an4c6wZ94-SWS-merged-aniso-kldive
+ 15  IJMEAN
+ 16  DWFACT  cLDhZJ1an4c6wZ94-SWS-merged-aniso-dwfact
+ 17  MFTNCS  cLDhZJ1an4c6wZ94-SWS-merged-aniso-mftncs
+ 18  PPZOUT
+ 19  PPDOUT
+ 20  ELLIPS  cLDhZJ1an4c6wZ94-SWS-merged-aniso-ellips
+ 21  PPFOUT
+ 22  BINOUT
+ 23  XPPLOT
+ 24  PCHISQ
+
+
+FORMATTED      UNKNOWN file opened on unit   2
+Logical name: RESOUT, Filename: cLDhZJ1an4c6wZ94-SWS-merged-aniso.res
+
+
+
+Reading NAMELIST options:
+
+Input line: ANOM=f, TITL='For Dale Tronrud (dale@daletronrud.com), job ID: cLDhZJ1an4c6wZ94', HEMI=f, STAT=f, ACUT=t, RENO=f, FUNC=FW, APRI=t, ACOR=t, APPE=f, OVER=t, UNOB=f, POST=f, TISM=1.20, CIFO=t t
+
+
+Default values of input variables:
+
+        ACOR =     T
+        ACUT =     T
+        ANIS =     T
+        ANOM =     T
+        APPE =     F
+        APRI =     T
+        ASYM =     T
+        BATC = ''
+        BINP =     0.00    0.00    0.00    0.00    0.00    0.00
+        BOUT =     0.00    0.00    0.00    0.00    0.00    0.00
+        CENT = ''
+        CIFO =     F    F
+        COMP =     T
+        CONS =     T
+        CTCG =  1.0E-05 1.0E-05
+        CTQN =  0.9     1.0E-05
+        CTTR =  1.0E-04
+        DCHK =     F
+        DEBU =        0
+        DINP =     0.00    0.00    0.00    0.00    0.00    0.00
+        DISP =     F
+        ELLI =   0.0000  0.0000  0.0000  0.0000  0.0000  0.0000
+        EXPE =     F
+        FIND =     F
+        FIXE =     F
+        FRAC =    0.000
+        FULL =     F
+        FUNC = 'FW'
+        GOFT =     F
+        GRID =       50
+        HEMI =     T
+        ICED =     T
+        KEEP =     F
+        LABE = 'E'
+        LABF = 'F'      'F(+)'      'F(-)'      'DANO'  'ISYM'
+        LABI = 'IMEAN'  'I(+)'      'I(-)'      'DANO'  'ISYM'  'N(+)'  'N(-)'  'IHALF1'  'IHALF2'
+        LABO = 'Icorr'  'Icorr(+)'  'Icorr(-)'
+        LABP = 'Ipost'  'Ipost(+)'  'Ipost(-)'
+        MEDI =     F
+        NBIN =       50      20
+        NRAD =     1000       0    1000    1000
+        NREF =      500
+        OCUT =     T
+        OPTI = 'TR'
+        OVER =     F
+        POSI =     F
+        POST =     F
+        PREC =        2
+        PROF =     T
+        REIN =     T
+        RENO =     F
+        RESH =    0.000
+        RRAD =    0.150   0.150   0.150   0.150
+        SCAL =    1.000
+        SECT =     T
+        SIGI =     0.00
+        STAT =     T
+        TCCH =    0.500
+        TCCO =    0.600
+        TELL =    0.250
+        TISA =     0.00
+        TISI =    -5.00   -5.00
+        TISM =     1.20
+        TISO =     1.50
+        TITL = ''
+        TNCS =      0.0000  0.0000  0.0000
+                    0.0000  0.0000  0.0000
+                    0.0000  0.0000  0.0000
+                    0.0000  0.0000  0.0000
+                    0.0000  0.0000  0.0000
+        TRUN = 'T'
+        TWIN =     F
+        TZCH =    45.00
+        TZCO =    54.00
+        UNOB =     F
+        USEC =     F
+        USEZ =     F
+        ZERO =     F
+        ZOUT =     F
+
+Variables with non-default values:
+
+        ANOM =     F
+        CIFO =     T    T
+        HEMI =     F
+        OVER =     T
+        STAT =     F
+        TITL = 'For Dale Tronrud (dale@daletronrud.com), job ID: cLDhZJ1an4c6wZ94'
+
+########################################################################################################################################################################################################
+
+
+For Dale Tronrud (dale@daletronrud.com), job ID: cLDhZJ1an4c6wZ94
+=================================================================
+
+
+FORMATTED      OLD     file opened on unit   1
+Logical name: PROFIN, Filename: cLDhZJ1an4c6wZ94-SWS-debye.pro
+
+
+S profile:    81  0.005000  0.405000
+
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN   Filename: cLDhZJ1an4c6wZ94-SWS-iso-merged.mtz 
+
+ * Title:
+
+ From XDS file cLDhZJ1an4c6wZ94.HKL, XDS run on 12-May-2020 from images
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 XDSproject
+          XDScrystal
+          XDSdataset
+            190.9500  110.3000   64.2800   90.0000   96.2930   90.0000
+             0.97918
+
+ * Number of Columns = 11
+
+ * Number of Reflections = 28366
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L IMEAN SIGIMEAN I(+) SIGI(+) I(-) SIGI(-) N(+) N(-)
+
+ * Column Types :
+
+ H H H J Q K M K M I I
+
+ * Associated datasets :
+
+ 0 0 0 1 1 1 1 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+  190.9500  110.3000   64.2800   90.0000   96.2930   90.0000 
+
+ *  Resolution Range :
+
+    0.00057    0.15976     (     41.748 -      2.502 A )
+
+ * Sort Order :
+
+      0     0     0     0     0
+
+ * Space group = 'C 1 2 1' (number     5)
+
+  (spacegroup is known)
+
+########################################################################################################################################################################################################
+
+
+Using MTZ column labels:      IMEAN  SIGIMEAN  I(+)  SIGI(+)  I(-)  SIGI(-)  N(+)  N(-)
+
+NOTE: Using Z(weighted CC_1/2) computed from Imean/sd(Imean).
+
+
+Re-indexing matrix:
+                       0   0   1
+                       0  -1   0
+                       1   0   0
+
+Re-indexing operator:   l, -k, h
+
+NOTE: No re-indexing needed.
+
+Input diffraction range for indices:                   41.748   2.502
+
+Input diffraction range for intensities/amplitudes:    41.748   2.502
+
+########################################################################################################################################################################################################
+
+
+Read & store reflection data.
+=============================
+
+Data are already sorted.
+
+MTZ data are assumed to be partially or fully merged.
+
+No. of reflections in each asymmetric unit:
+
+   1    28366   h, k, l
+
+Diffraction cut-off criterion: Local mean I/sd(I) = 1.20
+
+
+$TABLE: Mean I/sd(I) statistics before cut-off:
+$GRAPHS: Mean I/sd(I):0|0.1598x0|    38:2,7,8: $$
+
+ Bin  d*mean^2  d_min  Nref(all)  Nref(obs)  Completeness  mean_I/sd(I)  mean_I/sd(I)_smoothed $$
+$$
+    1   0.0075   9.185      966      478    0.495     37.88     32.14
+    2   0.0155   7.303      928      511    0.551     24.27     25.88
+    3   0.0217   6.383      922      474    0.514     16.66     18.96
+    4   0.0272   5.802      930      518    0.557     13.83     15.11
+    5   0.0321   5.387      932      536    0.575     13.80     13.98
+    6   0.0367   5.070      926      550    0.594     13.58     14.11
+    7   0.0410   4.816      924      557    0.603     14.89     14.66
+    8   0.0451   4.607      903      493    0.546     15.74     14.90
+    9   0.0491   4.430      917      506    0.552     14.50     14.31
+   10   0.0528   4.277      921      548    0.595     13.14     13.27
+   11   0.0565   4.143      923      540    0.585     12.17     12.26
+   12   0.0600   4.025      907      552    0.609     11.62     11.17
+   13   0.0634   3.919      932      566    0.607      9.79      9.87
+   14   0.0668   3.824      899      571    0.635      8.31      8.63
+   15   0.0700   3.737      934      571    0.611      7.57      7.78
+   16   0.0732   3.657      908      570    0.628      7.33      7.26
+   17   0.0763   3.584      898      558    0.621      6.72      6.82
+   18   0.0794   3.516      937      487    0.520      6.48      6.31
+   19   0.0824   3.454      907      534    0.589      5.77      5.65
+   20   0.0853   3.395      906      550    0.607      4.77      5.02
+   21   0.0882   3.340      917      562    0.613      4.55      4.53
+   22   0.0910   3.289      925      575    0.622      4.25      4.12
+   23   0.0938   3.241      879      558    0.635      3.50      3.70
+   24   0.0966   3.195      946      594    0.628      3.44      3.32
+   25   0.0993   3.152      906      591    0.652      2.90      3.01
+   26   0.1020   3.111      923      591    0.640      2.73      2.73
+   27   0.1046   3.072      892      582    0.652      2.50      2.46
+   28   0.1073   3.035      915      602    0.658      2.15      2.22
+   29   0.1098   3.000      931      594    0.638      2.01      2.02
+   30   0.1124   2.966      899      601    0.669      1.82      1.88
+   31   0.1149   2.934      915      605    0.661      1.85      1.74
+   32   0.1174   2.903      876      536    0.612      1.48      1.58
+   33   0.1199   2.873      963      556    0.577      1.44      1.45
+   34   0.1223   2.845      890      554    0.622      1.35      1.38
+   35   0.1248   2.818      914      593    0.649      1.40      1.32
+   36   0.1272   2.791      923      584    0.633      1.18      1.26
+   37   0.1295   2.766      888      574    0.646      1.27      1.17
+   38   0.1319   2.741      946      611    0.646      1.05      1.06
+   39   0.1342   2.718      887      565    0.637      0.88      0.94
+   40   0.1365   2.695      908      606    0.667      0.88      0.87
+   41   0.1388   2.673      912      591    0.648      0.82      0.84
+   42   0.1411   2.652      913      615    0.674      0.86      0.81
+   43   0.1434   2.631      926      627    0.677      0.75      0.73
+   44   0.1456   2.611      889      593    0.667      0.56      0.64
+   45   0.1478   2.591      922      625    0.678      0.61      0.60
+   46   0.1500   2.572      900      614    0.682      0.61      0.57
+   47   0.1522   2.554      890      594    0.667      0.49      0.55
+   48   0.1544   2.536      938      622    0.663      0.59      0.51
+   49   0.1566   2.519      935      631    0.675      0.43      0.46
+   50   0.1587   2.502      875      550    0.629      0.39      0.41
+$$
+Overall:                  45763    28366    0.620      5.78
+
+########################################################################################################################################################################################################
+
+
+Determination of anisotropic diffraction cut-off from local mean I/sd(I) threshold (TISM).
+==========================================================================================
+
+NOTE: No. of rejected reflections with I > 5*sd(I) =      3
+
+
+$TABLE: Mean I/sd(I) statistics after cut-off:
+$GRAPHS: Mean I/sd(I):0|0.1598x0|    38:2,7,8: $$
+
+ Bin  d*mean^2  d_min  Nref(all)  Nref(obs)  Completeness  mean_I/sd(I)  mean_I/sd(I)_smoothed $$
+$$
+    1   0.0075   9.185      966      478    0.495     37.88     32.14
+    2   0.0155   7.303      928      511    0.551     24.27     25.88
+    3   0.0217   6.383      922      474    0.514     16.66     18.96
+    4   0.0272   5.802      930      518    0.557     13.83     15.11
+    5   0.0321   5.387      932      536    0.575     13.80     13.98
+    6   0.0367   5.070      926      550    0.594     13.58     14.11
+    7   0.0410   4.816      924      557    0.603     14.89     14.66
+    8   0.0451   4.607      903      493    0.546     15.74     14.90
+    9   0.0491   4.430      917      506    0.552     14.50     14.31
+   10   0.0528   4.277      921      548    0.595     13.14     13.27
+   11   0.0565   4.143      923      540    0.585     12.17     12.28
+   12   0.0600   4.025      907      552    0.609     11.62     11.27
+   13   0.0634   3.919      932      550    0.590     10.06     10.08
+   14   0.0668   3.824      899      552    0.614      8.58      8.95
+   15   0.0700   3.737      934      543    0.581      7.93      8.23
+   16   0.0732   3.657      908      518    0.570      8.01      7.87
+   17   0.0763   3.584      898      494    0.550      7.50      7.59
+   18   0.0794   3.516      937      427    0.456      7.29      7.21
+   19   0.0824   3.454      907      440    0.485      6.89      6.69
+   20   0.0853   3.395      906      439    0.485      5.84      6.14
+   21   0.0882   3.340      917      434    0.473      5.71      5.71
+   22   0.0910   3.289      925      431    0.466      5.51      5.34
+   23   0.0938   3.241      879      396    0.451      4.70      4.92
+   24   0.0966   3.195      946      427    0.451      4.62      4.52
+   25   0.0993   3.152      906      403    0.445      4.12      4.17
+   26   0.1020   3.111      923      409    0.443      3.76      3.85
+   27   0.1046   3.072      892      376    0.422      3.68      3.54
+   28   0.1073   3.035      915      395    0.432      3.08      3.26
+   29   0.1098   3.000      931      364    0.391      3.07      3.05
+   30   0.1124   2.966      899      361    0.402      2.86      2.92
+   31   0.1149   2.934      915      356    0.389      2.91      2.75
+   32   0.1174   2.903      876      305    0.348      2.41      2.53
+   33   0.1199   2.873      963      322    0.334      2.21      2.38
+   34   0.1223   2.845      890      272    0.306      2.45      2.37
+   35   0.1248   2.818      914      302    0.330      2.43      2.40
+   36   0.1272   2.791      923      263    0.285      2.33      2.39
+   37   0.1295   2.766      888      243    0.274      2.51      2.30
+   38   0.1319   2.741      946      257    0.272      2.06      2.12
+   39   0.1342   2.718      887      213    0.240      1.81      1.93
+   40   0.1365   2.695      908      229    0.252      1.82      1.85
+   41   0.1388   2.673      912      209    0.229      1.83      1.91
+   42   0.1411   2.652      913      208    0.228      2.11      1.98
+   43   0.1434   2.631      926      178    0.192      2.12      1.91
+   44   0.1456   2.611      889      176    0.198      1.48      1.69
+   45   0.1478   2.591      922      177    0.192      1.47      1.53
+   46   0.1500   2.572      900      165    0.183      1.57      1.49
+   47   0.1522   2.554      890      156    0.175      1.40      1.45
+   48   0.1544   2.536      938      148    0.158      1.46      1.38
+   49   0.1566   2.519      935      128    0.137      1.19      1.32
+   50   0.1587   2.502      857      110    0.128      1.33      1.29
+$$
+Overall:                  45745    18639    0.407      8.63
+
+########################################################################################################################################################################################################
+
+
+Determination of best-fit ellipsoid to the anisotropic cut-off surface.
+=======================================================================
+
+Ellipsoid definition:  0.4074  0.4498  0.2883  0.8056
+
+Diffraction limits & principal axes of ellipsoid fitted to diffraction cut-off surface:
+
+                              3.469         0.7213   0.0000  -0.6927       0.941 _a_* - 0.337 _c_*
+                              2.223         0.0000   1.0000   0.0000       _b_*
+                              2.455         0.6927   0.0000   0.7213       0.955 _a_* + 0.297 _c_*
+
+GoF to ellipsoid (d*):  0.0428    Fraction of surface points fitted:   91.6%  (     4129 /     4507)
+
+Number of unobserved reflections inside ellipsoid:     3640
+Number of observed reflections inside ellipsoid:      15783
+Number of observed reflections outside ellipsoid:      2856
+
+Lowest cut-off diffraction limit:
+            3.991 at reflection   -7    3   16  in direction  -0.395 _a_* + 0.169 _b_* + 0.903 _c_*
+
+Worst diffraction limit after cut-off:
+           21.292 at reflection   -8    2    1  in direction  -0.963 _a_* + 0.241 _b_* + 0.120 _c_*
+
+Best diffraction limit after cut-off:
+            2.502 at reflection  -76    4    3  in direction  -0.998 _a_* + 0.053 _b_* + 0.039 _c_*
+
+NOTE that because the cut-off surface is likely to be only very approximately ellipsoidal, in part
+due to variations in reflection redundancy arising from the chosen collection strategy, the
+directions of the worst and best diffraction limits may not correspond with the reciprocal axes,
+even in high-symmetry space groups (the only constraint being that the surface must have point
+symmetry at least that of the Laue class).
+
+Fraction of data inside cut-off surface:        65.7%  (    18639 /    28366)
+
+Fraction of cut-off surface above threshold:    15.3%  (     229 /    1501)
+
+WARNING: Diffraction of the input data has probably been truncated due to an inappropriate
+(an)isotropic diffraction cut-off applied in previous processing, or the diffraction pattern may
+have extended beyond the edges of the detector.  In the latter case consider the possibilities of
+either moving the detector closer or swinging it out, having carefully checked in the former case
+that this will not create a risk of spot overlap.
+
+Fraction of total surface above threshold truncated by cusp(s):               55.5%  (    2484 /    4479)
+
+FORMATTED      UNKNOWN file opened on unit   4
+Logical name: ELLIPS, Filename: cLDhZJ1an4c6wZ94-SWS-merged-aniso-ellips.mol2
+
+
+########################################################################################################################################################################################################
+
+
+Statistics for isotropic, anisotropic & ellipsoidal diffraction cut-offs in spherical shells, excluding systematic absences.
+============================================================================================================================
+
+Statistics for isotropic diffraction cut-off in spherical shells (defined by variable steps in the reciprocal-space radius d*,
+such that Nobs_sph is the same for all bins):
+
+Nposs_sph           = Number of all possible reflections;
+Nmeas_sph           = Number of all measured reflections;
+Cmeas_sph           = Completeness of measured reflections = Nmeas_sph / Nposs_sph;
+<I/sd>meas_sph      = Mean I/sd(I) of measured reflections;
+log(<I/sd>meas)_sph = log(Mean I/sd(I)) of measured reflections;
+
+Statistics for the anisotropic diffraction cut-off (in the intersection of each spherical shell with the anisotropic cut-off
+surface, within which all measured reflections are considered 'observed', i.e. written to 'HKLOUT'):
+
+Nobs_sph            = Number of 'observed' reflections;
+Cobs_sph            = Completeness of 'observed' reflections = Nobs_sph / Nposs_sph;
+<I/sd>obs_sph       = Mean I/sd(I) of 'observed' reflections;
+log(<I/sd>obs)_sph  = log(Mean I/sd(I)) of 'observed' reflections;
+
+Statistics for ellipsoidal diffraction cut-off (in the intersection of each spherical shell with the fitted ellipsoid):
+
+Nposs_ell           = Number of possible reflections;
+Nmeas_ell           = Number of measured reflections;
+Cmeas_ell           = Completeness of measured reflections = Nmeas_ell / Nposs_ell;
+Nobs_ell            = Number of 'observed' reflections;
+Cobs_ell            = Completeness of 'observed' reflections = Nobs_ell / Nposs_ell;
+
+NOTE that the ellipsoid is an approximation since the shape of the mean I/sd(I) anisotropic cut-off surface may be influenced by
+truncation at the detector edges and by local variations in the reflection redundancy (multiplicity of measurements).
+
+
+$TABLE: Statistics for isotropic, anisotropic & ellipsoidal diffraction cut-offs:
+$GRAPHS: Bin counts:0|0.1597x   389|  4462:2,4,5,9,13,14,16:
+: Completeness:0|0.1597x0|1:2,6,10,15,17:
+: Mean I/sd(I):0|0.1597x0|  31.55:2,7,11:
+: log(Mean I/sd(I)):0|0.1597x-0.288| 1.499:2,8,12: $$
+
+ Bin  d*mean^2  d_min  Nposs_sph  Nmeas_sph  Cmeas_sph  <I/sd>meas_sph  log(<I/sd>meas)_sph  Nobs_sph  Cobs_sph  <I/sd>obs_sph  log(<I/sd>obs)_sph  Nposs_ell  Nmeas_ell  Cmeas_ell  Nobs_ell  Cobs_ell  $$
+$$
+   1   0.0093   7.453     1786       932       0.522        31.55            1.499            932       0.522        31.55            1.499           1786       932       0.522       932       0.522
+   2   0.0233   5.920     1741       932       0.535        15.71            1.196            932       0.535        15.71            1.196           1741       932       0.535       932       0.535
+   3   0.0326   5.219     1601       932       0.582        13.65            1.135            932       0.582        13.65            1.135           1601       932       0.582       932       0.582
+   4   0.0403   4.776     1549       932       0.602        14.52            1.162            932       0.602        14.52            1.162           1549       932       0.602       932       0.602
+   5   0.0475   4.419     1719       932       0.542        14.95            1.175            932       0.542        14.95            1.175           1719       932       0.542       932       0.542
+   6   0.0543   4.174     1577       932       0.591        12.88            1.110            932       0.591        12.88            1.110           1577       932       0.591       932       0.591
+   7   0.0603   3.975     1548       936       0.605        11.25            1.051            932       0.602        11.30            1.053           1548       936       0.605       932       0.602
+   8   0.0661   3.810     1537       966       0.628         8.53            0.931            932       0.606         8.82            0.945           1537       966       0.628       932       0.606
+   9   0.0717   3.662     1636      1007       0.616         7.55            0.878            932       0.570         8.11            0.909           1636      1007       0.616       932       0.570
+  10   0.0776   3.520     1843      1050       0.570         6.60            0.819            931       0.505         7.35            0.866           1843      1050       0.570       931       0.505
+  11   0.0838   3.392     1924      1154       0.600         5.23            0.718            932       0.484         6.35            0.802           1897      1129       0.595       918       0.484
+  12   0.0900   3.277     2015      1239       0.615         4.31            0.635            932       0.463         5.56            0.745           1864      1091       0.585       852       0.457
+  13   0.0962   3.173     2053      1295       0.631         3.35            0.525            932       0.454         4.47            0.650           1772      1018       0.574       792       0.447
+  14   0.1024   3.078     2134      1398       0.655         2.69            0.430            932       0.437         3.86            0.587           1718       984       0.573       736       0.428
+  15   0.1088   2.988     2281      1488       0.652         2.07            0.315            932       0.409         3.09            0.490           1689       921       0.545       667       0.395
+  16   0.1154   2.901     2472      1582       0.640         1.70            0.230            932       0.377         2.69            0.430           1726       896       0.519       617       0.357
+  17   0.1227   2.810     2923      1809       0.619         1.37            0.136            932       0.319         2.35            0.371           1851       909       0.491       558       0.301
+  18   0.1311   2.716     3474      2229       0.642         1.09            0.036            932       0.268         2.17            0.336           1935       899       0.465       488       0.252
+  19   0.1408   2.616     4227      2820       0.667         0.80           -0.097            932       0.220         1.92            0.284           2070       978       0.472       447       0.216
+  20   0.1529   2.502     5705      3799       0.666         0.52           -0.288            932       0.163         1.41            0.148           2231      1046       0.469       389       0.174
+$$
+All data                 45745     28364       0.620         5.78            0.762          18639       0.407        10.20            1.008          35290     19422       0.550     15783       0.447
+
+########################################################################################################################################################################################################
+
+
+Write reflection mask.
+======================
+
+ Logical Name: MSKOUT   Filename: cLDhZJ1an4c6wZ94-SWS-merged-aniso.msk 
+
+File name for output map file on unit   1 : cLDhZJ1an4c6wZ94-SWS-merged-aniso.msk
+logical name MSKOUT
+
+
+No. of reflections in ice rings omitted from anisotropy optimization:    1363 /   17311
+
+########################################################################################################################################################################################################
+
+
+Determination of anisotropy of I/eE(I): estimate initial overall scale factor & Beq.
+====================================================================================
+
+MLOPTI starting values.
+
+Scale & B tensor:                   4.816E-02      6.26     6.26     6.26     0.00     0.00     0.00
+
+
+Scale:                         7.439E-03    [ = factor to place Iobs on same scale as Iprofile/100.]
+Beq:                               52.23    [ = equivalent overall isotropic B factor on Fs.]
+
+SU  of overall scale       :   0.0029
+SU  of Beq                 :     0.44
+
+########################################################################################################################################################################################################
+
+
+Determination of anisotropy of I/eE(I): estimate overall scale factor & B tensor.
+=================================================================================
+
+Using default B tensors.
+
+MLOPTI starting values.
+
+Scale & B tensor:                   7.439E-03      6.26     6.26     6.26     0.00     0.00     0.00
+
+
+Scale:                         5.137E-03    [ = factor to place Iobs on same scale as Iprofile/100.]
+Beq:                               68.31    [ = equivalent overall isotropic B factor on Fs.]
+
+                                               B11      B22      B33      B23      B31      B12
+Delta-B tensor:                             -13.53   -21.81    35.34     0.00    -7.05     0.00
+
+SU  of overall scale       :   0.0023
+SUs of Baniso tensor       :     0.54     0.63     1.25     0.44
+SUs of delta-B tensor      :     0.42     0.64     0.82     0.00     0.44     0.00
+
+Note: the delta-B tensor is the overall anisotropy tensor on Fs after subtraction of Beq from its
+diagonal elements (so trace = 0).
+
+Eigenvalues (E) & eigenvectors of overall anisotropy (B) tensor on Fs:
+
+                              53.77         0.9902   0.0000   0.1400       _a_* + 0.010 _c_*
+                              46.50         0.0000   1.0000   0.0000       _b_*
+                             104.65        -0.1400   0.0000   0.9902      -0.384 _a_* + 0.923 _c_*
+
+The eigenvalues and eigenvectors of the overall B tensor are the squares of the lengths and the
+directions of the principal axes of the ellipsoid that represents the tensor.
+
+Delta-B eigenvalues:                   -14.53   -21.81    36.34
+
+The delta-B eigenvalues are the eigenvalues of the overall anisotropy tensor after subtraction of
+Beq (so sum = 0).
+
+Angle & axis of rotation of diffraction-limit ellipsoid relative to anisotropy tensor:
+
+                              51.89         0.0000   1.0000   0.0000
+
+########################################################################################################################################################################################################
+
+
+
+Mean -ln(likelihood) by d*^3 bin:
+
+ Bin, d_min, #refls_used, -LL_used, #refls_iced, -LL_iced, I=ice-ring.
+
+   1   7.453     932      2.50       0      0.00
+   2   5.920     932      2.08       0      0.00
+   3   5.219     932      1.88       0      0.00
+   4   4.776     932      1.88       0      0.00
+   5   4.419     932      1.95       0      0.00
+   6   4.174     932      1.84       0      0.00
+   7   3.975     932      1.66       0      0.00
+   8   3.810     650      1.30     282      1.30   I
+   9   3.662     809      1.06     123      1.13   I
+  10   3.520     713      0.89     218      0.96   I
+  11   3.392     573      0.77     359      0.69   I
+  12   3.277     932      0.52       0      0.00
+  13   3.173     932      0.26       0      0.00
+  14   3.078     932      0.14       0      0.00
+  15   2.988     932     -0.03       0      0.00
+  16   2.901     932     -0.08       0      0.00
+  17   2.810     932     -0.22       0      0.00
+  18   2.716     932     -0.24       0      0.00
+  19   2.616     551     -0.36     381     -0.23   I
+  20   2.502     932     -0.48       0      0.00
+
+Anisotropy ratio:             0.851    [ = (Emax - Emin) / Beq ]
+Fractional anisotropy:        0.434    [ = sqrt(1.5 Sum_i (E_i - Beq)^2 / Sum_i E_i^2) ]
+
+########################################################################################################################################################################################################
+
+
+Determination of expected intensity.
+====================================
+
+$TABLE: Mean I/J statistics:
+$GRAPHS: Mean I/J:0|0.1597x0|     2:2,5,6: $$
+
+ Bin  d*mean^2  d_min  Nref  mean_I/J  mean_I/J_smoothed  $$
+$$
+    1   0.0093   7.453      932    0.591    0.604
+    2   0.0233   5.920      932    0.604    0.660
+    3   0.0326   5.219      932    0.742    0.806
+    4   0.0403   4.776      932    1.021    1.038
+    5   0.0475   4.419      932    1.358    1.271
+    6   0.0543   4.174      932    1.476    1.403
+    7   0.0603   3.975      932    1.466    1.399
+    8   0.0661   3.810      932    1.284    1.310
+    9   0.0717   3.662      932    1.198    1.212
+   10   0.0776   3.520      931    1.129    1.143
+   11   0.0838   3.392      932    1.100    1.088
+   12   0.0900   3.277      932    1.047    1.020
+   13   0.0962   3.173      932    0.903    0.943
+   14   0.1024   3.078      932    0.899    0.879
+   15   0.1088   2.988      932    0.792    0.841
+   16   0.1154   2.901      932    0.844    0.834
+   17   0.1227   2.810      932    0.829    0.856
+   18   0.1311   2.716      932    0.898    0.897
+   19   0.1408   2.616      932    0.964    0.932
+   20   0.1529   2.502      932    0.942    0.946
+$$
+Overall:                  18639    1.004
+
+$TABLE: ln(mean Iexp), ln(mean Iobs) and mean Z:
+$GRAPHS: ln(mean Iexp) & ln(mean Iobs):0|0.1524x   5.99|  10.44:2,6,7:
+: mean Z = mean Iobs/Iexp:0|0.1524x 0.585| 1.468:2,8,9,10: $$
+
+ Bin  d*mean^2  d_min  Nrefls  mean_I/sd(I)  ln(mean_Iexp)  ln(mean_Iobs)
+                                                     mean_Zraw  mean_Zsmooth  mean_Zrenorm  $$
+$$
+   1   0.0117    7.453      932        31.548   10.44    9.26        0.585    0.601    0.947
+   2   0.0237    5.920      932        15.707    8.92    8.41        0.602    0.659    0.934
+   3   0.0328    5.219      932        13.646    8.82    8.52        0.743    0.807    0.945
+   4   0.0404    4.776      932        14.518    8.79    8.82        1.027    1.038    0.989
+   5   0.0477    4.419      932        14.948    8.71    9.01        1.351    1.268    1.034
+   6   0.0544    4.174      932        12.881    8.55    8.94        1.468    1.399    1.049
+   7   0.0604    3.975      932        11.302    8.45    8.83        1.466    1.397    1.032
+   8   0.0662    3.810      932         8.820    8.32    8.57        1.284    1.310    1.006
+   9   0.0717    3.662      932         8.114    8.25    8.43        1.202    1.213    0.991
+  10   0.0775    3.520      931         7.353    8.17    8.28        1.124    1.141    0.994
+  11   0.0838    3.392      932         6.345    8.04    8.13        1.091    1.084    1.003
+  12   0.0900    3.277      932         5.561    7.91    7.95        1.049    1.018    1.003
+  13   0.0962    3.173      932         4.470    7.74    7.64        0.902    0.944    0.994
+  14   0.1024    3.078      932         3.863    7.56    7.46        0.902    0.880    0.985
+  15   0.1087    2.988      932         3.087    7.37    7.13        0.791    0.841    0.980
+  16   0.1153    2.901      932         2.692    7.16    6.99        0.843    0.834    0.982
+  17   0.1226    2.810      932         2.349    6.92    6.73        0.831    0.858    0.989
+  18   0.1310    2.716      932         2.165    6.67    6.58        0.901    0.899    1.002
+  19   0.1406    2.616      932         1.923    6.39    6.35        0.967    0.937    1.011
+  20   0.1524    2.502      932         1.406    6.04    5.99        0.950    0.952    1.009
+$$
+
+All data                  18639         8.635                        1.004             0.994
+
+
+Chi^2, RMSD(Z) =    24.07    0.255    0.227    0.029
+
+Eigenvalues & eigenvectors of redundancy anisotropy tensor:
+
+                               1.12         0.9568   0.0000  -0.2907       0.991 _a_* - 0.137 _c_*
+                               0.71         0.0000   1.0000   0.0000       _b_*
+                               0.43         0.2907   0.0000   0.9568       0.685 _a_* + 0.729 _c_*
+
+Eigenvalues & eigenvectors of mean I/sd(I) anisotropy tensor:
+
+                               2.67         0.9940   0.0000  -0.1098       0.997 _a_* - 0.074 _c_*
+                               1.80         0.0000   1.0000   0.0000       _b_*
+                               1.12         0.1098   0.0000   0.9940       0.317 _a_* + 0.948 _c_*
+
+Eigenvalues & eigenvectors of weighted CC_1/2 anisotropy tensor:
+
+                              0.366         0.9836   0.0000  -0.1802       0.995 _a_* - 0.098 _c_*
+                              0.280         0.0000   1.0000   0.0000       _b_*
+                              0.185         0.1802   0.0000   0.9836       0.488 _a_* + 0.873 _c_*
+
+Eigenvalues & eigenvectors of Z(weighted CC_1/2) anisotropy tensor:
+
+                              64.51         0.9697   0.0000  -0.2445       0.993 _a_* - 0.120 _c_*
+                              45.02         0.0000   1.0000   0.0000       _b_*
+                              31.91         0.2445   0.0000   0.9697       0.613 _a_* + 0.790 _c_*
+
+Eigenvalues & eigenvectors of mean K-L divergence anisotropy tensor:
+
+                              0.248         0.9900   0.0000  -0.1409       0.996 _a_* - 0.084 _c_*
+                              0.182         0.0000   1.0000   0.0000       _b_*
+                              0.114         0.1409   0.0000   0.9900       0.397 _a_* + 0.918 _c_*
+
+FORMATTED      UNKNOWN file opened on unit   7
+Logical name: REDUND, Filename: cLDhZJ1an4c6wZ94-SWS-merged-aniso-redund-asym.mol2
+
+
+FORMATTED      UNKNOWN file opened on unit   8
+Logical name: REDUND, Filename: cLDhZJ1an4c6wZ94-SWS-merged-aniso-redund-0qr.mol2
+
+
+FORMATTED      UNKNOWN file opened on unit   9
+Logical name: REDUND, Filename: cLDhZJ1an4c6wZ94-SWS-merged-aniso-redund-p0r.mol2
+
+
+FORMATTED      UNKNOWN file opened on unit  10
+Logical name: REDUND, Filename: cLDhZJ1an4c6wZ94-SWS-merged-aniso-redund-pq0.mol2
+
+
+FORMATTED      UNKNOWN file opened on unit  11
+Logical name: ISMEAN, Filename: cLDhZJ1an4c6wZ94-SWS-merged-aniso-ismean-asym.mol2
+
+
+FORMATTED      UNKNOWN file opened on unit  12
+Logical name: ISMEAN, Filename: cLDhZJ1an4c6wZ94-SWS-merged-aniso-ismean-0qr.mol2
+
+
+FORMATTED      UNKNOWN file opened on unit  13
+Logical name: ISMEAN, Filename: cLDhZJ1an4c6wZ94-SWS-merged-aniso-ismean-p0r.mol2
+
+
+FORMATTED      UNKNOWN file opened on unit  14
+Logical name: ISMEAN, Filename: cLDhZJ1an4c6wZ94-SWS-merged-aniso-ismean-pq0.mol2
+
+
+FORMATTED      UNKNOWN file opened on unit  15
+Logical name: CCHALF, Filename: cLDhZJ1an4c6wZ94-SWS-merged-aniso-cchalf-asym.mol2
+
+
+FORMATTED      UNKNOWN file opened on unit  16
+Logical name: CCHALF, Filename: cLDhZJ1an4c6wZ94-SWS-merged-aniso-cchalf-0qr.mol2
+
+
+FORMATTED      UNKNOWN file opened on unit  17
+Logical name: CCHALF, Filename: cLDhZJ1an4c6wZ94-SWS-merged-aniso-cchalf-p0r.mol2
+
+
+FORMATTED      UNKNOWN file opened on unit  18
+Logical name: CCHALF, Filename: cLDhZJ1an4c6wZ94-SWS-merged-aniso-cchalf-pq0.mol2
+
+
+FORMATTED      UNKNOWN file opened on unit  19
+Logical name: ZCHALF, Filename: cLDhZJ1an4c6wZ94-SWS-merged-aniso-zchalf-asym.mol2
+
+
+FORMATTED      UNKNOWN file opened on unit  20
+Logical name: ZCHALF, Filename: cLDhZJ1an4c6wZ94-SWS-merged-aniso-zchalf-0qr.mol2
+
+
+FORMATTED      UNKNOWN file opened on unit  21
+Logical name: ZCHALF, Filename: cLDhZJ1an4c6wZ94-SWS-merged-aniso-zchalf-p0r.mol2
+
+
+FORMATTED      UNKNOWN file opened on unit  22
+Logical name: ZCHALF, Filename: cLDhZJ1an4c6wZ94-SWS-merged-aniso-zchalf-pq0.mol2
+
+
+FORMATTED      UNKNOWN file opened on unit  23
+Logical name: KLDIVE, Filename: cLDhZJ1an4c6wZ94-SWS-merged-aniso-kldive-asym.mol2
+
+
+FORMATTED      UNKNOWN file opened on unit  24
+Logical name: KLDIVE, Filename: cLDhZJ1an4c6wZ94-SWS-merged-aniso-kldive-0qr.mol2
+
+
+FORMATTED      UNKNOWN file opened on unit  25
+Logical name: KLDIVE, Filename: cLDhZJ1an4c6wZ94-SWS-merged-aniso-kldive-p0r.mol2
+
+
+FORMATTED      UNKNOWN file opened on unit  26
+Logical name: KLDIVE, Filename: cLDhZJ1an4c6wZ94-SWS-merged-aniso-kldive-pq0.mol2
+
+
+FORMATTED      UNKNOWN file opened on unit  27
+Logical name: DWFACT, Filename: cLDhZJ1an4c6wZ94-SWS-merged-aniso-dwfact-asym.mol2
+
+
+FORMATTED      UNKNOWN file opened on unit  28
+Logical name: DWFACT, Filename: cLDhZJ1an4c6wZ94-SWS-merged-aniso-dwfact-0qr.mol2
+
+
+FORMATTED      UNKNOWN file opened on unit  29
+Logical name: DWFACT, Filename: cLDhZJ1an4c6wZ94-SWS-merged-aniso-dwfact-p0r.mol2
+
+
+FORMATTED      UNKNOWN file opened on unit  30
+Logical name: DWFACT, Filename: cLDhZJ1an4c6wZ94-SWS-merged-aniso-dwfact-pq0.mol2
+
+
+
+FORMATTED      UNKNOWN file opened on unit   3
+Logical name: RLAXES, Filename: cLDhZJ1an4c6wZ94-SWS-merged-aniso-rlaxes.mol2
+
+
+FORMATTED      UNKNOWN file opened on unit   3
+Logical name: RLAXES, Filename: cLDhZJ1an4c6wZ94-SWS-merged-aniso-rlaxes-pqr.mol2
+
+
+Ranges of redundancy, local mean I/sd(I), local weighted CC_1/2, local Z(weighted CC_1/2), local mean K-L divergence and D-W factor [= exp(-4 pi^2 s~Us)]:
+
+                  Redund  ISmean  CChalf  ZChalf  KLdive  DWfact
+  0   Grey                         Unobservable*
+  1   Blue                          Observable*
+  2   Red|Pink:9       1    1.20  0.5000   45.00   0.190  0.0230
+  3   Orange           2    4.17  0.9076  146.85   0.545  0.0675
+  4   Yellow           3   10.98  0.9755  216.54   0.968  0.1651
+  5   Green            4   18.43  0.9875  260.19   1.219  0.3374
+  6   Cyan             5   26.53  0.9934  297.35   1.413  0.5763
+  7   Magenta          6   41.03  0.9949  335.48   1.832  0.8222
+  8   White            7   47.47  0.9954  349.12   2.259  0.9799
+
+* Refer to GLOSSARY for explanation of terminology.
+
+The cut-off surface uses a different color scheme:
+Unmeasured points are blue (inside the fitted surface) or cyan (outside).
+Unobserved points are red (in) or green (out).
+Observed points are orange (in) or white (out).
+The fitted surface is magenta.
+
+########################################################################################################################################################################################################
+
+
+Correction of reflections for Bayesian truncation and/or anisotropy.
+====================================================================
+
+Anisotropic S/N ratio:         8.58    [ = max_h | exp(4 pi^2 s~_h delta(B) s_h) - 1 | <I_h/sd(I_h)> ]
+
+The 'anisotropic S/N ratio', unlike the 'anisotropy ratio' or the 'fractional anisotropy' shown
+above, in addition to the anisotropy of the B tensor, takes both the diffraction and the local mean
+I/sd(I) into account.
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: HKLOUT   Filename: cLDhZJ1an4c6wZ94-SWS-merged-aniso.mtz 
+
+ * Title:
+
+ Run of STARANISO on: cLDhZJ1an4c6wZ94-SWS-iso-merged.mtz
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 XDSproject
+          XDScrystal
+          XDSdataset
+            190.9500  110.3000   64.2800   90.0000   96.2930   90.0000
+             0.97918
+
+ * Number of Columns = 12
+
+ * Number of Reflections = 34507
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L IMEAN SIGIMEAN N(+) N(-) F SIGF E SIGE SA_flag
+
+ * Column Types :
+
+ H H H J Q I I F Q F Q I
+
+ * Associated datasets :
+
+ 0 0 0 1 1 1 1 1 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+  190.9500  110.3000   64.2800   90.0000   96.2930   90.0000 
+
+ *  Resolution Range :
+
+    0.00011    0.15974     (     95.366 -      2.502 A )
+
+ * Sort Order :
+
+      0     0     0     0     0
+
+ * Space group = 'C 1 2 1' (number     5)
+
+  (spacegroup is known)
+
+
+########################################################################################################################################################################################################
+
+
+Total no. of unique reflections to diffraction limit:    28366
+No. of observed reflections input:                       28366
+No. of observed reflections after cut-off:               18639
+
+########################################################################################################################################################################################################
+
+
+CPU time used: 5.16 secs., elapsed: 5.51 secs.
+
+ staraniso:  Normal termination.
+Times: User:       4.1s System:    1.0s Elapsed:     0:05  
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 7.0.077: MTZDUMP              version 1.1 :         ##
+ ###############################################################
+ User: unknown  Run date: 12/ 5/2020 Run time: 21:40:04 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+ as well as any specific reference in the program write-up.
+
+  List  reflection:    0
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN   Filename: cLDhZJ1an4c6wZ94-SWS-merged-aniso.mtz 
+
+ * Title:
+
+ Run of STARANISO on: cLDhZJ1an4c6wZ94-SWS-iso-merged.mtz
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 XDSproject
+          XDScrystal
+          XDSdataset
+            190.9500  110.3000   64.2800   90.0000   96.2930   90.0000
+             0.97918
+
+ * Number of Columns = 12
+
+ * Number of Reflections = 34507
+
+ * Missing value set to NaN in input mtz file
+
+ * HISTORY for current MTZ file :
+
+ Created by STARANISO OpenMP version: 2.3.35 (30-Apr-2020) on Tue May 12 21:39:59
+ From AIMLESS, version 0.7.4, run on 12/ 5/2020 at 21:39:30                      
+ From POINTLESS, version 1.11.21, run on 12/ 5/2020 at 21:37:29                  
+
+ * Column Labels :
+
+ H K L IMEAN SIGIMEAN N(+) N(-) F SIGF E SIGE SA_flag
+
+ * Column Types :
+
+ H H H J Q I I F Q F Q I
+
+ * Associated datasets :
+
+ 0 0 0 1 1 1 1 1 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+  190.9500  110.3000   64.2800   90.0000   96.2930   90.0000 
+
+ *  Resolution Range :
+
+    0.00011    0.15974     (     95.366 -      2.502 A )
+
+ * Sort Order :
+
+      0     0     0     0     0
+
+ * Space group = 'C 1 2 1' (number     5)
+
+  (spacegroup is known)
+
+
+
+ OVERALL FILE STATISTICS for resolution range   0.000 -   0.160
+ ======================= 
+
+
+ Col Sort    Min    Max    Num      %     Mean     Mean   Resolution   Type Column
+ num order               Missing complete          abs.   Low    High       label 
+
+   1 NONE   -76      75      0  100.00      1.0     28.6  95.37   2.50   H  H
+   2 NONE     0      44      0  100.00     16.4     16.4  95.37   2.50   H  K
+   3 NONE     0      22      0  100.00      7.4      7.4  95.37   2.50   H  L
+   4 NONE-5985.9153531.2 15868   54.02  3919.06  3989.51  41.75   2.50   J  IMEAN
+   5 NONE   38.8  6123.1 15868   54.02   617.41   617.41  41.75   2.50   Q  SIGIMEAN
+   6 NONE    0.0     4.0 15868   54.02     0.90     0.90  41.75   2.50   I  N(+)
+   7 NONE    0.0     4.0 15868   54.02     1.43     1.43  41.75   2.50   I  N(-)
+   8 NONE    4.0   391.6 15868   54.02    50.73    50.73  41.75   2.50   F  F
+   9 NONE    0.5    29.3 15868   54.02     5.96     5.96  41.75   2.50   Q  SIGF
+  10 NONE    0.0     3.6 15868   54.02     0.88     0.88  41.75   2.50   F  E
+  11 NONE    0.0     0.5 15868   54.02     0.13     0.13  41.75   2.50   Q  SIGE
+  12 DESC    1.0     3.0     0  100.00     2.08     2.08  95.37   2.50   I  SA_flag
+
+
+ No. of reflections used in FILE STATISTICS    34507
+
+
+ MTZDUMP:   NO REFLECTIONS LISTED
+Times: User:       0.1s System:    0.0s Elapsed:     0:01  

@@ -1,0 +1,3 @@
+This folder contains the files created during the reintegration of the images for the model of nsp3 with the PDB ID 6w9c.  The raw images were integrated by Kay Diederichs using xdsgui. Dale Tronrud finished processing the data by removing images from the end of each of the two sweeps and performing corrections for the anisotropic scattering using the STARaniso server.
+
+A new model for 6w9c was not created due to the poor quality of this data set.  Look at 6wrh instead.  It is a much better model. 
