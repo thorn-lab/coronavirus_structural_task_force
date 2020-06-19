@@ -22,6 +22,8 @@
 
 **old** - contains files from historical revisions
 
+**reintegration** - contains the files created during the reintegration of the images. The raw images were integrated by Kay Diederichs using xdsgui. Dale Tronrud finished processing the data by removing images from the end of each of the two sweeps and performing corrections for the anisotropic scattering using the STARaniso server. See details [here](https://github.com/thorn-lab/coronavirus_structural_task_force/raw/master/pdb/nsp3/SARS-CoV-2/6w9c/reintegration/notes.txt)
+
 **validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp3/SARS-CoV-2/6w9c/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp3/SARS-CoV-2/6w9c/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp3/SARS-CoV-2/6w9c/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp3/SARS-CoV-2/6w9c/validation/Xtriage_output.log) 
 
 ## Raw diffraction data
