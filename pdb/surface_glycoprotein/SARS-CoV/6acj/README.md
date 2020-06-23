@@ -33,6 +33,8 @@ Primary map emd_9593.map available. **Click** [here](http://ftp.wwpdb.org/pub/em
 |---|-------------:|----------------:|--------------:|
 |   |4.2 Å|C1|129462|
 
+**Experiments**
+
 |   | Frame Sampling | Electron Dose |
 |---|-------------:|----------------:|
 |   |1.32 Å|50.0 e<sup>-</sup>/Å<sup>2</sup>|
