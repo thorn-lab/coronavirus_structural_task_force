@@ -24,7 +24,7 @@
 
 ## Maps
 
-Primary map emd_30178.map available. **Click** [here](ftp://ftp.wwpdb.org/pub/emdb/structures/EMD-30178/map/) 
+Primary map emd_30178.map available. **Click** [here](http://ftp.wwpdb.org/pub/emdb/structures/EMD-30178/map/) 
 
 ## Data Summary
 **Reconstruction Quality and Method**

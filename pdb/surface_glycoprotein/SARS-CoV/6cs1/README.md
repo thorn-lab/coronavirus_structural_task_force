@@ -24,7 +24,7 @@
 
 ## Maps
 
-Primary map emd_7579.map available. **Click** [here](ftp://ftp.wwpdb.org/pub/emdb/structures/EMD-7579/map/) 
+Primary map emd_7579.map available. **Click** [here](http://ftp.wwpdb.org/pub/emdb/structures/EMD-7579/map/) 
 
 ## Data Summary
 **Reconstruction Quality and Method**

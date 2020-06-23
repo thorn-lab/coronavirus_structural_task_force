@@ -24,7 +24,7 @@
 
 ## Maps
 
-Primary map emd_21377.map available. **Click** [here](ftp://ftp.wwpdb.org/pub/emdb/structures/EMD-21377/map/) 
+Primary map emd_21377.map available. **Click** [here](http://ftp.wwpdb.org/pub/emdb/structures/EMD-21377/map/) 
 
 ## Data Summary
 **Reconstruction Quality and Method**
