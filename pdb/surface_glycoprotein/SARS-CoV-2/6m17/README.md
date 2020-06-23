@@ -1,14 +1,45 @@
-# Base folder 6m17
+# PDB 6m17
 
-## Files downloaded from wwPDB:
+## Overview
 
-6m17.pdb and 6m17.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: surface glycoprotein
+
+**Organism**: SARS-CoV-2
+
+**Method**: Cryo-EM
+
+## Basefolder
+
+6m17.pdb and 6m17.cif - the coordinates of the threedimensional molecular model
+
+## Subfolders
+
+**isolde** - contains manual re-refinements from ISOLDE in ChimeraX, done by Tristan Croll. See details [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/surface_glycoprotein/SARS-CoV-2/6m17/isolde/directory_info.txt)
+
+**old** - contains files from historical revisions
+
+**validation** - contains validation reports. This structure has been analyzed by   [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6m17/validation/molprobity)   [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6m17/validation/ccpem-validation)
+
+
 
 ## Maps
 
-emd_30039.map.html - link to the primary map 
+Primary map emd_30039.map available. **Click** [here](ftp://ftp.wwpdb.org/pub/emdb/structures/EMD-30039/map/) 
 
-or **Click** [here](AHTMLA) 
+## Data Summary
+**Reconstruction Quality and Method**
+
+|   | Reported Resolution | Imposed Symmetry | Number of Particles |
+|---|-------------:|----------------:|--------------:|
+|   |2.9 Å|n/a|301565|
+
+|   | Frame Sampling | Electron Dose |
+|---|-------------:|----------------:|
+|   |1.087 Å|50.0 e<sup>-</sup>/Å<sup>2</sup>|
+
+## HARUSPEX Annotation
+
+Available. **Click** [here](https://zenodo.org/record/3820111)
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/6m17

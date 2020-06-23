@@ -22,7 +22,9 @@
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/hypothetical_protein_sars7a/SARS-CoV/1xak/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/hypothetical_protein_sars7a/SARS-CoV/1xak/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/hypothetical_protein_sars7a/SARS-CoV/1xak/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/hypothetical_protein_sars7a/SARS-CoV/1xak/validation/Xtriage_output.log) 
+**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/hypothetical_protein_sars7a/SARS-CoV/1xak/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/hypothetical_protein_sars7a/SARS-CoV/1xak/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/hypothetical_protein_sars7a/SARS-CoV/1xak/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/hypothetical_protein_sars7a/SARS-CoV/1xak/validation/Xtriage_output.log)  
+
+
 
 ## Raw diffraction data
 

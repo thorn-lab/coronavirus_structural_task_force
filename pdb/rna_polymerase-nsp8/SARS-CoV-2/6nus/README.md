@@ -1,14 +1,45 @@
-# Base folder 6nus
+# PDB 6nus
 
-## Files downloaded from wwPDB:
+## Overview
 
-6nus.pdb and 6nus.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: rna polymerase-nsp8
+
+**Organism**: SARS-CoV-2
+
+**Method**: Cryo-EM
+
+## Basefolder
+
+6nus.pdb and 6nus.cif - the coordinates of the threedimensional molecular model
+
+## Subfolders
+
+
+
+
+
+**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/rna_polymerase-nsp8/SARS-CoV-2/6nus/validation/auspex)     
+
+
 
 ## Maps
 
-emd_0521.map.html - link to the primary map 
+Primary map emd_0521.map available. **Click** [here](ftp://ftp.wwpdb.org/pub/emdb/structures/EMD-0521/map/) 
 
-or **Click** [here](AHTMLA) 
+## Data Summary
+**Reconstruction Quality and Method**
+
+|   | Reported Resolution | Imposed Symmetry | Number of Particles |
+|---|-------------:|----------------:|--------------:|
+|   |3.5 Å|C1|71262|
+
+|   | Frame Sampling | Electron Dose |
+|---|-------------:|----------------:|
+|   |1.15 Å|50.5 e<sup>-</sup>/Å<sup>2</sup>|
+
+## HARUSPEX Annotation
+
+Not available.. Please contact task force manager to update HARUSPEX results. Write an [issue](https://github.com/thorn-lab/coronavirus_structural_task_force/issues) to us.
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/6nus

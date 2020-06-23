@@ -1,14 +1,45 @@
-# Base folder 6nt3
+# PDB 6nt3
 
-## Files downloaded from wwPDB:
+## Overview
 
-6nt3.pdb and 6nt3.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: human interaction partners
+
+**Organism**: TCP2
+
+**Method**: Cryo-EM
+
+## Basefolder
+
+6nt3.pdb and 6nt3.cif - the coordinates of the threedimensional molecular model
+
+## Subfolders
+
+
+
+
+
+
+
+
 
 ## Maps
 
-emd_0500.map.html - link to the primary map 
+Primary map emd_0500.map available. **Click** [here](ftp://ftp.wwpdb.org/pub/emdb/structures/EMD-0500/map/) 
 
-or **Click** [here](AHTMLA) 
+## Data Summary
+**Reconstruction Quality and Method**
+
+|   | Reported Resolution | Imposed Symmetry | Number of Particles |
+|---|-------------:|----------------:|--------------:|
+|   |3.4 Å|C1|150583|
+
+|   | Frame Sampling | Electron Dose |
+|---|-------------:|----------------:|
+|   |1.0 Å|40.0 e<sup>-</sup>/Å<sup>2</sup>|
+
+## HARUSPEX Annotation
+
+Available. **Click** [here](https://zenodo.org/record/3820221)
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/6nt3

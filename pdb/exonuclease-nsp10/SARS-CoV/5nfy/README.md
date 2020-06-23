@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Protein name**: exonuclease
+**Protein name**: exonuclease-nsp10
 
 **Organism**: SARS-CoV
 
@@ -18,11 +18,13 @@
 
 ## Subfolders
 
-**isolde** - contains manual re-refinements from ISOLDE in ChimeraX, done by Tristan Croll. See details [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/exonuclease/SARS-CoV/5nfy/isolde/directory_info.txt)
+**isolde** - contains manual re-refinements from ISOLDE in ChimeraX, done by Tristan Croll. See details [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/exonuclease-nsp10/SARS-CoV/5nfy/isolde/directory_info.txt)
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/exonuclease/SARS-CoV/5nfy/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/exonuclease/SARS-CoV/5nfy/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/exonuclease/SARS-CoV/5nfy/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/exonuclease/SARS-CoV/5nfy/validation/Xtriage_output.log) 
+**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/exonuclease-nsp10/SARS-CoV/5nfy/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/exonuclease-nsp10/SARS-CoV/5nfy/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/exonuclease-nsp10/SARS-CoV/5nfy/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/exonuclease-nsp10/SARS-CoV/5nfy/validation/Xtriage_output.log)  
+
+
 
 ## Raw diffraction data
 
@@ -47,7 +49,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  2.38|  2.69 %|
 
-**Auspex Pathologies**<br> missing ring (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/exonuclease/SARS-CoV/5nfy/validation/auspex/5nfy_auspex_comments.txt))
+**Auspex Pathologies**<br> missing ring (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/exonuclease-nsp10/SARS-CoV/5nfy/validation/auspex/5nfy_auspex_comments.txt))
 
  
 
