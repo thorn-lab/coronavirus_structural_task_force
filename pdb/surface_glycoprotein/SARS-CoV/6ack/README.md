@@ -1,14 +1,47 @@
-# Base folder 6ack
+# PDB 6ack
 
-## Files downloaded from wwPDB:
+## Overview
 
-6ack.pdb and 6ack.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: surface glycoprotein
+
+**Organism**: SARS-CoV
+
+**Method**: Cryo-EM
+
+## Basefolder
+
+6ack.pdb and 6ack.cif - the coordinates of the threedimensional molecular model
+
+## Subfolders
+
+
+
+
+
+
+
+
 
 ## Maps
 
-emd_9594.map.html - link to the primary map 
+Primary map emd_9594.map available. **Click** [here](http://ftp.wwpdb.org/pub/emdb/structures/EMD-9594/map/) 
 
-or **Click** [here](AHTMLA) 
+## Data Summary
+**Reconstruction Quality and Method**
+
+|   | Reported Resolution | Imposed Symmetry | Number of Particles |
+|---|-------------:|----------------:|--------------:|
+|   |4.5 Å|C1|56553|
+
+**Experiments**
+
+|   | Frame Sampling | Electron Dose |
+|---|-------------:|----------------:|
+|   |1.32 Å|50.0 e<sup>-</sup>/Å<sup>2</sup>|
+
+## HARUSPEX Annotation
+
+Available. **Click** [here](https://zenodo.org/record/3820133)
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/6ack

@@ -1,14 +1,47 @@
-# Base folder 7btf
+# PDB 7btf
 
-## Files downloaded from wwPDB:
+## Overview
 
-7btf.pdb and 7btf.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: rna polymerase-nsp7-nsp8
+
+**Organism**: SARS-CoV-2
+
+**Method**: Cryo-EM
+
+## Basefolder
+
+7btf.pdb and 7btf.cif - the coordinates of the threedimensional molecular model
+
+## Subfolders
+
+**isolde** - contains manual re-refinements from ISOLDE in ChimeraX, done by Tristan Croll. See details [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/rna_polymerase-nsp7-nsp8/SARS-CoV-2/7btf/isolde/directory_info.txt)
+
+**old** - contains files from historical revisions
+
+**validation** - contains validation reports. This structure has been analyzed by   [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/rna_polymerase-nsp7-nsp8/SARS-CoV-2/7btf/validation/molprobity)   
+
+
 
 ## Maps
 
-emd_30178.map.html - link to the primary map 
+Primary map emd_30178.map available. **Click** [here](http://ftp.wwpdb.org/pub/emdb/structures/EMD-30178/map/) 
 
-or **Click** [here](AHTMLA) 
+## Data Summary
+**Reconstruction Quality and Method**
+
+|   | Reported Resolution | Imposed Symmetry | Number of Particles |
+|---|-------------:|----------------:|--------------:|
+|   |2.95 Å|C1|145388|
+
+**Experiments**
+
+|   | Frame Sampling | Electron Dose |
+|---|-------------:|----------------:|
+|   |0.82 Å|60.0 e<sup>-</sup>/Å<sup>2</sup>|
+
+## HARUSPEX Annotation
+
+Available. **Click** [here](https://zenodo.org/record/3820092)
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/7btf

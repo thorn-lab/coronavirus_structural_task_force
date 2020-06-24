@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Protein name**: nsp10
+**Protein name**: exonuclease-nsp10
 
 **Organism**: SARS-CoV
 
@@ -18,11 +18,13 @@
 
 ## Subfolders
 
-**isolde** - contains manual re-refinements from ISOLDE in ChimeraX, done by Tristan Croll. See details [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp10/SARS-CoV/5c8t/isolde/directory_info.txt)
+**isolde** - contains manual re-refinements from ISOLDE in ChimeraX, done by Tristan Croll. See details [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/exonuclease-nsp10/SARS-CoV/5c8t/isolde/directory_info.txt)
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp10/SARS-CoV/5c8t/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp10/SARS-CoV/5c8t/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp10/SARS-CoV/5c8t/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp10/SARS-CoV/5c8t/validation/Xtriage_output.log) 
+**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/exonuclease-nsp10/SARS-CoV/5c8t/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/exonuclease-nsp10/SARS-CoV/5c8t/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/exonuclease-nsp10/SARS-CoV/5c8t/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/exonuclease-nsp10/SARS-CoV/5c8t/validation/Xtriage_output.log)  
+
+
 
 ## Raw diffraction data
 
@@ -47,7 +49,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  3.11|  0.23 %|
 
-**Auspex Pathologies**<br> bad or missing beam stop mask (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp10/SARS-CoV/5c8t/validation/auspex/5c8t_auspex_comments.txt))
+**Auspex Pathologies**<br> bad or missing beam stop mask (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/exonuclease-nsp10/SARS-CoV/5c8t/validation/auspex/5c8t_auspex_comments.txt))
 
  
 

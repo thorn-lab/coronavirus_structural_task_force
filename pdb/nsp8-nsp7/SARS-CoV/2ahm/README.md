@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Protein name**: nsp7
+**Protein name**: nsp8-nsp7
 
 **Organism**: SARS-CoV
 
@@ -22,7 +22,9 @@
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp7/SARS-CoV/2ahm/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp7/SARS-CoV/2ahm/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp7/SARS-CoV/2ahm/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp7/SARS-CoV/2ahm/validation/Xtriage_output.log) 
+**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp8-nsp7/SARS-CoV/2ahm/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp8-nsp7/SARS-CoV/2ahm/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp8-nsp7/SARS-CoV/2ahm/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp8-nsp7/SARS-CoV/2ahm/validation/Xtriage_output.log)  
+
+
 
 ## Raw diffraction data
 
@@ -47,7 +49,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  2.74|  0.72 %|
 
-**Auspex Pathologies**<br> all good (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp7/SARS-CoV/2ahm/validation/auspex/2ahm_auspex_comments.txt))
+**Auspex Pathologies**<br> all good (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp8-nsp7/SARS-CoV/2ahm/validation/auspex/2ahm_auspex_comments.txt))
 
  
 

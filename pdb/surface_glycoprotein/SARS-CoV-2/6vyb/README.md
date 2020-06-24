@@ -1,14 +1,47 @@
-# Base folder 6vyb
+# PDB 6vyb
 
-## Files downloaded from wwPDB:
+## Overview
 
-6vyb.pdb and 6vyb.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: surface glycoprotein
+
+**Organism**: SARS-CoV-2
+
+**Method**: Cryo-EM
+
+## Basefolder
+
+6vyb.pdb and 6vyb.cif - the coordinates of the threedimensional molecular model
+
+## Subfolders
+
+
+
+**old** - contains files from historical revisions
+
+**validation** - contains validation reports. This structure has been analyzed by   [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6vyb/validation/molprobity)   [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6vyb/validation/ccpem-validation)
+
+
 
 ## Maps
 
-emd_21457.map.html - link to the primary map 
+Primary map emd_21457.map available. **Click** [here](http://ftp.wwpdb.org/pub/emdb/structures/EMD-21457/map/) 
 
-or **Click** [here](AHTMLA) 
+## Data Summary
+**Reconstruction Quality and Method**
+
+|   | Reported Resolution | Imposed Symmetry | Number of Particles |
+|---|-------------:|----------------:|--------------:|
+|   |3.2 Å|C1|197005|
+
+**Experiments**
+
+|   | Frame Sampling | Electron Dose |
+|---|-------------:|----------------:|
+|   |1.05 Å|70.0 e<sup>-</sup>/Å<sup>2</sup>|
+
+## HARUSPEX Annotation
+
+Available. **Click** [here](https://zenodo.org/record/3820105)
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/6vyb

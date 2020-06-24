@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Protein name**: nsp10
+**Protein name**: exonuclease-nsp10
 
 **Organism**: SARS-CoV
 
@@ -22,7 +22,9 @@
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp10/SARS-CoV/5c8u/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp10/SARS-CoV/5c8u/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp10/SARS-CoV/5c8u/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp10/SARS-CoV/5c8u/validation/Xtriage_output.log) 
+**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/exonuclease-nsp10/SARS-CoV/5c8u/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/exonuclease-nsp10/SARS-CoV/5c8u/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/exonuclease-nsp10/SARS-CoV/5c8u/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/exonuclease-nsp10/SARS-CoV/5c8u/validation/Xtriage_output.log)  
+
+
 
 ## Raw diffraction data
 
@@ -47,7 +49,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  3.41|  0.23 %|
 
-**Auspex Pathologies**<br> missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp10/SARS-CoV/5c8u/validation/auspex/5c8u_auspex_comments.txt))
+**Auspex Pathologies**<br> missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/exonuclease-nsp10/SARS-CoV/5c8u/validation/auspex/5c8u_auspex_comments.txt))
 
  
 
