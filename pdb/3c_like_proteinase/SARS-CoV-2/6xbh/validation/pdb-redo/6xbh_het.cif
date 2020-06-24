@@ -1,0 +1,460 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.51
+_lib_update       11/07/18
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+P6S      P6S '.                                   ' .                  18  10 .
+ELL      ELL '.                                   ' .                  24  11 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+VAL-NA   VAL      .        .        NA       .        .
+ bond_VAL-O_=_NA-NA
+CYS-ELL  CYS      .        .        ELL      .        .
+ bond_CYS-SG_=_ELL-C
+P6S-PHE  P6S      .        .        PHE      .        .
+ bond_P6S-C19_=_PHE-N
+PHE-ELL  PHE      .        .        ELL      .        .
+ bond_PHE-C_=_ELL-N
+NA-HOH   NA       .        .        HOH      .        .
+ bond_NA-NA_=_HOH-O
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_P6S
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ P6S           O28    O    O         0.000     10.002    2.014   21.306
+ P6S           C19    C    C1        0.000     10.371    1.871   22.461
+ P6S           H19    H    H         0.000     10.715    0.915   22.820
+ P6S           O20    O    O2        0.000     10.334    2.934   23.266
+ P6S           C21    C    CH2       0.000      9.821    4.147   22.838
+ P6S           H211   H    H         0.000     10.203    4.323   21.831
+ P6S           H212   H    H         0.000     10.205    4.917   23.511
+ P6S           C22    C    CR6       0.000      8.329    4.197   22.822
+ P6S           C27    C    CR16      0.000      7.645    5.218   22.153
+ P6S           H27    H    H         0.000      8.209    5.993   21.649
+ P6S           C26    C    CR16      0.000      6.239    5.258   22.122
+ P6S           H26    H    H         0.000      5.746    6.034   21.550
+ P6S           C25    C    CR16      0.000      5.463    4.325   22.808
+ P6S           H25    H    H         0.000      4.383    4.410   22.814
+ P6S           C24    C    CR16      0.000      6.088    3.287   23.483
+ P6S           H24    H    H         0.000      5.504    2.526   23.986
+ P6S           C23    C    CR16      0.000      7.508    3.241   23.503
+ P6S           H23    H    H         0.000      7.991    2.447   24.059
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ P6S      O28    n/a    C19    START
+ P6S      C19    O28    O20    .
+ P6S      H19    C19    .      .
+ P6S      O20    C19    C21    .
+ P6S      C21    O20    C22    .
+ P6S      H211   C21    .      .
+ P6S      H212   C21    .      .
+ P6S      C22    C21    C27    .
+ P6S      C27    C22    C26    .
+ P6S      H27    C27    .      .
+ P6S      C26    C27    C25    .
+ P6S      H26    C26    .      .
+ P6S      C25    C26    C24    .
+ P6S      H25    C25    .      .
+ P6S      C24    C25    C23    .
+ P6S      H24    C24    .      .
+ P6S      C23    C24    H23    .
+ P6S      H23    C23    .      END
+ P6S      C22    C23    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ P6S      C22    C21       single      1.511    0.020
+ P6S      C21    O20       single      1.426    0.020
+ P6S      C22    C23       aromatic    1.390    0.020
+ P6S      C27    C22       aromatic    1.390    0.020
+ P6S      C23    C24       aromatic    1.390    0.020
+ P6S      C24    C25       aromatic    1.390    0.020
+ P6S      C25    C26       aromatic    1.390    0.020
+ P6S      C26    C27       aromatic    1.390    0.020
+ P6S      O20    C19       single      1.454    0.020
+ P6S      C19    O28       double      1.220    0.020
+ P6S      H211   C21       single      1.092    0.020
+ P6S      H212   C21       single      1.092    0.020
+ P6S      H24    C24       single      1.083    0.020
+ P6S      H26    C26       single      1.083    0.020
+ P6S      H19    C19       single      1.077    0.020
+ P6S      H23    C23       single      1.083    0.020
+ P6S      H25    C25       single      1.083    0.020
+ P6S      H27    C27       single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ P6S      O28    C19    H19     123.000    3.000
+ P6S      O28    C19    O20     120.000    3.000
+ P6S      H19    C19    O20     120.000    3.000
+ P6S      C19    O20    C21     120.000    3.000
+ P6S      O20    C21    H211    109.470    3.000
+ P6S      O20    C21    H212    109.470    3.000
+ P6S      O20    C21    C22     109.470    3.000
+ P6S      H211   C21    H212    107.900    3.000
+ P6S      H211   C21    C22     109.470    3.000
+ P6S      H212   C21    C22     109.470    3.000
+ P6S      C21    C22    C27     120.000    3.000
+ P6S      C21    C22    C23     120.000    3.000
+ P6S      C27    C22    C23     120.000    3.000
+ P6S      C22    C27    H27     120.000    3.000
+ P6S      C22    C27    C26     120.000    3.000
+ P6S      H27    C27    C26     120.000    3.000
+ P6S      C27    C26    H26     120.000    3.000
+ P6S      C27    C26    C25     120.000    3.000
+ P6S      H26    C26    C25     120.000    3.000
+ P6S      C26    C25    H25     120.000    3.000
+ P6S      C26    C25    C24     120.000    3.000
+ P6S      H25    C25    C24     120.000    3.000
+ P6S      C25    C24    H24     120.000    3.000
+ P6S      C25    C24    C23     120.000    3.000
+ P6S      H24    C24    C23     120.000    3.000
+ P6S      C24    C23    H23     120.000    3.000
+ P6S      C24    C23    C22     120.000    3.000
+ P6S      H23    C23    C22     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ P6S      var_1            O28    C19    O20    C21                3.799           20.000   3
+ P6S      var_2            C19    O20    C21    C22               78.002           20.000   3
+ P6S      var_3            O20    C21    C22    C27                0.000           20.000   2
+ P6S      CONST_1          C21    C22    C23    C24                0.000            0.000   0
+ P6S      CONST_2          C21    C22    C27    C26                0.000            0.000   0
+ P6S      CONST_3          C22    C27    C26    C25                0.000            0.000   0
+ P6S      CONST_4          C27    C26    C25    C24                0.000            0.000   0
+ P6S      CONST_5          C26    C25    C24    C23                0.000            0.000   0
+ P6S      CONST_6          C25    C24    C23    C22                0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ P6S      plan-1            C22       0.020
+ P6S      plan-1            C21       0.020
+ P6S      plan-1            C23       0.020
+ P6S      plan-1            C27       0.020
+ P6S      plan-1            C24       0.020
+ P6S      plan-1            C26       0.020
+ P6S      plan-1            C25       0.020
+ P6S      plan-1            H24       0.020
+ P6S      plan-1            H26       0.020
+ P6S      plan-1            H23       0.020
+ P6S      plan-1            H25       0.020
+ P6S      plan-1            H27       0.020
+ P6S      plan-2            C19       0.020
+ P6S      plan-2            O20       0.020
+ P6S      plan-2            O28       0.020
+ P6S      plan-2            H19       0.020
+#
+data_comp_ELL
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ ELL           OAD    O    O         0.000      7.305    1.582   17.098
+ ELL           CD2    C    C         0.000      6.760    1.588   18.149
+ ELL           CG     C    CH1       0.000      7.108    0.704   19.385
+ ELL           HG     H    H         0.000      8.063    1.073   19.786
+ ELL           CD1    C    CH2       0.000      6.012    0.980   20.479
+ ELL           HD11   H    H         0.000      6.442    1.225   21.453
+ ELL           HD12   H    H         0.000      5.311    0.151   20.591
+ ELL           CAE    C    CH2       0.000      5.293    2.175   19.934
+ ELL           HAE2   H    H         0.000      5.547    3.062   20.519
+ ELL           HAE1   H    H         0.000      4.214    2.011   19.973
+ ELL           NAH    N    N         0.000      5.716    2.372   18.523
+ ELL           CB     C    CH2       0.000      7.327   -0.748   18.980
+ ELL           HB1    H    H         0.000      8.087   -0.770   18.196
+ ELL           HB2    H    H         0.000      6.386   -1.134   18.584
+ ELL           CA     C    CH1       0.000      7.790   -1.631   20.179
+ ELL           HA     H    H         0.000      7.049   -1.529   20.984
+ ELL           N      N    NT2       0.000      9.082   -1.220   20.703
+ ELL           HN2    H    H         0.000      9.428   -0.414   20.161
+ ELL           HN1    H    H         0.000      9.341   -1.834   21.491
+ ELL           C      C    CH2       0.000      7.794   -3.125   19.710
+ ELL           H1     H    H         0.000      8.293   -3.692   20.499
+ ELL           H2     H    H         0.000      8.399   -3.159   18.801
+ ELL           O      O    OH1       0.000      6.622   -3.645   19.474
+ ELL           HO     H    H         0.000      6.754   -4.552   19.197
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ ELL      OAD    n/a    CD2    START
+ ELL      CD2    OAD    CG     .
+ ELL      CG     CD2    CB     .
+ ELL      HG     CG     .      .
+ ELL      CD1    CG     CAE    .
+ ELL      HD11   CD1    .      .
+ ELL      HD12   CD1    .      .
+ ELL      CAE    CD1    NAH    .
+ ELL      HAE2   CAE    .      .
+ ELL      HAE1   CAE    .      .
+ ELL      NAH    CAE    .      .
+ ELL      CB     CG     CA     .
+ ELL      HB1    CB     .      .
+ ELL      HB2    CB     .      .
+ ELL      CA     CB     C      .
+ ELL      HA     CA     .      .
+ ELL      N      CA     HN1    .
+ ELL      HN2    N      .      .
+ ELL      HN1    N      .      .
+ ELL      C      CA     O      .
+ ELL      H1     C      .      .
+ ELL      H2     C      .      .
+ ELL      O      C      HO     .
+ ELL      HO     O      .      END
+ ELL      CD2    NAH    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ ELL      CD2    OAD       double      1.220    0.020
+ ELL      CD2    NAH       aromatic    1.330    0.020
+ ELL      CG     CD2       single      1.500    0.020
+ ELL      NAH    CAE       single      1.455    0.020
+ ELL      CAE    CD1       single      1.524    0.020
+ ELL      CD1    CG        single      1.524    0.020
+ ELL      CB     CG        single      1.524    0.020
+ ELL      CA     CB        single      1.524    0.020
+ ELL      N      CA        single      1.475    0.020
+ ELL      C      CA        single      1.524    0.020
+ ELL      O      C         single      1.432    0.020
+ ELL      HAE1   CAE       single      1.092    0.020
+ ELL      HAE2   CAE       single      1.092    0.020
+ ELL      HD11   CD1       single      1.092    0.020
+ ELL      HD12   CD1       single      1.092    0.020
+ ELL      HG     CG        single      1.099    0.020
+ ELL      HB1    CB        single      1.092    0.020
+ ELL      HB2    CB        single      1.092    0.020
+ ELL      HA     CA        single      1.099    0.020
+ ELL      HN1    N         single      1.033    0.020
+ ELL      HN2    N         single      1.033    0.020
+ ELL      H1     C         single      1.092    0.020
+ ELL      H2     C         single      1.092    0.020
+ ELL      HO     O         single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ ELL      OAD    CD2    CG      120.500    3.000
+ ELL      OAD    CD2    NAH     123.000    3.000
+ ELL      CG     CD2    NAH     116.500    3.000
+ ELL      CD2    CG     HG      108.810    3.000
+ ELL      CD2    CG     CD1     109.470    3.000
+ ELL      CD2    CG     CB      109.470    3.000
+ ELL      HG     CG     CD1     108.340    3.000
+ ELL      HG     CG     CB      108.340    3.000
+ ELL      CD1    CG     CB      109.470    3.000
+ ELL      CG     CD1    HD11    109.470    3.000
+ ELL      CG     CD1    HD12    109.470    3.000
+ ELL      CG     CD1    CAE     111.000    3.000
+ ELL      HD11   CD1    HD12    107.900    3.000
+ ELL      HD11   CD1    CAE     109.470    3.000
+ ELL      HD12   CD1    CAE     109.470    3.000
+ ELL      CD1    CAE    HAE2    109.470    3.000
+ ELL      CD1    CAE    HAE1    109.470    3.000
+ ELL      CD1    CAE    NAH     105.000    3.000
+ ELL      HAE2   CAE    HAE1    107.900    3.000
+ ELL      HAE2   CAE    NAH     109.470    3.000
+ ELL      HAE1   CAE    NAH     109.470    3.000
+ ELL      CAE    NAH    CD2     127.000    3.000
+ ELL      CG     CB     HB1     109.470    3.000
+ ELL      CG     CB     HB2     109.470    3.000
+ ELL      CG     CB     CA      111.000    3.000
+ ELL      HB1    CB     HB2     107.900    3.000
+ ELL      HB1    CB     CA      109.470    3.000
+ ELL      HB2    CB     CA      109.470    3.000
+ ELL      CB     CA     HA      108.340    3.000
+ ELL      CB     CA     N       109.500    3.000
+ ELL      CB     CA     C       109.470    3.000
+ ELL      HA     CA     N       109.500    3.000
+ ELL      HA     CA     C       108.340    3.000
+ ELL      N      CA     C       109.500    3.000
+ ELL      CA     N      HN2     109.500    3.000
+ ELL      CA     N      HN1     109.500    3.000
+ ELL      HN2    N      HN1     109.500    3.000
+ ELL      CA     C      H1      109.470    3.000
+ ELL      CA     C      H2      109.470    3.000
+ ELL      CA     C      O       109.470    3.000
+ ELL      H1     C      H2      107.900    3.000
+ ELL      H1     C      O       109.470    3.000
+ ELL      H2     C      O       109.470    3.000
+ ELL      C      O      HO      109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ ELL      var_1            OAD    CD2    NAH    CAE              180.000           20.000   2
+ ELL      var_2            OAD    CD2    CG     CB               180.000           20.000   3
+ ELL      var_3            CD2    CG     CD1    CAE              180.000           20.000   3
+ ELL      var_4            CG     CD1    CAE    NAH              180.000           20.000   3
+ ELL      var_5            CD1    CAE    NAH    CD2               -9.432           20.000   3
+ ELL      var_6            CD2    CG     CB     CA               180.000           20.000   3
+ ELL      var_7            CG     CB     CA     C                180.000           20.000   3
+ ELL      var_8            CB     CA     N      HN1              180.000           20.000   3
+ ELL      var_9            CB     CA     C      O                180.000           20.000   3
+ ELL      var_10           CA     C      O      HO               180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ ELL      chir_01          CG     CD2    CD1    CB        negativ
+ ELL      chir_02          CA     CB     N      C         positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ ELL      plan-1            CD2       0.020
+ ELL      plan-1            OAD       0.020
+ ELL      plan-1            NAH       0.020
+ ELL      plan-1            CG        0.020
+ ELL      plan-2            NAH       0.020
+ ELL      plan-2            CD2       0.020
+ ELL      plan-2            CAE       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_VAL-NA
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ VAL-NA   1 O       2 NA        .           2.820    0.020
+#
+data_link_CYS-ELL
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-ELL  1 SG      2 C         .           1.730    0.020
+#
+data_link_P6S-PHE
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ P6S-PHE  1 C19     2 N         .           1.320    0.020
+#
+data_link_PHE-ELL
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ PHE-ELL  1 C       2 N         .           1.350    0.020
+#
+data_link_NA-HOH
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ NA-HOH   1 NA      2 O         .           2.700    0.020
+# ------------------------------------------------------

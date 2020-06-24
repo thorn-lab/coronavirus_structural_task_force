@@ -1,0 +1,576 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.51
+_lib_update       11/07/18
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+UZ7      UZ7 '.                                   ' .                  15   9 .
+UZ4      UZ4 '.                                   ' .                  27  13 .
+UZ1      UZ1 '.                                   ' .                  11   4 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-UZ4  CYS      .        .        UZ4      .        .
+ bond_CYS-SG_=_UZ4-C28
+UZ7-LEU  UZ7      .        .        LEU      .        .
+ bond_UZ7-C07_=_LEU-N
+LEU-UZ4  LEU      .        .        UZ4      .        .
+ bond_LEU-C_=_UZ4-N19
+UZ4-UZ1  UZ4      .        .        UZ1      .        .
+ bond_UZ4-C31_=_UZ1-N33
+NA-HOH   NA       .        .        HOH      .        .
+ bond_NA-NA_=_HOH-O
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_UZ7
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ UZ7           O08    O    O         0.000     18.732    3.963   -3.339
+ UZ7           C07    C    C1        0.000     17.744    4.592   -2.962
+ UZ7           H07    H    H         0.000     17.254    4.409   -2.020
+ UZ7           O09    O    O2        0.000     17.281    5.646   -3.944
+ UZ7           C10    C    CR6       0.000     18.296    6.856   -4.193
+ UZ7           C15    C    CR16      0.000     19.705    6.605   -4.471
+ UZ7           H15    H    H         0.000     20.025    5.575   -4.573
+ UZ7           C14    C    CR16      0.000     20.674    7.609   -4.615
+ UZ7           H14    H    H         0.000     21.693    7.344   -4.868
+ UZ7           C11    C    CR16      0.000     17.967    8.223   -4.047
+ UZ7           H11    H    H         0.000     16.945    8.502   -3.822
+ UZ7           C12    C    CR16      0.000     18.961    9.247   -4.191
+ UZ7           H12    H    H         0.000     18.662   10.285   -4.113
+ UZ7           C13    C    CR16      0.000     20.330    8.936   -4.434
+ UZ7           H13    H    H         0.000     21.079    9.716   -4.476
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ UZ7      O08    n/a    C07    START
+ UZ7      C07    O08    O09    .
+ UZ7      H07    C07    .      .
+ UZ7      O09    C07    C10    .
+ UZ7      C10    O09    C11    .
+ UZ7      C15    C10    C14    .
+ UZ7      H15    C15    .      .
+ UZ7      C14    C15    H14    .
+ UZ7      H14    C14    .      .
+ UZ7      C11    C10    C12    .
+ UZ7      H11    C11    .      .
+ UZ7      C12    C11    C13    .
+ UZ7      H12    C12    .      .
+ UZ7      C13    C12    H13    .
+ UZ7      H13    C13    .      END
+ UZ7      C14    C13    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ UZ7      C14    C13       aromatic    1.390    0.020
+ UZ7      C14    C15       aromatic    1.390    0.020
+ UZ7      C13    C12       aromatic    1.390    0.020
+ UZ7      C12    C11       aromatic    1.390    0.020
+ UZ7      C15    C10       single      1.390    0.020
+ UZ7      C11    C10       aromatic    1.390    0.020
+ UZ7      C10    O09       single      1.370    0.020
+ UZ7      C07    O08       double      1.220    0.020
+ UZ7      O09    C07       single      1.454    0.020
+ UZ7      H14    C14       single      1.083    0.020
+ UZ7      H13    C13       single      1.083    0.020
+ UZ7      H12    C12       single      1.083    0.020
+ UZ7      H15    C15       single      1.083    0.020
+ UZ7      H11    C11       single      1.083    0.020
+ UZ7      H07    C07       single      1.077    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ UZ7      O08    C07    H07     123.000    3.000
+ UZ7      O08    C07    O09     120.000    3.000
+ UZ7      H07    C07    O09     120.000    3.000
+ UZ7      C07    O09    C10     120.000    3.000
+ UZ7      O09    C10    C15     120.000    3.000
+ UZ7      O09    C10    C11     120.000    3.000
+ UZ7      C15    C10    C11     120.000    3.000
+ UZ7      C10    C15    H15     120.000    3.000
+ UZ7      C10    C15    C14     120.000    3.000
+ UZ7      H15    C15    C14     120.000    3.000
+ UZ7      C15    C14    H14     120.000    3.000
+ UZ7      C15    C14    C13     120.000    3.000
+ UZ7      H14    C14    C13     120.000    3.000
+ UZ7      C10    C11    H11     120.000    3.000
+ UZ7      C10    C11    C12     120.000    3.000
+ UZ7      H11    C11    C12     120.000    3.000
+ UZ7      C11    C12    H12     120.000    3.000
+ UZ7      C11    C12    C13     120.000    3.000
+ UZ7      H12    C12    C13     120.000    3.000
+ UZ7      C12    C13    H13     120.000    3.000
+ UZ7      C12    C13    C14     120.000    3.000
+ UZ7      H13    C13    C14     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ UZ7      var_1            O08    C07    O09    C10              -65.232           20.000   3
+ UZ7      var_2            C07    O09    C10    C11             -125.568           20.000   3
+ UZ7      CONST_1          O09    C10    C15    C14                0.000            0.000   0
+ UZ7      CONST_2          C10    C15    C14    C13                0.000            0.000   0
+ UZ7      CONST_3          C15    C14    C13    C12                0.000            0.000   0
+ UZ7      CONST_4          O09    C10    C11    C12                0.000            0.000   0
+ UZ7      CONST_5          C10    C11    C12    C13                0.000            0.000   0
+ UZ7      CONST_6          C11    C12    C13    C14                0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ UZ7      plan-1            C14       0.020
+ UZ7      plan-1            C13       0.020
+ UZ7      plan-1            C15       0.020
+ UZ7      plan-1            H14       0.020
+ UZ7      plan-1            C12       0.020
+ UZ7      plan-1            C11       0.020
+ UZ7      plan-1            C10       0.020
+ UZ7      plan-1            H13       0.020
+ UZ7      plan-1            H12       0.020
+ UZ7      plan-1            H15       0.020
+ UZ7      plan-1            H11       0.020
+ UZ7      plan-1            O09       0.020
+ UZ7      plan-2            C07       0.020
+ UZ7      plan-2            O08       0.020
+ UZ7      plan-2            O09       0.020
+ UZ7      plan-2            H07       0.020
+#
+data_comp_UZ4
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ UZ4           O32    O    O         0.000     15.303   -3.943    4.210
+ UZ4           C31    C    C1        0.000     15.948   -4.190    3.198
+ UZ4           H31    H    H         0.000     16.755   -4.903    3.209
+ UZ4           C28    C    CH1       0.000     15.566   -3.451    1.925
+ UZ4           H28    H    H         0.000     14.541   -3.658    1.587
+ UZ4           O29    O    OH1       0.000     16.539   -3.871    1.035
+ UZ4           HO29   H    H         0.000     16.383   -3.451    0.182
+ UZ4           C20    C    CH1       0.000     15.871   -1.910    2.113
+ UZ4           H20    H    H         0.000     16.800   -1.796    2.689
+ UZ4           N19    N    NT2       0.000     16.075   -1.409    0.807
+ UZ4           H192   H    H         0.000     15.967   -2.181    0.136
+ UZ4           H191   H    H         0.000     16.279   -0.403    0.867
+ UZ4           C21    C    CH2       0.000     14.728   -1.109    2.824
+ UZ4           H211   H    H         0.000     14.472   -1.648    3.738
+ UZ4           H212   H    H         0.000     13.867   -1.103    2.153
+ UZ4           C22    C    CH1       0.000     15.125    0.360    3.177
+ UZ4           H22    H    H         0.000     15.380    0.863    2.234
+ UZ4           C26    C    C         0.000     14.018    1.152    3.819
+ UZ4           O27    O    O         0.000     12.845    1.030    3.516
+ UZ4           N25    N    NH1       0.000     14.645    2.008    4.776
+ UZ4           HN25   H    H         0.000     14.134    2.658    5.356
+ UZ4           C24    C    CH2       0.000     16.119    1.850    4.834
+ UZ4           H241   H    H         0.000     16.496    1.788    5.857
+ UZ4           H242   H    H         0.000     16.649    2.642    4.300
+ UZ4           C23    C    CH2       0.000     16.339    0.538    4.136
+ UZ4           H232   H    H         0.000     16.366   -0.289    4.848
+ UZ4           H231   H    H         0.000     17.264    0.549    3.556
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ UZ4      O32    n/a    C31    START
+ UZ4      C31    O32    C28    .
+ UZ4      H31    C31    .      .
+ UZ4      C28    C31    C20    .
+ UZ4      H28    C28    .      .
+ UZ4      O29    C28    HO29   .
+ UZ4      HO29   O29    .      .
+ UZ4      C20    C28    C21    .
+ UZ4      H20    C20    .      .
+ UZ4      N19    C20    H191   .
+ UZ4      H192   N19    .      .
+ UZ4      H191   N19    .      .
+ UZ4      C21    C20    C22    .
+ UZ4      H211   C21    .      .
+ UZ4      H212   C21    .      .
+ UZ4      C22    C21    C26    .
+ UZ4      H22    C22    .      .
+ UZ4      C26    C22    N25    .
+ UZ4      O27    C26    .      .
+ UZ4      N25    C26    C24    .
+ UZ4      HN25   N25    .      .
+ UZ4      C24    N25    C23    .
+ UZ4      H241   C24    .      .
+ UZ4      H242   C24    .      .
+ UZ4      C23    C24    H231   .
+ UZ4      H232   C23    .      .
+ UZ4      H231   C23    .      END
+ UZ4      C22    C23    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ UZ4      N19    C20       single      1.475    0.020
+ UZ4      C21    C20       single      1.524    0.020
+ UZ4      C20    C28       single      1.524    0.020
+ UZ4      C22    C21       single      1.524    0.020
+ UZ4      C22    C23       single      1.524    0.020
+ UZ4      C26    C22       single      1.500    0.020
+ UZ4      C23    C24       single      1.524    0.020
+ UZ4      C24    N25       single      1.450    0.020
+ UZ4      N25    C26       single      1.330    0.020
+ UZ4      O27    C26       double      1.220    0.020
+ UZ4      O29    C28       single      1.432    0.020
+ UZ4      C28    C31       single      1.510    0.020
+ UZ4      C31    O32       double      1.220    0.020
+ UZ4      H191   N19       single      1.033    0.020
+ UZ4      H192   N19       single      1.033    0.020
+ UZ4      H20    C20       single      1.099    0.020
+ UZ4      H211   C21       single      1.092    0.020
+ UZ4      H212   C21       single      1.092    0.020
+ UZ4      H22    C22       single      1.099    0.020
+ UZ4      H231   C23       single      1.092    0.020
+ UZ4      H232   C23       single      1.092    0.020
+ UZ4      H241   C24       single      1.092    0.020
+ UZ4      H242   C24       single      1.092    0.020
+ UZ4      HN25   N25       single      1.010    0.020
+ UZ4      H28    C28       single      1.099    0.020
+ UZ4      HO29   O29       single      0.967    0.020
+ UZ4      H31    C31       single      1.077    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ UZ4      O32    C31    H31     123.000    3.000
+ UZ4      O32    C31    C28     120.500    3.000
+ UZ4      H31    C31    C28     120.000    3.000
+ UZ4      C31    C28    H28     108.810    3.000
+ UZ4      C31    C28    O29     109.470    3.000
+ UZ4      C31    C28    C20     109.470    3.000
+ UZ4      H28    C28    O29     109.470    3.000
+ UZ4      H28    C28    C20     108.340    3.000
+ UZ4      O29    C28    C20     109.470    3.000
+ UZ4      C28    O29    HO29    109.470    3.000
+ UZ4      C28    C20    H20     108.340    3.000
+ UZ4      C28    C20    N19     109.500    3.000
+ UZ4      C28    C20    C21     111.000    3.000
+ UZ4      H20    C20    N19     109.500    3.000
+ UZ4      H20    C20    C21     108.340    3.000
+ UZ4      N19    C20    C21     109.500    3.000
+ UZ4      C20    N19    H192    109.500    3.000
+ UZ4      C20    N19    H191    109.500    3.000
+ UZ4      H192   N19    H191    109.500    3.000
+ UZ4      C20    C21    H211    109.470    3.000
+ UZ4      C20    C21    H212    109.470    3.000
+ UZ4      C20    C21    C22     111.000    3.000
+ UZ4      H211   C21    H212    107.900    3.000
+ UZ4      H211   C21    C22     109.470    3.000
+ UZ4      H212   C21    C22     109.470    3.000
+ UZ4      C21    C22    H22     108.340    3.000
+ UZ4      C21    C22    C26     109.470    3.000
+ UZ4      C21    C22    C23     109.470    3.000
+ UZ4      H22    C22    C26     108.810    3.000
+ UZ4      H22    C22    C23     108.340    3.000
+ UZ4      C26    C22    C23     109.470    3.000
+ UZ4      C22    C26    O27     120.500    3.000
+ UZ4      C22    C26    N25     116.500    3.000
+ UZ4      O27    C26    N25     123.000    3.000
+ UZ4      C26    N25    HN25    120.000    3.000
+ UZ4      C26    N25    C24     121.500    3.000
+ UZ4      HN25   N25    C24     118.500    3.000
+ UZ4      N25    C24    H241    109.470    3.000
+ UZ4      N25    C24    H242    109.470    3.000
+ UZ4      N25    C24    C23     112.000    3.000
+ UZ4      H241   C24    H242    107.900    3.000
+ UZ4      H241   C24    C23     109.470    3.000
+ UZ4      H242   C24    C23     109.470    3.000
+ UZ4      C24    C23    H232    109.470    3.000
+ UZ4      C24    C23    H231    109.470    3.000
+ UZ4      C24    C23    C22     111.000    3.000
+ UZ4      H232   C23    H231    107.900    3.000
+ UZ4      H232   C23    C22     109.470    3.000
+ UZ4      H231   C23    C22     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ UZ4      var_1            O32    C31    C28    C20               65.858           20.000   3
+ UZ4      var_2            C31    C28    O29    HO29             180.000           20.000   3
+ UZ4      var_3            C31    C28    C20    C21              180.000           20.000   3
+ UZ4      var_4            C28    C20    N19    H191             180.000           20.000   3
+ UZ4      var_5            C28    C20    C21    C22              180.000           20.000   3
+ UZ4      var_6            C20    C21    C22    C26              180.000           20.000   3
+ UZ4      var_7            C21    C22    C23    C24              180.000           20.000   3
+ UZ4      var_8            C21    C22    C26    N25              180.000           20.000   3
+ UZ4      var_9            C22    C26    N25    C24              180.000           20.000   2
+ UZ4      var_10           C26    N25    C24    C23                0.000           20.000   3
+ UZ4      var_11           N25    C24    C23    C22              180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ UZ4      chir_01          C20    N19    C21    C28       negativ
+ UZ4      chir_02          C22    C21    C23    C26       positiv
+ UZ4      chir_03          C28    C20    O29    C31       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ UZ4      plan-1            N25       0.020
+ UZ4      plan-1            C24       0.020
+ UZ4      plan-1            C26       0.020
+ UZ4      plan-1            HN25      0.020
+ UZ4      plan-2            C26       0.020
+ UZ4      plan-2            C22       0.020
+ UZ4      plan-2            N25       0.020
+ UZ4      plan-2            O27       0.020
+ UZ4      plan-2            HN25      0.020
+ UZ4      plan-3            C31       0.020
+ UZ4      plan-3            C28       0.020
+ UZ4      plan-3            O32       0.020
+ UZ4      plan-3            H31       0.020
+#
+data_comp_UZ1
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ UZ1           N33    N    NT2       0.000     17.002   -5.115    3.214
+ UZ1           H331   H    H         0.000     17.759   -5.070    2.519
+ UZ1           H332   H    H         0.000     16.035   -4.809    3.385
+ UZ1           C34    C    CH1       0.000     17.452   -5.865    4.336
+ UZ1           H34    H    H         0.000     16.690   -6.426    4.895
+ UZ1           C36    C    CH2       0.000     18.878   -6.443    4.336
+ UZ1           H361   H    H         0.000     19.650   -6.209    3.599
+ UZ1           H362   H    H         0.000     19.230   -7.246    4.987
+ UZ1           C35    C    CH2       0.000     18.583   -5.223    5.158
+ UZ1           H352   H    H         0.000     18.735   -4.193    4.828
+ UZ1           H351   H    H         0.000     18.314   -5.229    6.216
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ UZ1      N33    n/a    C34    START
+ UZ1      H331   N33    .      .
+ UZ1      H332   N33    .      .
+ UZ1      C34    N33    C36    .
+ UZ1      H34    C34    .      .
+ UZ1      C36    C34    C35    .
+ UZ1      H361   C36    .      .
+ UZ1      H362   C36    .      .
+ UZ1      C35    C36    H351   .
+ UZ1      H352   C35    .      .
+ UZ1      H351   C35    .      END
+ UZ1      C34    C35    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ UZ1      C34    N33       single      1.475    0.020
+ UZ1      C34    C35       single      1.524    0.020
+ UZ1      C36    C34       single      1.524    0.020
+ UZ1      C35    C36       single      1.524    0.020
+ UZ1      H331   N33       single      1.033    0.020
+ UZ1      H332   N33       single      1.033    0.020
+ UZ1      H34    C34       single      1.099    0.020
+ UZ1      H351   C35       single      1.092    0.020
+ UZ1      H352   C35       single      1.092    0.020
+ UZ1      H361   C36       single      1.092    0.020
+ UZ1      H362   C36       single      1.092    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ UZ1      H331   N33    H332    109.500    3.000
+ UZ1      H331   N33    C34     109.500    3.000
+ UZ1      H332   N33    C34     109.500    3.000
+ UZ1      N33    C34    H34     109.500    3.000
+ UZ1      N33    C34    C36     109.500    3.000
+ UZ1      N33    C34    C35     109.500    3.000
+ UZ1      H34    C34    C36     108.340    3.000
+ UZ1      H34    C34    C35     108.340    3.000
+ UZ1      C36    C34    C35      60.000    3.000
+ UZ1      C34    C36    H361    109.470    3.000
+ UZ1      C34    C36    H362    109.470    3.000
+ UZ1      C34    C36    C35      60.000    3.000
+ UZ1      H361   C36    H362    107.900    3.000
+ UZ1      H361   C36    C35     109.470    3.000
+ UZ1      H362   C36    C35     109.470    3.000
+ UZ1      C36    C35    H352    109.470    3.000
+ UZ1      C36    C35    H351    109.470    3.000
+ UZ1      C36    C35    C34      60.000    3.000
+ UZ1      H352   C35    H351    107.900    3.000
+ UZ1      H352   C35    C34     109.470    3.000
+ UZ1      H351   C35    C34     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ UZ1      var_1            H332   N33    C34    C36              180.000           20.000   3
+ UZ1      var_2            N33    C34    C35    C36              180.000           20.000   3
+ UZ1      var_3            N33    C34    C36    C35              180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ UZ1      chir_01          C34    N33    C35    C36       positiv
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-UZ4
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-UZ4  1 SG      2 C28       .           1.640    0.020
+#
+data_link_UZ7-LEU
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ UZ7-LEU  1 C07     2 N         .           1.460    0.020
+#
+data_link_LEU-UZ4
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ LEU-UZ4  1 C       2 N19       .           1.350    0.020
+#
+data_link_UZ4-UZ1
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ UZ4-UZ1  1 C31     2 N33       .           1.400    0.020
+#
+data_link_NA-HOH
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ NA-HOH   1 NA      2 O         .           2.820    0.020
+# ------------------------------------------------------
