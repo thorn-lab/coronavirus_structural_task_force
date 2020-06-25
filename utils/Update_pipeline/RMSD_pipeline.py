@@ -1,0 +1,116 @@
+from prody import *
+import itertools
+import numpy as np
+import seaborn as sb
+import matplotlib.pyplot as plt
+import os
+path = "/Users/kristophernolte/Documents/ThornLab/coronavirus_structural_task_force/pdb/"
+
+def main (id_dict):
+    #RMSD is not done for nsp3, 3c_like_proteinase, surface_glycoprotein
+    #for protein in all_proteins:
+    for protein in id_dict:
+        if protein == "3c_like_proteinase" or protein == "surface_glycoprotein":
+            pass
+        else:
+            pdb_id = open(path + "list.txt")
+            pdb_id = pdb_id.read().split("\n")
+            repo_path = path+protein
+            file_walker(protein, pdb_id, repo_path+"/SARS-CoV-2/")
+
+def file_walker(protein, pdb_id, repo_path):
+    protein_id = []
+    for dirpath, dirnames, files in os.walk(repo_path):
+        for key in pdb_id:
+            if dirpath.endswith(key):
+                protein_id.append(key)
+
+    if len(protein_id) != 0:
+        matrix_maker(protein, protein_id, repo_path)
+    else: pass
+
+def matrix_maker (protein, pdb_id, repo_path):
+    temp = pdb_id[0]
+    doc = open(repo_path+"heatmap_{}.txt".format(protein), "w+")
+    matrix = []
+    liste = []
+    pdb_entrys = {}
+    #Parse all .pdb files
+    for iden in pdb_id:
+        print(iden)
+        pdb_entrys[iden] = parsePDB(repo_path + iden + "/{}.pdb".format(iden))
+
+    for a, b in itertools.product(pdb_id, repeat = 2):
+        # If a changes, a new row starts
+        if a != temp:
+            # All elements have the same lenght
+            liste.extend((len(pdb_id) - len(liste) - 1) * "X")
+            matrix.append(liste)
+            liste = []
+
+        try:
+            #open PDBs
+            pdb1 = pdb_entrys[a]
+            pdb2 = pdb_entrys[b]
+            #align structures
+            try:
+                t1_chA, t2_chA, seqid, overlap = matchChains(pdb1, pdb2)[0]
+                t2_chA, transformation = superpose(t2_chA, t1_chA)
+                # Calculate RMSD
+                rmsd = calcRMSD(t1_chA, t2_chA)
+                # (RMSD/overlap*1/100)
+                liste.append((round(rmsd / overlap * 100, 2)))
+                temp = a
+                # Write in .txt file
+                doc.write(a + "-" + b + " \nRMSD: " + str(rmsd) + ("\n"))
+                doc.write("seqid: {} \n".format(seqid))
+                doc.write("overlap: {}\n".format(overlap))
+                doc.write("weighted-RMSD: {}\n".format((round(rmsd / overlap * 100, 2))))
+
+            except TypeError:
+                temp = a
+                doc.write(a + "-" + b + ": \n")
+                doc.write("TYPE_ERROR\n")
+                liste.append("X")
+
+        except OSError:
+            temp = a
+            doc.write(a + "-" + b + ": \n")
+            doc.write("OSError\n")
+            liste.append("X")
+
+    liste.extend((len(pdb_id) - len(liste) - 1) * "X")
+    matrix.append(liste)
+    doc.close()
+    with open ("/Users/kristophernolte/Documents/Heatmap_arrays/{}_heatmap_CoV-{}.npy".format(protein,"2"), "wb") as f:
+        np.save(f, matrix)
+    try: heatmap(matrix[:len(pdb_id)+1], "viridis", pdb_id, protein, repo_path)
+    except ValueError: pass
+
+def heatmap (matrix, color, pdb_id, protein, repo_path):
+    harvest = np.array(matrix)
+    harvest = np.where(harvest=="X", np.nan, harvest)
+    harvest = harvest.astype(float)
+
+    #CREATING HEATMAP
+    fig, ax = plt.subplots()
+
+    #colorbar
+    heat_map = sb.heatmap(harvest,  cmap= color, annot=True, cbar=True, cbar_kws={'label': '[Å]', "orientation":"vertical"})
+    #linewidth=0.5
+
+    #Lenght of Label
+    heat_map.set_xticks(np.arange(len(pdb_id)))
+    heat_map.set_yticks(np.arange(len(pdb_id)))
+
+    #Labels
+    heat_map.set_xticklabels(pdb_id, rotation = 0)
+    heat_map.set_yticklabels(pdb_id, rotation = 0)
+    ax.set_title("{} overlap weighted RMSD".format(protein))
+
+    #Show and Save
+    plt.show()
+    figure = heat_map.get_figure()
+    figure.savefig(repo_path+'heatmap_{}.png'.format(protein), dpi=800)
+    figure.savefig(repo_path + 'heatmap_{}.pdf'.format(protein), dpi=800)
+
