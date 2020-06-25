@@ -1,30 +1,30 @@
 from Bio import SeqIO
-#Biopython: https://biopython.org/, pip install biopython
 import requests
 import os
 import collections
+import datetime
+import ID_getter
+import to_old
+import mk_Alignment_strc_vs_seq
+import RMSD_pipeline
+import organizer
 
 '''
-This script does this task:
-<It will compare all PDB entrys of a taxonomy with the protein sequences
-in /FASTA Files and create a Repository of all PDB entrys which are alligned with the proteins sequences
-and the taxonomy. Structure: protein_name/taxo_name/id. In each ID folder you will find a mtz, cif and pdb file>
-And was written in 2020 by Kristopher Nolte, Thorn Lab, University of Wuerzburg
-as part of the Coronavirus Structural Taskforce, insidecorona.net
-
 Fasta Files/*.fasta is the document with  fasta entrys
 The folders are named after the protein_name and the taxo_names in the fasta. You have to rename them there if you want. You can see at line 64 how they are seperated
 '''
 
-#where do you want to have your files downloaded:
-root = "/CoV_Task_Force"
+time = datetime.datetime.now()
+time = time.strftime("%d")+"_"+time.strftime("%m")
 
-#reading the fasta
-taxo = str(input("press 1 for SARS-CoV, press 2 for SARS-CoV2"))
-if taxo == "1":
-    seq_fasta = list(SeqIO.parse("Fasta Files/seq_SARS_1.fasta", "fasta"))
-if taxo == "2":
-    seq_fasta = list(SeqIO.parse("Fasta Files/seq_SARS_2.fasta", "fasta"))
+repo_path = "/Users/kristophernolte/Documents/ThornLab/coronavirus_structural_task_force/pdb"
+dropbox_path = "/Users/kristophernolte/Dropbox (University of Wuerzburg)/insidecorona_thornlab/task_force/"
+seq_fasta = list(SeqIO.parse("Fasta_Files/seq_SARS_2.fasta", "fasta"))
+
+print("Starting the Wednesday-Update")
+all_pdb_id = ID_getter.main()
+pdb_id = all_pdb_id[0]
+pdb_id_rev = all_pdb_id[1]
 
 def mk_dir(dir_path):
     #function to create new folders
@@ -47,29 +47,6 @@ def get_pdb (element,target,format):
     with open(target+os.sep+"{}/{}.{}".format(element,element,format), 'wb') as f:
         f.write(r.content)
 
-def org_search(taxo):
-    #taxonomy search request
-    if taxo == 1:
-        taxo = "Severe acute respiratory syndrome coronavirus"
-    if taxo == 2:
-        taxo = "Severe acute respiratory syndrome coronavirus 2"
-    elif __name__ == '__main__':
-        url = 'http://www.rcsb.org/pdb/rest/search'
-    org_query_text="""
-<?xml version = "1.0" encoding = "UTF-8"?>
-<orgPdbQuery>
-<version> B0905 </version>
-<queryType>org.pdb.query.simple.OrganismQuery</queryType>
-<description></description>
-<organismName>Severe acute respiratory syndrome coronavirus</organismName>
-</orgPdbQuery>
-"""
-    header = {'Content-Type': 'application/x-www-form-urlencoded'}
-    response = requests.post(url, data=org_query_text, headers=header)
-    if response.status_code == 200:
-        temp = response.text.lower()
-        temp = temp.split("\n")
-        return temp[:-1]
 
 def blast_search (i):
     #blast search request
@@ -112,10 +89,10 @@ def namer (i):
 
 def main():
     i = 0
-    doc = open(root+"/matches_{}.txt".format(taxo), "w+")
+    doc = open(dropbox_path+"weekly_updates/new_structures_{}.txt".format(time), "w+")
     is_sorted = []
-    pdb_id = org_search(taxo)
-    while i in range(len(seq_fasta)):
+    id_dict = {}
+    while i in range(len(seq_fasta)-10):
         blast = blast_search(i)
         protein_name = namer(i)[0]
         taxo_name = namer(i)[1]
@@ -124,31 +101,83 @@ def main():
             match = list(set(blast) & set(pdb_id))
             if len(match) != 0:
                 #creating folders protein/taxonomy/id
-                target = root + os.sep + protein_name
+                target = repo_path + os.sep + protein_name
                 mk_dir(target)
                 target += os.sep + taxo_name
                 mk_dir(target)
                 for element in match:
-                    #creating a folder for the id an dowloading the relevant data
                     mk_dir(target+os.sep+element)
                     get_mtz(element,target)
                     get_pdb(element,target,"pdb")
                     get_pdb(element,target,"cif")
-                is_sorted +=match
+                is_sorted += match
                 match = ' '.join(map(str, match))
                 doc.write(seq_fasta[i].description+":\n"+"{}>".format(i+1)+match)
+                id_dict[protein_name] = match.split(" ")
                 doc.write("\n")
         i +=1
         print("{} %".format(int((i/len(seq_fasta)*100))))
 
     #IDs which were assigned more than once
     doc.write("Assigned twice or more: \n>{}\n".format([item for item, count in collections.Counter(is_sorted).items() if count > 1]))
+    twice_assigned(pdb_id, id_dict)
 
     #IDs which could not be assigned
-    to_be_sorted = set(pdb_id).difference(is_sorted)
-    to_be_sorted= ' '.join(map(str, to_be_sorted))
-    doc.write("Not assigned: \n>{}".format(to_be_sorted))
+    not_assigned = set(pdb_id).difference(is_sorted)
+    not_assigned= ' '.join(map(str, not_assigned))
+    doc.write("Not assigned: \n>{}".format(not_assigned))
     doc.close()
+    print("Added new structures, now updating Alignment")
 
-if __name__== '__main__':
-    main()
+    #Clean up the dict
+    for x in id_dict.copy():
+        if id_dict[x] == []: del id_dict[x]
+
+    #Make the structure alignment for the new structures
+    mk_Alignment_strc_vs_seq.main(id_dict, pdb_id)
+    print("Alignment up to date, now updating RMSD")
+    #Make RMSD
+    RMSD_pipeline.main(id_dict)
+    #Download not assigned
+    organizer.main(not_assigned.split(" "), "not_assigned")
+
+
+def twice_assigned (pdb_id, id_dict):
+    #If id is twiced assigned it gets moved to the multi_protein folders
+    #I am sure theres a smarter way for this but I am lazy
+    def mover (key, proteins, folder):
+        id_dict[folder].append(key)
+        for prot in proteins:
+            id_dict[prot].remove(key)
+            try:
+                try: os.replace(repo_path+"/{}/SARS-CoV-2/{}".format(prot, key),repo_path+"/{}/SARS-CoV-2/{}".format(folder, key))
+                except OSError: pass
+            except FileNotFoundError: pass
+
+    for id in pdb_id:
+        try:
+            if id_dict["rna_polymerase"] != None:
+                if id in id_dict["rna_polymerase"] and id in id_dict["nsp8"] and id in id_dict["nsp7"]:
+                    id_dict["rna_polymerase-nsp7-nsp8"] = []
+                    mover(id,["rna_polymerase","nsp8","nsp7"], "rna_polymerase-nsp7-nsp8")
+        except KeyError: pass
+
+        try:
+            if id_dict["nsp8"] != None and id_dict["nsp7"]!= None:
+                if id in id_dict["nsp8"] and id in id_dict["nsp7"]:
+                        id_dict["nsp8-nsp7"] = []
+                        mover(id,["nsp8","nsp7"], "nsp8-nsp7")
+        except KeyError: pass
+
+        try:
+            if id_dict["nsp10"] != None and id_dict["methyltransferase"]!= None:
+                if id in id_dict["methyltransferase"] and id in id_dict["nsp10"]:
+                        id_dict["methyltransferase-nsp10"] = []
+                        mover(id,["methyltransferase", "nsp10"] , "methyltransferase-nsp10")
+        except KeyError: pass
+
+
+main()
+print("RMSD up to date, starting Revision")
+to_old.main(pdb_id_rev, dropbox_path)
+print("Done")
