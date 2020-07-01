@@ -1,0 +1,401 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.51
+_lib_update       11/07/18
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+UZ7      UZ7 '.                                   ' .                  15   9 .
+V1V      V1V '.                                   ' .                  20   9 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-V1V  CYS      .        .        V1V      .        .
+ bond_CYS-SG_=_V1V-C23
+UZ7-LEU  UZ7      .        .        LEU      .        .
+ bond_UZ7-C07_=_LEU-N
+LEU-V1V  LEU      .        .        V1V      .        .
+ bond_LEU-C_=_V1V-N05
+V1V-APY  V1V      .        .        APY      .        .
+ bond_V1V-C26_=_APY-N
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_UZ7
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ UZ7           O08    O    O         0.000      6.237    2.117   23.262
+ UZ7           C07    C    C1        0.000      5.243    1.501   23.513
+ UZ7           H07    H    H         0.000      5.304    0.516   23.944
+ UZ7           O09    O    O2        0.000      3.905    2.124   23.217
+ UZ7           C10    C    CR6       0.000      3.026    3.074   24.070
+ UZ7           C15    C    CR16      0.000      1.713    2.610   24.480
+ UZ7           H15    H    H         0.000      1.410    1.604   24.218
+ UZ7           C14    C    CR16      0.000      0.809    3.430   25.215
+ UZ7           H14    H    H         0.000     -0.143    3.020   25.530
+ UZ7           C11    C    CR16      0.000      3.303    4.435   24.385
+ UZ7           H11    H    H         0.000      4.239    4.874   24.061
+ UZ7           C12    C    CR16      0.000      2.371    5.237   25.122
+ UZ7           H12    H    H         0.000      2.641    6.257   25.366
+ UZ7           C13    C    CR16      0.000      1.126    4.753   25.539
+ UZ7           H13    H    H         0.000      0.435    5.378   26.091
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ UZ7      O08    n/a    C07    START
+ UZ7      C07    O08    O09    .
+ UZ7      H07    C07    .      .
+ UZ7      O09    C07    C10    .
+ UZ7      C10    O09    C11    .
+ UZ7      C15    C10    C14    .
+ UZ7      H15    C15    .      .
+ UZ7      C14    C15    H14    .
+ UZ7      H14    C14    .      .
+ UZ7      C11    C10    C12    .
+ UZ7      H11    C11    .      .
+ UZ7      C12    C11    C13    .
+ UZ7      H12    C12    .      .
+ UZ7      C13    C12    H13    .
+ UZ7      H13    C13    .      END
+ UZ7      C14    C13    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ UZ7      C14    C13       aromatic    1.390    0.020
+ UZ7      C14    C15       aromatic    1.390    0.020
+ UZ7      C13    C12       aromatic    1.390    0.020
+ UZ7      C12    C11       aromatic    1.390    0.020
+ UZ7      C15    C10       aromatic    1.390    0.020
+ UZ7      C11    C10       aromatic    1.390    0.020
+ UZ7      C10    O09       single      1.370    0.020
+ UZ7      C07    O08       double      1.220    0.020
+ UZ7      O09    C07       single      1.454    0.020
+ UZ7      H14    C14       single      1.083    0.020
+ UZ7      H13    C13       single      1.083    0.020
+ UZ7      H12    C12       single      1.083    0.020
+ UZ7      H15    C15       single      1.083    0.020
+ UZ7      H11    C11       single      1.083    0.020
+ UZ7      H07    C07       single      1.077    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ UZ7      O08    C07    H07     123.000    3.000
+ UZ7      O08    C07    O09     120.000    3.000
+ UZ7      H07    C07    O09     120.000    3.000
+ UZ7      C07    O09    C10     120.000    3.000
+ UZ7      O09    C10    C15     120.000    3.000
+ UZ7      O09    C10    C11     120.000    3.000
+ UZ7      C15    C10    C11     120.000    3.000
+ UZ7      C10    C15    H15     120.000    3.000
+ UZ7      C10    C15    C14     120.000    3.000
+ UZ7      H15    C15    C14     120.000    3.000
+ UZ7      C15    C14    H14     120.000    3.000
+ UZ7      C15    C14    C13     120.000    3.000
+ UZ7      H14    C14    C13     120.000    3.000
+ UZ7      C10    C11    H11     120.000    3.000
+ UZ7      C10    C11    C12     120.000    3.000
+ UZ7      H11    C11    C12     120.000    3.000
+ UZ7      C11    C12    H12     120.000    3.000
+ UZ7      C11    C12    C13     120.000    3.000
+ UZ7      H12    C12    C13     120.000    3.000
+ UZ7      C12    C13    H13     120.000    3.000
+ UZ7      C12    C13    C14     120.000    3.000
+ UZ7      H13    C13    C14     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ UZ7      var_1            O08    C07    O09    C10              -86.257           20.000   3
+ UZ7      var_2            C07    O09    C10    C11               69.994           20.000   3
+ UZ7      CONST_1          O09    C10    C15    C14                0.000            0.000   0
+ UZ7      CONST_2          C10    C15    C14    C13                0.000            0.000   0
+ UZ7      CONST_3          C15    C14    C13    C12                0.000            0.000   0
+ UZ7      CONST_4          O09    C10    C11    C12                0.000            0.000   0
+ UZ7      CONST_5          C10    C11    C12    C13                0.000            0.000   0
+ UZ7      CONST_6          C11    C12    C13    C14                0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ UZ7      plan-1            C14       0.020
+ UZ7      plan-1            C13       0.020
+ UZ7      plan-1            C15       0.020
+ UZ7      plan-1            H14       0.020
+ UZ7      plan-1            C12       0.020
+ UZ7      plan-1            C11       0.020
+ UZ7      plan-1            C10       0.020
+ UZ7      plan-1            H13       0.020
+ UZ7      plan-1            H12       0.020
+ UZ7      plan-1            H15       0.020
+ UZ7      plan-1            H11       0.020
+ UZ7      plan-1            O09       0.020
+ UZ7      plan-2            C07       0.020
+ UZ7      plan-2            O08       0.020
+ UZ7      plan-2            O09       0.020
+ UZ7      plan-2            H07       0.020
+#
+data_comp_V1V
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ V1V           O27    O    O         0.000      6.664   -2.538   19.253
+ V1V           C26    C    C1        0.000      7.820   -2.598   19.525
+ V1V           H26    H    H         0.000      8.467   -1.864   19.076
+ V1V           C23    C    CH1       0.000      8.511   -3.686   20.512
+ V1V           H23    H    H         0.000      8.402   -4.718   20.152
+ V1V           O24    O    OH1       0.000      9.851   -3.292   20.637
+ V1V           HO24   H    H         0.000     10.309   -3.911   21.219
+ V1V           C04    C    C         0.000      8.050   -3.503   22.132
+ V1V           N05    N    N         0.000      6.812   -3.095   22.172
+ V1V           HN05   H    H         0.000      6.397   -2.942   23.012
+ V1V           C03    C    CH2       0.000      8.267   -4.879   22.858
+ V1V           H031   H    H         0.000      9.247   -4.815   23.335
+ V1V           H032   H    H         0.000      8.297   -5.633   22.069
+ V1V           C02    C    CH2       0.000      7.222   -5.267   23.893
+ V1V           H021   H    H         0.000      6.893   -4.359   24.403
+ V1V           H022   H    H         0.000      7.690   -5.939   24.616
+ V1V           C01    C    CH3       0.000      6.010   -5.965   23.250
+ V1V           H013   H    H         0.000      5.552   -5.315   22.548
+ V1V           H012   H    H         0.000      6.326   -6.848   22.754
+ V1V           H011   H    H         0.000      5.304   -6.221   24.000
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ V1V      O27    n/a    C26    START
+ V1V      C26    O27    C23    .
+ V1V      H26    C26    .      .
+ V1V      C23    C26    C04    .
+ V1V      H23    C23    .      .
+ V1V      O24    C23    HO24   .
+ V1V      HO24   O24    .      .
+ V1V      C04    C23    C03    .
+ V1V      N05    C04    HN05   .
+ V1V      HN05   N05    .      .
+ V1V      C03    C04    C02    .
+ V1V      H031   C03    .      .
+ V1V      H032   C03    .      .
+ V1V      C02    C03    C01    .
+ V1V      H021   C02    .      .
+ V1V      H022   C02    .      .
+ V1V      C01    C02    H011   .
+ V1V      H013   C01    .      .
+ V1V      H012   C01    .      .
+ V1V      H011   C01    .      END
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ V1V      C01    C02       single      1.513    0.020
+ V1V      C02    C03       single      1.524    0.020
+ V1V      C03    C04       single      1.510    0.020
+ V1V      N05    C04       deloc       1.330    0.020
+ V1V      C04    C23       single      1.500    0.020
+ V1V      O24    C23       single      1.432    0.020
+ V1V      C23    C26       single      1.510    0.020
+ V1V      C26    O27       double      1.220    0.020
+ V1V      H011   C01       single      1.059    0.020
+ V1V      H012   C01       single      1.059    0.020
+ V1V      H013   C01       single      1.059    0.020
+ V1V      H021   C02       single      1.092    0.020
+ V1V      H022   C02       single      1.092    0.020
+ V1V      H031   C03       single      1.092    0.020
+ V1V      H032   C03       single      1.092    0.020
+ V1V      HN05   N05       single      0.954    0.020
+ V1V      H23    C23       single      1.099    0.020
+ V1V      HO24   O24       single      0.967    0.020
+ V1V      H26    C26       single      1.077    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ V1V      O27    C26    H26     123.000    3.000
+ V1V      O27    C26    C23     120.500    3.000
+ V1V      H26    C26    C23     120.000    3.000
+ V1V      C26    C23    H23     108.810    3.000
+ V1V      C26    C23    O24     109.470    3.000
+ V1V      C26    C23    C04     109.470    3.000
+ V1V      H23    C23    O24     109.470    3.000
+ V1V      H23    C23    C04     108.810    3.000
+ V1V      O24    C23    C04     109.470    3.000
+ V1V      C23    O24    HO24    109.470    3.000
+ V1V      C23    C04    N05     116.500    3.000
+ V1V      C23    C04    C03     120.000    3.000
+ V1V      N05    C04    C03     116.500    3.000
+ V1V      C04    N05    HN05    120.000    3.000
+ V1V      C04    C03    H031    109.470    3.000
+ V1V      C04    C03    H032    109.470    3.000
+ V1V      C04    C03    C02     109.470    3.000
+ V1V      H031   C03    H032    107.900    3.000
+ V1V      H031   C03    C02     109.470    3.000
+ V1V      H032   C03    C02     109.470    3.000
+ V1V      C03    C02    H021    109.470    3.000
+ V1V      C03    C02    H022    109.470    3.000
+ V1V      C03    C02    C01     111.000    3.000
+ V1V      H021   C02    H022    107.900    3.000
+ V1V      H021   C02    C01     109.470    3.000
+ V1V      H022   C02    C01     109.470    3.000
+ V1V      C02    C01    H013    109.470    3.000
+ V1V      C02    C01    H012    109.470    3.000
+ V1V      C02    C01    H011    109.470    3.000
+ V1V      H013   C01    H012    109.470    3.000
+ V1V      H013   C01    H011    109.470    3.000
+ V1V      H012   C01    H011    109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ V1V      var_1            O27    C26    C23    C04              -67.756           20.000   3
+ V1V      var_2            C26    C23    O24    HO24             180.000           20.000   3
+ V1V      var_3            C26    C23    C04    C03              180.000           20.000   3
+ V1V      CONST_1          C23    C04    N05    HN05             180.000            0.000   0
+ V1V      var_4            C23    C04    C03    C02              180.000           20.000   3
+ V1V      var_5            C04    C03    C02    C01              180.000           20.000   3
+ V1V      var_6            C03    C02    C01    H011             180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ V1V      chir_01          C23    C04    O24    C26       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ V1V      plan-1            C04       0.020
+ V1V      plan-1            C03       0.020
+ V1V      plan-1            N05       0.020
+ V1V      plan-1            C23       0.020
+ V1V      plan-1            HN05      0.020
+ V1V      plan-2            C26       0.020
+ V1V      plan-2            C23       0.020
+ V1V      plan-2            O27       0.020
+ V1V      plan-2            H26       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-V1V
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-V1V  1 SG      2 C23       .           1.710    0.020
+#
+data_link_UZ7-LEU
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ UZ7-LEU  1 C07     2 N         .           1.440    0.020
+#
+data_link_LEU-V1V
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ LEU-V1V  1 C       2 N05       .           1.370    0.020
+#
+data_link_V1V-APY
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ V1V-APY  1 C26     2 N         .           1.440    0.020
+# ------------------------------------------------------
