@@ -92,7 +92,7 @@ def main():
     doc = open(dropbox_path+"weekly_updates/new_structures_{}.txt".format(time), "w+")
     is_sorted = []
     id_dict = {}
-    while i in range(len(seq_fasta)-10):
+    while i in range(len(seq_fasta)):
         blast = blast_search(i)
         protein_name = namer(i)[0]
         taxo_name = namer(i)[1]
@@ -138,6 +138,7 @@ def main():
     print("Alignment up to date, now updating RMSD")
     #Make RMSD
     RMSD_pipeline.main(id_dict)
+    print("{} new structures".format(len(pdb_id)))
     #Download not assigned
     organizer.main(not_assigned.split(" "), "not_assigned")
 
@@ -178,6 +179,6 @@ def twice_assigned (pdb_id, id_dict):
 
 
 main()
-print("RMSD up to date, starting Revision")
 to_old.main(pdb_id_rev, dropbox_path)
+
 print("Done")

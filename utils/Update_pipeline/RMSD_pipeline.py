@@ -1,4 +1,5 @@
 from prody import *
+confProDy(verbosity='none')
 import itertools
 import numpy as np
 import seaborn as sb
@@ -9,14 +10,11 @@ path = "/Users/kristophernolte/Documents/ThornLab/coronavirus_structural_task_fo
 def main (id_dict):
     #RMSD is not done for nsp3, 3c_like_proteinase, surface_glycoprotein
     #for protein in all_proteins:
+    pdb_id = open(path + "list.txt")
+    pdb_id = pdb_id.read().split("\n")
     for protein in id_dict:
-        if protein == "3c_like_proteinase" or protein == "surface_glycoprotein":
-            pass
-        else:
-            pdb_id = open(path + "list.txt")
-            pdb_id = pdb_id.read().split("\n")
-            repo_path = path+protein
-            file_walker(protein, pdb_id, repo_path+"/SARS-CoV-2/")
+        repo_path = path+protein
+        file_walker(protein, pdb_id, repo_path+"/SARS-CoV-2/")
 
 def file_walker(protein, pdb_id, repo_path):
     protein_id = []
@@ -29,63 +27,48 @@ def file_walker(protein, pdb_id, repo_path):
         matrix_maker(protein, protein_id, repo_path)
     else: pass
 
-def matrix_maker (protein, pdb_id, repo_path):
-    temp = pdb_id[0]
-    doc = open(repo_path+"heatmap_{}.txt".format(protein), "w+")
-    matrix = []
-    liste = []
+def rmsdler (pdb1, pdb2, doc):
+    try:
+        t1_chA, t2_chA, seqid, overlap = matchChains(pdb1, pdb2)[0]
+        t2_chA, transformation = superpose(t2_chA, t1_chA)
+        # Calculate RMSD
+        rmsd = calcRMSD(t1_chA, t2_chA)
+        rmsd_weighted = round(rmsd / overlap * 100, 2)
+        doc.write("RMSD: " + str(rmsd) + "\n")
+        doc.write("seqid: {} \n".format(seqid))
+        doc.write("overlap: {}\n".format(overlap))
+        doc.write("weighted-RMSD: {}\n".format(rmsd_weighted))
+        return rmsd_weighted
+    except TypeError:
+        doc.write("TYPE_ERROR\n")
+        return None
+
+def matrix_maker (protein, pdb_id, repo_path, taxo):
     pdb_entrys = {}
+    doc = open(repo_path + "heatmap_{}.txt".format(protein), "w+")
     #Parse all .pdb files
     for iden in pdb_id:
-        print(iden)
         pdb_entrys[iden] = parsePDB(repo_path + iden + "/{}.pdb".format(iden))
 
-    for a, b in itertools.product(pdb_id, repeat = 2):
-        # If a changes, a new row starts
-        if a != temp:
-            # All elements have the same lenght
-            liste.extend((len(pdb_id) - len(liste) - 1) * "X")
-            matrix.append(liste)
-            liste = []
-
-        try:
-            #open PDBs
-            pdb1 = pdb_entrys[a]
-            pdb2 = pdb_entrys[b]
-            #align structures
+    l = itertools.product(pdb_id, repeat=2)
+    matrix = np.array(list(l))
+    matrix = np.array_split(matrix, len(pdb_id))
+    rmsd_matrix = np.full((len(pdb_id),len(pdb_id)),None)
+    for i, row in enumerate(matrix):
+        for j, element in enumerate(row):
+            doc.write(element[0] + "-" + element[1] + " \n")
             try:
-                t1_chA, t2_chA, seqid, overlap = matchChains(pdb1, pdb2)[0]
-                t2_chA, transformation = superpose(t2_chA, t1_chA)
-                # Calculate RMSD
-                rmsd = calcRMSD(t1_chA, t2_chA)
-                # (RMSD/overlap*1/100)
-                liste.append((round(rmsd / overlap * 100, 2)))
-                temp = a
-                # Write in .txt file
-                doc.write(a + "-" + b + " \nRMSD: " + str(rmsd) + ("\n"))
-                doc.write("seqid: {} \n".format(seqid))
-                doc.write("overlap: {}\n".format(overlap))
-                doc.write("weighted-RMSD: {}\n".format((round(rmsd / overlap * 100, 2))))
+                pdb1 = pdb_entrys[element[0]]
+                pdb2 = pdb_entrys[element[1]]
+                rmsd_matrix[i][j] = rmsdler(pdb1, pdb2, doc)
+            except OSError:
+                doc.write("OSError\n")
+                rmsd_matrix[i][j] = None
 
-            except TypeError:
-                temp = a
-                doc.write(a + "-" + b + ": \n")
-                doc.write("TYPE_ERROR\n")
-                liste.append("X")
-
-        except OSError:
-            temp = a
-            doc.write(a + "-" + b + ": \n")
-            doc.write("OSError\n")
-            liste.append("X")
-
-    liste.extend((len(pdb_id) - len(liste) - 1) * "X")
-    matrix.append(liste)
     doc.close()
-    with open ("/Users/kristophernolte/Documents/Heatmap_arrays/{}_heatmap_CoV-{}.npy".format(protein,"2"), "wb") as f:
-        np.save(f, matrix)
-    try: heatmap(matrix[:len(pdb_id)+1], "viridis", pdb_id, protein, repo_path)
-    except ValueError: pass
+    with open("/Users/kristophernolte/Documents/Heatmap_arrays/{}_heatmap_CoV-{}.npy".format(protein, taxo), "wb") as f:
+        np.save(f, rmsd_matrix)
+    heatmap(rmsd_matrix[:len(pdb_id) + 1], "viridis", pdb_id, protein, repo_path)
 
 def heatmap (matrix, color, pdb_id, protein, repo_path):
     harvest = np.array(matrix)
@@ -100,8 +83,8 @@ def heatmap (matrix, color, pdb_id, protein, repo_path):
     #linewidth=0.5
 
     #Lenght of Label
-    heat_map.set_xticks(np.arange(len(pdb_id)))
-    heat_map.set_yticks(np.arange(len(pdb_id)))
+    heat_map.set_xticks(np.arange(len(pdb_id))+0.5)
+    heat_map.set_yticks(np.arange(len(pdb_id))+0.5)
 
     #Labels
     heat_map.set_xticklabels(pdb_id, rotation = 0)
@@ -112,5 +95,4 @@ def heatmap (matrix, color, pdb_id, protein, repo_path):
     plt.show()
     figure = heat_map.get_figure()
     figure.savefig(repo_path+'heatmap_{}.png'.format(protein), dpi=800)
-    figure.savefig(repo_path + 'heatmap_{}.pdf'.format(protein), dpi=800)
-
+    figure.savefig(repo_path+'heatmap_{}.pdf'.format(protein), dpi=800)
