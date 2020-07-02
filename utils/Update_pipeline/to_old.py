@@ -53,7 +53,7 @@ def main (pdb_id, dropbox_path):
                 get_pdb(key, dirpath,"pdb")
                 get_pdb(key, dirpath,"cif")
                 Doi.main(dropbox_path, dirpath, key)
-
+    print("{} have been revised".format(pdb_id))
 #old1 = 22.04 and before
 #old2 = 29.04
 #old3 = 06.05
