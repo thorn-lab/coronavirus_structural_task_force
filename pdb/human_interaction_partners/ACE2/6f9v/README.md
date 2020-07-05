@@ -8,6 +8,8 @@
 
 **Method**: X-Ray Diffraction
 
+
+
 ## Basefolder
 
 6f9v.pdb and 6f9v.cif - the coordinates of the threedimensional molecular model
@@ -49,7 +51,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  1.21|  0.17 %|
 
- 
+**Auspex Pathologies**<br> bad or missing beam stop (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/ACE2/6f9v/validation/auspex/6f9v_auspex_comments.txt))
 
  
 

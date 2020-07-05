@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+This X-ray crystal structure of SARS-CoV RNA-replicase (NSP9) was phased using multi-wavelength anomalous dispersion to 2.8Å resolution. This protein has a unique fold forming a dimer through a GXXXG motif which is biologically important & seen in solution.
+
 ## Basefolder
 
 1uw7.pdb and 1uw7.cif - the coordinates of the threedimensional molecular model

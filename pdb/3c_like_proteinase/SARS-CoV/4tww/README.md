@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+Full length 3C-like protease from SARS-CoV forming a dimer with a bromobenzoyl (S,R)-N-decalin type inhibitor in the active site. This X-ray crystal structure has data to a resolution of 2.42Å.
+
 ## Basefolder
 
 4tww.pdb and 4tww.cif - the coordinates of the threedimensional molecular model

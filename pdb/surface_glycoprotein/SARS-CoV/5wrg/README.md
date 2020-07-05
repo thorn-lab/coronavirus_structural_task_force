@@ -8,6 +8,10 @@
 
 **Method**: Cryo-EM
 
+## Description
+
+The spike receptor-binding domain (RBD) attaches the virus to ACE2. The homo trimer is a 3 chain structure. The conformation determined at 4.3 A resolution is three-fold symmetric and has the three RBD 1 (CTD1s) of S1 in down-positions. The binding to ACE2 is not possible, suggesting that it represents a receptor-binding inactive state.
+
 ## Basefolder
 
 5wrg.pdb and 5wrg.cif - the coordinates of the threedimensional molecular model

@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+Full length 3C-like protease from SARS-CoV forming a monomer with with a small molecule inhibitor in the active site. This X-ray crystal structure has data to a resolution of 1.598Å.
+
 ## Basefolder
 
 4mds.pdb and 4mds.cif - the coordinates of the threedimensional molecular model

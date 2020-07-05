@@ -8,6 +8,8 @@
 
 **Method**: X-Ray Diffraction
 
+
+
 ## Basefolder
 
 5maj.pdb and 5maj.cif - the coordinates of the threedimensional molecular model

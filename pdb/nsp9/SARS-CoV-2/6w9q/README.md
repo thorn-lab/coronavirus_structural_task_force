@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+This X-ray crystal structure of SARS-CoV2 RNA-replicase (NSP9) was phased using PDB entry 1qz8 for molecular replacement & has data to a resolution of 2.05Å. N-terminus has an extra 7 residues that forms beta strand hydrogen fold with the normal N-terminus of NSP9. Structure published alongside PDB entry 6wxd.
+
 ## Basefolder
 
 6w9q.pdb and 6w9q.cif - the coordinates of the threedimensional molecular model

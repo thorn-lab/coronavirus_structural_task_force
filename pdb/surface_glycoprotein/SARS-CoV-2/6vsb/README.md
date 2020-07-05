@@ -8,6 +8,10 @@
 
 **Method**: Cryo-EM
 
+## Description
+
+The EM sturcture of spike glycoprotein shows a single receptor-binding domain up
+
 ## Basefolder
 
 6vsb.pdb and 6vsb.cif - the coordinates of the threedimensional molecular model

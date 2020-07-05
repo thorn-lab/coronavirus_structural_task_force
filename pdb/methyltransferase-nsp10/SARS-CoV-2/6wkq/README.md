@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+NSP16-NSP10 Heterodimer from SARS-CoV-2 in Complex with Sinefungin. Chain A and C show nsp-16, the methyltransferase that interacts with nsp-10 (chain B,D) to mediate mRNA cap methylation. Sinefungin is known to inhibit DNA-methyltransferases which could be used to inactivate complex and immune system invasion of virus.
+
 ## Basefolder
 
 6wkq.pdb and 6wkq.cif - the coordinates of the threedimensional molecular model

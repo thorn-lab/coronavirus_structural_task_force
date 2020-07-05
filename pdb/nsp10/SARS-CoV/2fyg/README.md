@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+NSP10 from Sars coronavirus. Single domain protein consisting of a pair of antiparallel N-terminal helices stacked against an irregular beta-sheet,a coil-rich C terminus, and two Zn fingers. Nsp10 represents a novel fold and is the first structural representative of this family of Zn finger proteins found so far exclusively in coronaviruses. Exact role within the replicase complex is still not clear.
+
 ## Basefolder
 
 2fyg.pdb and 2fyg.cif - the coordinates of the threedimensional molecular model

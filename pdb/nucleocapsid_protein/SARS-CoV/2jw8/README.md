@@ -1,8 +1,20 @@
-# Base folder 2jw8
+# PDB 2jw8
 
-## Files downloaded from wwPDB:
+## Overview
 
-2jw8.pdb and 2jw8.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: nucleocapsid protein
+
+**Organism**: SARS-CoV
+
+**Method**: NMR
+
+## Description
+
+This SAIL-NMR structure shows the C-terminal dimerization domain of SARS-CoV nucleocapsid protein (N). The structure is a homodimer and was modeled by the stereo-array isotope labeling (SAIL) method to determine a high-quality solution structure. The selection criteria for this structure was the fact that it has the least restraint violations.
+
+## Basefolder
+
+2jw8.pdb and 2jw8.cif - the coordinates of the threedimensional molecular model
 
 
 

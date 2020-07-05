@@ -8,6 +8,10 @@
 
 **Method**: Cryo-EM
 
+## Description
+
+The spike receptor-binding domain S attaches the virus to ACE2, mediated by a receptor-binding domain (RBD). The homo trimer is a 3 chain structure of spike glycoprotein, Conformation 1 in its pre-fusion conformation. It shows, that HR1 region and the central helix are potential targets for eliciting broadly neutralizing antibodies.
+
 ## Basefolder
 
 5x58.pdb and 5x58.cif - the coordinates of the threedimensional molecular model

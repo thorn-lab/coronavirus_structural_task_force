@@ -8,6 +8,8 @@
 
 **Method**: X-Ray Diffraction
 
+
+
 ## Basefolder
 
 3k24.pdb and 3k24.cif - the coordinates of the threedimensional molecular model

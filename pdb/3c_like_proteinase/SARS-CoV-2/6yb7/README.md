@@ -8,6 +8,8 @@
 
 **Method**: X-Ray Diffraction
 
+
+
 ## Basefolder
 
 6yb7.pdb and 6yb7.cif - the coordinates of the threedimensional molecular model

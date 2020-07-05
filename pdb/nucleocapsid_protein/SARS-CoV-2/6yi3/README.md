@@ -1,8 +1,20 @@
-# Base folder 6yi3
+# PDB 6yi3
 
-## Files downloaded from wwPDB:
+## Overview
 
-6yi3.pdb and 6yi3.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: nucleocapsid protein
+
+**Organism**: SARS-CoV-2
+
+**Method**: NMR
+
+## Description
+
+This NMR structure shows the N-terminal RNA binding domain of SARS-CoV-2 nucleocapsid protein (N). The structure is a monomer of one chain. The N-terminal domain provides structural features for RNA binding. The selection criteria for this structure was the fact that it has the least restraint violations.
+
+## Basefolder
+
+6yi3.pdb and 6yi3.cif - the coordinates of the threedimensional molecular model
 
 
 

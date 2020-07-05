@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+The spike receptor-binding domain (RBD) attaches the virus to ACE2. The hetero trimer is a 6 chain structure, a molecular basis for a potent human neutralizing antibody targeting SARS-CoV-2 RBD.
+
 ## Basefolder
 
 7c01.pdb and 7c01.cif - the coordinates of the threedimensional molecular model

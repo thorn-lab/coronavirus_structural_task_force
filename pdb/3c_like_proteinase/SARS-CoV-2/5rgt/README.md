@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+Full length 3C-like protease from SARS-CoV-2 forming a dimer. This protein is bound to a small molecule frag, N-[(1R)-2-(tert-butylamino)-2-oxo-1-(pyridin-3-yl)ethyl]-N-(5-tert-butyl-1,2-oxazol-3-yl)propanamide. This X-ray crystal structure has data to a resolution of 2.22Å
+
 ## Basefolder
 
 5rgt.pdb and 5rgt.cif - the coordinates of the threedimensional molecular model
@@ -49,7 +53,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  1.24|  0.33 %|
 
- 
+**Auspex Pathologies**<br> ice rings (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV-2/5rgt/validation/auspex/5rgt_auspex_comments.txt))
 
  
 

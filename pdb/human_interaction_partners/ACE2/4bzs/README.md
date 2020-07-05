@@ -8,6 +8,8 @@
 
 **Method**: X-Ray Diffraction
 
+
+
 ## Basefolder
 
 4bzs.pdb and 4bzs.cif - the coordinates of the threedimensional molecular model

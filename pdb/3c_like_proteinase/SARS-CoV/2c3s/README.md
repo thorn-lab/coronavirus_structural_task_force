@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+SARS-CoV main protease: a three domain protein with two antiparallel beta-2-barrels in which the substrate binding site is located and one alpha helical. It cleaves the C-terminus of replicase polyprotein at 11 sites as a functional homodimer. The structure is reported at a pH value of 6.5 and in the space group P 21 21 2
+
 ## Basefolder
 
 2c3s.pdb and 2c3s.cif - the coordinates of the threedimensional molecular model

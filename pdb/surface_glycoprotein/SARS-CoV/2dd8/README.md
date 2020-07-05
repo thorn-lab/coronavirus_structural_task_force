@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+The spike receptor-binding domain S attaches the virus to ACE2, mediated by a receptor-binding domain (RBD). The Non-polymer only trimer is a 3 chain crystal structure of RBD complexed with neutralizing antibody. The structure indicates that other conformational changes or coreceptors than ACE2 may involve.
+
 ## Basefolder
 
 2dd8.pdb and 2dd8.cif - the coordinates of the threedimensional molecular model

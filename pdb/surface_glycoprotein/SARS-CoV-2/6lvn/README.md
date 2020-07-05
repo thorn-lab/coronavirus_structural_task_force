@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+Structure of the 2019-nCoV HR2 Domain
+
 ## Basefolder
 
 6lvn.pdb and 6lvn.cif - the coordinates of the threedimensional molecular model

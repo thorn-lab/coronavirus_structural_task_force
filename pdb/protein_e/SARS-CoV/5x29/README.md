@@ -1,8 +1,20 @@
-# Base folder 5x29
+# PDB 5x29
 
-## Files downloaded from wwPDB:
+## Overview
 
-5x29.pdb and 5x29.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: protein e
+
+**Organism**: SARS-CoV
+
+**Method**: NMR
+
+## Description
+
+This NMR structure is an oligomer of the envelope protein (E) of SARS-CoV. The structure is a pentamer of five identical monomers. It covers the transmembrane domain and the C- and N-terminus partly. This structure functions as a membrane-anchored ion channel.
+
+## Basefolder
+
+5x29.pdb and 5x29.cif - the coordinates of the threedimensional molecular model
 
 
 

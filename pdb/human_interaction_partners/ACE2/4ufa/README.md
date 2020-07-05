@@ -8,6 +8,8 @@
 
 **Method**: X-Ray Diffraction
 
+
+
 ## Basefolder
 
 4ufa.pdb and 4ufa.cif - the coordinates of the threedimensional molecular model

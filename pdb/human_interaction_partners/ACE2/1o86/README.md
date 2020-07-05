@@ -1,8 +1,18 @@
-# Base folder 1o86
+# PDB 1o86
 
-## Files downloaded from wwPDB:
+## Overview
 
-1o86.pdb and 1o86.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: human interaction partners
+
+**Organism**: ACE2
+
+**Method**: NMR
+
+
+
+## Basefolder
+
+1o86.pdb and 1o86.cif - the coordinates of the threedimensional molecular model
 
 
 

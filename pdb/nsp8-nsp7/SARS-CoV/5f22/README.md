@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+C-terminal domain of NSP8 in complex with NSP7 from SARS-CoV. This X-ray crystal structure was phased using molecular replacement & has data to a resolution of 2.15Å. The NSP12-NSP7-NSP8 complex replicates viral RNA.
+
 ## Basefolder
 
 5f22.pdb and 5f22.cif - the coordinates of the threedimensional molecular model

@@ -8,6 +8,8 @@
 
 **Method**: X-Ray Diffraction
 
+
+
 ## Basefolder
 
 6lnq.pdb and 6lnq.cif - the coordinates of the threedimensional molecular model

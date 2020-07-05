@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+Exonuclease (NSP14) in complex with NSP10 from SARS-CoV. This X-ray crystal structure was phased was phased using molecular replacement & has data to a resolution of 3.401Å resolution. Exonuclease has two domains responsible for guanine-N7-methyltransferase & 3'-5' exoribonuclease activity with a flexible linker between. NSP10 acts as an activator protein for NSP14.
+
 ## Basefolder
 
 5c8u.pdb and 5c8u.cif - the coordinates of the threedimensional molecular model

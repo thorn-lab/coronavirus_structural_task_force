@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+The crystal structure of the SARS-CoV Mac1 domain was determined at 1.8-Angstroms resolution in complex with ADP-ribose. This domain has a function as an ADP ribose 1"-phosphatase." 
+
 ## Basefolder
 
 2fav.pdb and 2fav.cif - the coordinates of the threedimensional molecular model

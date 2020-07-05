@@ -1,8 +1,20 @@
-# Base folder 2rnk
+# PDB 2rnk
 
-## Files downloaded from wwPDB:
+## Overview
 
-2rnk.pdb and 2rnk.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: nsp3
+
+**Organism**: SARS-CoV
+
+**Method**: NMR
+
+## Description
+
+The NMR structure of a central segment of the Mac3 domain in SARS coronavirus nsp3. This domains function is connected to RNA binding, preferentially binds oligo G
+
+## Basefolder
+
+2rnk.pdb and 2rnk.cif - the coordinates of the threedimensional molecular model
 
 
 

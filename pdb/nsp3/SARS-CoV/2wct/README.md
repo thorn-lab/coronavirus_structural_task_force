@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+The crystal structures of fragment 389-652 (Mac2) of Nsp3, which comprises 264 of the 338 residues of the domain. This domains function is connected to RNA binding, preferentially binds oligo G.
+
 ## Basefolder
 
 2wct.pdb and 2wct.cif - the coordinates of the threedimensional molecular model

@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+The non-polymer only dimer is a 4 chain structure. It shows the spike receptor-binding domain S complexed with its receptor ACE2. S attaches the virus to ACE2, mediated by a receptor-binding domain (RBD). The two proteins clarify the importance of residue changes that facilitate cross-species infection and human-to-human transmission.
+
 ## Basefolder
 
 2ajf.pdb and 2ajf.cif - the coordinates of the threedimensional molecular model

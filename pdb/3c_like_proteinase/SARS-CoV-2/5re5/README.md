@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+Full length 3C-like protease from SARS-CoV-2 forming a dimer. This protein is bound to a small molecule fragment, N~1~-phenylpiperidine-1,4-dicarboxamide. This X-ray crystal structure has data to a resolution of 2.07Å
+
 ## Basefolder
 
 5re5.pdb and 5re5.cif - the coordinates of the threedimensional molecular model

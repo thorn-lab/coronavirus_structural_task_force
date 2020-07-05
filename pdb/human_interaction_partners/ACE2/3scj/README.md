@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+The spike receptor-binding domain S attaches the virus to ACE2. The non-polymer only dimer is a 4 chain crystal structure of spike protein receptor-binding domain from a predicted SARS coronavirus civet strain complexed with human receptor ACE2.
+
 ## Basefolder
 
 3scj.pdb and 3scj.cif - the coordinates of the threedimensional molecular model

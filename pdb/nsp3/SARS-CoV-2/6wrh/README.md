@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+ 1.6 Å resolution crystal structure of Pl2pro domain of SARS CoV-2 , C111S is mutated. Pl2pro is responsible for the cleaving of nsp1 to nsp4 of the polyprotein and also has a role in reducing the human immune response." 
+
 ## Basefolder
 
 6wrh.pdb and 6wrh.cif - the coordinates of the threedimensional molecular model

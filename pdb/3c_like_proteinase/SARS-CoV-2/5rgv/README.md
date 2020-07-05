@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+Full length 3C-like protease from SARS-CoV-2 forming a dimer. This protein is bound to a small molecule frag, 2-(isoquinolin-4-yl)-N-phenylacetamide. This X-ray crystal structure has data to a resolution of 1.82Å
+
 ## Basefolder
 
 5rgv.pdb and 5rgv.cif - the coordinates of the threedimensional molecular model
@@ -49,7 +53,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  1.25|  0.00 %|
 
- 
+**Auspex Pathologies**<br> all good (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV-2/5rgv/validation/auspex/5rgv_auspex_comments.txt))
 
  
 

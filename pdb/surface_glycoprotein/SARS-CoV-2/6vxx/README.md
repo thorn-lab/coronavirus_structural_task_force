@@ -8,6 +8,10 @@
 
 **Method**: Cryo-EM
 
+## Description
+
+EM structure of the SARS-CoV-2 spike glycoprotein in its closed state. As other entries of the closed spike, this presents all the three RBD in the down position.
+
 ## Basefolder
 
 6vxx.pdb and 6vxx.cif - the coordinates of the threedimensional molecular model

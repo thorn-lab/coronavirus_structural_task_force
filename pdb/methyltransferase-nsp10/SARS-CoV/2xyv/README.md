@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+nsp16-nsp10 SARS coronavirus complex S-ADENOSYL-L-HOMOCYSTEINE. Nsp-16 is a S-adenosylmethionine-dependent (nucleoside-2'-O)-methyltransferase only active in the presence of its activating partner nsp10. Structure consists of two chains, nsp10 is bound to nsp16 through a ∼930 Å² surface area in nsp10. Key residues involved in nsp10/nsp16 association, and in RNA binding or catalysis.
+
 ## Basefolder
 
 2xyv.pdb and 2xyv.cif - the coordinates of the threedimensional molecular model

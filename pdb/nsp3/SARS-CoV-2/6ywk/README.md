@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+The crystal structure of SARS-CoV-2 NSP3 Mac1 in complex with a potential inhibitor HEPES (4-(2-HYDROXYETHYL)-1-PIPERAZINE ETHANESULFONIC ACID).This domain has a function as an ADP ribose 1"-phosphatase.
+
 ## Basefolder
 
 6ywk.pdb and 6ywk.cif - the coordinates of the threedimensional molecular model

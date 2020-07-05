@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+Full length 3C-like protease from SARS-CoV forming a dimer. This protein has been mutated at S284A, T285A & I286A to modify activity. This X-ray crystal structure was phased using molecular replacement & has data to a resolution of 2.55Å.
+
 ## Basefolder
 
 3e91.pdb and 3e91.cif - the coordinates of the threedimensional molecular model

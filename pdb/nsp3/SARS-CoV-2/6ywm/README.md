@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+The crystal structure of SARS-CoV-2 (Covid-19) NSP3 Mac1 domain in complex with MES (2-(N-MORPHOLINO)-ETHANESULFONIC ACID). This domain has a function as an ADP ribose 1"-phosphatase.
+
 ## Basefolder
 
 6ywm.pdb and 6ywm.cif - the coordinates of the threedimensional molecular model

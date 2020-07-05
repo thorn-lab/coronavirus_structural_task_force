@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+nsp16-nsp10 SARS coronavirus complex or SARS-CoV 2'-O-MTase bound with methyl donor SAM. The structure the interaction interface shows that nsp10 may stabilize the SAM-binding pocket and extend the RNA-binding groove of nsp16, which suggests that the nsp16/nsp10 interface may represent a beter drug target than the viral MTase active site fordeveloping highly specific anti-coronavirus drugs.
+
 ## Basefolder
 
 3r24.pdb and 3r24.cif - the coordinates of the threedimensional molecular model

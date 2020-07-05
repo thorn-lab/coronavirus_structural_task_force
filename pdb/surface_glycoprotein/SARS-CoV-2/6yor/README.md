@@ -1,8 +1,20 @@
-# Base folder 6yor
+# PDB 6yor
 
-## Files downloaded from wwPDB:
+## Overview
 
-6yor.pdb and 6yor.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: surface glycoprotein
+
+**Organism**: SARS-CoV-2
+
+**Method**: NMR
+
+## Description
+
+Crystallographic structure of the SARS-CoV-2 RBD S1 subunit in complex with the antibody CR3022 Fab
+
+## Basefolder
+
+6yor.pdb and 6yor.cif - the coordinates of the threedimensional molecular model
 
 
 

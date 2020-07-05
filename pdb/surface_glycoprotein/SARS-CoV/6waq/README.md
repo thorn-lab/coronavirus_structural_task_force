@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+Crystal structure of the SARS-CoV-1 RBD bound by the cross-reactive single-domain antibody SARS VHH-72.
+
 ## Basefolder
 
 6waq.pdb and 6waq.cif - the coordinates of the threedimensional molecular model

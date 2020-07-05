@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+nsp16-nsp10 heterodimer from SARS-CoV-2 in complex with SAM (without additional SAM during crystallization). Methyltransferase nsp-16 interacts with nsp-10 to mediate mRNA cap methylation of viral mRNAs. S-Adenosylmethionin could influence the assembly and function of the methyltransfrase-complex.
+
 ## Basefolder
 
 7c2j.pdb and 7c2j.cif - the coordinates of the threedimensional molecular model

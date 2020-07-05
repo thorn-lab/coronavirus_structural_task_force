@@ -8,6 +8,10 @@
 
 **Method**: Cryo-EM
 
+## Description
+
+Receptor binding domain in complex with full lenght ACE2 and amino acid transporter B0AT1. Study highlight the entry mechanism of SARS-CoV-2 in cells.
+
 ## Basefolder
 
 6m17.pdb and 6m17.cif - the coordinates of the threedimensional molecular model

@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+SARS-CoV-2 nsp16-nsp10 ternary complex. Methyltransferase that mediates mRNA cap methylation of viral mRNAs, which is essential to evade immune system. Nsp-10 binding to nsp-16 is cruitial for full catalytic function, but excact role of nsp-10 is yet to be determined.
+
 ## Basefolder
 
 6wks.pdb and 6wks.cif - the coordinates of the threedimensional molecular model

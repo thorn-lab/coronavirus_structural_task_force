@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+Crystallographic structure of the SARS-CoV-2 RBD in complex with the antibody CR3022 Fab 
+
 ## Basefolder
 
 6yla.pdb and 6yla.cif - the coordinates of the threedimensional molecular model

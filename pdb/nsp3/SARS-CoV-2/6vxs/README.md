@@ -8,6 +8,8 @@
 
 **Method**: X-Ray Diffraction
 
+
+
 ## Basefolder
 
 6vxs.pdb and 6vxs.cif - the coordinates of the threedimensional molecular model

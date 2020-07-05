@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+The spike receptor-binding domain (RBD) attaches the virus to ACE2. The hetero trimer is a 3 chain structure of COVID-19 virus spike receptor-binding domain complexed with a neutralizing antibody. It provides a structural basis for rational vaccine design.
+
 ## Basefolder
 
 7bz5.pdb and 7bz5.cif - the coordinates of the threedimensional molecular model

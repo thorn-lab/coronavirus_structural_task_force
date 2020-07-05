@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+Full length 3C-like protease from SARS-CoV forming a dimer with an F140A mutation. This X-ray crystal structure has data to a resolution of 2.9Å.
+
 ## Basefolder
 
 3f9h.pdb and 3f9h.cif - the coordinates of the threedimensional molecular model

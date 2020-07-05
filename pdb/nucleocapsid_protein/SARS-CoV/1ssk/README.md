@@ -1,8 +1,20 @@
-# Base folder 1ssk
+# PDB 1ssk
 
-## Files downloaded from wwPDB:
+## Overview
 
-1ssk.pdb and 1ssk.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: nucleocapsid protein
+
+**Organism**: SARS-CoV
+
+**Method**: NMR
+
+## Description
+
+This NMR structure shows the N-terminal RNA-binding domain of SARS-CoV nucleocapsid protein (N). It is a monomer with a length of 158 amino acids and exhibits a five-stranded β-sheet. This structure binds single-stranded RNA to enable the packaging of the viral genome RNA into a helical ribonucleocapsid (RNP).
+
+## Basefolder
+
+1ssk.pdb and 1ssk.cif - the coordinates of the threedimensional molecular model
 
 
 

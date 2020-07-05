@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+1.79 Å resolution  crystal structure of PL2pro domain of SARS CoV-2 with P3221 space group. Pl2pro is responsible for the cleaving of nsp1 to nsp4 of the polyprotein and also has a role in reducing the human immune response.
+
 ## Basefolder
 
 6wzu.pdb and 6wzu.cif - the coordinates of the threedimensional molecular model

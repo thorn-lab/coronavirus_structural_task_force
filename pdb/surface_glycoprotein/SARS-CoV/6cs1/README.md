@@ -8,6 +8,10 @@
 
 **Method**: Cryo-EM
 
+## Description
+
+SARS Spike Glycoprotein, Trypsin-cleaved, Stabilized variant, two S1 CTDs in an upwards conformation. This study reveal that stabilized spikes resist conformational changes induced by receptor.
+
 ## Basefolder
 
 6cs1.pdb and 6cs1.cif - the coordinates of the threedimensional molecular model

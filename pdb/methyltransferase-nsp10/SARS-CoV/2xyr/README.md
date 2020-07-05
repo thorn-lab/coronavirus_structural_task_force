@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+nsp16-nsp10 SARS coronavirus complex with Sinefungin. Nsp-16 is a S-adenosylmethionine-dependent (nucleoside-2'-O)-methyltransferase only active in the presence of its activating partner nsp10.Sinefungin influences the RNA-binding capacity of the complex.
+
 ## Basefolder
 
 2xyr.pdb and 2xyr.cif - the coordinates of the threedimensional molecular model

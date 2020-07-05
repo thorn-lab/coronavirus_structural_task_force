@@ -1,8 +1,20 @@
-# Base folder 7c2k
+# PDB 7c2k
 
-## Files downloaded from wwPDB:
+## Overview
 
-7c2k.pdb and 7c2k.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: rna polymerase-nsp7-nsp8
+
+**Organism**: SARS-CoV-2
+
+**Method**: NMR
+
+## Description
+
+SARS-CoV2 RNA Polymerase (NSP12) bound with NSP7 & two NSP8 co-factors. This electron microscopy model has 2.93Å resolution and was published alongside PDB entry 7bzf. The NSP12 & NSP7 chains are almost full length & NSP8 chains have some N-terminal truncations. Structure has RNA bound & is in a pre-translocation state.
+
+## Basefolder
+
+7c2k.pdb and 7c2k.cif - the coordinates of the threedimensional molecular model
 
 
 

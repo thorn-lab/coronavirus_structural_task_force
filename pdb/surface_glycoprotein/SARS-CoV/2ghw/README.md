@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+The spike glycoprotein is a membrane protein with two heptad repeat domains (HR1&HR2). The non-polymer only dimer is a 4 chain crystal structure of spike protein receptor binding domain in complex with a neutralizing antibody, 80r. The dimer could play a role in virus stability and infectivity.
+
 ## Basefolder
 
 2ghw.pdb and 2ghw.cif - the coordinates of the threedimensional molecular model

@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+Structure of post fusion core of 2019-nCoV S2 subunit. We can observe here the fusion helix bundle.
+
 ## Basefolder
 
 6lxt.pdb and 6lxt.cif - the coordinates of the threedimensional molecular model

@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+Nsp16-Nsp10 Heterodimer from SARS-CoV-2 in Complex with S-Adenosyl-L-Homocysteine. Methyltransferase nsp-16 interacts with nsp-10 to mediate mRNA cap methylation of viral mRNAs. The Methyltransfearse is dependent on S-Adenosyl-l-homocysteine which could be a possible drug target to inhibit the complex.
+
 ## Basefolder
 
 6wjt.pdb and 6wjt.cif - the coordinates of the threedimensional molecular model

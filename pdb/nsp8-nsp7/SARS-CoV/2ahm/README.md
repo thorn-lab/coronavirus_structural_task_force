@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+Full length NSP7 in complex with full length NSP8 from SARS-CoV. This X-ray crystal structure was phased using multi-wavelength anomalous dispersion to 2.4Å resolution. Four heterodimers seen with either a kinked or elongated conformation of NSP8. The NSP12-NSP7-NSP8 complex replicates viral RNA.
+
 ## Basefolder
 
 2ahm.pdb and 2ahm.cif - the coordinates of the threedimensional molecular model

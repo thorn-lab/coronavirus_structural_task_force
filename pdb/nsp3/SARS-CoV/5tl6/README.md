@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+The X-ray crystal structure of SARS-CoV Plpro in complex with the C-terminal domain of human ISG15.Pl2pro is responsible for the cleaving of nsp1 to nsp4 of the polyprotein and also has a role in reducing the human immune response.
+
 ## Basefolder
 
 5tl6.pdb and 5tl6.cif - the coordinates of the threedimensional molecular model

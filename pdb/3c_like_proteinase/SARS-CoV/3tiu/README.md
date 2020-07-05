@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+Full length 3C-like protease from SARS-CoV forming a monomer with a peptidic unsaturated ester in the active site. This X-ray crystal has data to a resolution of 2.08Å.
+
 ## Basefolder
 
 3tiu.pdb and 3tiu.cif - the coordinates of the threedimensional molecular model

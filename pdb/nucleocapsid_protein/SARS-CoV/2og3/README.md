@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+This Crystal structure shows the N-terminal RNA binding domain of SARS-CoV nucleocapsid protein (N). The structure is a monomer  in a cubic crystal form at a resolution of 1.85 Å. The N-terminal domain provides structural features for RNA binding.
+
 ## Basefolder
 
 2og3.pdb and 2og3.cif - the coordinates of the threedimensional molecular model

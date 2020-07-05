@@ -8,6 +8,8 @@
 
 **Method**: X-Ray Diffraction
 
+
+
 ## Basefolder
 
 2ozk.pdb and 2ozk.cif - the coordinates of the threedimensional molecular model

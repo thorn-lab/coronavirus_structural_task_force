@@ -1,8 +1,18 @@
-# Base folder 6xdc
+# PDB 6xdc
 
-## Files downloaded from wwPDB:
+## Overview
 
-6xdc.pdb and 6xdc.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: orf3a protein
+
+**Organism**: SARS-CoV-2
+
+**Method**: NMR
+
+
+
+## Basefolder
+
+6xdc.pdb and 6xdc.cif - the coordinates of the threedimensional molecular model
 
 
 

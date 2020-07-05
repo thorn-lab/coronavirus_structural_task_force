@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+This Crystal structure shows the C-terminal dimerization domain of SARS-CoV-2 nucleocapsid protein (N). The structure consists of six identical monomers forming three homodimers and exhibits interactions with the ligand Cl-. The C-terminus provides structural features for oligomerization.
+
 ## Basefolder
 
 6wji.pdb and 6wji.cif - the coordinates of the threedimensional molecular model

@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+The crystal structure of PLpro-C111S in complex with mISG15. Pl2pro is responsible for the cleaving of nsp1 to nsp4 of the polyprotein and also has a role in reducing the human immune response.Structure reported as Hetero 2-mer. ISG15 is one of the targets of PLpro, the structure shows the interaction between PLpro and ISG15
+
 ## Basefolder
 
 6yva.pdb and 6yva.cif - the coordinates of the threedimensional molecular model

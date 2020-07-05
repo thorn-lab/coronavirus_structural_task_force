@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+SARS-CoV ORF7a accessory protein, a unique type I transmembrane protein of unknown function. Has a short cytoplasmic tail and a transmembrane domain. Consists of one chain (chain A), that forms a compact seven-stranded beta sandwich.
+
 ## Basefolder
 
 1xak.pdb and 1xak.cif - the coordinates of the threedimensional molecular model

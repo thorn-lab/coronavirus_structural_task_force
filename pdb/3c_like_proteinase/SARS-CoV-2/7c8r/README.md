@@ -1,8 +1,59 @@
-# Base folder 7c8r
+# PDB 7c8r
 
-## Files downloaded from wwPDB:
+## Overview
 
-7c8r.pdb and 7c8r.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: 3c like proteinase
+
+**Organism**: SARS-CoV-2
+
+**Method**: X-Ray Diffraction
+
+
+
+## Basefolder
+
+7c8r.pdb and 7c8r.cif - the coordinates of the threedimensional molecular model
+
+7c8r-sf.cif - deposited diffraction data for this PDB entry
+
+7c8r.mtz - structure factors after automatic refinement of molecular model against the diffraction data.
+
+## Subfolders
+
+
+
+
+
+**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/3c_like_proteinase/SARS-CoV-2/7c8r/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/3c_like_proteinase/SARS-CoV-2/7c8r/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/3c_like_proteinase/SARS-CoV-2/7c8r/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV-2/7c8r/validation/Xtriage_output.log)  
+
+
+
+## Raw diffraction data
+
+No public deposition. --<br> 
+
+## Data Summary
+**Diffraction Data Quality**
+
+|   | Resolution | Completeness| I/sigma |
+|---|-------------:|----------------:|--------------:|
+|   |2.30 Å|99.5  %|<img width=50/>22.90|
+
+**Discrepancy between model and data (the lower the better)**
+
+|   | **R-work**| **R-free**   
+|---|-------------:|----------------:|           
+||  0.1970|  0.2610|
+
+**Geometry validation (the lower, the better)**
+
+|   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
+|---|-------------:|----------------:|
+||  2.21|  0.66 %|
+
+ 
+
+ 
 
 
 
@@ -10,3 +61,6 @@
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/7c8r
  
 **PDBr**: https://www.rcsb.org/structure/7c8r 
+
+**Structure view with 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=7c8r
+

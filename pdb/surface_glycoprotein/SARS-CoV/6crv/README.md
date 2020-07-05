@@ -8,6 +8,10 @@
 
 **Method**: Cryo-EM
 
+## Description
+
+SARS Spike Glycoprotein, Stabilized variant, C3 symmetry
+
 ## Basefolder
 
 6crv.pdb and 6crv.cif - the coordinates of the threedimensional molecular model

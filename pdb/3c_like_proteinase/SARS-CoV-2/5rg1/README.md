@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+Full length 3C-like protease from SARS-CoV-2 forming a dimer. This protein is bound to a small molecule frag, Nalpha-acetyl-N-(3-bromoprop-2-yn-1-yl)-L-tyrosinamide. This X-ray crystal structure has data to a resolution of 1.65Å
+
 ## Basefolder
 
 5rg1.pdb and 5rg1.cif - the coordinates of the threedimensional molecular model

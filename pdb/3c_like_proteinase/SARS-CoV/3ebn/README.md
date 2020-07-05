@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+C-terminal domain of 3C-like protease from SARS-CoV forming an unusual dimer. This X-ray crystal structure was phased using PDB entry 1uk2 for molecular replacement & has data to a resolution of 2.4Å.
+
 ## Basefolder
 
 3ebn.pdb and 3ebn.cif - the coordinates of the threedimensional molecular model

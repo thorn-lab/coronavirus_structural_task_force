@@ -8,6 +8,10 @@
 
 **Method**: Cryo-EM
 
+## Description
+
+SARS-CoV complex with human neutralizing S230 antibody Fab fragment (state 2). This study reveal that stabilized spikes resist conformational changes induced by receptor.
+
 ## Basefolder
 
 6nb7.pdb and 6nb7.cif - the coordinates of the threedimensional molecular model

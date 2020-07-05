@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+NSP10 from Sars coronavirus without zinc ionas additive. The nsp10 structure has a novel fold, and12 identical subunits assemble to form a unique spherical dodecameric architecture. Two zinc fingers havebeen identified from the nsp10 monomer structure. Thezinc finger sequence motifs are conserved among all three coronavirus antigenic groups, implicating an essential function for nsp10 in all coronaviruses.Zinc-concentration could influence binding capabilities of nsp10
+
 ## Basefolder
 
 2ga6.pdb and 2ga6.cif - the coordinates of the threedimensional molecular model

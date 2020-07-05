@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+This Crystal structure shows the dimerization domain located in the C-terminus of SARS-CoV nucleocapsid protein (N). The structure is a dimer of two identical monomers and exhibits  interactions with the ligand SO4. Strong interactions between both subunits suggest that the dimeric form is a functional unit.
+
 ## Basefolder
 
 2gib.pdb and 2gib.cif - the coordinates of the threedimensional molecular model

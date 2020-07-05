@@ -8,6 +8,10 @@
 
 **Method**: Cryo-EM
 
+## Description
+
+Trypsin-cleaved and low pH-treated SARS-CoV spike glycoprotein with three RBD in down conformation. Part of a series of studies on the conformational landscape of spike in complex with ACE2
+
 ## Basefolder
 
 6acc.pdb and 6acc.cif - the coordinates of the threedimensional molecular model

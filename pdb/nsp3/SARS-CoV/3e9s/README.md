@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+No article published to this date. Structure of PL2pro.Pl2pro is responsible for the cleaving of nsp1 to nsp4 of the polyprotein and also has a role in reducing the human immune response.
+
 ## Basefolder
 
 3e9s.pdb and 3e9s.cif - the coordinates of the threedimensional molecular model

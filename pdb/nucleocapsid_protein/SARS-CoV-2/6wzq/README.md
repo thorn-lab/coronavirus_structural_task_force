@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+This Crystal structure shows the C-terminal N2b/dimerization domain of SARS-CoV-2 nucleocapsid protein (N) in a monoclinic (P1211) crystal form. In solution, this structure was found to build a homodimer, but it is also proposed to be involved in tetramer formation. The structure is a tetramer of two homodimers at a resolution of 1.45 Å and exhibits interactions with the ligand SO4.
+
 ## Basefolder
 
 6wzq.pdb and 6wzq.cif - the coordinates of the threedimensional molecular model

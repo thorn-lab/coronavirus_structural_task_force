@@ -8,6 +8,10 @@
 
 **Method**: Cryo-EM
 
+## Description
+
+SARS Spike Glycoprotein - human ACE2 complex, Stabilized variant, all ACE2-bound particles. This study reveal that stabilized spikes resist conformational changes induced by receptor.
+
 ## Basefolder
 
 6cs2.pdb and 6cs2.cif - the coordinates of the threedimensional molecular model

@@ -1,8 +1,20 @@
-# Base folder 6x2b
+# PDB 6x2b
 
-## Files downloaded from wwPDB:
+## Overview
 
-6x2b.pdb and 6x2b.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: surface glycoprotein
+
+**Organism**: SARS-CoV-2
+
+**Method**: NMR
+
+## Description
+
+Em structure of a spike glycoprotein mutant forced into its open state. 2 RBD open.
+
+## Basefolder
+
+6x2b.pdb and 6x2b.cif - the coordinates of the threedimensional molecular model
 
 
 

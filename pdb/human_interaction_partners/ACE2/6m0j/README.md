@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+Crystal structure of SARS-CoV-2 spike receptor-binding domain bound with ACE2. This structure highlights the key interaction between the spike and ACE2, later confirmed by EM structures.
+
 ## Basefolder
 
 6m0j.pdb and 6m0j.cif - the coordinates of the threedimensional molecular model

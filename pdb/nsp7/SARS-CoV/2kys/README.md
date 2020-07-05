@@ -1,8 +1,20 @@
-# Base folder 2kys
+# PDB 2kys
 
-## Files downloaded from wwPDB:
+## Overview
 
-2kys.pdb and 2kys.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: nsp7
+
+**Organism**: SARS-CoV
+
+**Method**: NMR
+
+## Description
+
+SARS-CoV NSP7 NMR structure showing the full length protein. The NSP12-NSP7-NSP8 complex replicates viral RNA.
+
+## Basefolder
+
+2kys.pdb and 2kys.cif - the coordinates of the threedimensional molecular model
 
 
 

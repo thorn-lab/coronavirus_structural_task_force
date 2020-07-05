@@ -1,8 +1,18 @@
-# Base folder 7byr
+# PDB 7byr
 
-## Files downloaded from wwPDB:
+## Overview
 
-7byr.pdb and 7byr.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: surface glycoprotein
+
+**Organism**: SARS-CoV-2
+
+**Method**: NMR
+
+
+
+## Basefolder
+
+7byr.pdb and 7byr.cif - the coordinates of the threedimensional molecular model
 
 
 

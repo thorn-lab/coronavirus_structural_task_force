@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+Full length structure of Helicase (NSP13) from SARS-CoV. This X-ray crystal structure was phased using single-wavelength anomalous dispersion to 2.8Å resolution. Helicase is a 5 domain protein responsible for the unwinding & separation of double stranded RNA & DNA with a 5'-3' polarity with an N-terminal zinc binding domain.
+
 ## Basefolder
 
 6jyt.pdb and 6jyt.cif - the coordinates of the threedimensional molecular model

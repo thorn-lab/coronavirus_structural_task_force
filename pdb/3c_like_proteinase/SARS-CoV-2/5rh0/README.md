@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+Full length 3C-like protease from SARS-CoV-2 forming a dimer. This protein is bound to a small molecule frag, N-(5-methylthiophen-2-yl)-N'-pyridin-3-ylurea. This X-ray crystal structure has data to a resolution of 1.92Å
+
 ## Basefolder
 
 5rh0.pdb and 5rh0.cif - the coordinates of the threedimensional molecular model
@@ -49,7 +53,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  1.50|  0.33 %|
 
- 
+**Auspex Pathologies**<br> all good (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV-2/5rh0/validation/auspex/5rh0_auspex_comments.txt))
 
  
 

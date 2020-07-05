@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+This crystal structure shows the C-terminal dimerization domain of SARS-CoV-2 nucleocapsid protein (N) in a triclinic (P1) crystal form. The structure is a tetramer of two identical homodimers and exhibits interaction with the ligands Di-(hydroxyethyl)-ether and acetate ion.
+
 ## Basefolder
 
 7c22.pdb and 7c22.cif - the coordinates of the threedimensional molecular model

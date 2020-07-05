@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+The spike receptor-binding domain S attaches the virus to ACE2, mediated by a receptor-binding domain (RBD). Non-polymer only trimer is a 6 chain X-ray crystal structure of the spike RBD in complex with F26g19 Fab. The complex is the first example of the structural characterization of an antibody elicited by an immune response.
+
 ## Basefolder
 
 3bgf.pdb and 3bgf.cif - the coordinates of the threedimensional molecular model

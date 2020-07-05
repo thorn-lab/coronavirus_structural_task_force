@@ -1,8 +1,20 @@
-# Base folder 6wps
+# PDB 6wps
 
-## Files downloaded from wwPDB:
+## Overview
 
-6wps.pdb and 6wps.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: surface glycoprotein
+
+**Organism**: SARS-CoV-2
+
+**Method**: NMR
+
+## Description
+
+Structure of the SARS-CoV-2 spike glycoprotein in complex with the S309 neutralizing antibody Fab fragment. The fragment binds the external surface of the RBD near Val80. 
+
+## Basefolder
+
+6wps.pdb and 6wps.cif - the coordinates of the threedimensional molecular model
 
 
 

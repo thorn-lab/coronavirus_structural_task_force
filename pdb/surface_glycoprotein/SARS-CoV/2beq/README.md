@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+The spike glycoprotein S2 is a membrane protein with two heptad repeat domains (HR1&HR2). Non-polymer only dodecamer is a 6 chain structure. Structure of a Proteolytically Resistant Core from HR1 and HR2. The structure can open the path to the design of small-molecule inhibitors and candidate vaccine antigens.
+
 ## Basefolder
 
 2beq.pdb and 2beq.cif - the coordinates of the threedimensional molecular model

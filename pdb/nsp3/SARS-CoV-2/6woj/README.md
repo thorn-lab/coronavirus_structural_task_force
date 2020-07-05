@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+ 2.20 Å. resolution X-ray diffraction Structure of the SARS-CoV-2 Mac1 (NSP3) in complex with ADP-ribose.  This domain has a function as an ADP ribose 1"-phosphatase." 
+
 ## Basefolder
 
 6woj.pdb and 6woj.cif - the coordinates of the threedimensional molecular model

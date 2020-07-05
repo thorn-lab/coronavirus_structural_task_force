@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+The crystal structure of the conserved Mac1 domain of nsp3 from SARS-CoV has been solved by single-wavelength anomalous dispersion to 1.4 A resolution. The structure of this Mac1 domain. This domain has a function as an ADP ribose 1"-phosphatase.
+
 ## Basefolder
 
 2acf.pdb and 2acf.cif - the coordinates of the threedimensional molecular model

@@ -8,6 +8,10 @@
 
 **Method**: Cryo-EM
 
+## Description
+
+Cryo-electron microscopy structure of mouse coronavirus spike protein complexed with its murine receptor
+
 ## Basefolder
 
 6vsj.pdb and 6vsj.cif - the coordinates of the threedimensional molecular model

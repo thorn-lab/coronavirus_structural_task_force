@@ -1,8 +1,20 @@
-# Base folder 1yo4
+# PDB 1yo4
 
-## Files downloaded from wwPDB:
+## Overview
 
-1yo4.pdb and 1yo4.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: hypothetical protein sars7a
+
+**Organism**: SARS-CoV
+
+**Method**: NMR
+
+## Description
+
+SARS Coronavirus ORF 7a coded X4 protein, also known as 7a, U122 or X4. Type-I transmembrane protein with immunoglobulin like beta-sandwich fold. Potential functions of X4 in virus replication and pathogenesis are discussed.
+
+## Basefolder
+
+1yo4.pdb and 1yo4.cif - the coordinates of the threedimensional molecular model
 
 
 

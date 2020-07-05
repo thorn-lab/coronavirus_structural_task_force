@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+Full length 3C-like protease from SARS-CoV forming a monomer with an N28A mutation that blocks dimerization inhibits enzyme activity. This X-ray crystal structure was phased using PDB entry 2bx4 for molecular replacement & has data to a resolution of 2.35Å.
+
 ## Basefolder
 
 3fzd.pdb and 3fzd.cif - the coordinates of the threedimensional molecular model

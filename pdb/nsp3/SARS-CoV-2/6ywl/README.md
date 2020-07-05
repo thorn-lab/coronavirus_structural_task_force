@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+The crystal structure of SARS-CoV-2 nsp3 Mac1 domain in complex with ADP-ribose.This domain has a function as an ADP ribose 1"-phosphatase.
+
 ## Basefolder
 
 6ywl.pdb and 6ywl.cif - the coordinates of the threedimensional molecular model

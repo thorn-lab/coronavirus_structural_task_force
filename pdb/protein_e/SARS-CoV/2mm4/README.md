@@ -1,8 +1,20 @@
-# Base folder 2mm4
+# PDB 2mm4
 
-## Files downloaded from wwPDB:
+## Overview
 
-2mm4.pdb and 2mm4.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: protein e
+
+**Organism**: SARS-CoV
+
+**Method**: NMR
+
+## Description
+
+This NMR structure is a monomer of the SARS-CoV envelope protein (E). It completely covers the transmembrane domain and the C- and N-terminus partly. The structure is involved in membrane curvature, membrane scission, and viral assembly.
+
+## Basefolder
+
+2mm4.pdb and 2mm4.cif - the coordinates of the threedimensional molecular model
 
 
 

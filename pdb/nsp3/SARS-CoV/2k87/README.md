@@ -1,8 +1,20 @@
-# Base folder 2k87
+# PDB 2k87
 
-## Files downloaded from wwPDB:
+## Overview
 
-2k87.pdb and 2k87.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: nsp3
+
+**Organism**: SARS-CoV
+
+**Method**: NMR
+
+## Description
+
+The NMR structure of a globular domain of residues 1071 to 1178 within the previously annotated nucleic acid-binding region (NAB) of nsp3. This domain has been shown to bind ssRNA and to unwind dsDNA. This is the only structure of NAB to date.
+
+## Basefolder
+
+2k87.pdb and 2k87.cif - the coordinates of the threedimensional molecular model
 
 
 

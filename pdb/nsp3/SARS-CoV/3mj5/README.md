@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+Crystal structure of nsp3 Plpro with the potential inhibitor N-(1,3-benzodioxol-5-ylmethyl)-1-[(1R)-1-naphthalen-1-ylethyl]piperidine-4-carboxamide as a ligand. Pl2pro is responsible for the cleaving of nsp1 to nsp4 of the polyprotein and also has a role in reducing the human immune response.
+
 ## Basefolder
 
 3mj5.pdb and 3mj5.cif - the coordinates of the threedimensional molecular model

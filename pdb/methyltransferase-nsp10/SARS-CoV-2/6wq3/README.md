@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+Nsp16-Nsp10 Heterodimer from SARS-CoV-2 in Complex with 7-methyl-GpppA and S-adenosyl-L-homocysteine. Methyltransferase nsp-16 interacts with nsp10 and mediates mRNA cap methylation of viral mRNAs. 7-methyl-GpppA shows specific binding options with the complex, and could inhibit its S-Adenosyl-l-homocysteine-depentend function or assembly.
+
 ## Basefolder
 
 6wq3.pdb and 6wq3.cif - the coordinates of the threedimensional molecular model

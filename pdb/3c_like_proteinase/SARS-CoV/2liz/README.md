@@ -1,8 +1,20 @@
-# Base folder 2liz
+# PDB 2liz
 
-## Files downloaded from wwPDB:
+## Overview
 
-2liz.pdb and 2liz.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: 3c like proteinase
+
+**Organism**: SARS-CoV
+
+**Method**: NMR
+
+## Description
+
+SARS-CoV main protease C-terminal domain. The structure is reported as a monomeric solution structure. Extra 2.5 M urea was added.
+
+## Basefolder
+
+2liz.pdb and 2liz.cif - the coordinates of the threedimensional molecular model
 
 
 

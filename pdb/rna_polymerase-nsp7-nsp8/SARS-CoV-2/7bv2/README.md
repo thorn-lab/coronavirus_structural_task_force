@@ -1,8 +1,20 @@
-# Base folder 7bv2
+# PDB 7bv2
 
-## Files downloaded from wwPDB:
+## Overview
 
-7bv2.pdb and 7bv2.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: rna polymerase-nsp7-nsp8
+
+**Organism**: SARS-CoV-2
+
+**Method**: NMR
+
+## Description
+
+SARS-CoV2 RNA Polymerase (NSP12) with NSP7 & a single NSP8 co-factor, RNA & a triphosphate form of Remdesivir. This electron microscopy model has 2.5Å resolution and was published alongside PDB entry 7bv1. NSP12 & NSP7 have some sequence missing from their chains & NSP 8 has an N-terminal truncation.
+
+## Basefolder
+
+7bv2.pdb and 7bv2.cif - the coordinates of the threedimensional molecular model
 
 
 

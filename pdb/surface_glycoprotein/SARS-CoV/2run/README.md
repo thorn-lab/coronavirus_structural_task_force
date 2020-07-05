@@ -1,8 +1,20 @@
-# Base folder 2run
+# PDB 2run
 
-## Files downloaded from wwPDB:
+## Overview
 
-2run.pdb and 2run.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: surface glycoprotein
+
+**Organism**: SARS-CoV
+
+**Method**: NMR
+
+## Description
+
+The spike receptor-binding domain S attaches the virus to ACE2, mediated by a receptor-binding domain (RBD). The S2 protein has at least three conformational states. The monomeric is a 1 chain solution structure of pre transmembrane domain. The formation of this structure appears to drive apposition and subsequent fusion of viral and target cell membranes.
+
+## Basefolder
+
+2run.pdb and 2run.cif - the coordinates of the threedimensional molecular model
 
 
 

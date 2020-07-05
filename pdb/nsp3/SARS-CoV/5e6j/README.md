@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+The X-ray crystal structure Structure of SARS PLpro bound to a Lys48-linked di-ubiquitin activity based probe.Pl2pro is responsible for the cleaving of nsp1 to nsp4 of the polyprotein and also has a role in reducing the human immune response.
+
 ## Basefolder
 
 5e6j.pdb and 5e6j.cif - the coordinates of the threedimensional molecular model

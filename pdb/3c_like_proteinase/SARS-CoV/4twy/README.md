@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+Full length 3C-like protease from SARS-CoV forming a monomer with a phenylbenzoyl (S,R)-N-decalin type inhibitor in the active site. This X-ray crystal structure was phased using PDB entry 3atw for molecular replacement & has data to a resolution of 1.6Å.
+
 ## Basefolder
 
 4twy.pdb and 4twy.cif - the coordinates of the threedimensional molecular model

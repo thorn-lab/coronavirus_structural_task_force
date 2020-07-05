@@ -8,6 +8,8 @@
 
 **Method**: X-Ray Diffraction
 
+
+
 ## Basefolder
 
 2yj2.pdb and 2yj2.cif - the coordinates of the threedimensional molecular model

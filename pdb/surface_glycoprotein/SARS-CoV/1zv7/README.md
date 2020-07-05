@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+The homo tetramer composition is a 2 chain structure. It is one of the four alpha-helical domains derived from the heptad-repeat (HR) regions of the S2 fusion subunit. They suggest a possible mechanism to promote membrane fusion.
+
 ## Basefolder
 
 1zv7.pdb and 1zv7.cif - the coordinates of the threedimensional molecular model

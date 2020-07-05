@@ -1,8 +1,18 @@
-# Base folder 6x2g
+# PDB 6x2g
 
-## Files downloaded from wwPDB:
+## Overview
 
-6x2g.pdb and 6x2g.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: rna polymerase-nsp7-nsp8
+
+**Organism**: SARS-CoV-2
+
+**Method**: NMR
+
+
+
+## Basefolder
+
+6x2g.pdb and 6x2g.cif - the coordinates of the threedimensional molecular model
 
 
 

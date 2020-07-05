@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+This Crystal structure shows the N-terminal RNA binding domain of SARS-CoV-2 nucleocapsid protein (N). It consists of four identical monomers. The structure displays a great overall similarity to other nucleocapsid protein N-terminal domains, but exhibits a unique potential RNA binding pocket alongside the  β -sheet core.
+
 ## Basefolder
 
 6m3m.pdb and 6m3m.cif - the coordinates of the threedimensional molecular model

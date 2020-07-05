@@ -8,6 +8,10 @@
 
 **Method**: Cryo-EM
 
+## Description
+
+Trypsin-cleaved and low pH-treated SARS-CoV spike glycoprotein and ACE2 complex, ACE2-bound conformation 1.  Part of a series of studies on the conformational landscape of spike in complex with ACE2
+
 ## Basefolder
 
 6acg.pdb and 6acg.cif - the coordinates of the threedimensional molecular model

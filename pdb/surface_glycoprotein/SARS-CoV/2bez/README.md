@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+The spike glycoprotein S2 is a membrane protein with two heptad repeat domains (HR1&HR2). Non-polymer only hexamer is a 2 chain structure of an HR1-HR2 S core fragment, containing a shorter HR1 peptide and a C-terminally longer HR2 peptide that extends up to the transmembrane region.
+
 ## Basefolder
 
 2bez.pdb and 2bez.cif - the coordinates of the threedimensional molecular model

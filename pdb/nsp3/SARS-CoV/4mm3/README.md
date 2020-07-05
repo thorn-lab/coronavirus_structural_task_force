@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+The X-ray crystal structure of PLpro in complex with ubiquitin-aldehyde reported at 2.75 Å resolution. Pl2pro is responsible for the cleaving of nsp1 to nsp4 of the polyprotein and also has a role in reducing the human immune response.
+
 ## Basefolder
 
 4mm3.pdb and 4mm3.cif - the coordinates of the threedimensional molecular model

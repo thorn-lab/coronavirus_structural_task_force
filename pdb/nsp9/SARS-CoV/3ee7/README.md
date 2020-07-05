@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+This X-ray crystal structure of SARS-CoV RNA-replicase (NSP9) was phased using PDB entry 1qz8 for molecular replacement & has data to a resolution of 2.6Å. This structure has a mutation of G104E that interferes with the dimerisation of the protein necessary for protein function.
+
 ## Basefolder
 
 3ee7.pdb and 3ee7.cif - the coordinates of the threedimensional molecular model

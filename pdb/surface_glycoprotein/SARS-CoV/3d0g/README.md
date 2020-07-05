@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+The spike receptor-binding domain S attaches the virus to ACE2. The non-polymer only tetramer is a 4 chain crystal structure of spike protein receptor-binding domain from the 2002-2003 SARS-CoV human strain complexed with human-civet chimeric receptor ACE2. It is a basis for understanding the species barriers between humans and civets.
+
 ## Basefolder
 
 3d0g.pdb and 3d0g.cif - the coordinates of the threedimensional molecular model
@@ -49,7 +53,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  2.88|  1.77 %|
 
- 
+**Auspex Pathologies**<br> manhattan (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/surface_glycoprotein/SARS-CoV/3d0g/validation/auspex/3d0g_auspex_comments.txt))
 
  
 

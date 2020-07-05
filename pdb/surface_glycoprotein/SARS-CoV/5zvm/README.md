@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+The spike glycoprotein is a membrane protein with two heptad repeat domains (HR1&HR2). The non-polymer only hexamer is a 6 chain crystal structure of the human coronavirus SARS HR1 motif in complex with pan-CoVs inhibitor EK1. It has both short alpha-HCoV and long beta-HCoV HR1s and is a region as a pan-CoV target site.
+
 ## Basefolder
 
 5zvm.pdb and 5zvm.cif - the coordinates of the threedimensional molecular model

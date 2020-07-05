@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+Full length 3C-like protease from SARS-CoV-2 forming a dimer. This protein is bound to a small molecule fragment, 	N-[(1-methyl-1H-1,2,3-triazol-4-yl)methyl]ethanamine. This X-ray crystal structure has data to a resolution of 1.48Å
+
 ## Basefolder
 
 5rfb.pdb and 5rfb.cif - the coordinates of the threedimensional molecular model

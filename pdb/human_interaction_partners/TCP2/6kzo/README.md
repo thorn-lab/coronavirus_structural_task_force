@@ -8,6 +8,8 @@
 
 **Method**: Cryo-EM
 
+
+
 ## Basefolder
 
 6kzo.pdb and 6kzo.cif - the coordinates of the threedimensional molecular model

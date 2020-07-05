@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+Nsp16-Nsp10 Heterodimer from SARS-CoV-2 with 7-methyl-GpppA and S-adenosyl-L-homocysteine in the Active Site and Sulfates in the mRNA Binding Groove. Methyltransferase nsp-16 interacts with nsp-10 to mediate mRNA cap methylation of viral mRNAs. 7-methyl-GpppA shows specific binding options with the complex, and could inhibit its S-Adenosyl-l-homocysteine-depentend function or assembly. Sulfates in the binding-groovee could prevent correct RNA binding, hence inhibit catalytic action.
+
 ## Basefolder
 
 6wrz.pdb and 6wrz.cif - the coordinates of the threedimensional molecular model

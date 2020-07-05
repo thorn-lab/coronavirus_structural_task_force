@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+This Crystal structure shows the N-terminal RNA binding domain of SARS-CoV-2 nucleocapsid protein (N). The structure consists of four identical monomers and exhibits interactions with the ligands Cl-, Zn2+, Glycerol, and 2-(N-Morpholino)-Ethanesulfonic Acid. The N-terminal domain provides structural features for RNA binding.
+
 ## Basefolder
 
 6vyo.pdb and 6vyo.cif - the coordinates of the threedimensional molecular model

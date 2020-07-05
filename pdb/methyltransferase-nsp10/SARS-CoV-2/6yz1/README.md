@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+SARS-CoV-2 nsp10-nsp16 methyltransferase complex with Sinefungin. Methyltransferase nsp-16 interacts with nsp-10 to mediate mRNA cap methylation of viral mRNAs. Sinefungin is known to inhibit DNA-methyltransferases which could be used to inactivate complex and immune system invasion of virus.
+
 ## Basefolder
 
 6yz1.pdb and 6yz1.cif - the coordinates of the threedimensional molecular model

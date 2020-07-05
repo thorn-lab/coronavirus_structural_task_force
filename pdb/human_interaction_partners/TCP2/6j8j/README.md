@@ -8,6 +8,8 @@
 
 **Method**: Cryo-EM
 
+
+
 ## Basefolder
 
 6j8j.pdb and 6j8j.cif - the coordinates of the threedimensional molecular model

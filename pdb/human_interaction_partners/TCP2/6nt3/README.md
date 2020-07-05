@@ -8,6 +8,8 @@
 
 **Method**: Cryo-EM
 
+
+
 ## Basefolder
 
 6nt3.pdb and 6nt3.cif - the coordinates of the threedimensional molecular model

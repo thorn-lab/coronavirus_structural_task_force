@@ -1,8 +1,20 @@
-# Base folder 2k7x
+# PDB 2k7x
 
-## Files downloaded from wwPDB:
+## Overview
 
-2k7x.pdb and 2k7x.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: 3c like proteinase
+
+**Organism**: SARS-CoV
+
+**Method**: NMR
+
+## Description
+
+SARS-CoV main protease C-terminal domain. The structure is reported as a monomeric solution structure.
+
+## Basefolder
+
+2k7x.pdb and 2k7x.cif - the coordinates of the threedimensional molecular model
 
 
 

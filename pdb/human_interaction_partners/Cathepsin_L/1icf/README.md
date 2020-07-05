@@ -1,8 +1,18 @@
-# Base folder 1icf
+# PDB 1icf
 
-## Files downloaded from wwPDB:
+## Overview
 
-1icf.pdb and 1icf.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: human interaction partners
+
+**Organism**: Cathepsin_L
+
+**Method**: NMR
+
+
+
+## Basefolder
+
+1icf.pdb and 1icf.cif - the coordinates of the threedimensional molecular model
 
 
 

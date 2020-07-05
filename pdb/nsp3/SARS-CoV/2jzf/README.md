@@ -1,8 +1,20 @@
-# Base folder 2jzf
+# PDB 2jzf
 
-## Files downloaded from wwPDB:
+## Overview
 
-2jzf.pdb and 2jzf.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: nsp3
+
+**Organism**: SARS-CoV
+
+**Method**: NMR
+
+## Description
+
+The nuclear magnetic resonance (NMR) structure of a central segment of the SARS-CoV nsp3 Mac3 domain. Mac3(513-651) exhibits a macrodomain fold.This domains function is connected to RNA binding, preferentially binds oligo G. Unlike Mac2 this domain is essential for the replication of the virus
+
+## Basefolder
+
+2jzf.pdb and 2jzf.cif - the coordinates of the threedimensional molecular model
 
 
 

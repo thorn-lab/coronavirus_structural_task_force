@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+This Crystal structure shows the oligomerization domain located in the C-terminus of SARS-CoV nucleocapsid protein (N). The structure is an oligomer of 8 identical monomers that form four tetramers. Interactions within this structure stabilize the oligomerization. Crystal packaging of the octamer forms the helical structure of the nucleocapsid. The structure also has RNA binding activity.
+
 ## Basefolder
 
 2cjr.pdb and 2cjr.cif - the coordinates of the threedimensional molecular model

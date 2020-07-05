@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+The homo dimer is a 1 chain structure. It is one of the four alpha-helical domains derived from the heptad-repeat (HR) regions of the S2 fusion subunit. They suggest a possible mechanism to promote membrane fusion.
+
 ## Basefolder
 
 1zva.pdb and 1zva.cif - the coordinates of the threedimensional molecular model

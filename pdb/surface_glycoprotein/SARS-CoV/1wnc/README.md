@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+The Fusion Core spike glycoprotein contains of two heptad repeat domains (HR1, HR2). The structure is a six-helix bundle (homo trimer). The three parallel HR1 form a central coiled coil. The three HR2 are packed against the surface. The fusion-active conformation is used for viral entry.
+
 ## Basefolder
 
 1wnc.pdb and 1wnc.cif - the coordinates of the threedimensional molecular model

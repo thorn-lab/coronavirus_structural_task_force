@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+This crystal structure shows the C-terminal dimerization domain of SARS-CoV-2 nucleocapsid protein (N) in a orthorhombic (P212121) crystal form. The structure is a homodimer at a resolution of 1.45 Å and provides structural features for oligomerization.
+
 ## Basefolder
 
 6yun.pdb and 6yun.cif - the coordinates of the threedimensional molecular model

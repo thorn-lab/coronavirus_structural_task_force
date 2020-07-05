@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+Structure of novel coronavirus spike receptor-binding domain complexed with its receptor ACE2. This structure highlights the key interaction between the spike and ACE2, later confirmed by EM structures.
+
 ## Basefolder
 
 6lzg.pdb and 6lzg.cif - the coordinates of the threedimensional molecular model

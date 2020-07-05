@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+Chimeric receptor-binding domain where the binding site contains a loop and core domain from SARS and RBD SARS-CoV2, complexed with its receptor human ACE2.
+
 ## Basefolder
 
 6vw1.pdb and 6vw1.cif - the coordinates of the threedimensional molecular model

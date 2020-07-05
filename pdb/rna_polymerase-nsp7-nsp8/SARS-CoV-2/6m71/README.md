@@ -8,6 +8,10 @@
 
 **Method**: Cryo-EM
 
+## Description
+
+SARS-CoV2 RNA Polymerase (NSP12) bound with NSP7 & two NSP8 co-factors. This electron microscopy model has 2.9Å resolution and was published alongside PDB entry 7btf. The NSP7 chain is almost full length & NSP8 & NSP12 chains have N-terminus missing as well as some loops. The NSP12-NSP7-NSP8 complex replicates viral RNA.
+
 ## Basefolder
 
 6m71.pdb and 6m71.cif - the coordinates of the threedimensional molecular model

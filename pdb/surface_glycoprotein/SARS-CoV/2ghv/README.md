@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+The spike receptor-binding domain S attaches the virus to ACE2, mediated by a receptor-binding domain (RBD). The homo dimer is a 2 chain crystal structure of spike protein receptor binding domain. The dimer could play a role in virus stability and infectivity.
+
 ## Basefolder
 
 2ghv.pdb and 2ghv.cif - the coordinates of the threedimensional molecular model

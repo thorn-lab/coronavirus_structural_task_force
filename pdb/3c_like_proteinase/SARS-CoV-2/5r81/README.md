@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+Full length 3C-like protease from SARS-CoV-2 forming a dimer. This protein is bound to a small molecule fragment, 1-methyl-3,4-dihydro-2~{H}-quinoline-7-sulfonamide. This X-ray crystal structure has data to a resolution of 1.95Å.
+
 ## Basefolder
 
 5r81.pdb and 5r81.cif - the coordinates of the threedimensional molecular model

@@ -1,8 +1,20 @@
-# Base folder 5xer
+# PDB 5xer
 
-## Files downloaded from wwPDB:
+## Overview
 
-5xer.pdb and 5xer.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: protein e
+
+**Organism**: SARS-CoV
+
+**Method**: NMR
+
+## Description
+
+This NMR structure exhibits a short part of the monomeric envelope protein (E) of SARS-CoV. The structure covers 9 residues of the short α-helix in the C-terminus. It is proposed to be in dynamic equilibrium with an β-coil-β-motif and may work as a Golgi targeting signal.
+
+## Basefolder
+
+5xer.pdb and 5xer.cif - the coordinates of the threedimensional molecular model
 
 
 

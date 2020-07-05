@@ -1,8 +1,20 @@
-# Base folder 2gdt
+# PDB 2gdt
 
-## Files downloaded from wwPDB:
+## Overview
 
-2gdt.pdb and 2gdt.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: leader protein
+
+**Organism**: SARS-CoV
+
+**Method**: NMR
+
+## Description
+
+First structure of SARS-CoV NSP1 (leader protein). This NMR structure showed a previously unknown beta barrel fold. The protein has been shown to inihibit the host cell ribosome and change the cell chemistry in various ways. It mediates RNA cleavage. Consensus structure (ensemble deposited as 2HSX).
+
+## Basefolder
+
+2gdt.pdb and 2gdt.cif - the coordinates of the threedimensional molecular model
 
 
 ## Comments On The Structure

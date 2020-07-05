@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+The x-ray Crystal Structure of Mac1 of NSP3 from SARS-CoV-2 in the apo form. This domain has a function as an ADP ribose 1"-phosphatase." 
+
 ## Basefolder
 
 6wen.pdb and 6wen.cif - the coordinates of the threedimensional molecular model

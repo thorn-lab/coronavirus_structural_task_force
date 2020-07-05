@@ -1,8 +1,18 @@
-# Base folder 1uzf
+# PDB 1uzf
 
-## Files downloaded from wwPDB:
+## Overview
 
-1uzf.pdb and 1uzf.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: human interaction partners
+
+**Organism**: ACE2
+
+**Method**: NMR
+
+
+
+## Basefolder
+
+1uzf.pdb and 1uzf.cif - the coordinates of the threedimensional molecular model
 
 
 

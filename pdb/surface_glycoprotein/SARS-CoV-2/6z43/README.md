@@ -1,8 +1,18 @@
-# Base folder 6z43
+# PDB 6z43
 
-## Files downloaded from wwPDB:
+## Overview
 
-6z43.pdb and 6z43.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: surface glycoprotein
+
+**Organism**: SARS-CoV-2
+
+**Method**: NMR
+
+
+
+## Basefolder
+
+6z43.pdb and 6z43.cif - the coordinates of the threedimensional molecular model
 
 
 

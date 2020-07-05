@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+NSP10 - NSP16 Complex from SARS-CoV-2. Methyltransferase that mediates mRNA cap of viral mRNAs. Therefore plays an essential role inviral mRNAs cap methylation, which is essential to evade immune system.
+
 ## Basefolder
 
 6w75.pdb and 6w75.cif - the coordinates of the threedimensional molecular model

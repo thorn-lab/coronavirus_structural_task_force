@@ -8,6 +8,8 @@
 
 **Method**: X-Ray Diffraction
 
+
+
 ## Basefolder
 
 5f02.pdb and 5f02.cif - the coordinates of the threedimensional molecular model

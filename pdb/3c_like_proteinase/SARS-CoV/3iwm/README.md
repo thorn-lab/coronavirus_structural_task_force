@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+Full length 3C-like protease from SARS-CoV forming an octomer with a peptide like enzyme inhibitor in the active site and an unusual dimerisation interaction similar to PDB entry 3ebn. This X-ray crystal structure was phased using PDB entry 2hob for molecular replacement & has data to a resolution of 3.2Å.
+
 ## Basefolder
 
 3iwm.pdb and 3iwm.cif - the coordinates of the threedimensional molecular model

@@ -8,6 +8,10 @@
 
 **Method**: Cryo-EM
 
+## Description
+
+SARS-CoV-2 spike in the open conformation. One of the RBDs is open. 
+
 ## Basefolder
 
 6vyb.pdb and 6vyb.cif - the coordinates of the threedimensional molecular model

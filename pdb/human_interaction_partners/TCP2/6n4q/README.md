@@ -8,6 +8,8 @@
 
 **Method**: Cryo-EM
 
+
+
 ## Basefolder
 
 6n4q.pdb and 6n4q.cif - the coordinates of the threedimensional molecular model

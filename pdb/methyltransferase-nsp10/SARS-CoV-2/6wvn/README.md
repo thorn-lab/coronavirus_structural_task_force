@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+Nsp16-Nsp10 from SARS-CoV-2 in Complex with 7-methyl-GpppA and S-Adenosylmethionine. Methyltransferase nsp-16 interacts with nsp-10 tomediate mRNAcap of viral mRNAs. Both 7-methyl-GpppA and S-Adenosylmethionine show specific binding options with the complex, and could inhibit its function or assembly.
+
 ## Basefolder
 
 6wvn.pdb and 6wvn.cif - the coordinates of the threedimensional molecular model

@@ -8,6 +8,10 @@
 
 **Method**: Cryo-EM
 
+## Description
+
+The spike receptor-binding domain (RBD) attaches the virus to ACE2. The homo trimer is a 3 chain structure Electron Microscopy 3.8 A resolution. It describes the up-position and exposes the rbd for ACE2 engagement? Compare to 5wrg! It shows new insights into the intermediate states of coronavirus pre-fusion spike trimer during infection.
+
 ## Basefolder
 
 5xlr.pdb and 5xlr.cif - the coordinates of the threedimensional molecular model

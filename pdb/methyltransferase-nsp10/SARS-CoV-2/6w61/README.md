@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+Methyltransferase-stimulatory factor complex of NSP16 and NSP10 from SARS CoV-2. 2'-O-methyltransferase nsp-16 interacts with nsp-10 to mediate mRNA cap to the structure of viral mRNAs, which is essential to evade immune system.
+
 ## Basefolder
 
 6w61.pdb and 6w61.cif - the coordinates of the threedimensional molecular model

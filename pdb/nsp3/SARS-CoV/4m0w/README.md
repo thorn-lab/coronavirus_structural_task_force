@@ -8,6 +8,10 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
+
+The crystal structure of SARS-CoV PLpro C112S mutant in complex with ubiquitin  reported at 1.4 Å resolution. Pl2pro is responsible for the cleaving of nsp1 to nsp4 of the polyprotein and also has a role in reducing the human immune response.
+
 ## Basefolder
 
 4m0w.pdb and 4m0w.cif - the coordinates of the threedimensional molecular model

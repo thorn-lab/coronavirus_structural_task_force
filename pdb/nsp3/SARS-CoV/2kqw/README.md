@@ -1,8 +1,20 @@
-# Base folder 2kqw
+# PDB 2kqw
 
-## Files downloaded from wwPDB:
+## Overview
 
-2kqw.pdb and 2kqw.cif - contain the coordinates of the threedimensional molecular model, and can be viewed with, for example, Coot or Pymol.
+**Protein name**: nsp3
+
+**Organism**: SARS-CoV
+
+**Method**: NMR
+
+## Description
+
+NMR structure determinations of the DPUP domain. This domains exact function is unknown to this date." 
+
+## Basefolder
+
+2kqw.pdb and 2kqw.cif - the coordinates of the threedimensional molecular model
 
 
 
