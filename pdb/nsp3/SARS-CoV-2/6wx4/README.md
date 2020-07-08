@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of the SARS CoV-2 Papain-like protease in complex with peptide inhibitor VIR251. Pl2pro is responsible for the cleaving of nsp1 to nsp4 of the polyprotein and also has a role in reducing the human immune response." 
 
 ## Basefolder
 

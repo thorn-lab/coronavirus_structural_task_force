@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Full length 3C-like protease from SARS-CoV with the inhibitor TG-0205221 in the active site. This X-ray crystal structure was phased using PDB entry 2zu4 for molecular replacement & has data to a resolution of 2.05脜.
 
 ## Basefolder
 

@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Full length 3C-like protease from SARS-CoV with a peptide like activity-based probe in the active site. This X-ray crystal structure was phased using PDB entry 6y2e for molecular replacement & has data to a resolution of 1.7脜.
 
 ## Basefolder
 

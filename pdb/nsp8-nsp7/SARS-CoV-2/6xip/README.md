@@ -24,7 +24,7 @@
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by   [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp8-nsp7/SARS-CoV-2/6xip/validation/molprobity)   
+**validation** - contains validation reports. This structure has been analyzed by  [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp8-nsp7/SARS-CoV-2/6xip/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp8-nsp7/SARS-CoV-2/6xip/validation/molprobity)   
 
 
 

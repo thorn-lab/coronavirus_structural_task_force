@@ -20,7 +20,7 @@
 
 ## Subfolders
 
-
+**isolde** - contains manual re-refinements from ISOLDE in ChimeraX, done by Tristan Croll. See details [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/ACE2/1r42/isolde/directory_info.txt)
 
 
 

@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of nsp16-nsp10 heterodimer from SARS-CoV-2 in complex with SAM (with additional SAM during crystallization). Replicase polyprotein 1ab, consisting of two chains.  S-ADENOSYLMETHIONINE as an important cofactor for the full function of the protein complex.
 
 ## Basefolder
 

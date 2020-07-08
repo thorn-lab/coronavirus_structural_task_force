@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Full length 3C-like protease from SARS-CoV with a Fluorine based ligand, 11b, in the active site. This X-ray crystal structure was phased using PDB entry 6lu7 for molecular replacement & has data to a resolution of 1.7脜.
 
 ## Basefolder
 

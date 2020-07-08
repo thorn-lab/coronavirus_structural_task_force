@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+2,7 脜 crystal structure of papain-like protease of SARS CoV-2. Pl2pro is responsible for the cleaving of nsp1 to nsp4 of the polyprotein and also has a role in reducing the human immune response.
 
 ## Basefolder
 

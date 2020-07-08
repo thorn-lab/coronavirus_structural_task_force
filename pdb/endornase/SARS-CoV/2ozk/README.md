@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+A truncated SARS-CoV Nsp15 (endoribonuclease) from residue 28-355 featuring a truncated N-terminal oligomerisation domain, the middle domain, and the catalytic NendoU domain at the C-terminal. The model contains four Nsp15 monomers and is unable to produce the full biological assembly (a hexamer consisting of a dimer of trimers) though generation of symmetry mates. This X-ray crystal structure has data to a resolution of 2.90Å.
 
 ## Basefolder
 

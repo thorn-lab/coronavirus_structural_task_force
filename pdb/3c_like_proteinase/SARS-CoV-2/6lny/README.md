@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Full length 3C-like protease from SARS-CoV with an aldehyde m15 ligand bound. This X-ray crystal structure was phased using PDB entry 1uj1 for molecular replacement & has data to a resolution of 2.25脜.
 
 ## Basefolder
 

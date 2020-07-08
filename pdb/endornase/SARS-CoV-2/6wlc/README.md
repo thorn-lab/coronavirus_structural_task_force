@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Full length SARS-CoV-2 Nsp15 (endoribonuclease) featuring an N-terminal oligomerisation domain, the middle domain, and the catalytic NendoU domain at the C-terminal. The model contains two Nsp15 monomers, one from each of the two trimers, which can be used to produce the full biological assembly (a hexamer consisting of a dimer of trimers) though generation of symmetry mates. This protein is bound to uridine-5'-monophosphate. This X-ray crystal structure has data to a resolution of 1.82Å.
 
 ## Basefolder
 
