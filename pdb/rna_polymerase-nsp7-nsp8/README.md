@@ -1,4 +1,4 @@
-# Folder rna_polymerase-nsp7-nsp8
+# rna_polymerase-nsp7-nsp8
 ## Sequence Information
 
 nsp7:
@@ -38,3 +38,6 @@ From: https://www.ncbi.nlm.nih.gov/protein/1802476815
 
 ## Related Structures
 For individual structures: [nsp7](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp7), [nsp8-nsp7](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp8-nsp7), [rna polymerase](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/rna_polymerase)
+
+## Useful Information
+Proteome Information: [**rna_polymerase-nsp7-nsp8**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/rna_polymerase-nsp7-nsp8/proteome_information.txt)
