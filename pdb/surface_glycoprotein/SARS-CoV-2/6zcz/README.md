@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 spike glycoprotein receptor binding domain in ternary complex with the antibody EY6A Fab (one heavy, one light chain) and a nanobody. Non-Polymer only tetramer with 4 chains. 
 
 ## Basefolder
 
@@ -24,7 +26,7 @@
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by  [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6zcz/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6zcz/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/surface_glycoprotein/SARS-CoV-2/6zcz/validation/Xtriage_output.log)  
+**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6zcz/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6zcz/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6zcz/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/surface_glycoprotein/SARS-CoV-2/6zcz/validation/Xtriage_output.log)  
 
 
 

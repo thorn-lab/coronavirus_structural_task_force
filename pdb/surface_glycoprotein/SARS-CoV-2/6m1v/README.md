@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of post fusion core of 2019-nCoV S2 subunit. Homo trimer with 1 chain. The S2 subunit is important to mediate virus fusion. 
 
 ## Basefolder
 

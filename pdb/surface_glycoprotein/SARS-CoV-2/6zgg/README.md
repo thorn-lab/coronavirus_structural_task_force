@@ -8,7 +8,9 @@
 
 **Method**: NMR
 
+## Description
 
+A cleaved spike glycoprotein precursor by furin-like cellular proteases for SARS-CoV-2. It is a homo trimer molecule with 3 chains. The structure is reported with one receptor binding domain erected. Two other relevant structures are 6zgi and 6zgh which are also furin cleaved spike proteins. 6zgi is in a closed conformation and 6zgh is in an intermediate conformation. 
 
 ## Basefolder
 

@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 receptor binding domain in complex with the antibody CR3022 which binds to an epitope that is conserved between SARS CoV-2 and SARS-CoV. Non-Polymer only trimer with 3 chains. The antibody binds more to SARS-CoV because of a glycan that is not present in SARS-CoV-2. 
 
 ## Basefolder
 

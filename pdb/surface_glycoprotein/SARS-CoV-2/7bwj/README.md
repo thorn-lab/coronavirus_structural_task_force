@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 receptor binding domain in complex with the antibody P2B-2F6 Fab (light and heavy chain). Non-polymer only trimer with 3 chains. The antibody uses mainly the heavy chain to bind with the RBD. 
 
 ## Basefolder
 

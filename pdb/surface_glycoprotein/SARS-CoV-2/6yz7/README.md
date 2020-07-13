@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+X-ray diffraction of a ternary complex with SARS-CoV-2 receptor binding domain, the H11-D4 nanobody and the antibody CR2022. Non-polymer only tetramer with 8 chains. Another relevant structure is 6z2m which is the same complex in a 90-degree deviation and with a different resolution, the original resolution was 3.3Å the new one is 2.71Å. 
 
 ## Basefolder
 

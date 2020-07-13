@@ -8,7 +8,9 @@
 
 **Method**: NMR
 
+## Description
 
+EM structure of an uncleavable spike glycoprotein of SARS-CoV-2 in closed conformation. Homo trimer with 3 chains. Homo trimer with 3 chains. 
 
 ## Basefolder
 

@@ -8,7 +8,9 @@
 
 **Method**: NMR
 
+## Description
 
+EM structure of SARS-CoV-2 spike ectodomain trimer in complex with the antibody BD-23-Fab (heavy and light chain). Non-polymer only pentamer with 5 chains. The BD-23-Fab antibody overlaps with the ACE2 binding site. 
 
 ## Basefolder
 

@@ -8,7 +8,9 @@
 
 **Method**: NMR
 
+## Description
 
+EM structure of an association of two complexes SARS-CoV-2 disordered spike ectodomain with the antibody EY6A fab. Non-polymer only trimer with 6 chains. 
 
 ## Basefolder
 

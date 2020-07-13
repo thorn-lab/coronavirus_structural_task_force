@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+X-ray crystal structure of the SARS-CoV-2 S1 spike protein receptor binding domain in complex with the antibody CV30 Fab (heavy and kappa chain). Non-polymer only trimer with 3 chains. CV30 and ACE2 are competing for binding to the receptor binding domain. 
 
 ## Basefolder
 
@@ -24,7 +26,7 @@
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by  [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6xe1/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6xe1/validation/molprobity)   
+**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6xe1/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6xe1/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6xe1/validation/molprobity)   
 
 
 

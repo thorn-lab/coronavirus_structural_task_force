@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 spike glycoprotein RBD in complex with the antibody ey6a Fab. The antibody ey6a neutralises SARS-CoV-2 and cross-reacts with SARS-CoV-1. It binds tightly to the receptor binding domain of the viral Spike glycoprotein. Non-polymer only trimer with 9 chains. One other relevant structure is 6zdh. It is also an antibody ey6a in a complex with a SARS-CoV-2 Spike glycoprotein, but the antibody does not bind on the RBD. 
 
 ## Basefolder
 
@@ -24,7 +26,7 @@
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by  [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6zer/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6zer/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/surface_glycoprotein/SARS-CoV-2/6zer/validation/Xtriage_output.log)  
+**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6zer/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6zer/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6zer/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/surface_glycoprotein/SARS-CoV-2/6zer/validation/Xtriage_output.log)  
 
 
 

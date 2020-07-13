@@ -8,7 +8,9 @@
 
 **Method**: NMR
 
+## Description
 
+Cryo-EM Structure of SARS-CoV-2 spike glycoprotein receptor binding domain in complex with the antibody fab fragments of REGN 10933 (one heavy and one light chain) and REGN 10987 (also one heavy and one light chain). Non-polymer only pentamer with 5 chains. The structure shows that the antibodies can synchronously bind to distinct regions of the RBD. 
 
 ## Basefolder
 

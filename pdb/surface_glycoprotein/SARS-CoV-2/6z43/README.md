@@ -8,7 +8,9 @@
 
 **Method**: NMR
 
+## Description
 
+Cryo-EM structure of SARS-CoV-2 spike glycoprotein in complex with the H11-D4 nanobody. Non-polymer only hexamer with 6 chains. The H11-D4 nanobody shows neutralising activity for the SARS-CoV-2 virus. Another relevant structure is 6yz5 which is the H11-D4 nanobody in complex with the SARS-CoV-2 receptor binding domain. 
 
 ## Basefolder
 

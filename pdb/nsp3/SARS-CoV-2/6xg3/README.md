@@ -26,7 +26,7 @@ The crystal structure of the PLpro domain. Pl2pro is responsible for the cleavin
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by  [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp3/SARS-CoV-2/6xg3/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp3/SARS-CoV-2/6xg3/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp3/SARS-CoV-2/6xg3/validation/Xtriage_output.log)  
+**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp3/SARS-CoV-2/6xg3/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp3/SARS-CoV-2/6xg3/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp3/SARS-CoV-2/6xg3/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp3/SARS-CoV-2/6xg3/validation/Xtriage_output.log)  
 
 
 

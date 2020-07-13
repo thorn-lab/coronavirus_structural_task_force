@@ -8,7 +8,9 @@
 
 **Method**: NMR
 
+## Description
 
+EM structure of the prefusion SARS-CoV-2 spike glycoprotein. Homo trimer with 3 chains. It is suspected that the destruction of the prefusion spike will lead to the neutralization of the SARS-CoV-2 Virus. 
 
 ## Basefolder
 

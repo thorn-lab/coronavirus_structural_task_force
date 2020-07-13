@@ -8,7 +8,9 @@
 
 **Method**: NMR
 
+## Description
 
+Cryo-EM structure of SARS-CoV-2 spike glycoprotein recombinant version of S protein termed OptSpike 1 used for a characterization. Homo trimer with 3 chains.
 
 ## Basefolder
 
