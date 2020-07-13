@@ -1,4 +1,4 @@
-# Folder methyltransferase-nsp10
+# methyltransferase-nsp10
 ## Sequence Information
 
 nsp10:
@@ -23,3 +23,8 @@ Sequence identity: 93.00%
 
 ## Related Structures
 For individual structures: [nsp10](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp10)
+
+## Useful Information
+Proteome Information: [**methyltransferase-nsp10**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/methyltransferase-nsp10/proteome_information.txt)
+
+Potential Glycosalation Sites: [**NetNGlyc**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/methyltransferase-nsp10/NetNGlyc_methyltransferase) 

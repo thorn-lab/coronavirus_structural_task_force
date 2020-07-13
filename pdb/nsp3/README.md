@@ -1,4 +1,4 @@
-# Folder nsp3
+# nsp3
 ## Sequence_information
 
 >NP_828862.2 nsp3-pp1a/pp1ab [Severe acute respiratory syndrome-related coronavirus]
@@ -8,3 +8,8 @@ From: https://www.ncbi.nlm.nih.gov/protein/34555776
 From: https://www.ncbi.nlm.nih.gov/protein/1826688920
 
 Sequence identity: 76.00%
+
+## Useful Information
+Proteome Information: [**nsp3**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp3/proteome_information.txt)
+
+Potential Glycosalation Sites: [**NetNGlyc**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp3/NetNGlyc_nsp3) 

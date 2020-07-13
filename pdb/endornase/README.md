@@ -1,4 +1,4 @@
-# Folder endornase
+# endornase
 ## Sequence_information
 
 >NP_828872.1 nsp15-pp1ab (endoRNAse) [Severe acute respiratory syndrome-related coronavirus]
@@ -8,3 +8,8 @@ From: https://www.ncbi.nlm.nih.gov/protein/29837507
 From: https://www.ncbi.nlm.nih.gov/protein/1802476818
 
 Sequence identity: 89.00%
+
+## Useful Information
+Proteome_information: [**endornase**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/endornase/proteome_information.txt)
+
+Potential Glycosalation Sites: [**NetNGlyc**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/endornase/NetNGlyc_endornase) 
