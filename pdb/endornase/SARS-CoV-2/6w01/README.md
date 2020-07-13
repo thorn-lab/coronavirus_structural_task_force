@@ -28,7 +28,7 @@ Full length SARS-CoV-2 Nsp15 (endoribonuclease)featuring an N-terminal oligomeri
 
 **validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/endornase/SARS-CoV-2/6w01/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/endornase/SARS-CoV-2/6w01/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/endornase/SARS-CoV-2/6w01/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/endornase/SARS-CoV-2/6w01/validation/Xtriage_output.log) [**BUSTER**](https://www.globalphasing.com/buster/wiki/index.cgi?Covid19Pdb6W01) 
 
-
+**refmac** - contains manual re-refinements from coot and REFMAC5 done by Dr. Sam Horrell. Structures were validated using inbuilt validation tools from coot in combination with validation through the molprobity server. See details [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/endornase/SARS-CoV-2/6w01/refmac)
 
 ## Raw diffraction data
 
