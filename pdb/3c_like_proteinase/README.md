@@ -12,6 +12,6 @@ Sequence identity: 96.00%
 ## Useful Information
 InsideCorona Blog: [**3C-like Protease: A Promising Drug Target**](https://insidecorona.net/a-promising-drug-target/)
 
-Proteome_information: [**3C-like Proteinase**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/proteome_information.txt)
+Proteome Information: [**3C-like Proteinase**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/proteome_information.txt)
 
 Potential Glycosalation Sites: [**NetNGlyc**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/NetNGlyc_3c_like_proteinase) 
