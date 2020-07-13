@@ -1,4 +1,4 @@
-# Folder rna_polymerase-nsp8
+# rna_polymerase-nsp8
 ## Sequence_information
 rna_polymerase:
 >NP_828869.1 nsp12-pp1ab (RdRp) [Severe acute respiratory syndrome-related coronavirus]
@@ -19,8 +19,10 @@ From: https://www.ncbi.nlm.nih.gov/protein/1802476812
 
   Sequence idetity: 97.00%
 
-
-
-
 ## Related Structures
 For combined structures of this protein: [rna_polymerase-nsp7-nsp8](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/rna_polymerase-nsp7-nsp8)
+
+## Useful Information
+Proteome Information: [**rna_polymerase-nsp8**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/rna_polymerase-nsp8/proteome_information.txt)
+
+Potential Glycosalation Sites: [**NetNGlyc (rna polymerase)**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/rna_polymerase-nsp8/NetNGlyc_rna_polymerase) 
