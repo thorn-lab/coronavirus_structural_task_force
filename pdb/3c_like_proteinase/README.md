@@ -1,4 +1,4 @@
-# Folder 3c_like_proteinase
+# 3C-like Proteinase
 ## Sequence_information
 
 >NP_828863.1 nsp5-pp1a/pp1ab (3CL-PRO) [Severe acute respiratory syndrome-related coronavirus]
@@ -8,3 +8,8 @@ From: https://www.ncbi.nlm.nih.gov/protein/29837498
 From: https://www.ncbi.nlm.nih.gov/protein/1802476809
 
 Sequence identity: 96.00%
+
+## Useful Information
+Proteome_information: [**3C-like Proteinase**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/proteome_information.txt)
+
+Potential Glycosalation Sites: [**NetNGlyc**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/NetNGlyc_nsp7) 
