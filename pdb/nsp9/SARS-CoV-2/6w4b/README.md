@@ -62,7 +62,7 @@ Available. **Click** [here](https://doi.org/10.18430/m36w4b)
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/6w4b
 
-**PDBe-KB: ** 
+**PDBe-KB**: 
  
 **PDBr**: https://www.rcsb.org/structure/6w4b 
 

@@ -62,7 +62,7 @@ No public deposition. --<br>
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/6wjt
 
-**PDBe-KB: **https://www.ebi.ac.uk/pdbe/pdbe-kb/covid19/PRO_0000449633 
+**PDBe-KB**: https://www.ebi.ac.uk/pdbe/pdbe-kb/covid19/PRO_0000449633 
  
 **PDBr**: https://www.rcsb.org/structure/6wjt 
 
