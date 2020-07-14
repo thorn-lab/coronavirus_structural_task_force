@@ -61,6 +61,8 @@ Available. **Click** [here](https://zenodo.org/record/3731484)
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/5rfn
+
+**PDBe-KB: **https://www.ebi.ac.uk/pdbe/pdbe-kb/covid19/PRO_0000449623 
  
 **PDBr**: https://www.rcsb.org/structure/5rfn 
 

@@ -61,6 +61,8 @@ No public deposition. --<br>
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/6w9q
+
+**PDBe-KB: ** 
  
 **PDBr**: https://www.rcsb.org/structure/6w9q 
 

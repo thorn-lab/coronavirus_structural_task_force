@@ -73,6 +73,8 @@ In this case we would recommend to use the original structure, potentially with 
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/5reb
+
+**PDBe-KB: **https://www.ebi.ac.uk/pdbe/pdbe-kb/covid19/PRO_0000449623 
  
 **PDBr**: https://www.rcsb.org/structure/5reb 
 

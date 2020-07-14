@@ -61,6 +61,8 @@ Available. **Click** [here](https://doi.org/10.18430/m36vww)
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/6vww
+
+**PDBe-KB: **https://www.ebi.ac.uk/pdbe/pdbe-kb/covid19/PRO_0000449632 
  
 **PDBr**: https://www.rcsb.org/structure/6vww 
 
