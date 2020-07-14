@@ -24,7 +24,7 @@ SARS-CoV-2 spike in the open conformation. One of the RBDs is open.
 
 **validation** - contains validation reports. This structure has been analyzed by   [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6vyb/validation/molprobity)   [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6vyb/validation/ccpem-validation)
 
-
+**ccpem** - contains semi-automated refinements done by Agnel Joseph using map processing, model refinement and validation tools in CCP-EM. see details [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/surface_glycoprotein/SARS-CoV-2/6vyb/ccpem/directory_info.txt)
 
 ## Maps
 
