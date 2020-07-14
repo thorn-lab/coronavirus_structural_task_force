@@ -10,7 +10,7 @@
 
 ## Description
 
-Full length 3C-like protease from SARS-CoV. This X-ray crystal structure was phased using PDB entry 3f9f for molecular replacement & has data to a resolution of 2脜.
+Full length 3C-like protease from SARS-CoV. This X-ray crystal structure was phased using PDB entry 3f9f for molecular replacement & has data to a resolution of 2Å.
 
 ## Basefolder
 

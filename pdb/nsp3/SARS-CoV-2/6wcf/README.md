@@ -10,7 +10,7 @@
 
 ## Description
 
-1.065 脜 Crystal Structure of ADP ribose phosphatase of NSP3 from SARS-CoV-2 in complex with MES (2-(N-MORPHOLINO)-ETHANESULFONIC ACID) 
+1.065 Å Crystal Structure of ADP ribose phosphatase of NSP3 from SARS-CoV-2 in complex with MES (2-(N-MORPHOLINO)-ETHANESULFONIC ACID) 
 
 ## Basefolder
 

@@ -10,7 +10,7 @@
 
 ## Description
 
-The spike glycoprotein is a membrane protein with two heptad repeat domains (HR1&HR2). Here. HR1 and HR2 adapt an antiparallel post-fusion hairpin conformation. The HR1 helices form a long coiled coil (120 A). Conserved ASP and GLU residues of HR1 force HR2 to adopt an extended conformation at either end of a short HR2 alpha-helix.
+The spike glycoprotein is a membrane protein with two heptad repeat domains (HR1&HR2). Here. HR1 and HR2 adapt an antiparallel post-fusion hairpin conformation. The HR1 helices form a long coiled coil (120 Å). Conserved ASP and GLU residues of HR1 force HR2 to adopt an extended conformation at either end of a short HR2 alpha-helix.
 
 ## Basefolder
 

@@ -10,7 +10,7 @@
 
 ## Description
 
-Full length 3C-like protease from SARS-CoV with PCM-0102274 ligand bound. This X-ray crystal structure was phased using PDB entry 6lu7 for molecular replacement & has data to a resolution of 1.68脜.
+Full length 3C-like protease from SARS-CoV with PCM-0102274 ligand bound. This X-ray crystal structure was phased using PDB entry 6lu7 for molecular replacement & has data to a resolution of 1.68Å.
 
 ## Basefolder
 

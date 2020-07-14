@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+This crystal structure shows the nsp7-nsp8c complex of SARS-CoV-2. It is an asymmetric  heterodimer of two entities, each consisting of one chain. The structure covers the globular domain of nsp8 (nsp8c, residues 82-196) and the nsp7 completely (residues 1-81). The complex is a multimeric RNA polymerase capable of de novo initiation and primer extension. The long helix motif of nsp 8 is thereby involved in nucleic acid binding.
 
 ## Basefolder
 

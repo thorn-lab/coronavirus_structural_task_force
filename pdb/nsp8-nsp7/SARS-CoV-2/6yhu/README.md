@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+This crystal structure shows the nsp7-nsp8 complex of SARS-CoV-2. It is an asymmetric  heterodimer of two entities, each consisting of two chains. The complex is a multimeric RNA polymerase capable of de novo initiation and primer extension. The selection criteria for this structure was the fact that it has no restraint violations (clashscore=0).
 
 ## Basefolder
 

@@ -10,7 +10,7 @@
 
 ## Description
 
-Full length 3C-like protease from SARS-CoV. This data was collected at room temperature. This X-ray crystal structure was phased using PDB entry 6wqf for molecular replacement & has data to a resolution of 2.1脜.
+Full length 3C-like protease from SARS-CoV. This data was collected at room temperature. This X-ray crystal structure was phased using PDB entry 6wqf for molecular replacement & has data to a resolution of 2.1Å.
 
 ## Basefolder
 

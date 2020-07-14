@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+This crystal structure shows the Orf9b/Protein 9b of SARS-CoV-2. The gene encoding this protein is included within the N gene. The structure is a homodimer of two chains and features a ligand interaction with Polyethylene Glycole. It is suggested to play a role in host-virus interaction by binding non-covalently to intracellular bilayers.
 
 ## Basefolder
 

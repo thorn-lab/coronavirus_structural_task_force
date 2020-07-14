@@ -10,7 +10,7 @@
 
 ## Description
 
-1,5 脜 Crystal Structure of Mac1 domain of NSP3 from SARS CoV-2 in the complex with ADP ribose. This domain has a function as an ADP ribose 1"-phosphatase.
+1,5 Å Crystal Structure of Mac1 domain of NSP3 from SARS CoV-2 in the complex with ADP ribose. This domain has a function as an ADP ribose 1"-phosphatase.
 
 ## Basefolder
 

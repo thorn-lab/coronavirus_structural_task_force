@@ -10,7 +10,7 @@
 
 ## Description
 
-Full length 3C-like protease from SARS-CoV with an aldehyde m14 ligand bound. This X-ray crystal structure was phased using PDB entry 1uj1 for molecular replacement & has data to a resolution of 1.94脜.
+Full length 3C-like protease from SARS-CoV with an aldehyde m14 ligand bound. This X-ray crystal structure was phased using PDB entry 1uj1 for molecular replacement & has data to a resolution of 1.94Å.
 
 ## Basefolder
 

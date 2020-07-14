@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+This crystal structure shows the SARS-CoV-2 complex of nsp 7 and the C-terminal domain of nsp8. It is an asymmetric  heterotetramer of two entities, each consisting of two chains. The structure has a high resolution of 1.5 Å and features three ligand interactions with 1,2-Ethanediol. The complex is a multimeric RNA polymerase capable of de novo initiation and primer extension.
 
 ## Basefolder
 

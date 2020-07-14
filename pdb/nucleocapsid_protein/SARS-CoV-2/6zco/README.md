@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+This crystal structure shows the C-terminal dimerization domain of SARS-CoV-2 nucleocapsid protein (N) in an orthorhombic crystal form. The structure is a monomer with a high resolution of 1.36 Å and provides structural features for oligomerization. 
 
 ## Basefolder
 
