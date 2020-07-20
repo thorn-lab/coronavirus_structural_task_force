@@ -2,7 +2,7 @@
 ## Sequence Information
 
 >NP_828868.1 nsp10-pp1a/pp1ab [Severe acute respiratory syndrome-related coronavirus]
-From: https://www.ncbi.nlm.nih.gov/protein/29837503
+From: https://www.ncbi.nlm.nih.gov/nuccore/NC_004718.3
 
 >YP_009725306.1 nsp10 [Severe acute respiratory syndrome coronavirus 2]
 From: https://www.ncbi.nlm.nih.gov/protein/1802476814
