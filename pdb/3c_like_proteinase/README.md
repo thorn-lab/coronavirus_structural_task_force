@@ -14,4 +14,4 @@ InsideCorona Blog: [**3C-like Protease: A Promising Drug Target**](https://insid
 
 Proteome Information: [**3C-like Proteinase**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/proteome_information.txt)
 
-Potential Glycosalation Sites: [**NetNGlyc**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/NetNGlyc_3c_like_proteinase) 
+Potential Glycosalation Sites: [**NetNGlyc**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/NetNGlyc_3c_like_protease) 
