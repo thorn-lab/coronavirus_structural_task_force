@@ -62,7 +62,7 @@ Available. **Click** [here](https://doi.org/10.18430/m36vxs)
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/6vxs
 
-**PDBe-KB**: 
+**PDBe-KB**:  
  
 **PDBr**: https://www.rcsb.org/structure/6vxs 
 

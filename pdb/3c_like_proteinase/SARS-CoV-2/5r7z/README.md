@@ -62,7 +62,7 @@ Available. **Click** [here](https://zenodo.org/record/3730472)
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/5r7z
 
-**PDBe-KB**:https://www.ebi.ac.uk/pdbe/pdbe-kb/covid19/PRO_0000449623 
+**PDBe-KB**: https://www.ebi.ac.uk/pdbe/pdbe-kb/covid19/PRO_0000449623 
  
 **PDBr**: https://www.rcsb.org/structure/5r7z 
 
