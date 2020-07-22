@@ -3,7 +3,7 @@ data_6XDG
 _entry.id   6XDG 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.329 
+_audit_conform.dict_version    5.330 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
@@ -1435,9 +1435,9 @@ _entity_src_gen.plasmid_details
 _entity_src_gen.pdbx_description 
 1 1 sample 'Biological sequence' 1 251 2019-nCoV ? 'S, 2' ? ? ? ? ? ? 'Severe acute respiratory syndrome coronavirus 2' 2697049 ? 
 ? ? ? ? ? ? 'Chinese hamster' 'Cricetulus griseus' 10029 ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? 
-2 1 sample 'Biological sequence' 1 214 Mouse     ? ?      ? ? ? ? ? ? 'Mus musculus'                                    10090   ? 
+2 1 sample 'Biological sequence' 1 214 Human     ? ?      ? ? ? ? ? ? 'Homo sapiens'                                    9606    ? 
 ? ? ? ? ? ? 'Chinese hamster' 'Cricetulus griseus' 10029 ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? 
-3 1 sample 'Biological sequence' 1 226 Mouse     ? ?      ? ? ? ? ? ? 'Mus musculus'                                    10090   ? 
+3 1 sample 'Biological sequence' 1 226 Human     ? ?      ? ? ? ? ? ? 'Homo sapiens'                                    9606    ? 
 ? ? ? ? ? ? 'Chinese hamster' 'Cricetulus griseus' 10029 ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? 
 4 1 sample 'Biological sequence' 1 225 Human     ? ?      ? ? ? ? ? ? 'Homo sapiens'                                    9606    ? 
 ? ? ? ? ? ? 'Chinese hamster' 'Cricetulus griseus' 10029 ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? 
@@ -12888,6 +12888,7 @@ _pdbx_audit_revision_history.minor_revision
 _pdbx_audit_revision_history.revision_date 
 1 'Structure model' 1 0 2020-06-24 
 2 'Structure model' 1 1 2020-07-08 
+3 'Structure model' 1 2 2020-07-22 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -12897,20 +12898,34 @@ _pdbx_audit_revision_details.type                'Initial release'
 _pdbx_audit_revision_details.description         ? 
 _pdbx_audit_revision_details.details             ? 
 # 
-_pdbx_audit_revision_group.ordinal             1 
-_pdbx_audit_revision_group.revision_ordinal    2 
-_pdbx_audit_revision_group.data_content_type   'Structure model' 
-_pdbx_audit_revision_group.group               'Author supporting evidence' 
+loop_
+_pdbx_audit_revision_group.ordinal 
+_pdbx_audit_revision_group.revision_ordinal 
+_pdbx_audit_revision_group.data_content_type 
+_pdbx_audit_revision_group.group 
+1 2 'Structure model' 'Author supporting evidence' 
+2 3 'Structure model' 'Source and taxonomy'        
 # 
-_pdbx_audit_revision_category.ordinal             1 
-_pdbx_audit_revision_category.revision_ordinal    2 
-_pdbx_audit_revision_category.data_content_type   'Structure model' 
-_pdbx_audit_revision_category.category            pdbx_audit_support 
+loop_
+_pdbx_audit_revision_category.ordinal 
+_pdbx_audit_revision_category.revision_ordinal 
+_pdbx_audit_revision_category.data_content_type 
+_pdbx_audit_revision_category.category 
+1 2 'Structure model' pdbx_audit_support               
+2 3 'Structure model' em_entity_assembly_naturalsource 
+3 3 'Structure model' entity_src_gen                   
 # 
-_pdbx_audit_revision_item.ordinal             1 
-_pdbx_audit_revision_item.revision_ordinal    2 
-_pdbx_audit_revision_item.data_content_type   'Structure model' 
-_pdbx_audit_revision_item.item                '_pdbx_audit_support.funding_organization' 
+loop_
+_pdbx_audit_revision_item.ordinal 
+_pdbx_audit_revision_item.revision_ordinal 
+_pdbx_audit_revision_item.data_content_type 
+_pdbx_audit_revision_item.item 
+1 2 'Structure model' '_pdbx_audit_support.funding_organization'       
+2 3 'Structure model' '_em_entity_assembly_naturalsource.ncbi_tax_id'  
+3 3 'Structure model' '_em_entity_assembly_naturalsource.organism'     
+4 3 'Structure model' '_entity_src_gen.gene_src_common_name'           
+5 3 'Structure model' '_entity_src_gen.pdbx_gene_src_ncbi_taxonomy_id' 
+6 3 'Structure model' '_entity_src_gen.pdbx_gene_src_scientific_name'  
 # 
 _software.citation_id            ? 
 _software.classification         refinement 
@@ -13252,7 +13267,7 @@ _em_entity_assembly_naturalsource.organism
 _em_entity_assembly_naturalsource.strain 
 _em_entity_assembly_naturalsource.tissue 
 1 2 ? ? 2697049 ? ? 'Severe acute respiratory syndrome coronavirus 2' ? ? 
-2 3 ? ? 10090   ? ? 'Mus musculus'                                    ? ? 
+2 3 ? ? 9606    ? ? 'Homo sapiens'                                    ? ? 
 3 4 ? ? 9606    ? ? 'Homo sapiens'                                    ? ? 
 # 
 loop_
