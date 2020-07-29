@@ -3,7 +3,7 @@ data_7CAN
 _entry.id   7CAN 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.327 
+_audit_conform.dict_version    5.329 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
@@ -129,11 +129,12 @@ _entity.pdbx_ec
 _entity.pdbx_mutation 
 _entity.pdbx_fragment 
 _entity.details 
-1 polymer     man 'sybody MR17-K99Y'     16573.096 1 ? ? ?                               ? 
-2 polymer     man 'Spike glycoprotein'   23747.643 1 ? ? 'Receptor-binding domain (RBD)' ? 
-3 non-polymer man N-ACETYL-D-GLUCOSAMINE 221.208   2 ? ? ?                               ? 
-4 non-polymer man ALPHA-L-FUCOSE         164.156   1 ? ? ?                               ? 
-5 non-polymer man GLYCEROL               92.094    1 ? ? ?                               ? 
+1 polymer     man 'sybody MR17-K99Y' 16573.096 1 ? ? ?                               ? 
+2 polymer     man 'Spike glycoprotein' 23747.643 1 ? ? 'Receptor-binding domain (RBD)' ? 
+3 branched    man 
+'2-acetamido-2-deoxy-beta-D-glucopyranose-(1-4)-[alpha-L-fucopyranose-(1-6)]2-acetamido-2-deoxy-beta-D-glucopyranose' 570.542   1 
+? ? ?                               ? 
+4 non-polymer man GLYCEROL 92.094    1 ? ? ?                               ? 
 # 
 _entity_name_com.entity_id   2 
 _entity_name_com.name        'S glycoprotein,E2,Peplomer protein' 
@@ -659,29 +660,52 @@ _chem_comp.name
 _chem_comp.pdbx_synonyms 
 _chem_comp.formula 
 _chem_comp.formula_weight 
-ALA 'L-peptide linking'           y ALANINE                ?                               'C3 H7 N O2'     89.093  
-ARG 'L-peptide linking'           y ARGININE               ?                               'C6 H15 N4 O2 1' 175.209 
-ASN 'L-peptide linking'           y ASPARAGINE             ?                               'C4 H8 N2 O3'    132.118 
-ASP 'L-peptide linking'           y 'ASPARTIC ACID'        ?                               'C4 H7 N O4'     133.103 
-CYS 'L-peptide linking'           y CYSTEINE               ?                               'C3 H7 N O2 S'   121.158 
-FUC 'L-saccharide, alpha linking' . ALPHA-L-FUCOSE         ?                               'C6 H12 O5'      164.156 
-GLN 'L-peptide linking'           y GLUTAMINE              ?                               'C5 H10 N2 O3'   146.144 
-GLU 'L-peptide linking'           y 'GLUTAMIC ACID'        ?                               'C5 H9 N O4'     147.129 
-GLY 'peptide linking'             y GLYCINE                ?                               'C2 H5 N O2'     75.067  
-GOL non-polymer                   . GLYCEROL               'GLYCERIN; PROPANE-1,2,3-TRIOL' 'C3 H8 O3'       92.094  
-HIS 'L-peptide linking'           y HISTIDINE              ?                               'C6 H10 N3 O2 1' 156.162 
-ILE 'L-peptide linking'           y ISOLEUCINE             ?                               'C6 H13 N O2'    131.173 
-LEU 'L-peptide linking'           y LEUCINE                ?                               'C6 H13 N O2'    131.173 
-LYS 'L-peptide linking'           y LYSINE                 ?                               'C6 H15 N2 O2 1' 147.195 
-MET 'L-peptide linking'           y METHIONINE             ?                               'C5 H11 N O2 S'  149.211 
-NAG 'D-saccharide, beta linking'  . N-ACETYL-D-GLUCOSAMINE ?                               'C8 H15 N O6'    221.208 
-PHE 'L-peptide linking'           y PHENYLALANINE          ?                               'C9 H11 N O2'    165.189 
-PRO 'L-peptide linking'           y PROLINE                ?                               'C5 H9 N O2'     115.130 
-SER 'L-peptide linking'           y SERINE                 ?                               'C3 H7 N O3'     105.093 
-THR 'L-peptide linking'           y THREONINE              ?                               'C4 H9 N O3'     119.119 
-TRP 'L-peptide linking'           y TRYPTOPHAN             ?                               'C11 H12 N2 O2'  204.225 
-TYR 'L-peptide linking'           y TYROSINE               ?                               'C9 H11 N O3'    181.189 
-VAL 'L-peptide linking'           y VALINE                 ?                               'C5 H11 N O2'    117.146 
+ALA 'L-peptide linking'           y ALANINE                                  ?                               'C3 H7 N O2'     
+89.093  
+ARG 'L-peptide linking'           y ARGININE                                 ?                               'C6 H15 N4 O2 1' 
+175.209 
+ASN 'L-peptide linking'           y ASPARAGINE                               ?                               'C4 H8 N2 O3'    
+132.118 
+ASP 'L-peptide linking'           y 'ASPARTIC ACID'                          ?                               'C4 H7 N O4'     
+133.103 
+CYS 'L-peptide linking'           y CYSTEINE                                 ?                               'C3 H7 N O2 S'   
+121.158 
+FUC 'L-saccharide, alpha linking' . alpha-L-fucopyranose                     ?                               'C6 H12 O5'      
+164.156 
+GLN 'L-peptide linking'           y GLUTAMINE                                ?                               'C5 H10 N2 O3'   
+146.144 
+GLU 'L-peptide linking'           y 'GLUTAMIC ACID'                          ?                               'C5 H9 N O4'     
+147.129 
+GLY 'peptide linking'             y GLYCINE                                  ?                               'C2 H5 N O2'     
+75.067  
+GOL non-polymer                   . GLYCEROL                                 'GLYCERIN; PROPANE-1,2,3-TRIOL' 'C3 H8 O3'       
+92.094  
+HIS 'L-peptide linking'           y HISTIDINE                                ?                               'C6 H10 N3 O2 1' 
+156.162 
+ILE 'L-peptide linking'           y ISOLEUCINE                               ?                               'C6 H13 N O2'    
+131.173 
+LEU 'L-peptide linking'           y LEUCINE                                  ?                               'C6 H13 N O2'    
+131.173 
+LYS 'L-peptide linking'           y LYSINE                                   ?                               'C6 H15 N2 O2 1' 
+147.195 
+MET 'L-peptide linking'           y METHIONINE                               ?                               'C5 H11 N O2 S'  
+149.211 
+NAG 'D-saccharide, beta linking'  . 2-acetamido-2-deoxy-beta-D-glucopyranose ?                               'C8 H15 N O6'    
+221.208 
+PHE 'L-peptide linking'           y PHENYLALANINE                            ?                               'C9 H11 N O2'    
+165.189 
+PRO 'L-peptide linking'           y PROLINE                                  ?                               'C5 H9 N O2'     
+115.130 
+SER 'L-peptide linking'           y SERINE                                   ?                               'C3 H7 N O3'     
+105.093 
+THR 'L-peptide linking'           y THREONINE                                ?                               'C4 H9 N O3'     
+119.119 
+TRP 'L-peptide linking'           y TRYPTOPHAN                               ?                               'C11 H12 N2 O2'  
+204.225 
+TYR 'L-peptide linking'           y TYROSINE                                 ?                               'C9 H11 N O3'    
+181.189 
+VAL 'L-peptide linking'           y VALINE                                   ?                               'C5 H11 N O2'    
+117.146 
 # 
 _exptl.absorpt_coefficient_mu     ? 
 _exptl.absorpt_correction_T_max   ? 
@@ -788,7 +812,7 @@ _diffrn_radiation.pdbx_analyzer                    ?
 _diffrn_radiation.pdbx_scattering_type             x-ray 
 # 
 _diffrn_radiation_wavelength.id           1 
-_diffrn_radiation_wavelength.wavelength   0.98753 
+_diffrn_radiation_wavelength.wavelength   0.97853 
 _diffrn_radiation_wavelength.wt           1.0 
 # 
 _diffrn_source.current                     ? 
@@ -1117,8 +1141,6 @@ A N N 1 ?
 B N N 2 ? 
 C N N 3 ? 
 D N N 4 ? 
-E N N 3 ? 
-F N N 5 ? 
 # 
 loop_
 _struct_conf.conf_type_id 
@@ -1190,13 +1212,14 @@ _struct_conn.pdbx_ptnr3_PDB_ins_code
 _struct_conn.details 
 _struct_conn.pdbx_dist_value 
 _struct_conn.pdbx_value_order 
-disulf1 disulf ?    ? A CYS 26 SG  ? ? ? 1_555 A CYS 100 SG ? ? A CYS 22  A CYS 96  1_555 ? ? ? ? ? ? ? 2.037 ? 
-disulf2 disulf ?    ? B CYS 10 SG  ? ? ? 1_555 B CYS 35  SG ? ? B CYS 336 B CYS 361 1_555 ? ? ? ? ? ? ? 2.053 ? 
-disulf3 disulf ?    ? B CYS 53 SG  ? ? ? 1_555 B CYS 106 SG ? ? B CYS 379 B CYS 432 1_555 ? ? ? ? ? ? ? 2.019 ? 
-disulf4 disulf ?    ? B CYS 65 SG  ? ? ? 1_555 B CYS 199 SG ? ? B CYS 391 B CYS 525 1_555 ? ? ? ? ? ? ? 2.024 ? 
-covale1 covale one  ? B ASN 17 ND2 ? ? ? 1_555 C NAG .   C1 ? ? B ASN 343 B NAG 601 1_555 ? ? ? ? ? ? ? 1.434 ? 
-covale2 covale both ? C NAG .  O4  ? ? ? 1_555 E NAG .   C1 ? ? B NAG 601 B NAG 603 1_555 ? ? ? ? ? ? ? 1.449 ? 
-covale3 covale both ? C NAG .  O6  ? ? ? 1_555 D FUC .   C1 ? ? B NAG 601 B FUC 602 1_555 ? ? ? ? ? ? ? 1.463 ? 
+_struct_conn.pdbx_role 
+disulf1 disulf ?    ? A CYS 26 SG  ? ? ? 1_555 A CYS 100 SG ? ? A CYS 22  A CYS 96  1_555 ? ? ? ? ? ? ? 2.037 ? ?               
+disulf2 disulf ?    ? B CYS 10 SG  ? ? ? 1_555 B CYS 35  SG ? ? B CYS 336 B CYS 361 1_555 ? ? ? ? ? ? ? 2.053 ? ?               
+disulf3 disulf ?    ? B CYS 53 SG  ? ? ? 1_555 B CYS 106 SG ? ? B CYS 379 B CYS 432 1_555 ? ? ? ? ? ? ? 2.019 ? ?               
+disulf4 disulf ?    ? B CYS 65 SG  ? ? ? 1_555 B CYS 199 SG ? ? B CYS 391 B CYS 525 1_555 ? ? ? ? ? ? ? 2.024 ? ?               
+covale1 covale one  ? B ASN 17 ND2 ? ? ? 1_555 C NAG .   C1 ? ? B ASN 343 C NAG 1   1_555 ? ? ? ? ? ? ? 1.434 ? N-Glycosylation 
+covale2 covale both ? C NAG .  O4  ? ? ? 1_555 C NAG .   C1 ? ? C NAG 1   C NAG 2   1_555 ? ? ? ? ? ? ? 1.449 ? ?               
+covale3 covale both ? C NAG .  O6  ? ? ? 1_555 C FUC .   C1 ? ? C NAG 1   C FUC 3   1_555 ? ? ? ? ? ? ? 1.463 ? ?               
 # 
 loop_
 _struct_conn_type.id 
@@ -1318,40 +1341,6 @@ AA4 1 2 N CYS B 35  ? N CYS B 361 O CYS B 199 ? O CYS B 525
 AA4 2 3 O VAL B 198 ? O VAL B 524 N PHE B 66  ? N PHE B 392 
 AA5 1 2 N TYR B 127 ? N TYR B 453 O GLN B 167 ? O GLN B 493 
 AA6 1 2 N TYR B 147 ? N TYR B 473 O TYR B 163 ? O TYR B 489 
-# 
-loop_
-_struct_site.id 
-_struct_site.pdbx_evidence_code 
-_struct_site.pdbx_auth_asym_id 
-_struct_site.pdbx_auth_comp_id 
-_struct_site.pdbx_auth_seq_id 
-_struct_site.pdbx_auth_ins_code 
-_struct_site.pdbx_num_residues 
-_struct_site.details 
-AC1 Software B GOL 604 ? 3 'binding site for residue GOL B 604'                                                       
-AC2 Software B ASN 343 ? 3 'binding site for Poly-Saccharide residues NAG B 601 through NAG B 603 bound to ASN B 343' 
-# 
-loop_
-_struct_site_gen.id 
-_struct_site_gen.site_id 
-_struct_site_gen.pdbx_num_res 
-_struct_site_gen.label_comp_id 
-_struct_site_gen.label_asym_id 
-_struct_site_gen.label_seq_id 
-_struct_site_gen.pdbx_auth_ins_code 
-_struct_site_gen.auth_comp_id 
-_struct_site_gen.auth_asym_id 
-_struct_site_gen.auth_seq_id 
-_struct_site_gen.label_atom_id 
-_struct_site_gen.label_alt_id 
-_struct_site_gen.symmetry 
-_struct_site_gen.details 
-1 AC1 3 ASN B 17  ? ASN B 343 . ? 1_555 ? 
-2 AC1 3 ALA B 46  ? ALA B 372 . ? 1_555 ? 
-3 AC1 3 TRP B 110 ? TRP B 436 . ? 1_555 ? 
-4 AC2 3 GLY B 13  ? GLY B 339 . ? 1_555 ? 
-5 AC2 3 ASN B 17  ? ASN B 343 . ? 1_555 ? 
-6 AC2 3 SER B 45  ? SER B 371 . ? 1_555 ? 
 # 
 _atom_sites.entry_id                    7CAN 
 _atom_sites.Cartn_transf_matrix[1][1]   ? 
@@ -3902,50 +3891,50 @@ ATOM   2462 O O   . PRO B 2 201 ? -19.24114 54.66606 -67.34480 1.000 106.75859 ?
 ATOM   2463 C CB  . PRO B 2 201 ? -17.06427 52.85658 -65.32767 1.000 109.13760 ? 527 PRO B CB  1 
 ATOM   2464 C CG  . PRO B 2 201 ? -17.07157 52.14719 -64.02156 1.000 97.72437  ? 527 PRO B CG  1 
 ATOM   2465 C CD  . PRO B 2 201 ? -18.47403 51.62176 -63.83133 1.000 105.99314 ? 527 PRO B CD  1 
-HETATM 2466 C C1  . NAG C 3 .   ? -11.25870 44.43933 -48.46078 1.000 113.73714 ? 601 NAG B C1  1 
-HETATM 2467 C C2  . NAG C 3 .   ? -11.29332 45.20814 -49.78153 1.000 118.34840 ? 601 NAG B C2  1 
-HETATM 2468 C C3  . NAG C 3 .   ? -10.14384 44.76048 -50.68247 1.000 129.82252 ? 601 NAG B C3  1 
-HETATM 2469 C C4  . NAG C 3 .   ? -8.81785  44.88997 -49.94333 1.000 132.39981 ? 601 NAG B C4  1 
-HETATM 2470 C C5  . NAG C 3 .   ? -8.87504  44.13599 -48.61552 1.000 134.46743 ? 601 NAG B C5  1 
-HETATM 2471 C C6  . NAG C 3 .   ? -7.65505  44.35080 -47.74844 1.000 141.01634 ? 601 NAG B C6  1 
-HETATM 2472 C C7  . NAG C 3 .   ? -13.31163 46.05420 -50.90014 1.000 109.75388 ? 601 NAG B C7  1 
-HETATM 2473 C C8  . NAG C 3 .   ? -12.74375 47.42537 -50.68240 1.000 107.16851 ? 601 NAG B C8  1 
-HETATM 2474 N N2  . NAG C 3 .   ? -12.57162 45.03352 -50.45282 1.000 117.60346 ? 601 NAG B N2  1 
-HETATM 2475 O O3  . NAG C 3 .   ? -10.12536 45.55347 -51.86455 1.000 118.89575 ? 601 NAG B O3  1 
-HETATM 2476 O O4  . NAG C 3 .   ? -7.73607  44.42374 -50.74342 1.000 127.60410 ? 601 NAG B O4  1 
-HETATM 2477 O O5  . NAG C 3 .   ? -9.99076  44.60232 -47.84618 1.000 126.42425 ? 601 NAG B O5  1 
-HETATM 2478 O O6  . NAG C 3 .   ? -8.00937  44.49839 -46.37671 1.000 137.06254 ? 601 NAG B O6  1 
-HETATM 2479 O O7  . NAG C 3 .   ? -14.38991 45.87852 -51.45871 1.000 106.33321 ? 601 NAG B O7  1 
-HETATM 2480 C C1  . FUC D 4 .   ? -7.76979  45.82950 -45.81941 1.000 145.80155 ? 602 FUC B C1  1 
-HETATM 2481 C C2  . FUC D 4 .   ? -6.19208  46.06121 -45.64478 1.000 159.30183 ? 602 FUC B C2  1 
-HETATM 2482 C C3  . FUC D 4 .   ? -5.57341  46.96001 -46.72570 1.000 153.61644 ? 602 FUC B C3  1 
-HETATM 2483 C C4  . FUC D 4 .   ? -6.37972  48.23316 -46.83286 1.000 150.95579 ? 602 FUC B C4  1 
-HETATM 2484 C C5  . FUC D 4 .   ? -7.74664  47.87453 -47.39090 1.000 144.42267 ? 602 FUC B C5  1 
-HETATM 2485 C C6  . FUC D 4 .   ? -8.66462  49.08695 -47.52628 1.000 135.33517 ? 602 FUC B C6  1 
-HETATM 2486 O O2  . FUC D 4 .   ? -5.47144  44.83763 -45.51756 1.000 157.24759 ? 602 FUC B O2  1 
-HETATM 2487 O O3  . FUC D 4 .   ? -4.23882  47.31546 -46.37308 1.000 151.83367 ? 602 FUC B O3  1 
-HETATM 2488 O O4  . FUC D 4 .   ? -6.51799  48.83219 -45.55093 1.000 151.96536 ? 602 FUC B O4  1 
-HETATM 2489 O O5  . FUC D 4 .   ? -8.47364  46.89671 -46.56777 1.000 152.66102 ? 602 FUC B O5  1 
-HETATM 2490 C C1  . NAG E 3 .   ? -6.84810  45.56771 -50.78641 1.000 135.87534 ? 603 NAG B C1  1 
-HETATM 2491 C C2  . NAG E 3 .   ? -5.43659  45.18866 -51.24770 1.000 136.68654 ? 603 NAG B C2  1 
-HETATM 2492 C C3  . NAG E 3 .   ? -4.55853  46.43852 -51.30906 1.000 138.52209 ? 603 NAG B C3  1 
-HETATM 2493 C C4  . NAG E 3 .   ? -5.23388  47.54406 -52.11470 1.000 136.57595 ? 603 NAG B C4  1 
-HETATM 2494 C C5  . NAG E 3 .   ? -6.66929  47.77259 -51.64267 1.000 131.49693 ? 603 NAG B C5  1 
-HETATM 2495 C C6  . NAG E 3 .   ? -7.43141  48.75095 -52.50403 1.000 123.63785 ? 603 NAG B C6  1 
-HETATM 2496 C C7  . NAG E 3 .   ? -5.05808  42.88027 -50.48215 1.000 129.25106 ? 603 NAG B C7  1 
-HETATM 2497 C C8  . NAG E 3 .   ? -4.35670  42.00971 -49.48257 1.000 118.99820 ? 603 NAG B C8  1 
-HETATM 2498 N N2  . NAG E 3 .   ? -4.84340  44.19530 -50.36541 1.000 132.76488 ? 603 NAG B N2  1 
-HETATM 2499 O O3  . NAG E 3 .   ? -3.29917  46.11317 -51.88628 1.000 137.77225 ? 603 NAG B O3  1 
-HETATM 2500 O O4  . NAG E 3 .   ? -4.50754  48.75831 -51.96194 1.000 136.76439 ? 603 NAG B O4  1 
-HETATM 2501 O O5  . NAG E 3 .   ? -7.39777  46.53935 -51.67794 1.000 134.78155 ? 603 NAG B O5  1 
-HETATM 2502 O O6  . NAG E 3 .   ? -6.77855  50.01168 -52.55149 1.000 127.48475 ? 603 NAG B O6  1 
-HETATM 2503 O O7  . NAG E 3 .   ? -5.78687  42.41439 -51.35224 1.000 133.31780 ? 603 NAG B O7  1 
-HETATM 2504 C C1  . GOL F 5 .   ? -12.59694 36.95479 -47.86096 1.000 87.95432  ? 604 GOL B C1  1 
-HETATM 2505 O O1  . GOL F 5 .   ? -12.80839 36.07600 -48.92532 1.000 86.54238  ? 604 GOL B O1  1 
-HETATM 2506 C C2  . GOL F 5 .   ? -12.63134 38.38349 -48.45072 1.000 87.91169  ? 604 GOL B C2  1 
-HETATM 2507 O O2  . GOL F 5 .   ? -11.55508 39.16082 -48.04370 1.000 93.31748  ? 604 GOL B O2  1 
-HETATM 2508 C C3  . GOL F 5 .   ? -13.99650 38.97757 -48.03628 1.000 76.30002  ? 604 GOL B C3  1 
-HETATM 2509 O O3  . GOL F 5 .   ? -14.07275 40.24633 -48.61224 1.000 73.95569  ? 604 GOL B O3  1 
+HETATM 2466 C C1  . NAG C 3 .   ? -11.25870 44.43933 -48.46078 1.000 113.73714 ? 1   NAG C C1  1 
+HETATM 2467 C C2  . NAG C 3 .   ? -11.29332 45.20814 -49.78153 1.000 118.34840 ? 1   NAG C C2  1 
+HETATM 2468 C C3  . NAG C 3 .   ? -10.14384 44.76048 -50.68247 1.000 129.82252 ? 1   NAG C C3  1 
+HETATM 2469 C C4  . NAG C 3 .   ? -8.81785  44.88997 -49.94333 1.000 132.39981 ? 1   NAG C C4  1 
+HETATM 2470 C C5  . NAG C 3 .   ? -8.87504  44.13599 -48.61552 1.000 134.46743 ? 1   NAG C C5  1 
+HETATM 2471 C C6  . NAG C 3 .   ? -7.65505  44.35080 -47.74844 1.000 141.01634 ? 1   NAG C C6  1 
+HETATM 2472 C C7  . NAG C 3 .   ? -13.31163 46.05420 -50.90014 1.000 109.75388 ? 1   NAG C C7  1 
+HETATM 2473 C C8  . NAG C 3 .   ? -12.74375 47.42537 -50.68240 1.000 107.16851 ? 1   NAG C C8  1 
+HETATM 2474 N N2  . NAG C 3 .   ? -12.57162 45.03352 -50.45282 1.000 117.60346 ? 1   NAG C N2  1 
+HETATM 2475 O O3  . NAG C 3 .   ? -10.12536 45.55347 -51.86455 1.000 118.89575 ? 1   NAG C O3  1 
+HETATM 2476 O O4  . NAG C 3 .   ? -7.73607  44.42374 -50.74342 1.000 127.60410 ? 1   NAG C O4  1 
+HETATM 2477 O O5  . NAG C 3 .   ? -9.99076  44.60232 -47.84618 1.000 126.42425 ? 1   NAG C O5  1 
+HETATM 2478 O O6  . NAG C 3 .   ? -8.00937  44.49839 -46.37671 1.000 137.06254 ? 1   NAG C O6  1 
+HETATM 2479 O O7  . NAG C 3 .   ? -14.38991 45.87852 -51.45871 1.000 106.33321 ? 1   NAG C O7  1 
+HETATM 2480 C C1  . NAG C 3 .   ? -6.84810  45.56771 -50.78641 1.000 135.87534 ? 2   NAG C C1  1 
+HETATM 2481 C C2  . NAG C 3 .   ? -5.43659  45.18866 -51.24770 1.000 136.68654 ? 2   NAG C C2  1 
+HETATM 2482 C C3  . NAG C 3 .   ? -4.55853  46.43852 -51.30906 1.000 138.52209 ? 2   NAG C C3  1 
+HETATM 2483 C C4  . NAG C 3 .   ? -5.23388  47.54406 -52.11470 1.000 136.57595 ? 2   NAG C C4  1 
+HETATM 2484 C C5  . NAG C 3 .   ? -6.66929  47.77259 -51.64267 1.000 131.49693 ? 2   NAG C C5  1 
+HETATM 2485 C C6  . NAG C 3 .   ? -7.43141  48.75095 -52.50403 1.000 123.63785 ? 2   NAG C C6  1 
+HETATM 2486 C C7  . NAG C 3 .   ? -5.05808  42.88027 -50.48215 1.000 129.25106 ? 2   NAG C C7  1 
+HETATM 2487 C C8  . NAG C 3 .   ? -4.35670  42.00971 -49.48257 1.000 118.99820 ? 2   NAG C C8  1 
+HETATM 2488 N N2  . NAG C 3 .   ? -4.84340  44.19530 -50.36541 1.000 132.76488 ? 2   NAG C N2  1 
+HETATM 2489 O O3  . NAG C 3 .   ? -3.29917  46.11317 -51.88628 1.000 137.77225 ? 2   NAG C O3  1 
+HETATM 2490 O O4  . NAG C 3 .   ? -4.50754  48.75831 -51.96194 1.000 136.76439 ? 2   NAG C O4  1 
+HETATM 2491 O O5  . NAG C 3 .   ? -7.39777  46.53935 -51.67794 1.000 134.78155 ? 2   NAG C O5  1 
+HETATM 2492 O O6  . NAG C 3 .   ? -6.77855  50.01168 -52.55149 1.000 127.48475 ? 2   NAG C O6  1 
+HETATM 2493 O O7  . NAG C 3 .   ? -5.78687  42.41439 -51.35224 1.000 133.31780 ? 2   NAG C O7  1 
+HETATM 2494 C C1  . FUC C 3 .   ? -7.76979  45.82950 -45.81941 1.000 145.80155 ? 3   FUC C C1  1 
+HETATM 2495 C C2  . FUC C 3 .   ? -6.19208  46.06121 -45.64478 1.000 159.30183 ? 3   FUC C C2  1 
+HETATM 2496 C C3  . FUC C 3 .   ? -5.57341  46.96001 -46.72570 1.000 153.61644 ? 3   FUC C C3  1 
+HETATM 2497 C C4  . FUC C 3 .   ? -6.37972  48.23316 -46.83286 1.000 150.95579 ? 3   FUC C C4  1 
+HETATM 2498 C C5  . FUC C 3 .   ? -7.74664  47.87453 -47.39090 1.000 144.42267 ? 3   FUC C C5  1 
+HETATM 2499 C C6  . FUC C 3 .   ? -8.66462  49.08695 -47.52628 1.000 135.33517 ? 3   FUC C C6  1 
+HETATM 2500 O O2  . FUC C 3 .   ? -5.47144  44.83763 -45.51756 1.000 157.24759 ? 3   FUC C O2  1 
+HETATM 2501 O O3  . FUC C 3 .   ? -4.23882  47.31546 -46.37308 1.000 151.83367 ? 3   FUC C O3  1 
+HETATM 2502 O O4  . FUC C 3 .   ? -6.51799  48.83219 -45.55093 1.000 151.96536 ? 3   FUC C O4  1 
+HETATM 2503 O O5  . FUC C 3 .   ? -8.47364  46.89671 -46.56777 1.000 152.66102 ? 3   FUC C O5  1 
+HETATM 2504 C C1  . GOL D 4 .   ? -12.59694 36.95479 -47.86096 1.000 87.95432  ? 604 GOL B C1  1 
+HETATM 2505 O O1  . GOL D 4 .   ? -12.80839 36.07600 -48.92532 1.000 86.54238  ? 604 GOL B O1  1 
+HETATM 2506 C C2  . GOL D 4 .   ? -12.63134 38.38349 -48.45072 1.000 87.91169  ? 604 GOL B C2  1 
+HETATM 2507 O O2  . GOL D 4 .   ? -11.55508 39.16082 -48.04370 1.000 93.31748  ? 604 GOL B O2  1 
+HETATM 2508 C C3  . GOL D 4 .   ? -13.99650 38.97757 -48.03628 1.000 76.30002  ? 604 GOL B C3  1 
+HETATM 2509 O O3  . GOL D 4 .   ? -14.07275 40.24633 -48.61224 1.000 73.95569  ? 604 GOL B O3  1 
 # 
 loop_
 _pdbx_poly_seq_scheme.asym_id 
@@ -4324,21 +4313,16 @@ B 2 211 LEU 211 537 ?   ?   ?   B . n
 B 2 212 PHE 212 538 ?   ?   ?   B . n 
 B 2 213 GLN 213 539 ?   ?   ?   B . n 
 # 
-loop_
-_pdbx_nonpoly_scheme.asym_id 
-_pdbx_nonpoly_scheme.entity_id 
-_pdbx_nonpoly_scheme.mon_id 
-_pdbx_nonpoly_scheme.ndb_seq_num 
-_pdbx_nonpoly_scheme.pdb_seq_num 
-_pdbx_nonpoly_scheme.auth_seq_num 
-_pdbx_nonpoly_scheme.pdb_mon_id 
-_pdbx_nonpoly_scheme.auth_mon_id 
-_pdbx_nonpoly_scheme.pdb_strand_id 
-_pdbx_nonpoly_scheme.pdb_ins_code 
-C 3 NAG 1 601 1000 NAG NAG B . 
-D 4 FUC 2 602 1102 FUC FUC B . 
-E 3 NAG 3 603 1103 NAG NAG B . 
-F 5 GOL 1 604 1101 GOL GOL B . 
+_pdbx_nonpoly_scheme.asym_id         D 
+_pdbx_nonpoly_scheme.entity_id       4 
+_pdbx_nonpoly_scheme.mon_id          GOL 
+_pdbx_nonpoly_scheme.ndb_seq_num     1 
+_pdbx_nonpoly_scheme.pdb_seq_num     604 
+_pdbx_nonpoly_scheme.auth_seq_num    1101 
+_pdbx_nonpoly_scheme.pdb_mon_id      GOL 
+_pdbx_nonpoly_scheme.auth_mon_id     GOL 
+_pdbx_nonpoly_scheme.pdb_strand_id   B 
+_pdbx_nonpoly_scheme.pdb_ins_code    . 
 # 
 _pdbx_struct_assembly.id                   1 
 _pdbx_struct_assembly.details              author_defined_assembly 
@@ -4348,7 +4332,7 @@ _pdbx_struct_assembly.oligomeric_count     2
 # 
 _pdbx_struct_assembly_gen.assembly_id       1 
 _pdbx_struct_assembly_gen.oper_expression   1 
-_pdbx_struct_assembly_gen.asym_id_list      A,B,C,D,E,F 
+_pdbx_struct_assembly_gen.asym_id_list      A,B,C,D 
 # 
 _pdbx_struct_oper_list.id                   1 
 _pdbx_struct_oper_list.type                 'identity operation' 
@@ -4367,19 +4351,86 @@ _pdbx_struct_oper_list.matrix[3][2]         0.0000000000
 _pdbx_struct_oper_list.matrix[3][3]         1.0000000000 
 _pdbx_struct_oper_list.vector[3]            0.0000000000 
 # 
-_pdbx_audit_revision_history.ordinal             1 
-_pdbx_audit_revision_history.data_content_type   'Structure model' 
-_pdbx_audit_revision_history.major_revision      1 
-_pdbx_audit_revision_history.minor_revision      0 
-_pdbx_audit_revision_history.revision_date       2020-06-24 
+loop_
+_pdbx_audit_revision_history.ordinal 
+_pdbx_audit_revision_history.data_content_type 
+_pdbx_audit_revision_history.major_revision 
+_pdbx_audit_revision_history.minor_revision 
+_pdbx_audit_revision_history.revision_date 
+1 'Structure model' 1 0 2020-06-24 
+2 'Structure model' 2 0 2020-07-29 
 # 
-_pdbx_audit_revision_details.ordinal             1 
-_pdbx_audit_revision_details.revision_ordinal    1 
-_pdbx_audit_revision_details.data_content_type   'Structure model' 
-_pdbx_audit_revision_details.provider            repository 
-_pdbx_audit_revision_details.type                'Initial release' 
-_pdbx_audit_revision_details.description         ? 
-_pdbx_audit_revision_details.details             ? 
+loop_
+_pdbx_audit_revision_details.ordinal 
+_pdbx_audit_revision_details.revision_ordinal 
+_pdbx_audit_revision_details.data_content_type 
+_pdbx_audit_revision_details.provider 
+_pdbx_audit_revision_details.type 
+_pdbx_audit_revision_details.description 
+_pdbx_audit_revision_details.details 
+1 1 'Structure model' repository 'Initial release' ?                          ? 
+2 2 'Structure model' repository Remediation       'Carbohydrate remediation' ? 
+# 
+loop_
+_pdbx_audit_revision_group.ordinal 
+_pdbx_audit_revision_group.revision_ordinal 
+_pdbx_audit_revision_group.data_content_type 
+_pdbx_audit_revision_group.group 
+1 2 'Structure model' 'Atomic model'         
+2 2 'Structure model' 'Data collection'      
+3 2 'Structure model' 'Derived calculations' 
+4 2 'Structure model' 'Structure summary'    
+# 
+loop_
+_pdbx_audit_revision_category.ordinal 
+_pdbx_audit_revision_category.revision_ordinal 
+_pdbx_audit_revision_category.data_content_type 
+_pdbx_audit_revision_category.category 
+1  2 'Structure model' atom_site                     
+2  2 'Structure model' chem_comp                     
+3  2 'Structure model' diffrn_radiation_wavelength   
+4  2 'Structure model' entity                        
+5  2 'Structure model' pdbx_branch_scheme            
+6  2 'Structure model' pdbx_chem_comp_identifier     
+7  2 'Structure model' pdbx_entity_branch            
+8  2 'Structure model' pdbx_entity_branch_descriptor 
+9  2 'Structure model' pdbx_entity_branch_link       
+10 2 'Structure model' pdbx_entity_branch_list       
+11 2 'Structure model' pdbx_entity_nonpoly           
+12 2 'Structure model' pdbx_nonpoly_scheme           
+13 2 'Structure model' pdbx_struct_assembly_gen      
+14 2 'Structure model' struct_asym                   
+15 2 'Structure model' struct_conn                   
+16 2 'Structure model' struct_site                   
+17 2 'Structure model' struct_site_gen               
+# 
+loop_
+_pdbx_audit_revision_item.ordinal 
+_pdbx_audit_revision_item.revision_ordinal 
+_pdbx_audit_revision_item.data_content_type 
+_pdbx_audit_revision_item.item 
+1  2 'Structure model' '_atom_site.B_iso_or_equiv'               
+2  2 'Structure model' '_atom_site.Cartn_x'                      
+3  2 'Structure model' '_atom_site.Cartn_y'                      
+4  2 'Structure model' '_atom_site.Cartn_z'                      
+5  2 'Structure model' '_atom_site.auth_asym_id'                 
+6  2 'Structure model' '_atom_site.auth_atom_id'                 
+7  2 'Structure model' '_atom_site.auth_comp_id'                 
+8  2 'Structure model' '_atom_site.auth_seq_id'                  
+9  2 'Structure model' '_atom_site.label_asym_id'                
+10 2 'Structure model' '_atom_site.label_atom_id'                
+11 2 'Structure model' '_atom_site.label_comp_id'                
+12 2 'Structure model' '_atom_site.label_entity_id'              
+13 2 'Structure model' '_atom_site.type_symbol'                  
+14 2 'Structure model' '_chem_comp.name'                         
+15 2 'Structure model' '_diffrn_radiation_wavelength.wavelength' 
+16 2 'Structure model' '_pdbx_struct_assembly_gen.asym_id_list'  
+17 2 'Structure model' '_struct_conn.pdbx_role'                  
+18 2 'Structure model' '_struct_conn.ptnr1_auth_asym_id'         
+19 2 'Structure model' '_struct_conn.ptnr1_auth_seq_id'          
+20 2 'Structure model' '_struct_conn.ptnr2_auth_asym_id'         
+21 2 'Structure model' '_struct_conn.ptnr2_auth_seq_id'          
+22 2 'Structure model' '_struct_conn.ptnr2_label_asym_id'        
 # 
 loop_
 _software.citation_id 
@@ -4543,6 +4594,76 @@ _pdbx_audit_support.ordinal
 'Chinese Academy of Sciences'              China 'QYZDB-SSW-SMC037, XDB37020204' 1 
 'National Science Foundation (NSF, China)' China 31870726                        2 
 # 
+loop_
+_pdbx_branch_scheme.asym_id 
+_pdbx_branch_scheme.entity_id 
+_pdbx_branch_scheme.mon_id 
+_pdbx_branch_scheme.num 
+_pdbx_branch_scheme.pdb_asym_id 
+_pdbx_branch_scheme.pdb_mon_id 
+_pdbx_branch_scheme.pdb_seq_num 
+_pdbx_branch_scheme.auth_asym_id 
+_pdbx_branch_scheme.auth_mon_id 
+_pdbx_branch_scheme.auth_seq_num 
+_pdbx_branch_scheme.hetero 
+C 3 NAG 1 C NAG 1 B NAG 1000 n 
+C 3 NAG 2 C NAG 2 B NAG 1103 n 
+C 3 FUC 3 C FUC 3 B FUC 1102 n 
+# 
+loop_
+_pdbx_chem_comp_identifier.comp_id 
+_pdbx_chem_comp_identifier.type 
+_pdbx_chem_comp_identifier.program 
+_pdbx_chem_comp_identifier.program_version 
+_pdbx_chem_comp_identifier.identifier 
+FUC 'CONDENSED IUPAC CARBOHYDRATE SYMBOL' GMML     1.0 LFucpa                         
+FUC 'COMMON NAME'                         GMML     1.0 a-L-fucopyranose               
+FUC 'IUPAC CARBOHYDRATE SYMBOL'           PDB-CARE 1.0 a-L-Fucp                       
+FUC 'SNFG CARBOHYDRATE SYMBOL'            GMML     1.0 Fuc                            
+NAG 'CONDENSED IUPAC CARBOHYDRATE SYMBOL' GMML     1.0 DGlcpNAcb                      
+NAG 'COMMON NAME'                         GMML     1.0 N-acetyl-b-D-glucopyranosamine 
+NAG 'IUPAC CARBOHYDRATE SYMBOL'           PDB-CARE 1.0 b-D-GlcpNAc                    
+NAG 'SNFG CARBOHYDRATE SYMBOL'            GMML     1.0 GlcNAc                         
+# 
+_pdbx_entity_branch.entity_id   3 
+_pdbx_entity_branch.type        oligosaccharide 
+# 
+loop_
+_pdbx_entity_branch_descriptor.ordinal 
+_pdbx_entity_branch_descriptor.entity_id 
+_pdbx_entity_branch_descriptor.descriptor 
+_pdbx_entity_branch_descriptor.type 
+_pdbx_entity_branch_descriptor.program 
+_pdbx_entity_branch_descriptor.program_version 
+1 3 'DGlcpNAcb1-4[LFucpa1-6]DGlcpNAcb1-'                                         'Glycam Condensed Sequence' GMML       1.0   
+2 3 'WURCS=2.0/2,3,2/[a2122h-1b_1-5_2*NCC/3=O][a1221m-1a_1-5]/1-1-2/a4-b1_a6-c1' WURCS                       PDB2Glycan 1.1.0 
+3 3 '[]{[(4+1)][b-D-GlcpNAc]{[(4+1)][b-D-GlcpNAc]{}[(6+1)][a-L-Fucp]{}}}'        LINUCS                      PDB-CARE   ?     
+# 
+loop_
+_pdbx_entity_branch_link.link_id 
+_pdbx_entity_branch_link.entity_id 
+_pdbx_entity_branch_link.entity_branch_list_num_1 
+_pdbx_entity_branch_link.comp_id_1 
+_pdbx_entity_branch_link.atom_id_1 
+_pdbx_entity_branch_link.leaving_atom_id_1 
+_pdbx_entity_branch_link.entity_branch_list_num_2 
+_pdbx_entity_branch_link.comp_id_2 
+_pdbx_entity_branch_link.atom_id_2 
+_pdbx_entity_branch_link.leaving_atom_id_2 
+_pdbx_entity_branch_link.value_order 
+_pdbx_entity_branch_link.details 
+1 3 2 NAG C1 O1 1 NAG O4 HO4 sing ? 
+2 3 3 FUC C1 O1 1 NAG O6 HO6 sing ? 
+# 
+loop_
+_pdbx_entity_branch_list.entity_id 
+_pdbx_entity_branch_list.comp_id 
+_pdbx_entity_branch_list.num 
+_pdbx_entity_branch_list.hetero 
+3 NAG 1 n 
+3 NAG 2 n 
+3 FUC 3 n 
+# 
 _pdbx_entity_instance_feature.ordinal        1 
 _pdbx_entity_instance_feature.comp_id        FUC 
 _pdbx_entity_instance_feature.asym_id        ? 
@@ -4553,13 +4674,9 @@ _pdbx_entity_instance_feature.auth_seq_num   ?
 _pdbx_entity_instance_feature.feature_type   'SUBJECT OF INVESTIGATION' 
 _pdbx_entity_instance_feature.details        ? 
 # 
-loop_
-_pdbx_entity_nonpoly.entity_id 
-_pdbx_entity_nonpoly.name 
-_pdbx_entity_nonpoly.comp_id 
-3 N-ACETYL-D-GLUCOSAMINE NAG 
-4 ALPHA-L-FUCOSE         FUC 
-5 GLYCEROL               GOL 
+_pdbx_entity_nonpoly.entity_id   4 
+_pdbx_entity_nonpoly.name        GLYCEROL 
+_pdbx_entity_nonpoly.comp_id     GOL 
 # 
 _pdbx_struct_assembly_auth_evidence.id                     1 
 _pdbx_struct_assembly_auth_evidence.assembly_id            1 

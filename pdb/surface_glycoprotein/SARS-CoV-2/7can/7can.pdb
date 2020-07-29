@@ -31,6 +31,8 @@ KEYWDS   2 BINDING PROTEIN, SARS-COV-2, S PROTEIN, SYNTHETIC ANTIBODY, VHH.,
 KEYWDS   3 PROTEIN BINDING                                                      
 EXPDTA    X-RAY DIFFRACTION                                                     
 AUTHOR    T.LI,H.YAO,H.CAI,W.QIN,D.LI                                           
+REVDAT   2   29-JUL-20 7CAN    1       COMPND REMARK HETNAM LINK                
+REVDAT   2 2                   1       SITE   ATOM                              
 REVDAT   1   24-JUN-20 7CAN    0                                                
 JRNL        AUTH   T.LI,H.CAI,H.YAO,B.ZHOU,Y.ZHAO,W.QIN,D.LAVILLETTE,D.LI       
 JRNL        TITL   POTENT SYNTHETIC NANOBODIES AGAINST SARS-COV-2 AND MOLECULAR 
@@ -231,7 +233,7 @@ REMARK 350 CRYSTALLOGRAPHIC OPERATIONS ARE GIVEN.
 REMARK 350                                                                      
 REMARK 350 BIOMOLECULE: 1                                                       
 REMARK 350 AUTHOR DETERMINED BIOLOGICAL UNIT: DIMERIC                           
-REMARK 350 APPLY THE FOLLOWING TO CHAINS: A, B                                  
+REMARK 350 APPLY THE FOLLOWING TO CHAINS: A, B, C                               
 REMARK 350   BIOMT1   1  1.000000  0.000000  0.000000        0.00000            
 REMARK 350   BIOMT2   1  0.000000  1.000000  0.000000        0.00000            
 REMARK 350   BIOMT3   1  0.000000  0.000000  1.000000        0.00000            
@@ -338,16 +340,6 @@ REMARK 500    ASN B 487       32.35    -78.50
 REMARK 500    ASN B 487       37.04    -82.31                                   
 REMARK 500                                                                      
 REMARK 500 REMARK: NULL                                                         
-REMARK 800                                                                      
-REMARK 800 SITE                                                                 
-REMARK 800 SITE_IDENTIFIER: AC1                                                 
-REMARK 800 EVIDENCE_CODE: SOFTWARE                                              
-REMARK 800 SITE_DESCRIPTION: binding site for residue GOL B 604                 
-REMARK 800                                                                      
-REMARK 800 SITE_IDENTIFIER: AC2                                                 
-REMARK 800 EVIDENCE_CODE: SOFTWARE                                              
-REMARK 800 SITE_DESCRIPTION: binding site for Poly-Saccharide residues NAG B    
-REMARK 800  601 through NAG B 603 bound to ASN B 343                            
 DBREF  7CAN A   -3   146  PDB    7CAN     7CAN            -3    146             
 DBREF  7CAN B  330   531  UNP    P0DTC2   SPIKE_SARS2    330    531             
 SEQADV 7CAN ALA B  327  UNP  P0DTC2              EXPRESSION TAG                 
@@ -390,12 +382,12 @@ SEQRES  14 B  213  GLY PHE GLN PRO THR ASN GLY VAL GLY TYR GLN PRO TYR
 SEQRES  15 B  213  ARG VAL VAL VAL LEU SER PHE GLU LEU LEU HIS ALA PRO          
 SEQRES  16 B  213  ALA THR VAL CYS GLY PRO LYS LYS SER THR GLY THR LEU          
 SEQRES  17 B  213  GLU VAL LEU PHE GLN                                          
-HET    NAG  B 601      14                                                       
-HET    FUC  B 602      10                                                       
-HET    NAG  B 603      14                                                       
+HET    NAG  C   1      14                                                       
+HET    NAG  C   2      14                                                       
+HET    FUC  C   3      10                                                       
 HET    GOL  B 604       6                                                       
-HETNAM     NAG N-ACETYL-D-GLUCOSAMINE                                           
-HETNAM     FUC ALPHA-L-FUCOSE                                                   
+HETNAM     NAG 2-ACETAMIDO-2-DEOXY-BETA-D-GLUCOPYRANOSE                         
+HETNAM     FUC ALPHA-L-FUCOPYRANOSE                                             
 HETNAM     GOL GLYCEROL                                                         
 HETSYN     GOL GLYCERIN; PROPANE-1,2,3-TRIOL                                    
 FORMUL   3  NAG    2(C8 H15 N O6)                                               
@@ -436,11 +428,9 @@ SSBOND   1 CYS A   22    CYS A   96                          1555   1555  2.04
 SSBOND   2 CYS B  336    CYS B  361                          1555   1555  2.05  
 SSBOND   3 CYS B  379    CYS B  432                          1555   1555  2.02  
 SSBOND   4 CYS B  391    CYS B  525                          1555   1555  2.02  
-LINK         ND2 ASN B 343                 C1  NAG B 601     1555   1555  1.43  
-LINK         O4  NAG B 601                 C1  NAG B 603     1555   1555  1.45  
-LINK         O6  NAG B 601                 C1  FUC B 602     1555   1555  1.46  
-SITE     1 AC1  3 ASN B 343  ALA B 372  TRP B 436                               
-SITE     1 AC2  3 GLY B 339  ASN B 343  SER B 371                               
+LINK         ND2 ASN B 343                 C1  NAG C   1     1555   1555  1.43  
+LINK         O4  NAG C   1                 C1  NAG C   2     1555   1555  1.45  
+LINK         O6  NAG C   1                 C1  FUC C   3     1555   1555  1.46  
 CRYST1   74.191   74.191  158.404  90.00  90.00 120.00 P 32 2 1      6          
 ORIGX1      1.000000  0.000000  0.000000        0.00000                         
 ORIGX2      0.000000  1.000000  0.000000        0.00000                         
@@ -2915,44 +2905,44 @@ ATOM   2464  CB  PRO B 527     -17.064  52.857 -65.328  1.00109.14           C
 ATOM   2465  CG  PRO B 527     -17.072  52.147 -64.022  1.00 97.72           C  
 ATOM   2466  CD  PRO B 527     -18.474  51.622 -63.831  1.00105.99           C  
 TER    2467      PRO B 527                                                      
-HETATM 2468  C1  NAG B 601     -11.259  44.439 -48.461  1.00113.74           C  
-HETATM 2469  C2  NAG B 601     -11.293  45.208 -49.782  1.00118.35           C  
-HETATM 2470  C3  NAG B 601     -10.144  44.760 -50.682  1.00129.82           C  
-HETATM 2471  C4  NAG B 601      -8.818  44.890 -49.943  1.00132.40           C  
-HETATM 2472  C5  NAG B 601      -8.875  44.136 -48.616  1.00134.47           C  
-HETATM 2473  C6  NAG B 601      -7.655  44.351 -47.748  1.00141.02           C  
-HETATM 2474  C7  NAG B 601     -13.312  46.054 -50.900  1.00109.75           C  
-HETATM 2475  C8  NAG B 601     -12.744  47.425 -50.682  1.00107.17           C  
-HETATM 2476  N2  NAG B 601     -12.572  45.034 -50.453  1.00117.60           N  
-HETATM 2477  O3  NAG B 601     -10.125  45.553 -51.865  1.00118.90           O  
-HETATM 2478  O4  NAG B 601      -7.736  44.424 -50.743  1.00127.60           O  
-HETATM 2479  O5  NAG B 601      -9.991  44.602 -47.846  1.00126.42           O  
-HETATM 2480  O6  NAG B 601      -8.009  44.498 -46.377  1.00137.06           O  
-HETATM 2481  O7  NAG B 601     -14.390  45.879 -51.459  1.00106.33           O  
-HETATM 2482  C1  FUC B 602      -7.770  45.830 -45.819  1.00145.80           C  
-HETATM 2483  C2  FUC B 602      -6.192  46.061 -45.645  1.00159.30           C  
-HETATM 2484  C3  FUC B 602      -5.573  46.960 -46.726  1.00153.62           C  
-HETATM 2485  C4  FUC B 602      -6.380  48.233 -46.833  1.00150.96           C  
-HETATM 2486  C5  FUC B 602      -7.747  47.875 -47.391  1.00144.42           C  
-HETATM 2487  C6  FUC B 602      -8.665  49.087 -47.526  1.00135.34           C  
-HETATM 2488  O2  FUC B 602      -5.471  44.838 -45.518  1.00157.25           O  
-HETATM 2489  O3  FUC B 602      -4.239  47.315 -46.373  1.00151.83           O  
-HETATM 2490  O4  FUC B 602      -6.518  48.832 -45.551  1.00151.97           O  
-HETATM 2491  O5  FUC B 602      -8.474  46.897 -46.568  1.00152.66           O  
-HETATM 2492  C1  NAG B 603      -6.848  45.568 -50.786  1.00135.88           C  
-HETATM 2493  C2  NAG B 603      -5.437  45.189 -51.248  1.00136.69           C  
-HETATM 2494  C3  NAG B 603      -4.559  46.439 -51.309  1.00138.52           C  
-HETATM 2495  C4  NAG B 603      -5.234  47.544 -52.115  1.00136.58           C  
-HETATM 2496  C5  NAG B 603      -6.669  47.773 -51.643  1.00131.50           C  
-HETATM 2497  C6  NAG B 603      -7.431  48.751 -52.504  1.00123.64           C  
-HETATM 2498  C7  NAG B 603      -5.058  42.880 -50.482  1.00129.25           C  
-HETATM 2499  C8  NAG B 603      -4.357  42.010 -49.483  1.00119.00           C  
-HETATM 2500  N2  NAG B 603      -4.843  44.195 -50.365  1.00132.76           N  
-HETATM 2501  O3  NAG B 603      -3.299  46.113 -51.886  1.00137.77           O  
-HETATM 2502  O4  NAG B 603      -4.508  48.758 -51.962  1.00136.76           O  
-HETATM 2503  O5  NAG B 603      -7.398  46.539 -51.678  1.00134.78           O  
-HETATM 2504  O6  NAG B 603      -6.779  50.012 -52.551  1.00127.48           O  
-HETATM 2505  O7  NAG B 603      -5.787  42.414 -51.352  1.00133.32           O  
+HETATM 2468  C1  NAG C   1     -11.259  44.439 -48.461  1.00113.74           C  
+HETATM 2469  C2  NAG C   1     -11.293  45.208 -49.782  1.00118.35           C  
+HETATM 2470  C3  NAG C   1     -10.144  44.760 -50.682  1.00129.82           C  
+HETATM 2471  C4  NAG C   1      -8.818  44.890 -49.943  1.00132.40           C  
+HETATM 2472  C5  NAG C   1      -8.875  44.136 -48.616  1.00134.47           C  
+HETATM 2473  C6  NAG C   1      -7.655  44.351 -47.748  1.00141.02           C  
+HETATM 2474  C7  NAG C   1     -13.312  46.054 -50.900  1.00109.75           C  
+HETATM 2475  C8  NAG C   1     -12.744  47.425 -50.682  1.00107.17           C  
+HETATM 2476  N2  NAG C   1     -12.572  45.034 -50.453  1.00117.60           N  
+HETATM 2477  O3  NAG C   1     -10.125  45.553 -51.865  1.00118.90           O  
+HETATM 2478  O4  NAG C   1      -7.736  44.424 -50.743  1.00127.60           O  
+HETATM 2479  O5  NAG C   1      -9.991  44.602 -47.846  1.00126.42           O  
+HETATM 2480  O6  NAG C   1      -8.009  44.498 -46.377  1.00137.06           O  
+HETATM 2481  O7  NAG C   1     -14.390  45.879 -51.459  1.00106.33           O  
+HETATM 2482  C1  NAG C   2      -6.848  45.568 -50.786  1.00135.88           C  
+HETATM 2483  C2  NAG C   2      -5.437  45.189 -51.248  1.00136.69           C  
+HETATM 2484  C3  NAG C   2      -4.559  46.439 -51.309  1.00138.52           C  
+HETATM 2485  C4  NAG C   2      -5.234  47.544 -52.115  1.00136.58           C  
+HETATM 2486  C5  NAG C   2      -6.669  47.773 -51.643  1.00131.50           C  
+HETATM 2487  C6  NAG C   2      -7.431  48.751 -52.504  1.00123.64           C  
+HETATM 2488  C7  NAG C   2      -5.058  42.880 -50.482  1.00129.25           C  
+HETATM 2489  C8  NAG C   2      -4.357  42.010 -49.483  1.00119.00           C  
+HETATM 2490  N2  NAG C   2      -4.843  44.195 -50.365  1.00132.76           N  
+HETATM 2491  O3  NAG C   2      -3.299  46.113 -51.886  1.00137.77           O  
+HETATM 2492  O4  NAG C   2      -4.508  48.758 -51.962  1.00136.76           O  
+HETATM 2493  O5  NAG C   2      -7.398  46.539 -51.678  1.00134.78           O  
+HETATM 2494  O6  NAG C   2      -6.779  50.012 -52.551  1.00127.48           O  
+HETATM 2495  O7  NAG C   2      -5.787  42.414 -51.352  1.00133.32           O  
+HETATM 2496  C1  FUC C   3      -7.770  45.830 -45.819  1.00145.80           C  
+HETATM 2497  C2  FUC C   3      -6.192  46.061 -45.645  1.00159.30           C  
+HETATM 2498  C3  FUC C   3      -5.573  46.960 -46.726  1.00153.62           C  
+HETATM 2499  C4  FUC C   3      -6.380  48.233 -46.833  1.00150.96           C  
+HETATM 2500  C5  FUC C   3      -7.747  47.875 -47.391  1.00144.42           C  
+HETATM 2501  C6  FUC C   3      -8.665  49.087 -47.526  1.00135.34           C  
+HETATM 2502  O2  FUC C   3      -5.471  44.838 -45.518  1.00157.25           O  
+HETATM 2503  O3  FUC C   3      -4.239  47.315 -46.373  1.00151.83           O  
+HETATM 2504  O4  FUC C   3      -6.518  48.832 -45.551  1.00151.97           O  
+HETATM 2505  O5  FUC C   3      -8.474  46.897 -46.568  1.00152.66           O  
 HETATM 2506  C1  GOL B 604     -12.597  36.955 -47.861  1.00 87.95           C  
 HETATM 2507  O1  GOL B 604     -12.808  36.076 -48.925  1.00 86.54           O  
 HETATM 2508  C2  GOL B 604     -12.631  38.383 -48.451  1.00 87.91           C  
@@ -2978,39 +2968,39 @@ CONECT 2474 2475 2476 2481
 CONECT 2475 2474                                                                
 CONECT 2476 2469 2474                                                           
 CONECT 2477 2470                                                                
-CONECT 2478 2471 2492                                                           
+CONECT 2478 2471 2482                                                           
 CONECT 2479 2468 2472                                                           
-CONECT 2480 2473 2482                                                           
+CONECT 2480 2473 2496                                                           
 CONECT 2481 2474                                                                
-CONECT 2482 2480 2483 2491                                                      
-CONECT 2483 2482 2484 2488                                                      
-CONECT 2484 2483 2485 2489                                                      
-CONECT 2485 2484 2486 2490                                                      
-CONECT 2486 2485 2487 2491                                                      
-CONECT 2487 2486                                                                
-CONECT 2488 2483                                                                
-CONECT 2489 2484                                                                
-CONECT 2490 2485                                                                
-CONECT 2491 2482 2486                                                           
-CONECT 2492 2478 2493 2503                                                      
-CONECT 2493 2492 2494 2500                                                      
-CONECT 2494 2493 2495 2501                                                      
-CONECT 2495 2494 2496 2502                                                      
-CONECT 2496 2495 2497 2503                                                      
-CONECT 2497 2496 2504                                                           
-CONECT 2498 2499 2500 2505                                                      
-CONECT 2499 2498                                                                
-CONECT 2500 2493 2498                                                           
-CONECT 2501 2494                                                                
-CONECT 2502 2495                                                                
-CONECT 2503 2492 2496                                                           
-CONECT 2504 2497                                                                
-CONECT 2505 2498                                                                
+CONECT 2482 2478 2483 2493                                                      
+CONECT 2483 2482 2484 2490                                                      
+CONECT 2484 2483 2485 2491                                                      
+CONECT 2485 2484 2486 2492                                                      
+CONECT 2486 2485 2487 2493                                                      
+CONECT 2487 2486 2494                                                           
+CONECT 2488 2489 2490 2495                                                      
+CONECT 2489 2488                                                                
+CONECT 2490 2483 2488                                                           
+CONECT 2491 2484                                                                
+CONECT 2492 2485                                                                
+CONECT 2493 2482 2486                                                           
+CONECT 2494 2487                                                                
+CONECT 2495 2488                                                                
+CONECT 2496 2480 2497 2505                                                      
+CONECT 2497 2496 2498 2502                                                      
+CONECT 2498 2497 2499 2503                                                      
+CONECT 2499 2498 2500 2504                                                      
+CONECT 2500 2499 2501 2505                                                      
+CONECT 2501 2500                                                                
+CONECT 2502 2497                                                                
+CONECT 2503 2498                                                                
+CONECT 2504 2499                                                                
+CONECT 2505 2496 2500                                                           
 CONECT 2506 2507 2508                                                           
 CONECT 2507 2506                                                                
 CONECT 2508 2506 2509 2510                                                      
 CONECT 2509 2508                                                                
 CONECT 2510 2508 2511                                                           
 CONECT 2511 2510                                                                
-MASTER      311    0    4    9   22    0    2    6 2480    2   53   29          
+MASTER      301    0    4    9   22    0    0    6 2480    2   53   29          
 END                                                                             

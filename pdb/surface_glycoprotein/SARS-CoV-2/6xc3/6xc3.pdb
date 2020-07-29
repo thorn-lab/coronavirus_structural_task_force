@@ -53,6 +53,8 @@ KEYWDS    ANTIBODY, SARS-COV-2, CORONAVIRUS, SPIKE, IMMUNE SYSTEM, IMMUNE
 KEYWDS   2 SYSTEM-VIRAL PROTEIN COMPLEX                                         
 EXPDTA    X-RAY DIFFRACTION                                                     
 AUTHOR    M.YUAN,H.LIU,N.C.WU,X.ZHU,I.A.WILSON                                  
+REVDAT   3   29-JUL-20 6XC3    1       COMPND REMARK HETNAM LINK                
+REVDAT   3 2                   1       SITE   ATOM                              
 REVDAT   2   15-JUL-20 6XC3    1       REMARK                                   
 REVDAT   1   08-JUL-20 6XC3    0                                                
 JRNL        AUTH   M.YUAN,H.LIU,N.C.WU,C.D.LEE,X.ZHU,F.ZHAO,D.HUANG,W.YU,Y.HUA, 
@@ -277,7 +279,7 @@ REMARK 350 CRYSTALLOGRAPHIC OPERATIONS ARE GIVEN.
 REMARK 350                                                                      
 REMARK 350 BIOMOLECULE: 1                                                       
 REMARK 350 AUTHOR DETERMINED BIOLOGICAL UNIT: PENTAMERIC                        
-REMARK 350 APPLY THE FOLLOWING TO CHAINS: H, L, A, B, C                         
+REMARK 350 APPLY THE FOLLOWING TO CHAINS: H, L, A, B, C, D                      
 REMARK 350   BIOMT1   1  1.000000  0.000000  0.000000        0.00000            
 REMARK 350   BIOMT2   1  0.000000  1.000000  0.000000        0.00000            
 REMARK 350   BIOMT3   1  0.000000  0.000000  1.000000        0.00000            
@@ -406,12 +408,6 @@ REMARK 500    ASN C 487       19.46     59.53
 REMARK 500    PRO C 527       -7.40    -58.28                                   
 REMARK 500                                                                      
 REMARK 500 REMARK: NULL                                                         
-REMARK 800                                                                      
-REMARK 800 SITE                                                                 
-REMARK 800 SITE_IDENTIFIER: AC1                                                 
-REMARK 800 EVIDENCE_CODE: SOFTWARE                                              
-REMARK 800 SITE_DESCRIPTION: binding site for Poly-Saccharide residues NAG C    
-REMARK 800  601 through NAG C 602 bound to ASN C 343                            
 REMARK 900                                                                      
 REMARK 900 RELATED ENTRIES                                                      
 REMARK 900 RELATED ID: 6XC2   RELATED DB: PDB                                   
@@ -515,9 +511,9 @@ SEQRES  15 C  231  ASN GLY VAL GLY TYR GLN PRO TYR ARG VAL VAL VAL LEU
 SEQRES  16 C  231  SER PHE GLU LEU LEU HIS ALA PRO ALA THR VAL CYS GLY          
 SEQRES  17 C  231  PRO LYS LYS SER THR ASN LEU VAL LYS ASN LYS CYS VAL          
 SEQRES  18 C  231  ASN PHE SER GLY HIS HIS HIS HIS HIS HIS                      
-HET    NAG  C 601      14                                                       
-HET    NAG  C 602      14                                                       
-HETNAM     NAG N-ACETYL-D-GLUCOSAMINE                                           
+HET    NAG  D   1      14                                                       
+HET    NAG  D   2      14                                                       
+HETNAM     NAG 2-ACETAMIDO-2-DEOXY-BETA-D-GLUCOPYRANOSE                         
 FORMUL   6  NAG    2(C8 H15 N O6)                                               
 FORMUL   7  HOH   *170(H2 O)                                                    
 HELIX    1 AA1 GLY H   28  TYR H   32  5                                   5    
@@ -658,8 +654,8 @@ SSBOND  10 CYS C  336    CYS C  361                          1555   1555  2.04
 SSBOND  11 CYS C  379    CYS C  432                          1555   1555  2.03  
 SSBOND  12 CYS C  391    CYS C  525                          1555   1555  2.04  
 SSBOND  13 CYS C  480    CYS C  488                          1555   1555  2.04  
-LINK         ND2 ASN C 343                 C1  NAG C 601     1555   1555  1.44  
-LINK         O4  NAG C 601                 C1  NAG C 602     1555   1555  1.37  
+LINK         ND2 ASN C 343                 C1  NAG D   1     1555   1555  1.44  
+LINK         O4  NAG D   1                 C1  NAG D   2     1555   1555  1.37  
 CISPEP   1 PHE H  146    PRO H  147          0        -6.02                     
 CISPEP   2 GLU H  148    PRO H  149          0        -0.88                     
 CISPEP   3 SER L    7    PRO L    8          0        -7.09                     
@@ -670,7 +666,6 @@ CISPEP   7 TYR A   94    PRO A   95          0        -2.99
 CISPEP   8 TYR A  140    PRO A  141          0         0.95                     
 CISPEP   9 PHE B  146    PRO B  147          0        -5.50                     
 CISPEP  10 GLU B  148    PRO B  149          0         2.07                     
-SITE     1 AC1  4 PHE C 338  GLY C 339  ASN C 343  VAL C 367                    
 CRYST1  109.772  109.772  235.680  90.00  90.00  90.00 P 41 21 2     8          
 ORIGX1      1.000000  0.000000  0.000000        0.00000                         
 ORIGX2      0.000000  1.000000  0.000000        0.00000                         
@@ -8818,34 +8813,34 @@ ATOM   8137  CD  LYS C 528     -87.920  50.247  25.696  1.00114.24           C
 ATOM   8138  CE  LYS C 528     -88.561  50.549  27.028  1.00101.30           C  
 ATOM   8139  NZ  LYS C 528     -89.974  50.055  27.065  1.00 99.17           N  
 TER    8140      LYS C 528                                                      
-HETATM 8141  C1  NAG C 601     -71.548  50.051  43.738  1.00 59.90           C  
-HETATM 8142  C2  NAG C 601     -72.785  50.109  42.833  1.00 53.98           C  
-HETATM 8143  C3  NAG C 601     -73.344  51.530  42.763  1.00 69.44           C  
-HETATM 8144  C4  NAG C 601     -73.547  52.108  44.157  1.00 78.04           C  
-HETATM 8145  C5  NAG C 601     -72.254  52.001  44.955  1.00 68.31           C  
-HETATM 8146  C6  NAG C 601     -72.393  52.475  46.384  1.00 66.46           C  
-HETATM 8147  C7  NAG C 601     -73.189  48.712  40.852  1.00 46.65           C  
-HETATM 8148  C8  NAG C 601     -72.705  48.335  39.484  1.00 48.97           C  
-HETATM 8149  N2  NAG C 601     -72.462  49.627  41.499  1.00 47.00           N  
-HETATM 8150  O3  NAG C 601     -74.588  51.496  42.074  1.00 65.20           O  
-HETATM 8151  O4  NAG C 601     -73.934  53.475  44.067  1.00 81.83           O  
-HETATM 8152  O5  NAG C 601     -71.852  50.627  45.013  1.00 67.74           O  
-HETATM 8153  O6  NAG C 601     -71.125  52.704  46.984  1.00 59.05           O  
-HETATM 8154  O7  NAG C 601     -74.190  48.210  41.348  1.00 74.74           O  
-HETATM 8155  C1  NAG C 602     -75.197  53.987  44.245  1.00 79.98           C  
-HETATM 8156  C2  NAG C 602     -75.184  55.508  44.092  1.00 70.34           C  
-HETATM 8157  C3  NAG C 602     -76.597  56.068  44.238  1.00 80.95           C  
-HETATM 8158  C4  NAG C 602     -77.554  55.364  43.285  1.00 82.04           C  
-HETATM 8159  C5  NAG C 602     -77.472  53.854  43.483  1.00 80.07           C  
-HETATM 8160  C6  NAG C 602     -78.317  53.081  42.496  1.00 80.65           C  
-HETATM 8161  C7  NAG C 602     -73.005  56.394  44.809  1.00 77.91           C  
-HETATM 8162  C8  NAG C 602     -72.234  57.030  45.929  1.00 53.23           C  
-HETATM 8163  N2  NAG C 602     -74.290  56.122  45.063  1.00 80.55           N  
-HETATM 8164  O3  NAG C 602     -76.586  57.466  43.969  1.00 97.72           O  
-HETATM 8165  O4  NAG C 602     -78.888  55.797  43.524  1.00 94.75           O  
-HETATM 8166  O5  NAG C 602     -76.117  53.415  43.305  1.00 86.65           O  
-HETATM 8167  O6  NAG C 602     -77.869  51.739  42.366  1.00 96.64           O  
-HETATM 8168  O7  NAG C 602     -72.488  56.137  43.726  1.00 78.86           O  
+HETATM 8141  C1  NAG D   1     -71.548  50.051  43.738  1.00 59.90           C  
+HETATM 8142  C2  NAG D   1     -72.785  50.109  42.833  1.00 53.98           C  
+HETATM 8143  C3  NAG D   1     -73.344  51.530  42.763  1.00 69.44           C  
+HETATM 8144  C4  NAG D   1     -73.547  52.108  44.157  1.00 78.04           C  
+HETATM 8145  C5  NAG D   1     -72.254  52.001  44.955  1.00 68.31           C  
+HETATM 8146  C6  NAG D   1     -72.393  52.475  46.384  1.00 66.46           C  
+HETATM 8147  C7  NAG D   1     -73.189  48.712  40.852  1.00 46.65           C  
+HETATM 8148  C8  NAG D   1     -72.705  48.335  39.484  1.00 48.97           C  
+HETATM 8149  N2  NAG D   1     -72.462  49.627  41.499  1.00 47.00           N  
+HETATM 8150  O3  NAG D   1     -74.588  51.496  42.074  1.00 65.20           O  
+HETATM 8151  O4  NAG D   1     -73.934  53.475  44.067  1.00 81.83           O  
+HETATM 8152  O5  NAG D   1     -71.852  50.627  45.013  1.00 67.74           O  
+HETATM 8153  O6  NAG D   1     -71.125  52.704  46.984  1.00 59.05           O  
+HETATM 8154  O7  NAG D   1     -74.190  48.210  41.348  1.00 74.74           O  
+HETATM 8155  C1  NAG D   2     -75.197  53.987  44.245  1.00 79.98           C  
+HETATM 8156  C2  NAG D   2     -75.184  55.508  44.092  1.00 70.34           C  
+HETATM 8157  C3  NAG D   2     -76.597  56.068  44.238  1.00 80.95           C  
+HETATM 8158  C4  NAG D   2     -77.554  55.364  43.285  1.00 82.04           C  
+HETATM 8159  C5  NAG D   2     -77.472  53.854  43.483  1.00 80.07           C  
+HETATM 8160  C6  NAG D   2     -78.317  53.081  42.496  1.00 80.65           C  
+HETATM 8161  C7  NAG D   2     -73.005  56.394  44.809  1.00 77.91           C  
+HETATM 8162  C8  NAG D   2     -72.234  57.030  45.929  1.00 53.23           C  
+HETATM 8163  N2  NAG D   2     -74.290  56.122  45.063  1.00 80.55           N  
+HETATM 8164  O3  NAG D   2     -76.586  57.466  43.969  1.00 97.72           O  
+HETATM 8165  O4  NAG D   2     -78.888  55.797  43.524  1.00 94.75           O  
+HETATM 8166  O5  NAG D   2     -76.117  53.415  43.305  1.00 86.65           O  
+HETATM 8167  O6  NAG D   2     -77.869  51.739  42.366  1.00 96.64           O  
+HETATM 8168  O7  NAG D   2     -72.488  56.137  43.726  1.00 78.86           O  
 HETATM 8169  O   HOH H 301     -61.576  65.432   7.828  1.00 44.62           O  
 HETATM 8170  O   HOH H 302     -88.695  94.942   9.986  1.00 51.39           O  
 HETATM 8171  O   HOH H 303     -51.927  68.437  14.509  1.00 47.38           O  
@@ -9071,5 +9066,5 @@ CONECT 8165 8158
 CONECT 8166 8155 8159                                                           
 CONECT 8167 8160                                                                
 CONECT 8168 8161                                                                
-MASTER      351    0    2   22  103    0    1    6 8333    5   55   87          
+MASTER      345    0    2   22  103    0    0    6 8333    5   55   87          
 END                                                                             
