@@ -21,7 +21,7 @@ do
     if [ -f validation/molprobity/clashscore.txt ] ; then
 	phenix.reduce -NOFLIP $c.pdb > validation/molprobity/$c.H.pdb
 	cd validation/molprobity/
-	rama_chart_pdb $c.H.pdb
+	rama_chart_pdf $c.H.pdb
 	multichart $c.H.pdb
     else
 	if [ -f validation/molprobity/molprobity.out ] ; then
@@ -29,7 +29,7 @@ do
 	    rm validation/molprobity/molprobity_probe.txt
        	    phenix.reduce -NOFLIP $c.pdb > validation/molprobity/$c.H.pdb
 	    cd validation/molprobity/
-	    rama_chart_pdb $c.H.pdb
+	    rama_chart_pdf $c.H.pdb
 	    multichart $c.H.pdb
 	else
 	    if [ -f $c.mtz ]; then
@@ -42,7 +42,7 @@ do
 	    phenix.clashscore $c.pdb > validation/molprobity/clashscore.txt
     	    phenix.reduce -NOFLIP $c.pdb > validation/molprobity/$c.H.pdb
 	    cd validation/molprobity/
-	    rama_chart_pdb $c.H.pdb
+	    rama_chart_pdf $c.H.pdb
 	    multichart $c.H.pdb
             fi
         fi
