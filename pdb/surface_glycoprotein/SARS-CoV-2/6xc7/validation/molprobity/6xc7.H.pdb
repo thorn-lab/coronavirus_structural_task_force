@@ -54,6 +54,8 @@ KEYWDS    ANTIBODY, SARS-COV-2, CORONAVIRUS, SPIKE, IMMUNE SYSTEM, IMMUNE
 KEYWDS   2 SYSTEM-VIRAL PROTEIN COMPLEX
 EXPDTA    X-RAY DIFFRACTION
 AUTHOR    M.YUAN,H.LIU,N.C.WU,X.ZHU,I.A.WILSON
+REVDAT   2   29-JUL-20 6XC7    1       COMPND REMARK HETNAM LINK
+REVDAT   2 2                   1       SITE   ATOM
 REVDAT   1   08-JUL-20 6XC7    0
 JRNL        AUTH   M.YUAN,H.LIU,N.C.WU,C.D.LEE,X.ZHU,F.ZHAO,D.HUANG,W.YU,Y.HUA,
 JRNL        AUTH 2 H.TIEN,T.F.ROGERS,E.LANDAIS,D.SOK,J.G.JARDINE,D.R.BURTON,
@@ -275,7 +277,7 @@ REMARK 350 CRYSTALLOGRAPHIC OPERATIONS ARE GIVEN.
 REMARK 350
 REMARK 350 BIOMOLECULE: 1
 REMARK 350 AUTHOR DETERMINED BIOLOGICAL UNIT: PENTAMERIC
-REMARK 350 APPLY THE FOLLOWING TO CHAINS: A, H, L, C, D
+REMARK 350 APPLY THE FOLLOWING TO CHAINS: A, H, L, C, D, B
 REMARK 350   BIOMT1   1  1.000000  0.000000  0.000000        0.00000
 REMARK 350   BIOMT2   1  0.000000  1.000000  0.000000        0.00000
 REMARK 350   BIOMT3   1  0.000000  0.000000  1.000000        0.00000
@@ -411,12 +413,6 @@ REMARK 500 LYS C  129     SER C  130                 -129.39
 REMARK 500 SER D   30     SER D   31                  143.87
 REMARK 500
 REMARK 500 REMARK: NULL
-REMARK 800
-REMARK 800 SITE
-REMARK 800 SITE_IDENTIFIER: AC1
-REMARK 800 EVIDENCE_CODE: SOFTWARE
-REMARK 800 SITE_DESCRIPTION: binding site for Poly-Saccharide residues NAG A
-REMARK 800  601 through BMA A 603 bound to ASN A 343
 REMARK 900
 REMARK 900 RELATED ENTRIES
 REMARK 900 RELATED ID: 6XC2   RELATED DB: PDB
@@ -522,11 +518,11 @@ SEQRES  14 D  215  ASP SER THR TYR SER LEU SER SER THR LEU THR LEU SER
 SEQRES  15 D  215  LYS ALA ASP TYR GLU LYS HIS LYS VAL TYR ALA CYS GLU
 SEQRES  16 D  215  VAL THR HIS GLN GLY LEU SER SER PRO VAL THR LYS SER
 SEQRES  17 D  215  PHE ASN ARG GLY GLU CYS SER
-HET    NAG  A 601      14
-HET    NAG  A 602      14
-HET    BMA  A 603      11
-HETNAM     NAG N-ACETYL-D-GLUCOSAMINE
-HETNAM     BMA BETA-D-MANNOSE
+HET    NAG  B   1      14
+HET    NAG  B   2      14
+HET    BMA  B   3      11
+HETNAM     NAG 2-ACETAMIDO-2-DEOXY-BETA-D-GLUCOPYRANOSE
+HETNAM     BMA BETA-D-MANNOPYRANOSE
 FORMUL   6  NAG    2(C8 H15 N O6)
 FORMUL   6  BMA    C6 H12 O6
 HELIX    1 AA1 PHE A  338  ASN A  343  1                                   6
@@ -671,9 +667,9 @@ SSBOND *** CYS C   22    CYS C   92                          1555   1555  2.03
 SSBOND *** CYS C  140    CYS C  196                          1555   1555  2.04
 SSBOND *** CYS D   23    CYS D   88                          1555   1555  2.05
 SSBOND *** CYS D  134    CYS D  194                          1555   1555  2.03
-LINK         ND2 ASN A 343                 C1  NAG A 601     1555   1555  1.44
-LINK         O4  NAG A 601                 C1  NAG A 602     1555   1555  1.37
-LINK         O4  NAG A 602                 C1  BMA A 603     1555   1555  1.37
+LINK         ND2 ASN A 343                 C1  NAG B   1     1555   1555  1.44
+LINK         O4  NAG B   1                 C1  NAG B   2     1555   1555  1.37
+LINK         O4  NAG B   2                 C1  BMA B   3     1555   1555  1.37
 CISPEP   1 PHE H  146    PRO H  147          0        -3.31
 CISPEP   2 GLU H  148    PRO H  149          0        -4.39
 CISPEP   3 SER L    7    PRO L    8          0        -3.68
@@ -684,7 +680,6 @@ CISPEP   7 GLU C  148    PRO C  149          0        -3.98
 CISPEP   8 SER D    7    PRO D    8          0       -10.01
 CISPEP   9 SER D   94    PRO D   95          0         0.15
 CISPEP  10 TYR D  140    PRO D  141          0        -0.29
-SITE   *** AC1  4 GLY A 339  ASN A 343  SER H 156  ASP H 208
 CRYST1  110.873  110.873  228.490  90.00  90.00  90.00 P 41 21 2     8
 ORIGX1      1.000000  0.000000  0.000000        0.00000
 ORIGX2      0.000000  1.000000  0.000000        0.00000
@@ -697,7 +692,7 @@ USER  MOD scores for adjustable sidechains, with "set" totals for H,N and Q
 USER  MOD "o" means original, "f" means flipped, "180deg" is methyl default
 USER  MOD "!" flags a clash with an overlap of 0.40A or greater
 USER  MOD flip categories: "K"=keep, "C"=clashes, "X"=uncertain, "F"=flip
-USER  MOD NoAdj-H: A 343 ASNHD21 : A 343 ASN ND2 : A 601 NAG C1  :(H bumps)
+USER  MOD NoAdj-H: A 343 ASNHD21 : A 343 ASN ND2 : B   1 NAG C1  :(H bumps)
 USER  MOD Set 1.1: L 190 LYS NZ  :NH3+    172:sc=   0.163   (180deg=0)
 USER  MOD Set 1.2: L 210 ASN     :      amide:sc=   -0.93  K(o=-0.77,f=-2.3!)
 USER  MOD Set 2.1: H 164 HIS     :     no HD1:sc=       0  X(o=2.3,f=2.2)
@@ -799,8 +794,8 @@ USER  MOD Set44.1: C  30 SER OG  :   rot  153:sc=   -0.92
 USER  MOD Set44.2: C  73 ASN     :      amide:sc=  -0.761  K(o=-1.7,f=-3.6!)
 USER  MOD Set45.1: C  57 THR OG1 :   rot -106:sc=  -0.323
 USER  MOD Set45.2: C  59 TYR OH  :   rot  180:sc=  -0.287
-USER  MOD Set46.1: A 602 NAG O3  :   rot -179:sc=    0.53
-USER  MOD Set46.2: A 603 BMA O6  :   rot  180:sc=       0
+USER  MOD Set46.1: B   2 NAG O3  :   rot -179:sc=    0.53
+USER  MOD Set46.2: B   3 BMA O6  :   rot  180:sc=       0
 USER  MOD Set47.1: A 505 TYR OH  :   rot  -40:sc=    1.24
 USER  MOD Set47.2: D  93 SER OG  :   rot  180:sc=    1.13
 USER  MOD Set48.1: A 498 GLN     :      amide:sc= 0.00129  X(o=0.0013,f=-0.45)
@@ -875,12 +870,12 @@ USER  MOD Single : A 514 SER OG  :   rot  180:sc= -0.0754
 USER  MOD Single : A 519 HIS     :     no HD1:sc=  -0.232  X(o=-0.23,f=-0.17)
 USER  MOD Single : A 523 THR OG1 :   rot  -75:sc=   0.736
 USER  MOD Single : A 528 LYS NZ  :NH3+   -169:sc=-0.00176   (180deg=-0.127)
-USER  MOD Single : A 601 NAG O3  :   rot  144:sc=    1.31
-USER  MOD Single : A 601 NAG O6  :   rot  180:sc=       0
-USER  MOD Single : A 602 NAG O6  :   rot  180:sc=       0
-USER  MOD Single : A 603 BMA O2  :   rot  143:sc=   0.064
-USER  MOD Single : A 603 BMA O3  :   rot  180:sc=  0.0634
-USER  MOD Single : A 603 BMA O4  :   rot  150:sc= -0.0108
+USER  MOD Single : B   1 NAG O3  :   rot  144:sc=    1.31
+USER  MOD Single : B   1 NAG O6  :   rot  180:sc=       0
+USER  MOD Single : B   2 NAG O6  :   rot  180:sc=       0
+USER  MOD Single : B   3 BMA O2  :   rot  143:sc=   0.064
+USER  MOD Single : B   3 BMA O3  :   rot  180:sc=  0.0634
+USER  MOD Single : B   3 BMA O4  :   rot  150:sc= -0.0108
 USER  MOD Single : C   1 GLN     :      amide:sc=       0  X(o=0,f=0.18)
 USER  MOD Single : C   1 GLN N   :NH3+    180:sc=       0   (180deg=0)
 USER  MOD Single : C   3 GLN     :      amide:sc=       0  X(o=0,f=0)
@@ -17223,79 +17218,79 @@ ATOM      0  HB3 GLU D 213     131.863 -35.793  25.517  1.00104.63           H  
 ATOM      0  HG2 GLU D 213     132.117 -33.582  25.338  1.00108.79           H   new
 ATOM      0  HG3 GLU D 213     132.253 -34.023  23.849  1.00108.79           H   new
 TER    8157      GLU D 213
-HETATM 8158  C1  NAG A 601      37.411 -62.445  41.766  1.00 72.43           C
-HETATM 8159  C2  NAG A 601      36.204 -62.406  40.816  1.00 71.48           C
-HETATM 8160  C3  NAG A 601      35.625 -60.991  40.723  1.00 73.25           C
-HETATM 8161  C4  NAG A 601      35.392 -60.397  42.106  1.00 79.81           C
-HETATM 8162  C5  NAG A 601      36.678 -60.480  42.914  1.00 78.14           C
-HETATM 8163  C6  NAG A 601      36.546 -59.946  44.322  1.00 77.21           C
-HETATM 8164  C7  NAG A 601      35.870 -63.763  38.790  1.00 71.64           C
-HETATM 8165  C8  NAG A 601      36.423 -64.130  37.446  1.00 69.61           C
-HETATM 8166  N2  NAG A 601      36.585 -62.880  39.495  1.00 72.04           N
-HETATM 8167  O3  NAG A 601      34.397 -61.042  40.005  1.00 77.38           O
-HETATM 8168  O4  NAG A 601      34.989 -59.036  41.999  1.00 83.05           O
-HETATM 8169  O5  NAG A 601      37.061 -61.855  43.022  1.00 75.68           O
-HETATM 8170  O6  NAG A 601      37.772 -59.389  44.779  1.00 78.00           O
-HETATM 8171  O7  NAG A 601      34.826 -64.244  39.218  1.00 75.16           O
-HETATM    0  HO6 NAG A 601      37.674 -59.098  45.561  1.00 78.00           H   new
-HETATM    0  HO3 NAG A 601      33.860 -60.483  40.329  1.00 77.38           H   new
-HETATM    0  HN2 NAG A 601      37.311 -62.575  39.148  1.00 72.04           H   new
-HETATM    0  H83 NAG A 601      36.489 -63.335  36.895  1.00 69.61           H   new
-HETATM    0  H82 NAG A 601      37.304 -64.521  37.554  1.00 69.61           H   new
-HETATM    0  H81 NAG A 601      35.835 -64.772  37.018  1.00 69.61           H   new
-HETATM    0  H62 NAG A 601      35.851 -59.270  44.350  1.00 77.21           H   new
-HETATM    0  H61 NAG A 601      36.271 -60.661  44.917  1.00 77.21           H   new
-HETATM    0  H5  NAG A 601      37.332 -59.937  42.447  1.00 78.14           H   new
-HETATM    0  H4  NAG A 601      34.690 -60.899  42.549  1.00 79.81           H   new
-HETATM    0  H3  NAG A 601      36.261 -60.423  40.260  1.00 73.25           H   new
-HETATM    0  H2  NAG A 601      35.519 -62.992  41.175  1.00 71.48           H   new
-HETATM 8172  C1  NAG A 602      33.697 -58.639  42.246  1.00 85.53           C
-HETATM 8173  C2  NAG A 602      33.749 -57.122  42.087  1.00 90.55           C
-HETATM 8174  C3  NAG A 602      32.337 -56.547  42.082  1.00 95.35           C
-HETATM 8175  C4  NAG A 602      31.492 -57.230  41.015  1.00 98.30           C
-HETATM 8176  C5  NAG A 602      31.533 -58.746  41.198  1.00 93.68           C
-HETATM 8177  C6  NAG A 602      30.829 -59.494  40.089  1.00 95.33           C
-HETATM 8178  C7  NAG A 602      35.763 -55.999  42.923  1.00 96.80           C
-HETATM 8179  C8  NAG A 602      36.448 -55.410  44.119  1.00 91.93           C
-HETATM 8180  N2  NAG A 602      34.547 -56.512  43.137  1.00 94.04           N
-HETATM 8181  O3  NAG A 602      32.396 -55.145  41.842  1.00 96.72           O
-HETATM 8182  O4  NAG A 602      30.144 -56.784  41.098  1.00103.76           O
-HETATM 8183  O5  NAG A 602      32.894 -59.205  41.204  1.00 85.58           O
-HETATM 8184  O6  NAG A 602      29.832 -60.369  40.599  1.00 93.08           O
-HETATM 8185  O7  NAG A 602      36.287 -56.011  41.812  1.00 94.84           O
-HETATM    0  HO6 NAG A 602      29.458 -60.769  39.962  1.00 93.08           H   new
-HETATM    0  HO3 NAG A 602      31.619 -54.826  41.849  1.00 96.72           H   new
-HETATM    0  HN2 NAG A 602      34.222 -56.479  43.933  1.00 94.04           H   new
-HETATM    0  H83 NAG A 602      35.910 -54.686  44.476  1.00 91.93           H   new
-HETATM    0  H82 NAG A 602      36.560 -56.094  44.797  1.00 91.93           H   new
-HETATM    0  H81 NAG A 602      37.317 -55.068  43.858  1.00 91.93           H   new
-HETATM    0  H62 NAG A 602      30.422 -58.860  39.478  1.00 95.33           H   new
-HETATM    0  H61 NAG A 602      31.478 -60.004  39.579  1.00 95.33           H   new
-HETATM    0  H5  NAG A 602      31.083 -58.922  42.039  1.00 93.68           H   new
-HETATM    0  H4  NAG A 602      31.854 -57.002  40.145  1.00 98.30           H   new
-HETATM    0  H3  NAG A 602      31.925 -56.706  42.946  1.00 95.35           H   new
-HETATM    0  H2  NAG A 602      34.173 -56.919  41.238  1.00 90.55           H   new
-HETATM 8186  C1  BMA A 603      29.412 -55.726  40.616  1.00106.82           C
-HETATM 8187  C2  BMA A 603      27.925 -55.954  40.297  1.00113.74           C
-HETATM 8188  C3  BMA A 603      27.294 -54.652  39.796  1.00114.00           C
-HETATM 8189  C4  BMA A 603      27.636 -53.461  40.715  1.00114.53           C
-HETATM 8190  C5  BMA A 603      29.161 -53.372  40.929  1.00113.23           C
-HETATM 8191  C6  BMA A 603      29.567 -52.259  41.884  1.00110.01           C
-HETATM 8192  O2  BMA A 603      27.207 -56.339  41.465  1.00107.82           O
-HETATM 8193  O3  BMA A 603      25.882 -54.777  39.659  1.00110.09           O
-HETATM 8194  O4  BMA A 603      27.165 -52.252  40.137  1.00112.92           O
-HETATM 8195  O5  BMA A 603      29.612 -54.622  41.477  1.00107.88           O
-HETATM 8196  O6  BMA A 603      30.963 -52.023  41.732  1.00104.34           O
-HETATM    0  HO6 BMA A 603      31.202 -51.409  42.253  1.00104.34           H   new
-HETATM    0  HO4 BMA A 603      26.969 -51.708  40.746  1.00112.92           H   new
-HETATM    0  HO3 BMA A 603      25.561 -54.051  39.385  1.00110.09           H   new
-HETATM    0  HO2 BMA A 603      26.442 -55.992  41.451  1.00107.82           H   new
-HETATM    0  H62 BMA A 603      29.065 -51.451  41.693  1.00110.01           H   new
-HETATM    0  H61 BMA A 603      29.365 -52.509  42.799  1.00110.01           H   new
-HETATM    0  H5  BMA A 603      29.565 -53.178  40.068  1.00113.23           H   new
-HETATM    0  H4  BMA A 603      27.204 -53.597  41.573  1.00114.53           H   new
-HETATM    0  H3  BMA A 603      27.673 -54.476  38.921  1.00114.00           H   new
-HETATM    0  H2  BMA A 603      27.876 -56.652  39.625  1.00113.74           H   new
+HETATM 8158  C1  NAG B   1      37.411 -62.445  41.766  1.00 72.43           C
+HETATM 8159  C2  NAG B   1      36.204 -62.406  40.816  1.00 71.48           C
+HETATM 8160  C3  NAG B   1      35.625 -60.991  40.723  1.00 73.25           C
+HETATM 8161  C4  NAG B   1      35.392 -60.397  42.106  1.00 79.81           C
+HETATM 8162  C5  NAG B   1      36.678 -60.480  42.914  1.00 78.14           C
+HETATM 8163  C6  NAG B   1      36.546 -59.946  44.322  1.00 77.21           C
+HETATM 8164  C7  NAG B   1      35.870 -63.763  38.790  1.00 71.64           C
+HETATM 8165  C8  NAG B   1      36.423 -64.130  37.446  1.00 69.61           C
+HETATM 8166  N2  NAG B   1      36.585 -62.880  39.495  1.00 72.04           N
+HETATM 8167  O3  NAG B   1      34.397 -61.042  40.005  1.00 77.38           O
+HETATM 8168  O4  NAG B   1      34.989 -59.036  41.999  1.00 83.05           O
+HETATM 8169  O5  NAG B   1      37.061 -61.855  43.022  1.00 75.68           O
+HETATM 8170  O6  NAG B   1      37.772 -59.389  44.779  1.00 78.00           O
+HETATM 8171  O7  NAG B   1      34.826 -64.244  39.218  1.00 75.16           O
+HETATM    0  HO6 NAG B   1      37.674 -59.098  45.561  1.00 78.00           H   new
+HETATM    0  HO3 NAG B   1      33.860 -60.483  40.329  1.00 77.38           H   new
+HETATM    0  HN2 NAG B   1      37.311 -62.575  39.148  1.00 72.04           H   new
+HETATM    0  H83 NAG B   1      36.489 -63.335  36.895  1.00 69.61           H   new
+HETATM    0  H82 NAG B   1      37.304 -64.521  37.554  1.00 69.61           H   new
+HETATM    0  H81 NAG B   1      35.835 -64.772  37.018  1.00 69.61           H   new
+HETATM    0  H62 NAG B   1      35.851 -59.270  44.350  1.00 77.21           H   new
+HETATM    0  H61 NAG B   1      36.271 -60.661  44.917  1.00 77.21           H   new
+HETATM    0  H5  NAG B   1      37.332 -59.937  42.447  1.00 78.14           H   new
+HETATM    0  H4  NAG B   1      34.690 -60.899  42.549  1.00 79.81           H   new
+HETATM    0  H3  NAG B   1      36.261 -60.423  40.260  1.00 73.25           H   new
+HETATM    0  H2  NAG B   1      35.519 -62.992  41.175  1.00 71.48           H   new
+HETATM 8172  C1  NAG B   2      33.697 -58.639  42.246  1.00 85.53           C
+HETATM 8173  C2  NAG B   2      33.749 -57.122  42.087  1.00 90.55           C
+HETATM 8174  C3  NAG B   2      32.337 -56.547  42.082  1.00 95.35           C
+HETATM 8175  C4  NAG B   2      31.492 -57.230  41.015  1.00 98.30           C
+HETATM 8176  C5  NAG B   2      31.533 -58.746  41.198  1.00 93.68           C
+HETATM 8177  C6  NAG B   2      30.829 -59.494  40.089  1.00 95.33           C
+HETATM 8178  C7  NAG B   2      35.763 -55.999  42.923  1.00 96.80           C
+HETATM 8179  C8  NAG B   2      36.448 -55.410  44.119  1.00 91.93           C
+HETATM 8180  N2  NAG B   2      34.547 -56.512  43.137  1.00 94.04           N
+HETATM 8181  O3  NAG B   2      32.396 -55.145  41.842  1.00 96.72           O
+HETATM 8182  O4  NAG B   2      30.144 -56.784  41.098  1.00103.76           O
+HETATM 8183  O5  NAG B   2      32.894 -59.205  41.204  1.00 85.58           O
+HETATM 8184  O6  NAG B   2      29.832 -60.369  40.599  1.00 93.08           O
+HETATM 8185  O7  NAG B   2      36.287 -56.011  41.812  1.00 94.84           O
+HETATM    0  HO6 NAG B   2      29.458 -60.769  39.962  1.00 93.08           H   new
+HETATM    0  HO3 NAG B   2      31.619 -54.826  41.849  1.00 96.72           H   new
+HETATM    0  HN2 NAG B   2      34.222 -56.479  43.933  1.00 94.04           H   new
+HETATM    0  H83 NAG B   2      35.910 -54.686  44.476  1.00 91.93           H   new
+HETATM    0  H82 NAG B   2      36.560 -56.094  44.797  1.00 91.93           H   new
+HETATM    0  H81 NAG B   2      37.317 -55.068  43.858  1.00 91.93           H   new
+HETATM    0  H62 NAG B   2      30.422 -58.860  39.478  1.00 95.33           H   new
+HETATM    0  H61 NAG B   2      31.478 -60.004  39.579  1.00 95.33           H   new
+HETATM    0  H5  NAG B   2      31.083 -58.922  42.039  1.00 93.68           H   new
+HETATM    0  H4  NAG B   2      31.854 -57.002  40.145  1.00 98.30           H   new
+HETATM    0  H3  NAG B   2      31.925 -56.706  42.946  1.00 95.35           H   new
+HETATM    0  H2  NAG B   2      34.173 -56.919  41.238  1.00 90.55           H   new
+HETATM 8186  C1  BMA B   3      29.412 -55.726  40.616  1.00106.82           C
+HETATM 8187  C2  BMA B   3      27.925 -55.954  40.297  1.00113.74           C
+HETATM 8188  C3  BMA B   3      27.294 -54.652  39.796  1.00114.00           C
+HETATM 8189  C4  BMA B   3      27.636 -53.461  40.715  1.00114.53           C
+HETATM 8190  C5  BMA B   3      29.161 -53.372  40.929  1.00113.23           C
+HETATM 8191  C6  BMA B   3      29.567 -52.259  41.884  1.00110.01           C
+HETATM 8192  O2  BMA B   3      27.207 -56.339  41.465  1.00107.82           O
+HETATM 8193  O3  BMA B   3      25.882 -54.777  39.659  1.00110.09           O
+HETATM 8194  O4  BMA B   3      27.165 -52.252  40.137  1.00112.92           O
+HETATM 8195  O5  BMA B   3      29.612 -54.622  41.477  1.00107.88           O
+HETATM 8196  O6  BMA B   3      30.963 -52.023  41.732  1.00104.34           O
+HETATM    0  HO6 BMA B   3      31.202 -51.409  42.253  1.00104.34           H   new
+HETATM    0  HO4 BMA B   3      26.969 -51.708  40.746  1.00112.92           H   new
+HETATM    0  HO3 BMA B   3      25.561 -54.051  39.385  1.00110.09           H   new
+HETATM    0  HO2 BMA B   3      26.442 -55.992  41.451  1.00107.82           H   new
+HETATM    0  H62 BMA B   3      29.065 -51.451  41.693  1.00110.01           H   new
+HETATM    0  H61 BMA B   3      29.365 -52.509  42.799  1.00110.01           H   new
+HETATM    0  H5  BMA B   3      29.565 -53.178  40.068  1.00113.23           H   new
+HETATM    0  H4  BMA B   3      27.204 -53.597  41.573  1.00114.53           H   new
+HETATM    0  H3  BMA B   3      27.673 -54.476  38.921  1.00114.00           H   new
+HETATM    0  H2  BMA B   3      27.876 -56.652  39.625  1.00113.74           H   new
 CONECT   22  229
 CONECT   79 8158
 CONECT  229   22
