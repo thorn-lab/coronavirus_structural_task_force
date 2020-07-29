@@ -3,7 +3,7 @@ data_6W4H
 _entry.id   6W4H 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.325 
+_audit_conform.dict_version    5.329 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
@@ -148,7 +148,7 @@ _entity.details
 3 non-polymer syn 'SULFITE ION'         80.063    1   ?       ? ?                        ? 
 4 non-polymer syn S-ADENOSYLMETHIONINE  398.437   1   ?       ? ?                        ? 
 5 non-polymer syn 'ACETATE ION'         59.044    2   ?       ? ?                        ? 
-6 non-polymer man BETA-D-FRUCTOPYRANOSE 180.156   2   ?       ? ?                        ? 
+6 non-polymer man beta-D-fructopyranose 180.156   2   ?       ? ?                        ? 
 7 non-polymer syn 'ZINC ION'            65.409    2   ?       ? ?                        ? 
 8 water       nat water                 18.015    442 ?       ? ?                        ? 
 # 
@@ -763,7 +763,7 @@ ALA 'L-peptide linking'          y ALANINE               ? 'C3 H7 N O2'      89.
 ARG 'L-peptide linking'          y ARGININE              ? 'C6 H15 N4 O2 1'  175.209 
 ASN 'L-peptide linking'          y ASPARAGINE            ? 'C4 H8 N2 O3'     132.118 
 ASP 'L-peptide linking'          y 'ASPARTIC ACID'       ? 'C4 H7 N O4'      133.103 
-BDF 'D-saccharide, beta linking' . BETA-D-FRUCTOPYRANOSE ? 'C6 H12 O6'       180.156 
+BDF 'D-saccharide, beta linking' . beta-D-fructopyranose ? 'C6 H12 O6'       180.156 
 CYS 'L-peptide linking'          y CYSTEINE              ? 'C3 H7 N O2 S'    121.158 
 GLN 'L-peptide linking'          y GLUTAMINE             ? 'C5 H10 N2 O3'    146.144 
 GLU 'L-peptide linking'          y 'GLUTAMIC ACID'       ? 'C5 H9 N O4'      147.129 
@@ -1309,14 +1309,15 @@ _struct_conn.pdbx_ptnr3_PDB_ins_code
 _struct_conn.details 
 _struct_conn.pdbx_dist_value 
 _struct_conn.pdbx_value_order 
-metalc1 metalc ? ? B CYS 77  SG  ? ? ? 1_555 H ZN . ZN ? ? B CYS 4327 B ZN 4401 1_555 ? ? ? ? ? ? ? 2.302 ? 
-metalc2 metalc ? ? B CYS 80  SG  ? ? ? 1_555 H ZN . ZN ? ? B CYS 4330 B ZN 4401 1_555 ? ? ? ? ? ? ? 2.322 ? 
-metalc3 metalc ? ? B HIS 86  NE2 ? ? ? 1_555 H ZN . ZN ? ? B HIS 4336 B ZN 4401 1_555 ? ? ? ? ? ? ? 2.006 ? 
-metalc4 metalc ? ? B CYS 93  SG  ? ? ? 1_555 H ZN . ZN ? ? B CYS 4343 B ZN 4401 1_555 ? ? ? ? ? ? ? 2.321 ? 
-metalc5 metalc ? ? B CYS 120 SG  ? ? ? 1_555 I ZN . ZN ? ? B CYS 4370 B ZN 4402 1_555 ? ? ? ? ? ? ? 2.323 ? 
-metalc6 metalc ? ? B CYS 123 SG  ? ? ? 1_555 I ZN . ZN ? ? B CYS 4373 B ZN 4402 1_555 ? ? ? ? ? ? ? 2.327 ? 
-metalc7 metalc ? ? B CYS 131 SG  ? ? ? 1_555 I ZN . ZN ? ? B CYS 4381 B ZN 4402 1_555 ? ? ? ? ? ? ? 2.331 ? 
-metalc8 metalc ? ? B CYS 133 SG  ? ? ? 1_555 I ZN . ZN ? ? B CYS 4383 B ZN 4402 1_555 ? ? ? ? ? ? ? 2.325 ? 
+_struct_conn.pdbx_role 
+metalc1 metalc ? ? B CYS 77  SG  ? ? ? 1_555 H ZN . ZN ? ? B CYS 4327 B ZN 4401 1_555 ? ? ? ? ? ? ? 2.302 ? ? 
+metalc2 metalc ? ? B CYS 80  SG  ? ? ? 1_555 H ZN . ZN ? ? B CYS 4330 B ZN 4401 1_555 ? ? ? ? ? ? ? 2.322 ? ? 
+metalc3 metalc ? ? B HIS 86  NE2 ? ? ? 1_555 H ZN . ZN ? ? B HIS 4336 B ZN 4401 1_555 ? ? ? ? ? ? ? 2.006 ? ? 
+metalc4 metalc ? ? B CYS 93  SG  ? ? ? 1_555 H ZN . ZN ? ? B CYS 4343 B ZN 4401 1_555 ? ? ? ? ? ? ? 2.321 ? ? 
+metalc5 metalc ? ? B CYS 120 SG  ? ? ? 1_555 I ZN . ZN ? ? B CYS 4370 B ZN 4402 1_555 ? ? ? ? ? ? ? 2.323 ? ? 
+metalc6 metalc ? ? B CYS 123 SG  ? ? ? 1_555 I ZN . ZN ? ? B CYS 4373 B ZN 4402 1_555 ? ? ? ? ? ? ? 2.327 ? ? 
+metalc7 metalc ? ? B CYS 131 SG  ? ? ? 1_555 I ZN . ZN ? ? B CYS 4381 B ZN 4402 1_555 ? ? ? ? ? ? ? 2.331 ? ? 
+metalc8 metalc ? ? B CYS 133 SG  ? ? ? 1_555 I ZN . ZN ? ? B CYS 4383 B ZN 4402 1_555 ? ? ? ? ? ? ? 2.325 ? ? 
 # 
 _struct_conn_type.id          metalc 
 _struct_conn_type.criteria    ? 
@@ -1421,98 +1422,6 @@ AA3 1 2 N MET A 263 ? N MET A 7058 O ILE A 284 ? O ILE A 7079
 AA4 1 2 N THR B 59  ? N THR B 4309 O TYR B 99  ? O TYR B 4349 
 AA4 2 3 O ILE B 102 ? O ILE B 4352 N GLU B 69  ? N GLU B 4319 
 AA5 1 2 N TRP B 126 ? N TRP B 4376 O CYS B 131 ? O CYS B 4381 
-# 
-loop_
-_struct_site.id 
-_struct_site.pdbx_evidence_code 
-_struct_site.pdbx_auth_asym_id 
-_struct_site.pdbx_auth_comp_id 
-_struct_site.pdbx_auth_seq_id 
-_struct_site.pdbx_auth_ins_code 
-_struct_site.pdbx_num_residues 
-_struct_site.details 
-AC1 Software A SO3 7101 ? 1  'binding site for residue SO3 A 7101' 
-AC2 Software A SAM 7102 ? 19 'binding site for residue SAM A 7102' 
-AC3 Software A ACT 7103 ? 6  'binding site for residue ACT A 7103' 
-AC4 Software A ACT 7104 ? 9  'binding site for residue ACT A 7104' 
-AC5 Software A BDF 7105 ? 7  'binding site for residue BDF A 7105' 
-AC6 Software B ZN  4401 ? 4  'binding site for residue ZN B 4401'  
-AC7 Software B ZN  4402 ? 4  'binding site for residue ZN B 4402'  
-AC8 Software B BDF 4403 ? 8  'binding site for residue BDF B 4403' 
-# 
-loop_
-_struct_site_gen.id 
-_struct_site_gen.site_id 
-_struct_site_gen.pdbx_num_res 
-_struct_site_gen.label_comp_id 
-_struct_site_gen.label_asym_id 
-_struct_site_gen.label_seq_id 
-_struct_site_gen.pdbx_auth_ins_code 
-_struct_site_gen.auth_comp_id 
-_struct_site_gen.auth_asym_id 
-_struct_site_gen.auth_seq_id 
-_struct_site_gen.label_atom_id 
-_struct_site_gen.label_alt_id 
-_struct_site_gen.symmetry 
-_struct_site_gen.details 
-1  AC1 1  HOH K .   ? HOH A 7388 . ? 1_555 ? 
-2  AC2 19 ASN A 46  ? ASN A 6841 . ? 1_555 ? 
-3  AC2 19 TYR A 50  ? TYR A 6845 . ? 1_555 ? 
-4  AC2 19 GLY A 74  ? GLY A 6869 . ? 1_555 ? 
-5  AC2 19 GLY A 76  ? GLY A 6871 . ? 1_555 ? 
-6  AC2 19 PRO A 83  ? PRO A 6878 . ? 1_555 ? 
-7  AC2 19 GLY A 84  ? GLY A 6879 . ? 1_555 ? 
-8  AC2 19 ASP A 102 ? ASP A 6897 . ? 1_555 ? 
-9  AC2 19 LEU A 103 ? LEU A 6898 . ? 1_555 ? 
-10 AC2 19 ASN A 104 ? ASN A 6899 . ? 1_555 ? 
-11 AC2 19 ASP A 117 ? ASP A 6912 . ? 1_555 ? 
-12 AC2 19 CYS A 118 ? CYS A 6913 . ? 1_555 ? 
-13 AC2 19 ASP A 133 ? ASP A 6928 . ? 1_555 ? 
-14 AC2 19 MET A 134 ? MET A 6929 . ? 1_555 ? 
-15 AC2 19 TYR A 135 ? TYR A 6930 . ? 1_555 ? 
-16 AC2 19 HOH K .   ? HOH A 7207 . ? 1_555 ? 
-17 AC2 19 HOH K .   ? HOH A 7236 . ? 1_555 ? 
-18 AC2 19 HOH K .   ? HOH A 7329 . ? 1_555 ? 
-19 AC2 19 HOH K .   ? HOH A 7358 . ? 1_555 ? 
-20 AC2 19 HOH K .   ? HOH A 7362 . ? 1_555 ? 
-21 AC3 6  ASN A 201 ? ASN A 6996 . ? 1_555 ? 
-22 AC3 6  SER A 204 ? SER A 6999 . ? 1_555 ? 
-23 AC3 6  GLU A 206 ? GLU A 7001 . ? 1_555 ? 
-24 AC3 6  HOH K .   ? HOH A 7219 . ? 1_555 ? 
-25 AC3 6  HOH K .   ? HOH A 7272 . ? 1_555 ? 
-26 AC3 6  HOH K .   ? HOH A 7288 . ? 1_555 ? 
-27 AC4 9  THR A 139 ? THR A 6934 . ? 1_555 ? 
-28 AC4 9  GLU A 150 ? GLU A 6945 . ? 1_555 ? 
-29 AC4 9  GLY A 151 ? GLY A 6946 . ? 1_555 ? 
-30 AC4 9  PHE A 152 ? PHE A 6947 . ? 1_555 ? 
-31 AC4 9  PHE A 153 ? PHE A 6948 . ? 1_555 ? 
-32 AC4 9  HOH K .   ? HOH A 7207 . ? 1_555 ? 
-33 AC4 9  HOH K .   ? HOH A 7260 . ? 1_555 ? 
-34 AC4 9  HOH K .   ? HOH A 7329 . ? 1_555 ? 
-35 AC4 9  HOH K .   ? HOH A 7332 . ? 1_555 ? 
-36 AC5 7  LEU A 60  ? LEU A 6855 . ? 1_555 ? 
-37 AC5 7  THR A 61  ? THR A 6856 . ? 1_555 ? 
-38 AC5 7  TRP A 192 ? TRP A 6987 . ? 1_555 ? 
-39 AC5 7  HOH K .   ? HOH A 7202 . ? 1_555 ? 
-40 AC5 7  HOH K .   ? HOH A 7244 . ? 1_555 ? 
-41 AC5 7  HOH K .   ? HOH A 7268 . ? 1_555 ? 
-42 AC5 7  HOH K .   ? HOH A 7273 . ? 1_555 ? 
-43 AC6 4  CYS B 77  ? CYS B 4327 . ? 1_555 ? 
-44 AC6 4  CYS B 80  ? CYS B 4330 . ? 1_555 ? 
-45 AC6 4  HIS B 86  ? HIS B 4336 . ? 1_555 ? 
-46 AC6 4  CYS B 93  ? CYS B 4343 . ? 1_555 ? 
-47 AC7 4  CYS B 120 ? CYS B 4370 . ? 1_555 ? 
-48 AC7 4  CYS B 123 ? CYS B 4373 . ? 1_555 ? 
-49 AC7 4  CYS B 131 ? CYS B 4381 . ? 1_555 ? 
-50 AC7 4  CYS B 133 ? CYS B 4383 . ? 1_555 ? 
-51 AC8 8  MET A 44  ? MET A 6839 . ? 1_555 ? 
-52 AC8 8  HOH K .   ? HOH A 7386 . ? 1_555 ? 
-53 AC8 8  ILE B 41  ? ILE B 4291 . ? 1_555 ? 
-54 AC8 8  THR B 42  ? THR B 4292 . ? 1_555 ? 
-55 AC8 8  ASN B 43  ? ASN B 4293 . ? 1_555 ? 
-56 AC8 8  CYS B 44  ? CYS B 4294 . ? 1_555 ? 
-57 AC8 8  HOH L .   ? HOH B 4505 . ? 1_555 ? 
-58 AC8 8  HOH L .   ? HOH B 4563 . ? 1_555 ? 
 # 
 _atom_sites.entry_id                    6W4H 
 _atom_sites.Cartn_transf_matrix[1][1]   ? 
@@ -10211,38 +10120,51 @@ _pdbx_audit_revision_history.revision_date
 1 'Structure model' 1 0 2020-03-18 
 2 'Structure model' 1 1 2020-04-01 
 3 'Structure model' 1 2 2020-05-06 
+4 'Structure model' 1 3 2020-07-29 
 # 
-_pdbx_audit_revision_details.ordinal             1 
-_pdbx_audit_revision_details.revision_ordinal    1 
-_pdbx_audit_revision_details.data_content_type   'Structure model' 
-_pdbx_audit_revision_details.provider            repository 
-_pdbx_audit_revision_details.type                'Initial release' 
-_pdbx_audit_revision_details.description         ? 
-_pdbx_audit_revision_details.details             ? 
+loop_
+_pdbx_audit_revision_details.ordinal 
+_pdbx_audit_revision_details.revision_ordinal 
+_pdbx_audit_revision_details.data_content_type 
+_pdbx_audit_revision_details.provider 
+_pdbx_audit_revision_details.type 
+_pdbx_audit_revision_details.description 
+_pdbx_audit_revision_details.details 
+1 1 'Structure model' repository 'Initial release' ?                          ? 
+2 4 'Structure model' repository Remediation       'Carbohydrate remediation' ? 
 # 
 loop_
 _pdbx_audit_revision_group.ordinal 
 _pdbx_audit_revision_group.revision_ordinal 
 _pdbx_audit_revision_group.data_content_type 
 _pdbx_audit_revision_group.group 
-1 2 'Structure model' 'Structure summary'   
-2 3 'Structure model' 'Database references' 
-3 3 'Structure model' 'Source and taxonomy' 
-4 3 'Structure model' 'Structure summary'   
+1 2 'Structure model' 'Structure summary'    
+2 3 'Structure model' 'Database references'  
+3 3 'Structure model' 'Source and taxonomy'  
+4 3 'Structure model' 'Structure summary'    
+5 4 'Structure model' 'Data collection'      
+6 4 'Structure model' 'Derived calculations' 
+7 4 'Structure model' 'Structure summary'    
 # 
 loop_
 _pdbx_audit_revision_category.ordinal 
 _pdbx_audit_revision_category.revision_ordinal 
 _pdbx_audit_revision_category.data_content_type 
 _pdbx_audit_revision_category.category 
-1 2 'Structure model' entity                    
-2 3 'Structure model' entity                    
-3 3 'Structure model' entity_name_com           
-4 3 'Structure model' entity_src_gen            
-5 3 'Structure model' pdbx_related_exp_data_set 
-6 3 'Structure model' struct_ref                
-7 3 'Structure model' struct_ref_seq            
-8 3 'Structure model' struct_ref_seq_dif        
+1  2 'Structure model' entity                    
+2  3 'Structure model' entity                    
+3  3 'Structure model' entity_name_com           
+4  3 'Structure model' entity_src_gen            
+5  3 'Structure model' pdbx_related_exp_data_set 
+6  3 'Structure model' struct_ref                
+7  3 'Structure model' struct_ref_seq            
+8  3 'Structure model' struct_ref_seq_dif        
+9  4 'Structure model' chem_comp                 
+10 4 'Structure model' entity                    
+11 4 'Structure model' pdbx_chem_comp_identifier 
+12 4 'Structure model' pdbx_entity_nonpoly       
+13 4 'Structure model' struct_site               
+14 4 'Structure model' struct_site_gen           
 # 
 loop_
 _pdbx_audit_revision_item.ordinal 
@@ -10263,6 +10185,9 @@ _pdbx_audit_revision_item.item
 12 3 'Structure model' '_struct_ref_seq.pdbx_auth_seq_align_beg' 
 13 3 'Structure model' '_struct_ref_seq.pdbx_db_accession'       
 14 3 'Structure model' '_struct_ref_seq.seq_align_beg'           
+15 4 'Structure model' '_chem_comp.name'                         
+16 4 'Structure model' '_entity.pdbx_description'                
+17 4 'Structure model' '_pdbx_entity_nonpoly.name'               
 # 
 loop_
 _pdbx_refine_tls.id 
@@ -10452,6 +10377,17 @@ _pdbx_unobs_or_zero_occ_residues.label_seq_id
 28 1 Y 1 B GLN 4392 ? B GLN 142 
 # 
 loop_
+_pdbx_chem_comp_identifier.comp_id 
+_pdbx_chem_comp_identifier.type 
+_pdbx_chem_comp_identifier.program 
+_pdbx_chem_comp_identifier.program_version 
+_pdbx_chem_comp_identifier.identifier 
+BDF 'CONDENSED IUPAC CARBOHYDRATE SYMBOL' GMML     1.0 DFrupb             
+BDF 'COMMON NAME'                         GMML     1.0 b-D-fructopyranose 
+BDF 'IUPAC CARBOHYDRATE SYMBOL'           PDB-CARE 1.0 b-D-Frup           
+BDF 'SNFG CARBOHYDRATE SYMBOL'            GMML     1.0 Fru                
+# 
+loop_
 _pdbx_entity_instance_feature.ordinal 
 _pdbx_entity_instance_feature.comp_id 
 _pdbx_entity_instance_feature.asym_id 
@@ -10471,7 +10407,7 @@ _pdbx_entity_nonpoly.comp_id
 3 'SULFITE ION'         SO3 
 4 S-ADENOSYLMETHIONINE  SAM 
 5 'ACETATE ION'         ACT 
-6 BETA-D-FRUCTOPYRANOSE BDF 
+6 beta-D-fructopyranose BDF 
 7 'ZINC ION'            ZN  
 8 water                 HOH 
 # 
