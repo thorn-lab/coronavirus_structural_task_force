@@ -1,0 +1,286 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.51
+_lib_update       11/07/18
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+U1G      U1G '.                                   ' .                  29  16 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-U1G  CYS      .        .        U1G      .        .
+ bond_CYS-SG_=_U1G-C
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_U1G
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ U1G           O1     O    O         0.000      6.189   -2.195   25.054
+ U1G           C6     C    C         0.000      7.390   -2.123   24.804
+ U1G           C7     C    C         0.000      8.234   -1.325   25.661
+ U1G           O2     O    O2        0.000      8.480   -0.027   25.299
+ U1G           C10    C    C1        0.000      9.291    0.505   26.254
+ U1G           H10    H    H         0.000      9.671    1.513   26.255
+ U1G           C9     C    C1        0.000      9.553   -0.440   27.219
+ U1G           H9     H    H         0.000     10.161   -0.314   28.100
+ U1G           C8     C    CSP       0.000      8.864   -1.610   26.822
+ U1G           N1     N    N         0.000      7.941   -2.820   23.778
+ U1G           C3     C    CH2       0.000      7.304   -4.041   23.284
+ U1G           H31    H    H         0.000      6.769   -4.530   24.101
+ U1G           H32    H    H         0.000      8.067   -4.718   22.894
+ U1G           C2     C    CH2       0.000      6.330   -3.687   22.182
+ U1G           H21    H    H         0.000      5.537   -3.071   22.610
+ U1G           H22    H    H         0.000      5.901   -4.612   21.793
+ U1G           N      N    N         0.000      6.987   -2.955   21.094
+ U1G           C1     C    C         0.000      6.735   -3.289   19.810
+ U1G           O      O    O         0.000      5.910   -4.156   19.544
+ U1G           C      C    CH3       0.000      7.461   -2.568   18.684
+ U1G           H3     H    H         0.000      7.244   -1.530   18.725
+ U1G           H2     H    H         0.000      8.507   -2.710   18.784
+ U1G           H1     H    H         0.000      7.144   -2.954   17.749
+ U1G           C5     C    CH2       0.000      7.803   -1.818   21.545
+ U1G           H51    H    H         0.000      7.124   -1.016   21.840
+ U1G           H52    H    H         0.000      8.410   -1.487   20.700
+ U1G           C4     C    CH2       0.000      8.707   -2.172   22.711
+ U1G           H42    H    H         0.000      9.165   -1.257   23.094
+ U1G           H41    H    H         0.000      9.489   -2.849   22.360
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ U1G      O1     n/a    C6     START
+ U1G      C6     O1     N1     .
+ U1G      C7     C6     O2     .
+ U1G      O2     C7     C10    .
+ U1G      C10    O2     C9     .
+ U1G      H10    C10    .      .
+ U1G      C9     C10    C8     .
+ U1G      H9     C9     .      .
+ U1G      C8     C9     .      .
+ U1G      N1     C6     C3     .
+ U1G      C3     N1     C2     .
+ U1G      H31    C3     .      .
+ U1G      H32    C3     .      .
+ U1G      C2     C3     N      .
+ U1G      H21    C2     .      .
+ U1G      H22    C2     .      .
+ U1G      N      C2     C5     .
+ U1G      C1     N      C      .
+ U1G      O      C1     .      .
+ U1G      C      C1     H1     .
+ U1G      H3     C      .      .
+ U1G      H2     C      .      .
+ U1G      H1     C      .      .
+ U1G      C5     N      C4     .
+ U1G      H51    C5     .      .
+ U1G      H52    C5     .      .
+ U1G      C4     C5     H41    .
+ U1G      H42    C4     .      .
+ U1G      H41    C4     .      END
+ U1G      N1     C4     .    ADD
+ U1G      C7     C8     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ U1G      N1     C4        single      1.455    0.020
+ U1G      N1     C6        single      1.330    0.020
+ U1G      C3     N1        single      1.455    0.020
+ U1G      C4     C5        single      1.524    0.020
+ U1G      C5     N         single      1.455    0.020
+ U1G      C7     C6        deloc       1.330    0.020
+ U1G      C6     O1        double      1.220    0.020
+ U1G      C7     C8        double      1.255    0.020
+ U1G      O2     C7        single      1.454    0.020
+ U1G      C8     C9        aromatic    1.255    0.020
+ U1G      C9     C10       aromatic    1.330    0.020
+ U1G      C10    O2        single      1.454    0.020
+ U1G      C1     N         single      1.330    0.020
+ U1G      N      C2        single      1.455    0.020
+ U1G      C      C1        single      1.500    0.020
+ U1G      O      C1        double      1.220    0.020
+ U1G      C2     C3        single      1.524    0.020
+ U1G      H41    C4        single      1.092    0.020
+ U1G      H42    C4        single      1.092    0.020
+ U1G      H51    C5        single      1.092    0.020
+ U1G      H52    C5        single      1.092    0.020
+ U1G      H10    C10       single      1.077    0.020
+ U1G      H1     C         single      1.059    0.020
+ U1G      H2     C         single      1.059    0.020
+ U1G      H3     C         single      1.059    0.020
+ U1G      H21    C2        single      1.092    0.020
+ U1G      H22    C2        single      1.092    0.020
+ U1G      H31    C3        single      1.092    0.020
+ U1G      H32    C3        single      1.092    0.020
+ U1G      H9     C9        single      1.077    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ U1G      O1     C6     C7      120.500    3.000
+ U1G      O1     C6     N1      123.000    3.000
+ U1G      C7     C6     N1      116.500    3.000
+ U1G      C6     C7     O2      120.000    3.000
+ U1G      C6     C7     C8      120.000    3.000
+ U1G      O2     C7     C8      120.000    3.000
+ U1G      C7     O2     C10     111.800    3.000
+ U1G      O2     C10    H10     120.000    3.000
+ U1G      O2     C10    C9      120.000    3.000
+ U1G      H10    C10    C9      120.000    3.000
+ U1G      C10    C9     H9      120.000    3.000
+ U1G      C10    C9     C8      120.000    3.000
+ U1G      H9     C9     C8      120.000    3.000
+ U1G      C9     C8     C7      180.000    3.000
+ U1G      C6     N1     C3      127.000    3.000
+ U1G      C6     N1     C4      127.000    3.000
+ U1G      C3     N1     C4      120.000    3.000
+ U1G      N1     C3     H31     109.470    3.000
+ U1G      N1     C3     H32     109.470    3.000
+ U1G      N1     C3     C2      105.000    3.000
+ U1G      H31    C3     H32     107.900    3.000
+ U1G      H31    C3     C2      109.470    3.000
+ U1G      H32    C3     C2      109.470    3.000
+ U1G      C3     C2     H21     109.470    3.000
+ U1G      C3     C2     H22     109.470    3.000
+ U1G      C3     C2     N       105.000    3.000
+ U1G      H21    C2     H22     107.900    3.000
+ U1G      H21    C2     N       109.470    3.000
+ U1G      H22    C2     N       109.470    3.000
+ U1G      C2     N      C1      127.000    3.000
+ U1G      C2     N      C5      120.000    3.000
+ U1G      C1     N      C5      127.000    3.000
+ U1G      N      C1     O       123.000    3.000
+ U1G      N      C1     C       116.500    3.000
+ U1G      O      C1     C       123.000    3.000
+ U1G      C1     C      H3      109.470    3.000
+ U1G      C1     C      H2      109.470    3.000
+ U1G      C1     C      H1      109.470    3.000
+ U1G      H3     C      H2      109.470    3.000
+ U1G      H3     C      H1      109.470    3.000
+ U1G      H2     C      H1      109.470    3.000
+ U1G      N      C5     H51     109.470    3.000
+ U1G      N      C5     H52     109.470    3.000
+ U1G      N      C5     C4      105.000    3.000
+ U1G      H51    C5     H52     107.900    3.000
+ U1G      H51    C5     C4      109.470    3.000
+ U1G      H52    C5     C4      109.470    3.000
+ U1G      C5     C4     H42     109.470    3.000
+ U1G      C5     C4     H41     109.470    3.000
+ U1G      C5     C4     N1      105.000    3.000
+ U1G      H42    C4     H41     107.900    3.000
+ U1G      H42    C4     N1      109.470    3.000
+ U1G      H41    C4     N1      109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ U1G      CONST_1          O1     C6     C7     O2               -94.220            0.000   0
+ U1G      var_1            C6     C7     C8     C9              -179.905           20.000   3
+ U1G      var_2            C6     C7     O2     C10             -179.926           20.000   3
+ U1G      var_3            C7     O2     C10    C9                -0.370           20.000   3
+ U1G      var_4            O2     C10    C9     C8                 0.168           20.000   3
+ U1G      var_5            C10    C9     C8     C7                 0.103           20.000   3
+ U1G      var_6            O1     C6     N1     C3               180.000           20.000   2
+ U1G      var_7            C6     N1     C4     C5               -92.242           20.000   3
+ U1G      var_8            C6     N1     C3     C2                90.091           20.000   3
+ U1G      var_9            N1     C3     C2     N                180.000           20.000   3
+ U1G      var_10           C3     C2     N      C5               -49.635           20.000   3
+ U1G      var_11           C2     N      C1     C                180.000           20.000   2
+ U1G      var_12           N      C1     C      H1               180.000           20.000   3
+ U1G      var_13           C2     N      C5     C4                46.813           20.000   3
+ U1G      var_14           N      C5     C4     N1               180.000           20.000   3
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ U1G      plan-1            N1        0.020
+ U1G      plan-1            C4        0.020
+ U1G      plan-1            C6        0.020
+ U1G      plan-1            C3        0.020
+ U1G      plan-2            C6        0.020
+ U1G      plan-2            N1        0.020
+ U1G      plan-2            C7        0.020
+ U1G      plan-2            O1        0.020
+ U1G      plan-2            C8        0.020
+ U1G      plan-2            O2        0.020
+ U1G      plan-3            C10       0.020
+ U1G      plan-3            C9        0.020
+ U1G      plan-3            O2        0.020
+ U1G      plan-3            H10       0.020
+ U1G      plan-3            H9        0.020
+ U1G      plan-4            N         0.020
+ U1G      plan-4            C5        0.020
+ U1G      plan-4            C1        0.020
+ U1G      plan-4            C2        0.020
+ U1G      plan-5            C1        0.020
+ U1G      plan-5            N         0.020
+ U1G      plan-5            C         0.020
+ U1G      plan-5            O         0.020
+ U1G      plan-6            C9        0.020
+ U1G      plan-6            C8        0.020
+ U1G      plan-6            C10       0.020
+ U1G      plan-6            H9        0.020
+ U1G      plan-6            H10       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-U1G
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-U1G  1 SG      2 C         .           1.810    0.020
+# ------------------------------------------------------

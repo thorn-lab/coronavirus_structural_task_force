@@ -1,0 +1,206 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.51
+_lib_update       11/07/18
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+U1V      U1V '.                                   ' .                  21  13 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_U1V
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ U1V           O1     O    OS       -1.000      6.369    0.750   -5.215
+ U1V           S      S    ST        0.000      5.726    1.609   -6.140
+ U1V           O      O    OS       -1.000      4.567    2.341   -5.789
+ U1V           N      N    N         0.000      6.798    2.723   -6.599
+ U1V           HN     H    H         0.000      6.566    3.416   -7.234
+ U1V           C7     C    C1        0.000      5.450    0.775   -7.629
+ U1V           H7     H    H         0.000      4.729    1.108   -8.356
+ U1V           C6     C    CR6       0.000      6.303   -0.461   -7.830
+ U1V           C5     C    CR16      0.000      7.693   -0.314   -7.681
+ U1V           H5     H    H         0.000      8.096    0.645   -7.380
+ U1V           C1     C    CR6       0.000      5.780   -1.726   -8.213
+ U1V           C      C    CH3       0.000      4.331   -1.978   -8.411
+ U1V           H3     H    H         0.000      3.817   -1.783   -7.508
+ U1V           H2     H    H         0.000      3.968   -1.341   -9.173
+ U1V           H1     H    H         0.000      4.189   -2.987   -8.692
+ U1V           C2     C    CR16      0.000      6.644   -2.799   -8.445
+ U1V           H20    H    H         0.000      6.250   -3.766   -8.732
+ U1V           C3     C    CR6       0.000      8.020   -2.612   -8.303
+ U1V           F      F    F         0.000      8.841   -3.623   -8.574
+ U1V           C4     C    CR16      0.000      8.560   -1.376   -7.913
+ U1V           H4     H    H         0.000      9.629   -1.252   -7.795
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ U1V      O1     n/a    S      START
+ U1V      S      O1     C7     .
+ U1V      O      S      .      .
+ U1V      N      S      HN     .
+ U1V      HN     N      .      .
+ U1V      C7     S      C6     .
+ U1V      H7     C7     .      .
+ U1V      C6     C7     C1     .
+ U1V      C5     C6     H5     .
+ U1V      H5     C5     .      .
+ U1V      C1     C6     C2     .
+ U1V      C      C1     H1     .
+ U1V      H3     C      .      .
+ U1V      H2     C      .      .
+ U1V      H1     C      .      .
+ U1V      C2     C1     C3     .
+ U1V      H20    C2     .      .
+ U1V      C3     C2     C4     .
+ U1V      F      C3     .      .
+ U1V      C4     C3     H4     .
+ U1V      H4     C4     .      END
+ U1V      C4     C5     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ U1V      C4     C5        aromatic    1.390    0.020
+ U1V      C4     C3        aromatic    1.390    0.020
+ U1V      C5     C6        aromatic    1.390    0.020
+ U1V      C6     C7        single      1.480    0.020
+ U1V      C1     C6        aromatic    1.384    0.020
+ U1V      C7     S         double      1.565    0.020
+ U1V      N      S         double      1.520    0.020
+ U1V      C      C1        single      1.506    0.020
+ U1V      O      S         deloc       1.480    0.020
+ U1V      C2     C1        aromatic    1.390    0.020
+ U1V      C3     C2        aromatic    1.390    0.020
+ U1V      F      C3        single      1.345    0.020
+ U1V      S      O1        deloc       1.480    0.020
+ U1V      H4     C4        single      1.083    0.020
+ U1V      H5     C5        single      1.083    0.020
+ U1V      H7     C7        single      1.077    0.020
+ U1V      HN     N         single      0.954    0.020
+ U1V      H1     C         single      1.059    0.020
+ U1V      H2     C         single      1.059    0.020
+ U1V      H3     C         single      1.059    0.020
+ U1V      H20    C2        single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ U1V      O1     S      O       109.500    3.000
+ U1V      O1     S      N       109.500    3.000
+ U1V      O1     S      C7      109.500    3.000
+ U1V      O      S      N       109.500    3.000
+ U1V      O      S      C7      109.500    3.000
+ U1V      N      S      C7      109.500    3.000
+ U1V      S      N      HN      120.000    3.000
+ U1V      S      C7     H7      120.000    3.000
+ U1V      S      C7     C6      120.000    3.000
+ U1V      H7     C7     C6      120.000    3.000
+ U1V      C7     C6     C5      120.000    3.000
+ U1V      C7     C6     C1      120.000    3.000
+ U1V      C5     C6     C1      120.000    3.000
+ U1V      C6     C5     H5      120.000    3.000
+ U1V      C6     C5     C4      120.000    3.000
+ U1V      H5     C5     C4      120.000    3.000
+ U1V      C6     C1     C       120.000    3.000
+ U1V      C6     C1     C2      120.000    3.000
+ U1V      C      C1     C2      120.000    3.000
+ U1V      C1     C      H3      109.470    3.000
+ U1V      C1     C      H2      109.470    3.000
+ U1V      C1     C      H1      109.470    3.000
+ U1V      H3     C      H2      109.470    3.000
+ U1V      H3     C      H1      109.470    3.000
+ U1V      H2     C      H1      109.470    3.000
+ U1V      C1     C2     H20     120.000    3.000
+ U1V      C1     C2     C3      120.000    3.000
+ U1V      H20    C2     C3      120.000    3.000
+ U1V      C2     C3     F       120.000    3.000
+ U1V      C2     C3     C4      120.000    3.000
+ U1V      F      C3     C4      120.000    3.000
+ U1V      C3     C4     H4      120.000    3.000
+ U1V      C3     C4     C5      120.000    3.000
+ U1V      H4     C4     C5      120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ U1V      var_1            O1     S      N      HN               180.000           20.000   3
+ U1V      var_2            O1     S      C7     C6               -19.103           20.000   3
+ U1V      var_3            S      C7     C6     C1               130.241           20.000   3
+ U1V      CONST_1          C7     C6     C5     C4                 0.000            0.000   0
+ U1V      CONST_2          C7     C6     C1     C2                 0.000            0.000   0
+ U1V      var_4            C6     C1     C      H1               180.000           20.000   3
+ U1V      CONST_3          C6     C1     C2     C3                 0.000            0.000   0
+ U1V      CONST_4          C1     C2     C3     C4                 0.000            0.000   0
+ U1V      CONST_5          C2     C3     C4     C5                 0.000            0.000   0
+ U1V      CONST_6          C3     C4     C5     C6                 0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ U1V      chir_01          S      C7     N      O         negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ U1V      plan-1            C4        0.020
+ U1V      plan-1            C5        0.020
+ U1V      plan-1            C3        0.020
+ U1V      plan-1            H4        0.020
+ U1V      plan-1            C6        0.020
+ U1V      plan-1            C1        0.020
+ U1V      plan-1            C2        0.020
+ U1V      plan-1            H5        0.020
+ U1V      plan-1            C7        0.020
+ U1V      plan-1            C         0.020
+ U1V      plan-1            H20       0.020
+ U1V      plan-1            F         0.020
+ U1V      plan-1            H7        0.020
+ U1V      plan-2            C7        0.020
+ U1V      plan-2            C6        0.020
+ U1V      plan-2            S         0.020
+ U1V      plan-2            H7        0.020
+ U1V      plan-3            N         0.020
+ U1V      plan-3            S         0.020
+ U1V      plan-3            HN        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

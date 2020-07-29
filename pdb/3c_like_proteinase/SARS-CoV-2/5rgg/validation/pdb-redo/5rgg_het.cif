@@ -1,0 +1,282 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.51
+_lib_update       11/07/18
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+NZD      NZD '.                                   ' .                  33  16 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_NZD
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ NZD           O1     O    O         0.000     21.373  -22.655   21.547
+ NZD           C6     C    C         0.000     22.404  -22.109   21.347
+ NZD           N2     N    N         0.000     22.945  -21.203   22.358
+ NZD           C4     C    CH2       0.000     22.289  -20.948   23.595
+ NZD           H41    H    H         0.000     22.856  -21.462   24.374
+ NZD           H42    H    H         0.000     21.289  -21.382   23.527
+ NZD           C5     C    CH2       0.000     22.178  -19.455   23.940
+ NZD           H52    H    H         0.000     21.846  -19.389   24.978
+ NZD           H51    H    H         0.000     21.413  -19.030   23.287
+ NZD           C3     C    CH2       0.000     24.169  -20.468   22.282
+ NZD           H31    H    H         0.000     24.582  -20.613   21.282
+ NZD           H32    H    H         0.000     24.854  -20.887   23.022
+ NZD           C2     C    CH2       0.000     23.983  -18.981   22.545
+ NZD           H21    H    H         0.000     23.360  -18.569   21.748
+ NZD           H22    H    H         0.000     24.965  -18.505   22.520
+ NZD           N1     N    NT        0.000     23.378  -18.741   23.784
+ NZD           C1     C    CH3       0.000     23.272  -17.508   24.077
+ NZD           H13    H    H         0.000     24.239  -17.115   24.098
+ NZD           H12    H    H         0.000     22.689  -17.066   23.332
+ NZD           H11    H    H         0.000     22.811  -17.455   25.012
+ NZD           N3     N    NH1       0.000     23.079  -22.337   20.087
+ NZD           HN3    H    H         0.000     23.952  -21.863   19.905
+ NZD           C7     C    CR6       0.000     22.536  -23.229   19.078
+ NZD           C12    C    CR16      0.000     22.181  -24.531   19.391
+ NZD           H120   H    H         0.000     22.293  -24.895   20.405
+ NZD           C11    C    CR16      0.000     21.681  -25.368   18.402
+ NZD           H110   H    H         0.000     21.400  -26.385   18.648
+ NZD           C10    C    CR16      0.000     21.539  -24.908   17.100
+ NZD           H10    H    H         0.000     21.148  -25.564   16.332
+ NZD           C9     C    CR16      0.000     21.900  -23.602   16.784
+ NZD           H9     H    H         0.000     21.790  -23.238   15.770
+ NZD           C8     C    CR16      0.000     22.402  -22.766   17.774
+ NZD           H8     H    H         0.000     22.690  -21.751   17.529
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ NZD      O1     n/a    C6     START
+ NZD      C6     O1     N3     .
+ NZD      N2     C6     C3     .
+ NZD      C4     N2     C5     .
+ NZD      H41    C4     .      .
+ NZD      H42    C4     .      .
+ NZD      C5     C4     H51    .
+ NZD      H52    C5     .      .
+ NZD      H51    C5     .      .
+ NZD      C3     N2     C2     .
+ NZD      H31    C3     .      .
+ NZD      H32    C3     .      .
+ NZD      C2     C3     N1     .
+ NZD      H21    C2     .      .
+ NZD      H22    C2     .      .
+ NZD      N1     C2     C1     .
+ NZD      C1     N1     H11    .
+ NZD      H13    C1     .      .
+ NZD      H12    C1     .      .
+ NZD      H11    C1     .      .
+ NZD      N3     C6     C7     .
+ NZD      HN3    N3     .      .
+ NZD      C7     N3     C12    .
+ NZD      C12    C7     C11    .
+ NZD      H120   C12    .      .
+ NZD      C11    C12    C10    .
+ NZD      H110   C11    .      .
+ NZD      C10    C11    C9     .
+ NZD      H10    C10    .      .
+ NZD      C9     C10    C8     .
+ NZD      H9     C9     .      .
+ NZD      C8     C9     H8     .
+ NZD      H8     C8     .      END
+ NZD      N1     C5     .    ADD
+ NZD      C7     C8     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ NZD      N1     C5        single      1.469    0.020
+ NZD      C1     N1        single      1.469    0.020
+ NZD      N1     C2        single      1.469    0.020
+ NZD      N3     C6        single      1.330    0.020
+ NZD      C7     N3        single      1.350    0.020
+ NZD      C5     C4        single      1.524    0.020
+ NZD      C4     N2        single      1.455    0.020
+ NZD      N2     C6        single      1.330    0.020
+ NZD      C6     O1        double      1.220    0.020
+ NZD      C7     C8        aromatic    1.390    0.020
+ NZD      C12    C7        aromatic    1.390    0.020
+ NZD      C8     C9        aromatic    1.390    0.020
+ NZD      C10    C11       aromatic    1.390    0.020
+ NZD      C9     C10       aromatic    1.390    0.020
+ NZD      C11    C12       aromatic    1.390    0.020
+ NZD      C2     C3        single      1.524    0.020
+ NZD      C3     N2        single      1.455    0.020
+ NZD      HN3    N3        single      1.010    0.020
+ NZD      H41    C4        single      1.092    0.020
+ NZD      H42    C4        single      1.092    0.020
+ NZD      H51    C5        single      1.092    0.020
+ NZD      H52    C5        single      1.092    0.020
+ NZD      H8     C8        single      1.083    0.020
+ NZD      H10    C10       single      1.083    0.020
+ NZD      H11    C1        single      1.059    0.020
+ NZD      H12    C1        single      1.059    0.020
+ NZD      H13    C1        single      1.059    0.020
+ NZD      H110   C11       single      1.083    0.020
+ NZD      H120   C12       single      1.083    0.020
+ NZD      H21    C2        single      1.092    0.020
+ NZD      H22    C2        single      1.092    0.020
+ NZD      H31    C3        single      1.092    0.020
+ NZD      H32    C3        single      1.092    0.020
+ NZD      H9     C9        single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ NZD      O1     C6     N2      123.000    3.000
+ NZD      O1     C6     N3      123.000    3.000
+ NZD      N2     C6     N3      120.000    3.000
+ NZD      C6     N2     C4      127.000    3.000
+ NZD      C6     N2     C3      127.000    3.000
+ NZD      C4     N2     C3      120.000    3.000
+ NZD      N2     C4     H41     109.470    3.000
+ NZD      N2     C4     H42     109.470    3.000
+ NZD      N2     C4     C5      105.000    3.000
+ NZD      H41    C4     H42     107.900    3.000
+ NZD      H41    C4     C5      109.470    3.000
+ NZD      H42    C4     C5      109.470    3.000
+ NZD      C4     C5     H52     109.470    3.000
+ NZD      C4     C5     H51     109.470    3.000
+ NZD      C4     C5     N1      109.470    3.000
+ NZD      H52    C5     H51     107.900    3.000
+ NZD      H52    C5     N1      109.470    3.000
+ NZD      H51    C5     N1      109.470    3.000
+ NZD      N2     C3     H31     109.470    3.000
+ NZD      N2     C3     H32     109.470    3.000
+ NZD      N2     C3     C2      105.000    3.000
+ NZD      H31    C3     H32     107.900    3.000
+ NZD      H31    C3     C2      109.470    3.000
+ NZD      H32    C3     C2      109.470    3.000
+ NZD      C3     C2     H21     109.470    3.000
+ NZD      C3     C2     H22     109.470    3.000
+ NZD      C3     C2     N1      109.470    3.000
+ NZD      H21    C2     H22     107.900    3.000
+ NZD      H21    C2     N1      109.470    3.000
+ NZD      H22    C2     N1      109.470    3.000
+ NZD      C2     N1     C1      109.470    3.000
+ NZD      C2     N1     C5      109.470    3.000
+ NZD      C1     N1     C5      109.470    3.000
+ NZD      N1     C1     H13     109.470    3.000
+ NZD      N1     C1     H12     109.470    3.000
+ NZD      N1     C1     H11     109.470    3.000
+ NZD      H13    C1     H12     109.470    3.000
+ NZD      H13    C1     H11     109.470    3.000
+ NZD      H12    C1     H11     109.470    3.000
+ NZD      C6     N3     HN3     120.000    3.000
+ NZD      C6     N3     C7      120.000    3.000
+ NZD      HN3    N3     C7      120.000    3.000
+ NZD      N3     C7     C12     120.000    3.000
+ NZD      N3     C7     C8      120.000    3.000
+ NZD      C12    C7     C8      120.000    3.000
+ NZD      C7     C12    H120    120.000    3.000
+ NZD      C7     C12    C11     120.000    3.000
+ NZD      H120   C12    C11     120.000    3.000
+ NZD      C12    C11    H110    120.000    3.000
+ NZD      C12    C11    C10     120.000    3.000
+ NZD      H110   C11    C10     120.000    3.000
+ NZD      C11    C10    H10     120.000    3.000
+ NZD      C11    C10    C9      120.000    3.000
+ NZD      H10    C10    C9      120.000    3.000
+ NZD      C10    C9     H9      120.000    3.000
+ NZD      C10    C9     C8      120.000    3.000
+ NZD      H9     C9     C8      120.000    3.000
+ NZD      C9     C8     H8      120.000    3.000
+ NZD      C9     C8     C7      120.000    3.000
+ NZD      H8     C8     C7      120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ NZD      var_1            O1     C6     N2     C3               180.000           20.000   2
+ NZD      var_2            C6     N2     C4     C5              -131.813           20.000   3
+ NZD      var_3            N2     C4     C5     N1               180.000           20.000   3
+ NZD      var_4            C6     N2     C3     C2               127.335           20.000   3
+ NZD      var_5            N2     C3     C2     N1               180.000           20.000   3
+ NZD      var_6            C3     C2     N1     C1               176.257           20.000   3
+ NZD      var_7            C2     N1     C5     C4                49.235           20.000   3
+ NZD      var_8            C2     N1     C1     H11              180.000           20.000   3
+ NZD      var_9            O1     C6     N3     C7               180.000           20.000   2
+ NZD      var_10           C6     N3     C7     C12              -52.775           20.000   3
+ NZD      CONST_1          N3     C7     C8     C9                 0.000            0.000   0
+ NZD      CONST_2          N3     C7     C12    C11                0.000            0.000   0
+ NZD      CONST_3          C7     C12    C11    C10                0.000            0.000   0
+ NZD      CONST_4          C12    C11    C10    C9                 0.000            0.000   0
+ NZD      CONST_5          C11    C10    C9     C8                 0.000            0.000   0
+ NZD      CONST_6          C10    C9     C8     C7                 0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ NZD      chir_01          N1     C5     C1     C2        positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ NZD      plan-1            N3        0.020
+ NZD      plan-1            C6        0.020
+ NZD      plan-1            C7        0.020
+ NZD      plan-1            HN3       0.020
+ NZD      plan-2            C6        0.020
+ NZD      plan-2            N3        0.020
+ NZD      plan-2            N2        0.020
+ NZD      plan-2            O1        0.020
+ NZD      plan-2            HN3       0.020
+ NZD      plan-3            C7        0.020
+ NZD      plan-3            N3        0.020
+ NZD      plan-3            C8        0.020
+ NZD      plan-3            C12       0.020
+ NZD      plan-3            C10       0.020
+ NZD      plan-3            C11       0.020
+ NZD      plan-3            C9        0.020
+ NZD      plan-3            H8        0.020
+ NZD      plan-3            H10       0.020
+ NZD      plan-3            H110      0.020
+ NZD      plan-3            H120      0.020
+ NZD      plan-3            H9        0.020
+ NZD      plan-3            HN3       0.020
+ NZD      plan-4            N2        0.020
+ NZD      plan-4            C4        0.020
+ NZD      plan-4            C6        0.020
+ NZD      plan-4            C3        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

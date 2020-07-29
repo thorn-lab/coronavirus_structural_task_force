@@ -1,0 +1,265 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.51
+_lib_update       11/07/18
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+T9M      T9M '.                                   ' .                  28  14 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-T9M  CYS      .        .        T9M      .        .
+ bond_CYS-SG_=_T9M-C8
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_T9M
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ T9M           O3     O    O         0.000      4.584   -4.359   23.366
+ T9M           C6     C    C         0.000      4.536   -5.495   22.901
+ T9M           N2     N    N         0.000      5.534   -6.032   22.185
+ T9M           C7     C    CH2       0.000      6.765   -5.303   21.873
+ T9M           H71    H    H         0.000      7.597   -5.970   22.109
+ T9M           H72    H    H         0.000      6.796   -4.435   22.535
+ T9M           C8     C    C1        0.000      6.873   -4.854   20.458
+ T9M           H8     H    H         0.000      7.629   -4.142   20.171
+ T9M           C9     C    C2        0.000      6.054   -5.324   19.576
+ T9M           H92    H    H         0.000      5.307   -6.032   19.875
+ T9M           H91    H    H         0.000      6.133   -5.000   18.558
+ T9M           C3     C    CH1       0.000      3.279   -6.342   23.130
+ T9M           H3     H    H         0.000      3.218   -7.100   22.337
+ T9M           C2     C    CH1       0.000      3.290   -7.059   24.495
+ T9M           H2     H    H         0.000      3.183   -6.299   25.282
+ T9M           O1     O    OH1       0.000      4.546   -7.716   24.677
+ T9M           HO1    H    H         0.000      4.553   -8.166   25.533
+ T9M           C1     C    CH3       0.000      2.166   -8.061   24.650
+ T9M           H13    H    H         0.000      1.237   -7.563   24.557
+ T9M           H12    H    H         0.000      2.250   -8.801   23.898
+ T9M           H11    H    H         0.000      2.231   -8.515   25.604
+ T9M           N1     N    N         0.000      2.107   -5.482   23.041
+ T9M           C4     C    C         0.000      0.968   -5.841   22.442
+ T9M           O2     O    O         0.000      0.859   -6.900   21.825
+ T9M           C5     C    CH3       0.000     -0.174   -4.879   22.550
+ T9M           H53    H    H         0.000     -0.416   -4.733   23.571
+ T9M           H52    H    H         0.000      0.103   -3.954   22.117
+ T9M           H51    H    H         0.000     -1.014   -5.271   22.040
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ T9M      O3     n/a    C6     START
+ T9M      C6     O3     C3     .
+ T9M      N2     C6     C7     .
+ T9M      C7     N2     C8     .
+ T9M      H71    C7     .      .
+ T9M      H72    C7     .      .
+ T9M      C8     C7     C9     .
+ T9M      H8     C8     .      .
+ T9M      C9     C8     H91    .
+ T9M      H92    C9     .      .
+ T9M      H91    C9     .      .
+ T9M      C3     C6     N1     .
+ T9M      H3     C3     .      .
+ T9M      C2     C3     C1     .
+ T9M      H2     C2     .      .
+ T9M      O1     C2     HO1    .
+ T9M      HO1    O1     .      .
+ T9M      C1     C2     H11    .
+ T9M      H13    C1     .      .
+ T9M      H12    C1     .      .
+ T9M      H11    C1     .      .
+ T9M      N1     C3     C4     .
+ T9M      C4     N1     C5     .
+ T9M      O2     C4     .      .
+ T9M      C5     C4     H51    .
+ T9M      H53    C5     .      .
+ T9M      H52    C5     .      .
+ T9M      H51    C5     .      END
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ T9M      C4     N1        deloc       1.330    0.020
+ T9M      N1     C3        single      1.455    0.020
+ T9M      C5     C4        single      1.500    0.020
+ T9M      O2     C4        double      1.220    0.020
+ T9M      C3     C6        single      1.500    0.020
+ T9M      N2     C6        deloc       1.330    0.020
+ T9M      C6     O3        double      1.220    0.020
+ T9M      C8     C7        single      1.510    0.020
+ T9M      C7     N2        single      1.455    0.020
+ T9M      C9     C8        double      1.320    0.020
+ T9M      C1     C2        single      1.524    0.020
+ T9M      C2     C3        single      1.524    0.020
+ T9M      O1     C2        single      1.432    0.020
+ T9M      H51    C5        single      1.059    0.020
+ T9M      H52    C5        single      1.059    0.020
+ T9M      H53    C5        single      1.059    0.020
+ T9M      H71    C7        single      1.092    0.020
+ T9M      H72    C7        single      1.092    0.020
+ T9M      H8     C8        single      1.077    0.020
+ T9M      H11    C1        single      1.059    0.020
+ T9M      H12    C1        single      1.059    0.020
+ T9M      H13    C1        single      1.059    0.020
+ T9M      H2     C2        single      1.099    0.020
+ T9M      H3     C3        single      1.099    0.020
+ T9M      H91    C9        single      1.077    0.020
+ T9M      H92    C9        single      1.077    0.020
+ T9M      HO1    O1        single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ T9M      O3     C6     N2      123.000    3.000
+ T9M      O3     C6     C3      120.500    3.000
+ T9M      N2     C6     C3      116.500    3.000
+ T9M      C6     N2     C7      127.000    3.000
+ T9M      N2     C7     H71     109.470    3.000
+ T9M      N2     C7     H72     109.470    3.000
+ T9M      N2     C7     C8      109.500    3.000
+ T9M      H71    C7     H72     107.900    3.000
+ T9M      H71    C7     C8      109.470    3.000
+ T9M      H72    C7     C8      109.470    3.000
+ T9M      C7     C8     H8      120.000    3.000
+ T9M      C7     C8     C9      120.000    3.000
+ T9M      H8     C8     C9      120.000    3.000
+ T9M      C8     C9     H92     120.000    3.000
+ T9M      C8     C9     H91     120.000    3.000
+ T9M      H92    C9     H91     120.000    3.000
+ T9M      C6     C3     H3      108.810    3.000
+ T9M      C6     C3     C2      109.470    3.000
+ T9M      C6     C3     N1      111.600    3.000
+ T9M      H3     C3     C2      108.340    3.000
+ T9M      H3     C3     N1      109.470    3.000
+ T9M      C2     C3     N1      105.000    3.000
+ T9M      C3     C2     H2      108.340    3.000
+ T9M      C3     C2     O1      109.470    3.000
+ T9M      C3     C2     C1      111.000    3.000
+ T9M      H2     C2     O1      109.470    3.000
+ T9M      H2     C2     C1      108.340    3.000
+ T9M      O1     C2     C1      109.470    3.000
+ T9M      C2     O1     HO1     109.470    3.000
+ T9M      C2     C1     H13     109.470    3.000
+ T9M      C2     C1     H12     109.470    3.000
+ T9M      C2     C1     H11     109.470    3.000
+ T9M      H13    C1     H12     109.470    3.000
+ T9M      H13    C1     H11     109.470    3.000
+ T9M      H12    C1     H11     109.470    3.000
+ T9M      C3     N1     C4      121.000    3.000
+ T9M      N1     C4     O2      123.000    3.000
+ T9M      N1     C4     C5      116.500    3.000
+ T9M      O2     C4     C5      123.000    3.000
+ T9M      C4     C5     H53     109.470    3.000
+ T9M      C4     C5     H52     109.470    3.000
+ T9M      C4     C5     H51     109.470    3.000
+ T9M      H53    C5     H52     109.470    3.000
+ T9M      H53    C5     H51     109.470    3.000
+ T9M      H52    C5     H51     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ T9M      CONST_1          O3     C6     N2     C7               180.000            0.000   0
+ T9M      var_1            C6     N2     C7     C8              -106.487           20.000   3
+ T9M      var_2            N2     C7     C8     C9               -12.712           20.000   3
+ T9M      CONST_2          C7     C8     C9     H91              180.000            0.000   0
+ T9M      var_3            O3     C6     C3     N1               180.000           20.000   3
+ T9M      var_4            C6     C3     C2     C1               180.000           20.000   3
+ T9M      var_5            C3     C2     O1     HO1              180.000           20.000   3
+ T9M      var_6            C3     C2     C1     H11              180.000           20.000   3
+ T9M      var_7            C6     C3     N1     C4                 0.000           20.000   3
+ T9M      CONST_3          C3     N1     C4     C5               180.000            0.000   0
+ T9M      var_8            N1     C4     C5     H51              180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ T9M      chir_01          C2     C1     C3     O1        positiv
+ T9M      chir_02          C3     N1     C6     C2        negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ T9M      plan-1            N1        0.020
+ T9M      plan-1            C4        0.020
+ T9M      plan-1            C3        0.020
+ T9M      plan-1            C5        0.020
+ T9M      plan-1            O2        0.020
+ T9M      plan-2            C6        0.020
+ T9M      plan-2            C3        0.020
+ T9M      plan-2            N2        0.020
+ T9M      plan-2            O3        0.020
+ T9M      plan-2            C7        0.020
+ T9M      plan-3            C8        0.020
+ T9M      plan-3            C7        0.020
+ T9M      plan-3            C9        0.020
+ T9M      plan-3            H8        0.020
+ T9M      plan-3            H91       0.020
+ T9M      plan-3            H92       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-T9M
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-T9M  1 SG      2 C8        .           1.640    0.020
+# ------------------------------------------------------
