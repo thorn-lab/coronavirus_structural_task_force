@@ -53,7 +53,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  1.08|  0.00 %|
 
- 
+**Auspex Pathologies**<br> manhattan  (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/methyltransferase-nsp10/SARS-CoV-2/6wvn/validation/auspex/6wvn_auspex_comments.txt))
 
  
 

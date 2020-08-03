@@ -53,7 +53,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  1.25|  0.00 %|
 
- 
+**Auspex Pathologies**<br> bad or missing beam stop mask, manhattan (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/surface_glycoprotein/SARS-CoV-2/7bz5/validation/auspex/7bz5_auspex_comments.txt))
 
  
 

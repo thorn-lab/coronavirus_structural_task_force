@@ -53,7 +53,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||--|--|
 
- 
+**Auspex Pathologies**<br> ice rings , terracing, bad or missing beam stop mask, missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/surface_glycoprotein/SARS-CoV-2/6yz7/validation/auspex/6yz7_auspex_comments.txt))
 
  
 

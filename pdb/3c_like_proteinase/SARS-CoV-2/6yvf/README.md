@@ -51,7 +51,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  1.41|  0.66 %|
 
- 
+**Auspex Pathologies**<br> missing rings - resolution shell truncated, terracing (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV-2/6yvf/validation/auspex/6yvf_auspex_comments.txt))
 
  
 

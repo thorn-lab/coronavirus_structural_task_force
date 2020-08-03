@@ -20,7 +20,7 @@
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by   [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/helicase-rna_polymerase-nsp7-nsp8/SARS-CoV-2/6xez/validation/molprobity)   
+**validation** - contains validation reports. This structure has been analyzed by   [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/helicase-rna_polymerase-nsp7-nsp8/SARS-CoV-2/6xez/validation/molprobity)   [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/helicase-rna_polymerase-nsp7-nsp8/SARS-CoV-2/6xez/validation/ccpem-validation)
 
 
 
