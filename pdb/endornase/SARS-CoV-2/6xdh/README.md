@@ -53,7 +53,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  0.94|  0.00 %|
 
- 
+**Auspex Pathologies**<br> bad or missing beam stop mask, missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/endornase/SARS-CoV-2/6xdh/validation/auspex/6xdh_auspex_comments.txt))
 
  
 

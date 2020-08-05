@@ -51,7 +51,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  1.13|  0.00 %|
 
- 
+**Auspex Pathologies**<br> ice rings, terracing, missing line (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/surface_glycoprotein/SARS-CoV-2/6yz5/validation/auspex/6yz5_auspex_comments.txt))
 
  
 
