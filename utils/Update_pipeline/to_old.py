@@ -41,6 +41,7 @@ def to_old (key,dirpath,form):
     except FileNotFoundError: pass
 
 def main (pdb_id, dropbox_path):
+    print("New DOIs for: ")
     for dirpath, dirnames, files in os.walk(path):
         for key in pdb_id:
             if dirpath.endswith(key):
