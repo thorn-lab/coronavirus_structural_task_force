@@ -106,3 +106,4 @@ def file_walker (path_repo, pdb_id):
                         i += 2
     doc.close()
 
+

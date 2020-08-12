@@ -8,6 +8,7 @@ import to_old
 import mk_Alignment_strc_vs_seq
 import RMSD_pipeline
 import organizer
+import json
 
 '''
 Fasta Files/*.fasta is the document with  fasta entrys
@@ -47,34 +48,33 @@ def get_pdb (element,target,format):
     with open(target+os.sep+"{}/{}.{}".format(element,element,format), 'wb') as f:
         f.write(r.content)
 
-
 def blast_search (i):
     #blast search request
     if __name__ == '__main__':
         url = 'http://www.rcsb.org/pdb/rest/search'
-    blast_query_text = """
-<?xml version="1.0" encoding="UTF-8"?>
-<orgPdbQuery>
-<queryType>org.pdb.query.simple.SequenceQuery</queryType>
-<description></description>
-<structureId></structureId>
-<chainId></chainId>
-<sequence>{}</sequence>
-<eCutOff>10.0</eCutOff>
-<searchTool>blast</searchTool>
-<sequenceIdentityCutoff>30</sequenceIdentityCutoff>
-</orgPdbQuery>
-""".format(seq_fasta[i].seq)
-    header = {'Content-Type': 'application/x-www-form-urlencoded'}
-    response = requests.post(url, data=blast_query_text, headers=header)
+    seq_query = {
+        "query": {
+            "type": "terminal",
+            "service": "sequence",
+            "parameters": {
+                "evalue_cutoff": 10,
+                "target": "pdb_protein_sequence",
+                "value": "{}".format(seq_fasta[i].seq)
+            }
+        },
+        "request_options": {
+            "return_all_hits": True
+        },
+        "return_type": "entry"
+    }
+    query = json.dumps(seq_query)
+    return_arr = []
+    url = 'http://search.rcsb.org/rcsbsearch/v1/query'
+    response = requests.post(url, data=query)
     if response.status_code == 200:
-        temp = response.text
-        temp = temp.lower()
-        temp = temp.split("\n")
-        for index, item in enumerate(temp): temp[index] = temp[index][0:4]
-        #ignoring the chains
-        return temp[:-1]
-        #returns a list of pdb ids which mach the sequence
+        result = response.json()
+        for entry in result["result_set"]: return_arr.append(entry['identifier'][:4].lower())
+    return return_arr
 
 def namer (i):
     '''

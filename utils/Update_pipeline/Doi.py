@@ -6,6 +6,7 @@ time = time.strftime("%d")+"_"+time.strftime("%m")
 Searches for _pdbx_related_exp_data_set.data_reference in cif files
 """
 def main (dropbox_path, dirpath, key):
+    doi_keys = []
     f_all = open(dropbox_path+"weekly_updates/all_DOI.txt", "r+")
     f_all = f_all.readlines()
     for line in f_all:
@@ -21,6 +22,8 @@ def main (dropbox_path, dirpath, key):
             all_doi_txt = open(dropbox_path+"weekly_updates/all_DOI.txt", "a+")
             all_doi_txt.write(key+"\n")
             all_doi_txt.close()
+            doi_keys.append(' '.join(map(str, doi_keys)))
 
     doi_txt.close()
+    print(doi_keys)
 
