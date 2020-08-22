@@ -1,0 +1,439 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.51
+_lib_update       11/07/18
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+VBY      VBY '.                                   ' .                  47  27 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+GLU-ZN   GLU      .        .        ZN       .        .
+ bond_GLU-OE2_=_ZN-ZN
+ASP-ZN   ASP      .        .        ZN       .        .
+ bond_ASP-OD2_=_ZN-ZN
+ZN-HOH   ZN       .        .        HOH      .        .
+ bond_ZN-ZN_=_HOH-O
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_VBY
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ VBY           O26    O    O         0.000     50.400   37.263   -1.583
+ VBY           C24    C    C         0.000     51.447   37.009   -1.039
+ VBY           C25    C    C1        0.000     52.582   37.857   -1.486
+ VBY           H25    H    H         0.000     52.467   38.420   -2.397
+ VBY           C27    C    C2        0.000     53.711   37.959   -0.837
+ VBY           H272   H    H         0.000     53.853   37.409    0.075
+ VBY           H271   H    H         0.000     54.490   38.592   -1.219
+ VBY           N01    N    N         0.000     51.600   36.121   -0.081
+ VBY           C19    C    CR6       0.000     50.614   35.235    0.333
+ VBY           C21    C    CR16      0.000     49.347   35.716    0.696
+ VBY           H21    H    H         0.000     49.195   36.788    0.736
+ VBY           C17    C    CR16      0.000     48.256   34.869    1.013
+ VBY           H17    H    H         0.000     47.319   35.296    1.347
+ VBY           C13    C    CR16      0.000     50.759   33.821    0.158
+ VBY           H13    H    H         0.000     51.693   33.422   -0.217
+ VBY           C3     C    CR6       0.000     49.699   32.939    0.468
+ VBY           C10    C    CR6       0.000     48.390   33.477    0.894
+ VBY           C16    C    CH3       0.000     47.257   32.541    1.191
+ VBY           H163   H    H         0.000     47.033   31.975    0.325
+ VBY           H162   H    H         0.000     47.536   31.890    1.978
+ VBY           H161   H    H         0.000     46.406   33.100    1.479
+ VBY           C1     C    C         0.000     49.814   31.463    0.320
+ VBY           O7     O    O         0.000     49.297   30.887   -0.669
+ VBY           N2     N    N         0.000     50.526   30.815    1.243
+ VBY           C6     C    CH1       0.000     50.771   29.401    1.138
+ VBY           H6     H    H         0.000     49.893   28.934    0.671
+ VBY           C01    C    CH3       0.000     50.953   28.787    2.551
+ VBY           H013   H    H         0.000     51.776   29.246    3.039
+ VBY           H012   H    H         0.000     50.076   28.944    3.127
+ VBY           H011   H    H         0.000     51.133   27.745    2.469
+ VBY           C5     C    CR6       0.000     51.934   29.181    0.257
+ VBY           C4     C    CR16      0.000     53.159   29.647    0.702
+ VBY           H4     H    H         0.000     53.200   30.156    1.657
+ VBY           C9     C    CR16      0.000     54.324   29.496   -0.008
+ VBY           H9     H    H         0.000     55.252   29.878    0.398
+ VBY           C12    C    CR16      0.000     54.324   28.848   -1.260
+ VBY           H12    H    H         0.000     55.247   28.767   -1.820
+ VBY           C8     C    CR66      0.000     51.890   28.444   -1.016
+ VBY           C11    C    CR66      0.000     53.151   28.310   -1.786
+ VBY           C14    C    CR16      0.000     50.755   27.907   -1.551
+ VBY           H14    H    H         0.000     49.812   27.968   -1.021
+ VBY           C20    C    CR16      0.000     50.834   27.277   -2.797
+ VBY           H20    H    H         0.000     49.917   26.884   -3.219
+ VBY           C22    C    CR16      0.000     52.000   27.117   -3.534
+ VBY           H22    H    H         0.000     51.996   26.589   -4.479
+ VBY           C18    C    CR16      0.000     53.170   27.656   -3.020
+ VBY           H18    H    H         0.000     54.096   27.570   -3.574
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ VBY      O26    n/a    C24    START
+ VBY      C24    O26    N01    .
+ VBY      C25    C24    C27    .
+ VBY      H25    C25    .      .
+ VBY      C27    C25    H271   .
+ VBY      H272   C27    .      .
+ VBY      H271   C27    .      .
+ VBY      N01    C24    C19    .
+ VBY      C19    N01    C13    .
+ VBY      C21    C19    C17    .
+ VBY      H21    C21    .      .
+ VBY      C17    C21    H17    .
+ VBY      H17    C17    .      .
+ VBY      C13    C19    C3     .
+ VBY      H13    C13    .      .
+ VBY      C3     C13    C1     .
+ VBY      C10    C3     C16    .
+ VBY      C16    C10    H161   .
+ VBY      H163   C16    .      .
+ VBY      H162   C16    .      .
+ VBY      H161   C16    .      .
+ VBY      C1     C3     N2     .
+ VBY      O7     C1     .      .
+ VBY      N2     C1     C6     .
+ VBY      C6     N2     C5     .
+ VBY      H6     C6     .      .
+ VBY      C01    C6     H011   .
+ VBY      H013   C01    .      .
+ VBY      H012   C01    .      .
+ VBY      H011   C01    .      .
+ VBY      C5     C6     C8     .
+ VBY      C4     C5     C9     .
+ VBY      H4     C4     .      .
+ VBY      C9     C4     C12    .
+ VBY      H9     C9     .      .
+ VBY      C12    C9     H12    .
+ VBY      H12    C12    .      .
+ VBY      C8     C5     C14    .
+ VBY      C11    C8     .      .
+ VBY      C14    C8     C20    .
+ VBY      H14    C14    .      .
+ VBY      C20    C14    C22    .
+ VBY      H20    C20    .      .
+ VBY      C22    C20    C18    .
+ VBY      H22    C22    .      .
+ VBY      C18    C22    H18    .
+ VBY      H18    C18    .      END
+ VBY      C10    C17    .    ADD
+ VBY      C11    C12    .    ADD
+ VBY      C11    C18    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ VBY      C1     C3        single      1.500    0.020
+ VBY      N2     C1        deloc       1.330    0.020
+ VBY      O7     C1        deloc       1.220    0.020
+ VBY      C16    C10       single      1.506    0.020
+ VBY      C10    C17       aromatic    1.390    0.020
+ VBY      C10    C3        single      1.487    0.020
+ VBY      C11    C12       aromatic    1.390    0.020
+ VBY      C11    C18       aromatic    1.390    0.020
+ VBY      C11    C8        single      1.490    0.020
+ VBY      C12    C9        aromatic    1.390    0.020
+ VBY      C13    C19       aromatic    1.390    0.020
+ VBY      C3     C13       aromatic    1.390    0.020
+ VBY      C20    C14       aromatic    1.390    0.020
+ VBY      C14    C8        aromatic    1.390    0.020
+ VBY      C17    C21       aromatic    1.390    0.020
+ VBY      C18    C22       aromatic    1.390    0.020
+ VBY      C21    C19       aromatic    1.390    0.020
+ VBY      C19    N01       deloc       1.355    0.020
+ VBY      C22    C20       aromatic    1.390    0.020
+ VBY      C25    C24       single      1.475    0.020
+ VBY      N01    C24       deloc       1.330    0.020
+ VBY      C24    O26       double      1.220    0.020
+ VBY      C27    C25       double      1.320    0.020
+ VBY      C4     C5        aromatic    1.390    0.020
+ VBY      C9     C4        aromatic    1.390    0.020
+ VBY      C5     C6        single      1.480    0.020
+ VBY      C8     C5        single      1.490    0.020
+ VBY      C6     N2        single      1.455    0.020
+ VBY      C01    C6        single      1.524    0.020
+ VBY      H12    C12       single      1.083    0.020
+ VBY      H13    C13       single      1.083    0.020
+ VBY      H14    C14       single      1.083    0.020
+ VBY      H161   C16       single      1.059    0.020
+ VBY      H162   C16       single      1.059    0.020
+ VBY      H163   C16       single      1.059    0.020
+ VBY      H17    C17       single      1.083    0.020
+ VBY      H18    C18       single      1.083    0.020
+ VBY      H20    C20       single      1.083    0.020
+ VBY      H21    C21       single      1.083    0.020
+ VBY      H22    C22       single      1.083    0.020
+ VBY      H25    C25       single      1.077    0.020
+ VBY      H271   C27       single      1.077    0.020
+ VBY      H272   C27       single      1.077    0.020
+ VBY      H4     C4        single      1.083    0.020
+ VBY      H6     C6        single      1.099    0.020
+ VBY      H9     C9        single      1.083    0.020
+ VBY      H011   C01       single      1.059    0.020
+ VBY      H012   C01       single      1.059    0.020
+ VBY      H013   C01       single      1.059    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ VBY      O26    C24    C25     120.500    3.000
+ VBY      O26    C24    N01     123.000    3.000
+ VBY      C25    C24    N01     116.500    3.000
+ VBY      C24    C25    H25     120.000    3.000
+ VBY      C24    C25    C27     120.000    3.000
+ VBY      H25    C25    C27     120.000    3.000
+ VBY      C25    C27    H272    120.000    3.000
+ VBY      C25    C27    H271    120.000    3.000
+ VBY      H272   C27    H271    120.000    3.000
+ VBY      C24    N01    C19     120.000    3.000
+ VBY      N01    C19    C21     120.000    3.000
+ VBY      N01    C19    C13     120.000    3.000
+ VBY      C21    C19    C13     120.000    3.000
+ VBY      C19    C21    H21     120.000    3.000
+ VBY      C19    C21    C17     120.000    3.000
+ VBY      H21    C21    C17     120.000    3.000
+ VBY      C21    C17    H17     120.000    3.000
+ VBY      C21    C17    C10     120.000    3.000
+ VBY      H17    C17    C10     120.000    3.000
+ VBY      C19    C13    H13     120.000    3.000
+ VBY      C19    C13    C3      120.000    3.000
+ VBY      H13    C13    C3      120.000    3.000
+ VBY      C13    C3     C10     120.000    3.000
+ VBY      C13    C3     C1      120.000    3.000
+ VBY      C10    C3     C1      120.000    3.000
+ VBY      C3     C10    C16     120.000    3.000
+ VBY      C3     C10    C17     120.000    3.000
+ VBY      C16    C10    C17     120.000    3.000
+ VBY      C10    C16    H163    109.470    3.000
+ VBY      C10    C16    H162    109.470    3.000
+ VBY      C10    C16    H161    109.470    3.000
+ VBY      H163   C16    H162    109.470    3.000
+ VBY      H163   C16    H161    109.470    3.000
+ VBY      H162   C16    H161    109.470    3.000
+ VBY      C3     C1     O7      120.500    3.000
+ VBY      C3     C1     N2      120.000    3.000
+ VBY      O7     C1     N2      123.000    3.000
+ VBY      C1     N2     C6      121.000    3.000
+ VBY      N2     C6     H6      109.470    3.000
+ VBY      N2     C6     C01     109.500    3.000
+ VBY      N2     C6     C5      109.500    3.000
+ VBY      H6     C6     C01     108.340    3.000
+ VBY      H6     C6     C5      109.470    3.000
+ VBY      C01    C6     C5      109.470    3.000
+ VBY      C6     C01    H013    109.470    3.000
+ VBY      C6     C01    H012    109.470    3.000
+ VBY      C6     C01    H011    109.470    3.000
+ VBY      H013   C01    H012    109.470    3.000
+ VBY      H013   C01    H011    109.470    3.000
+ VBY      H012   C01    H011    109.470    3.000
+ VBY      C6     C5     C4      120.000    3.000
+ VBY      C6     C5     C8      120.000    3.000
+ VBY      C4     C5     C8      120.000    3.000
+ VBY      C5     C4     H4      120.000    3.000
+ VBY      C5     C4     C9      120.000    3.000
+ VBY      H4     C4     C9      120.000    3.000
+ VBY      C4     C9     H9      120.000    3.000
+ VBY      C4     C9     C12     120.000    3.000
+ VBY      H9     C9     C12     120.000    3.000
+ VBY      C9     C12    H12     120.000    3.000
+ VBY      C9     C12    C11     120.000    3.000
+ VBY      H12    C12    C11     120.000    3.000
+ VBY      C5     C8     C11     120.000    3.000
+ VBY      C5     C8     C14     120.000    3.000
+ VBY      C11    C8     C14     120.000    3.000
+ VBY      C8     C11    C12     120.000    3.000
+ VBY      C8     C11    C18     120.000    3.000
+ VBY      C12    C11    C18     120.000    3.000
+ VBY      C8     C14    H14     120.000    3.000
+ VBY      C8     C14    C20     120.000    3.000
+ VBY      H14    C14    C20     120.000    3.000
+ VBY      C14    C20    H20     120.000    3.000
+ VBY      C14    C20    C22     120.000    3.000
+ VBY      H20    C20    C22     120.000    3.000
+ VBY      C20    C22    H22     120.000    3.000
+ VBY      C20    C22    C18     120.000    3.000
+ VBY      H22    C22    C18     120.000    3.000
+ VBY      C22    C18    H18     120.000    3.000
+ VBY      C22    C18    C11     120.000    3.000
+ VBY      H18    C18    C11     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ VBY      var_1            O26    C24    C25    C27              164.300           20.000   3
+ VBY      CONST_1          C24    C25    C27    H271             180.000            0.000   0
+ VBY      var_2            O26    C24    N01    C19              180.000           20.000   2
+ VBY      CONST_2          C24    N01    C19    C13              114.740            0.000   0
+ VBY      CONST_3          N01    C19    C21    C17                0.000            0.000   0
+ VBY      CONST_4          C19    C21    C17    C10                0.000            0.000   0
+ VBY      CONST_5          N01    C19    C13    C3                 0.000            0.000   0
+ VBY      CONST_6          C19    C13    C3     C1                 0.000            0.000   0
+ VBY      CONST_7          C13    C3     C10    C16                0.000            0.000   0
+ VBY      CONST_8          C3     C10    C17    C21                0.000            0.000   0
+ VBY      var_3            C3     C10    C16    H161             180.000           20.000   3
+ VBY      var_4            C13    C3     C1     N2                75.293           20.000   3
+ VBY      CONST_9          C3     C1     N2     C6               180.000            0.000   0
+ VBY      var_5            C1     N2     C6     C5                 0.000           20.000   3
+ VBY      var_6            N2     C6     C01    H011             180.000           20.000   3
+ VBY      var_7            N2     C6     C5     C8              -118.040           20.000   3
+ VBY      CONST_10         C6     C5     C4     C9                 0.000            0.000   0
+ VBY      CONST_11         C5     C4     C9     C12                0.000            0.000   0
+ VBY      CONST_12         C4     C9     C12    C11                0.000            0.000   0
+ VBY      CONST_13         C6     C5     C8     C14              180.000            0.000   0
+ VBY      CONST_14         C5     C8     C11    C12                1.845            0.000   0
+ VBY      CONST_15         C8     C11    C12    C9               180.000            0.000   0
+ VBY      CONST_16         C8     C11    C18    C22              180.000            0.000   0
+ VBY      CONST_17         C5     C8     C14    C20              180.000            0.000   0
+ VBY      CONST_18         C8     C14    C20    C22                0.000            0.000   0
+ VBY      CONST_19         C14    C20    C22    C18                0.000            0.000   0
+ VBY      CONST_20         C20    C22    C18    C11                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ VBY      chir_01          C6     C5     N2     C01       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ VBY      plan-1            C1        0.020
+ VBY      plan-1            C3        0.020
+ VBY      plan-1            N2        0.020
+ VBY      plan-1            O7        0.020
+ VBY      plan-1            C6        0.020
+ VBY      plan-2            C10       0.020
+ VBY      plan-2            C16       0.020
+ VBY      plan-2            C17       0.020
+ VBY      plan-2            C3        0.020
+ VBY      plan-2            C13       0.020
+ VBY      plan-2            C19       0.020
+ VBY      plan-2            C21       0.020
+ VBY      plan-2            H13       0.020
+ VBY      plan-2            H17       0.020
+ VBY      plan-2            N01       0.020
+ VBY      plan-2            H21       0.020
+ VBY      plan-2            C1        0.020
+ VBY      plan-2            C24       0.020
+ VBY      plan-3            C11       0.020
+ VBY      plan-3            C12       0.020
+ VBY      plan-3            C18       0.020
+ VBY      plan-3            C8        0.020
+ VBY      plan-3            C14       0.020
+ VBY      plan-3            C20       0.020
+ VBY      plan-3            C22       0.020
+ VBY      plan-3            C9        0.020
+ VBY      plan-3            H12       0.020
+ VBY      plan-3            C4        0.020
+ VBY      plan-3            C5        0.020
+ VBY      plan-3            H14       0.020
+ VBY      plan-3            H18       0.020
+ VBY      plan-3            H20       0.020
+ VBY      plan-3            H22       0.020
+ VBY      plan-3            H4        0.020
+ VBY      plan-3            C6        0.020
+ VBY      plan-3            H9        0.020
+ VBY      plan-4            C24       0.020
+ VBY      plan-4            C25       0.020
+ VBY      plan-4            N01       0.020
+ VBY      plan-4            O26       0.020
+ VBY      plan-4            H25       0.020
+ VBY      plan-5            C25       0.020
+ VBY      plan-5            C24       0.020
+ VBY      plan-5            C27       0.020
+ VBY      plan-5            H25       0.020
+ VBY      plan-5            H271      0.020
+ VBY      plan-5            H272      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_GLU-ZN
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ GLU-ZN   1 OE2     2 ZN        .           2.310    0.020
+#
+data_link_ASP-ZN
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ ASP-ZN   1 OD2     2 ZN        .           2.060    0.020
+#
+data_link_ZN-HOH
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ ZN-HOH   1 ZN      2 O         .           2.340    0.020
+# ------------------------------------------------------
