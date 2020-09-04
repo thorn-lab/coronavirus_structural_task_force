@@ -13,10 +13,13 @@ def main (id_dict):
     pdb_id = open(path + "list.txt")
     pdb_id = pdb_id.read().split("\n")
     for protein in id_dict:
-        repo_path = path+protein
-        file_walker(protein, pdb_id, repo_path+"/SARS-CoV-2/")
+        if protein == "surface_glycoprotein":
+            pass
+        else:
+            repo_path = path+protein
+            file_walker(protein, pdb_id, repo_path+"/SARS-CoV-2/", "SARS-CoV-2")
 
-def file_walker(protein, pdb_id, repo_path):
+def file_walker(protein, pdb_id, repo_path, taxo):
     protein_id = []
     for dirpath, dirnames, files in os.walk(repo_path):
         for key in pdb_id:
@@ -24,7 +27,7 @@ def file_walker(protein, pdb_id, repo_path):
                 protein_id.append(key)
 
     if len(protein_id) != 0:
-        matrix_maker(protein, protein_id, repo_path)
+        matrix_maker(protein, protein_id, repo_path, taxo)
     else: pass
 
 def rmsdler (pdb1, pdb2, doc):
@@ -66,8 +69,6 @@ def matrix_maker (protein, pdb_id, repo_path, taxo):
                 rmsd_matrix[i][j] = None
 
     doc.close()
-    with open("/Users/kristophernolte/Documents/Heatmap_arrays/{}_heatmap_CoV-{}.npy".format(protein, taxo), "wb") as f:
-        np.save(f, rmsd_matrix)
     heatmap(rmsd_matrix[:len(pdb_id) + 1], "viridis", pdb_id, protein, repo_path)
 
 def heatmap (matrix, color, pdb_id, protein, repo_path):
@@ -79,7 +80,11 @@ def heatmap (matrix, color, pdb_id, protein, repo_path):
     fig, ax = plt.subplots()
 
     #colorbar
-    heat_map = sb.heatmap(harvest,  cmap= color, annot=True, cbar=True, cbar_kws={'label': '[Å]', "orientation":"vertical"})
+    if len(pdb_id) > 15:
+        heat_map = sb.heatmap(harvest, cmap= color, annot=False, cbar=True, cbar_kws={'label': '[Å]', "orientation":"vertical"})
+        plt.xticks(rotation=90)
+    else:
+        heat_map = sb.heatmap(harvest, cmap=color, annot=True, cbar=True, cbar_kws={'label': '[Å]', "orientation": "vertical"})
     #linewidth=0.5
 
     #Lenght of Label
