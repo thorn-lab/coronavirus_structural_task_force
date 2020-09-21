@@ -4,6 +4,11 @@ import json
 yesterday = date.today() - timedelta(days=1)
 time = yesterday.strftime('%y-%m-%d')
 
+
+import os.path as path
+two_up =  path.abspath(path.join(__file__ ,"../../..","pdb"))
+print(two_up)
+
 taxo_query = {
     "query": {
     "type": "terminal",

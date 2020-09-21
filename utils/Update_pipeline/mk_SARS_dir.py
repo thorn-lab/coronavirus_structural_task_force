@@ -9,6 +9,7 @@ import mk_Alignment_strc_vs_seq
 import RMSD_pipeline
 import organizer
 import json
+import os.path as osp
 
 '''
 Fasta Files/*.fasta is the document with  fasta entrys
@@ -16,11 +17,13 @@ The folders are named after the protein_name and the taxo_names in the fasta. Yo
 '''
 
 time = datetime.datetime.now()
-time = time.strftime("%d")+"_"+time.strftime("%m")
+time = time.strftime("%d_%m")
+repo_path = osp.abspath(osp.join(__file__ ,"../../..","pdb"))
 
-#You have to change to root paths
-repo_path = "/Users/kristophernolte/Documents/ThornLab/coronavirus_structural_task_force/pdb"
-dropbox_path = "/Users/kristophernolte/Dropbox (University of Wuerzburg)/insidecorona_thornlab/task_force/"
+try: dropbox_path = "/Users/kristophernolte/Dropbox (University of Wuerzburg)/insidecorona_thornlab/task_force/"
+except FileNotFoundError:
+    print("Dropbox folder not found, you can find update info in the Update_pipeline folder")
+    dropbox_path = ""
 
 seq_fasta = list(SeqIO.parse("Fasta_Files/seq_SARS_2.fasta", "fasta"))
 
