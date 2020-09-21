@@ -9,14 +9,14 @@ And was written in 2020 by Kristopher Nolte, Thorn Lab, University of Wuerzburg
 as part of the Coronavirus Structural Taskforce, insidecorona.net
 '''
 
-def main (id_dict, pdb_id):
+def main (id_dict, pdb_id, repo_path):
     for element in id_dict:
-        file_walker(protein_chooser(element),pdb_id)
+        file_walker(protein_chooser(element, repo_path),pdb_id)
 
-def protein_chooser (prot_name):
+def protein_chooser (prot_name, repo_path):
     #which protein should be compared
-    path_repo = "/Users/kristophernolte/Documents/ThornLab/coronavirus_structural_task_force/pdb/{}".format(prot_name)
-    return path_repo
+    repo_path += "/{}".format(prot_name)
+    return repo_path
 
 def seq_finder (path_repo):
     #gets the sequence out of fasta

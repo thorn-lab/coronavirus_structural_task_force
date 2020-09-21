@@ -5,18 +5,17 @@ import numpy as np
 import seaborn as sb
 import matplotlib.pyplot as plt
 import os
-path = "/Users/kristophernolte/Documents/ThornLab/coronavirus_structural_task_force/pdb/"
 
-def main (id_dict):
+def main (id_dict, path):
     #RMSD is not done for nsp3, 3c_like_proteinase, surface_glycoprotein
     #for protein in all_proteins:
-    pdb_id = open(path + "list.txt")
+    pdb_id = open(path + "/list.txt")
     pdb_id = pdb_id.read().split("\n")
     for protein in id_dict:
-        if protein == "surface_glycoprotein":
+        if protein == "surface_glycoprotein" or protein == "3c_like_proteinase":
             pass
         else:
-            repo_path = path+protein
+            repo_path = path+"/"+protein
             file_walker(protein, pdb_id, repo_path+"/SARS-CoV-2/", "SARS-CoV-2")
 
 def file_walker(protein, pdb_id, repo_path, taxo):
@@ -72,32 +71,33 @@ def matrix_maker (protein, pdb_id, repo_path, taxo):
     heatmap(rmsd_matrix[:len(pdb_id) + 1], "viridis", pdb_id, protein, repo_path)
 
 def heatmap (matrix, color, pdb_id, protein, repo_path):
-    harvest = np.array(matrix)
-    harvest = np.where(harvest=="X", np.nan, harvest)
-    harvest = harvest.astype(float)
+    if len(pdb_id) > 1:
+        harvest = np.array(matrix)
+        harvest = np.where(harvest=="X", np.nan, harvest)
+        harvest = harvest.astype(float)
 
-    #CREATING HEATMAP
-    fig, ax = plt.subplots()
+        #CREATING HEATMAP
+        fig, ax = plt.subplots()
 
-    #colorbar
-    if len(pdb_id) > 15:
-        heat_map = sb.heatmap(harvest, cmap= color, annot=False, cbar=True, cbar_kws={'label': '[Å]', "orientation":"vertical"})
-        plt.xticks(rotation=90)
-    else:
-        heat_map = sb.heatmap(harvest, cmap=color, annot=True, cbar=True, cbar_kws={'label': '[Å]', "orientation": "vertical"})
-    #linewidth=0.5
+        #colorbar
+        if len(pdb_id) > 15:
+            heat_map = sb.heatmap(harvest, cmap= color, annot=False, cbar=True, cbar_kws={'label': '[Å]', "orientation":"vertical"})
+            plt.xticks(rotation=90)
+        else:
+            heat_map = sb.heatmap(harvest, cmap=color, annot=True, cbar=True, cbar_kws={'label': '[Å]', "orientation": "vertical"})
+        #linewidth=0.5
 
-    #Lenght of Label
-    heat_map.set_xticks(np.arange(len(pdb_id))+0.5)
-    heat_map.set_yticks(np.arange(len(pdb_id))+0.5)
+        #Lenght of Label
+        heat_map.set_xticks(np.arange(len(pdb_id))+0.5)
+        heat_map.set_yticks(np.arange(len(pdb_id))+0.5)
 
-    #Labels
-    heat_map.set_xticklabels(pdb_id, rotation = 0)
-    heat_map.set_yticklabels(pdb_id, rotation = 0)
-    ax.set_title("{} overlap weighted RMSD".format(protein))
+        #Labels
+        heat_map.set_xticklabels(pdb_id, rotation = 45)
+        heat_map.set_yticklabels(pdb_id, rotation = 0)
+        ax.set_title("{} overlap weighted RMSD".format(protein))
 
-    #Show and Save
-    plt.show()
-    figure = heat_map.get_figure()
-    figure.savefig(repo_path+'heatmap_{}.png'.format(protein), dpi=800)
-    figure.savefig(repo_path+'heatmap_{}.pdf'.format(protein), dpi=800)
+        #Show and Save
+        plt.show()
+        figure = heat_map.get_figure()
+        figure.savefig(repo_path+'heatmap_{}.png'.format(protein), dpi=800)
+        figure.savefig(repo_path+'heatmap_{}.pdf'.format(protein), dpi=800)

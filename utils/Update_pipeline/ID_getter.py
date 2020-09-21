@@ -1,11 +1,8 @@
 import requests
-import datetime
+from datetime import date, timedelta
 import json
-time = datetime.datetime.now()
-time = str(time).split(" ")[0]
-time = "2020-08-11"
-
-repo_path="/Users/kristophernolte/Documents/ThornLab/coronavirus_structural_task_force/pdb/"
+yesterday = date.today() - timedelta(days=1)
+time = yesterday.strftime('%y-%m-%d')
 
 taxo_query = {
     "query": {
@@ -65,7 +62,7 @@ def search(query):
         for entry in result["result_set"]: return_arr.append(entry['identifier'][:4].lower())
     return return_arr
 
-def main ():
+def main (repo_path):
     taxo_id = search(taxo_query)
     rev_id = search(rev_query)
     new_id = search(new_query)
@@ -74,7 +71,7 @@ def main ():
     rev_strc = list(set(taxo_id) & set(rev_id))
     for x in list(set(rev_strc) & set(new_strc)): rev_strc.remove(x)
 
-    ltxt = open(repo_path + "list.txt", "a")
+    ltxt = open(repo_path + "/list.txt", "a")
     for x in new_strc: ltxt.write("\n"+x)
     ltxt.close()
 
