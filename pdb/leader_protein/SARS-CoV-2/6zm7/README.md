@@ -16,9 +16,9 @@
 
 ## Subfolders
 
+**isolde** - contains manual re-refinements from ISOLDE in ChimeraX, done by Tristan Croll. See details [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/leader_protein/SARS-CoV-2/6zm7/isolde/directory_info.txt)
 
-
-
+**old** - contains files from historical revisions
 
 **validation** - contains validation reports. This structure has been analyzed by   [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/leader_protein/SARS-CoV-2/6zm7/validation/molprobity)   
 

@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+ Cryo-EM structure of a SARS-CoV-2 trimeric spike glycoprotein in its prefusion conformation. Three receptor-binding domains are clamped down by a segment adjacent to the fusion peptide. The S1 fragment domains, NTD, RBD, CTD1 and CTD2 are wrapped around the three-fold axis, covering the S2 fragment underneath. The furin cleavage site at the S1/S2 boundary is in a surface-exposed and disordered loop.
 
 ## Basefolder
 

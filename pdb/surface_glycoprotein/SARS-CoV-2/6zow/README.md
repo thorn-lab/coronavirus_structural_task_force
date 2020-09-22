@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Cryo-EM structure of a trimeric spike glycoprotein in prefusion state. For a flexibility analysis of the prefusion state, prior cryo-EM data were re-analyzed (6VSB; 6ZOW). Glycan chains on the S2 fusion unit could be extended compared to former structures. Flexibility analysis revealed a concerted motion involving the RBD, N-terminal domain (NTD) and subdomain 1 and 2 (SD1 & SD2) around the 1-RBD-up state.
 
 ## Basefolder
 

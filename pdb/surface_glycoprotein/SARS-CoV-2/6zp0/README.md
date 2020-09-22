@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Cryo-EM structure of a SARS-CoV-2 trimeric spike protein with a single Arg S1/S2 cleavage site in a closed state. Negatively charged residues D427 and D428 in the RBD, in proximity to positively charged K986 may electrostatically stabilize the closed form. Related PDB Structures are 6ZOX, 6ZOZ, 6ZOY, 6ZP1, 6ZP0, 6ZP2 referring to disulfide-bonded and non-disulfide-bonded spike structures. 
 
 ## Basefolder
 

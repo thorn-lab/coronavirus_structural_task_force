@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Cryo-EM structure of a trimeric spike glycoprotein of SARS-CoV-2 in complex with a monoclonal antibody named 4A8. The monoclonal antibody binds the N-terminal domain (NTD) of the spike protein with potent neutralizing activity. The structure was solved with a resolution of 3.1 Å.
 
 ## Basefolder
 
