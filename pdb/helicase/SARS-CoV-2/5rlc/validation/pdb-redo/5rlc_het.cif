@@ -1,0 +1,250 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+VVM      VVM '.                                   ' .                  27  17 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_VVM
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ VVM           O2     O    OS       -1.000      6.227   12.681  -29.702
+ VVM           S1     S    ST        0.000      5.888   13.703  -30.646
+ VVM           O1     O    OS       -1.000      6.776   14.035  -31.713
+ VVM           C4     C    CR6       0.000      5.373   15.161  -29.782
+ VVM           C3     C    CR16      0.000      5.198   16.366  -30.454
+ VVM           H3     H    H         0.000      5.412   16.430  -31.514
+ VVM           C2     C    CR16      0.000      4.750   17.484  -29.769
+ VVM           H2     H    H         0.000      4.641   18.423  -30.297
+ VVM           C1     C    CR6       0.000      4.436   17.420  -28.407
+ VVM           C6     C    CR16      0.000      4.610   16.201  -27.747
+ VVM           H6     H    H         0.000      4.383   16.127  -26.690
+ VVM           C5     C    CR16      0.000      5.068   15.089  -28.426
+ VVM           H5     H    H         0.000      5.191   14.151  -27.897
+ VVM           N1     N    N         0.000      3.980   18.520  -27.727
+ VVM           HN1    H    H         0.000      3.770   18.458  -26.795
+ VVM           N2     N    N         0.000      4.558   13.142  -31.371
+ VVM           C7     C    CR6       0.000      3.833   13.865  -32.340
+ VVM           C12    C    CR16      0.000      2.468   13.812  -32.293
+ VVM           H12    H    H         0.000      1.968   13.260  -31.508
+ VVM           C11    C    CR16      0.000      1.736   14.470  -33.258
+ VVM           H11    H    H         0.000      0.654   14.422  -33.237
+ VVM           C10    C    CR16      0.000      2.366   15.184  -34.244
+ VVM           H10    H    H         0.000      1.782   15.712  -34.988
+ VVM           C9     C    CR16      0.000      3.735   15.230  -34.289
+ VVM           H9     H    H         0.000      4.234   15.786  -35.074
+ VVM           C8     C    CR16      0.000      4.476   14.567  -33.333
+ VVM           H8     H    H         0.000      5.558   14.599  -33.364
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ VVM      O2     n/a    S1     START
+ VVM      S1     O2     N2     .
+ VVM      O1     S1     .      .
+ VVM      C4     S1     C3     .
+ VVM      C3     C4     C2     .
+ VVM      H3     C3     .      .
+ VVM      C2     C3     C1     .
+ VVM      H2     C2     .      .
+ VVM      C1     C2     N1     .
+ VVM      C6     C1     C5     .
+ VVM      H6     C6     .      .
+ VVM      C5     C6     H5     .
+ VVM      H5     C5     .      .
+ VVM      N1     C1     HN1    .
+ VVM      HN1    N1     .      .
+ VVM      N2     S1     C7     .
+ VVM      C7     N2     C12    .
+ VVM      C12    C7     C11    .
+ VVM      H12    C12    .      .
+ VVM      C11    C12    C10    .
+ VVM      H11    C11    .      .
+ VVM      C10    C11    C9     .
+ VVM      H10    C10    .      .
+ VVM      C9     C10    C8     .
+ VVM      H9     C9     .      .
+ VVM      C8     C9     H8     .
+ VVM      H8     C8     .      END
+ VVM      C4     C5     .    ADD
+ VVM      C7     C8     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ VVM      N1     C1        deloc       1.355    0.020
+ VVM      C4     C5        aromatic    1.390    0.020
+ VVM      C3     C4        aromatic    1.390    0.020
+ VVM      C4     S1        double      1.595    0.020
+ VVM      C5     C6        aromatic    1.390    0.020
+ VVM      C6     C1        aromatic    1.390    0.020
+ VVM      C7     C8        aromatic    1.390    0.020
+ VVM      C7     N2        single      1.400    0.020
+ VVM      C12    C7        aromatic    1.390    0.020
+ VVM      C8     C9        aromatic    1.390    0.020
+ VVM      C9     C10       aromatic    1.390    0.020
+ VVM      C10    C11       aromatic    1.390    0.020
+ VVM      C1     C2        aromatic    1.390    0.020
+ VVM      C2     C3        aromatic    1.390    0.020
+ VVM      O1     S1        deloc       1.480    0.020
+ VVM      S1     O2        deloc       1.480    0.020
+ VVM      N2     S1        double      1.520    0.020
+ VVM      C11    C12       aromatic    1.390    0.020
+ VVM      HN1    N1        single      0.954    0.020
+ VVM      H5     C5        single      1.083    0.020
+ VVM      H6     C6        single      1.083    0.020
+ VVM      H8     C8        single      1.083    0.020
+ VVM      H10    C10       single      1.083    0.020
+ VVM      H2     C2        single      1.083    0.020
+ VVM      H3     C3        single      1.083    0.020
+ VVM      H9     C9        single      1.083    0.020
+ VVM      H11    C11       single      1.083    0.020
+ VVM      H12    C12       single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ VVM      O2     S1     O1      109.500    3.000
+ VVM      O2     S1     C4      109.500    3.000
+ VVM      O2     S1     N2      109.500    3.000
+ VVM      O1     S1     C4      109.500    3.000
+ VVM      O1     S1     N2      109.500    3.000
+ VVM      C4     S1     N2      109.500    3.000
+ VVM      S1     C4     C3      120.000    3.000
+ VVM      S1     C4     C5      120.000    3.000
+ VVM      C3     C4     C5      120.000    3.000
+ VVM      C4     C3     H3      120.000    3.000
+ VVM      C4     C3     C2      120.000    3.000
+ VVM      H3     C3     C2      120.000    3.000
+ VVM      C3     C2     H2      120.000    3.000
+ VVM      C3     C2     C1      120.000    3.000
+ VVM      H2     C2     C1      120.000    3.000
+ VVM      C2     C1     C6      120.000    3.000
+ VVM      C2     C1     N1      120.000    3.000
+ VVM      C6     C1     N1      120.000    3.000
+ VVM      C1     C6     H6      120.000    3.000
+ VVM      C1     C6     C5      120.000    3.000
+ VVM      H6     C6     C5      120.000    3.000
+ VVM      C6     C5     H5      120.000    3.000
+ VVM      C6     C5     C4      120.000    3.000
+ VVM      H5     C5     C4      120.000    3.000
+ VVM      C1     N1     HN1     120.000    3.000
+ VVM      S1     N2     C7      120.000    3.000
+ VVM      N2     C7     C12     120.000    3.000
+ VVM      N2     C7     C8      120.000    3.000
+ VVM      C12    C7     C8      120.000    3.000
+ VVM      C7     C12    H12     120.000    3.000
+ VVM      C7     C12    C11     120.000    3.000
+ VVM      H12    C12    C11     120.000    3.000
+ VVM      C12    C11    H11     120.000    3.000
+ VVM      C12    C11    C10     120.000    3.000
+ VVM      H11    C11    C10     120.000    3.000
+ VVM      C11    C10    H10     120.000    3.000
+ VVM      C11    C10    C9      120.000    3.000
+ VVM      H10    C10    C9      120.000    3.000
+ VVM      C10    C9     H9      120.000    3.000
+ VVM      C10    C9     C8      120.000    3.000
+ VVM      H9     C9     C8      120.000    3.000
+ VVM      C9     C8     H8      120.000    3.000
+ VVM      C9     C8     C7      120.000    3.000
+ VVM      H8     C8     C7      120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ VVM      var_1            O2     S1     C4     C3               169.455           20.000   3
+ VVM      CONST_1          S1     C4     C5     C6                 0.000            0.000   0
+ VVM      CONST_2          S1     C4     C3     C2                 0.000            0.000   0
+ VVM      CONST_3          C4     C3     C2     C1                 0.000            0.000   0
+ VVM      CONST_4          C3     C2     C1     N1                 0.000            0.000   0
+ VVM      CONST_5          C2     C1     C6     C5                 0.000            0.000   0
+ VVM      CONST_6          C1     C6     C5     C4                 0.000            0.000   0
+ VVM      CONST_7          C2     C1     N1     HN1              180.000            0.000   0
+ VVM      var_2            O2     S1     N2     C7               176.740           20.000   3
+ VVM      var_3            S1     N2     C7     C12             -139.637           20.000   3
+ VVM      CONST_8          N2     C7     C8     C9                 0.000            0.000   0
+ VVM      CONST_9          N2     C7     C12    C11                0.000            0.000   0
+ VVM      CONST_10         C7     C12    C11    C10                0.000            0.000   0
+ VVM      CONST_11         C12    C11    C10    C9                 0.000            0.000   0
+ VVM      CONST_12         C11    C10    C9     C8                 0.000            0.000   0
+ VVM      CONST_13         C10    C9     C8     C7                 0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ VVM      chir_01          S1     C4     O1     O2        negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ VVM      plan-1            N1        0.020
+ VVM      plan-1            C1        0.020
+ VVM      plan-1            HN1       0.020
+ VVM      plan-1            C6        0.020
+ VVM      plan-1            C2        0.020
+ VVM      plan-1            C3        0.020
+ VVM      plan-1            H2        0.020
+ VVM      plan-1            C4        0.020
+ VVM      plan-1            H3        0.020
+ VVM      plan-1            C5        0.020
+ VVM      plan-1            S1        0.020
+ VVM      plan-1            H5        0.020
+ VVM      plan-1            H6        0.020
+ VVM      plan-2            C7        0.020
+ VVM      plan-2            C8        0.020
+ VVM      plan-2            N2        0.020
+ VVM      plan-2            C12       0.020
+ VVM      plan-2            C10       0.020
+ VVM      plan-2            C9        0.020
+ VVM      plan-2            C11       0.020
+ VVM      plan-2            H8        0.020
+ VVM      plan-2            H10       0.020
+ VVM      plan-2            H9        0.020
+ VVM      plan-2            H11       0.020
+ VVM      plan-2            H12       0.020
+ VVM      plan-3            N2        0.020
+ VVM      plan-3            C7        0.020
+ VVM      plan-3            S1        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

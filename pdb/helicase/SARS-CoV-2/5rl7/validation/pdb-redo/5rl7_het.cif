@@ -1,0 +1,192 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+VVD      VVD '.                                   ' .                  20  14 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_VVD
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ VVD           O3     O    OC       -0.500    -24.728   13.012  -45.368
+ VVD           C9     C    C         0.000    -25.185   11.842  -45.314
+ VVD           O2     O    OC       -0.500    -24.711   10.935  -44.582
+ VVD           C7     C    CR6       0.000    -26.372   11.496  -46.208
+ VVD           C6     C    CR6       0.000    -26.809   12.339  -47.225
+ VVD           F1     F    F         0.000    -26.183   13.521  -47.435
+ VVD           C5     C    CR16      0.000    -27.869   12.040  -48.045
+ VVD           H5     H    H         0.000    -28.177   12.727  -48.824
+ VVD           C8     C    CR16      0.000    -27.052   10.290  -46.033
+ VVD           H8     H    H         0.000    -26.740    9.603  -45.257
+ VVD           C3     C    CR6       0.000    -28.134    9.967  -46.856
+ VVD           C4     C    CR16      0.000    -28.536   10.844  -47.856
+ VVD           H4     H    H         0.000    -29.376   10.590  -48.491
+ VVD           N1     N    N         0.000    -28.859    8.760  -46.697
+ VVD           C2     C    C         0.000    -28.570    7.699  -45.908
+ VVD           O1     O    O         0.000    -28.245    7.803  -44.731
+ VVD           C1     C    CH3       0.000    -28.699    6.359  -46.568
+ VVD           H13    H    H         0.000    -29.695    6.225  -46.902
+ VVD           H12    H    H         0.000    -28.040    6.309  -47.395
+ VVD           H11    H    H         0.000    -28.453    5.599  -45.873
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ VVD      O3     n/a    C9     START
+ VVD      C9     O3     C7     .
+ VVD      O2     C9     .      .
+ VVD      C7     C9     C8     .
+ VVD      C6     C7     C5     .
+ VVD      F1     C6     .      .
+ VVD      C5     C6     H5     .
+ VVD      H5     C5     .      .
+ VVD      C8     C7     C3     .
+ VVD      H8     C8     .      .
+ VVD      C3     C8     N1     .
+ VVD      C4     C3     H4     .
+ VVD      H4     C4     .      .
+ VVD      N1     C3     C2     .
+ VVD      C2     N1     C1     .
+ VVD      O1     C2     .      .
+ VVD      C1     C2     H11    .
+ VVD      H13    C1     .      .
+ VVD      H12    C1     .      .
+ VVD      H11    C1     .      END
+ VVD      C4     C5     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ VVD      C2     N1        deloc       1.330    0.020
+ VVD      N1     C3        single      1.400    0.020
+ VVD      C4     C5        aromatic    1.390    0.020
+ VVD      C4     C3        aromatic    1.390    0.020
+ VVD      C5     C6        aromatic    1.390    0.020
+ VVD      C6     C7        aromatic    1.384    0.020
+ VVD      F1     C6        single      1.345    0.020
+ VVD      C8     C7        aromatic    1.390    0.020
+ VVD      C7     C9        single      1.500    0.020
+ VVD      C3     C8        aromatic    1.390    0.020
+ VVD      C1     C2        single      1.500    0.020
+ VVD      O1     C2        double      1.220    0.020
+ VVD      O2     C9        deloc       1.250    0.020
+ VVD      C9     O3        deloc       1.250    0.020
+ VVD      H4     C4        single      1.083    0.020
+ VVD      H5     C5        single      1.083    0.020
+ VVD      H8     C8        single      1.083    0.020
+ VVD      H11    C1        single      1.059    0.020
+ VVD      H12    C1        single      1.059    0.020
+ VVD      H13    C1        single      1.059    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ VVD      O3     C9     O2      123.000    3.000
+ VVD      O3     C9     C7      120.000    3.000
+ VVD      O2     C9     C7      120.000    3.000
+ VVD      C9     C7     C6      120.000    3.000
+ VVD      C9     C7     C8      120.000    3.000
+ VVD      C6     C7     C8      120.000    3.000
+ VVD      C7     C6     F1      120.000    3.000
+ VVD      C7     C6     C5      120.000    3.000
+ VVD      F1     C6     C5      120.000    3.000
+ VVD      C6     C5     H5      120.000    3.000
+ VVD      C6     C5     C4      120.000    3.000
+ VVD      H5     C5     C4      120.000    3.000
+ VVD      C7     C8     H8      120.000    3.000
+ VVD      C7     C8     C3      120.000    3.000
+ VVD      H8     C8     C3      120.000    3.000
+ VVD      C8     C3     C4      120.000    3.000
+ VVD      C8     C3     N1      120.000    3.000
+ VVD      C4     C3     N1      120.000    3.000
+ VVD      C3     C4     H4      120.000    3.000
+ VVD      C3     C4     C5      120.000    3.000
+ VVD      H4     C4     C5      120.000    3.000
+ VVD      C3     N1     C2      120.000    3.000
+ VVD      N1     C2     O1      123.000    3.000
+ VVD      N1     C2     C1      116.500    3.000
+ VVD      O1     C2     C1      123.000    3.000
+ VVD      C2     C1     H13     109.470    3.000
+ VVD      C2     C1     H12     109.470    3.000
+ VVD      C2     C1     H11     109.470    3.000
+ VVD      H13    C1     H12     109.470    3.000
+ VVD      H13    C1     H11     109.470    3.000
+ VVD      H12    C1     H11     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ VVD      var_1            O3     C9     C7     C8              -169.600           20.000   3
+ VVD      CONST_1          C9     C7     C6     C5                 0.000            0.000   0
+ VVD      CONST_2          C7     C6     C5     C4                 0.000            0.000   0
+ VVD      CONST_3          C9     C7     C8     C3                 0.000            0.000   0
+ VVD      CONST_4          C7     C8     C3     N1                 0.000            0.000   0
+ VVD      CONST_5          C8     C3     C4     C5                 0.000            0.000   0
+ VVD      CONST_6          C3     C4     C5     C6                 0.000            0.000   0
+ VVD      var_2            C8     C3     N1     C2                -8.787           20.000   3
+ VVD      CONST_7          C3     N1     C2     C1               180.000            0.000   0
+ VVD      var_3            N1     C2     C1     H11              180.000           20.000   3
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ VVD      plan-1            N1        0.020
+ VVD      plan-1            C2        0.020
+ VVD      plan-1            C3        0.020
+ VVD      plan-1            C1        0.020
+ VVD      plan-1            O1        0.020
+ VVD      plan-2            C4        0.020
+ VVD      plan-2            C5        0.020
+ VVD      plan-2            C3        0.020
+ VVD      plan-2            H4        0.020
+ VVD      plan-2            C6        0.020
+ VVD      plan-2            C7        0.020
+ VVD      plan-2            C8        0.020
+ VVD      plan-2            H5        0.020
+ VVD      plan-2            F1        0.020
+ VVD      plan-2            C9        0.020
+ VVD      plan-2            H8        0.020
+ VVD      plan-2            N1        0.020
+ VVD      plan-3            C9        0.020
+ VVD      plan-3            C7        0.020
+ VVD      plan-3            O2        0.020
+ VVD      plan-3            O3        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
