@@ -22,7 +22,7 @@ Em structure of a spike glycoprotein mutant forced into its open state. 2 RBD op
 
 **old** - contains files from historical revisions
 
-**validation** - contains validation reports. This structure has been analyzed by   [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6x2b/validation/molprobity)   
+**validation** - contains validation reports. This structure has been analyzed by   [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6x2b/validation/molprobity)   [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6x2b/validation/ccpem-validation)
 
 
 
