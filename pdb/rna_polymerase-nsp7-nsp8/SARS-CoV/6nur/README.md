@@ -22,7 +22,7 @@ SARS-CoV RNA Polymerase (NSP12) bound with NSP7 & two NSP8 co-factors. This elec
 
 
 
-
+**validation** - contains validation reports. This structure has been analyzed by      
 
 
 
