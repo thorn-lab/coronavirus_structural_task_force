@@ -18,6 +18,7 @@ The folders are named after the protein_name and the taxo_names in the fasta. Yo
 
 time = datetime.datetime.now()
 time = time.strftime("%d_%m")
+time = "2020-10-27"
 repo_path = osp.abspath(osp.join(__file__ ,"../../..","pdb"))
 
 try: dropbox_path = "/Users/kristophernolte/Dropbox (University of Wuerzburg)/insidecorona_thornlab/task_force/"
@@ -25,7 +26,7 @@ except FileNotFoundError:
     print("Dropbox folder not found, you can find update info in the Update_pipeline folder")
     dropbox_path = ""
 
-seq_fasta = list(SeqIO.parse("Fasta_Files/seq_SARS_2.fasta", "fasta"))
+seq_fasta = list(SeqIO.parse("/afs/physnet.uni-hamburg.de/users/thornlab/knolte/ThornAG/coronavirus_structural_task_force/utils/Update_pipeline/Fasta_files/seq_SARS_2.fasta", "fasta"))
 
 print("Starting the Wednesday-Update")
 all_pdb_id = ID_getter.main(repo_path)
@@ -94,7 +95,7 @@ def namer (i):
 
 def main():
     i = 0
-    doc = open(dropbox_path+"weekly_updates/new_structures_{}.txt".format(time), "w+")
+    doc = open("weekly_reports/new_structures_{}.txt".format(time), "w+")
     is_sorted = []
     id_dict = {}
     while i in range(len(seq_fasta)):
