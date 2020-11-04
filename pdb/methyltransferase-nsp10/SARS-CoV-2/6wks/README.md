@@ -39,7 +39,7 @@ No public deposition. --<br>
 
 |   | Resolution | Completeness| I/sigma |
 |---|-------------:|----------------:|--------------:|
-|   |UBLI Å| HTML %|<img width=50/>DTD H|
+|   |-- Å|--|<img width=50/>--|
 
 **Discrepancy between model and data (the lower the better)**
 
