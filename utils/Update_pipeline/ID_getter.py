@@ -3,7 +3,7 @@ from datetime import date, timedelta
 import json
 yesterday = date.today() - timedelta(days=1)
 time = yesterday.strftime('%y-%m-%d')
-time = "2020-10-27"
+time = "2020-11-10"
 
 
 import os.path as path
