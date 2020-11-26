@@ -1,0 +1,185 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WUJ      WUJ '.                                   ' .                  18  10 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WUJ
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WUJ           O10    O    O         0.000     38.250  -78.261    5.535
+ WUJ           C02    C    C         0.000     38.171  -79.087    6.405
+ WUJ           N01    N    NH2       0.000     37.010  -79.967    6.545
+ WUJ           H012   H    H         0.000     36.199  -79.922    5.902
+ WUJ           H011   H    H         0.000     36.941  -80.679    7.294
+ WUJ           N03    N    NH1       0.000     39.241  -79.194    7.387
+ WUJ           HN03   H    H         0.000     39.181  -79.878    8.128
+ WUJ           C04    C    CH2       0.000     40.386  -78.322    7.300
+ WUJ           H041   H    H         0.000     40.228  -77.611    6.486
+ WUJ           H042   H    H         0.000     41.273  -78.923    7.090
+ WUJ           C05    C    CR5       0.000     40.583  -77.561    8.613
+ WUJ           O09    O    O2        0.000     39.964  -77.785    9.785
+ WUJ           C08    C    CR15      0.000     40.402  -76.906   10.699
+ WUJ           H08    H    H         0.000     40.069  -76.842   11.727
+ WUJ           C07    C    CR15      0.000     41.349  -76.097   10.106
+ WUJ           H07    H    H         0.000     41.901  -75.296   10.583
+ WUJ           C06    C    CR15      0.000     41.460  -76.501    8.789
+ WUJ           H06    H    H         0.000     42.109  -76.071    8.036
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WUJ      O10    n/a    C02    START
+ WUJ      C02    O10    N03    .
+ WUJ      N01    C02    H011   .
+ WUJ      H012   N01    .      .
+ WUJ      H011   N01    .      .
+ WUJ      N03    C02    C04    .
+ WUJ      HN03   N03    .      .
+ WUJ      C04    N03    C05    .
+ WUJ      H041   C04    .      .
+ WUJ      H042   C04    .      .
+ WUJ      C05    C04    O09    .
+ WUJ      O09    C05    C08    .
+ WUJ      C08    O09    C07    .
+ WUJ      H08    C08    .      .
+ WUJ      C07    C08    C06    .
+ WUJ      H07    C07    .      .
+ WUJ      C06    C07    H06    .
+ WUJ      H06    C06    .      END
+ WUJ      C05    C06    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WUJ      N01    C02       single      1.332    0.020
+ WUJ      N03    C02       single      1.330    0.020
+ WUJ      C02    O10       double      1.220    0.020
+ WUJ      C04    N03       single      1.450    0.020
+ WUJ      C05    C04       single      1.510    0.020
+ WUJ      C05    C06       aromatic    1.387    0.020
+ WUJ      O09    C05       single      1.370    0.020
+ WUJ      C06    C07       aromatic    1.380    0.020
+ WUJ      C07    C08       aromatic    1.380    0.020
+ WUJ      C08    O09       single      1.380    0.020
+ WUJ      H011   N01       single      1.010    0.020
+ WUJ      H012   N01       single      1.010    0.020
+ WUJ      HN03   N03       single      1.010    0.020
+ WUJ      H041   C04       single      1.092    0.020
+ WUJ      H042   C04       single      1.092    0.020
+ WUJ      H06    C06       single      1.083    0.020
+ WUJ      H07    C07       single      1.083    0.020
+ WUJ      H08    C08       single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WUJ      O10    C02    N01     123.000    3.000
+ WUJ      O10    C02    N03     123.000    3.000
+ WUJ      N01    C02    N03     120.000    3.000
+ WUJ      C02    N01    H012    120.000    3.000
+ WUJ      C02    N01    H011    120.000    3.000
+ WUJ      H012   N01    H011    120.000    3.000
+ WUJ      C02    N03    HN03    120.000    3.000
+ WUJ      C02    N03    C04     121.500    3.000
+ WUJ      HN03   N03    C04     118.500    3.000
+ WUJ      N03    C04    H041    109.470    3.000
+ WUJ      N03    C04    H042    109.470    3.000
+ WUJ      N03    C04    C05     109.500    3.000
+ WUJ      H041   C04    H042    107.900    3.000
+ WUJ      H041   C04    C05     109.470    3.000
+ WUJ      H042   C04    C05     109.470    3.000
+ WUJ      C04    C05    O09     126.000    3.000
+ WUJ      C04    C05    C06     126.000    3.000
+ WUJ      O09    C05    C06     108.000    3.000
+ WUJ      C05    O09    C08     108.000    3.000
+ WUJ      O09    C08    H08     126.000    3.000
+ WUJ      O09    C08    C07     108.000    3.000
+ WUJ      H08    C08    C07     126.000    3.000
+ WUJ      C08    C07    H07     126.000    3.000
+ WUJ      C08    C07    C06     108.000    3.000
+ WUJ      H07    C07    C06     126.000    3.000
+ WUJ      C07    C06    H06     126.000    3.000
+ WUJ      C07    C06    C05     108.000    3.000
+ WUJ      H06    C06    C05     126.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WUJ      CONST_1          O10    C02    N01    H011             180.000            0.000   0
+ WUJ      var_1            O10    C02    N03    C04              180.000           20.000   2
+ WUJ      var_2            C02    N03    C04    C05                0.000           20.000   3
+ WUJ      var_3            N03    C04    C05    O09                0.000           20.000   2
+ WUJ      CONST_2          C04    C05    C06    C07                0.000            0.000   0
+ WUJ      CONST_3          C04    C05    O09    C08             -179.788            0.000   0
+ WUJ      CONST_4          C05    O09    C08    C07               -0.823            0.000   0
+ WUJ      CONST_5          O09    C08    C07    C06                0.865            0.000   0
+ WUJ      CONST_6          C08    C07    C06    C05               -0.583            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WUJ      plan-1            N01       0.020
+ WUJ      plan-1            C02       0.020
+ WUJ      plan-1            H011      0.020
+ WUJ      plan-1            H012      0.020
+ WUJ      plan-2            C02       0.020
+ WUJ      plan-2            N01       0.020
+ WUJ      plan-2            N03       0.020
+ WUJ      plan-2            O10       0.020
+ WUJ      plan-2            H012      0.020
+ WUJ      plan-2            H011      0.020
+ WUJ      plan-2            HN03      0.020
+ WUJ      plan-3            N03       0.020
+ WUJ      plan-3            C02       0.020
+ WUJ      plan-3            C04       0.020
+ WUJ      plan-3            HN03      0.020
+ WUJ      plan-4            C05       0.020
+ WUJ      plan-4            C04       0.020
+ WUJ      plan-4            C06       0.020
+ WUJ      plan-4            O09       0.020
+ WUJ      plan-4            C07       0.020
+ WUJ      plan-4            C08       0.020
+ WUJ      plan-4            H06       0.020
+ WUJ      plan-4            H07       0.020
+ WUJ      plan-4            H08       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

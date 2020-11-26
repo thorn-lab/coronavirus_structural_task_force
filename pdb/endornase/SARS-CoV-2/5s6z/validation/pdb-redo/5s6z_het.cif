@@ -1,0 +1,218 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WUM      WUM '.                                   ' .                  21  10 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WUM
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WUM           N09    N    NH2       0.000      1.626  -76.338   21.553
+ WUM           H091   H    H         0.000      1.079  -77.079   22.024
+ WUM           H092   H    H         0.000      1.087  -75.507   21.256
+ WUM           C08    C    C         0.000      3.059  -76.457   21.324
+ WUM           N10    N    N         0.000      3.820  -77.475   21.668
+ WUM           S07    S    ST        0.000      4.104  -75.316   20.543
+ WUM           C06    C    C1        0.000      5.534  -76.273   20.688
+ WUM           H06    H    H         0.000      6.531  -76.030   20.362
+ WUM           C05    C    CT        0.000      5.098  -77.431   21.323
+ WUM           C04    C    CH2       0.000      6.054  -78.592   21.620
+ WUM           H041   H    H         0.000      5.995  -78.808   22.689
+ WUM           H042   H    H         0.000      7.065  -78.263   21.372
+ WUM           N02    N    NT        0.000      5.730  -79.804   20.855
+ WUM           C03    C    CH3       0.000      4.489  -80.432   21.291
+ WUM           H033   H    H         0.000      4.573  -80.704   22.310
+ WUM           H032   H    H         0.000      3.690  -79.749   21.171
+ WUM           H031   H    H         0.000      4.309  -81.295   20.706
+ WUM           C01    C    CH3       0.000      5.711  -79.570   19.409
+ WUM           H013   H    H         0.000      4.982  -78.837   19.181
+ WUM           H012   H    H         0.000      6.664  -79.232   19.095
+ WUM           H011   H    H         0.000      5.473  -80.473   18.909
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WUM      N09    n/a    C08    START
+ WUM      H091   N09    .      .
+ WUM      H092   N09    .      .
+ WUM      C08    N09    N10    .
+ WUM      N10    C08    C05    .
+ WUM      S07    N10    C06    .
+ WUM      C06    S07    H06    .
+ WUM      H06    C06    .      .
+ WUM      C05    N10    C04    .
+ WUM      C04    C05    N02    .
+ WUM      H041   C04    .      .
+ WUM      H042   C04    .      .
+ WUM      N02    C04    C01    .
+ WUM      C03    N02    H031   .
+ WUM      H033   C03    .      .
+ WUM      H032   C03    .      .
+ WUM      H031   C03    .      .
+ WUM      C01    N02    H011   .
+ WUM      H013   C01    .      .
+ WUM      H012   C01    .      .
+ WUM      H011   C01    .      END
+ WUM      C05    C06    .    ADD
+ WUM      C05    S07    .    ADD
+ WUM      S07    C08    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WUM      C01    N02       single      1.469    0.020
+ WUM      C03    N02       single      1.469    0.020
+ WUM      N02    C04       single      1.469    0.020
+ WUM      C04    C05       single      1.524    0.020
+ WUM      C05    C06       single      1.510    0.020
+ WUM      C05    S07       single      1.662    0.020
+ WUM      C05    N10       single      1.455    0.020
+ WUM      C06    S07       double      1.565    0.020
+ WUM      S07    C08       double      1.565    0.020
+ WUM      S07    N10       single      1.520    0.020
+ WUM      C08    N09       single      1.332    0.020
+ WUM      N10    C08       single      1.330    0.020
+ WUM      H011   C01       single      1.059    0.020
+ WUM      H012   C01       single      1.059    0.020
+ WUM      H013   C01       single      1.059    0.020
+ WUM      H031   C03       single      1.059    0.020
+ WUM      H032   C03       single      1.059    0.020
+ WUM      H033   C03       single      1.059    0.020
+ WUM      H041   C04       single      1.092    0.020
+ WUM      H042   C04       single      1.092    0.020
+ WUM      H06    C06       single      1.077    0.020
+ WUM      H091   N09       single      1.010    0.020
+ WUM      H092   N09       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WUM      H091   N09    H092    120.000    3.000
+ WUM      H091   N09    C08     120.000    3.000
+ WUM      H092   N09    C08     120.000    3.000
+ WUM      N09    C08    N10     120.000    3.000
+ WUM      N09    C08    S07     120.000    3.000
+ WUM      N10    C08    S07      62.725    3.000
+ WUM      C08    N10    S07      66.224    3.000
+ WUM      C08    N10    C05     121.000    3.000
+ WUM      S07    N10    C05      67.885    3.000
+ WUM      N10    S07    C06     109.500    3.000
+ WUM      N10    S07    C05      54.198    3.000
+ WUM      N10    S07    C08      51.052    3.000
+ WUM      C05    S07    C08     109.500    3.000
+ WUM      C06    S07    C05      55.702    3.000
+ WUM      C06    S07    C08     109.500    3.000
+ WUM      S07    C06    H06     120.000    3.000
+ WUM      S07    C06    C05      65.405    3.000
+ WUM      H06    C06    C05     120.000    3.000
+ WUM      N10    C05    C04     111.600    3.000
+ WUM      N10    C05    C06     111.600    3.000
+ WUM      N10    C05    S07      57.917    3.000
+ WUM      C06    C05    S07      58.893    3.000
+ WUM      C04    C05    C06     109.470    3.000
+ WUM      C04    C05    S07     109.500    3.000
+ WUM      C05    C04    H041    109.470    3.000
+ WUM      C05    C04    H042    109.470    3.000
+ WUM      C05    C04    N02     109.500    3.000
+ WUM      H041   C04    H042    107.900    3.000
+ WUM      H041   C04    N02     109.470    3.000
+ WUM      H042   C04    N02     109.470    3.000
+ WUM      C04    N02    C03     109.470    3.000
+ WUM      C04    N02    C01     109.470    3.000
+ WUM      C03    N02    C01     109.470    3.000
+ WUM      N02    C03    H033    109.470    3.000
+ WUM      N02    C03    H032    109.470    3.000
+ WUM      N02    C03    H031    109.470    3.000
+ WUM      H033   C03    H032    109.470    3.000
+ WUM      H033   C03    H031    109.470    3.000
+ WUM      H032   C03    H031    109.470    3.000
+ WUM      N02    C01    H013    109.470    3.000
+ WUM      N02    C01    H012    109.470    3.000
+ WUM      N02    C01    H011    109.470    3.000
+ WUM      H013   C01    H012    109.470    3.000
+ WUM      H013   C01    H011    109.470    3.000
+ WUM      H012   C01    H011    109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WUM      CONST_1          H092   N09    C08    N10              180.000            0.000   0
+ WUM      var_1            N09    C08    N10    C05              180.000           20.000   2
+ WUM      var_2            C08    N10    S07    C06             -179.044           20.000   3
+ WUM      CONST_2          N10    S07    C08    N09             -179.526            0.000   0
+ WUM      var_3            N10    S07    C06    C05                1.228           20.000   3
+ WUM      var_4            C08    N10    C05    C04             -177.222           20.000   3
+ WUM      var_5            N10    C05    C06    S07               -2.295           20.000   3
+ WUM      var_6            N10    C05    C04    N02               66.897           20.000   3
+ WUM      var_7            C05    C04    N02    C01               56.567           20.000   3
+ WUM      var_8            C04    N02    C03    H031             180.000           20.000   3
+ WUM      var_9            C04    N02    C01    H011             180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ WUM      chir_01          N02    C01    C03    C04       positiv
+ WUM      chir_02          C05    C04    C06    S07       negativ
+ WUM      chir_03          S07    C05    C06    C08       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WUM      plan-1            C06       0.020
+ WUM      plan-1            C05       0.020
+ WUM      plan-1            S07       0.020
+ WUM      plan-1            H06       0.020
+ WUM      plan-2            C08       0.020
+ WUM      plan-2            S07       0.020
+ WUM      plan-2            N09       0.020
+ WUM      plan-2            N10       0.020
+ WUM      plan-2            H091      0.020
+ WUM      plan-2            H092      0.020
+ WUM      plan-3            N09       0.020
+ WUM      plan-3            C08       0.020
+ WUM      plan-3            H091      0.020
+ WUM      plan-3            H092      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
