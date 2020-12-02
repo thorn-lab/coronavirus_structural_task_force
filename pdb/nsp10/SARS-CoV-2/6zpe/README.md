@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+The non-structural protein nsp10 of SARS-CoV-2, where it acts as allosteric activator for nsp14 and nsp16. Its ligands are chloride ions, zinc ions and glycerol. It has a resolution of 1.58 脜.
 
 ## Basefolder
 
@@ -24,7 +26,7 @@
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp10/SARS-CoV-2/6zpe/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp10/SARS-CoV-2/6zpe/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp10/SARS-CoV-2/6zpe/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp10/SARS-CoV-2/6zpe/validation/Xtriage_output.log)  
+**validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp10/SARS-CoV-2/6zpe/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp10/SARS-CoV-2/6zpe/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp10/SARS-CoV-2/6zpe/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp10/SARS-CoV-2/6zpe/validation/Xtriage_output.log)  
 
 
 
@@ -39,7 +41,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|--------------:|
 |   |1.58 Å|99.6  %|<img width=50/>24.10|
 
-**Discrepancy between model and data (the lower the better)**
+**Discrepancy between model and data (the lower, the better)**
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
@@ -64,5 +66,5 @@ No public deposition. --<br>
  
 **PDBr**: https://www.rcsb.org/structure/6zpe 
 
-**Structure view with 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=6zpe
+**View structures in 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=6zpe
 

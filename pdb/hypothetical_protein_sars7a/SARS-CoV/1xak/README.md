@@ -26,7 +26,7 @@ SARS-CoV ORF7a accessory protein, a unique type I transmembrane protein of unkno
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/hypothetical_protein_sars7a/SARS-CoV/1xak/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/hypothetical_protein_sars7a/SARS-CoV/1xak/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/hypothetical_protein_sars7a/SARS-CoV/1xak/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/hypothetical_protein_sars7a/SARS-CoV/1xak/validation/Xtriage_output.log)  
+**validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/hypothetical_protein_sars7a/SARS-CoV/1xak/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/hypothetical_protein_sars7a/SARS-CoV/1xak/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/hypothetical_protein_sars7a/SARS-CoV/1xak/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/hypothetical_protein_sars7a/SARS-CoV/1xak/validation/Xtriage_output.log)  
 
 
 
@@ -41,7 +41,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|--------------:|
 |   |1.80 Å|      %|<img width=50/>34.90|
 
-**Discrepancy between model and data (the lower the better)**
+**Discrepancy between model and data (the lower, the better)**
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
@@ -53,7 +53,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  2.37|  0.00 %|
 
-**Auspex Pathologies**<br> manhatten (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/hypothetical_protein_sars7a/SARS-CoV/1xak/validation/auspex/1xak_auspex_comments.txt))
+**Auspex Pathologies**<br> [bad or missing beamstop mask](https://www.auspex.de/pathol/#2)<br>[Click here for results](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/hypothetical_protein_sars7a/SARS-CoV/1xak/validation/auspex/1xak_auspex_comments.txt))
 
  
 
@@ -66,5 +66,5 @@ No public deposition. --<br>
  
 **PDBr**: https://www.rcsb.org/structure/1xak 
 
-**Structure view with 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=1xak
+**View structures in 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=1xak
 

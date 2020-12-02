@@ -43,9 +43,9 @@ Primary map emd_9593.map available. **Click** [here](http://ftp.wwpdb.org/pub/em
 |---|-------------:|----------------:|
 |   |1.32 Å|50.0 e<sup>-</sup>/Å<sup>2</sup>|
 
-## HARUSPEX Annotation
+## HARUSPEX results
 
-Available. **Click** [here](https://zenodo.org/record/3820127)
+Available. This separates the deposited map into individual maps for alpha-helical, beta sheet and RNA/DNA. You can download the maps [here](https://zenodo.org/record/3820127)
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/6acj

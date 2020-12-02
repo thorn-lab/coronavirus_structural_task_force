@@ -41,9 +41,9 @@ Primary map emd_22254.map available. **Click** [here](http://ftp.wwpdb.org/pub/e
 |---|-------------:|----------------:|
 |   |0.85 Å|40.0 e<sup>-</sup>/Å<sup>2</sup>|
 
-## HARUSPEX Annotation
+## HARUSPEX results
 
-Not available.. Please contact task force manager to update HARUSPEX results. Write an [issue](https://github.com/thorn-lab/coronavirus_structural_task_force/issues) to us.
+Not available. Please contact task force manager to update HARUSPEX results. Write an [issue](https://github.com/thorn-lab/coronavirus_structural_task_force/issues) to us.
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/6xm3

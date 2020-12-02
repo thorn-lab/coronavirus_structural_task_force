@@ -26,7 +26,7 @@ This X-ray crystal structure of SARS-CoV2 RNA-replicase (NSP9) was phased using 
 
 **old** - contains files from historical revisions
 
-**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp9/SARS-CoV-2/6w4b/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp9/SARS-CoV-2/6w4b/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp9/SARS-CoV-2/6w4b/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp9/SARS-CoV-2/6w4b/validation/Xtriage_output.log) [**BUSTER**](https://www.globalphasing.com/buster/wiki/index.cgi?Covid19Pdb6W4B) 
+**validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp9/SARS-CoV-2/6w4b/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp9/SARS-CoV-2/6w4b/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp9/SARS-CoV-2/6w4b/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp9/SARS-CoV-2/6w4b/validation/Xtriage_output.log) [**BUSTER**](https://www.globalphasing.com/buster/wiki/index.cgi?Covid19Pdb6W4B) 
 
 
 
@@ -41,7 +41,7 @@ Available. **Click** [here](https://doi.org/10.18430/m36w4b)
 |---|-------------:|----------------:|--------------:|
 |   |2.95 Å|97.1  %|<img width=50/>17.40|
 
-**Discrepancy between model and data (the lower the better)**
+**Discrepancy between model and data (the lower, the better)**
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
@@ -53,7 +53,7 @@ Available. **Click** [here](https://doi.org/10.18430/m36w4b)
 |---|-------------:|----------------:|
 ||  2.36|  0.00 %|
 
-**Auspex Pathologies**<br> all good (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp9/SARS-CoV-2/6w4b/validation/auspex/6w4b_auspex_comments.txt))
+**Auspex Pathologies**<br> <br>[Click here for results](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp9/SARS-CoV-2/6w4b/validation/auspex/6w4b_auspex_comments.txt))
 
  
 
@@ -66,5 +66,5 @@ Available. **Click** [here](https://doi.org/10.18430/m36w4b)
  
 **PDBr**: https://www.rcsb.org/structure/6w4b 
 
-**Structure view with 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=6w4b
+**View structures in 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=6w4b
 

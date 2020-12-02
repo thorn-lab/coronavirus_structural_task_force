@@ -22,7 +22,7 @@ SARS-CoV RNA Polymerase (NSP12) bound with NSP7 & two NSP8 co-factors. This elec
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by      
+**validation** - contains validation reports. This structure has been analyzed by <br>     
 
 
 
@@ -43,9 +43,9 @@ Primary map emd_0520.map available. **Click** [here](http://ftp.wwpdb.org/pub/em
 |---|-------------:|----------------:|
 |   |1.15 Å|50.5 e<sup>-</sup>/Å<sup>2</sup>|
 
-## HARUSPEX Annotation
+## HARUSPEX results
 
-Available. **Click** [here](https://zenodo.org/record/3820101)
+Available. This separates the deposited map into individual maps for alpha-helical, beta sheet and RNA/DNA. You can download the maps [here](https://zenodo.org/record/3820101)
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/6nur
