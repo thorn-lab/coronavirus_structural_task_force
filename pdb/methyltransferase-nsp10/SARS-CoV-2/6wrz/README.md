@@ -53,7 +53,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  1.08|  0.00 %|
 
-**Auspex Pathologies**<br> [ice rings](https://www.auspex.de/pathol/#1)<br>[Click here for results](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/methyltransferase-nsp10/SARS-CoV-2/6wrz/validation/auspex/6wrz_auspex_comments.txt))
+**Auspex Pathologies**<br> [ice rings](https://www.auspex.de/pathol/#1)<br>Click [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/methyltransferase-nsp10/SARS-CoV-2/6wrz/validation/auspex/6wrz_auspex_comments.txt)  for results
 
  
 

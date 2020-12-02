@@ -53,7 +53,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  3.58|  5.76 %|
 
-**Auspex Pathologies**<br> <br>[Click here for results](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/1z1j/validation/auspex/1z1j_auspex_comments.txt))
+**Auspex Pathologies**<br> <br>Click [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV/1z1j/validation/auspex/1z1j_auspex_comments.txt)  for results
 
  
 

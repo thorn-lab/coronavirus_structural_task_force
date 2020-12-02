@@ -53,7 +53,7 @@ Available. **Click** [here](https://doi.org/10.18430/m36w02)
 |---|-------------:|----------------:|
 ||  1.07|  0.00 %|
 
-**Auspex Pathologies**<br> <br>[Click here for results](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp3/SARS-CoV-2/6w02/validation/auspex/6w02_auspex_comments.txt))
+**Auspex Pathologies**<br> <br>Click [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp3/SARS-CoV-2/6w02/validation/auspex/6w02_auspex_comments.txt)  for results
 
  
 

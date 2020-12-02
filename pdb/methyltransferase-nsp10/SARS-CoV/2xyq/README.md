@@ -53,7 +53,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  1.52|  0.74 %|
 
-**Auspex Pathologies**<br> <br>[Click here for results](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/methyltransferase-nsp10/SARS-CoV/2xyq/validation/auspex/2xyq_auspex_comments.txt))
+**Auspex Pathologies**<br> <br>Click [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/methyltransferase-nsp10/SARS-CoV/2xyq/validation/auspex/2xyq_auspex_comments.txt)  for results
 
  
 

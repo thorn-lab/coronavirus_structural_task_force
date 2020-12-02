@@ -53,7 +53,7 @@ Available. **Click** [here](https://zenodo.org/record/3731383)
 |---|-------------:|----------------:|
 ||  1.25|  0.33 %|
 
-**Auspex Pathologies**<br> [ice rings](https://www.auspex.de/pathol/#1), [bad or missing beamstop mask](https://www.auspex.de/pathol/#2)<br>[Click here for results](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV-2/5rfi/validation/auspex/5rfi_auspex_comments.txt))
+**Auspex Pathologies**<br> [ice rings](https://www.auspex.de/pathol/#1), [bad or missing beamstop mask](https://www.auspex.de/pathol/#2)<br>Click [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV-2/5rfi/validation/auspex/5rfi_auspex_comments.txt)  for results
 
  
 

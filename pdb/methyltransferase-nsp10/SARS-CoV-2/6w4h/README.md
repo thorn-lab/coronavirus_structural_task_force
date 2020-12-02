@@ -53,7 +53,7 @@ Available. **Click** [here](https://doi.org/10.18430/m36w4h)
 |---|-------------:|----------------:|
 ||  1.19|  0.00 %|
 
-**Auspex Pathologies**<br> <br>[Click here for results](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/methyltransferase-nsp10/SARS-CoV-2/6w4h/validation/auspex/6w4h_auspex_comments.txt))
+**Auspex Pathologies**<br> <br>Click [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/methyltransferase-nsp10/SARS-CoV-2/6w4h/validation/auspex/6w4h_auspex_comments.txt)  for results
 
  
 
