@@ -1,0 +1,235 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+RVW      RVW '.                                   ' .                  24  12 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-RVW  CYS      .        .        RVW      .        .
+ bond_CYS-SG_=_RVW-S1
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_RVW
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ RVW           S1     S    SH1       0.000     16.173  -14.737   -3.592
+ RVW           HS1    H    H         0.000     16.314  -14.667   -2.270
+ RVW           C5     C    CH1       0.000     17.795  -14.956   -4.369
+ RVW           H5     H    H         0.000     18.397  -14.067   -4.136
+ RVW           O1     O    O2        0.000     17.672  -15.034   -5.792
+ RVW           C3     C    CH1       0.000     16.932  -16.190   -6.236
+ RVW           H3     H    H         0.000     15.946  -16.191   -5.750
+ RVW           C6     C    CH2       0.000     16.741  -16.082   -7.743
+ RVW           H61    H    H         0.000     16.185  -16.959   -8.081
+ RVW           H62    H    H         0.000     17.726  -16.073   -8.213
+ RVW           O5     O    OH1       0.000     16.031  -14.900   -8.103
+ RVW           HO5    H    H         0.000     15.929  -14.867   -9.064
+ RVW           C1     C    CH1       0.000     17.670  -17.474   -5.862
+ RVW           H1     H    H         0.000     18.640  -17.496   -6.377
+ RVW           O2     O    OH1       0.000     16.923  -18.614   -6.229
+ RVW           HO2    H    H         0.000     17.413  -19.408   -5.981
+ RVW           C2     C    CH1       0.000     17.903  -17.468   -4.348
+ RVW           H2     H    H         0.000     16.924  -17.543   -3.854
+ RVW           O3     O    OH1       0.000     18.682  -18.590   -3.951
+ RVW           HO3    H    H         0.000     18.815  -18.565   -2.994
+ RVW           C4     C    CH1       0.000     18.566  -16.170   -3.887
+ RVW           H4     H    H         0.000     19.585  -16.128   -4.297
+ RVW           O4     O    OH1       0.000     18.643  -16.170   -2.465
+ RVW           HO4    H    H         0.000     19.061  -15.352   -2.167
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ RVW      S1     n/a    C5     START
+ RVW      HS1    S1     .      .
+ RVW      C5     S1     O1     .
+ RVW      H5     C5     .      .
+ RVW      O1     C5     C3     .
+ RVW      C3     O1     C1     .
+ RVW      H3     C3     .      .
+ RVW      C6     C3     O5     .
+ RVW      H61    C6     .      .
+ RVW      H62    C6     .      .
+ RVW      O5     C6     HO5    .
+ RVW      HO5    O5     .      .
+ RVW      C1     C3     C2     .
+ RVW      H1     C1     .      .
+ RVW      O2     C1     HO2    .
+ RVW      HO2    O2     .      .
+ RVW      C2     C1     C4     .
+ RVW      H2     C2     .      .
+ RVW      O3     C2     HO3    .
+ RVW      HO3    O3     .      .
+ RVW      C4     C2     O4     .
+ RVW      H4     C4     .      .
+ RVW      O4     C4     HO4    .
+ RVW      HO4    O4     .      END
+ RVW      C4     C5     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ RVW      C4     C5        single      1.524    0.020
+ RVW      C4     C2        single      1.524    0.020
+ RVW      O4     C4        single      1.432    0.020
+ RVW      O1     C5        single      1.426    0.020
+ RVW      C5     S1        single      1.790    0.020
+ RVW      C6     C3        single      1.524    0.020
+ RVW      O5     C6        single      1.432    0.020
+ RVW      C2     C1        single      1.524    0.020
+ RVW      C1     C3        single      1.524    0.020
+ RVW      O2     C1        single      1.432    0.020
+ RVW      O3     C2        single      1.432    0.020
+ RVW      C3     O1        single      1.426    0.020
+ RVW      H4     C4        single      1.099    0.020
+ RVW      H5     C5        single      1.099    0.020
+ RVW      H61    C6        single      1.092    0.020
+ RVW      H62    C6        single      1.092    0.020
+ RVW      H1     C1        single      1.099    0.020
+ RVW      H2     C2        single      1.099    0.020
+ RVW      H3     C3        single      1.099    0.020
+ RVW      HO2    O2        single      0.967    0.020
+ RVW      HO3    O3        single      0.967    0.020
+ RVW      HO4    O4        single      0.967    0.020
+ RVW      HO5    O5        single      0.967    0.020
+ RVW      HS1    S1        single      1.330    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ RVW      HS1    S1     C5      109.500    3.000
+ RVW      S1     C5     H5      109.500    3.000
+ RVW      S1     C5     O1      109.500    3.000
+ RVW      S1     C5     C4      109.500    3.000
+ RVW      H5     C5     O1      109.470    3.000
+ RVW      H5     C5     C4      108.340    3.000
+ RVW      O1     C5     C4      109.470    3.000
+ RVW      C5     O1     C3      111.800    3.000
+ RVW      O1     C3     H3      109.470    3.000
+ RVW      O1     C3     C6      109.470    3.000
+ RVW      O1     C3     C1      109.470    3.000
+ RVW      H3     C3     C6      108.340    3.000
+ RVW      H3     C3     C1      108.340    3.000
+ RVW      C6     C3     C1      111.000    3.000
+ RVW      C3     C6     H61     109.470    3.000
+ RVW      C3     C6     H62     109.470    3.000
+ RVW      C3     C6     O5      109.470    3.000
+ RVW      H61    C6     H62     107.900    3.000
+ RVW      H61    C6     O5      109.470    3.000
+ RVW      H62    C6     O5      109.470    3.000
+ RVW      C6     O5     HO5     109.470    3.000
+ RVW      C3     C1     H1      108.340    3.000
+ RVW      C3     C1     O2      109.470    3.000
+ RVW      C3     C1     C2      111.000    3.000
+ RVW      H1     C1     O2      109.470    3.000
+ RVW      H1     C1     C2      108.340    3.000
+ RVW      O2     C1     C2      109.470    3.000
+ RVW      C1     O2     HO2     109.470    3.000
+ RVW      C1     C2     H2      108.340    3.000
+ RVW      C1     C2     O3      109.470    3.000
+ RVW      C1     C2     C4      111.000    3.000
+ RVW      H2     C2     O3      109.470    3.000
+ RVW      H2     C2     C4      108.340    3.000
+ RVW      O3     C2     C4      109.470    3.000
+ RVW      C2     O3     HO3     109.470    3.000
+ RVW      C2     C4     H4      108.340    3.000
+ RVW      C2     C4     O4      109.470    3.000
+ RVW      C2     C4     C5      111.000    3.000
+ RVW      H4     C4     O4      109.470    3.000
+ RVW      H4     C4     C5      108.340    3.000
+ RVW      O4     C4     C5      109.470    3.000
+ RVW      C4     O4     HO4     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ RVW      var_1            HS1    S1     C5     O1               180.000           20.000   3
+ RVW      var_2            S1     C5     O1     C3               -64.426           20.000   3
+ RVW      var_3            C5     O1     C3     C1               -64.001           20.000   3
+ RVW      var_4            O1     C3     C6     O5               180.000           20.000   3
+ RVW      var_5            C3     C6     O5     HO5              180.000           20.000   3
+ RVW      var_6            O1     C3     C1     C2               180.000           20.000   3
+ RVW      var_7            C3     C1     O2     HO2              180.000           20.000   3
+ RVW      var_8            C3     C1     C2     C4               180.000           20.000   3
+ RVW      var_9            C1     C2     O3     HO3              180.000           20.000   3
+ RVW      var_10           C1     C2     C4     O4               180.000           20.000   3
+ RVW      var_11           C2     C4     C5     S1               180.000           20.000   3
+ RVW      var_12           C2     C4     O4     HO4              180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ RVW      chir_01          C4     C5     C2     O4        positiv
+ RVW      chir_02          C5     C4     O1     S1        negativ
+ RVW      chir_03          C1     C2     C3     O2        positiv
+ RVW      chir_04          C2     C4     C1     O3        negativ
+ RVW      chir_05          C3     C6     C1     O1        negativ
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-RVW
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-RVW  1 SG      2 S1        .           2.020    0.020
+# ------------------------------------------------------

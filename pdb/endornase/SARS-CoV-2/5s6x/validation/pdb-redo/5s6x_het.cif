@@ -1,0 +1,176 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WUG      WUG '.                                   ' .                  19   9 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WUG
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WUG           N05    N    NT2       0.000      5.429  -79.574   21.013
+ WUG           H051   H    H         0.000      5.655  -79.650   20.009
+ WUG           H052   H    H         0.000      4.994  -80.105   21.783
+ WUG           C04    C    CH2       0.000      5.875  -78.278   21.512
+ WUG           H041   H    H         0.000      6.592  -78.452   22.317
+ WUG           H042   H    H         0.000      5.006  -77.748   21.908
+ WUG           C03    C    CR5       0.000      6.529  -77.440   20.420
+ WUG           N06    N    NRD5      0.000      7.585  -77.777   19.708
+ WUG           C07    C    CR5       0.000      7.801  -76.804   18.841
+ WUG           C08    C    CH3       0.000      8.911  -76.754   17.790
+ WUG           H083   H    H         0.000      9.858  -76.796   18.266
+ WUG           H082   H    H         0.000      8.816  -77.578   17.129
+ WUG           H081   H    H         0.000      8.839  -75.852   17.236
+ WUG           N09    N    NRD5      0.000      6.895  -75.858   19.013
+ WUG           C02    C    CR5       0.000      6.090  -76.203   19.982
+ WUG           C01    C    CH3       0.000      4.879  -75.405   20.462
+ WUG           H013   H    H         0.000      5.191  -74.448   20.797
+ WUG           H012   H    H         0.000      4.189  -75.288   19.665
+ WUG           H011   H    H         0.000      4.406  -75.918   21.261
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WUG      N05    n/a    C04    START
+ WUG      H051   N05    .      .
+ WUG      H052   N05    .      .
+ WUG      C04    N05    C03    .
+ WUG      H041   C04    .      .
+ WUG      H042   C04    .      .
+ WUG      C03    C04    N06    .
+ WUG      N06    C03    C07    .
+ WUG      C07    N06    N09    .
+ WUG      C08    C07    H081   .
+ WUG      H083   C08    .      .
+ WUG      H082   C08    .      .
+ WUG      H081   C08    .      .
+ WUG      N09    C07    C02    .
+ WUG      C02    N09    C01    .
+ WUG      C01    C02    H011   .
+ WUG      H013   C01    .      .
+ WUG      H012   C01    .      .
+ WUG      H011   C01    .      END
+ WUG      C02    C03    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WUG      C01    C02       single      1.506    0.020
+ WUG      C02    C03       aromatic    1.390    0.020
+ WUG      C02    N09       aromatic    1.350    0.020
+ WUG      C03    C04       single      1.510    0.020
+ WUG      N06    C03       aromatic    1.350    0.020
+ WUG      C04    N05       single      1.472    0.020
+ WUG      C07    N06       aromatic    1.350    0.020
+ WUG      C08    C07       single      1.506    0.020
+ WUG      N09    C07       deloc       1.350    0.020
+ WUG      H011   C01       single      1.059    0.020
+ WUG      H012   C01       single      1.059    0.020
+ WUG      H013   C01       single      1.059    0.020
+ WUG      H041   C04       single      1.092    0.020
+ WUG      H042   C04       single      1.092    0.020
+ WUG      H051   N05       single      1.033    0.020
+ WUG      H052   N05       single      1.033    0.020
+ WUG      H081   C08       single      1.059    0.020
+ WUG      H082   C08       single      1.059    0.020
+ WUG      H083   C08       single      1.059    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WUG      H051   N05    H052    109.500    3.000
+ WUG      H051   N05    C04     109.500    3.000
+ WUG      H052   N05    C04     109.500    3.000
+ WUG      N05    C04    H041    109.500    3.000
+ WUG      N05    C04    H042    109.500    3.000
+ WUG      N05    C04    C03     109.500    3.000
+ WUG      H041   C04    H042    107.900    3.000
+ WUG      H041   C04    C03     109.470    3.000
+ WUG      H042   C04    C03     109.470    3.000
+ WUG      C04    C03    N06     126.000    3.000
+ WUG      C04    C03    C02     126.000    3.000
+ WUG      N06    C03    C02     108.000    3.000
+ WUG      C03    N06    C07     108.000    3.000
+ WUG      N06    C07    C08     126.000    3.000
+ WUG      N06    C07    N09     108.000    3.000
+ WUG      C08    C07    N09     126.000    3.000
+ WUG      C07    C08    H083    109.470    3.000
+ WUG      C07    C08    H082    109.470    3.000
+ WUG      C07    C08    H081    109.470    3.000
+ WUG      H083   C08    H082    109.470    3.000
+ WUG      H083   C08    H081    109.470    3.000
+ WUG      H082   C08    H081    109.470    3.000
+ WUG      C07    N09    C02     108.000    3.000
+ WUG      N09    C02    C01     126.000    3.000
+ WUG      N09    C02    C03     108.000    3.000
+ WUG      C01    C02    C03     126.000    3.000
+ WUG      C02    C01    H013    109.470    3.000
+ WUG      C02    C01    H012    109.470    3.000
+ WUG      C02    C01    H011    109.470    3.000
+ WUG      H013   C01    H012    109.470    3.000
+ WUG      H013   C01    H011    109.470    3.000
+ WUG      H012   C01    H011    109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WUG      var_1            H052   N05    C04    C03              180.000           20.000   3
+ WUG      var_2            N05    C04    C03    N06                0.000           20.000   2
+ WUG      CONST_1          C04    C03    N06    C07                0.000            0.000   0
+ WUG      CONST_2          C03    N06    C07    N09                0.000            0.000   0
+ WUG      var_3            N06    C07    C08    H081             180.000           20.000   3
+ WUG      CONST_3          N06    C07    N09    C02                0.000            0.000   0
+ WUG      CONST_4          C07    N09    C02    C01                0.000            0.000   0
+ WUG      CONST_5          N09    C02    C03    C04                0.000            0.000   0
+ WUG      var_4            N09    C02    C01    H011             180.000           20.000   3
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WUG      plan-1            C02       0.020
+ WUG      plan-1            C01       0.020
+ WUG      plan-1            C03       0.020
+ WUG      plan-1            N09       0.020
+ WUG      plan-1            N06       0.020
+ WUG      plan-1            C07       0.020
+ WUG      plan-1            C04       0.020
+ WUG      plan-1            C08       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

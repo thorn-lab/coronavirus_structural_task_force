@@ -1,0 +1,254 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WUV      WUV '.                                   ' .                  29  17 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WUV
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WUV           O14    O    O         0.000      3.016  -96.899   21.743
+ WUV           C13    C    CR6       0.000      4.072  -96.655   21.253
+ WUV           N15    N    NRD6      0.000      4.845  -95.682   21.734
+ WUV           C16    C    CR6       0.000      6.034  -95.447   21.191
+ WUV           O17    O    OH1       0.000      6.708  -94.565   21.571
+ WUV           HO17   H    H         0.000      7.505  -94.580   21.049
+ WUV           C02    C    CR6       0.000      6.494  -96.184   20.136
+ WUV           C01    C    CH3       0.000      7.865  -95.889   19.536
+ WUV           H013   H    H         0.000      7.891  -94.891   19.177
+ WUV           H012   H    H         0.000      8.614  -96.014   20.277
+ WUV           H011   H    H         0.000      8.054  -96.554   18.732
+ WUV           C03    C    CR16      0.000      5.675  -97.171   19.655
+ WUV           H03    H    H         0.000      5.977  -97.759   18.797
+ WUV           N04    N    NR6       0.000      4.511  -97.402   20.246
+ WUV           C05    C    CH1       0.000      3.607  -98.393   19.687
+ WUV           H05    H    H         0.000      2.895  -98.771   20.434
+ WUV           O12    O    O2        0.000      4.275  -99.349   19.124
+ WUV           C09    C    C         0.000      3.824  -99.421   17.501
+ WUV           C10    C    CH2       0.000      4.933  -98.994   16.600
+ WUV           H101   H    H         0.000      5.185  -97.957   16.833
+ WUV           H102   H    H         0.000      4.582  -99.059   15.568
+ WUV           S11    S    SH1       0.000      6.413 -100.044   16.809
+ WUV           HS11   H    H         0.000      7.160  -99.416   15.905
+ WUV           C07    C    C         0.000      2.760  -98.685   17.366
+ WUV           O08    O    OH1       0.000      1.532  -99.449   17.665
+ WUV           HO08   H    H         0.000      0.731  -98.894   17.563
+ WUV           C06    C    CH2       0.000      2.880  -97.626   18.506
+ WUV           H062   H    H         0.000      1.901  -97.280   18.844
+ WUV           H061   H    H         0.000      3.483  -96.768   18.202
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WUV      O14    n/a    C13    START
+ WUV      C13    O14    N15    .
+ WUV      N15    C13    C16    .
+ WUV      C16    N15    C02    .
+ WUV      O17    C16    HO17   .
+ WUV      HO17   O17    .      .
+ WUV      C02    C16    C03    .
+ WUV      C01    C02    H011   .
+ WUV      H013   C01    .      .
+ WUV      H012   C01    .      .
+ WUV      H011   C01    .      .
+ WUV      C03    C02    N04    .
+ WUV      H03    C03    .      .
+ WUV      N04    C03    C05    .
+ WUV      C05    N04    O12    .
+ WUV      H05    C05    .      .
+ WUV      O12    C05    C09    .
+ WUV      C09    O12    C07    .
+ WUV      C10    C09    S11    .
+ WUV      H101   C10    .      .
+ WUV      H102   C10    .      .
+ WUV      S11    C10    HS11   .
+ WUV      HS11   S11    .      .
+ WUV      C07    C09    C06    .
+ WUV      O08    C07    HO08   .
+ WUV      HO08   O08    .      .
+ WUV      C06    C07    H061   .
+ WUV      H062   C06    .      .
+ WUV      H061   C06    .      END
+ WUV      C13    N04    .    ADD
+ WUV      C05    C06    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WUV      C10    C09       single      1.510    0.020
+ WUV      S11    C10       single      1.810    0.020
+ WUV      C13    N04       single      1.410    0.020
+ WUV      C13    O14       double      1.250    0.020
+ WUV      N15    C13       aromatic    1.350    0.020
+ WUV      C01    C02       single      1.506    0.020
+ WUV      C03    C02       aromatic    1.390    0.020
+ WUV      C02    C16       aromatic    1.384    0.020
+ WUV      N04    C03       single      1.337    0.020
+ WUV      C05    N04       single      1.465    0.020
+ WUV      C05    C06       single      1.524    0.020
+ WUV      O12    C05       single      1.426    0.020
+ WUV      C06    C07       single      1.510    0.020
+ WUV      O08    C07       single      1.330    0.020
+ WUV      C07    C09       double      1.330    0.020
+ WUV      C09    O12       single      1.454    0.020
+ WUV      C16    N15       deloc       1.350    0.020
+ WUV      O17    C16       single      1.362    0.020
+ WUV      H101   C10       single      1.092    0.020
+ WUV      H102   C10       single      1.092    0.020
+ WUV      H011   C01       single      1.059    0.020
+ WUV      H012   C01       single      1.059    0.020
+ WUV      H013   C01       single      1.059    0.020
+ WUV      H03    C03       single      1.083    0.020
+ WUV      H05    C05       single      1.099    0.020
+ WUV      H061   C06       single      1.092    0.020
+ WUV      H062   C06       single      1.092    0.020
+ WUV      HO08   O08       single      0.967    0.020
+ WUV      HS11   S11       single      1.330    0.020
+ WUV      HO17   O17       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WUV      O14    C13    N15     120.000    3.000
+ WUV      O14    C13    N04     120.000    3.000
+ WUV      N15    C13    N04     120.000    3.000
+ WUV      C13    N15    C16     120.000    3.000
+ WUV      N15    C16    O17     120.000    3.000
+ WUV      N15    C16    C02     120.000    3.000
+ WUV      O17    C16    C02     120.000    3.000
+ WUV      C16    O17    HO17    109.470    3.000
+ WUV      C16    C02    C01     120.000    3.000
+ WUV      C16    C02    C03     120.000    3.000
+ WUV      C01    C02    C03     120.000    3.000
+ WUV      C02    C01    H013    109.470    3.000
+ WUV      C02    C01    H012    109.470    3.000
+ WUV      C02    C01    H011    109.470    3.000
+ WUV      H013   C01    H012    109.470    3.000
+ WUV      H013   C01    H011    109.470    3.000
+ WUV      H012   C01    H011    109.470    3.000
+ WUV      C02    C03    H03     120.000    3.000
+ WUV      C02    C03    N04     120.000    3.000
+ WUV      H03    C03    N04     120.000    3.000
+ WUV      C03    N04    C05     120.000    3.000
+ WUV      C03    N04    C13     120.000    3.000
+ WUV      C05    N04    C13     120.000    3.000
+ WUV      N04    C05    H05     109.470    3.000
+ WUV      N04    C05    O12     109.470    3.000
+ WUV      N04    C05    C06     109.470    3.000
+ WUV      H05    C05    O12     109.470    3.000
+ WUV      H05    C05    C06     108.340    3.000
+ WUV      O12    C05    C06     109.470    3.000
+ WUV      C05    O12    C09     111.800    3.000
+ WUV      O12    C09    C10     120.000    3.000
+ WUV      O12    C09    C07     120.000    3.000
+ WUV      C10    C09    C07     120.000    3.000
+ WUV      C09    C10    H101    109.470    3.000
+ WUV      C09    C10    H102    109.470    3.000
+ WUV      C09    C10    S11     109.500    3.000
+ WUV      H101   C10    H102    107.900    3.000
+ WUV      H101   C10    S11     109.470    3.000
+ WUV      H102   C10    S11     109.470    3.000
+ WUV      C10    S11    HS11     96.000    3.000
+ WUV      C09    C07    O08     120.000    3.000
+ WUV      C09    C07    C06     120.000    3.000
+ WUV      O08    C07    C06     120.500    3.000
+ WUV      C07    O08    HO08    109.470    3.000
+ WUV      C07    C06    H062    109.470    3.000
+ WUV      C07    C06    H061    109.470    3.000
+ WUV      C07    C06    C05     109.470    3.000
+ WUV      H062   C06    H061    107.900    3.000
+ WUV      H062   C06    C05     109.470    3.000
+ WUV      H061   C06    C05     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WUV      CONST_1          O14    C13    N04    C03                0.000            0.000   0
+ WUV      CONST_2          O14    C13    N15    C16                0.000            0.000   0
+ WUV      CONST_3          C13    N15    C16    C02                0.000            0.000   0
+ WUV      var_1            N15    C16    O17    HO17             180.000           20.000   3
+ WUV      CONST_4          N15    C16    C02    C03                0.000            0.000   0
+ WUV      var_2            C16    C02    C01    H011             180.000           20.000   3
+ WUV      CONST_5          C16    C02    C03    N04                0.000            0.000   0
+ WUV      CONST_6          C02    C03    N04    C05                0.000            0.000   0
+ WUV      var_3            C03    N04    C05    O12               32.040           20.000   3
+ WUV      var_4            N04    C05    C06    C07              180.000           20.000   3
+ WUV      var_5            N04    C05    O12    C09             -120.869           20.000   3
+ WUV      var_6            C05    O12    C09    C07              -12.503           20.000   3
+ WUV      var_7            O12    C09    C10    S11              180.000           20.000   3
+ WUV      var_8            C09    C10    S11    HS11             180.000           20.000   3
+ WUV      var_9            O12    C09    C07    C06               27.071           20.000   3
+ WUV      var_10           C09    C07    O08    HO08             180.000           20.000   3
+ WUV      var_11           C09    C07    C06    C05              180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ WUV      chir_01          C05    N04    C06    O12       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WUV      plan-1            C13       0.020
+ WUV      plan-1            N04       0.020
+ WUV      plan-1            O14       0.020
+ WUV      plan-1            N15       0.020
+ WUV      plan-1            C02       0.020
+ WUV      plan-1            C03       0.020
+ WUV      plan-1            C16       0.020
+ WUV      plan-1            C01       0.020
+ WUV      plan-1            H03       0.020
+ WUV      plan-1            C05       0.020
+ WUV      plan-1            O17       0.020
+ WUV      plan-2            C07       0.020
+ WUV      plan-2            C06       0.020
+ WUV      plan-2            O08       0.020
+ WUV      plan-2            C09       0.020
+ WUV      plan-3            C09       0.020
+ WUV      plan-3            C10       0.020
+ WUV      plan-3            C07       0.020
+ WUV      plan-3            O12       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

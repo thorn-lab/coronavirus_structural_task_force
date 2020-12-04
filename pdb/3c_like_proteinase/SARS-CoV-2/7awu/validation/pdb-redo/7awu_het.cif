@@ -1,0 +1,286 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+S8B      S8B '.                                   ' .                  34  20 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_S8B
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ S8B           O1     O    O         0.000      4.940    1.152   28.804
+ S8B           C4     C    C         0.000      6.030    1.314   28.258
+ S8B           N1     N    N         0.000      7.140    1.690   28.897
+ S8B           C2     C    CH1       0.000      7.142    2.433   30.159
+ S8B           H2     H    H         0.000      7.247    1.712   30.982
+ S8B           C3     C    CH3       0.000      8.329    3.372   30.199
+ S8B           H33    H    H         0.000      9.222    2.811   30.121
+ S8B           H32    H    H         0.000      8.265    4.053   29.391
+ S8B           H31    H    H         0.000      8.323    3.905   31.114
+ S8B           C1     C    CH3       0.000      5.835    3.175   30.346
+ S8B           H130   H    H         0.000      5.701    3.856   29.548
+ S8B           H12    H    H         0.000      5.036    2.481   30.358
+ S8B           H11    H    H         0.000      5.859    3.703   31.263
+ S8B           C5     C    CR6       0.000      6.187    1.103   26.772
+ S8B           N2     N    NRD6      0.000      5.095    0.733   26.094
+ S8B           C6     C    CR16      0.000      5.215    0.542   24.774
+ S8B           H6     H    H         0.000      4.336    0.242   24.218
+ S8B           C7     C    CR6       0.000      6.418    0.709   24.074
+ S8B           C8     C    CR16      0.000      7.531    1.094   24.809
+ S8B           H8     H    H         0.000      8.485    1.236   24.316
+ S8B           C9     C    CR16      0.000      7.419    1.295   26.172
+ S8B           H9     H    H         0.000      8.278    1.597   26.759
+ S8B           C10    C    CSP       0.000      6.475    0.487   22.657
+ S8B           C11    C    CSP       0.000      6.490    0.365   21.468
+ S8B           C12    C    CR6       0.000      6.518    0.282   20.035
+ S8B           C16    C    CR16      0.000      5.461    0.758   19.268
+ S8B           H16    H    H         0.000      4.594    1.202   19.741
+ S8B           C15    C    CR16      0.000      5.535    0.655   17.888
+ S8B           H15    H    H         0.000      4.704    1.030   17.303
+ S8B           C13    C    CR16      0.000      7.602   -0.276   19.369
+ S8B           H13    H    H         0.000      8.450   -0.660   19.923
+ S8B           C14    C    CR16      0.000      7.582   -0.334   17.985
+ S8B           H14    H    H         0.000      8.434   -0.772   17.480
+ S8B           N3     N    NRD6      0.000      6.572    0.120   17.238
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ S8B      O1     n/a    C4     START
+ S8B      C4     O1     C5     .
+ S8B      N1     C4     C2     .
+ S8B      C2     N1     C1     .
+ S8B      H2     C2     .      .
+ S8B      C3     C2     H31    .
+ S8B      H33    C3     .      .
+ S8B      H32    C3     .      .
+ S8B      H31    C3     .      .
+ S8B      C1     C2     H11    .
+ S8B      H130   C1     .      .
+ S8B      H12    C1     .      .
+ S8B      H11    C1     .      .
+ S8B      C5     C4     N2     .
+ S8B      N2     C5     C6     .
+ S8B      C6     N2     C7     .
+ S8B      H6     C6     .      .
+ S8B      C7     C6     C10    .
+ S8B      C8     C7     C9     .
+ S8B      H8     C8     .      .
+ S8B      C9     C8     H9     .
+ S8B      H9     C9     .      .
+ S8B      C10    C7     C11    .
+ S8B      C11    C10    C12    .
+ S8B      C12    C11    C13    .
+ S8B      C16    C12    C15    .
+ S8B      H16    C16    .      .
+ S8B      C15    C16    H15    .
+ S8B      H15    C15    .      .
+ S8B      C13    C12    C14    .
+ S8B      H13    C13    .      .
+ S8B      C14    C13    N3     .
+ S8B      H14    C14    .      .
+ S8B      N3     C14    .      END
+ S8B      N3     C15    .    ADD
+ S8B      C5     C9     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ S8B      N1     C4        deloc       1.330    0.020
+ S8B      C2     N1        single      1.455    0.020
+ S8B      N3     C15       aromatic    1.337    0.020
+ S8B      N3     C14       aromatic    1.337    0.020
+ S8B      C5     C4        single      1.500    0.020
+ S8B      C4     O1        double      1.220    0.020
+ S8B      C5     C9        aromatic    1.390    0.020
+ S8B      N2     C5        aromatic    1.350    0.020
+ S8B      C7     C6        aromatic    1.390    0.020
+ S8B      C6     N2        deloc       1.337    0.020
+ S8B      C8     C7        aromatic    1.390    0.020
+ S8B      C10    C7        single      1.285    0.020
+ S8B      C9     C8        aromatic    1.390    0.020
+ S8B      C11    C10       triple      1.180    0.020
+ S8B      C13    C12       aromatic    1.390    0.020
+ S8B      C14    C13       aromatic    1.390    0.020
+ S8B      C15    C16       aromatic    1.390    0.020
+ S8B      C1     C2        single      1.524    0.020
+ S8B      C12    C11       single      1.285    0.020
+ S8B      C16    C12       aromatic    1.390    0.020
+ S8B      C3     C2        single      1.524    0.020
+ S8B      H6     C6        single      1.083    0.020
+ S8B      H8     C8        single      1.083    0.020
+ S8B      H13    C13       single      1.083    0.020
+ S8B      H15    C15       single      1.083    0.020
+ S8B      H11    C1        single      1.059    0.020
+ S8B      H12    C1        single      1.059    0.020
+ S8B      H130   C1        single      1.059    0.020
+ S8B      H14    C14       single      1.083    0.020
+ S8B      H16    C16       single      1.083    0.020
+ S8B      H2     C2        single      1.099    0.020
+ S8B      H31    C3        single      1.059    0.020
+ S8B      H32    C3        single      1.059    0.020
+ S8B      H33    C3        single      1.059    0.020
+ S8B      H9     C9        single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ S8B      O1     C4     N1      123.000    3.000
+ S8B      O1     C4     C5      120.500    3.000
+ S8B      N1     C4     C5      120.000    3.000
+ S8B      C4     N1     C2      121.000    3.000
+ S8B      N1     C2     H2      109.470    3.000
+ S8B      N1     C2     C3      109.500    3.000
+ S8B      N1     C2     C1      109.500    3.000
+ S8B      H2     C2     C3      108.340    3.000
+ S8B      H2     C2     C1      108.340    3.000
+ S8B      C3     C2     C1      111.000    3.000
+ S8B      C2     C3     H33     109.470    3.000
+ S8B      C2     C3     H32     109.470    3.000
+ S8B      C2     C3     H31     109.470    3.000
+ S8B      H33    C3     H32     109.470    3.000
+ S8B      H33    C3     H31     109.470    3.000
+ S8B      H32    C3     H31     109.470    3.000
+ S8B      C2     C1     H130    109.470    3.000
+ S8B      C2     C1     H12     109.470    3.000
+ S8B      C2     C1     H11     109.470    3.000
+ S8B      H130   C1     H12     109.470    3.000
+ S8B      H130   C1     H11     109.470    3.000
+ S8B      H12    C1     H11     109.470    3.000
+ S8B      C4     C5     N2      120.000    3.000
+ S8B      C4     C5     C9      120.000    3.000
+ S8B      N2     C5     C9      120.000    3.000
+ S8B      C5     N2     C6      120.000    3.000
+ S8B      N2     C6     H6      120.000    3.000
+ S8B      N2     C6     C7      120.000    3.000
+ S8B      H6     C6     C7      120.000    3.000
+ S8B      C6     C7     C8      120.000    3.000
+ S8B      C6     C7     C10     120.000    3.000
+ S8B      C8     C7     C10     120.000    3.000
+ S8B      C7     C8     H8      120.000    3.000
+ S8B      C7     C8     C9      120.000    3.000
+ S8B      H8     C8     C9      120.000    3.000
+ S8B      C8     C9     H9      120.000    3.000
+ S8B      C8     C9     C5      120.000    3.000
+ S8B      H9     C9     C5      120.000    3.000
+ S8B      C7     C10    C11     180.000    3.000
+ S8B      C10    C11    C12     180.000    3.000
+ S8B      C11    C12    C16     120.000    3.000
+ S8B      C11    C12    C13     120.000    3.000
+ S8B      C16    C12    C13     120.000    3.000
+ S8B      C12    C16    H16     120.000    3.000
+ S8B      C12    C16    C15     120.000    3.000
+ S8B      H16    C16    C15     120.000    3.000
+ S8B      C16    C15    H15     120.000    3.000
+ S8B      C16    C15    N3      120.000    3.000
+ S8B      H15    C15    N3      120.000    3.000
+ S8B      C12    C13    H13     120.000    3.000
+ S8B      C12    C13    C14     120.000    3.000
+ S8B      H13    C13    C14     120.000    3.000
+ S8B      C13    C14    H14     120.000    3.000
+ S8B      C13    C14    N3      120.000    3.000
+ S8B      H14    C14    N3      120.000    3.000
+ S8B      C14    N3     C15     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ S8B      CONST_1          O1     C4     N1     C2               180.000            0.000   0
+ S8B      var_1            C4     N1     C2     C1                 0.000           20.000   3
+ S8B      var_2            N1     C2     C3     H31              180.000           20.000   3
+ S8B      var_3            N1     C2     C1     H11              180.000           20.000   3
+ S8B      var_4            O1     C4     C5     N2                -0.182           20.000   3
+ S8B      CONST_2          C4     C5     C9     C8                 0.000            0.000   0
+ S8B      CONST_3          C4     C5     N2     C6                 0.000            0.000   0
+ S8B      CONST_4          C5     N2     C6     C7                 0.000            0.000   0
+ S8B      CONST_5          N2     C6     C7     C10                0.000            0.000   0
+ S8B      CONST_6          C6     C7     C8     C9                 0.000            0.000   0
+ S8B      CONST_7          C7     C8     C9     C5                 0.000            0.000   0
+ S8B      var_5            C6     C7     C10    C11               76.053           20.000   3
+ S8B      var_6            C7     C10    C11    C12               96.174           20.000   3
+ S8B      var_7            C10    C11    C12    C13             -144.114           20.000   3
+ S8B      CONST_8          C11    C12    C16    C15                0.000            0.000   0
+ S8B      CONST_9          C12    C16    C15    N3                 0.000            0.000   0
+ S8B      CONST_10         C11    C12    C13    C14                0.000            0.000   0
+ S8B      CONST_11         C12    C13    C14    N3                 0.000            0.000   0
+ S8B      CONST_12         C13    C14    N3     C15                0.000            0.000   0
+ S8B      CONST_13         C14    N3     C15    C16                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ S8B      chir_01          C2     N1     C1     C3        positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ S8B      plan-1            N1        0.020
+ S8B      plan-1            C4        0.020
+ S8B      plan-1            C2        0.020
+ S8B      plan-1            C5        0.020
+ S8B      plan-1            O1        0.020
+ S8B      plan-2            N3        0.020
+ S8B      plan-2            C15       0.020
+ S8B      plan-2            C14       0.020
+ S8B      plan-2            C13       0.020
+ S8B      plan-2            C12       0.020
+ S8B      plan-2            C16       0.020
+ S8B      plan-2            H13       0.020
+ S8B      plan-2            H15       0.020
+ S8B      plan-2            C11       0.020
+ S8B      plan-2            H14       0.020
+ S8B      plan-2            H16       0.020
+ S8B      plan-3            C5        0.020
+ S8B      plan-3            C4        0.020
+ S8B      plan-3            C9        0.020
+ S8B      plan-3            N2        0.020
+ S8B      plan-3            C6        0.020
+ S8B      plan-3            C7        0.020
+ S8B      plan-3            C8        0.020
+ S8B      plan-3            H6        0.020
+ S8B      plan-3            C10       0.020
+ S8B      plan-3            H8        0.020
+ S8B      plan-3            H9        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
