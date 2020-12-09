@@ -26,7 +26,7 @@ except FileNotFoundError:
     print("Dropbox folder not found, you can find update info in the Update_pipeline folder")
     dropbox_path = ""
 
-seq_fasta = list(SeqIO.parse("/afs/physnet.uni-hamburg.de/users/thornlab/knolte/ThornAG/coronavirus_structural_task_force/utils/Update_pipeline/Fasta_files/seq_SARS_2.fasta", "fasta"))
+seq_fasta = list(SeqIO.parse("Fasta_files/seq_SARS_2.fasta", "fasta"))
 
 print("Starting the Wednesday-Update")
 all_pdb_id = ID_getter.main(repo_path)
