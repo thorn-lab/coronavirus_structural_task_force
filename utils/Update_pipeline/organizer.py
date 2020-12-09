@@ -1,6 +1,7 @@
 import requests
 import os
 root = "/afs/physnet.uni-hamburg.de/users/thornlab/knolte/ThornAG/coronavirus_structural_task_force/utils/Update_pipeline"
+#root = "/home/yunyun/Works/convid/pdb/coronavirus_structural_task_force/utils/Update_pipeline"
 #name the IDs you want to sort in this format "ID,ID,ID"
 
 def mk_dir(dir_path):
