@@ -18,7 +18,7 @@ The folders are named after the protein_name and the taxo_names in the fasta. Yo
 
 time = datetime.datetime.now()
 time = time.strftime("%d_%m")
-time = "2020-12-04"
+time = "2020-12-09"
 repo_path = osp.abspath(osp.join(__file__ ,"../../..","pdb"))
 
 try: dropbox_path = "/Users/kristophernolte/Dropbox (University of Wuerzburg)/insidecorona_thornlab/task_force/"
