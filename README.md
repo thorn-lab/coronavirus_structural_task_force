@@ -77,7 +77,7 @@ Data resources held at EMBL-EBI relating to the COVID-19 outbreak, including seq
 http://www.hecbiosim.ac.uk/covid-19<br>
 Links for covid19 related research that falls into biomolecular modelling and simulation <br><br>
 https://www.rcsb.org/news?year=2020&article=5e74d55d2d410731e9944f52&feature=true<br>
-Varius links to COVID-19/SARS-CoV-2 Resources from RCSB PDB<br><br>
+Various links to COVID-19/SARS-CoV-2 Resources from RCSB PDB<br><br>
 https://www.compbiomed.eu/compbiomed-and-coronavirus/<br>
 CompBioMed is a consortium redirecting research effort and funding to computational investigations that will improve our understanding of the SARS-CoV-2 virus, COVID-19, and accelerate the development of treatment options, including antiviral drugs and vaccines.<br><br>
 http://predictioncenter.org/caspcommons/index.cgi<br>
