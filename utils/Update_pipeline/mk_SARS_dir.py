@@ -17,8 +17,7 @@ The folders are named after the protein_name and the taxo_names in the fasta. Yo
 '''
 
 time = datetime.datetime.now()
-time = time.strftime("%d_%m")
-time = "2020-12-04"
+time = "20"+time.strftime("%y-%m-%d")
 repo_path = osp.abspath(osp.join(__file__ ,"../../..","pdb"))
 
 try: dropbox_path = "/Users/kristophernolte/Dropbox (University of Wuerzburg)/insidecorona_thornlab/task_force/"
@@ -26,7 +25,7 @@ except FileNotFoundError:
     print("Dropbox folder not found, you can find update info in the Update_pipeline folder")
     dropbox_path = ""
 
-seq_fasta = list(SeqIO.parse("/afs/physnet.uni-hamburg.de/users/thornlab/knolte/ThornAG/coronavirus_structural_task_force/utils/Update_pipeline/Fasta_files/seq_SARS_2.fasta", "fasta"))
+seq_fasta = list(SeqIO.parse("Fasta_files/seq_SARS_2.fasta", "fasta"))
 
 print("Starting the Wednesday-Update")
 all_pdb_id = ID_getter.main(repo_path)
@@ -41,6 +40,7 @@ def mk_dir(dir_path):
         pass
 
 def get_mtz (element, target):
+    print("downloading mtz {}".format(str(element)))
     #downloads the mtz data
     url = "http://edmaps.rcsb.org/coefficients/{}.mtz".format(element)
     r = requests.get(url)
@@ -48,6 +48,7 @@ def get_mtz (element, target):
         f.write(r.content)
 
 def get_pdb (element,target,format):
+    print("downloading pdb/cif {}".format(str(element)))
     #downloads from pdb
     url = "https://files.rcsb.org/download/{}.{}".format(element,format)
     r = requests.get(url)
@@ -114,7 +115,7 @@ def main():
                 for element in match:
                     mk_dir(target+os.sep+element)
                     # downloading files
-                    get_mtz(element,target)
+                    #get_mtz(element,target)
                     get_pdb(element,target,"pdb")
                     get_pdb(element,target,"cif")
                 is_sorted += match
