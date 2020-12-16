@@ -2,9 +2,7 @@ import requests
 from datetime import date, timedelta
 import json
 yesterday = date.today() - timedelta(days=1)
-time = yesterday.strftime('%y-%m-%d')
-time = "2020-12-08"
-
+time = "20"+yesterday.strftime('%y-%m-%d')
 
 import os.path as path
 two_up =  path.abspath(path.join(__file__ ,"../../..","pdb"))

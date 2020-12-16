@@ -17,8 +17,7 @@ The folders are named after the protein_name and the taxo_names in the fasta. Yo
 '''
 
 time = datetime.datetime.now()
-time = time.strftime("%d_%m")
-time = "2020-12-09"
+time = "20"+time.strftime("%y-%m-%d")
 repo_path = osp.abspath(osp.join(__file__ ,"../../..","pdb"))
 
 try: dropbox_path = "/Users/kristophernolte/Dropbox (University of Wuerzburg)/insidecorona_thornlab/task_force/"
@@ -41,6 +40,7 @@ def mk_dir(dir_path):
         pass
 
 def get_mtz (element, target):
+    print("downloading mtz {}".format(str(element)))
     #downloads the mtz data
     url = "http://edmaps.rcsb.org/coefficients/{}.mtz".format(element)
     r = requests.get(url)
@@ -48,6 +48,7 @@ def get_mtz (element, target):
         f.write(r.content)
 
 def get_pdb (element,target,format):
+    print("downloading pdb/cif {}".format(str(element)))
     #downloads from pdb
     url = "https://files.rcsb.org/download/{}.{}".format(element,format)
     r = requests.get(url)
@@ -114,7 +115,7 @@ def main():
                 for element in match:
                     mk_dir(target+os.sep+element)
                     # downloading files
-                    get_mtz(element,target)
+                    #get_mtz(element,target)
                     get_pdb(element,target,"pdb")
                     get_pdb(element,target,"cif")
                 is_sorted += match
