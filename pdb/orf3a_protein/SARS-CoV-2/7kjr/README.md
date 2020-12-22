@@ -20,7 +20,7 @@
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/orf3a_protein/SARS-CoV-2/7kjr/validation/molprobity)   
+**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/orf3a_protein/SARS-CoV-2/7kjr/validation/molprobity)   [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/orf3a_protein/SARS-CoV-2/7kjr/validation/ccpem-validation)
 
 
 

@@ -1,4 +1,4 @@
-# PDB 7jqc
+# PDB 6zol
 
 ## Overview
 
@@ -12,7 +12,7 @@
 
 ## Basefolder
 
-7jqc.pdb and 7jqc.cif - the coordinates of the threedimensional molecular model
+6zol.pdb and 6zol.cif - the coordinates of the threedimensional molecular model
 
 ## Subfolders
 
@@ -20,32 +20,32 @@
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by <br>     [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/leader_protein/SARS-CoV-2/7jqc/validation/ccpem-validation)
+**validation** - contains validation reports. This structure has been analyzed by <br>     [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/leader_protein/SARS-CoV-2/6zol/validation/ccpem-validation)
 
 
 
 ## Maps
 
-Primary map emd_22433.map available. **Click** [here](http://ftp.wwpdb.org/pub/emdb/structures/EMD-22433/map/) 
+Primary map emd_11322.map available. **Click** [here](http://ftp.wwpdb.org/pub/emdb/structures/EMD-11322/map/) 
 
 ## Data Summary
 **Reconstruction Quality and Method**
 
 |   | Reported Resolution | Imposed Symmetry | Number of Particles |
 |---|-------------:|----------------:|--------------:|
-|   |3.3 Å|n/a|48689|
+|   |2.8 Å|n/a|118765|
 
 **Experiments**
 
 |   | Frame Sampling | Electron Dose |
 |---|-------------:|----------------:|
-|   |1.068 Å|50.0 e<sup>-</sup>/Å<sup>2</sup>|
+|   |1.08 Å|60.0 e<sup>-</sup>/Å<sup>2</sup>|
 
 ## HARUSPEX results
 
 Not available. Please contact task force manager to update HARUSPEX results. Write an [issue](https://github.com/thorn-lab/coronavirus_structural_task_force/issues) to us.
 
 ## Other relevant links 
-**PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/7jqc
+**PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/6zol
  
-**PDBr**: https://www.rcsb.org/structure/7jqc 
+**PDBr**: https://www.rcsb.org/structure/6zol 
