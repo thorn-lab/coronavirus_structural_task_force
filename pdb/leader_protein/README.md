@@ -5,6 +5,8 @@
 From: https://www.ncbi.nlm.nih.gov/nuccore/NC_004718.3
 
 ## Useful Information
+InsideCorona Blog: [**Leader Protein**](https://insidecorona.net/the-virus/leader-protein-nsp1/)
+
 Proteome Information: [**leader protein**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/leader_protein/proteome_information.txt)
 
 Potential Glycosalation Sites: [**NetNGlyc**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/leader_protein/NetNGlyc_leader_protein) 
