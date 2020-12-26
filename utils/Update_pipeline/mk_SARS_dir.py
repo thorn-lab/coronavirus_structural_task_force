@@ -115,7 +115,7 @@ def main():
                 for element in match:
                     mk_dir(target+os.sep+element)
                     # downloading files
-                    #get_mtz(element,target)
+                    get_mtz(element,target)
                     get_pdb(element,target,"pdb")
                     get_pdb(element,target,"cif")
                 is_sorted += match
@@ -148,7 +148,7 @@ def main():
     RMSD_pipeline.main(id_dict, repo_path)
     print("{} new structures".format(len(pdb_id)))
     #Download not assigned
-    organizer.main(not_assigned.split(" "), "not_assigned")
+    #organizer.main(not_assigned.split(" "), "not_assigned")
 
 
 def twice_assigned (pdb_id, id_dict):
