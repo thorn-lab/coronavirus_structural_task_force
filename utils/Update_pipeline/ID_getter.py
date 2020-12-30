@@ -3,7 +3,6 @@ from datetime import date, timedelta
 import json
 yesterday = date.today() - timedelta(days=1)
 time = "20"+yesterday.strftime('%y-%m-%d')
-time = "2020-12-22"
 
 import os.path as path
 two_up =  path.abspath(path.join(__file__ ,"../../..","pdb"))
