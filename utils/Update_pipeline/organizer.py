@@ -1,8 +1,5 @@
 import requests
 import os
-root = ""
-#root = "/home/yunyun/Works/convid/pdb/coronavirus_structural_task_force/utils/Update_pipeline"
-#name the IDs you want to sort in this format "ID,ID,ID"
 
 def mk_dir(dir_path):
     #function to create new folders
@@ -25,10 +22,8 @@ def get_pdb (element,target,format):
     with open(target+os.sep+"{}/{}.{}".format(element,element,format), 'wb') as f:
         f.write(r.content)
 
-def main(pdb_id, name):
-    target=root+os.sep+name
-    mk_dir(target)
-    target += os.sep + name
+def main(repo_path, pdb_id, name):
+    target = repo_path+os.sep+name
     mk_dir(target)
     for element in pdb_id:
         mk_dir(target+os.sep+element)
