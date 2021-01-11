@@ -1,0 +1,193 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+W4S      W4S '.                                   ' .                  19  11 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_W4S
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ W4S           N07    N    NH2       0.000    -47.947  -29.003    7.154
+ W4S           H071   H    H         0.000    -47.984  -29.002    8.185
+ W4S           H072   H    H         0.000    -48.858  -28.957    6.671
+ W4S           C06    C    CR6       0.000    -46.676  -29.066    6.419
+ W4S           N08    N    NRD6      0.000    -45.524  -29.124    7.107
+ W4S           C09    C    CR16      0.000    -44.373  -29.171    6.448
+ W4S           H09    H    H         0.000    -43.457  -29.207    7.025
+ W4S           N10    N    NRD6      0.000    -44.279  -29.177    5.144
+ W4S           C11    C    CR56      0.000    -45.428  -29.143    4.407
+ W4S           C05    C    CR56      0.000    -46.667  -29.078    4.993
+ W4S           C04    C    CR15      0.000    -47.606  -29.021    3.931
+ W4S           H04    H    H         0.000    -48.684  -28.959    4.012
+ W4S           N02    N    NR5       0.000    -45.557  -29.137    3.090
+ W4S           C03    C    CR15      0.000    -46.843  -29.062    2.754
+ W4S           H03    H    H         0.000    -47.234  -29.037    1.744
+ W4S           C01    C    CH3       0.000    -44.380  -29.199    2.323
+ W4S           H013   H    H         0.000    -43.783  -28.364    2.559
+ W4S           H012   H    H         0.000    -43.873  -30.091    2.560
+ W4S           H011   H    H         0.000    -44.644  -29.186    1.304
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ W4S      N07    n/a    C06    START
+ W4S      H071   N07    .      .
+ W4S      H072   N07    .      .
+ W4S      C06    N07    N08    .
+ W4S      N08    C06    C09    .
+ W4S      C09    N08    N10    .
+ W4S      H09    C09    .      .
+ W4S      N10    C09    C11    .
+ W4S      C11    N10    N02    .
+ W4S      C05    C11    C04    .
+ W4S      C04    C05    H04    .
+ W4S      H04    C04    .      .
+ W4S      N02    C11    C01    .
+ W4S      C03    N02    H03    .
+ W4S      H03    C03    .      .
+ W4S      C01    N02    H011   .
+ W4S      H013   C01    .      .
+ W4S      H012   C01    .      .
+ W4S      H011   C01    .      END
+ W4S      C03    C04    .    ADD
+ W4S      C05    C06    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ W4S      C01    N02       single      1.485    0.020
+ W4S      C03    C04       aromatic    1.380    0.020
+ W4S      C03    N02       single      1.337    0.020
+ W4S      C04    C05       aromatic    1.440    0.020
+ W4S      C05    C06       aromatic    1.390    0.020
+ W4S      C05    C11       aromatic    1.390    0.020
+ W4S      C06    N07       single      1.355    0.020
+ W4S      N08    C06       aromatic    1.350    0.020
+ W4S      C09    N08       aromatic    1.337    0.020
+ W4S      N10    C09       aromatic    1.337    0.020
+ W4S      N02    C11       single      1.337    0.020
+ W4S      C11    N10       aromatic    1.355    0.020
+ W4S      H011   C01       single      1.059    0.020
+ W4S      H012   C01       single      1.059    0.020
+ W4S      H013   C01       single      1.059    0.020
+ W4S      H03    C03       single      1.083    0.020
+ W4S      H04    C04       single      1.083    0.020
+ W4S      H09    C09       single      1.083    0.020
+ W4S      H071   N07       single      1.010    0.020
+ W4S      H072   N07       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ W4S      H071   N07    H072    120.000    3.000
+ W4S      H071   N07    C06     120.000    3.000
+ W4S      H072   N07    C06     120.000    3.000
+ W4S      N07    C06    N08     120.000    3.000
+ W4S      N07    C06    C05     120.000    3.000
+ W4S      N08    C06    C05     120.000    3.000
+ W4S      C06    N08    C09     120.000    3.000
+ W4S      N08    C09    H09     120.000    3.000
+ W4S      N08    C09    N10     120.000    3.000
+ W4S      H09    C09    N10     120.000    3.000
+ W4S      C09    N10    C11     120.000    3.000
+ W4S      N10    C11    C05     120.000    3.000
+ W4S      N10    C11    N02     132.000    3.000
+ W4S      C05    C11    N02     108.000    3.000
+ W4S      C11    C05    C04     120.000    3.000
+ W4S      C11    C05    C06     120.000    3.000
+ W4S      C04    C05    C06     132.000    3.000
+ W4S      C05    C04    H04     108.000    3.000
+ W4S      C05    C04    C03     108.000    3.000
+ W4S      H04    C04    C03     126.000    3.000
+ W4S      C11    N02    C03     108.000    3.000
+ W4S      C11    N02    C01     126.000    3.000
+ W4S      C03    N02    C01     126.000    3.000
+ W4S      N02    C03    H03     126.000    3.000
+ W4S      N02    C03    C04     108.000    3.000
+ W4S      H03    C03    C04     126.000    3.000
+ W4S      N02    C01    H013    109.470    3.000
+ W4S      N02    C01    H012    109.470    3.000
+ W4S      N02    C01    H011    109.470    3.000
+ W4S      H013   C01    H012    109.470    3.000
+ W4S      H013   C01    H011    109.470    3.000
+ W4S      H012   C01    H011    109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ W4S      CONST_1          H072   N07    C06    N08              180.000            0.000   0
+ W4S      CONST_2          N07    C06    N08    C09                0.000            0.000   0
+ W4S      CONST_3          C06    N08    C09    N10                0.000            0.000   0
+ W4S      CONST_4          N08    C09    N10    C11                0.000            0.000   0
+ W4S      CONST_5          C09    N10    C11    N02              180.000            0.000   0
+ W4S      CONST_6          N10    C11    C05    C04              180.000            0.000   0
+ W4S      CONST_7          C11    C05    C06    N07              180.000            0.000   0
+ W4S      CONST_8          C11    C05    C04    C03                0.219            0.000   0
+ W4S      CONST_9          N10    C11    N02    C01              180.000            0.000   0
+ W4S      CONST_10         C11    N02    C03    C04              180.000            0.000   0
+ W4S      CONST_11         N02    C03    C04    C05               -0.000            0.000   0
+ W4S      var_1            C11    N02    C01    H011             180.000           20.000   3
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ W4S      plan-1            C03       0.020
+ W4S      plan-1            C04       0.020
+ W4S      plan-1            N02       0.020
+ W4S      plan-1            H03       0.020
+ W4S      plan-1            C05       0.020
+ W4S      plan-1            H04       0.020
+ W4S      plan-1            C06       0.020
+ W4S      plan-1            C11       0.020
+ W4S      plan-1            C09       0.020
+ W4S      plan-1            N08       0.020
+ W4S      plan-1            N10       0.020
+ W4S      plan-1            N07       0.020
+ W4S      plan-1            H09       0.020
+ W4S      plan-1            C01       0.020
+ W4S      plan-1            H071      0.020
+ W4S      plan-1            H072      0.020
+ W4S      plan-2            N07       0.020
+ W4S      plan-2            C06       0.020
+ W4S      plan-2            H071      0.020
+ W4S      plan-2            H072      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

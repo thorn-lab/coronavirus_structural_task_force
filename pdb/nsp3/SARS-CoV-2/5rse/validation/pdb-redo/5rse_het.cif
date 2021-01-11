@@ -1,0 +1,227 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+W5P      W5P '.                                   ' .                  22  16 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_W5P
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ W5P           F01    F    F         0.000    -46.960  -31.239    1.651
+ W5P           C02    C    C         0.000    -45.938  -30.904    0.954
+ W5P           C07    C    CH2       0.000    -45.653  -29.611    1.714
+ W5P           H071   H    H         0.000    -46.582  -29.091    1.956
+ W5P           H072   H    H         0.000    -45.010  -28.951    1.128
+ W5P           N06    N    N         0.000    -44.976  -29.986    2.937
+ W5P           C05    C    CH2       0.000    -43.782  -30.782    2.457
+ W5P           H051   H    H         0.000    -43.094  -30.860    3.302
+ W5P           H052   H    H         0.000    -43.314  -30.200    1.661
+ W5P           C04    C    C1        0.000    -44.109  -32.150    1.950
+ W5P           H04    H    H         0.000    -43.720  -33.076    2.339
+ W5P           C03    C    C1        0.000    -45.025  -32.020    0.862
+ W5P           H03    H    H         0.000    -45.035  -32.706    0.031
+ W5P           C08    C    CR6       0.000    -45.238  -29.621    4.278
+ W5P           N09    N    NRD6      0.000    -44.202  -29.674    5.088
+ W5P           C16    C    CR6       0.000    -46.457  -29.231    4.819
+ W5P           C15    C    CSP       0.000    -47.737  -28.993    4.346
+ W5P           C12    C    CR6       0.000    -46.479  -29.052    6.151
+ W5P           N11    N    NRD6      0.000    -45.394  -29.134    6.876
+ W5P           C10    C    CSP       0.000    -44.322  -29.491    6.330
+ W5P           N13    N    N         0.000    -47.697  -28.709    6.480
+ W5P           C14    C    CSP       0.000    -48.461  -28.634    5.395
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ W5P      F01    n/a    C02    START
+ W5P      C02    F01    C07    .
+ W5P      C07    C02    N06    .
+ W5P      H071   C07    .      .
+ W5P      H072   C07    .      .
+ W5P      N06    C07    C08    .
+ W5P      C05    N06    C04    .
+ W5P      H051   C05    .      .
+ W5P      H052   C05    .      .
+ W5P      C04    C05    C03    .
+ W5P      H04    C04    .      .
+ W5P      C03    C04    H03    .
+ W5P      H03    C03    .      .
+ W5P      C08    N06    C16    .
+ W5P      N09    C08    .      .
+ W5P      C16    C08    C12    .
+ W5P      C15    C16    .      .
+ W5P      C12    C16    N13    .
+ W5P      N11    C12    C10    .
+ W5P      C10    N11    .      .
+ W5P      N13    C12    C14    .
+ W5P      C14    N13    .      END
+ W5P      C10    N09    .    ADD
+ W5P      C15    C14    .    ADD
+ W5P      C02    C03    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ W5P      C10    N09       double      1.290    0.020
+ W5P      C10    N11       double      1.290    0.020
+ W5P      C15    C14       double      1.180    0.020
+ W5P      C15    C16       aromatic    1.285    0.020
+ W5P      C02    C03       aromatic    1.340    0.020
+ W5P      C07    C02       single      1.510    0.020
+ W5P      C02    F01       single      1.315    0.020
+ W5P      C03    C04       aromatic    1.330    0.020
+ W5P      C04    C05       single      1.510    0.020
+ W5P      C05    N06       single      1.455    0.020
+ W5P      N06    C07       single      1.455    0.020
+ W5P      C16    C08       aromatic    1.384    0.020
+ W5P      C08    N06       single      1.400    0.020
+ W5P      N09    C08       aromatic    1.350    0.020
+ W5P      C12    C16       double      1.487    0.020
+ W5P      N11    C12       aromatic    1.350    0.020
+ W5P      N13    C12       aromatic    1.355    0.020
+ W5P      C14    N13       aromat      1.210    0.020
+ W5P      H03    C03       single      1.077    0.020
+ W5P      H04    C04       single      1.077    0.020
+ W5P      H051   C05       single      1.092    0.020
+ W5P      H052   C05       single      1.092    0.020
+ W5P      H071   C07       single      1.092    0.020
+ W5P      H072   C07       single      1.092    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ W5P      F01    C02    C07     120.000    3.000
+ W5P      F01    C02    C03     120.000    3.000
+ W5P      C07    C02    C03     120.000    3.000
+ W5P      C02    C07    H071    109.470    3.000
+ W5P      C02    C07    H072    109.470    3.000
+ W5P      C02    C07    N06     109.500    3.000
+ W5P      H071   C07    H072    107.900    3.000
+ W5P      H071   C07    N06     109.470    3.000
+ W5P      H072   C07    N06     109.470    3.000
+ W5P      C07    N06    C05     120.000    3.000
+ W5P      C07    N06    C08     120.000    3.000
+ W5P      C05    N06    C08     120.000    3.000
+ W5P      N06    C05    H051    109.470    3.000
+ W5P      N06    C05    H052    109.470    3.000
+ W5P      N06    C05    C04     109.500    3.000
+ W5P      H051   C05    H052    107.900    3.000
+ W5P      H051   C05    C04     109.470    3.000
+ W5P      H052   C05    C04     109.470    3.000
+ W5P      C05    C04    H04     120.000    3.000
+ W5P      C05    C04    C03     120.000    3.000
+ W5P      H04    C04    C03     120.000    3.000
+ W5P      C04    C03    H03     120.000    3.000
+ W5P      C04    C03    C02     120.000    3.000
+ W5P      H03    C03    C02     120.000    3.000
+ W5P      N06    C08    N09     120.000    3.000
+ W5P      N06    C08    C16     120.000    3.000
+ W5P      N09    C08    C16     120.000    3.000
+ W5P      C08    N09    C10     120.000    3.000
+ W5P      C08    C16    C15     120.000    3.000
+ W5P      C08    C16    C12     120.000    3.000
+ W5P      C15    C16    C12     120.000    3.000
+ W5P      C16    C15    C14     180.000    3.000
+ W5P      C16    C12    N11     120.000    3.000
+ W5P      C16    C12    N13     120.000    3.000
+ W5P      N11    C12    N13     120.000    3.000
+ W5P      C12    N11    C10     120.000    3.000
+ W5P      N11    C10    N09     180.000    3.000
+ W5P      C12    N13    C14     120.000    3.000
+ W5P      N13    C14    C15     180.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ W5P      var_1            F01    C02    C03    C04              -85.256           20.000   3
+ W5P      var_2            F01    C02    C07    N06              180.000           20.000   3
+ W5P      var_3            C02    C07    N06    C08             -130.025           20.000   3
+ W5P      var_4            C07    N06    C05    C04              -73.518           20.000   3
+ W5P      var_5            N06    C05    C04    C03               59.062           20.000   3
+ W5P      var_6            C05    C04    C03    C02              -32.363           20.000   3
+ W5P      var_7            C07    N06    C08    C16               26.063           20.000   3
+ W5P      CONST_1          N06    C08    N09    C10                0.000            0.000   0
+ W5P      CONST_2          N06    C08    C16    C12                0.000            0.000   0
+ W5P      var_8            C08    C16    C15    C14             -179.676           20.000   3
+ W5P      var_9            C16    C15    C14    N13               -3.037           20.000   3
+ W5P      CONST_3          C08    C16    C12    N13                0.000            0.000   0
+ W5P      CONST_4          C16    C12    N11    C10                0.000            0.000   0
+ W5P      CONST_5          C12    N11    C10    N09                5.996            0.000   0
+ W5P      CONST_6          N11    C10    N09    C08               -6.387            0.000   0
+ W5P      var_10           C16    C12    N13    C14               -1.245           20.000   3
+ W5P      var_11           C12    N13    C14    C15                2.750           20.000   3
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ W5P      plan-1            C02       0.020
+ W5P      plan-1            C03       0.020
+ W5P      plan-1            C07       0.020
+ W5P      plan-1            F01       0.020
+ W5P      plan-1            H03       0.020
+ W5P      plan-2            C03       0.020
+ W5P      plan-2            C02       0.020
+ W5P      plan-2            C04       0.020
+ W5P      plan-2            H03       0.020
+ W5P      plan-2            H04       0.020
+ W5P      plan-3            C04       0.020
+ W5P      plan-3            C03       0.020
+ W5P      plan-3            C05       0.020
+ W5P      plan-3            H04       0.020
+ W5P      plan-3            H03       0.020
+ W5P      plan-4            C08       0.020
+ W5P      plan-4            C16       0.020
+ W5P      plan-4            N06       0.020
+ W5P      plan-4            N09       0.020
+ W5P      plan-4            C10       0.020
+ W5P      plan-4            C12       0.020
+ W5P      plan-4            N11       0.020
+ W5P      plan-4            N13       0.020
+ W5P      plan-4            C15       0.020
+ W5P      plan-5            N06       0.020
+ W5P      plan-5            C05       0.020
+ W5P      plan-5            C07       0.020
+ W5P      plan-5            C08       0.020
+ W5P      plan-6            N13       0.020
+ W5P      plan-6            C12       0.020
+ W5P      plan-6            C14       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

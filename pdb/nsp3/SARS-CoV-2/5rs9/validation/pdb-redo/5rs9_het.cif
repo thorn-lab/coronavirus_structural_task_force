@@ -1,0 +1,216 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+W4V      W4V '.                                   ' .                  22  13 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_W4V
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ W4V           N01    N    NH2       0.000    -48.012  -29.228    7.462
+ W4V           H011   H    H         0.000    -47.015  -29.139    7.226
+ W4V           H012   H    H         0.000    -48.248  -29.235    8.463
+ W4V           C02    C    CR6       0.000    -49.033  -29.338    6.435
+ W4V           N13    N    NR56      0.000    -48.731  -29.330    5.129
+ W4V           N12    N    NRD5      0.000    -47.511  -29.289    4.525
+ W4V           C09    C    CR56      0.000    -49.672  -29.475    4.187
+ W4V           N10    N    NRD5      0.000    -49.057  -29.436    2.986
+ W4V           C11    C    CR15      0.000    -47.726  -29.338    3.221
+ W4V           H11    H    H         0.000    -46.957  -29.305    2.459
+ W4V           N08    N    NRD6      0.000    -51.001  -29.552    4.521
+ W4V           C07    C    CR6       0.000    -51.292  -29.542    5.813
+ W4V           C03    C    CR6       0.000    -50.334  -29.449    6.782
+ W4V           C06    C    CH2       0.000    -52.613  -29.617    6.492
+ W4V           H061   H    H         0.000    -53.263  -30.349    6.007
+ W4V           H062   H    H         0.000    -53.106  -28.643    6.500
+ W4V           C05    C    CH2       0.000    -52.337  -30.046    7.890
+ W4V           H051   H    H         0.000    -52.308  -31.133    7.992
+ W4V           H052   H    H         0.000    -53.058  -29.635    8.600
+ W4V           C04    C    CH2       0.000    -50.994  -29.486    8.167
+ W4V           H042   H    H         0.000    -50.407  -30.121    8.834
+ W4V           H041   H    H         0.000    -51.041  -28.475    8.576
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ W4V      N01    n/a    C02    START
+ W4V      H011   N01    .      .
+ W4V      H012   N01    .      .
+ W4V      C02    N01    N13    .
+ W4V      N13    C02    C09    .
+ W4V      N12    N13    .      .
+ W4V      C09    N13    N08    .
+ W4V      N10    C09    C11    .
+ W4V      C11    N10    H11    .
+ W4V      H11    C11    .      .
+ W4V      N08    C09    C07    .
+ W4V      C07    N08    C06    .
+ W4V      C03    C07    .      .
+ W4V      C06    C07    C05    .
+ W4V      H061   C06    .      .
+ W4V      H062   C06    .      .
+ W4V      C05    C06    C04    .
+ W4V      H051   C05    .      .
+ W4V      H052   C05    .      .
+ W4V      C04    C05    H041   .
+ W4V      H042   C04    .      .
+ W4V      H041   C04    .      END
+ W4V      N12    C11    .    ADD
+ W4V      C02    C03    .    ADD
+ W4V      C03    C04    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ W4V      N12    C11       aromatic    1.350    0.020
+ W4V      N12    N13       single      1.402    0.020
+ W4V      C02    C03       double      1.487    0.020
+ W4V      C02    N01       single      1.355    0.020
+ W4V      N13    C02       single      1.337    0.020
+ W4V      C03    C04       single      1.511    0.020
+ W4V      C03    C07       aromatic    1.384    0.020
+ W4V      C04    C05       single      1.524    0.020
+ W4V      C05    C06       single      1.524    0.020
+ W4V      C06    C07       single      1.511    0.020
+ W4V      C07    N08       aromatic    1.350    0.020
+ W4V      N08    C09       aromatic    1.355    0.020
+ W4V      N10    C09       aromatic    1.350    0.020
+ W4V      C09    N13       single      1.337    0.020
+ W4V      C11    N10       aromatic    1.350    0.020
+ W4V      H041   C04       single      1.092    0.020
+ W4V      H042   C04       single      1.092    0.020
+ W4V      H051   C05       single      1.092    0.020
+ W4V      H052   C05       single      1.092    0.020
+ W4V      H061   C06       single      1.092    0.020
+ W4V      H062   C06       single      1.092    0.020
+ W4V      H11    C11       single      1.083    0.020
+ W4V      H011   N01       single      1.010    0.020
+ W4V      H012   N01       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ W4V      H011   N01    H012    120.000    3.000
+ W4V      H011   N01    C02     120.000    3.000
+ W4V      H012   N01    C02     120.000    3.000
+ W4V      N01    C02    N13     120.000    3.000
+ W4V      N01    C02    C03     120.000    3.000
+ W4V      N13    C02    C03     120.000    3.000
+ W4V      C02    N13    N12     120.000    3.000
+ W4V      C02    N13    C09     120.000    3.000
+ W4V      N12    N13    C09     120.000    3.000
+ W4V      N13    N12    C11     108.000    3.000
+ W4V      N13    C09    N10     108.000    3.000
+ W4V      N13    C09    N08     120.000    3.000
+ W4V      N10    C09    N08     120.000    3.000
+ W4V      C09    N10    C11     108.000    3.000
+ W4V      N10    C11    H11     126.000    3.000
+ W4V      N10    C11    N12     108.000    3.000
+ W4V      H11    C11    N12     126.000    3.000
+ W4V      C09    N08    C07     120.000    3.000
+ W4V      N08    C07    C03     120.000    3.000
+ W4V      N08    C07    C06     120.000    3.000
+ W4V      C03    C07    C06     120.000    3.000
+ W4V      C07    C03    C02     120.000    3.000
+ W4V      C07    C03    C04     120.000    3.000
+ W4V      C02    C03    C04     120.000    3.000
+ W4V      C07    C06    H061    109.470    3.000
+ W4V      C07    C06    H062    109.470    3.000
+ W4V      C07    C06    C05     109.470    3.000
+ W4V      H061   C06    H062    107.900    3.000
+ W4V      H061   C06    C05     109.470    3.000
+ W4V      H062   C06    C05     109.470    3.000
+ W4V      C06    C05    H051    109.470    3.000
+ W4V      C06    C05    H052    109.470    3.000
+ W4V      C06    C05    C04     111.000    3.000
+ W4V      H051   C05    H052    107.900    3.000
+ W4V      H051   C05    C04     109.470    3.000
+ W4V      H052   C05    C04     109.470    3.000
+ W4V      C05    C04    H042    109.470    3.000
+ W4V      C05    C04    H041    109.470    3.000
+ W4V      C05    C04    C03     109.470    3.000
+ W4V      H042   C04    H041    107.900    3.000
+ W4V      H042   C04    C03     109.470    3.000
+ W4V      H041   C04    C03     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ W4V      CONST_1          H012   N01    C02    N13              180.000            0.000   0
+ W4V      CONST_2          N01    C02    C03    C07                0.000            0.000   0
+ W4V      CONST_3          N01    C02    N13    C09              177.811            0.000   0
+ W4V      CONST_4          C02    N13    N12    C11              178.228            0.000   0
+ W4V      CONST_5          N13    N12    C11    N10                0.000            0.000   0
+ W4V      CONST_6          C02    N13    C09    N08                4.249            0.000   0
+ W4V      CONST_7          N13    C09    N10    C11              180.000            0.000   0
+ W4V      CONST_8          C09    N10    C11    N12                0.000            0.000   0
+ W4V      CONST_9          N13    C09    N08    C07              180.000            0.000   0
+ W4V      CONST_10         C09    N08    C07    C06                0.000            0.000   0
+ W4V      CONST_11         N08    C07    C03    C02                0.000            0.000   0
+ W4V      var_1            C07    C03    C04    C05                0.000           20.000   2
+ W4V      var_2            N08    C07    C06    C05                0.000           20.000   2
+ W4V      var_3            C07    C06    C05    C04              180.000           20.000   3
+ W4V      var_4            C06    C05    C04    C03              180.000           20.000   3
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ W4V      plan-1            N12       0.020
+ W4V      plan-1            C11       0.020
+ W4V      plan-1            N13       0.020
+ W4V      plan-1            N10       0.020
+ W4V      plan-1            H11       0.020
+ W4V      plan-1            C09       0.020
+ W4V      plan-1            C02       0.020
+ W4V      plan-1            C03       0.020
+ W4V      plan-1            C07       0.020
+ W4V      plan-1            N08       0.020
+ W4V      plan-1            N01       0.020
+ W4V      plan-1            C04       0.020
+ W4V      plan-1            C06       0.020
+ W4V      plan-1            H011      0.020
+ W4V      plan-1            H012      0.020
+ W4V      plan-2            N01       0.020
+ W4V      plan-2            C02       0.020
+ W4V      plan-2            H011      0.020
+ W4V      plan-2            H012      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

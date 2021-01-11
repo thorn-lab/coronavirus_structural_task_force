@@ -1,0 +1,283 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+W5G      W5G '.                                   ' .                  32  17 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_W5G
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ W5G           H16    H    H         0.000    -47.976  -29.030    3.276
+ W5G           C16    C    CR15      0.000    -47.695  -28.991    4.321
+ W5G           C15    C    CR15      0.000    -48.533  -28.819    5.387
+ W5G           H15    H    H         0.000    -49.607  -28.690    5.345
+ W5G           N14    N    NRD5      0.000    -47.784  -28.839    6.486
+ W5G           C13    C    CR56      0.000    -46.461  -29.012    6.195
+ W5G           C17    C    CR56      0.000    -46.399  -29.107    4.846
+ W5G           C09    C    CR6       0.000    -45.141  -29.278    4.224
+ W5G           N10    N    NRD6      0.000    -44.064  -29.325    5.005
+ W5G           C11    C    CR16      0.000    -44.163  -29.250    6.327
+ W5G           H11    H    H         0.000    -43.265  -29.318    6.929
+ W5G           N12    N    NRD6      0.000    -45.327  -29.095    6.925
+ W5G           N07    N    N         0.000    -45.137  -29.379    2.766
+ W5G           C06    C    CH2       0.000    -46.285  -30.041    1.970
+ W5G           H061   H    H         0.000    -46.799  -29.215    1.474
+ W5G           H062   H    H         0.000    -46.942  -30.474    2.727
+ W5G           C05    C    CH2       0.000    -45.914  -31.126    0.922
+ W5G           H051   H    H         0.000    -46.551  -30.929    0.057
+ W5G           H052   H    H         0.000    -46.199  -32.079    1.372
+ W5G           C04    C    CH2       0.000    -44.516  -31.184    0.497
+ W5G           H042   H    H         0.000    -44.498  -30.643   -0.451
+ W5G           H041   H    H         0.000    -44.332  -32.245    0.313
+ W5G           C08    C    CH2       0.000    -43.853  -29.291    1.986
+ W5G           H081   H    H         0.000    -43.062  -28.950    2.657
+ W5G           H082   H    H         0.000    -43.985  -28.564    1.182
+ W5G           C03    C    CT        0.000    -43.470  -30.649    1.391
+ W5G           C02    C    CH2       0.000    -42.565  -31.604    2.219
+ W5G           H022   H    H         0.000    -42.523  -32.689    2.101
+ W5G           H021   H    H         0.000    -41.973  -31.311    3.088
+ W5G           C01    C    CH2       0.000    -42.008  -30.938    0.979
+ W5G           H012   H    H         0.000    -41.147  -30.323    1.250
+ W5G           H011   H    H         0.000    -41.698  -31.701    0.263
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ W5G      H16    n/a    C16    START
+ W5G      C16    H16    C17    .
+ W5G      C15    C16    N14    .
+ W5G      H15    C15    .      .
+ W5G      N14    C15    C13    .
+ W5G      C13    N14    .      .
+ W5G      C17    C16    C09    .
+ W5G      C09    C17    N07    .
+ W5G      N10    C09    C11    .
+ W5G      C11    N10    N12    .
+ W5G      H11    C11    .      .
+ W5G      N12    C11    .      .
+ W5G      N07    C09    C08    .
+ W5G      C06    N07    C05    .
+ W5G      H061   C06    .      .
+ W5G      H062   C06    .      .
+ W5G      C05    C06    C04    .
+ W5G      H051   C05    .      .
+ W5G      H052   C05    .      .
+ W5G      C04    C05    H041   .
+ W5G      H042   C04    .      .
+ W5G      H041   C04    .      .
+ W5G      C08    N07    C03    .
+ W5G      H081   C08    .      .
+ W5G      H082   C08    .      .
+ W5G      C03    C08    C01    .
+ W5G      C02    C03    H021   .
+ W5G      H022   C02    .      .
+ W5G      H021   C02    .      .
+ W5G      C01    C03    H011   .
+ W5G      H012   C01    .      .
+ W5G      H011   C01    .      END
+ W5G      N12    C13    .    ADD
+ W5G      C13    C17    .    ADD
+ W5G      C01    C02    .    ADD
+ W5G      C03    C04    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ W5G      N12    C13       aromatic    1.355    0.020
+ W5G      N12    C11       aromatic    1.337    0.020
+ W5G      C13    C17       double      1.490    0.020
+ W5G      C13    N14       aromatic    1.350    0.020
+ W5G      C15    C16       aromatic    1.380    0.020
+ W5G      N14    C15       aromat      1.350    0.020
+ W5G      C09    C17       aromatic    1.390    0.020
+ W5G      C17    C16       aromatic    1.440    0.020
+ W5G      C01    C02       single      1.524    0.020
+ W5G      C01    C03       single      1.524    0.020
+ W5G      C02    C03       single      1.524    0.020
+ W5G      C03    C04       single      1.524    0.020
+ W5G      C03    C08       single      1.524    0.020
+ W5G      C04    C05       single      1.524    0.020
+ W5G      C05    C06       single      1.524    0.020
+ W5G      C06    N07       single      1.455    0.020
+ W5G      C08    N07       single      1.455    0.020
+ W5G      N07    C09       single      1.400    0.020
+ W5G      N10    C09       aromatic    1.350    0.020
+ W5G      C11    N10       deloc       1.337    0.020
+ W5G      H15    C15       single      1.083    0.020
+ W5G      H011   C01       single      1.092    0.020
+ W5G      H012   C01       single      1.092    0.020
+ W5G      H021   C02       single      1.092    0.020
+ W5G      H022   C02       single      1.092    0.020
+ W5G      H041   C04       single      1.092    0.020
+ W5G      H042   C04       single      1.092    0.020
+ W5G      H051   C05       single      1.092    0.020
+ W5G      H052   C05       single      1.092    0.020
+ W5G      H061   C06       single      1.092    0.020
+ W5G      H062   C06       single      1.092    0.020
+ W5G      H081   C08       single      1.092    0.020
+ W5G      H082   C08       single      1.092    0.020
+ W5G      H11    C11       single      1.083    0.020
+ W5G      C16    H16       single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ W5G      H16    C16    C15     126.000    3.000
+ W5G      H16    C16    C17     108.000    3.000
+ W5G      C15    C16    C17     108.000    3.000
+ W5G      C16    C15    H15     126.000    3.000
+ W5G      C16    C15    N14     108.000    3.000
+ W5G      H15    C15    N14     126.000    3.000
+ W5G      C15    N14    C13     108.000    3.000
+ W5G      N14    C13    N12     120.000    3.000
+ W5G      N14    C13    C17     108.000    3.000
+ W5G      N12    C13    C17     120.000    3.000
+ W5G      C16    C17    C09     132.000    3.000
+ W5G      C16    C17    C13     120.000    3.000
+ W5G      C09    C17    C13     120.000    3.000
+ W5G      C17    C09    N10     120.000    3.000
+ W5G      C17    C09    N07     120.000    3.000
+ W5G      N10    C09    N07     120.000    3.000
+ W5G      C09    N10    C11     120.000    3.000
+ W5G      N10    C11    H11     120.000    3.000
+ W5G      N10    C11    N12     120.000    3.000
+ W5G      H11    C11    N12     120.000    3.000
+ W5G      C11    N12    C13     120.000    3.000
+ W5G      C09    N07    C06     120.000    3.000
+ W5G      C09    N07    C08     120.000    3.000
+ W5G      C06    N07    C08     120.000    3.000
+ W5G      N07    C06    H061    109.470    3.000
+ W5G      N07    C06    H062    109.470    3.000
+ W5G      N07    C06    C05     105.000    3.000
+ W5G      H061   C06    H062    107.900    3.000
+ W5G      H061   C06    C05     109.470    3.000
+ W5G      H062   C06    C05     109.470    3.000
+ W5G      C06    C05    H051    109.470    3.000
+ W5G      C06    C05    H052    109.470    3.000
+ W5G      C06    C05    C04     111.000    3.000
+ W5G      H051   C05    H052    107.900    3.000
+ W5G      H051   C05    C04     109.470    3.000
+ W5G      H052   C05    C04     109.470    3.000
+ W5G      C05    C04    H042    109.470    3.000
+ W5G      C05    C04    H041    109.470    3.000
+ W5G      C05    C04    C03     111.000    3.000
+ W5G      H042   C04    H041    107.900    3.000
+ W5G      H042   C04    C03     109.470    3.000
+ W5G      H041   C04    C03     109.470    3.000
+ W5G      N07    C08    H081    109.470    3.000
+ W5G      N07    C08    H082    109.470    3.000
+ W5G      N07    C08    C03     109.500    3.000
+ W5G      H081   C08    H082    107.900    3.000
+ W5G      H081   C08    C03     109.470    3.000
+ W5G      H082   C08    C03     109.470    3.000
+ W5G      C08    C03    C02     111.000    3.000
+ W5G      C08    C03    C01     111.000    3.000
+ W5G      C08    C03    C04     111.000    3.000
+ W5G      C02    C03    C01      60.000    3.000
+ W5G      C02    C03    C04     111.000    3.000
+ W5G      C01    C03    C04     111.000    3.000
+ W5G      C03    C02    H022    109.470    3.000
+ W5G      C03    C02    H021    109.470    3.000
+ W5G      C03    C02    C01      60.000    3.000
+ W5G      H022   C02    H021    107.900    3.000
+ W5G      H022   C02    C01     109.470    3.000
+ W5G      H021   C02    C01     109.470    3.000
+ W5G      C03    C01    H012    109.470    3.000
+ W5G      C03    C01    H011    109.470    3.000
+ W5G      C03    C01    C02      60.000    3.000
+ W5G      H012   C01    H011    107.900    3.000
+ W5G      H012   C01    C02     109.470    3.000
+ W5G      H011   C01    C02     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ W5G      CONST_1          H16    C16    C15    N14              180.000            0.000   0
+ W5G      CONST_2          C16    C15    N14    C13                0.000            0.000   0
+ W5G      CONST_3          C15    N14    C13    N12              180.000            0.000   0
+ W5G      CONST_4          N14    C13    C17    C16              180.000            0.000   0
+ W5G      CONST_5          H16    C16    C17    C09              180.000            0.000   0
+ W5G      CONST_6          C16    C17    C09    N07              180.000            0.000   0
+ W5G      CONST_7          C17    C09    N10    C11                0.000            0.000   0
+ W5G      CONST_8          C09    N10    C11    N12                0.000            0.000   0
+ W5G      CONST_9          N10    C11    N12    C13                0.000            0.000   0
+ W5G      CONST_10         C11    N12    C13    N14              180.000            0.000   0
+ W5G      var_1            C17    C09    N07    C08              167.892           20.000   3
+ W5G      var_2            C09    N07    C06    C05             -129.069           20.000   3
+ W5G      var_3            N07    C06    C05    C04              180.000           20.000   3
+ W5G      var_4            C06    C05    C04    C03              180.000           20.000   3
+ W5G      var_5            C09    N07    C08    C03              109.196           20.000   3
+ W5G      var_6            N07    C08    C03    C01             -158.981           20.000   3
+ W5G      var_7            C08    C03    C04    C05              -44.941           20.000   3
+ W5G      var_8            C08    C03    C02    C01             -109.808           20.000   3
+ W5G      var_9            C08    C03    C01    C02              107.312           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ W5G      chir_01          C03    C01    C02    C04       positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ W5G      plan-1            N12       0.020
+ W5G      plan-1            C13       0.020
+ W5G      plan-1            C11       0.020
+ W5G      plan-1            C09       0.020
+ W5G      plan-1            N10       0.020
+ W5G      plan-1            C17       0.020
+ W5G      plan-1            N14       0.020
+ W5G      plan-1            C15       0.020
+ W5G      plan-1            C16       0.020
+ W5G      plan-1            H15       0.020
+ W5G      plan-1            N07       0.020
+ W5G      plan-1            H11       0.020
+ W5G      plan-1            H16       0.020
+ W5G      plan-2            N07       0.020
+ W5G      plan-2            C06       0.020
+ W5G      plan-2            C08       0.020
+ W5G      plan-2            C09       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
