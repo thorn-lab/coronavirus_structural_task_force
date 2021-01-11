@@ -20,11 +20,6 @@ time = datetime.datetime.now()
 time = "20"+time.strftime("%y-%m-%d")
 repo_path = osp.abspath(osp.join(__file__ ,"../../..","pdb"))
 
-try: dropbox_path = "/Users/kristophernolte/Dropbox (University of Wuerzburg)/insidecorona_thornlab/task_force/"
-except FileNotFoundError:
-    print("Dropbox folder not found, you can find update info in the Update_pipeline folder")
-    dropbox_path = ""
-
 seq_fasta = list(SeqIO.parse("Fasta_files/seq_SARS_2.fasta", "fasta"))
 
 print("Starting the Wednesday-Update")
@@ -177,5 +172,5 @@ def twice_assigned (id_dict, multi_assign_ids):
         mover(id, multi_ids_prot, multi_prot_folder)
 
 main()
-to_old.main(pdb_id_rev, dropbox_path)
+to_old.main(pdb_id_rev)
 print("Done")
