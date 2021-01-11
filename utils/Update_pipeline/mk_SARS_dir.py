@@ -20,11 +20,6 @@ time = datetime.datetime.now()
 time = "20"+time.strftime("%y-%m-%d")
 repo_path = osp.abspath(osp.join(__file__ ,"../../..","pdb"))
 
-try: dropbox_path = "/Users/kristophernolte/Dropbox (University of Wuerzburg)/insidecorona_thornlab/task_force/"
-except FileNotFoundError:
-    print("Dropbox folder not found, you can find update info in the Update_pipeline folder")
-    dropbox_path = ""
-
 seq_fasta = list(SeqIO.parse("Fasta_files/seq_SARS_2.fasta", "fasta"))
 
 print("Starting the Wednesday-Update")
@@ -96,6 +91,7 @@ def namer (i):
 
 def main():
     i = 0
+    #create a protocol .txt file
     doc = open("weekly_reports/new_structures_{}.txt".format(time), "w+")
     doc.write("{} revised structures: \n".format(len(pdb_id_rev)))
     doc.write("{}".format(", ".join(pdb_id_rev)))
@@ -104,7 +100,9 @@ def main():
     id_dict = {}
     while i in range(len(seq_fasta)):
         blast = blast_search(i)
+        #get the names of the protein
         protein_name = namer(i)[0]
+        #get the taxonomy of the protein
         taxo_name = namer(i)[1]
         if blast != None:
             # compare blast search with taxonomy
@@ -142,7 +140,7 @@ def main():
     organizer.main(repo_path, not_assigned.split(" "), "not_assigned")
     print("Added new structures, now updating Alignment")
 
-    #Clean up the dict <--- WTF IS THIS
+    #Clean up the dict, only keep dict keys which have entries
     for x in id_dict.copy():
         if id_dict[x] == []: del id_dict[x]
 
@@ -177,5 +175,5 @@ def twice_assigned (id_dict, multi_assign_ids):
         mover(id, multi_ids_prot, multi_prot_folder)
 
 main()
-to_old.main(pdb_id_rev, dropbox_path)
+to_old.main(pdb_id_rev)
 print("Done")
