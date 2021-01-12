@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Em structure of SARS-CoV-2 spike protein trimer, RBD up, without the P986-987 mutation. A homo trimer with three chains. The P986-987 mutation has a stabilizing effect but the paper shows that even without the mutation the protein is stable. 
 
 ## Basefolder
 

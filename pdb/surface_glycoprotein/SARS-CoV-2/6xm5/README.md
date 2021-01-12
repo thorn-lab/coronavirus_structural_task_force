@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of a SARS-CoV-2 spike protein at pH 5.5 with all RBDs down. Homo trimer with three chains. Spikes maybe evade potential neutralizing antibodies through a pH dependent mechanism of conformational masking. 
 
 ## Basefolder
 

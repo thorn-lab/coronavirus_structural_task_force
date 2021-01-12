@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 S trimer with three RBDs in the open state in a complex with three H014 Fab. Non polymer only nonamer, spike with three chains and antibodies with a light and a heavy chain with three chains each. The antibody H014 prevents attachment of SARS-CoV-2 to its host cell receptors by engaging the RBD. 
 
 ## Basefolder
 

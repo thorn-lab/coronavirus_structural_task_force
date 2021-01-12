@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 spike trimer with two RBDs in open state in complex with two H014 antibodies. Non polymer only heptamer, spike with three chains, antibodies with one light chain and one heavy chain each. The humanized monoclonal antibody H014 neutralizes SARS-CoV-2 by engaging the S RBD it also reduced SARS-CoV-2 titers in the infected lungs. 
 
 ## Basefolder
 

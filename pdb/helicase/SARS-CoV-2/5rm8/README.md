@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal Structure of SARS-CoV-2 helicase in complex with Z1614545742 (PanDDA analysis group deposition) with a resolution of 2.14 A. Asymmetric monomer with one unique protein chain.
 
 ## Basefolder
 

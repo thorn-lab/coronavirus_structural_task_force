@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+SARS-CoV-2 spike protein in complex with the S2E12 neutralizing antibody Fab fragment. Non polymer only trimer, antibody with one heavy and one light chain. Spike glycoprotein with one chain. S2E12 traps the spike in a conformation that cannot bind ACE2. 
 
 ## Basefolder
 

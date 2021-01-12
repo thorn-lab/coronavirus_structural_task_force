@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Em structure of SARS-CoV-2 spike protein trimer, three RBD down fully cleaved by furin, with the D614G mutation and without the P986-987 mutation. A homo trimer with three chains. The D614G mutation alters the spike conformation in SARS-CoV-2 and the protease cleavage susceptibility at the S1/S2 junction. The P986-987 mutation has a stabilizing effect but the paper shows that even without the mutation the protein is stable. 
 
 ## Basefolder
 

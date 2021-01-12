@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Cryo EM structure of SARS-CoV-2 S-6P in complex with the antibody BD-368-2. Non polymer only nonamer, spike with three chains, antibody with heavy and light chain with three chains each. BD-368-2 fully blocks ACE2 recognition. 
 
 ## Basefolder
 

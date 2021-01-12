@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal Structure of SARS-CoV-2 helicase in complex with Z364328788 (PanDDA analysis group deposition). Ligand is 3-(acetylamino)-4-fluorobenzoic acid.
 
 ## Basefolder
 

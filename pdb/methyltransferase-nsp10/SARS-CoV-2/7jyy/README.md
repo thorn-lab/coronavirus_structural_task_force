@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal Structure of SARS-CoV-2 Nsp16/10 Heterodimer in Complex with (m7GpppA)pUpUpApApA (Cap-0) and S-Adenosylmethionine (SAM) with a resolution of 2.05 A. Asymmetric complex with Hetero 2-mer-A1B1 stoecheometry.
 
 ## Basefolder
 

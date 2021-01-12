@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 spike glycoprotein in complex with the neutralizing antibody EY6A Fab. Non polymer only nonamer, spike with three chains and antibody with a heavy and a light chain with three chains each. The antibody is a candidate therapeutic for COVID-19 and binds to the RBD. 
 
 ## Basefolder
 

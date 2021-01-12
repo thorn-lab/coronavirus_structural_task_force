@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal Structure of SARS-CoV-2 Nsp16/10 Heterodimer in Complex with (m7GpppA2m)pUpUpApApA (Cap-1) and S-Adenosyl-L-homocysteine (SAH) with a resolution of 2.15 A. Consists of two unique protein chains and one unique nucleic acid chain.
 
 ## Basefolder
 

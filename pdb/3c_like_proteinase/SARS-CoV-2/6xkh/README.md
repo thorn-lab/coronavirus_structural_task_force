@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+X-ray diffraction data. Structure of the main-protease of SARS-CoV-2, with oxidised C145 (sulfinic acid cysteine).
 
 ## Basefolder
 

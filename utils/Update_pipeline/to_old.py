@@ -40,7 +40,7 @@ def to_old (key,dirpath,form):
     try: os.replace(dirpath+"/"+key+".{}".format(form), dirpath+"/old/"+key+"_{}.{}".format(time,form))
     except FileNotFoundError: pass
 
-def main (pdb_id, dropbox_path):
+def main (pdb_id):
     print("New DOIs for: ")
     for dirpath, dirnames, files in os.walk(path):
         for key in pdb_id:
@@ -53,7 +53,7 @@ def main (pdb_id, dropbox_path):
                 get_mtz(key,dirpath)
                 get_pdb(key, dirpath,"pdb")
                 get_pdb(key, dirpath,"cif")
-                Doi.main(dropbox_path, dirpath, key)
+                #Doi.main(dirpath, key)
     print("{} have been revised".format(pdb_id))
 
 #old1 = 22.04 and before

@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+SARS-CoV-2 Main protease immature form - apo structure. Cyclic homo-2-mer with one unique protein chain. Resolution of 1.6 A.
 
 ## Basefolder
 

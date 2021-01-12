@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of the SARS-CoV-2 helicase at 1.94 Angstrom resolution. SARS-CoV-2 helicase NSP13, asymmetric monomer.
 
 ## Basefolder
 

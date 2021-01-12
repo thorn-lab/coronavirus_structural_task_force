@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Structure of SARS-CoV-2 Main Protease bound to pyrithione zinc. Cyclic homo-2-mer with one unique protein chain. Ligand is 9-oxa-7-thia-1-azonia-8$l^{2}-zincabicyclo[4.3.0]nona-1,3,5-triene.
 
 ## Basefolder
 

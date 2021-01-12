@@ -26,9 +26,10 @@ def main(repo_path, pdb_id, name):
     target = repo_path+os.sep+name
     mk_dir(target)
     for element in pdb_id:
-        mk_dir(target+os.sep+element)
-        get_mtz(element,target)
-        get_pdb(element,target,"pdb")
-        get_pdb(element,target,"cif")
+        if len(element) == 4:
+            mk_dir(target+os.sep+element)
+            get_mtz(element,target)
+            get_pdb(element,target,"pdb")
+            get_pdb(element,target,"cif")
     print(pdb_id, "were not assigned, assign them manually. Files downloaded to {}".format(target))
 

@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 spike glycoprotein bound to one ACE2 and one RBD in clockwise direction. Non polymer only tetramer, spike protein with three chains and ACE2 with one chain. SARS-CoV-2 infections are initiated by virus binding to ACE2 cell surface receptors. 
 
 ## Basefolder
 

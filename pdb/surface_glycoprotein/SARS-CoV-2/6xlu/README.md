@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 spike protein at pH 4.0. Homo trimer with three chains. Related structure to 6xm0, 6xm3, 6xm4 and 6xm5. Structures where used to test a pH dependent mechanism of conformational masking. 
 
 ## Basefolder
 

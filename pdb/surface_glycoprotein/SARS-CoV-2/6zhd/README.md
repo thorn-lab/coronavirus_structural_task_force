@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 Spike protein bound to the Nanobody H11-H4. Non polymer only hexamer, spike with three chains and Nanobody with three chains. 
 
 ## Basefolder
 

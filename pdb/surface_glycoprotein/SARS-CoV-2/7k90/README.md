@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of the SARS-CoV-2 S 6P trimer in complex with the human neutralizing antibody Fab fragment C144. Non polymer only nonamer, spike protein with three chains and antibody with a heavy and a light chain with three chains each. The antibody has a different binding mode then other class 1 NAbs. 
 
 ## Basefolder
 

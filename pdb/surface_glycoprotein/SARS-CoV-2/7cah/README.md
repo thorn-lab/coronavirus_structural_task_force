@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 spike protein bound to the interface of a humanized monoclonal antibody H014 fab. Non polymer only trimer, spike protein with one Chain and antibody with one heavy and one light chain. The antibody H014 prevents attachment of SARS-CoV-2 to its host cell receptors by engaging the RBD. 
 
 ## Basefolder
 

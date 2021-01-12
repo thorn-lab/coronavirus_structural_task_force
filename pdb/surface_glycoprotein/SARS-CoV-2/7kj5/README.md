@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of the SARS-CoV-2 spike glycoprotein prefusion with one RBD in up conformation. Homo trimer with three chains. 
 
 ## Basefolder
 

@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 RBD in complex with a neutralizing antibody fab. Non polymer only trimer, antibody with one heavy and one light chain. Spike protein with one chain.
 
 ## Basefolder
 

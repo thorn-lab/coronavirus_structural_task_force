@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Ambient-Temperature Serial Femtosecond X-ray diffraction data. Structure of the main-protease of SARS-CoV-2.
 
 ## Basefolder
 

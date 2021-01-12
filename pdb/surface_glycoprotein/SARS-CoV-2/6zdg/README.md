@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of the dimeric and trimeric complexes of the largely structurally disordered spike ectodomain bound with the antibody EY6A. Non polymer only nonamer, spike with three chains and antibody with a heavy and a light chain with three chains each. The EY6A antibody mimics S2 binding ot the RBD and spikes lose structural integrity. 
 
 ## Basefolder
 

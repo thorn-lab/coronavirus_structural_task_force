@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Cyro-EM structure of the SARS-CoV-2 spike ectodomain. A homo trimer with three chains. Structure was used to test the binding affinity of the lectin FRIL to the SARS-CoV-2 S protein, the affinitiy is stronger with N-glycans. FRIL has anti-influenza and anti SARS-CoV-2 activity. 
 
 ## Basefolder
 
