@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+X-RAY diffraction of a ternary complex with SARS-CoV-2 RBD the nanobody H11-D4 and the antibody CR3022. Non polymer only tetramer, spike with two chains, nanobody with two chains and antibody with a heavy and a light chain with two chains each. 
 
 ## Basefolder
 

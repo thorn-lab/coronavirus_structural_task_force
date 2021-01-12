@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 main protease complexed with GC376. Cyclic homo-2-mer. Ligand is (1S,2S)-2-({N-[(benzyloxy)carbonyl]-L-leucyl}amino)-1-hydroxy-3-[(3S)-2-oxopyrrolidin-3-yl]propane-1-sulfonic acid, a nucleotide analogue that inhibits viral RNA dependent RNA polymerase (RdRp), results in sterilizing additive effect.
 
 ## Basefolder
 

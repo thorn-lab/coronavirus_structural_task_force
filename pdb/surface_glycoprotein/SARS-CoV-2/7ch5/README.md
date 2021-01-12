@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of the SARS-CoV-2 Spike RBD in complex with the neutralizing antibody BD-629 fab. Non polymer only trimer, spike with one chain. Antibody with one heavy and one light chain. Pairing the antibodies BD-368-2 with BD-629 can efficiently neutralize several naturally occurring S mutants. 
 
 ## Basefolder
 

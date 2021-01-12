@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 spike protein in complex with the S2M11 neutralizing antibody Fab fragment. Non polymer only nonamer, spike with three chains and antibody with a heavy and a light chain with three chains each. S2M11 competitively blocks ACE2 attachment and it locks the spike in a closed conformation. 
 
 ## Basefolder
 

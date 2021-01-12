@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+X-ray diffraction data. Structure of the main-protease of SARS-CoV-2, in complex with Feline coronavirus drug (1S,2S)-2-({N-[(benzyloxy)carbonyl]-L-leucyl}amino)-1-hydroxy-3-[(3S)-2-oxopyrrolidin-3-yl]propane-1-sulfonic acid.
 
 ## Basefolder
 

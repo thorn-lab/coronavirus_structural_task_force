@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 spike protein in complex with the S2A4 neutralizing antibody fab fragment (local refinement). Non polymer only trimer, spike with three chains, antibody with a heavy and a light chain with three chains each. Structure is related to 7jvc which shows also this antibody in complex with the SARS-CoV-2 spike. 
 
 ## Basefolder
 

@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Room-temperature X-ray Crystal structure of SARS-CoV-2 main protease in complex with Telaprevir. Cyclic homo-2-mer with one unique protein chain.
 
 ## Basefolder
 

@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 spike protein 2P trimer in complex with the human antibody Fab fragment C121 in state 2. Non polymer only pentamer, spike protein with three chains. Antibody with one heavy and one light chain. The antibody binds to the RBD and prevents ACE2 interactions. 
 
 ## Basefolder
 

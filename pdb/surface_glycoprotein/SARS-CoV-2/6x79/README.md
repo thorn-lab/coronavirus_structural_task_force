@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of a prefusion SARS-CoV-2 ectodomain trimer stabilize in the closed conformation. Homo trimer with three chains. Prefusion spike covalently stabilized by a disulfide bond in the closed conformation, good strategy to stabilize ?-coronaviruses. 
 
 ## Basefolder
 

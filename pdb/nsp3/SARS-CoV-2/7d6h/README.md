@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+X-ray diffraction data. Structure of the SARS-CoV-2 papain-like protease domain of nsp3, C112S mutant.
 
 ## Basefolder
 

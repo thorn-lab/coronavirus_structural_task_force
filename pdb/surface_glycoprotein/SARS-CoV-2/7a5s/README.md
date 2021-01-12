@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 spike protein in complex with the antibody CR3022. Non polymer only hexamer, spike protein with two chains. Antibody with two heavy and two light chains. Antibody selected from a group of SARS-CoV monoclonal antibodies with the ability to bind to the ectodomain of the SARS-CoV-2 spike protein. 
 
 ## Basefolder
 

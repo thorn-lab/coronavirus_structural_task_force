@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 spike protein RBD in complex with the cross-neutralizing antibody COVA 1-16. Non polymer only trimer, spike with one chain and antibody with one heavy and one light chain. 
 
 ## Basefolder
 

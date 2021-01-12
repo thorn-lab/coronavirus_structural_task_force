@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+A SARS-CoV-2 spike protein in closed conformation with a C1 symmetry. A homo trimer with three chains. The precence of linoleic acid in all three binding pockets of the S trimer was confirmed for this structure. 
 
 ## Basefolder
 

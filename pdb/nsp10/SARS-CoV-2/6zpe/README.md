@@ -10,7 +10,7 @@
 
 ## Description
 
-The non-structural protein nsp10 of SARS-CoV-2, where it acts as allosteric activator for nsp14 and nsp16. Its ligands are chloride ions, zinc ions and glycerol. It has a resolution of 1.58 脜.
+The non-structural protein nsp10 of SARS-CoV-2, where it acts as allosteric activator for nsp14 and nsp16. Its ligands are chlorideions,  zinc ions and glycerol. It has a resolution of 1.58 脜.
 
 ## Basefolder
 

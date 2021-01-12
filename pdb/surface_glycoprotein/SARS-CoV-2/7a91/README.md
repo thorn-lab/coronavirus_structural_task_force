@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+The dissociated S1 domain of the SARS-CoV-2 spike protein bound to the cell-surface receptor ACE2. A non-polymer only dimer the spike and the receptor both have one chain each. The interaction between S1 domain and ACE2 is important for the fusion of viral and host membranes. Another important structure is 7a92, it shows the same structure with a different refinement. 
 
 ## Basefolder
 

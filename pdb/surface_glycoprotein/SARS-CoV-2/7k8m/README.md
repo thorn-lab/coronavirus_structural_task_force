@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+X-RAY diffraction of SARS-CoV-2 RBD in complex with the human neutralizing antibody Fab fragment C102. Non polymer only trimer, spike with one chain antibody with one heavy and one light chain. Binding with a C102 like interaction requires a short CDRH3, C102 overlap with the ACE2 binding site. 
 
 ## Basefolder
 

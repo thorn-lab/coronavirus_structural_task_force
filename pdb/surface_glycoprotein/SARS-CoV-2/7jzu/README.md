@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 spike protein in complex with a designed miniprotein inhibitor LCB1. Non polymer only dimer, spike protein and mini inhibitor have both one chain each. LCB1 binds with a high affinity to the RBD in a competed manner with ACE2. A related structure is 7jzl it shows the same complex with 2 RBDs open. 
 
 ## Basefolder
 

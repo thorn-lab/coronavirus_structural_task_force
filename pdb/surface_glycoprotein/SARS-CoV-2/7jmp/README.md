@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 receptor binding domain in complex with the neutralizing antibody COVA2-39. Non polymer only trimer, antibody with one heavy and one light chain. Spike protein with one chain. The COVA2-39 antibody interacts with the RBD and engage the ACE2-binding ridge. 
 
 ## Basefolder
 

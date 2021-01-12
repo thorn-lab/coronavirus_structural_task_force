@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 S 2P trimer in complex with the human neutralizing antibody Fab fragment C119. Non polymer only heptamer, spike with three chains and antibody with a heavy and a light chain with two chains each. Antibody has a similar S binding orientation as the antibody C144 which shows an unusual binding characteristic. 
 
 ## Basefolder
 

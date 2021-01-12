@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 S variant HexaPro with one RBD up. Homo trimer with three chains. HexaPro retains the prefusion conformation and withstands heating and freezing. 
 
 ## Basefolder
 

@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 RBD in complex with the neutralizing antibody CC12.3. Non polymer only trimer, spike with two chains and antibody with a heavy and a light chain with two chains each. Immunoglobulin G heavy-chain is the most frequently used IGHV gene for targeting RBDs of the spike protein CC12.3 is a neutralizing antibody for this gene.
 
 ## Basefolder
 

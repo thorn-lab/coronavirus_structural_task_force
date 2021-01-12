@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 RBD in complex with the antibodies CC12.1 and CR3022. Non polymer only pentamer, spike protein with one chain antibodies with a heavy and light chain with one chain each. Immunoglobulin G heavy-chain is the most frequently used IGHV gene for targeting RBDs of the spike protein CC12.1 is a neutralizing antibody for this gene.
 
 ## Basefolder
 

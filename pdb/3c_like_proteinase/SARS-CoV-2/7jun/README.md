@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Joint neutron/X-ray structure of SARS-CoV-2 3CL Mpro at room temperature. Cyclic homo-2-mer with one unique protein chain.Room-temperature neutron structure of 3CL Mpro, which allowed direct determination of hydrogen atom positions and, hence, protonation states in the protease..
 
 ## Basefolder
 

@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Electron Microscopy. Structure of nsp1 ("leader-protein) of SARS-CoV-2, in complex with 40S ribosomal subunit.
 
 ## Basefolder
 

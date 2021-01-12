@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Cryo EM structure of SARS-CoV-2 receptor binding domain with the cat ACE2. Non polymer only dimer, spike protein with one chain and cat ACE2 with one chain. The ACE2 from various species could bind to SARS-COV-2 RBD, the cat ACE2 showed a similar binding mode as the human one. 
 
 ## Basefolder
 

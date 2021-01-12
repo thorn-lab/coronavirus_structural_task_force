@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Cyro EM structure of a prefusion SARS-CoV-2 Spike protein stabilized with the point mutations, D614N, R682S, R685G, A892P, A942P and V987P. Homo trimer with three chains.
 
 ## Basefolder
 

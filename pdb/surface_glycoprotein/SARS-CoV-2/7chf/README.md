@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 RBD in complex with the antibodies BD-604 and BD-368-2. Non polymer only pentamer, Spike protein with one chain, both antibodies have a heavy and a light chain with one chain each. BD-368-2 fully blocks ACE2 recognition both antibodies bind to the RBD. 
 
 ## Basefolder
 

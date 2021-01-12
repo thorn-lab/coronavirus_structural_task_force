@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of COVID-19 main protease in complex with GC376. Cyclic homo-2-mer with one unique protein chain. Ligand is (1S,2S)-2-({N-[(benzyloxy)carbonyl]-L-leucyl}amino)-1-hydroxy-3-[(3S)-2-oxopyrrolidin-3-yl]propane-1-sulfonic acid.
 
 ## Basefolder
 
