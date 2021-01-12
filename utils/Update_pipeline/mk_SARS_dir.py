@@ -1,6 +1,7 @@
 from Bio import SeqIO
 import requests
 import os
+import shutil
 import collections
 import datetime
 import ID_getter
@@ -154,24 +155,30 @@ def main():
 
 
 def twice_assigned (id_dict, multi_assign_ids):
-    def mover (key, proteins, folder):
+    def mover (id, proteins, folder):
         for prot in proteins:
             try:
-                try:
-                    os.replace(repo_path+"/{}/SARS-CoV-2/{}".format(prot, key),repo_path+"/{}/SARS-CoV-2/{}".format(folder, key))
-                except OSError: print("OS_Error")
-            except FileNotFoundError: print("FileNotFoundError")
+                shutil.copytree(repo_path+"/{}/SARS-CoV-2/{}".format(prot, id),repo_path+"/{}/SARS-CoV-2/{}".format(folder, id))
+            except OSError: print("OS_Error")
+            shutil.rmtree(repo_path+"/{}/SARS-CoV-2/{}".format(prot, id))
 
     def get_key(val):
+        #gets the protein which saved the combined ids and deletes their dict entry
         multi_ids_prot = []
         for key, value in id_dict.items():
             if val in value:
                 multi_ids_prot.append(key)
+                value.remove(val)
+                id_dict[key] = value
         return multi_ids_prot
 
     for id in multi_assign_ids:
         multi_ids_prot = get_key(id)
+        #name of combined protein folder
         multi_prot_folder = "-".join(multi_ids_prot)
+        #create new dict with combined proteins
+        try: id_dict[multi_prot_folder] = id_dict[multi_prot_folder].append(id)
+        except KeyError: id_dict[multi_prot_folder] = []
         mover(id, multi_ids_prot, multi_prot_folder)
 
 main()
