@@ -12,7 +12,8 @@ And was written in 2020 by Kristopher Nolte, Thorn Lab, University of Wuerzburg
 as part of the Coronavirus Structural Taskforce, insidecorona.net
 '''
 
-path = '/Users/kristophernolte/Documents/ThornLab/coronavirus_structural_task_force/pdb'
+#path = '/Users/kristophernolte/Documents/ThornLab/coronavirus_structural_task_force/pdb'
+path = '/scratch/works/convid/coronavirus_structural_task_force/pdb'
 
 def mk_dir(dir_path):
     #function to create new folders
