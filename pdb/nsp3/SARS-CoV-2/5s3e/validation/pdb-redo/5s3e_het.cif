@@ -1,0 +1,196 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WSY      WSY '.                                   ' .                  22  12 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WSY
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WSY           O1     O    OC       -0.500      1.211   12.860   -1.897
+ WSY           C6     C    C         0.000      1.078   12.073   -2.914
+ WSY           O      O    OC       -0.500      0.547   10.981   -2.838
+ WSY           C5     C    CH2       0.000      1.612   12.672   -4.183
+ WSY           H51    H    H         0.000      2.241   11.926   -4.673
+ WSY           H52    H    H         0.000      2.218   13.541   -3.920
+ WSY           C4     C    CH2       0.000      0.499   13.096   -5.126
+ WSY           H41    H    H         0.000      0.952   13.487   -6.039
+ WSY           H42    H    H         0.000     -0.080   13.885   -4.642
+ WSY           N1     N    NR5       0.000     -0.382   11.976   -5.458
+ WSY           N2     N    NRD5      0.000      0.013   11.080   -6.413
+ WSY           C1     C    CR5       0.000     -0.961   10.195   -6.354
+ WSY           C      C    CH3       0.000     -1.017    9.018   -7.260
+ WSY           H3     H    H         0.000     -1.060    9.352   -8.262
+ WSY           H2     H    H         0.000     -0.151    8.428   -7.118
+ WSY           H1     H    H         0.000     -1.879    8.447   -7.037
+ WSY           N      N    NRD5      0.000     -1.945   10.450   -5.428
+ WSY           C2     C    CR5       0.000     -1.541   11.586   -4.910
+ WSY           C3     C    CH3       0.000     -2.271   12.368   -3.879
+ WSY           H33    H    H         0.000     -3.221   12.640   -4.256
+ WSY           H32    H    H         0.000     -2.388   11.776   -3.011
+ WSY           H31    H    H         0.000     -1.718   13.238   -3.645
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WSY      O1     n/a    C6     START
+ WSY      C6     O1     C5     .
+ WSY      O      C6     .      .
+ WSY      C5     C6     C4     .
+ WSY      H51    C5     .      .
+ WSY      H52    C5     .      .
+ WSY      C4     C5     N1     .
+ WSY      H41    C4     .      .
+ WSY      H42    C4     .      .
+ WSY      N1     C4     N2     .
+ WSY      N2     N1     C1     .
+ WSY      C1     N2     N      .
+ WSY      C      C1     H1     .
+ WSY      H3     C      .      .
+ WSY      H2     C      .      .
+ WSY      H1     C      .      .
+ WSY      N      C1     C2     .
+ WSY      C2     N      C3     .
+ WSY      C3     C2     H31    .
+ WSY      H33    C3     .      .
+ WSY      H32    C3     .      .
+ WSY      H31    C3     .      END
+ WSY      N1     C2     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WSY      N1     C4        single      1.462    0.020
+ WSY      N1     C2        single      1.337    0.020
+ WSY      N2     N1        single      1.402    0.020
+ WSY      C4     C5        single      1.524    0.020
+ WSY      C5     C6        single      1.510    0.020
+ WSY      O      C6        deloc       1.250    0.020
+ WSY      C6     O1        deloc       1.250    0.020
+ WSY      C3     C2        single      1.506    0.020
+ WSY      C2     N         aromatic    1.350    0.020
+ WSY      N      C1        aromatic    1.350    0.020
+ WSY      C1     N2        aromatic    1.350    0.020
+ WSY      C      C1        single      1.506    0.020
+ WSY      H41    C4        single      1.092    0.020
+ WSY      H42    C4        single      1.092    0.020
+ WSY      H51    C5        single      1.092    0.020
+ WSY      H52    C5        single      1.092    0.020
+ WSY      H31    C3        single      1.059    0.020
+ WSY      H32    C3        single      1.059    0.020
+ WSY      H33    C3        single      1.059    0.020
+ WSY      H1     C         single      1.059    0.020
+ WSY      H2     C         single      1.059    0.020
+ WSY      H3     C         single      1.059    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WSY      O1     C6     O       123.000    3.000
+ WSY      O1     C6     C5      118.500    3.000
+ WSY      O      C6     C5      118.500    3.000
+ WSY      C6     C5     H51     109.470    3.000
+ WSY      C6     C5     H52     109.470    3.000
+ WSY      C6     C5     C4      109.470    3.000
+ WSY      H51    C5     H52     107.900    3.000
+ WSY      H51    C5     C4      109.470    3.000
+ WSY      H52    C5     C4      109.470    3.000
+ WSY      C5     C4     H41     109.470    3.000
+ WSY      C5     C4     H42     109.470    3.000
+ WSY      C5     C4     N1      109.500    3.000
+ WSY      H41    C4     H42     107.900    3.000
+ WSY      H41    C4     N1      109.500    3.000
+ WSY      H42    C4     N1      109.500    3.000
+ WSY      C4     N1     N2      108.000    3.000
+ WSY      C4     N1     C2      126.000    3.000
+ WSY      N2     N1     C2      108.000    3.000
+ WSY      N1     N2     C1      108.000    3.000
+ WSY      N2     C1     C       126.000    3.000
+ WSY      N2     C1     N       108.000    3.000
+ WSY      C      C1     N       126.000    3.000
+ WSY      C1     C      H3      109.470    3.000
+ WSY      C1     C      H2      109.470    3.000
+ WSY      C1     C      H1      109.470    3.000
+ WSY      H3     C      H2      109.470    3.000
+ WSY      H3     C      H1      109.470    3.000
+ WSY      H2     C      H1      109.470    3.000
+ WSY      C1     N      C2      108.000    3.000
+ WSY      N      C2     C3      126.000    3.000
+ WSY      N      C2     N1      108.000    3.000
+ WSY      C3     C2     N1      126.000    3.000
+ WSY      C2     C3     H33     109.470    3.000
+ WSY      C2     C3     H32     109.470    3.000
+ WSY      C2     C3     H31     109.470    3.000
+ WSY      H33    C3     H32     109.470    3.000
+ WSY      H33    C3     H31     109.470    3.000
+ WSY      H32    C3     H31     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WSY      var_1            O1     C6     C5     C4               180.000           20.000   3
+ WSY      var_2            C6     C5     C4     N1               180.000           20.000   3
+ WSY      var_3            C5     C4     N1     N2               -80.077           20.000   3
+ WSY      CONST_1          C4     N1     C2     N               -173.997            0.000   0
+ WSY      CONST_2          C4     N1     N2     C1               175.399            0.000   0
+ WSY      CONST_3          N1     N2     C1     N                  0.000            0.000   0
+ WSY      var_4            N2     C1     C      H1               180.000           20.000   3
+ WSY      CONST_4          N2     C1     N      C2                 0.000            0.000   0
+ WSY      CONST_5          C1     N      C2     C3                 0.000            0.000   0
+ WSY      var_5            N      C2     C3     H31              180.000           20.000   3
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WSY      plan-1            N1        0.020
+ WSY      plan-1            C4        0.020
+ WSY      plan-1            C2        0.020
+ WSY      plan-1            N2        0.020
+ WSY      plan-1            N         0.020
+ WSY      plan-1            C1        0.020
+ WSY      plan-1            C3        0.020
+ WSY      plan-1            C         0.020
+ WSY      plan-2            C6        0.020
+ WSY      plan-2            C5        0.020
+ WSY      plan-2            O         0.020
+ WSY      plan-2            O1        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

@@ -1,0 +1,214 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+W04      W04 '.                                   ' .                  25  13 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_W04
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ W04           O      O    O         0.000     -5.223   14.352   -0.099
+ W04           C2     C    C         0.000     -5.064   14.541    1.104
+ W04           C1     C    CH2       0.000     -6.250   14.508    2.051
+ W04           H11    H    H         0.000     -6.462   15.534    2.359
+ W04           H12    H    H         0.000     -5.965   13.919    2.925
+ W04           N      N    NT1       0.000     -7.448   13.923    1.434
+ W04           HN     H    H         0.000     -7.553   12.917    1.226
+ W04           C      C    CH3       0.000     -8.478   14.926    1.146
+ W04           H3     H    H         0.000     -8.772   15.397    2.047
+ W04           H2     H    H         0.000     -8.088   15.650    0.479
+ W04           H1     H    H         0.000     -9.316   14.453    0.704
+ W04           N1     N    N         0.000     -3.860   14.792    1.682
+ W04           C3     C    CR6       0.000     -2.581   14.747    1.096
+ W04           C4     C    CR16      0.000     -2.427   14.729   -0.301
+ W04           H4     H    H         0.000     -3.293   14.775   -0.949
+ W04           N2     N    NRD6      0.000     -1.530   14.702    1.947
+ W04           C8     C    CR16      0.000     -0.300   14.662    1.404
+ W04           H8     H    H         0.000      0.554   14.647    2.070
+ W04           C7     C    CR16      0.000     -0.066   14.639    0.039
+ W04           H7     H    H         0.000      0.948   14.612   -0.342
+ W04           C5     C    CR6       0.000     -1.147   14.651   -0.839
+ W04           C6     C    CH3       0.000     -0.944   14.537   -2.329
+ W04           H63    H    H         0.000     -0.346   15.343   -2.667
+ W04           H62    H    H         0.000     -0.460   13.622   -2.551
+ W04           H61    H    H         0.000     -1.884   14.566   -2.817
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ W04      O      n/a    C2     START
+ W04      C2     O      N1     .
+ W04      C1     C2     N      .
+ W04      H11    C1     .      .
+ W04      H12    C1     .      .
+ W04      N      C1     C      .
+ W04      HN     N      .      .
+ W04      C      N      H1     .
+ W04      H3     C      .      .
+ W04      H2     C      .      .
+ W04      H1     C      .      .
+ W04      N1     C2     C3     .
+ W04      C3     N1     N2     .
+ W04      C4     C3     H4     .
+ W04      H4     C4     .      .
+ W04      N2     C3     C8     .
+ W04      C8     N2     C7     .
+ W04      H8     C8     .      .
+ W04      C7     C8     C5     .
+ W04      H7     C7     .      .
+ W04      C5     C7     C6     .
+ W04      C6     C5     H61    .
+ W04      H63    C6     .      .
+ W04      H62    C6     .      .
+ W04      H61    C6     .      END
+ W04      C4     C5     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ W04      N1     C2        deloc       1.330    0.020
+ W04      C3     N1        single      1.400    0.020
+ W04      C4     C5        aromatic    1.390    0.020
+ W04      C4     C3        aromatic    1.390    0.020
+ W04      C6     C5        single      1.506    0.020
+ W04      C5     C7        aromatic    1.390    0.020
+ W04      C7     C8        aromatic    1.390    0.020
+ W04      C8     N2        aromatic    1.337    0.020
+ W04      C2     O         double      1.220    0.020
+ W04      C1     C2        single      1.510    0.020
+ W04      N      C1        single      1.472    0.020
+ W04      C      N         single      1.472    0.020
+ W04      N2     C3        aromatic    1.350    0.020
+ W04      H4     C4        single      1.083    0.020
+ W04      H61    C6        single      1.059    0.020
+ W04      H62    C6        single      1.059    0.020
+ W04      H63    C6        single      1.059    0.020
+ W04      H7     C7        single      1.083    0.020
+ W04      H8     C8        single      1.083    0.020
+ W04      H11    C1        single      1.092    0.020
+ W04      H12    C1        single      1.092    0.020
+ W04      HN     N         single      1.033    0.020
+ W04      H1     C         single      1.059    0.020
+ W04      H2     C         single      1.059    0.020
+ W04      H3     C         single      1.059    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ W04      O      C2     C1      120.500    3.000
+ W04      O      C2     N1      123.000    3.000
+ W04      C1     C2     N1      116.500    3.000
+ W04      C2     C1     H11     109.470    3.000
+ W04      C2     C1     H12     109.470    3.000
+ W04      C2     C1     N       109.500    3.000
+ W04      H11    C1     H12     107.900    3.000
+ W04      H11    C1     N       109.500    3.000
+ W04      H12    C1     N       109.500    3.000
+ W04      C1     N      HN      109.500    3.000
+ W04      C1     N      C       109.500    3.000
+ W04      HN     N      C       109.500    3.000
+ W04      N      C      H3      109.500    3.000
+ W04      N      C      H2      109.500    3.000
+ W04      N      C      H1      109.500    3.000
+ W04      H3     C      H2      109.470    3.000
+ W04      H3     C      H1      109.470    3.000
+ W04      H2     C      H1      109.470    3.000
+ W04      C2     N1     C3      120.000    3.000
+ W04      N1     C3     C4      120.000    3.000
+ W04      N1     C3     N2      120.000    3.000
+ W04      C4     C3     N2      120.000    3.000
+ W04      C3     C4     H4      120.000    3.000
+ W04      C3     C4     C5      120.000    3.000
+ W04      H4     C4     C5      120.000    3.000
+ W04      C3     N2     C8      120.000    3.000
+ W04      N2     C8     H8      120.000    3.000
+ W04      N2     C8     C7      120.000    3.000
+ W04      H8     C8     C7      120.000    3.000
+ W04      C8     C7     H7      120.000    3.000
+ W04      C8     C7     C5      120.000    3.000
+ W04      H7     C7     C5      120.000    3.000
+ W04      C7     C5     C6      120.000    3.000
+ W04      C7     C5     C4      120.000    3.000
+ W04      C6     C5     C4      120.000    3.000
+ W04      C5     C6     H63     109.470    3.000
+ W04      C5     C6     H62     109.470    3.000
+ W04      C5     C6     H61     109.470    3.000
+ W04      H63    C6     H62     109.470    3.000
+ W04      H63    C6     H61     109.470    3.000
+ W04      H62    C6     H61     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ W04      var_1            O      C2     C1     N                180.000           20.000   3
+ W04      var_2            C2     C1     N      C               -108.060           20.000   3
+ W04      var_3            C1     N      C      H1               180.000           20.000   3
+ W04      CONST_1          O      C2     N1     C3               180.000            0.000   0
+ W04      var_4            C2     N1     C3     N2              -163.626           20.000   3
+ W04      CONST_2          N1     C3     C4     C5                 0.000            0.000   0
+ W04      CONST_3          C3     C4     C5     C7                 0.000            0.000   0
+ W04      CONST_4          N1     C3     N2     C8                 0.000            0.000   0
+ W04      CONST_5          C3     N2     C8     C7                 0.000            0.000   0
+ W04      CONST_6          N2     C8     C7     C5                 0.000            0.000   0
+ W04      CONST_7          C8     C7     C5     C6                 0.000            0.000   0
+ W04      var_5            C7     C5     C6     H61              180.000           20.000   3
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ W04      plan-1            N1        0.020
+ W04      plan-1            C2        0.020
+ W04      plan-1            C3        0.020
+ W04      plan-1            O         0.020
+ W04      plan-1            C1        0.020
+ W04      plan-2            C4        0.020
+ W04      plan-2            C5        0.020
+ W04      plan-2            C3        0.020
+ W04      plan-2            H4        0.020
+ W04      plan-2            C7        0.020
+ W04      plan-2            C8        0.020
+ W04      plan-2            N2        0.020
+ W04      plan-2            C6        0.020
+ W04      plan-2            H7        0.020
+ W04      plan-2            H8        0.020
+ W04      plan-2            N1        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

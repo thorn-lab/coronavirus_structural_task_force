@@ -1,0 +1,243 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+VZM      VZM '.                                   ' .                  26  17 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_VZM
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ VZM           O1     O    O         0.000     -8.897   15.183    2.592
+ VZM           C5     C    C         0.000     -7.931   15.074    3.350
+ VZM           N1     N    NH1       0.000     -8.087   15.036    4.742
+ VZM           HN1    H    H         0.000     -7.241   14.973    5.291
+ VZM           C6     C    C         0.000     -9.294   15.076    5.451
+ VZM           S      S    S2        0.000    -10.868   14.891    4.704
+ VZM           C9     C    C1        0.000    -11.647   15.012    6.228
+ VZM           H9     H    H         0.000    -12.715   14.956    6.359
+ VZM           C8     C    CSP       0.000    -10.773   15.186    7.250
+ VZM           C7     C    C1        0.000     -9.390   15.232    6.835
+ VZM           H7     H    H         0.000     -8.553   15.367    7.499
+ VZM           N      N    N         0.000     -6.629   14.980    2.928
+ VZM           C4     C    CR6       0.000     -6.162   14.820    1.607
+ VZM           C3     C    CR16      0.000     -7.066   14.729    0.562
+ VZM           H3     H    H         0.000     -8.124   14.622    0.767
+ VZM           C2     C    CR16      0.000     -6.617   14.775   -0.738
+ VZM           H2     H    H         0.000     -7.308   14.751   -1.572
+ VZM           C1     C    CR6       0.000     -5.242   14.853   -0.941
+ VZM           O      O    O2        0.000     -4.882   14.866   -2.237
+ VZM           C      C    CH3       0.000     -3.491   14.911   -2.551
+ VZM           H30    H    H         0.000     -3.065   15.789   -2.141
+ VZM           H20    H    H         0.000     -3.009   14.061   -2.143
+ VZM           H1     H    H         0.000     -3.366   14.916   -3.603
+ VZM           N2     N    NRD6      0.000     -4.341   14.907    0.032
+ VZM           C10    C    CR16      0.000     -4.808   14.894    1.285
+ VZM           H10    H    H         0.000     -4.093   14.944    2.097
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ VZM      O1     n/a    C5     START
+ VZM      C5     O1     N      .
+ VZM      N1     C5     C6     .
+ VZM      HN1    N1     .      .
+ VZM      C6     N1     S      .
+ VZM      S      C6     C9     .
+ VZM      C9     S      C8     .
+ VZM      H9     C9     .      .
+ VZM      C8     C9     C7     .
+ VZM      C7     C8     H7     .
+ VZM      H7     C7     .      .
+ VZM      N      C5     C4     .
+ VZM      C4     N      C3     .
+ VZM      C3     C4     C2     .
+ VZM      H3     C3     .      .
+ VZM      C2     C3     C1     .
+ VZM      H2     C2     .      .
+ VZM      C1     C2     N2     .
+ VZM      O      C1     C      .
+ VZM      C      O      H1     .
+ VZM      H30    C      .      .
+ VZM      H20    C      .      .
+ VZM      H1     C      .      .
+ VZM      N2     C1     C10    .
+ VZM      C10    N2     H10    .
+ VZM      H10    C10    .      END
+ VZM      C4     C10    .    ADD
+ VZM      C6     C7     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ VZM      N1     C5        single      1.330    0.020
+ VZM      C6     N1        single      1.330    0.020
+ VZM      C4     C10       aromatic    1.390    0.020
+ VZM      C4     N         single      1.400    0.020
+ VZM      C3     C4        aromatic    1.390    0.020
+ VZM      C5     O1        double      1.220    0.020
+ VZM      N      C5        deloc       1.330    0.020
+ VZM      C6     C7        aromatic    1.340    0.020
+ VZM      S      C6        single      1.665    0.020
+ VZM      C7     C8        aromatic    1.255    0.020
+ VZM      C8     C9        double      1.255    0.020
+ VZM      C10    N2        aromatic    1.337    0.020
+ VZM      C9     S         single      1.665    0.020
+ VZM      C2     C3        aromatic    1.390    0.020
+ VZM      C1     C2        aromatic    1.390    0.020
+ VZM      N2     C1        deloc       1.350    0.020
+ VZM      O      C1        single      1.370    0.020
+ VZM      C      O         single      1.426    0.020
+ VZM      HN1    N1        single      1.010    0.020
+ VZM      H7     C7        single      1.077    0.020
+ VZM      H10    C10       single      1.083    0.020
+ VZM      H9     C9        single      1.077    0.020
+ VZM      H3     C3        single      1.083    0.020
+ VZM      H2     C2        single      1.083    0.020
+ VZM      H1     C         single      1.059    0.020
+ VZM      H20    C         single      1.059    0.020
+ VZM      H30    C         single      1.059    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ VZM      O1     C5     N1      123.000    3.000
+ VZM      O1     C5     N       123.000    3.000
+ VZM      N1     C5     N       120.000    3.000
+ VZM      C5     N1     HN1     120.000    3.000
+ VZM      C5     N1     C6      120.000    3.000
+ VZM      HN1    N1     C6      120.000    3.000
+ VZM      N1     C6     S       120.000    3.000
+ VZM      N1     C6     C7      120.000    3.000
+ VZM      S      C6     C7      120.000    3.000
+ VZM      C6     S      C9       91.245    3.000
+ VZM      S      C9     H9      120.000    3.000
+ VZM      S      C9     C8      120.000    3.000
+ VZM      H9     C9     C8      120.000    3.000
+ VZM      C9     C8     C7      180.000    3.000
+ VZM      C8     C7     H7      120.000    3.000
+ VZM      C8     C7     C6      120.000    3.000
+ VZM      H7     C7     C6      120.000    3.000
+ VZM      C5     N      C4      120.000    3.000
+ VZM      N      C4     C3      120.000    3.000
+ VZM      N      C4     C10     120.000    3.000
+ VZM      C3     C4     C10     120.000    3.000
+ VZM      C4     C3     H3      120.000    3.000
+ VZM      C4     C3     C2      120.000    3.000
+ VZM      H3     C3     C2      120.000    3.000
+ VZM      C3     C2     H2      120.000    3.000
+ VZM      C3     C2     C1      120.000    3.000
+ VZM      H2     C2     C1      120.000    3.000
+ VZM      C2     C1     O       120.000    3.000
+ VZM      C2     C1     N2      120.000    3.000
+ VZM      O      C1     N2      120.000    3.000
+ VZM      C1     O      C       120.000    3.000
+ VZM      O      C      H30     109.470    3.000
+ VZM      O      C      H20     109.470    3.000
+ VZM      O      C      H1      109.470    3.000
+ VZM      H30    C      H20     109.470    3.000
+ VZM      H30    C      H1      109.470    3.000
+ VZM      H20    C      H1      109.470    3.000
+ VZM      C1     N2     C10     120.000    3.000
+ VZM      N2     C10    H10     120.000    3.000
+ VZM      N2     C10    C4      120.000    3.000
+ VZM      H10    C10    C4      120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ VZM      var_1            O1     C5     N1     C6               180.000           20.000   2
+ VZM      var_2            C5     N1     C6     S                180.000           20.000   2
+ VZM      var_3            N1     C6     C7     C8              -178.064           20.000   3
+ VZM      var_4            N1     C6     S      C9               178.146           20.000   3
+ VZM      var_5            C6     S      C9     C8                 0.141           20.000   3
+ VZM      var_6            S      C9     C8     C7                 0.044           20.000   3
+ VZM      var_7            C9     C8     C7     C6                -0.271           20.000   3
+ VZM      CONST_1          O1     C5     N      C4               180.000            0.000   0
+ VZM      var_8            C5     N      C4     C3                -0.560           20.000   3
+ VZM      CONST_2          N      C4     C10    N2                 0.000            0.000   0
+ VZM      CONST_3          N      C4     C3     C2                 0.000            0.000   0
+ VZM      CONST_4          C4     C3     C2     C1                 0.000            0.000   0
+ VZM      CONST_5          C3     C2     C1     N2                 0.000            0.000   0
+ VZM      var_9            C2     C1     O      C               -178.486           20.000   3
+ VZM      var_10           C1     O      C      H1               180.000           20.000   3
+ VZM      CONST_6          C2     C1     N2     C10                0.000            0.000   0
+ VZM      CONST_7          C1     N2     C10    C4                 0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ VZM      plan-1            N1        0.020
+ VZM      plan-1            C5        0.020
+ VZM      plan-1            C6        0.020
+ VZM      plan-1            HN1       0.020
+ VZM      plan-2            C4        0.020
+ VZM      plan-2            C10       0.020
+ VZM      plan-2            N         0.020
+ VZM      plan-2            C3        0.020
+ VZM      plan-2            C2        0.020
+ VZM      plan-2            N2        0.020
+ VZM      plan-2            C1        0.020
+ VZM      plan-2            H10       0.020
+ VZM      plan-2            H3        0.020
+ VZM      plan-2            H2        0.020
+ VZM      plan-2            O         0.020
+ VZM      plan-3            C5        0.020
+ VZM      plan-3            N1        0.020
+ VZM      plan-3            O1        0.020
+ VZM      plan-3            N         0.020
+ VZM      plan-3            C4        0.020
+ VZM      plan-3            HN1       0.020
+ VZM      plan-4            C6        0.020
+ VZM      plan-4            N1        0.020
+ VZM      plan-4            C7        0.020
+ VZM      plan-4            S         0.020
+ VZM      plan-4            HN1       0.020
+ VZM      plan-4            H7        0.020
+ VZM      plan-5            C7        0.020
+ VZM      plan-5            C6        0.020
+ VZM      plan-5            C8        0.020
+ VZM      plan-5            H7        0.020
+ VZM      plan-6            C9        0.020
+ VZM      plan-6            C8        0.020
+ VZM      plan-6            S         0.020
+ VZM      plan-6            H9        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

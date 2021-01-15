@@ -1,0 +1,167 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WOY      WOY '.                                   ' .                  15   9 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WOY
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WOY           H20    H    H         0.000     -1.110   14.484   -2.087
+ WOY           C2     C    CR16      0.000     -1.062   14.595   -1.011
+ WOY           N      N    NRD6      0.000      0.142   14.510   -0.430
+ WOY           C3     C    CR16      0.000      0.146   14.652    0.897
+ WOY           H3     H    H         0.000      1.116   14.615    1.377
+ WOY           N1     N    NRD6      0.000     -0.904   14.835    1.707
+ WOY           C1     C    CR6       0.000     -2.249   14.814   -0.335
+ WOY           C4     C    CR6       0.000     -2.076   14.931    1.047
+ WOY           C      C    CH2       0.000     -3.709   14.946   -0.686
+ WOY           H1     H    H         0.000     -4.065   14.116   -1.300
+ WOY           H2     H    H         0.000     -3.931   15.890   -1.189
+ WOY           C5     C    CH2       0.000     -4.407   14.914    0.670
+ WOY           H52    H    H         0.000     -4.859   13.945    0.890
+ WOY           H51    H    H         0.000     -5.160   15.698    0.777
+ WOY           N2     N    N         0.000     -3.310   15.162    1.596
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WOY      H20    n/a    C2     START
+ WOY      C2     H20    C1     .
+ WOY      N      C2     C3     .
+ WOY      C3     N      N1     .
+ WOY      H3     C3     .      .
+ WOY      N1     C3     .      .
+ WOY      C1     C2     C      .
+ WOY      C4     C1     .      .
+ WOY      C      C1     C5     .
+ WOY      H1     C      .      .
+ WOY      H2     C      .      .
+ WOY      C5     C      N2     .
+ WOY      H52    C5     .      .
+ WOY      H51    C5     .      .
+ WOY      N2     C5     .      END
+ WOY      N1     C4     .    ADD
+ WOY      C4     N2     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WOY      N1     C4        aromatic    1.350    0.020
+ WOY      N1     C3        aromatic    1.337    0.020
+ WOY      C4     N2        aromatic    1.355    0.020
+ WOY      C4     C1        aromatic    1.384    0.020
+ WOY      C5     C         single      1.524    0.020
+ WOY      N2     C5        single      1.455    0.020
+ WOY      C      C1        single      1.511    0.020
+ WOY      C1     C2        aromatic    1.390    0.020
+ WOY      C3     N         aromatic    1.337    0.020
+ WOY      N      C2        aromatic    1.337    0.020
+ WOY      H51    C5        single      1.092    0.020
+ WOY      H52    C5        single      1.092    0.020
+ WOY      H1     C         single      1.092    0.020
+ WOY      H2     C         single      1.092    0.020
+ WOY      H3     C3        single      1.083    0.020
+ WOY      C2     H20       single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WOY      H20    C2     N       120.000    3.000
+ WOY      H20    C2     C1      120.000    3.000
+ WOY      N      C2     C1      120.000    3.000
+ WOY      C2     N      C3      120.000    3.000
+ WOY      N      C3     H3      120.000    3.000
+ WOY      N      C3     N1      120.000    3.000
+ WOY      H3     C3     N1      120.000    3.000
+ WOY      C3     N1     C4      120.000    3.000
+ WOY      C2     C1     C4      120.000    3.000
+ WOY      C2     C1     C       120.000    3.000
+ WOY      C4     C1     C       120.000    3.000
+ WOY      C1     C4     N1      120.000    3.000
+ WOY      C1     C4     N2      120.000    3.000
+ WOY      N1     C4     N2      120.000    3.000
+ WOY      C1     C      H1      109.470    3.000
+ WOY      C1     C      H2      109.470    3.000
+ WOY      C1     C      C5      109.470    3.000
+ WOY      H1     C      H2      107.900    3.000
+ WOY      H1     C      C5      109.470    3.000
+ WOY      H2     C      C5      109.470    3.000
+ WOY      C      C5     H52     109.470    3.000
+ WOY      C      C5     H51     109.470    3.000
+ WOY      C      C5     N2      105.000    3.000
+ WOY      H52    C5     H51     107.900    3.000
+ WOY      H52    C5     N2      109.470    3.000
+ WOY      H51    C5     N2      109.470    3.000
+ WOY      C5     N2     C4      120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WOY      CONST_1          H20    C2     N      C3                 0.000            0.000   0
+ WOY      CONST_2          C2     N      C3     N1                 0.000            0.000   0
+ WOY      CONST_3          N      C3     N1     C4                 0.000            0.000   0
+ WOY      CONST_4          C3     N1     C4     C1                 0.000            0.000   0
+ WOY      CONST_5          H20    C2     C1     C                  0.000            0.000   0
+ WOY      CONST_6          C2     C1     C4     N1                 0.000            0.000   0
+ WOY      var_1            C1     C4     N2     C5                13.126           20.000   3
+ WOY      var_2            C2     C1     C      C5                 0.000           20.000   2
+ WOY      var_3            C1     C      C5     N2               180.000           20.000   3
+ WOY      var_4            C      C5     N2     C4               -18.547           20.000   3
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WOY      plan-1            N1        0.020
+ WOY      plan-1            C4        0.020
+ WOY      plan-1            C3        0.020
+ WOY      plan-1            C1        0.020
+ WOY      plan-1            N         0.020
+ WOY      plan-1            C2        0.020
+ WOY      plan-1            N2        0.020
+ WOY      plan-1            C         0.020
+ WOY      plan-1            H3        0.020
+ WOY      plan-1            H20       0.020
+ WOY      plan-2            N2        0.020
+ WOY      plan-2            C4        0.020
+ WOY      plan-2            C5        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

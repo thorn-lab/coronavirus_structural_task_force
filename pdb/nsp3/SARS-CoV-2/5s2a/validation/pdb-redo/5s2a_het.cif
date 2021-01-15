@@ -1,0 +1,234 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WS4      WS4 '.                                   ' .                  26  16 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WS4
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WS4           O1     O    O         0.000      2.205    7.985  -10.394
+ WS4           C3     C    C         0.000      1.892    9.167  -10.249
+ WS4           C2     C    CR5       0.000      1.024    9.595   -9.109
+ WS4           C1     C    CR15      0.000      0.805   10.855   -8.534
+ WS4           H1     H    H         0.000      1.308   11.760   -8.851
+ WS4           C10    C    CR15      0.000      0.192    8.755   -8.396
+ WS4           H10    H    H         0.000      0.079    7.688   -8.541
+ WS4           N      N    NR5       0.000     -0.449    9.506   -7.491
+ WS4           C      C    CH3       0.000     -1.473    9.077   -6.548
+ WS4           H31    H    H         0.000     -2.297    8.689   -7.084
+ WS4           H21    H    H         0.000     -1.072    8.329   -5.918
+ WS4           H11    H    H         0.000     -1.780    9.906   -5.969
+ WS4           N1     N    NRD5      0.000     -0.089   10.809   -7.558
+ WS4           N2     N    N         0.000      2.247   10.176  -11.092
+ WS4           C4     C    CR6       0.000      3.035   10.108  -12.267
+ WS4           C7     C    CR16      0.000      2.931   11.088  -13.246
+ WS4           H7     H    H         0.000      2.166   11.850  -13.165
+ WS4           C8     C    CR16      0.000      3.797   11.096  -14.322
+ WS4           H8     H    H         0.000      3.714   11.867  -15.078
+ WS4           C9     C    CR6       0.000      4.772   10.117  -14.434
+ WS4           O      O    OH1       0.000      5.676   10.145  -15.454
+ WS4           HO     H    H         0.000      6.276    9.391  -15.374
+ WS4           C6     C    CR16      0.000      4.857    9.116  -13.481
+ WS4           H6     H    H         0.000      5.601    8.336  -13.580
+ WS4           C5     C    CR16      0.000      3.992    9.113  -12.404
+ WS4           H5     H    H         0.000      4.061    8.328  -11.661
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WS4      O1     n/a    C3     START
+ WS4      C3     O1     N2     .
+ WS4      C2     C3     C10    .
+ WS4      C1     C2     H1     .
+ WS4      H1     C1     .      .
+ WS4      C10    C2     N      .
+ WS4      H10    C10    .      .
+ WS4      N      C10    N1     .
+ WS4      C      N      H11    .
+ WS4      H31    C      .      .
+ WS4      H21    C      .      .
+ WS4      H11    C      .      .
+ WS4      N1     N      .      .
+ WS4      N2     C3     C4     .
+ WS4      C4     N2     C7     .
+ WS4      C7     C4     C8     .
+ WS4      H7     C7     .      .
+ WS4      C8     C7     C9     .
+ WS4      H8     C8     .      .
+ WS4      C9     C8     C6     .
+ WS4      O      C9     HO     .
+ WS4      HO     O      .      .
+ WS4      C6     C9     C5     .
+ WS4      H6     C6     .      .
+ WS4      C5     C6     H5     .
+ WS4      H5     C5     .      END
+ WS4      N1     C1     .    ADD
+ WS4      C4     C5     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WS4      N1     C1        aromatic    1.350    0.020
+ WS4      N1     N         single      1.402    0.020
+ WS4      C4     C5        aromatic    1.390    0.020
+ WS4      C7     C4        aromatic    1.390    0.020
+ WS4      C4     N2        single      1.400    0.020
+ WS4      C5     C6        aromatic    1.390    0.020
+ WS4      C6     C9        aromatic    1.390    0.020
+ WS4      C8     C7        aromatic    1.390    0.020
+ WS4      C9     C8        aromatic    1.390    0.020
+ WS4      C10    C2        aromatic    1.387    0.020
+ WS4      N      C10       single      1.337    0.020
+ WS4      C3     O1        double      1.220    0.020
+ WS4      C2     C3        single      1.490    0.020
+ WS4      N2     C3        deloc       1.330    0.020
+ WS4      C1     C2        aromatic    1.387    0.020
+ WS4      C      N         single      1.485    0.020
+ WS4      O      C9        single      1.362    0.020
+ WS4      H5     C5        single      1.083    0.020
+ WS4      H6     C6        single      1.083    0.020
+ WS4      H7     C7        single      1.083    0.020
+ WS4      H8     C8        single      1.083    0.020
+ WS4      H10    C10       single      1.083    0.020
+ WS4      H1     C1        single      1.083    0.020
+ WS4      H11    C         single      1.059    0.020
+ WS4      H21    C         single      1.059    0.020
+ WS4      H31    C         single      1.059    0.020
+ WS4      HO     O         single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WS4      O1     C3     C2      120.500    3.000
+ WS4      O1     C3     N2      123.000    3.000
+ WS4      C2     C3     N2      120.000    3.000
+ WS4      C3     C2     C1      126.000    3.000
+ WS4      C3     C2     C10     126.000    3.000
+ WS4      C1     C2     C10     108.000    3.000
+ WS4      C2     C1     H1      126.000    3.000
+ WS4      C2     C1     N1      108.000    3.000
+ WS4      H1     C1     N1      126.000    3.000
+ WS4      C2     C10    H10     126.000    3.000
+ WS4      C2     C10    N       108.000    3.000
+ WS4      H10    C10    N       126.000    3.000
+ WS4      C10    N      C       126.000    3.000
+ WS4      C10    N      N1      108.000    3.000
+ WS4      C      N      N1      108.000    3.000
+ WS4      N      C      H31     109.470    3.000
+ WS4      N      C      H21     109.470    3.000
+ WS4      N      C      H11     109.470    3.000
+ WS4      H31    C      H21     109.470    3.000
+ WS4      H31    C      H11     109.470    3.000
+ WS4      H21    C      H11     109.470    3.000
+ WS4      N      N1     C1      108.000    3.000
+ WS4      C3     N2     C4      120.000    3.000
+ WS4      N2     C4     C7      120.000    3.000
+ WS4      N2     C4     C5      120.000    3.000
+ WS4      C7     C4     C5      120.000    3.000
+ WS4      C4     C7     H7      120.000    3.000
+ WS4      C4     C7     C8      120.000    3.000
+ WS4      H7     C7     C8      120.000    3.000
+ WS4      C7     C8     H8      120.000    3.000
+ WS4      C7     C8     C9      120.000    3.000
+ WS4      H8     C8     C9      120.000    3.000
+ WS4      C8     C9     O       120.000    3.000
+ WS4      C8     C9     C6      120.000    3.000
+ WS4      O      C9     C6      120.000    3.000
+ WS4      C9     O      HO      109.470    3.000
+ WS4      C9     C6     H6      120.000    3.000
+ WS4      C9     C6     C5      120.000    3.000
+ WS4      H6     C6     C5      120.000    3.000
+ WS4      C6     C5     H5      120.000    3.000
+ WS4      C6     C5     C4      120.000    3.000
+ WS4      H5     C5     C4      120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WS4      var_1            O1     C3     C2     C10              -20.459           20.000   3
+ WS4      CONST_1          C3     C2     C1     N1                 0.000            0.000   0
+ WS4      CONST_2          C3     C2     C10    N                  0.000            0.000   0
+ WS4      CONST_3          C2     C10    N      N1               180.000            0.000   0
+ WS4      var_2            C10    N      C      H11              180.000           20.000   3
+ WS4      CONST_4          C10    N      N1     C1                -0.190            0.000   0
+ WS4      CONST_5          N      N1     C1     C2                 0.000            0.000   0
+ WS4      CONST_6          O1     C3     N2     C4               180.000            0.000   0
+ WS4      var_3            C3     N2     C4     C7               157.546           20.000   3
+ WS4      CONST_7          N2     C4     C5     C6                 0.000            0.000   0
+ WS4      CONST_8          N2     C4     C7     C8                 0.000            0.000   0
+ WS4      CONST_9          C4     C7     C8     C9                 0.000            0.000   0
+ WS4      CONST_10         C7     C8     C9     C6                 0.000            0.000   0
+ WS4      var_4            C8     C9     O      HO               180.000           20.000   3
+ WS4      CONST_11         C8     C9     C6     C5                 0.000            0.000   0
+ WS4      CONST_12         C9     C6     C5     C4                 0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WS4      plan-1            N1        0.020
+ WS4      plan-1            C1        0.020
+ WS4      plan-1            N         0.020
+ WS4      plan-1            C10       0.020
+ WS4      plan-1            C2        0.020
+ WS4      plan-1            H10       0.020
+ WS4      plan-1            C3        0.020
+ WS4      plan-1            H1        0.020
+ WS4      plan-1            C         0.020
+ WS4      plan-2            C4        0.020
+ WS4      plan-2            C5        0.020
+ WS4      plan-2            C7        0.020
+ WS4      plan-2            N2        0.020
+ WS4      plan-2            C6        0.020
+ WS4      plan-2            C8        0.020
+ WS4      plan-2            C9        0.020
+ WS4      plan-2            H5        0.020
+ WS4      plan-2            H6        0.020
+ WS4      plan-2            H7        0.020
+ WS4      plan-2            H8        0.020
+ WS4      plan-2            O         0.020
+ WS4      plan-3            C3        0.020
+ WS4      plan-3            O1        0.020
+ WS4      plan-3            C2        0.020
+ WS4      plan-3            N2        0.020
+ WS4      plan-3            C4        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

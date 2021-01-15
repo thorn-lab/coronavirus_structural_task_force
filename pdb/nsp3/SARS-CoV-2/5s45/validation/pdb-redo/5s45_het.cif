@@ -1,0 +1,167 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+W3D      W3D '.                                   ' .                  15  12 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_W3D
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ W3D           O1     O    OC       -0.500      0.673   10.897   -2.919
+ W3D           C2     C    C         0.000      0.843   12.184   -3.070
+ W3D           O2     O    OC       -0.500      1.264   12.885   -2.185
+ W3D           C1     C    CH2       0.000      0.479   12.756   -4.421
+ W3D           H11    H    H         0.000      1.392   13.094   -4.916
+ W3D           H12    H    H         0.000     -0.189   13.607   -4.272
+ W3D           N      N    N         0.000     -0.182   11.757   -5.248
+ W3D           C3     C    C1        0.000     -1.408   11.286   -4.874
+ W3D           H3     H    H         0.000     -1.915   11.751   -4.045
+ W3D           C4     C    CSP       0.000     -2.000   10.263   -5.507
+ W3D           C      C    C         0.000      0.471   11.297   -6.378
+ W3D           O      O    O         0.000      1.460   11.889   -6.800
+ W3D           C6     C    CSP       0.000     -0.118   10.214   -7.050
+ W3D           C5     C    C         0.000     -1.292    9.716   -6.610
+ W3D           BR     BR   BR        0.000     -1.992    8.195   -7.444
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ W3D      O1     n/a    C2     START
+ W3D      C2     O1     C1     .
+ W3D      O2     C2     .      .
+ W3D      C1     C2     N      .
+ W3D      H11    C1     .      .
+ W3D      H12    C1     .      .
+ W3D      N      C1     C      .
+ W3D      C3     N      C4     .
+ W3D      H3     C3     .      .
+ W3D      C4     C3     .      .
+ W3D      C      N      C6     .
+ W3D      O      C      .      .
+ W3D      C6     C      C5     .
+ W3D      C5     C6     BR     .
+ W3D      BR     C5     .      END
+ W3D      C4     C5     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ W3D      C4     C5        aromatic    1.255    0.020
+ W3D      C4     C3        double      1.255    0.020
+ W3D      C5     C6        double      1.255    0.020
+ W3D      BR     C5        single      1.915    0.020
+ W3D      C6     C         aromatic    1.255    0.020
+ W3D      O      C         double      1.220    0.020
+ W3D      C      N         single      1.330    0.020
+ W3D      C3     N         single      1.260    0.020
+ W3D      N      C1        single      1.455    0.020
+ W3D      C1     C2        single      1.510    0.020
+ W3D      O2     C2        deloc       1.250    0.020
+ W3D      C2     O1        deloc       1.250    0.020
+ W3D      H3     C3        single      1.077    0.020
+ W3D      H11    C1        single      1.092    0.020
+ W3D      H12    C1        single      1.092    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ W3D      O1     C2     O2      123.000    3.000
+ W3D      O1     C2     C1      118.500    3.000
+ W3D      O2     C2     C1      118.500    3.000
+ W3D      C2     C1     H11     109.470    3.000
+ W3D      C2     C1     H12     109.470    3.000
+ W3D      C2     C1     N       109.500    3.000
+ W3D      H11    C1     H12     107.900    3.000
+ W3D      H11    C1     N       109.470    3.000
+ W3D      H12    C1     N       109.470    3.000
+ W3D      C1     N      C3      120.000    3.000
+ W3D      C1     N      C       127.000    3.000
+ W3D      C3     N      C       120.000    3.000
+ W3D      N      C3     H3      120.000    3.000
+ W3D      N      C3     C4      120.000    3.000
+ W3D      H3     C3     C4      120.000    3.000
+ W3D      C3     C4     C5      180.000    3.000
+ W3D      N      C      O       123.000    3.000
+ W3D      N      C      C6      120.000    3.000
+ W3D      O      C      C6      120.000    3.000
+ W3D      C      C6     C5      180.000    3.000
+ W3D      C6     C5     BR      120.000    3.000
+ W3D      C6     C5     C4      120.000    3.000
+ W3D      BR     C5     C4      120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ W3D      var_1            O1     C2     C1     N                180.000           20.000   3
+ W3D      var_2            C2     C1     N      C               -112.929           20.000   3
+ W3D      var_3            C1     N      C3     C4              -172.417           20.000   3
+ W3D      var_4            N      C3     C4     C5                -1.397           20.000   3
+ W3D      var_5            C3     C4     C5     C6                -2.707           20.000   3
+ W3D      var_6            C1     N      C      C6               180.000           20.000   2
+ W3D      var_7            N      C      C6     C5                 2.631           20.000   3
+ W3D      var_8            C      C6     C5     BR              -175.531           20.000   3
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ W3D      plan-1            C5        0.020
+ W3D      plan-1            C4        0.020
+ W3D      plan-1            C6        0.020
+ W3D      plan-1            BR        0.020
+ W3D      plan-2            C         0.020
+ W3D      plan-2            C6        0.020
+ W3D      plan-2            O         0.020
+ W3D      plan-2            N         0.020
+ W3D      plan-3            C3        0.020
+ W3D      plan-3            C4        0.020
+ W3D      plan-3            N         0.020
+ W3D      plan-3            H3        0.020
+ W3D      plan-4            N         0.020
+ W3D      plan-4            C         0.020
+ W3D      plan-4            C3        0.020
+ W3D      plan-4            C1        0.020
+ W3D      plan-4            H3        0.020
+ W3D      plan-5            C2        0.020
+ W3D      plan-5            C1        0.020
+ W3D      plan-5            O2        0.020
+ W3D      plan-5            O1        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

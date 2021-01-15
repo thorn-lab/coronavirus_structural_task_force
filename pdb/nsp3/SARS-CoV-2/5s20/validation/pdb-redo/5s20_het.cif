@@ -1,0 +1,227 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WRD      WRD '.                                   ' .                  25  12 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WRD
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WRD           O1     O    OH1       0.000      8.995   24.603   13.492
+ WRD           HO1    H    H         0.000      9.388   24.220   12.695
+ WRD           C6     C    CR6       0.000      8.251   23.655   14.135
+ WRD           C5     C    CR16      0.000      8.203   22.377   13.614
+ WRD           H5     H    H         0.000      8.729   22.140   12.698
+ WRD           C7     C    CR6       0.000      7.575   23.978   15.332
+ WRD           C2     C    CR6       0.000      6.795   22.990   15.956
+ WRD           C3     C    CR16      0.000      6.785   21.700   15.431
+ WRD           H3     H    H         0.000      6.228   20.921   15.937
+ WRD           C4     C    CR16      0.000      7.477   21.403   14.273
+ WRD           H4     H    H         0.000      7.450   20.395   13.877
+ WRD           C1     C    CH1       0.000      6.015   23.276   17.224
+ WRD           H1     H    H         0.000      6.578   22.883   18.082
+ WRD           N1     N    NT2       0.000      4.695   22.579   17.156
+ WRD           HN12   H    H         0.000      4.618   22.064   16.262
+ WRD           HN11   H    H         0.000      4.155   22.769   18.018
+ WRD           C10    C    CH2       0.000      5.802   24.779   17.422
+ WRD           H101   H    H         0.000      5.377   24.948   18.414
+ WRD           H102   H    H         0.000      5.105   25.140   16.663
+ WRD           C9     C    CH2       0.000      7.109   25.521   17.300
+ WRD           H91    H    H         0.000      7.834   25.099   18.000
+ WRD           H92    H    H         0.000      6.952   26.576   17.533
+ WRD           C8     C    CH2       0.000      7.634   25.387   15.884
+ WRD           H82    H    H         0.000      8.670   25.733   15.893
+ WRD           H81    H    H         0.000      7.035   26.050   15.257
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WRD      O1     n/a    C6     START
+ WRD      HO1    O1     .      .
+ WRD      C6     O1     C7     .
+ WRD      C5     C6     H5     .
+ WRD      H5     C5     .      .
+ WRD      C7     C6     C2     .
+ WRD      C2     C7     C1     .
+ WRD      C3     C2     C4     .
+ WRD      H3     C3     .      .
+ WRD      C4     C3     H4     .
+ WRD      H4     C4     .      .
+ WRD      C1     C2     C10    .
+ WRD      H1     C1     .      .
+ WRD      N1     C1     HN11   .
+ WRD      HN12   N1     .      .
+ WRD      HN11   N1     .      .
+ WRD      C10    C1     C9     .
+ WRD      H101   C10    .      .
+ WRD      H102   C10    .      .
+ WRD      C9     C10    C8     .
+ WRD      H91    C9     .      .
+ WRD      H92    C9     .      .
+ WRD      C8     C9     H81    .
+ WRD      H82    C8     .      .
+ WRD      H81    C8     .      END
+ WRD      C4     C5     .    ADD
+ WRD      C7     C8     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WRD      N1     C1        single      1.475    0.020
+ WRD      C4     C5        aromatic    1.390    0.020
+ WRD      C4     C3        aromatic    1.390    0.020
+ WRD      C5     C6        aromatic    1.390    0.020
+ WRD      C7     C6        aromatic    1.384    0.020
+ WRD      C6     O1        single      1.362    0.020
+ WRD      C7     C8        single      1.511    0.020
+ WRD      C2     C7        aromatic    1.384    0.020
+ WRD      C8     C9        single      1.524    0.020
+ WRD      C10    C1        single      1.524    0.020
+ WRD      C9     C10       single      1.524    0.020
+ WRD      C1     C2        single      1.480    0.020
+ WRD      C3     C2        aromatic    1.390    0.020
+ WRD      HN11   N1        single      1.033    0.020
+ WRD      HN12   N1        single      1.033    0.020
+ WRD      H4     C4        single      1.083    0.020
+ WRD      H5     C5        single      1.083    0.020
+ WRD      H81    C8        single      1.092    0.020
+ WRD      H82    C8        single      1.092    0.020
+ WRD      H101   C10       single      1.092    0.020
+ WRD      H102   C10       single      1.092    0.020
+ WRD      H1     C1        single      1.099    0.020
+ WRD      H3     C3        single      1.083    0.020
+ WRD      HO1    O1        single      0.967    0.020
+ WRD      H91    C9        single      1.092    0.020
+ WRD      H92    C9        single      1.092    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WRD      HO1    O1     C6      109.470    3.000
+ WRD      O1     C6     C5      120.000    3.000
+ WRD      O1     C6     C7      120.000    3.000
+ WRD      C5     C6     C7      120.000    3.000
+ WRD      C6     C5     H5      120.000    3.000
+ WRD      C6     C5     C4      120.000    3.000
+ WRD      H5     C5     C4      120.000    3.000
+ WRD      C6     C7     C2      120.000    3.000
+ WRD      C6     C7     C8      120.000    3.000
+ WRD      C2     C7     C8      120.000    3.000
+ WRD      C7     C2     C3      120.000    3.000
+ WRD      C7     C2     C1      120.000    3.000
+ WRD      C3     C2     C1      120.000    3.000
+ WRD      C2     C3     H3      120.000    3.000
+ WRD      C2     C3     C4      120.000    3.000
+ WRD      H3     C3     C4      120.000    3.000
+ WRD      C3     C4     H4      120.000    3.000
+ WRD      C3     C4     C5      120.000    3.000
+ WRD      H4     C4     C5      120.000    3.000
+ WRD      C2     C1     H1      109.470    3.000
+ WRD      C2     C1     N1      109.500    3.000
+ WRD      C2     C1     C10     109.470    3.000
+ WRD      H1     C1     N1      109.500    3.000
+ WRD      H1     C1     C10     108.340    3.000
+ WRD      N1     C1     C10     109.500    3.000
+ WRD      C1     N1     HN12    109.500    3.000
+ WRD      C1     N1     HN11    109.500    3.000
+ WRD      HN12   N1     HN11    109.500    3.000
+ WRD      C1     C10    H101    109.470    3.000
+ WRD      C1     C10    H102    109.470    3.000
+ WRD      C1     C10    C9      111.000    3.000
+ WRD      H101   C10    H102    107.900    3.000
+ WRD      H101   C10    C9      109.470    3.000
+ WRD      H102   C10    C9      109.470    3.000
+ WRD      C10    C9     H91     109.470    3.000
+ WRD      C10    C9     H92     109.470    3.000
+ WRD      C10    C9     C8      111.000    3.000
+ WRD      H91    C9     H92     107.900    3.000
+ WRD      H91    C9     C8      109.470    3.000
+ WRD      H92    C9     C8      109.470    3.000
+ WRD      C9     C8     H82     109.470    3.000
+ WRD      C9     C8     H81     109.470    3.000
+ WRD      C9     C8     C7      109.470    3.000
+ WRD      H82    C8     H81     107.900    3.000
+ WRD      H82    C8     C7      109.470    3.000
+ WRD      H81    C8     C7      109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WRD      var_1            HO1    O1     C6     C7               180.000           20.000   3
+ WRD      CONST_1          O1     C6     C5     C4                 0.000            0.000   0
+ WRD      CONST_2          O1     C6     C7     C2                 0.000            0.000   0
+ WRD      var_2            C6     C7     C8     C9                 0.000           20.000   2
+ WRD      CONST_3          C6     C7     C2     C1                 0.000            0.000   0
+ WRD      CONST_4          C7     C2     C3     C4                 0.000            0.000   0
+ WRD      CONST_5          C2     C3     C4     C5                 0.000            0.000   0
+ WRD      CONST_6          C3     C4     C5     C6                 0.000            0.000   0
+ WRD      var_3            C7     C2     C1     C10               19.509           20.000   3
+ WRD      var_4            C2     C1     N1     HN11             180.000           20.000   3
+ WRD      var_5            C2     C1     C10    C9               180.000           20.000   3
+ WRD      var_6            C1     C10    C9     C8               180.000           20.000   3
+ WRD      var_7            C10    C9     C8     C7               180.000           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ WRD      chir_01          C1     N1     C10    C2        positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WRD      plan-1            C4        0.020
+ WRD      plan-1            C5        0.020
+ WRD      plan-1            C3        0.020
+ WRD      plan-1            H4        0.020
+ WRD      plan-1            C6        0.020
+ WRD      plan-1            C7        0.020
+ WRD      plan-1            C2        0.020
+ WRD      plan-1            H5        0.020
+ WRD      plan-1            O1        0.020
+ WRD      plan-1            C8        0.020
+ WRD      plan-1            C1        0.020
+ WRD      plan-1            H3        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

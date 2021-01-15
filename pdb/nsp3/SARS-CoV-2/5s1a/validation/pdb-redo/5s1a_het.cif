@@ -1,0 +1,145 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WPS      WPS '.                                   ' .                  13   9 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WPS
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WPS           N3     N    NS        0.000     -2.090   14.372   -2.942
+ WPS           C4     C    CSP       0.000     -2.227   14.562   -1.822
+ WPS           C3     C    CR5       0.000     -2.344   14.784   -0.418
+ WPS           C2     C    CR5       0.000     -3.552   14.727    0.319
+ WPS           N2     N    N         0.000     -4.775   14.543   -0.137
+ WPS           HN2    H    H         0.000     -5.496   14.527    0.474
+ WPS           C1     C    CR5       0.000     -1.336   14.987    0.563
+ WPS           C      C    CH3       0.000      0.135   15.146    0.362
+ WPS           H3     H    H         0.000      0.520   14.279   -0.106
+ WPS           H2     H    H         0.000      0.315   15.990   -0.250
+ WPS           H1     H    H         0.000      0.604   15.281    1.301
+ WPS           N      N    NRD5      0.000     -1.868   15.033    1.787
+ WPS           N1     N    NRD5      0.000     -3.225   14.883    1.643
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WPS      N3     n/a    C4     START
+ WPS      C4     N3     C3     .
+ WPS      C3     C4     C1     .
+ WPS      C2     C3     N2     .
+ WPS      N2     C2     HN2    .
+ WPS      HN2    N2     .      .
+ WPS      C1     C3     N      .
+ WPS      C      C1     H1     .
+ WPS      H3     C      .      .
+ WPS      H2     C      .      .
+ WPS      H1     C      .      .
+ WPS      N      C1     N1     .
+ WPS      N1     N      .      END
+ WPS      N1     C2     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WPS      N1     C2        aromatic    1.350    0.020
+ WPS      N1     N         single      1.404    0.020
+ WPS      C4     N3        triple      1.158    0.020
+ WPS      C3     C4        single      1.335    0.020
+ WPS      C1     C3        aromatic    1.390    0.020
+ WPS      C2     C3        aromatic    1.390    0.020
+ WPS      C      C1        single      1.506    0.020
+ WPS      N      C1        deloc       1.350    0.020
+ WPS      N2     C2        aromatic    1.365    0.020
+ WPS      H1     C         single      1.059    0.020
+ WPS      H2     C         single      1.059    0.020
+ WPS      H3     C         single      1.059    0.020
+ WPS      HN2    N2        single      0.954    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WPS      N3     C4     C3      180.000    3.000
+ WPS      C4     C3     C2      108.000    3.000
+ WPS      C4     C3     C1      108.000    3.000
+ WPS      C2     C3     C1      108.000    3.000
+ WPS      C3     C2     N2      108.000    3.000
+ WPS      C3     C2     N1      108.000    3.000
+ WPS      N2     C2     N1      108.000    3.000
+ WPS      C2     N2     HN2     120.000    3.000
+ WPS      C3     C1     C       126.000    3.000
+ WPS      C3     C1     N       108.000    3.000
+ WPS      C      C1     N       126.000    3.000
+ WPS      C1     C      H3      109.470    3.000
+ WPS      C1     C      H2      109.470    3.000
+ WPS      C1     C      H1      109.470    3.000
+ WPS      H3     C      H2      109.470    3.000
+ WPS      H3     C      H1      109.470    3.000
+ WPS      H2     C      H1      109.470    3.000
+ WPS      C1     N      N1      108.000    3.000
+ WPS      N      N1     C2      108.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WPS      var_1            N3     C4     C3     C1                87.741           20.000   3
+ WPS      CONST_1          C4     C3     C2     N2                 0.000            0.000   0
+ WPS      CONST_2          C3     C2     N2     HN2              180.000            0.000   0
+ WPS      CONST_3          C4     C3     C1     N                  0.000            0.000   0
+ WPS      var_2            C3     C1     C      H1               180.000           20.000   3
+ WPS      CONST_4          C3     C1     N      N1                 0.000            0.000   0
+ WPS      CONST_5          C1     N      N1     C2                 0.632            0.000   0
+ WPS      CONST_6          N      N1     C2     C3                 0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WPS      plan-1            N1        0.020
+ WPS      plan-1            C2        0.020
+ WPS      plan-1            N         0.020
+ WPS      plan-1            C3        0.020
+ WPS      plan-1            C1        0.020
+ WPS      plan-1            C4        0.020
+ WPS      plan-1            C         0.020
+ WPS      plan-1            N2        0.020
+ WPS      plan-1            HN2       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

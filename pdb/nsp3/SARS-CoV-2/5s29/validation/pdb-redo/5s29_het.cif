@@ -1,0 +1,214 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WRY      WRY '.                                   ' .                  23  16 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WRY
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WRY           F      F    F         0.000     -3.282   15.195   -1.921
+ WRY           C4     C    C         0.000     -3.958   14.966   -0.765
+ WRY           C3     C    CSP       0.000     -5.276   14.690   -0.844
+ WRY           C2     C    CR6       0.000     -6.048   14.724    0.338
+ WRY           C7     C    CR6       0.000     -5.406   14.953    1.564
+ WRY           C6     C    CSP       0.000     -4.012   15.158    1.572
+ WRY           C5     C    CSP       0.000     -3.304   15.172    0.415
+ WRY           N      N    NRD6      0.000     -7.416   14.651    0.229
+ WRY           C1     C    CR6       0.000     -8.154   14.808    1.314
+ WRY           C      C    CH3       0.000     -9.636   14.762    1.088
+ WRY           H3     H    H         0.000     -9.914   15.534    0.419
+ WRY           H2     H    H         0.000     -9.900   13.823    0.676
+ WRY           H1     H    H         0.000    -10.137   14.897    2.011
+ WRY           C9     C    CR6       0.000     -7.566   14.950    2.607
+ WRY           C8     C    CR16      0.000     -6.205   15.057    2.709
+ WRY           H8     H    H         0.000     -5.746   15.222    3.676
+ WRY           C10    C    C         0.000     -8.372   15.300    3.823
+ WRY           O      O    O         0.000     -9.299   16.103    3.767
+ WRY           N1     N    N         0.000     -8.004   14.717    4.962
+ WRY           C11    C    CH3       0.000     -8.686   14.976    6.217
+ WRY           H113   H    H         0.000     -8.619   16.007    6.448
+ WRY           H112   H    H         0.000     -9.704   14.699    6.128
+ WRY           H111   H    H         0.000     -8.231   14.411    6.988
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WRY      F      n/a    C4     START
+ WRY      C4     F      C3     .
+ WRY      C3     C4     C2     .
+ WRY      C2     C3     N      .
+ WRY      C7     C2     C6     .
+ WRY      C6     C7     C5     .
+ WRY      C5     C6     .      .
+ WRY      N      C2     C1     .
+ WRY      C1     N      C9     .
+ WRY      C      C1     H1     .
+ WRY      H3     C      .      .
+ WRY      H2     C      .      .
+ WRY      H1     C      .      .
+ WRY      C9     C1     C10    .
+ WRY      C8     C9     H8     .
+ WRY      H8     C8     .      .
+ WRY      C10    C9     N1     .
+ WRY      O      C10    .      .
+ WRY      N1     C10    C11    .
+ WRY      C11    N1     H111   .
+ WRY      H113   C11    .      .
+ WRY      H112   C11    .      .
+ WRY      H111   C11    .      END
+ WRY      C4     C5     .    ADD
+ WRY      C7     C8     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WRY      N1     C10       deloc       1.330    0.020
+ WRY      C11    N1        single      1.455    0.020
+ WRY      C4     C5        aromatic    1.255    0.020
+ WRY      C4     F         single      1.315    0.020
+ WRY      C3     C4        double      1.255    0.020
+ WRY      C5     C6        double      1.180    0.020
+ WRY      C6     C7        aromatic    1.285    0.020
+ WRY      C7     C8        aromatic    1.390    0.020
+ WRY      C7     C2        aromatic    1.384    0.020
+ WRY      C8     C9        aromatic    1.390    0.020
+ WRY      O      C10       double      1.220    0.020
+ WRY      C10    C9        single      1.500    0.020
+ WRY      C9     C1        aromatic    1.384    0.020
+ WRY      C      C1        single      1.506    0.020
+ WRY      C1     N         aromatic    1.350    0.020
+ WRY      N      C2        aromatic    1.350    0.020
+ WRY      C2     C3        aromatic    1.285    0.020
+ WRY      H8     C8        single      1.083    0.020
+ WRY      H111   C11       single      1.059    0.020
+ WRY      H112   C11       single      1.059    0.020
+ WRY      H113   C11       single      1.059    0.020
+ WRY      H1     C         single      1.059    0.020
+ WRY      H2     C         single      1.059    0.020
+ WRY      H3     C         single      1.059    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WRY      F      C4     C3      120.000    3.000
+ WRY      F      C4     C5      120.000    3.000
+ WRY      C3     C4     C5      120.000    3.000
+ WRY      C4     C3     C2      180.000    3.000
+ WRY      C3     C2     C7      120.000    3.000
+ WRY      C3     C2     N       120.000    3.000
+ WRY      C7     C2     N       120.000    3.000
+ WRY      C2     C7     C6      120.000    3.000
+ WRY      C2     C7     C8      120.000    3.000
+ WRY      C6     C7     C8      120.000    3.000
+ WRY      C7     C6     C5      180.000    3.000
+ WRY      C6     C5     C4      180.000    3.000
+ WRY      C2     N      C1      120.000    3.000
+ WRY      N      C1     C       120.000    3.000
+ WRY      N      C1     C9      120.000    3.000
+ WRY      C      C1     C9      120.000    3.000
+ WRY      C1     C      H3      109.470    3.000
+ WRY      C1     C      H2      109.470    3.000
+ WRY      C1     C      H1      109.470    3.000
+ WRY      H3     C      H2      109.470    3.000
+ WRY      H3     C      H1      109.470    3.000
+ WRY      H2     C      H1      109.470    3.000
+ WRY      C1     C9     C8      120.000    3.000
+ WRY      C1     C9     C10     120.000    3.000
+ WRY      C8     C9     C10     120.000    3.000
+ WRY      C9     C8     H8      120.000    3.000
+ WRY      C9     C8     C7      120.000    3.000
+ WRY      H8     C8     C7      120.000    3.000
+ WRY      C9     C10    O       120.500    3.000
+ WRY      C9     C10    N1      120.000    3.000
+ WRY      O      C10    N1      123.000    3.000
+ WRY      C10    N1     C11     127.000    3.000
+ WRY      N1     C11    H113    109.470    3.000
+ WRY      N1     C11    H112    109.470    3.000
+ WRY      N1     C11    H111    109.470    3.000
+ WRY      H113   C11    H112    109.470    3.000
+ WRY      H113   C11    H111    109.470    3.000
+ WRY      H112   C11    H111    109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WRY      var_1            F      C4     C5     C6               169.587           20.000   3
+ WRY      var_2            F      C4     C3     C2              -167.011           20.000   3
+ WRY      var_3            C4     C3     C2     N                169.943           20.000   3
+ WRY      CONST_1          C3     C2     C7     C6                 0.000            0.000   0
+ WRY      CONST_2          C2     C7     C8     C9                 0.000            0.000   0
+ WRY      var_4            C2     C7     C6     C5                 1.826           20.000   3
+ WRY      var_5            C7     C6     C5     C4                -0.878           20.000   3
+ WRY      CONST_3          C3     C2     N      C1                 0.000            0.000   0
+ WRY      CONST_4          C2     N      C1     C9                 0.000            0.000   0
+ WRY      var_6            N      C1     C      H1               180.000           20.000   3
+ WRY      CONST_5          N      C1     C9     C10                0.000            0.000   0
+ WRY      CONST_6          C1     C9     C8     C7                 0.000            0.000   0
+ WRY      var_7            C1     C9     C10    N1               143.420           20.000   3
+ WRY      CONST_7          C9     C10    N1     C11              180.000            0.000   0
+ WRY      var_8            C10    N1     C11    H111             180.000           20.000   3
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WRY      plan-1            N1        0.020
+ WRY      plan-1            C10       0.020
+ WRY      plan-1            C11       0.020
+ WRY      plan-1            O         0.020
+ WRY      plan-1            C9        0.020
+ WRY      plan-2            C4        0.020
+ WRY      plan-2            C5        0.020
+ WRY      plan-2            F         0.020
+ WRY      plan-2            C3        0.020
+ WRY      plan-3            C7        0.020
+ WRY      plan-3            C6        0.020
+ WRY      plan-3            C8        0.020
+ WRY      plan-3            C2        0.020
+ WRY      plan-3            C9        0.020
+ WRY      plan-3            C1        0.020
+ WRY      plan-3            N         0.020
+ WRY      plan-3            H8        0.020
+ WRY      plan-3            C10       0.020
+ WRY      plan-3            C         0.020
+ WRY      plan-3            C3        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

@@ -1,0 +1,192 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WQJ      WQJ '.                                   ' .                  20  11 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WQJ
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WQJ           N1     N    N         0.000      0.894   14.146   -1.105
+ WQJ           HN1    H    H         0.000      0.793   14.075   -2.051
+ WQJ           C1     C    CR6       0.000     -0.187   14.390   -0.325
+ WQJ           C2     C    CR16      0.000     -1.447   14.522   -0.906
+ WQJ           H2     H    H         0.000     -1.561   14.480   -1.982
+ WQJ           C3     C    CR6       0.000     -2.558   14.708   -0.088
+ WQJ           C8     C    CR16      0.000     -0.076   14.502    1.079
+ WQJ           H8     H    H         0.000      0.909   14.467    1.527
+ WQJ           N2     N    NRD6      0.000     -1.144   14.650    1.880
+ WQJ           C7     C    CR6       0.000     -2.357   14.804    1.297
+ WQJ           C6     C    CH2       0.000     -3.520   15.016    2.228
+ WQJ           H61    H    H         0.000     -3.263   15.808    2.935
+ WQJ           H62    H    H         0.000     -3.704   14.088    2.774
+ WQJ           C5     C    CH2       0.000     -4.763   15.407    1.461
+ WQJ           H51    H    H         0.000     -4.668   16.445    1.135
+ WQJ           H52    H    H         0.000     -5.631   15.310    2.117
+ WQJ           O1     O    O2        0.000     -4.928   14.564    0.324
+ WQJ           C4     C    CH2       0.000     -3.937   14.835   -0.667
+ WQJ           H42    H    H         0.000     -4.083   15.850   -1.043
+ WQJ           H41    H    H         0.000     -4.056   14.124   -1.487
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WQJ      N1     n/a    C1     START
+ WQJ      HN1    N1     .      .
+ WQJ      C1     N1     C8     .
+ WQJ      C2     C1     C3     .
+ WQJ      H2     C2     .      .
+ WQJ      C3     C2     .      .
+ WQJ      C8     C1     N2     .
+ WQJ      H8     C8     .      .
+ WQJ      N2     C8     C7     .
+ WQJ      C7     N2     C6     .
+ WQJ      C6     C7     C5     .
+ WQJ      H61    C6     .      .
+ WQJ      H62    C6     .      .
+ WQJ      C5     C6     O1     .
+ WQJ      H51    C5     .      .
+ WQJ      H52    C5     .      .
+ WQJ      O1     C5     C4     .
+ WQJ      C4     O1     H41    .
+ WQJ      H42    C4     .      .
+ WQJ      H41    C4     .      END
+ WQJ      C4     C3     .    ADD
+ WQJ      C7     C3     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WQJ      C1     N1        deloc       1.355    0.020
+ WQJ      C4     C3        single      1.511    0.020
+ WQJ      C4     O1        single      1.426    0.020
+ WQJ      C5     C6        single      1.524    0.020
+ WQJ      O1     C5        single      1.426    0.020
+ WQJ      C6     C7        single      1.511    0.020
+ WQJ      C7     C3        aromatic    1.384    0.020
+ WQJ      C7     N2        aromatic    1.350    0.020
+ WQJ      C8     C1        aromatic    1.390    0.020
+ WQJ      N2     C8        aromatic    1.337    0.020
+ WQJ      C2     C1        aromatic    1.390    0.020
+ WQJ      C3     C2        aromatic    1.390    0.020
+ WQJ      HN1    N1        single      0.954    0.020
+ WQJ      H41    C4        single      1.092    0.020
+ WQJ      H42    C4        single      1.092    0.020
+ WQJ      H51    C5        single      1.092    0.020
+ WQJ      H52    C5        single      1.092    0.020
+ WQJ      H61    C6        single      1.092    0.020
+ WQJ      H62    C6        single      1.092    0.020
+ WQJ      H8     C8        single      1.083    0.020
+ WQJ      H2     C2        single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WQJ      HN1    N1     C1      120.000    3.000
+ WQJ      N1     C1     C2      120.000    3.000
+ WQJ      N1     C1     C8      120.000    3.000
+ WQJ      C2     C1     C8      120.000    3.000
+ WQJ      C1     C2     H2      120.000    3.000
+ WQJ      C1     C2     C3      120.000    3.000
+ WQJ      H2     C2     C3      120.000    3.000
+ WQJ      C2     C3     C4      120.000    3.000
+ WQJ      C2     C3     C7      120.000    3.000
+ WQJ      C4     C3     C7      120.000    3.000
+ WQJ      C1     C8     H8      120.000    3.000
+ WQJ      C1     C8     N2      120.000    3.000
+ WQJ      H8     C8     N2      120.000    3.000
+ WQJ      C8     N2     C7      120.000    3.000
+ WQJ      N2     C7     C6      120.000    3.000
+ WQJ      N2     C7     C3      120.000    3.000
+ WQJ      C6     C7     C3      120.000    3.000
+ WQJ      C7     C6     H61     109.470    3.000
+ WQJ      C7     C6     H62     109.470    3.000
+ WQJ      C7     C6     C5      109.470    3.000
+ WQJ      H61    C6     H62     107.900    3.000
+ WQJ      H61    C6     C5      109.470    3.000
+ WQJ      H62    C6     C5      109.470    3.000
+ WQJ      C6     C5     H51     109.470    3.000
+ WQJ      C6     C5     H52     109.470    3.000
+ WQJ      C6     C5     O1      109.470    3.000
+ WQJ      H51    C5     H52     107.900    3.000
+ WQJ      H51    C5     O1      109.470    3.000
+ WQJ      H52    C5     O1      109.470    3.000
+ WQJ      C5     O1     C4      111.800    3.000
+ WQJ      O1     C4     H42     109.470    3.000
+ WQJ      O1     C4     H41     109.470    3.000
+ WQJ      O1     C4     C3      109.470    3.000
+ WQJ      H42    C4     H41     107.900    3.000
+ WQJ      H42    C4     C3      109.470    3.000
+ WQJ      H41    C4     C3      109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WQJ      CONST_1          HN1    N1     C1     C8               180.000            0.000   0
+ WQJ      CONST_2          N1     C1     C2     C3                 0.000            0.000   0
+ WQJ      CONST_3          C1     C2     C3     C4                 0.000            0.000   0
+ WQJ      CONST_4          N1     C1     C8     N2                 0.000            0.000   0
+ WQJ      CONST_5          C1     C8     N2     C7                 0.000            0.000   0
+ WQJ      CONST_6          C8     N2     C7     C6                 0.000            0.000   0
+ WQJ      CONST_7          N2     C7     C3     C2                 0.000            0.000   0
+ WQJ      var_1            N2     C7     C6     C5                 0.000           20.000   2
+ WQJ      var_2            C7     C6     C5     O1               180.000           20.000   3
+ WQJ      var_3            C6     C5     O1     C4               -70.301           20.000   3
+ WQJ      var_4            C5     O1     C4     C3                55.660           20.000   3
+ WQJ      var_5            O1     C4     C3     C2                 0.000           20.000   2
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WQJ      plan-1            N1        0.020
+ WQJ      plan-1            C1        0.020
+ WQJ      plan-1            HN1       0.020
+ WQJ      plan-1            C8        0.020
+ WQJ      plan-1            C2        0.020
+ WQJ      plan-1            C3        0.020
+ WQJ      plan-1            H2        0.020
+ WQJ      plan-1            C4        0.020
+ WQJ      plan-1            C7        0.020
+ WQJ      plan-1            N2        0.020
+ WQJ      plan-1            C6        0.020
+ WQJ      plan-1            H8        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

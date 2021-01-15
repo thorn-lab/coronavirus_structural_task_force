@@ -1,0 +1,172 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WQM      WQM '.                                   ' .                  17  11 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WQM
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WQM           O2     O    O         0.000     -1.463   14.661    1.830
+ WQM           C2     C    C         0.000     -1.704   14.949    0.656
+ WQM           N1     N    N         0.000     -0.723   15.175   -0.219
+ WQM           C1     C    CH3       0.000      0.648   15.364    0.227
+ WQM           H13    H    H         0.000      0.696   16.201    0.874
+ WQM           H12    H    H         0.000      0.973   14.499    0.744
+ WQM           H11    H    H         0.000      1.272   15.529   -0.612
+ WQM           C3     C    CR6       0.000     -3.115   15.050    0.160
+ WQM           C4     C    CR16      0.000     -3.403   15.211   -1.200
+ WQM           H4     H    H         0.000     -2.594   15.264   -1.918
+ WQM           C6     C    CR16      0.000     -4.157   14.972    1.058
+ WQM           H6     H    H         0.000     -3.953   14.835    2.113
+ WQM           N2     N    NRD6      0.000     -5.435   15.066    0.624
+ WQM           C7     C    CR6       0.000     -5.771   15.234   -0.693
+ WQM           O1     O    O         0.000     -6.991   15.304   -1.003
+ WQM           C5     C    CR16      0.000     -4.693   15.301   -1.626
+ WQM           H5     H    H         0.000     -4.903   15.424   -2.681
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WQM      O2     n/a    C2     START
+ WQM      C2     O2     C3     .
+ WQM      N1     C2     C1     .
+ WQM      C1     N1     H11    .
+ WQM      H13    C1     .      .
+ WQM      H12    C1     .      .
+ WQM      H11    C1     .      .
+ WQM      C3     C2     C6     .
+ WQM      C4     C3     H4     .
+ WQM      H4     C4     .      .
+ WQM      C6     C3     N2     .
+ WQM      H6     C6     .      .
+ WQM      N2     C6     C7     .
+ WQM      C7     N2     C5     .
+ WQM      O1     C7     .      .
+ WQM      C5     C7     H5     .
+ WQM      H5     C5     .      END
+ WQM      C4     C5     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WQM      C1     N1        single      1.455    0.020
+ WQM      N1     C2        deloc       1.330    0.020
+ WQM      C4     C5        aromatic    1.390    0.020
+ WQM      C4     C3        aromatic    1.390    0.020
+ WQM      C5     C7        aromatic    1.390    0.020
+ WQM      C6     C3        aromatic    1.390    0.020
+ WQM      N2     C6        aromatic    1.337    0.020
+ WQM      C7     N2        aromatic    1.350    0.020
+ WQM      O1     C7        aromatic    1.250    0.020
+ WQM      C3     C2        single      1.500    0.020
+ WQM      C2     O2        double      1.220    0.020
+ WQM      H4     C4        single      1.083    0.020
+ WQM      H5     C5        single      1.083    0.020
+ WQM      H6     C6        single      1.083    0.020
+ WQM      H11    C1        single      1.059    0.020
+ WQM      H12    C1        single      1.059    0.020
+ WQM      H13    C1        single      1.059    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WQM      O2     C2     N1      123.000    3.000
+ WQM      O2     C2     C3      120.500    3.000
+ WQM      N1     C2     C3      120.000    3.000
+ WQM      C2     N1     C1      127.000    3.000
+ WQM      N1     C1     H13     109.470    3.000
+ WQM      N1     C1     H12     109.470    3.000
+ WQM      N1     C1     H11     109.470    3.000
+ WQM      H13    C1     H12     109.470    3.000
+ WQM      H13    C1     H11     109.470    3.000
+ WQM      H12    C1     H11     109.470    3.000
+ WQM      C2     C3     C4      120.000    3.000
+ WQM      C2     C3     C6      120.000    3.000
+ WQM      C4     C3     C6      120.000    3.000
+ WQM      C3     C4     H4      120.000    3.000
+ WQM      C3     C4     C5      120.000    3.000
+ WQM      H4     C4     C5      120.000    3.000
+ WQM      C3     C6     H6      120.000    3.000
+ WQM      C3     C6     N2      120.000    3.000
+ WQM      H6     C6     N2      120.000    3.000
+ WQM      C6     N2     C7      120.000    3.000
+ WQM      N2     C7     O1      120.000    3.000
+ WQM      N2     C7     C5      120.000    3.000
+ WQM      O1     C7     C5      120.000    3.000
+ WQM      C7     C5     H5      120.000    3.000
+ WQM      C7     C5     C4      120.000    3.000
+ WQM      H5     C5     C4      120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WQM      CONST_1          O2     C2     N1     C1               180.000            0.000   0
+ WQM      var_1            C2     N1     C1     H11              180.000           20.000   3
+ WQM      var_2            O2     C2     C3     C6                 7.517           20.000   3
+ WQM      CONST_2          C2     C3     C4     C5                 0.000            0.000   0
+ WQM      CONST_3          C3     C4     C5     C7                 0.000            0.000   0
+ WQM      CONST_4          C2     C3     C6     N2                 0.000            0.000   0
+ WQM      CONST_5          C3     C6     N2     C7                 0.000            0.000   0
+ WQM      CONST_6          C6     N2     C7     C5                 0.000            0.000   0
+ WQM      CONST_7          N2     C7     C5     C4                 0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WQM      plan-1            N1        0.020
+ WQM      plan-1            C1        0.020
+ WQM      plan-1            C2        0.020
+ WQM      plan-1            C3        0.020
+ WQM      plan-1            O2        0.020
+ WQM      plan-2            C4        0.020
+ WQM      plan-2            C5        0.020
+ WQM      plan-2            C3        0.020
+ WQM      plan-2            H4        0.020
+ WQM      plan-2            C6        0.020
+ WQM      plan-2            C7        0.020
+ WQM      plan-2            N2        0.020
+ WQM      plan-2            H5        0.020
+ WQM      plan-2            H6        0.020
+ WQM      plan-2            O1        0.020
+ WQM      plan-2            C2        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
