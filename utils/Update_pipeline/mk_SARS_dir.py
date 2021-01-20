@@ -182,5 +182,5 @@ def twice_assigned (id_dict, multi_assign_ids):
         mover(id, multi_ids_prot, multi_prot_folder)
 
 main()
-to_old.main(pdb_id_rev)
+to_old.main(pdb_id_rev, repo_path)
 print("Done")
