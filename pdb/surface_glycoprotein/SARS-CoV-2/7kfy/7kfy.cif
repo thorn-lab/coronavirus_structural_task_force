@@ -3,7 +3,7 @@ data_7KFY
 _entry.id   7KFY 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.336 
+_audit_conform.dict_version    5.337 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
@@ -136,11 +136,14 @@ _entity.pdbx_ec
 _entity.pdbx_mutation 
 _entity.pdbx_fragment 
 _entity.details 
-1 polymer     man 'Surface glycoprotein'                      25467.650 1   ? ? ? ? 
+1 polymer     man 'Spike glycoprotein'                        25467.650 1   ? ? ? ? 
 2 polymer     man 'heavy chain of human antibody C1A-F10 Fab' 23854.633 1   ? ? ? ? 
 3 polymer     man 'light chain of human antibody C1A-F10 Fab' 23247.756 1   ? ? ? ? 
 4 non-polymer syn 2-acetamido-2-deoxy-beta-D-glucopyranose    221.208   1   ? ? ? ? 
 5 water       nat water                                       18.015    532 ? ? ? ? 
+# 
+_entity_name_com.entity_id   1 
+_entity_name_com.name        'S glycoprotein,E2,Peplomer protein' 
 # 
 loop_
 _entity_poly.entity_id 
@@ -904,12 +907,12 @@ _entity_src_gen.expression_system_id
 _entity_src_gen.plasmid_name 
 _entity_src_gen.plasmid_details 
 _entity_src_gen.pdbx_description 
-1 1 sample 'Biological sequence' 1 228 2019-nCoV ? ? ? ? ? ? ? ? 'Severe acute respiratory syndrome coronavirus 2' 2697049 ? ? ? ? 
-? ? ? ? 'Homo sapiens' 9606 ? ? ? ? ? ? ? ? HEK-293T ? ? ? ? ? plasmid ? ? ? pHLSec    ? ? 
-2 1 sample 'Biological sequence' 1 225 ?         ? ? ? ? ? ? ? ? 'Homo sapiens'                                    9606    ? ? ? ? 
-? ? ? ? 'Homo sapiens' 9606 ? ? ? ? ? ? ? ? HEK-293T ? ? ? ? ? plasmid ? ? ? pVRC-8400 ? ? 
-3 1 sample 'Biological sequence' 1 214 ?         ? ? ? ? ? ? ? ? 'Homo sapiens'                                    9606    ? ? ? ? 
-? ? ? ? 'Homo sapiens' 9606 ? ? ? ? ? ? ? ? HEK-293T ? ? ? ? ? plasmid ? ? ? pVRC-8400 ? ? 
+1 1 sample 'Biological sequence' 1 228 2019-nCoV ? 'S, 2' ? ? ? ? ? ? 'Severe acute respiratory syndrome coronavirus 2' 2697049 ? 
+? ? ? ? ? ? ? 'Homo sapiens' 9606 ? ? ? ? ? ? ? ? HEK-293T ? ? ? ? ? plasmid ? ? ? pHLSec    ? ? 
+2 1 sample 'Biological sequence' 1 225 ?         ? ?      ? ? ? ? ? ? 'Homo sapiens'                                    9606    ? 
+? ? ? ? ? ? ? 'Homo sapiens' 9606 ? ? ? ? ? ? ? ? HEK-293T ? ? ? ? ? plasmid ? ? ? pVRC-8400 ? ? 
+3 1 sample 'Biological sequence' 1 214 ?         ? ?      ? ? ? ? ? ? 'Homo sapiens'                                    9606    ? 
+? ? ? ? ? ? ? 'Homo sapiens' 9606 ? ? ? ? ? ? ? ? HEK-293T ? ? ? ? ? plasmid ? ? ? pVRC-8400 ? ? 
 # 
 loop_
 _struct_ref.id 
@@ -920,14 +923,14 @@ _struct_ref.pdbx_db_isoform
 _struct_ref.entity_id 
 _struct_ref.pdbx_seq_one_letter_code 
 _struct_ref.pdbx_align_begin 
-1 UNP A0A6N1WIU8_SARS2 A0A6N1WIU8 ? 1 
+1 UNP SPIKE_SARS2 P0DTC2 ? 1 
 ;RVQPTESIVRFPNITNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYAD
 SFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRLFRKSNLKPFERDISTEIYQAGST
 PCNGVEGFNCYFPLQSYGFQPTNGVGYQPYRVVVLSFELLHAPATVCGPKKSTNLVKNKCVNF
 ;
 319 
-2 PDB 7KFY             7KFY       ? 2 ? 1   
-3 PDB 7KFY             7KFY       ? 3 ? 1   
+2 PDB 7KFY        7KFY   ? 2 ? 1   
+3 PDB 7KFY        7KFY   ? 3 ? 1   
 # 
 loop_
 _struct_ref_seq.align_id 
@@ -945,9 +948,9 @@ _struct_ref_seq.db_align_end
 _struct_ref_seq.pdbx_db_align_end_ins_code 
 _struct_ref_seq.pdbx_auth_seq_align_beg 
 _struct_ref_seq.pdbx_auth_seq_align_end 
-1 1 7KFY A 6 ? 228 ? A0A6N1WIU8 319 ? 541 ? 319 541 
-2 2 7KFY H 1 ? 225 ? 7KFY       1   ? 218 ? 1   218 
-3 3 7KFY L 1 ? 214 ? 7KFY       1   ? 214 ? 1   214 
+1 1 7KFY A 6 ? 228 ? P0DTC2 319 ? 541 ? 319 541 
+2 2 7KFY H 1 ? 225 ? 7KFY   1   ? 218 ? 1   218 
+3 3 7KFY L 1 ? 214 ? 7KFY   1   ? 214 ? 1   214 
 # 
 loop_
 _struct_ref_seq_dif.align_id 
@@ -963,11 +966,11 @@ _struct_ref_seq_dif.pdbx_seq_db_seq_num
 _struct_ref_seq_dif.details 
 _struct_ref_seq_dif.pdbx_auth_seq_num 
 _struct_ref_seq_dif.pdbx_ordinal 
-1 7KFY GLY A 1 ? UNP A0A6N1WIU8 ? ? 'expression tag' 314 1 
-1 7KFY SER A 2 ? UNP A0A6N1WIU8 ? ? 'expression tag' 315 2 
-1 7KFY GLY A 3 ? UNP A0A6N1WIU8 ? ? 'expression tag' 316 3 
-1 7KFY SER A 4 ? UNP A0A6N1WIU8 ? ? 'expression tag' 317 4 
-1 7KFY GLY A 5 ? UNP A0A6N1WIU8 ? ? 'expression tag' 318 5 
+1 7KFY GLY A 1 ? UNP P0DTC2 ? ? 'expression tag' 314 1 
+1 7KFY SER A 2 ? UNP P0DTC2 ? ? 'expression tag' 315 2 
+1 7KFY GLY A 3 ? UNP P0DTC2 ? ? 'expression tag' 316 3 
+1 7KFY SER A 4 ? UNP P0DTC2 ? ? 'expression tag' 317 4 
+1 7KFY GLY A 5 ? UNP P0DTC2 ? ? 'expression tag' 318 5 
 # 
 loop_
 _chem_comp.id 
@@ -1438,7 +1441,8 @@ _refine_ls_shell.pdbx_fsc_free                    ?
 # 
 _struct.entry_id                     7KFY 
 _struct.title                        'Structural basis for a germline-biased antibody response to SARS-CoV-2 (RBD:C1A-F10 Fab)' 
-_struct.pdbx_descriptor              ? 
+_struct.pdbx_descriptor              
+'Spike glycoprotein, heavy chain of human antibody C1A-F10 Fab, light chain of human antibody C1A-F10 Fab' 
 _struct.pdbx_model_details           ? 
 _struct.pdbx_formula_weight          ? 
 _struct.pdbx_formula_weight_method   ? 
@@ -13388,11 +13392,14 @@ _pdbx_struct_oper_list.matrix[3][2]         0.0000000000
 _pdbx_struct_oper_list.matrix[3][3]         1.0000000000 
 _pdbx_struct_oper_list.vector[3]            0.0000000000 
 # 
-_pdbx_audit_revision_history.ordinal             1 
-_pdbx_audit_revision_history.data_content_type   'Structure model' 
-_pdbx_audit_revision_history.major_revision      1 
-_pdbx_audit_revision_history.minor_revision      0 
-_pdbx_audit_revision_history.revision_date       2020-12-02 
+loop_
+_pdbx_audit_revision_history.ordinal 
+_pdbx_audit_revision_history.data_content_type 
+_pdbx_audit_revision_history.major_revision 
+_pdbx_audit_revision_history.minor_revision 
+_pdbx_audit_revision_history.revision_date 
+1 'Structure model' 1 0 2020-12-02 
+2 'Structure model' 1 1 2021-01-20 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -13401,6 +13408,41 @@ _pdbx_audit_revision_details.provider            repository
 _pdbx_audit_revision_details.type                'Initial release' 
 _pdbx_audit_revision_details.description         ? 
 _pdbx_audit_revision_details.details             ? 
+# 
+loop_
+_pdbx_audit_revision_group.ordinal 
+_pdbx_audit_revision_group.revision_ordinal 
+_pdbx_audit_revision_group.data_content_type 
+_pdbx_audit_revision_group.group 
+1 2 'Structure model' 'Database references' 
+2 2 'Structure model' 'Source and taxonomy' 
+3 2 'Structure model' 'Structure summary'   
+# 
+loop_
+_pdbx_audit_revision_category.ordinal 
+_pdbx_audit_revision_category.revision_ordinal 
+_pdbx_audit_revision_category.data_content_type 
+_pdbx_audit_revision_category.category 
+1 2 'Structure model' entity             
+2 2 'Structure model' entity_name_com    
+3 2 'Structure model' entity_src_gen     
+4 2 'Structure model' struct             
+5 2 'Structure model' struct_ref         
+6 2 'Structure model' struct_ref_seq     
+7 2 'Structure model' struct_ref_seq_dif 
+# 
+loop_
+_pdbx_audit_revision_item.ordinal 
+_pdbx_audit_revision_item.revision_ordinal 
+_pdbx_audit_revision_item.data_content_type 
+_pdbx_audit_revision_item.item 
+1 2 'Structure model' '_entity.pdbx_description'                       
+2 2 'Structure model' '_entity_src_gen.pdbx_gene_src_gene'             
+3 2 'Structure model' '_struct.pdbx_descriptor'                        
+4 2 'Structure model' '_struct_ref.db_code'                            
+5 2 'Structure model' '_struct_ref.pdbx_db_accession'                  
+6 2 'Structure model' '_struct_ref_seq.pdbx_db_accession'              
+7 2 'Structure model' '_struct_ref_seq_dif.pdbx_seq_db_accession_code' 
 # 
 loop_
 _pdbx_refine_tls.id 

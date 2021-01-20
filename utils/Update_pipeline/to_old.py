@@ -12,9 +12,6 @@ And was written in 2020 by Kristopher Nolte, Thorn Lab, University of Wuerzburg
 as part of the Coronavirus Structural Taskforce, insidecorona.net
 '''
 
-#path = '/Users/kristophernolte/Documents/ThornLab/coronavirus_structural_task_force/pdb'
-path = '/scratch/works/convid/coronavirus_structural_task_force/pdb'
-
 def mk_dir(dir_path):
     #function to create new folders
     try:
@@ -41,9 +38,9 @@ def to_old (key,dirpath,form):
     try: os.replace(dirpath+"/"+key+".{}".format(form), dirpath+"/old/"+key+"_{}.{}".format(time,form))
     except FileNotFoundError: pass
 
-def main (pdb_id):
+def main (pdb_id, repo_path):
     print("New DOIs for: ")
-    for dirpath, dirnames, files in os.walk(path):
+    for dirpath, dirnames, files in os.walk(repo_path):
         for key in pdb_id:
             if dirpath.endswith(key):
                 #moves the old files in old
