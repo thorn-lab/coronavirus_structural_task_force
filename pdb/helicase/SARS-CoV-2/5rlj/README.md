@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal Structure of PHIP in complex with NCL-00024662 (PanDDA analysis group deposition). Asymmetric monomer with one unique protein chain. Ligand is (4-bromo-2-methoxyphenyl)methanol.
 
 ## Basefolder
 

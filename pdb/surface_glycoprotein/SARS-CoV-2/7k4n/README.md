@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+SARS-CoV-2 spike protein in complex with the S2E12 neutralizing antibody Fab fragment. Non polymer only nonamer, antibody with three heavy and three light chain. Spike glycoprotein with three chains. S2E12 traps the spike in a conformation that cannot bind ACE2. 
 
 ## Basefolder
 
@@ -20,7 +22,7 @@
 
 
 
-
+**validation** - contains validation reports. This structure has been analyzed by <br>     [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7k4n/validation/ccpem-validation)
 
 
 

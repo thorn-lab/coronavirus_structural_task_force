@@ -1,0 +1,285 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WSJ      WSJ '.                                   ' .                  33  19 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WSJ
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WSJ           O3     O    OS       -0.500      0.393   12.711   -2.541
+ WSJ           S1     S    ST        0.000      0.896   11.936   -3.624
+ WSJ           O2     O    OS       -0.500      1.044   10.534   -3.426
+ WSJ           C12    C    C2        0.000      2.449   12.619   -4.101
+ WSJ           H122   H    H         0.000      2.902   13.504   -3.601
+ WSJ           H121   H    H         0.000      3.065   12.204   -4.929
+ WSJ           N3     N    NH1       0.000     -0.119   12.159   -4.902
+ WSJ           HN3    H    H         0.000     -0.713   12.976   -4.907
+ WSJ           C11    C    CR5       0.000     -0.198   11.266   -5.987
+ WSJ           C2     C    CR5       0.000     -1.197   10.353   -6.172
+ WSJ           C1     C    CH3       0.000     -2.382   10.081   -5.313
+ WSJ           H13    H    H         0.000     -2.055    9.784   -4.352
+ WSJ           H12    H    H         0.000     -2.966   10.960   -5.235
+ WSJ           H11    H    H         0.000     -2.958    9.308   -5.748
+ WSJ           C4     C    CR5       0.000      0.728   11.156   -7.092
+ WSJ           O1     O    O         0.000      1.740   11.812   -7.386
+ WSJ           N2     N    NR5       0.000      0.189   10.168   -7.911
+ WSJ           N1     N    NR5       0.000     -0.877    9.546   -7.229
+ WSJ           C3     C    CH3       0.000     -1.749    8.582   -7.899
+ WSJ           H33    H    H         0.000     -2.223    9.053   -8.718
+ WSJ           H32    H    H         0.000     -1.168    7.768   -8.242
+ WSJ           H31    H    H         0.000     -2.478    8.238   -7.214
+ WSJ           C5     C    CR6       0.000      0.902    9.528   -8.974
+ WSJ           C10    C    CR16      0.000      1.180    8.169   -8.888
+ WSJ           H10    H    H         0.000      0.794    7.583   -8.063
+ WSJ           C9     C    CR16      0.000      1.957    7.570   -9.869
+ WSJ           H9     H    H         0.000      2.112    6.498   -9.852
+ WSJ           C8     C    CR16      0.000      2.534    8.330  -10.866
+ WSJ           H8     H    H         0.000      3.150    7.858  -11.621
+ WSJ           C7     C    CR16      0.000      2.323    9.693  -10.897
+ WSJ           H7     H    H         0.000      2.748   10.285  -11.698
+ WSJ           C6     C    CR16      0.000      1.571   10.309   -9.909
+ WSJ           H6     H    H         0.000      1.505   11.389   -9.866
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WSJ      O3     n/a    S1     START
+ WSJ      S1     O3     N3     .
+ WSJ      O2     S1     .      .
+ WSJ      C12    S1     H121   .
+ WSJ      H122   C12    .      .
+ WSJ      H121   C12    .      .
+ WSJ      N3     S1     C11    .
+ WSJ      HN3    N3     .      .
+ WSJ      C11    N3     C4     .
+ WSJ      C2     C11    C1     .
+ WSJ      C1     C2     H11    .
+ WSJ      H13    C1     .      .
+ WSJ      H12    C1     .      .
+ WSJ      H11    C1     .      .
+ WSJ      C4     C11    N2     .
+ WSJ      O1     C4     .      .
+ WSJ      N2     C4     C5     .
+ WSJ      N1     N2     C3     .
+ WSJ      C3     N1     H31    .
+ WSJ      H33    C3     .      .
+ WSJ      H32    C3     .      .
+ WSJ      H31    C3     .      .
+ WSJ      C5     N2     C10    .
+ WSJ      C10    C5     C9     .
+ WSJ      H10    C10    .      .
+ WSJ      C9     C10    C8     .
+ WSJ      H9     C9     .      .
+ WSJ      C8     C9     C7     .
+ WSJ      H8     C8     .      .
+ WSJ      C7     C8     C6     .
+ WSJ      H7     C7     .      .
+ WSJ      C6     C7     H6     .
+ WSJ      H6     C6     .      END
+ WSJ      N1     C2     .    ADD
+ WSJ      C5     C6     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WSJ      N1     C2        single      1.337    0.020
+ WSJ      C3     N1        single      1.485    0.020
+ WSJ      N1     N2        single      1.400    0.020
+ WSJ      C11    N3        single      1.350    0.020
+ WSJ      N3     S1        single      1.600    0.020
+ WSJ      N2     C4        single      1.337    0.020
+ WSJ      O1     C4        aromatic    1.350    0.020
+ WSJ      C4     C11       aromatic    1.390    0.020
+ WSJ      C5     C6        aromatic    1.390    0.020
+ WSJ      C10    C5        aromatic    1.390    0.020
+ WSJ      C5     N2        single      1.337    0.020
+ WSJ      C6     C7        aromatic    1.390    0.020
+ WSJ      C7     C8        aromatic    1.390    0.020
+ WSJ      C8     C9        aromatic    1.390    0.020
+ WSJ      C9     C10       aromatic    1.390    0.020
+ WSJ      C1     C2        single      1.506    0.020
+ WSJ      C2     C11       aromatic    1.390    0.020
+ WSJ      C12    S1        double      1.565    0.020
+ WSJ      O2     S1        deloc       1.480    0.020
+ WSJ      S1     O3        deloc       1.480    0.020
+ WSJ      HN3    N3        single      1.010    0.020
+ WSJ      H6     C6        single      1.083    0.020
+ WSJ      H7     C7        single      1.083    0.020
+ WSJ      H8     C8        single      1.083    0.020
+ WSJ      H10    C10       single      1.083    0.020
+ WSJ      H11    C1        single      1.059    0.020
+ WSJ      H12    C1        single      1.059    0.020
+ WSJ      H13    C1        single      1.059    0.020
+ WSJ      H31    C3        single      1.059    0.020
+ WSJ      H32    C3        single      1.059    0.020
+ WSJ      H33    C3        single      1.059    0.020
+ WSJ      H9     C9        single      1.083    0.020
+ WSJ      H121   C12       single      1.077    0.020
+ WSJ      H122   C12       single      1.077    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WSJ      O3     S1     O2      109.500    3.000
+ WSJ      O3     S1     C12     109.500    3.000
+ WSJ      O3     S1     N3      109.500    3.000
+ WSJ      O2     S1     C12     109.500    3.000
+ WSJ      O2     S1     N3      109.500    3.000
+ WSJ      C12    S1     N3      109.500    3.000
+ WSJ      S1     C12    H122    120.000    3.000
+ WSJ      S1     C12    H121    120.000    3.000
+ WSJ      H122   C12    H121    120.000    3.000
+ WSJ      S1     N3     HN3     120.000    3.000
+ WSJ      S1     N3     C11     120.000    3.000
+ WSJ      HN3    N3     C11     120.000    3.000
+ WSJ      N3     C11    C2      108.000    3.000
+ WSJ      N3     C11    C4      108.000    3.000
+ WSJ      C2     C11    C4      108.000    3.000
+ WSJ      C11    C2     C1      126.000    3.000
+ WSJ      C11    C2     N1      108.000    3.000
+ WSJ      C1     C2     N1      126.000    3.000
+ WSJ      C2     C1     H13     109.470    3.000
+ WSJ      C2     C1     H12     109.470    3.000
+ WSJ      C2     C1     H11     109.470    3.000
+ WSJ      H13    C1     H12     109.470    3.000
+ WSJ      H13    C1     H11     109.470    3.000
+ WSJ      H12    C1     H11     109.470    3.000
+ WSJ      C11    C4     O1      108.000    3.000
+ WSJ      C11    C4     N2      108.000    3.000
+ WSJ      O1     C4     N2      108.000    3.000
+ WSJ      C4     N2     N1      108.000    3.000
+ WSJ      C4     N2     C5      108.000    3.000
+ WSJ      N1     N2     C5      108.000    3.000
+ WSJ      N2     N1     C3      108.000    3.000
+ WSJ      N2     N1     C2      108.000    3.000
+ WSJ      C3     N1     C2      126.000    3.000
+ WSJ      N1     C3     H33     109.470    3.000
+ WSJ      N1     C3     H32     109.470    3.000
+ WSJ      N1     C3     H31     109.470    3.000
+ WSJ      H33    C3     H32     109.470    3.000
+ WSJ      H33    C3     H31     109.470    3.000
+ WSJ      H32    C3     H31     109.470    3.000
+ WSJ      N2     C5     C10     132.000    3.000
+ WSJ      N2     C5     C6      132.000    3.000
+ WSJ      C10    C5     C6      120.000    3.000
+ WSJ      C5     C10    H10     120.000    3.000
+ WSJ      C5     C10    C9      120.000    3.000
+ WSJ      H10    C10    C9      120.000    3.000
+ WSJ      C10    C9     H9      120.000    3.000
+ WSJ      C10    C9     C8      120.000    3.000
+ WSJ      H9     C9     C8      120.000    3.000
+ WSJ      C9     C8     H8      120.000    3.000
+ WSJ      C9     C8     C7      120.000    3.000
+ WSJ      H8     C8     C7      120.000    3.000
+ WSJ      C8     C7     H7      120.000    3.000
+ WSJ      C8     C7     C6      120.000    3.000
+ WSJ      H7     C7     C6      120.000    3.000
+ WSJ      C7     C6     H6      120.000    3.000
+ WSJ      C7     C6     C5      120.000    3.000
+ WSJ      H6     C6     C5      120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WSJ      var_1            O3     S1     C12    H121             180.000           20.000   3
+ WSJ      var_2            O3     S1     N3     C11             -159.553           20.000   3
+ WSJ      var_3            S1     N3     C11    C4               -77.842           20.000   3
+ WSJ      CONST_1          N3     C11    C2     C1                 0.000            0.000   0
+ WSJ      var_4            C11    C2     C1     H11              180.000           20.000   3
+ WSJ      CONST_2          N3     C11    C4     N2                 0.000            0.000   0
+ WSJ      CONST_3          C11    C4     N2     C5              -166.312            0.000   0
+ WSJ      CONST_4          C4     N2     N1     C3               172.157            0.000   0
+ WSJ      CONST_5          N2     N1     C2     C11              -13.924            0.000   0
+ WSJ      var_5            N2     N1     C3     H31              180.000           20.000   3
+ WSJ      var_6            C4     N2     C5     C10              114.987           20.000   3
+ WSJ      CONST_6          N2     C5     C6     C7                 0.000            0.000   0
+ WSJ      CONST_7          N2     C5     C10    C9                 0.000            0.000   0
+ WSJ      CONST_8          C5     C10    C9     C8                 0.000            0.000   0
+ WSJ      CONST_9          C10    C9     C8     C7                 0.000            0.000   0
+ WSJ      CONST_10         C9     C8     C7     C6                 0.000            0.000   0
+ WSJ      CONST_11         C8     C7     C6     C5                 0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ WSJ      chir_01          S1     N3     C12    O2        positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WSJ      plan-1            N1        0.020
+ WSJ      plan-1            C2        0.020
+ WSJ      plan-1            C3        0.020
+ WSJ      plan-1            N2        0.020
+ WSJ      plan-1            C4        0.020
+ WSJ      plan-1            C11       0.020
+ WSJ      plan-1            O1        0.020
+ WSJ      plan-1            C1        0.020
+ WSJ      plan-1            C5        0.020
+ WSJ      plan-1            N3        0.020
+ WSJ      plan-1            HN3       0.020
+ WSJ      plan-2            N3        0.020
+ WSJ      plan-2            C11       0.020
+ WSJ      plan-2            S1        0.020
+ WSJ      plan-2            HN3       0.020
+ WSJ      plan-3            C5        0.020
+ WSJ      plan-3            C6        0.020
+ WSJ      plan-3            C10       0.020
+ WSJ      plan-3            N2        0.020
+ WSJ      plan-3            C7        0.020
+ WSJ      plan-3            C8        0.020
+ WSJ      plan-3            C9        0.020
+ WSJ      plan-3            H6        0.020
+ WSJ      plan-3            H7        0.020
+ WSJ      plan-3            H8        0.020
+ WSJ      plan-3            H10       0.020
+ WSJ      plan-3            H9        0.020
+ WSJ      plan-4            C12       0.020
+ WSJ      plan-4            S1        0.020
+ WSJ      plan-4            H121      0.020
+ WSJ      plan-4            H122      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

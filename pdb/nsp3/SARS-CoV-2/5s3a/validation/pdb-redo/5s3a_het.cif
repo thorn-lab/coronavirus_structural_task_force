@@ -1,0 +1,181 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+W17      W17 '.                                   ' .                  19  11 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_W17
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ W17           O      O    O         0.000     -2.486   14.889   -0.861
+ W17           C      C    C         0.000     -3.164   14.941    0.170
+ W17           N      N    N         0.000     -2.664   15.043    1.395
+ W17           HN     H    H         0.000     -3.249   15.078    2.146
+ W17           C1     C    CR5       0.000     -4.633   14.898    0.038
+ W17           C2     C    CR15      0.000     -5.430   15.067   -1.105
+ W17           H2     H    H         0.000     -5.034   15.203   -2.104
+ W17           N1     N    NRD5      0.000     -6.720   15.041   -0.820
+ W17           C5     C    CR15      0.000     -5.542   14.741    1.065
+ W17           H5     H    H         0.000     -5.313   14.580    2.111
+ W17           N2     N    NR5       0.000     -6.766   14.827    0.517
+ W17           C3     C    CH2       0.000     -8.060   14.719    1.182
+ W17           H31    H    H         0.000     -8.667   13.985    0.648
+ W17           H32    H    H         0.000     -8.553   15.693    1.147
+ W17           C4     C    CH2       0.000     -7.895   14.288    2.618
+ W17           H41    H    H         0.000     -7.315   13.363    2.640
+ W17           H42    H    H         0.000     -8.884   14.105    3.043
+ W17           O1     O    OH1       0.000     -7.225   15.290    3.382
+ W17           HO1    H    H         0.000     -7.133   14.989    4.296
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ W17      O      n/a    C      START
+ W17      C      O      C1     .
+ W17      N      C      HN     .
+ W17      HN     N      .      .
+ W17      C1     C      C5     .
+ W17      C2     C1     N1     .
+ W17      H2     C2     .      .
+ W17      N1     C2     .      .
+ W17      C5     C1     N2     .
+ W17      H5     C5     .      .
+ W17      N2     C5     C3     .
+ W17      C3     N2     C4     .
+ W17      H31    C3     .      .
+ W17      H32    C3     .      .
+ W17      C4     C3     O1     .
+ W17      H41    C4     .      .
+ W17      H42    C4     .      .
+ W17      O1     C4     HO1    .
+ W17      HO1    O1     .      END
+ W17      N1     N2     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ W17      N1     N2        single      1.402    0.020
+ W17      N1     C2        aromatic    1.350    0.020
+ W17      C4     C3        single      1.524    0.020
+ W17      O1     C4        single      1.432    0.020
+ W17      C5     C1        aromatic    1.387    0.020
+ W17      N2     C5        single      1.337    0.020
+ W17      C      O         deloc       1.220    0.020
+ W17      N      C         deloc       1.330    0.020
+ W17      C1     C         single      1.490    0.020
+ W17      C2     C1        aromatic    1.387    0.020
+ W17      C3     N2        single      1.462    0.020
+ W17      H41    C4        single      1.092    0.020
+ W17      H42    C4        single      1.092    0.020
+ W17      H5     C5        single      1.083    0.020
+ W17      HN     N         single      0.954    0.020
+ W17      H2     C2        single      1.083    0.020
+ W17      H31    C3        single      1.092    0.020
+ W17      H32    C3        single      1.092    0.020
+ W17      HO1    O1        single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ W17      O      C      N       123.000    3.000
+ W17      O      C      C1      120.500    3.000
+ W17      N      C      C1      120.000    3.000
+ W17      C      N      HN      120.000    3.000
+ W17      C      C1     C2      126.000    3.000
+ W17      C      C1     C5      126.000    3.000
+ W17      C2     C1     C5      108.000    3.000
+ W17      C1     C2     H2      126.000    3.000
+ W17      C1     C2     N1      108.000    3.000
+ W17      H2     C2     N1      126.000    3.000
+ W17      C2     N1     N2      108.000    3.000
+ W17      C1     C5     H5      126.000    3.000
+ W17      C1     C5     N2      108.000    3.000
+ W17      H5     C5     N2      126.000    3.000
+ W17      C5     N2     C3      126.000    3.000
+ W17      C5     N2     N1      108.000    3.000
+ W17      C3     N2     N1      108.000    3.000
+ W17      N2     C3     H31     109.500    3.000
+ W17      N2     C3     H32     109.500    3.000
+ W17      N2     C3     C4      109.500    3.000
+ W17      H31    C3     H32     107.900    3.000
+ W17      H31    C3     C4      109.470    3.000
+ W17      H32    C3     C4      109.470    3.000
+ W17      C3     C4     H41     109.470    3.000
+ W17      C3     C4     H42     109.470    3.000
+ W17      C3     C4     O1      109.470    3.000
+ W17      H41    C4     H42     107.900    3.000
+ W17      H41    C4     O1      109.470    3.000
+ W17      H42    C4     O1      109.470    3.000
+ W17      C4     O1     HO1     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ W17      CONST_1          O      C      N      HN               180.000            0.000   0
+ W17      var_1            O      C      C1     C5               169.492           20.000   3
+ W17      CONST_2          C      C1     C2     N1                 0.000            0.000   0
+ W17      CONST_3          C1     C2     N1     N2                 0.000            0.000   0
+ W17      CONST_4          C2     N1     N2     C5                 0.945            0.000   0
+ W17      CONST_5          C      C1     C5     N2                 0.000            0.000   0
+ W17      CONST_6          C1     C5     N2     C3               180.000            0.000   0
+ W17      var_2            C5     N2     C3     C4                -8.129           20.000   3
+ W17      var_3            N2     C3     C4     O1               180.000           20.000   3
+ W17      var_4            C3     C4     O1     HO1              180.000           20.000   3
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ W17      plan-1            N1        0.020
+ W17      plan-1            N2        0.020
+ W17      plan-1            C2        0.020
+ W17      plan-1            C5        0.020
+ W17      plan-1            C1        0.020
+ W17      plan-1            H5        0.020
+ W17      plan-1            C         0.020
+ W17      plan-1            C3        0.020
+ W17      plan-1            H2        0.020
+ W17      plan-2            C         0.020
+ W17      plan-2            O         0.020
+ W17      plan-2            N         0.020
+ W17      plan-2            C1        0.020
+ W17      plan-2            HN        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

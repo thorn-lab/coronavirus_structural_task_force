@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 spike protein in complex with the neutralizing synthetic nanobody Nb6. Non polymer only hexamer, spike with three chains and nanobody with three chains. Nb6 binds spikes in a fully inactive conformation so they are incapable of binding ACE2. 
 
 ## Basefolder
 
@@ -20,7 +22,7 @@
 
 
 
-
+**validation** - contains validation reports. This structure has been analyzed by <br>     [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7kkk/validation/ccpem-validation)
 
 
 

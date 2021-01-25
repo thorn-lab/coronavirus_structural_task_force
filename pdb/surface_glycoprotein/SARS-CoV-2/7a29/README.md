@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 spike protein bound to neutralizing nanobodies (Sb23)with a 1up conformation of the RBD. A non-polymer only hexamer structure, spike and Sb23 both have 3 chains each. Sb23 binds competitively in the ACE2 binding site. 
 
 ## Basefolder
 
@@ -20,7 +22,7 @@
 
 
 
-
+**validation** - contains validation reports. This structure has been analyzed by <br>     [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7a29/validation/ccpem-validation)
 
 
 

@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 RBD in complex with the neutralizing antibody COVA2-04. Non polymer only trimer, spike protein with one chain and antibody with a heavy and a light chain with one chain each. COVA2-04 is a IGHV3-53 antibody but with a longer CDR H3 than usual antibodies. 
 
 ## Basefolder
 

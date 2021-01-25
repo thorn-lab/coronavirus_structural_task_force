@@ -10,6 +10,8 @@ From: https://www.ncbi.nlm.nih.gov/protein/1826688920
 Sequence identity: 76.00%
 
 ## Useful Information
+InsideCorona Blog: [**Nsp3**](https://insidecorona.net/the-virus/nsp3/)
+
 Proteome Information: [**nsp3**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp3/proteome_information.txt)
 
 Potential Glycosalation Sites: [**NetNGlyc**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp3/NetNGlyc_nsp3) 

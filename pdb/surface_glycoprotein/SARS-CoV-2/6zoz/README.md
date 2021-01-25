@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure SARS-CoV-2 spike protein trimer disulphide stabilized, disulphide bond mutant in locked state. Homo trimer with three chains. Structures of disulfide stabilized proteins reveal distinct closed and locked conformations.
 
 ## Basefolder
 

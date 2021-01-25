@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+X-ray diffraction data. Structure of the wild type SARS-CoV-2 papain-like protease (PLPro) with inhibitor GRL0617.
 
 ## Basefolder
 

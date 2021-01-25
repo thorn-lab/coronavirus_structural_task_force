@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 RBD in complex with the neutralizing antibodie fab fragments 298 and 52. Non polymer only pentamer, spike with one chain, Antibodies with one heavy and one light chain each. The antibody 298 binds almost exclusively to the ACE2 receptor binding motif of the RBD. 
 
 ## Basefolder
 

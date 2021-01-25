@@ -1,0 +1,246 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WRV      WRV '.                                   ' .                  29  16 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WRV
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WRV           O2     O    O         0.000     -8.492   15.572    2.327
+ WRV           C4     C    C         0.000     -7.657   15.017    3.052
+ WRV           N1     N    N         0.000     -7.922   14.628    4.315
+ WRV           C2     C    CH1       0.000     -9.096   15.034    5.081
+ WRV           H2     H    H         0.000     -9.740   15.659    4.447
+ WRV           C3     C    CH2       0.000     -8.628   15.848    6.260
+ WRV           H31    H    H         0.000     -7.975   16.638    5.882
+ WRV           H32    H    H         0.000     -8.057   15.188    6.916
+ WRV           O1     O    OH1       0.000     -9.699   16.425    6.985
+ WRV           HO1    H    H         0.000     -9.345   16.933    7.726
+ WRV           C1     C    CH3       0.000     -9.869   13.802    5.511
+ WRV           H13    H    H         0.000    -10.175   13.262    4.653
+ WRV           H12    H    H         0.000     -9.249   13.190    6.112
+ WRV           H11    H    H         0.000    -10.720   14.097    6.066
+ WRV           N2     N    N         0.000     -6.375   14.714    2.676
+ WRV           C5     C    CR6       0.000     -5.726   14.790    1.428
+ WRV           C11    C    CR16      0.000     -4.351   14.593    1.445
+ WRV           H110   H    H         0.000     -3.848   14.384    2.381
+ WRV           C10    C    CR16      0.000     -3.622   14.663    0.274
+ WRV           H10    H    H         0.000     -2.549   14.520    0.301
+ WRV           C8     C    CR6       0.000     -4.253   14.915   -0.937
+ WRV           C9     C    CH3       0.000     -3.449   14.993   -2.199
+ WRV           H93    H    H         0.000     -2.737   15.771   -2.114
+ WRV           H92    H    H         0.000     -2.951   14.072   -2.356
+ WRV           H91    H    H         0.000     -4.094   15.191   -3.015
+ WRV           C7     C    CR6       0.000     -5.617   15.116   -0.922
+ WRV           F1     F    F         0.000     -6.260   15.397   -2.080
+ WRV           C6     C    CR16      0.000     -6.374   15.034    0.222
+ WRV           H6     H    H         0.000     -7.449   15.156    0.185
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WRV      O2     n/a    C4     START
+ WRV      C4     O2     N2     .
+ WRV      N1     C4     C2     .
+ WRV      C2     N1     C1     .
+ WRV      H2     C2     .      .
+ WRV      C3     C2     O1     .
+ WRV      H31    C3     .      .
+ WRV      H32    C3     .      .
+ WRV      O1     C3     HO1    .
+ WRV      HO1    O1     .      .
+ WRV      C1     C2     H11    .
+ WRV      H13    C1     .      .
+ WRV      H12    C1     .      .
+ WRV      H11    C1     .      .
+ WRV      N2     C4     C5     .
+ WRV      C5     N2     C11    .
+ WRV      C11    C5     C10    .
+ WRV      H110   C11    .      .
+ WRV      C10    C11    C8     .
+ WRV      H10    C10    .      .
+ WRV      C8     C10    C7     .
+ WRV      C9     C8     H91    .
+ WRV      H93    C9     .      .
+ WRV      H92    C9     .      .
+ WRV      H91    C9     .      .
+ WRV      C7     C8     C6     .
+ WRV      F1     C7     .      .
+ WRV      C6     C7     H6     .
+ WRV      H6     C6     .      END
+ WRV      C5     C6     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WRV      N1     C4        deloc       1.330    0.020
+ WRV      C2     N1        single      1.455    0.020
+ WRV      N2     C4        deloc       1.330    0.020
+ WRV      C4     O2        deloc       1.220    0.020
+ WRV      C5     C6        aromatic    1.390    0.020
+ WRV      C5     N2        single      1.400    0.020
+ WRV      C11    C5        aromatic    1.390    0.020
+ WRV      C6     C7        aromatic    1.390    0.020
+ WRV      C7     C8        aromatic    1.384    0.020
+ WRV      F1     C7        single      1.345    0.020
+ WRV      C8     C10       aromatic    1.390    0.020
+ WRV      C9     C8        single      1.506    0.020
+ WRV      C10    C11       aromatic    1.390    0.020
+ WRV      C1     C2        single      1.524    0.020
+ WRV      C3     C2        single      1.524    0.020
+ WRV      O1     C3        single      1.432    0.020
+ WRV      H6     C6        single      1.083    0.020
+ WRV      H10    C10       single      1.083    0.020
+ WRV      H11    C1        single      1.059    0.020
+ WRV      H12    C1        single      1.059    0.020
+ WRV      H13    C1        single      1.059    0.020
+ WRV      H2     C2        single      1.099    0.020
+ WRV      H31    C3        single      1.092    0.020
+ WRV      H32    C3        single      1.092    0.020
+ WRV      HO1    O1        single      0.967    0.020
+ WRV      H91    C9        single      1.059    0.020
+ WRV      H92    C9        single      1.059    0.020
+ WRV      H93    C9        single      1.059    0.020
+ WRV      H110   C11       single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WRV      O2     C4     N1      123.000    3.000
+ WRV      O2     C4     N2      123.000    3.000
+ WRV      N1     C4     N2      120.000    3.000
+ WRV      C4     N1     C2      121.000    3.000
+ WRV      N1     C2     H2      109.470    3.000
+ WRV      N1     C2     C3      105.000    3.000
+ WRV      N1     C2     C1      109.500    3.000
+ WRV      H2     C2     C3      108.340    3.000
+ WRV      H2     C2     C1      108.340    3.000
+ WRV      C3     C2     C1      111.000    3.000
+ WRV      C2     C3     H31     109.470    3.000
+ WRV      C2     C3     H32     109.470    3.000
+ WRV      C2     C3     O1      109.470    3.000
+ WRV      H31    C3     H32     107.900    3.000
+ WRV      H31    C3     O1      109.470    3.000
+ WRV      H32    C3     O1      109.470    3.000
+ WRV      C3     O1     HO1     109.470    3.000
+ WRV      C2     C1     H13     109.470    3.000
+ WRV      C2     C1     H12     109.470    3.000
+ WRV      C2     C1     H11     109.470    3.000
+ WRV      H13    C1     H12     109.470    3.000
+ WRV      H13    C1     H11     109.470    3.000
+ WRV      H12    C1     H11     109.470    3.000
+ WRV      C4     N2     C5      120.000    3.000
+ WRV      N2     C5     C11     120.000    3.000
+ WRV      N2     C5     C6      120.000    3.000
+ WRV      C11    C5     C6      120.000    3.000
+ WRV      C5     C11    H110    120.000    3.000
+ WRV      C5     C11    C10     120.000    3.000
+ WRV      H110   C11    C10     120.000    3.000
+ WRV      C11    C10    H10     120.000    3.000
+ WRV      C11    C10    C8      120.000    3.000
+ WRV      H10    C10    C8      120.000    3.000
+ WRV      C10    C8     C9      120.000    3.000
+ WRV      C10    C8     C7      120.000    3.000
+ WRV      C9     C8     C7      120.000    3.000
+ WRV      C8     C9     H93     109.470    3.000
+ WRV      C8     C9     H92     109.470    3.000
+ WRV      C8     C9     H91     109.470    3.000
+ WRV      H93    C9     H92     109.470    3.000
+ WRV      H93    C9     H91     109.470    3.000
+ WRV      H92    C9     H91     109.470    3.000
+ WRV      C8     C7     F1      120.000    3.000
+ WRV      C8     C7     C6      120.000    3.000
+ WRV      F1     C7     C6      120.000    3.000
+ WRV      C7     C6     H6      120.000    3.000
+ WRV      C7     C6     C5      120.000    3.000
+ WRV      H6     C6     C5      120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WRV      CONST_1          O2     C4     N1     C2               180.000            0.000   0
+ WRV      var_1            C4     N1     C2     C1                 0.000           20.000   3
+ WRV      var_2            N1     C2     C3     O1               180.000           20.000   3
+ WRV      var_3            C2     C3     O1     HO1              180.000           20.000   3
+ WRV      var_4            N1     C2     C1     H11              180.000           20.000   3
+ WRV      CONST_2          O2     C4     N2     C5               180.000            0.000   0
+ WRV      var_5            C4     N2     C5     C11              170.531           20.000   3
+ WRV      CONST_3          N2     C5     C6     C7                 0.000            0.000   0
+ WRV      CONST_4          N2     C5     C11    C10                0.000            0.000   0
+ WRV      CONST_5          C5     C11    C10    C8                 0.000            0.000   0
+ WRV      CONST_6          C11    C10    C8     C7                 0.000            0.000   0
+ WRV      var_6            C10    C8     C9     H91              180.000           20.000   3
+ WRV      CONST_7          C10    C8     C7     C6                 0.000            0.000   0
+ WRV      CONST_8          C8     C7     C6     C5                 0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ WRV      chir_01          C2     N1     C1     C3        negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WRV      plan-1            N1        0.020
+ WRV      plan-1            C4        0.020
+ WRV      plan-1            C2        0.020
+ WRV      plan-1            N2        0.020
+ WRV      plan-1            O2        0.020
+ WRV      plan-1            C5        0.020
+ WRV      plan-2            C5        0.020
+ WRV      plan-2            C6        0.020
+ WRV      plan-2            N2        0.020
+ WRV      plan-2            C11       0.020
+ WRV      plan-2            C7        0.020
+ WRV      plan-2            C8        0.020
+ WRV      plan-2            C10       0.020
+ WRV      plan-2            H6        0.020
+ WRV      plan-2            F1        0.020
+ WRV      plan-2            C9        0.020
+ WRV      plan-2            H10       0.020
+ WRV      plan-2            H110      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

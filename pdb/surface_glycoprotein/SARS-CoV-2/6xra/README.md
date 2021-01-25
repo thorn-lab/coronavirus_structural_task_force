@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of the S2 trimer in the postfusion conformation. Homo trimer with three chains. The S1/S2-2' fragment is an integral part of the postfusion structure. Five glycans are positioned along the axis, if these glycosylation sites are fully occupied by branched sugars they max shield most surfaces." 
 
 ## Basefolder
 

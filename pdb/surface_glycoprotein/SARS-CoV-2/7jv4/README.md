@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 spike protein (open RBD) in complex with the S2H13 neutralizing antibody Fab fragment. A non-polymer only trimer structure the fab fragment has a heavy and a light chain, the spike has one chain. This structures helps to understand the neutralization process of SARS-CoV. 
 
 ## Basefolder
 

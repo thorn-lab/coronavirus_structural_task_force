@@ -1,0 +1,164 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+W3S      W3S '.                                   ' .                  14  10 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_W3S
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ W3S           N      N    N         0.000     -6.487   15.154    2.918
+ W3S           HN     H    H         0.000     -7.331   15.069    3.345
+ W3S           C      C    CR5       0.000     -6.409   15.076    1.577
+ W3S           N3     N    NR56      0.000     -5.212   15.192    0.896
+ W3S           C1     C    CR56      0.000     -5.573   15.107   -0.445
+ W3S           N2     N    NRD5      0.000     -6.892   14.978   -0.561
+ W3S           N1     N    NRD5      0.000     -7.419   14.946    0.736
+ W3S           C2     C    CR16      0.000     -4.552   15.167   -1.410
+ W3S           H2     H    H         0.000     -4.790   15.092   -2.464
+ W3S           C3     C    CR16      0.000     -3.253   15.321   -1.004
+ W3S           H3     H    H         0.000     -2.463   15.361   -1.744
+ W3S           C4     C    CSP       0.000     -2.929   15.429    0.370
+ W3S           C5     C    CR16      0.000     -3.902   15.367    1.299
+ W3S           H5     H    H         0.000     -3.660   15.453    2.351
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ W3S      N      n/a    C      START
+ W3S      HN     N      .      .
+ W3S      C      N      N3     .
+ W3S      N3     C      C1     .
+ W3S      C1     N3     C2     .
+ W3S      N2     C1     N1     .
+ W3S      N1     N2     .      .
+ W3S      C2     C1     C3     .
+ W3S      H2     C2     .      .
+ W3S      C3     C2     C4     .
+ W3S      H3     C3     .      .
+ W3S      C4     C3     C5     .
+ W3S      C5     C4     H5     .
+ W3S      H5     C5     .      END
+ W3S      N1     C      .    ADD
+ W3S      N3     C5     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ W3S      N1     C         aromatic    1.350    0.020
+ W3S      N1     N2        single      1.404    0.020
+ W3S      N3     C5        single      1.337    0.020
+ W3S      N3     C         single      1.337    0.020
+ W3S      C1     N3        single      1.337    0.020
+ W3S      C5     C4        double      1.285    0.020
+ W3S      C4     C3        aromatic    1.285    0.020
+ W3S      C      N         deloc       1.365    0.020
+ W3S      N2     C1        aromat      1.350    0.020
+ W3S      C2     C1        aromatic    1.390    0.020
+ W3S      C3     C2        aromatic    1.390    0.020
+ W3S      H5     C5        single      1.083    0.020
+ W3S      HN     N         single      0.954    0.020
+ W3S      H3     C3        single      1.083    0.020
+ W3S      H2     C2        single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ W3S      HN     N      C       120.000    3.000
+ W3S      N      C      N3      108.000    3.000
+ W3S      N      C      N1      108.000    3.000
+ W3S      N3     C      N1      108.000    3.000
+ W3S      C      N3     C1      108.000    3.000
+ W3S      C      N3     C5      132.000    3.000
+ W3S      C1     N3     C5      120.000    3.000
+ W3S      N3     C1     N2      108.000    3.000
+ W3S      N3     C1     C2      120.000    3.000
+ W3S      N2     C1     C2      132.000    3.000
+ W3S      C1     N2     N1      108.000    3.000
+ W3S      N2     N1     C       108.000    3.000
+ W3S      C1     C2     H2      120.000    3.000
+ W3S      C1     C2     C3      120.000    3.000
+ W3S      H2     C2     C3      120.000    3.000
+ W3S      C2     C3     H3      120.000    3.000
+ W3S      C2     C3     C4      120.000    3.000
+ W3S      H3     C3     C4      120.000    3.000
+ W3S      C3     C4     C5      180.000    3.000
+ W3S      C4     C5     H5      120.000    3.000
+ W3S      C4     C5     N3      120.000    3.000
+ W3S      H5     C5     N3      120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ W3S      CONST_1          HN     N      C      N3               180.000            0.000   0
+ W3S      CONST_2          N      C      N3     C1              -177.814            0.000   0
+ W3S      CONST_3          C      N3     C5     C4               179.197            0.000   0
+ W3S      CONST_4          C      N3     C1     C2              -178.784            0.000   0
+ W3S      CONST_5          N3     C1     N2     N1               180.000            0.000   0
+ W3S      CONST_6          C1     N2     N1     C                  0.918            0.000   0
+ W3S      CONST_7          N2     N1     C      N                  0.000            0.000   0
+ W3S      CONST_8          N3     C1     C2     C3               180.000            0.000   0
+ W3S      CONST_9          C1     C2     C3     C4                 0.000            0.000   0
+ W3S      CONST_10         C2     C3     C4     C5                 0.687            0.000   0
+ W3S      CONST_11         C3     C4     C5     N3                 0.271            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ W3S      plan-1            N1        0.020
+ W3S      plan-1            C         0.020
+ W3S      plan-1            N2        0.020
+ W3S      plan-1            N3        0.020
+ W3S      plan-1            N         0.020
+ W3S      plan-1            C1        0.020
+ W3S      plan-1            C4        0.020
+ W3S      plan-1            C5        0.020
+ W3S      plan-1            C3        0.020
+ W3S      plan-1            C2        0.020
+ W3S      plan-1            H5        0.020
+ W3S      plan-1            H3        0.020
+ W3S      plan-1            H2        0.020
+ W3S      plan-1            HN        0.020
+ W3S      plan-2            N         0.020
+ W3S      plan-2            C         0.020
+ W3S      plan-2            HN        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 2S 2P trimer in complex with the human neutralizing antibody Fab fragment C110. Non polymer only heptamer, spike with three chains and antibody with a heavy and a light chain with two chains each. C110 epitiope showed similarities with class3 and class2 Nabs, it binds distal to the ACE2-binding motif and could potentially steric interfere with ACE2. 
 
 ## Basefolder
 
@@ -20,7 +22,7 @@
 
 
 
-
+**validation** - contains validation reports. This structure has been analyzed by <br>     [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7k8v/validation/ccpem-validation)
 
 
 

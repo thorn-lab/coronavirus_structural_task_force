@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Cryo EM structure of the SARS-CoV-2 spike protein bound to the neutralizing nanobodies Ty1. Non polymer only hexamer, spike protein with three chains and nanobody Ty1 with three chains. The alpaca derived single domain antibody fragment Ty1 specifically targets the RBD of the SARS-CoV-2 spike preventing ACE2 engagement. 
 
 ## Basefolder
 

@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal Structure of SARS-CoV-2 helicase in complex with Z53116498 (PanDDA analysis group deposition). Asymmetric monomer with one unique protein chain. Ligand is 3-(2-methyl-1H-benzimidazol-1-yl)propanamide.
 
 ## Basefolder
 

@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 spike 6P trimer in complex with an ACE2 decoy protein CTC-445.2 in state 4. A non-polymer only hexamer, spike protein with three chains and the CTC-445.2 inhibitor protein with three chains. CTC-445.2 is a promising decoy for neutralizing pathogens like SARS-CoV-2. 
 
 ## Basefolder
 
@@ -20,7 +22,7 @@
 
 
 
-
+**validation** - contains validation reports. This structure has been analyzed by <br>     [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7kl9/validation/ccpem-validation)
 
 
 

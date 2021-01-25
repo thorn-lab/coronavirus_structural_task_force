@@ -1,0 +1,125 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+W3G      W3G '.                                   ' .                   8   7 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_W3G
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ W3G           O      O    O         0.000     -6.772   14.961   -0.617
+ W3G           C      C    C         0.000     -5.564   15.173   -0.435
+ W3G           C1     C    CSP       0.000     -4.937   15.351    0.842
+ W3G           C2     C    CSP       0.000     -3.594   15.463    0.948
+ W3G           C3     C    C1        0.000     -2.830   15.400   -0.228
+ W3G           H3     H    H         0.000     -1.759   15.468   -0.143
+ W3G           N      N    N         0.000     -3.346   15.264   -1.419
+ W3G           N1     N    N         0.000     -4.706   15.154   -1.484
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ W3G      O      n/a    C      START
+ W3G      C      O      C1     .
+ W3G      C1     C      C2     .
+ W3G      C2     C1     C3     .
+ W3G      C3     C2     N      .
+ W3G      H3     C3     .      .
+ W3G      N      C3     N1     .
+ W3G      N1     N      .      END
+ W3G      N1     C      .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ W3G      N1     C         aromatic    1.330    0.020
+ W3G      N1     N         single      1.410    0.020
+ W3G      C      O         aromatic    1.220    0.020
+ W3G      C1     C         aromatic    1.255    0.020
+ W3G      N      C3        aromatic    1.260    0.020
+ W3G      C3     C2        aromatic    1.255    0.020
+ W3G      C2     C1        double      1.180    0.020
+ W3G      H3     C3        single      1.077    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ W3G      O      C      C1      120.000    3.000
+ W3G      O      C      N1      123.000    3.000
+ W3G      C1     C      N1      120.000    3.000
+ W3G      C      C1     C2      180.000    3.000
+ W3G      C1     C2     C3      180.000    3.000
+ W3G      C2     C3     H3      120.000    3.000
+ W3G      C2     C3     N       120.000    3.000
+ W3G      H3     C3     N       120.000    3.000
+ W3G      C3     N      N1      120.000    3.000
+ W3G      N      N1     C       120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ W3G      var_1            O      C      C1     C2               174.238           20.000   3
+ W3G      var_2            C      C1     C2     C3                -0.000           20.000   3
+ W3G      var_3            C1     C2     C3     N                  1.304           20.000   3
+ W3G      var_4            C2     C3     N      N1                -1.306           20.000   3
+ W3G      var_5            C3     N      N1     C                  0.000           20.000   3
+ W3G      var_6            N      N1     C      O                180.000           20.000   2
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ W3G      plan-1            N1        0.020
+ W3G      plan-1            C         0.020
+ W3G      plan-1            N         0.020
+ W3G      plan-2            C         0.020
+ W3G      plan-2            N1        0.020
+ W3G      plan-2            O         0.020
+ W3G      plan-2            C1        0.020
+ W3G      plan-3            N         0.020
+ W3G      plan-3            N1        0.020
+ W3G      plan-3            C3        0.020
+ W3G      plan-3            H3        0.020
+ W3G      plan-4            C3        0.020
+ W3G      plan-4            N         0.020
+ W3G      plan-4            C2        0.020
+ W3G      plan-4            H3        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

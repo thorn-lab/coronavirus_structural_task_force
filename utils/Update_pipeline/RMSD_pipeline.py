@@ -7,12 +7,13 @@ import matplotlib.pyplot as plt
 import os
 
 def main (id_dict, path):
-    #RMSD is not done for nsp3, 3c_like_proteinase, surface_glycoprotein
+    #RMSD is not done for 3c_like_proteinase, surface_glycoprotein, nsp3
     #for protein in all_proteins:
     pdb_id = open(path + "/list.txt")
     pdb_id = pdb_id.read().split("\n")
     for protein in id_dict:
-        if protein == "surface_glycoprotein" or protein == "3c_like_proteinase":
+        #Here exceptions can be added, e.g. for proteins which have to many entries
+        if protein == "surface_glycoprotein" or protein == "3c_like_proteinase" or protein == "nsp3":
             pass
         else:
             repo_path = path+"/"+protein
@@ -42,7 +43,7 @@ def rmsdler (pdb1, pdb2, doc):
         doc.write("weighted-RMSD: {}\n".format(rmsd_weighted))
         return rmsd_weighted
     except TypeError:
-        doc.write("TYPE_ERROR\n")
+        doc.write("ProDy could not calculate a RMSD value\n")
         return None
 
 def matrix_maker (protein, pdb_id, repo_path, taxo):
@@ -80,7 +81,7 @@ def heatmap (matrix, color, pdb_id, protein, repo_path):
         fig, ax = plt.subplots()
 
         #colorbar
-        if len(pdb_id) > 15:
+        if len(pdb_id) > 12:
             heat_map = sb.heatmap(harvest, cmap= color, annot=False, cbar=True, cbar_kws={'label': '[Å]', "orientation":"vertical"})
             plt.xticks(rotation=90)
         else:

@@ -25,6 +25,8 @@ Sequence identity: 93.00%
 For individual structures: [nsp10](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp10)
 
 ## Useful Information
+InsideCorona Blog: [**Methyltransferase**](https://insidecorona.net/the-virus/methyltransferase-exonuclease-nsp14-nsp16-nsp10/)
+
 Proteome Information: [**methyltransferase-nsp10**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/methyltransferase-nsp10/proteome_information.txt)
 
 Potential Glycosalation Sites: [**NetNGlyc**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/methyltransferase-nsp10/NetNGlyc_methyltransferase) 

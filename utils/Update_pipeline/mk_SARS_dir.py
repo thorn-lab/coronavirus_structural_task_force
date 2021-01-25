@@ -1,6 +1,7 @@
 from Bio import SeqIO
 import requests
 import os
+import shutil
 import collections
 import datetime
 import ID_getter
@@ -19,11 +20,6 @@ The folders are named after the protein_name and the taxo_names in the fasta. Yo
 time = datetime.datetime.now()
 time = "20"+time.strftime("%y-%m-%d")
 repo_path = osp.abspath(osp.join(__file__ ,"../../..","pdb"))
-
-try: dropbox_path = "/Users/kristophernolte/Dropbox (University of Wuerzburg)/insidecorona_thornlab/task_force/"
-except FileNotFoundError:
-    print("Dropbox folder not found, you can find update info in the Update_pipeline folder")
-    dropbox_path = ""
 
 seq_fasta = list(SeqIO.parse("Fasta_files/seq_SARS_2.fasta", "fasta"))
 
@@ -96,12 +92,18 @@ def namer (i):
 
 def main():
     i = 0
+    #create a protocol .txt file
     doc = open("weekly_reports/new_structures_{}.txt".format(time), "w+")
+    doc.write("{} revised structures: \n".format(len(pdb_id_rev)))
+    doc.write("{}".format(", ".join(pdb_id_rev)))
+    doc.write("{} new structures: \n".format(len(pdb_id)))
     is_sorted = []
     id_dict = {}
     while i in range(len(seq_fasta)):
         blast = blast_search(i)
+        #get the names of the protein
         protein_name = namer(i)[0]
+        #get the taxonomy of the protein
         taxo_name = namer(i)[1]
         if blast != None:
             # compare blast search with taxonomy
@@ -115,7 +117,7 @@ def main():
                 for element in match:
                     mk_dir(target+os.sep+element)
                     # downloading files
-                    #get_mtz(element,target)
+                    get_mtz(element,target)
                     get_pdb(element,target,"pdb")
                     get_pdb(element,target,"cif")
                 is_sorted += match
@@ -123,21 +125,23 @@ def main():
                 doc.write(protein_name+":\n"+">"+match)
                 id_dict[protein_name] = match.split(" ")
                 doc.write("\n")
-        i +=1
+        i += 1
         print("{} %".format(int((i/len(seq_fasta)*100))))
 
     #IDs which were assigned more than once
-    doc.write("Assigned twice or more: \n>{}\n".format([item for item, count in collections.Counter(is_sorted).items() if count > 1]))
-    twice_assigned(pdb_id, id_dict)
+    multi_ids = [item for item, count in collections.Counter(is_sorted).items() if count > 1]
+    doc.write("Assigned twice or more: \n>{}\n".format(multi_ids))
+    twice_assigned(id_dict, multi_ids)
 
     #IDs which could not be assigned
     not_assigned = set(pdb_id).difference(is_sorted)
-    not_assigned= ' '.join(map(str, not_assigned))
+    not_assigned = ' '.join(map(str, not_assigned))
     doc.write("Not assigned: \n>{}".format(not_assigned))
     doc.close()
+    organizer.main(repo_path, not_assigned.split(" "), "not_assigned")
     print("Added new structures, now updating Alignment")
 
-    #Clean up the dict
+    #Clean up the dict, only keep dict keys which have entries
     for x in id_dict.copy():
         if id_dict[x] == []: del id_dict[x]
 
@@ -146,49 +150,37 @@ def main():
     print("Alignment up to date, now updating RMSD")
     #Make RMSD
     RMSD_pipeline.main(id_dict, repo_path)
-    print("{} new structures".format(len(pdb_id)))
     #Download not assigned
-    organizer.main(not_assigned.split(" "), "not_assigned")
 
 
-def twice_assigned (pdb_id, id_dict):
-    #If id is twiced assigned it gets moved to the multi_protein folders
-    #I am sure theres a smarter way for this but I am lazy
-    def mover (key, proteins, folder):
-        id_dict[folder].append(key)
+
+def twice_assigned (id_dict, multi_assign_ids):
+    def mover (id, proteins, folder):
         for prot in proteins:
-            id_dict[prot].remove(key)
             try:
-                try:
-                    os.replace(repo_path+"/{}/SARS-CoV-2/{}".format(prot, key),repo_path+"/{}/SARS-CoV-2/{}".format(folder, key))
-                    os.remove(repo_path+"/{}/SARS-CoV-2/{}".format(prot, key))
-                except OSError: pass
-            except FileNotFoundError: pass
+                shutil.copytree(repo_path+"/{}/SARS-CoV-2/{}".format(prot, id),repo_path+"/{}/SARS-CoV-2/{}".format(folder, id))
+            except OSError: print("OS_Error")
+            shutil.rmtree(repo_path+"/{}/SARS-CoV-2/{}".format(prot, id))
 
-    for id in pdb_id:
-        try:
-            if id_dict["rna_polymerase"] != None:
-                if id in id_dict["rna_polymerase"] and id in id_dict["nsp8"] and id in id_dict["nsp7"]:
-                    id_dict["rna_polymerase-nsp7-nsp8"] = []
-                    mover(id,["rna_polymerase","nsp8","nsp7"], "rna_polymerase-nsp7-nsp8")
-        except KeyError: pass
+    def get_key(val):
+        #gets the protein which saved the combined ids and deletes their dict entry
+        multi_ids_prot = []
+        for key, value in id_dict.items():
+            if val in value:
+                multi_ids_prot.append(key)
+                value.remove(val)
+                id_dict[key] = value
+        return multi_ids_prot
 
-        try:
-            if id_dict["nsp8"] != None and id_dict["nsp7"]!= None:
-                if id in id_dict["nsp8"] and id in id_dict["nsp7"]:
-                        id_dict["nsp8-nsp7"] = []
-                        mover(id,["nsp8","nsp7"], "nsp8-nsp7")
-        except KeyError: pass
-
-        try:
-            if id_dict["nsp10"] != None and id_dict["methyltransferase"]!= None:
-                if id in id_dict["methyltransferase"] and id in id_dict["nsp10"]:
-                        id_dict["methyltransferase-nsp10"] = []
-                        mover(id,["methyltransferase", "nsp10"] , "methyltransferase-nsp10")
-        except KeyError: pass
-
+    for id in multi_assign_ids:
+        multi_ids_prot = get_key(id)
+        #name of combined protein folder
+        multi_prot_folder = "-".join(multi_ids_prot)
+        #create new dict with combined proteins
+        try: id_dict[multi_prot_folder] = id_dict[multi_prot_folder].append(id)
+        except KeyError: id_dict[multi_prot_folder] = []
+        mover(id, multi_ids_prot, multi_prot_folder)
 
 main()
-to_old.main(pdb_id_rev, dropbox_path)
-
+to_old.main(pdb_id_rev, repo_path)
 print("Done")

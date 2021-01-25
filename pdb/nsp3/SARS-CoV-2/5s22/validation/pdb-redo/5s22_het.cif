@@ -1,0 +1,199 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WRJ      WRJ '.                                   ' .                  20  13 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WRJ
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WRJ           O1     O    O         0.000     -9.492   15.295    3.216
+ WRJ           C      C    C         0.000     -8.262   15.217    3.382
+ WRJ           N      N    N         0.000     -7.707   15.428    4.572
+ WRJ           HN     H    H         0.000     -6.761   15.363    4.675
+ WRJ           C1     C    C         0.000     -7.361   14.920    2.227
+ WRJ           C9     C    CH2       0.000     -8.026   14.807    0.885
+ WRJ           H92    H    H         0.000     -8.910   15.448    0.912
+ WRJ           H91    H    H         0.000     -8.336   13.766    0.769
+ WRJ           O      O    O2        0.000     -7.187   15.188   -0.226
+ WRJ           C2     C    CSP       0.000     -6.017   14.856    2.298
+ WRJ           C3     C    CR6       0.000     -5.205   14.816    1.118
+ WRJ           C4     C    CR16      0.000     -3.817   14.681    1.141
+ WRJ           H4     H    H         0.000     -3.316   14.442    2.071
+ WRJ           C8     C    CR6       0.000     -5.823   15.082   -0.106
+ WRJ           C7     C    CR16      0.000     -5.077   15.260   -1.257
+ WRJ           H7     H    H         0.000     -5.567   15.488   -2.195
+ WRJ           C6     C    CR16      0.000     -3.699   15.145   -1.200
+ WRJ           H6     H    H         0.000     -3.109   15.289   -2.097
+ WRJ           C5     C    CR16      0.000     -3.076   14.850   -0.014
+ WRJ           H5     H    H         0.000     -1.998   14.749    0.018
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WRJ      O1     n/a    C      START
+ WRJ      C      O1     C1     .
+ WRJ      N      C      HN     .
+ WRJ      HN     N      .      .
+ WRJ      C1     C      C2     .
+ WRJ      C9     C1     O      .
+ WRJ      H92    C9     .      .
+ WRJ      H91    C9     .      .
+ WRJ      O      C9     .      .
+ WRJ      C2     C1     C3     .
+ WRJ      C3     C2     C8     .
+ WRJ      C4     C3     H4     .
+ WRJ      H4     C4     .      .
+ WRJ      C8     C3     C7     .
+ WRJ      C7     C8     C6     .
+ WRJ      H7     C7     .      .
+ WRJ      C6     C7     C5     .
+ WRJ      H6     C6     .      .
+ WRJ      C5     C6     H5     .
+ WRJ      H5     C5     .      END
+ WRJ      C4     C5     .    ADD
+ WRJ      C8     O      .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WRJ      C4     C5        aromatic    1.390    0.020
+ WRJ      C4     C3        aromatic    1.390    0.020
+ WRJ      C5     C6        aromatic    1.390    0.020
+ WRJ      C6     C7        aromatic    1.390    0.020
+ WRJ      C7     C8        aromatic    1.390    0.020
+ WRJ      C8     O         single      1.370    0.020
+ WRJ      C8     C3        aromatic    1.384    0.020
+ WRJ      C      O1        deloc       1.220    0.020
+ WRJ      N      C         deloc       1.330    0.020
+ WRJ      C1     C         single      1.460    0.020
+ WRJ      C9     C1        single      1.510    0.020
+ WRJ      C2     C1        double      1.255    0.020
+ WRJ      O      C9        single      1.426    0.020
+ WRJ      C3     C2        aromatic    1.285    0.020
+ WRJ      H4     C4        single      1.083    0.020
+ WRJ      H5     C5        single      1.083    0.020
+ WRJ      H6     C6        single      1.083    0.020
+ WRJ      H7     C7        single      1.083    0.020
+ WRJ      HN     N         single      0.954    0.020
+ WRJ      H91    C9        single      1.092    0.020
+ WRJ      H92    C9        single      1.092    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WRJ      O1     C      N       123.000    3.000
+ WRJ      O1     C      C1      120.500    3.000
+ WRJ      N      C      C1      116.500    3.000
+ WRJ      C      N      HN      120.000    3.000
+ WRJ      C      C1     C9      120.000    3.000
+ WRJ      C      C1     C2      120.000    3.000
+ WRJ      C9     C1     C2      120.000    3.000
+ WRJ      C1     C9     H92     109.470    3.000
+ WRJ      C1     C9     H91     109.470    3.000
+ WRJ      C1     C9     O       109.470    3.000
+ WRJ      H92    C9     H91     107.900    3.000
+ WRJ      H92    C9     O       109.470    3.000
+ WRJ      H91    C9     O       109.470    3.000
+ WRJ      C9     O      C8      120.000    3.000
+ WRJ      C1     C2     C3      180.000    3.000
+ WRJ      C2     C3     C4      120.000    3.000
+ WRJ      C2     C3     C8      120.000    3.000
+ WRJ      C4     C3     C8      120.000    3.000
+ WRJ      C3     C4     H4      120.000    3.000
+ WRJ      C3     C4     C5      120.000    3.000
+ WRJ      H4     C4     C5      120.000    3.000
+ WRJ      C3     C8     C7      120.000    3.000
+ WRJ      C3     C8     O       120.000    3.000
+ WRJ      C7     C8     O       120.000    3.000
+ WRJ      C8     C7     H7      120.000    3.000
+ WRJ      C8     C7     C6      120.000    3.000
+ WRJ      H7     C7     C6      120.000    3.000
+ WRJ      C7     C6     H6      120.000    3.000
+ WRJ      C7     C6     C5      120.000    3.000
+ WRJ      H6     C6     C5      120.000    3.000
+ WRJ      C6     C5     H5      120.000    3.000
+ WRJ      C6     C5     C4      120.000    3.000
+ WRJ      H5     C5     C4      120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WRJ      CONST_1          O1     C      N      HN               180.000            0.000   0
+ WRJ      var_1            O1     C      C1     C2               177.873           20.000   3
+ WRJ      var_2            C      C1     C9     O                180.000           20.000   3
+ WRJ      var_3            C1     C9     O      C8                26.258           20.000   3
+ WRJ      var_4            C      C1     C2     C3              -168.135           20.000   3
+ WRJ      var_5            C1     C2     C3     C8                11.082           20.000   3
+ WRJ      CONST_2          C2     C3     C4     C5                 0.000            0.000   0
+ WRJ      CONST_3          C3     C4     C5     C6                 0.000            0.000   0
+ WRJ      CONST_4          C2     C3     C8     C7                 0.000            0.000   0
+ WRJ      var_6            C3     C8     O      C9               -10.122           20.000   3
+ WRJ      CONST_5          C3     C8     C7     C6                 0.000            0.000   0
+ WRJ      CONST_6          C8     C7     C6     C5                 0.000            0.000   0
+ WRJ      CONST_7          C7     C6     C5     C4                 0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WRJ      plan-1            C4        0.020
+ WRJ      plan-1            C5        0.020
+ WRJ      plan-1            C3        0.020
+ WRJ      plan-1            H4        0.020
+ WRJ      plan-1            C6        0.020
+ WRJ      plan-1            C7        0.020
+ WRJ      plan-1            C8        0.020
+ WRJ      plan-1            H5        0.020
+ WRJ      plan-1            H6        0.020
+ WRJ      plan-1            H7        0.020
+ WRJ      plan-1            O         0.020
+ WRJ      plan-1            C2        0.020
+ WRJ      plan-2            C         0.020
+ WRJ      plan-2            O1        0.020
+ WRJ      plan-2            N         0.020
+ WRJ      plan-2            C1        0.020
+ WRJ      plan-2            HN        0.020
+ WRJ      plan-3            C1        0.020
+ WRJ      plan-3            C         0.020
+ WRJ      plan-3            C9        0.020
+ WRJ      plan-3            C2        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

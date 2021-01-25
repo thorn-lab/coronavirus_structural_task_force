@@ -1,0 +1,257 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+W2M      W2M '.                                   ' .                  28  15 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_W2M
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ W2M           O      O    O         0.000     25.635   41.855  -24.254
+ W2M           C      C    C         0.000     25.560   40.758  -24.792
+ W2M           N      N    N         0.000     26.462   39.785  -24.574
+ W2M           C1     C    CR6       0.000     26.348   38.489  -25.077
+ W2M           C6     C    CR16      0.000     27.472   37.666  -25.148
+ W2M           H6     H    H         0.000     28.401   37.969  -24.681
+ W2M           C5     C    CR16      0.000     27.390   36.457  -25.822
+ W2M           H5     H    H         0.000     28.266   35.824  -25.899
+ W2M           C2     C    CR6       0.000     25.138   38.091  -25.662
+ W2M           C7     C    CH2       0.000     23.953   39.021  -25.585
+ W2M           H72    H    H         0.000     23.467   38.915  -24.613
+ W2M           H71    H    H         0.000     23.241   38.773  -26.375
+ W2M           C3     C    CR16      0.000     25.083   36.860  -26.313
+ W2M           H3     H    H         0.000     24.153   36.531  -26.760
+ W2M           C4     C    CR16      0.000     26.205   36.055  -26.394
+ W2M           H4     H    H         0.000     26.150   35.104  -26.910
+ W2M           C8     C    CT        0.000     24.436   40.470  -25.764
+ W2M           C11    C    CH2       0.000     25.041   40.705  -27.164
+ W2M           H111   H    H         0.000     24.804   39.887  -27.847
+ W2M           H112   H    H         0.000     26.124   40.836  -27.118
+ W2M           C10    C    CH2       0.000     24.401   41.975  -27.657
+ W2M           H101   H    H         0.000     24.283   41.998  -28.742
+ W2M           H102   H    H         0.000     24.931   42.872  -27.330
+ W2M           C9     C    CH2       0.000     23.040   41.925  -27.002
+ W2M           H91    H    H         0.000     22.359   41.248  -27.522
+ W2M           H92    H    H         0.000     22.583   42.914  -26.929
+ W2M           N1     N    NT1       0.000     23.311   41.408  -25.652
+ W2M           HN1    H    H         0.000     22.805   41.658  -24.787
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ W2M      O      n/a    C      START
+ W2M      C      O      C8     .
+ W2M      N      C      C1     .
+ W2M      C1     N      C2     .
+ W2M      C6     C1     C5     .
+ W2M      H6     C6     .      .
+ W2M      C5     C6     H5     .
+ W2M      H5     C5     .      .
+ W2M      C2     C1     C3     .
+ W2M      C7     C2     H71    .
+ W2M      H72    C7     .      .
+ W2M      H71    C7     .      .
+ W2M      C3     C2     C4     .
+ W2M      H3     C3     .      .
+ W2M      C4     C3     H4     .
+ W2M      H4     C4     .      .
+ W2M      C8     C      C11    .
+ W2M      C11    C8     C10    .
+ W2M      H111   C11    .      .
+ W2M      H112   C11    .      .
+ W2M      C10    C11    C9     .
+ W2M      H101   C10    .      .
+ W2M      H102   C10    .      .
+ W2M      C9     C10    N1     .
+ W2M      H91    C9     .      .
+ W2M      H92    C9     .      .
+ W2M      N1     C9     HN1    .
+ W2M      HN1    N1     .      END
+ W2M      N1     C8     .    ADD
+ W2M      C4     C5     .    ADD
+ W2M      C7     C8     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ W2M      N1     C8        single      1.472    0.020
+ W2M      N1     C9        single      1.472    0.020
+ W2M      C4     C5        aromatic    1.390    0.020
+ W2M      C4     C3        aromatic    1.390    0.020
+ W2M      C5     C6        aromatic    1.390    0.020
+ W2M      C6     C1        aromatic    1.390    0.020
+ W2M      C7     C8        single      1.524    0.020
+ W2M      C7     C2        single      1.511    0.020
+ W2M      C8     C         single      1.507    0.020
+ W2M      C11    C8        single      1.524    0.020
+ W2M      C10    C11       single      1.524    0.020
+ W2M      C9     C10       single      1.524    0.020
+ W2M      C      O         double      1.220    0.020
+ W2M      N      C         aromatic    1.330    0.020
+ W2M      C3     C2        aromatic    1.390    0.020
+ W2M      C2     C1        aromatic    1.384    0.020
+ W2M      C1     N         aromatic    1.355    0.020
+ W2M      HN1    N1        single      1.033    0.020
+ W2M      H4     C4        single      1.083    0.020
+ W2M      H5     C5        single      1.083    0.020
+ W2M      H6     C6        single      1.083    0.020
+ W2M      H71    C7        single      1.092    0.020
+ W2M      H72    C7        single      1.092    0.020
+ W2M      H101   C10       single      1.092    0.020
+ W2M      H102   C10       single      1.092    0.020
+ W2M      H111   C11       single      1.092    0.020
+ W2M      H112   C11       single      1.092    0.020
+ W2M      H91    C9        single      1.092    0.020
+ W2M      H92    C9        single      1.092    0.020
+ W2M      H3     C3        single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ W2M      O      C      N       123.000    3.000
+ W2M      O      C      C8      120.500    3.000
+ W2M      N      C      C8      116.500    3.000
+ W2M      C      N      C1      120.000    3.000
+ W2M      N      C1     C6      120.000    3.000
+ W2M      N      C1     C2      120.000    3.000
+ W2M      C6     C1     C2      120.000    3.000
+ W2M      C1     C6     H6      120.000    3.000
+ W2M      C1     C6     C5      120.000    3.000
+ W2M      H6     C6     C5      120.000    3.000
+ W2M      C6     C5     H5      120.000    3.000
+ W2M      C6     C5     C4      120.000    3.000
+ W2M      H5     C5     C4      120.000    3.000
+ W2M      C1     C2     C7      120.000    3.000
+ W2M      C1     C2     C3      120.000    3.000
+ W2M      C7     C2     C3      120.000    3.000
+ W2M      C2     C7     H72     109.470    3.000
+ W2M      C2     C7     H71     109.470    3.000
+ W2M      C2     C7     C8      109.470    3.000
+ W2M      H72    C7     H71     107.900    3.000
+ W2M      H72    C7     C8      109.470    3.000
+ W2M      H71    C7     C8      109.470    3.000
+ W2M      C2     C3     H3      120.000    3.000
+ W2M      C2     C3     C4      120.000    3.000
+ W2M      H3     C3     C4      120.000    3.000
+ W2M      C3     C4     H4      120.000    3.000
+ W2M      C3     C4     C5      120.000    3.000
+ W2M      H4     C4     C5      120.000    3.000
+ W2M      C      C8     C11     109.470    3.000
+ W2M      C      C8     N1      109.500    3.000
+ W2M      C      C8     C7      109.470    3.000
+ W2M      N1     C8     C7      109.500    3.000
+ W2M      C11    C8     N1      109.500    3.000
+ W2M      C11    C8     C7      111.000    3.000
+ W2M      C8     C11    H111    109.470    3.000
+ W2M      C8     C11    H112    109.470    3.000
+ W2M      C8     C11    C10     111.000    3.000
+ W2M      H111   C11    H112    107.900    3.000
+ W2M      H111   C11    C10     109.470    3.000
+ W2M      H112   C11    C10     109.470    3.000
+ W2M      C11    C10    H101    109.470    3.000
+ W2M      C11    C10    H102    109.470    3.000
+ W2M      C11    C10    C9      111.000    3.000
+ W2M      H101   C10    H102    107.900    3.000
+ W2M      H101   C10    C9      109.470    3.000
+ W2M      H102   C10    C9      109.470    3.000
+ W2M      C10    C9     H91     109.470    3.000
+ W2M      C10    C9     H92     109.470    3.000
+ W2M      C10    C9     N1      109.500    3.000
+ W2M      H91    C9     H92     107.900    3.000
+ W2M      H91    C9     N1      109.500    3.000
+ W2M      H92    C9     N1      109.500    3.000
+ W2M      C9     N1     HN1     109.500    3.000
+ W2M      C9     N1     C8      109.500    3.000
+ W2M      HN1    N1     C8      109.500    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ W2M      var_1            O      C      N      C1               180.000           20.000   2
+ W2M      var_2            C      N      C1     C2               -10.763           20.000   3
+ W2M      CONST_1          N      C1     C6     C5                 0.000            0.000   0
+ W2M      CONST_2          C1     C6     C5     C4                 0.000            0.000   0
+ W2M      CONST_3          N      C1     C2     C3                 0.000            0.000   0
+ W2M      var_3            C1     C2     C7     C8                 0.000           20.000   2
+ W2M      var_4            C2     C7     C8     C                -52.261           20.000   3
+ W2M      CONST_4          C1     C2     C3     C4                 0.000            0.000   0
+ W2M      CONST_5          C2     C3     C4     C5                 0.000            0.000   0
+ W2M      CONST_6          C3     C4     C5     C6                 0.000            0.000   0
+ W2M      var_5            O      C      C8     C11               97.379           20.000   3
+ W2M      var_6            C      C8     C11    C10             -108.619           20.000   3
+ W2M      var_7            C8     C11    C10    C9               180.000           20.000   3
+ W2M      var_8            C11    C10    C9     N1               180.000           20.000   3
+ W2M      var_9            C10    C9     N1     C8               -33.396           20.000   3
+ W2M      var_10           C9     N1     C8     C                128.179           20.000   3
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ W2M      chir_01          C8     N1     C7     C         positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ W2M      plan-1            C4        0.020
+ W2M      plan-1            C5        0.020
+ W2M      plan-1            C3        0.020
+ W2M      plan-1            H4        0.020
+ W2M      plan-1            C6        0.020
+ W2M      plan-1            C2        0.020
+ W2M      plan-1            C1        0.020
+ W2M      plan-1            H5        0.020
+ W2M      plan-1            H6        0.020
+ W2M      plan-1            C7        0.020
+ W2M      plan-1            H3        0.020
+ W2M      plan-1            N         0.020
+ W2M      plan-2            C         0.020
+ W2M      plan-2            C8        0.020
+ W2M      plan-2            O         0.020
+ W2M      plan-2            N         0.020
+ W2M      plan-3            N         0.020
+ W2M      plan-3            C         0.020
+ W2M      plan-3            C1        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

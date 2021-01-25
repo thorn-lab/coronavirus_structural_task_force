@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+SARS-CoV-2 Main protease immature form - fragment BBV-136614527. Cyclic homo-2-mer. Ligand is 2-({[(1S,3S)-3-fluorocyclohexyl]methyl}amino)ethane-1,1-diol.
 
 ## Basefolder
 

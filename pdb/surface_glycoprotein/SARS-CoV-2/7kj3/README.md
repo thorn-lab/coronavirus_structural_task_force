@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of a SARS-CoV-2 spike glycoprotein bound to two cell-surface receptors ACE2. Non polymer only pentamer, spike protein with three chains ACE2 with two chains. Paper suggest that engineered trimeric ACE2 may be a anti SARS-CoV-2 agent. 
 
 ## Basefolder
 
@@ -20,7 +22,7 @@
 
 
 
-
+**validation** - contains validation reports. This structure has been analyzed by <br>     [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7kj3/validation/ccpem-validation)
 
 
 

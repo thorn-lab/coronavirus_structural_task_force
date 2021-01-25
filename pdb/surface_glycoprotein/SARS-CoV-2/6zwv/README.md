@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Cryo EM structure of the SARS-CoV-2 spike protein on intact virions, 3 Closed RBDs. Homo trimer with three chains. Structure reveals the conformations of the spike protein on the virions. 
 
 ## Basefolder
 

@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 RBD in complex with the neutralizing antibody CV07-270. Non polymer only trimer, spike with two chains, antibody with a heavy and a light chain with two chains each. Antibody have a weak neutralizing effect competition of the antibody with ACE2 binding is very weak. 
 
 ## Basefolder
 

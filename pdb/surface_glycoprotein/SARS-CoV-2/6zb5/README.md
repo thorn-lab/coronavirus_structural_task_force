@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+A SARS-CoV-2 spike protein in closed conformation with a C3 symmetry. Homo trimer with three chains. The model revealed additional density in the RBDs. 
 
 ## Basefolder
 

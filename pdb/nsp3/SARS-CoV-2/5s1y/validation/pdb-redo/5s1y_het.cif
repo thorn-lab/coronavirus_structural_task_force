@@ -1,0 +1,205 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+WQY      WQY '.                                   ' .                  22  12 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_WQY
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ WQY           N      N    NT2       0.000     -8.116   13.730    4.187
+ WQY           HN1    H    H         0.000     -7.498   13.063    3.698
+ WQY           HN2    H    H         0.000     -8.690   13.819    5.040
+ WQY           C      C    CH2       0.000     -8.209   14.964    3.410
+ WQY           H1     H    H         0.000     -7.847   15.797    4.016
+ WQY           H2     H    H         0.000     -9.252   15.139    3.138
+ WQY           C1     C    CR6       0.000     -7.373   14.850    2.157
+ WQY           C9     C    CR16      0.000     -7.952   14.838    0.894
+ WQY           H9     H    H         0.000     -9.032   14.778    0.840
+ WQY           N1     N    NRD6      0.000     -7.289   14.894   -0.243
+ WQY           C2     C    CR16      0.000     -6.007   14.875    2.223
+ WQY           H20    H    H         0.000     -5.516   14.840    3.188
+ WQY           C3     C    CR66      0.000     -5.236   14.945    1.053
+ WQY           C4     C    CR16      0.000     -3.829   15.057    1.053
+ WQY           H4     H    H         0.000     -3.288   15.036    1.991
+ WQY           C8     C    CR66      0.000     -5.919   14.968   -0.175
+ WQY           C7     C    CR16      0.000     -5.180   15.119   -1.369
+ WQY           H7     H    H         0.000     -5.694   15.151   -2.322
+ WQY           C6     C    CR16      0.000     -3.820   15.225   -1.326
+ WQY           H6     H    H         0.000     -3.262   15.336   -2.248
+ WQY           C5     C    CR16      0.000     -3.147   15.192   -0.119
+ WQY           H5     H    H         0.000     -2.067   15.274   -0.105
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ WQY      N      n/a    C      START
+ WQY      HN1    N      .      .
+ WQY      HN2    N      .      .
+ WQY      C      N      C1     .
+ WQY      H1     C      .      .
+ WQY      H2     C      .      .
+ WQY      C1     C      C2     .
+ WQY      C9     C1     N1     .
+ WQY      H9     C9     .      .
+ WQY      N1     C9     .      .
+ WQY      C2     C1     C3     .
+ WQY      H20    C2     .      .
+ WQY      C3     C2     C8     .
+ WQY      C4     C3     H4     .
+ WQY      H4     C4     .      .
+ WQY      C8     C3     C7     .
+ WQY      C7     C8     C6     .
+ WQY      H7     C7     .      .
+ WQY      C6     C7     C5     .
+ WQY      H6     C6     .      .
+ WQY      C5     C6     H5     .
+ WQY      H5     C5     .      END
+ WQY      N1     C8     .    ADD
+ WQY      C4     C5     .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ WQY      N1     C8        aromatic    1.350    0.020
+ WQY      N1     C9        aromatic    1.337    0.020
+ WQY      C4     C5        aromatic    1.390    0.020
+ WQY      C4     C3        aromatic    1.390    0.020
+ WQY      C5     C6        aromatic    1.390    0.020
+ WQY      C6     C7        aromatic    1.390    0.020
+ WQY      C7     C8        aromatic    1.390    0.020
+ WQY      C8     C3        aromatic    1.390    0.020
+ WQY      C      N         single      1.472    0.020
+ WQY      C1     C         single      1.511    0.020
+ WQY      C9     C1        aromatic    1.390    0.020
+ WQY      C2     C1        aromatic    1.390    0.020
+ WQY      C3     C2        aromatic    1.390    0.020
+ WQY      H4     C4        single      1.083    0.020
+ WQY      H5     C5        single      1.083    0.020
+ WQY      H6     C6        single      1.083    0.020
+ WQY      H7     C7        single      1.083    0.020
+ WQY      HN1    N         single      1.033    0.020
+ WQY      HN2    N         single      1.033    0.020
+ WQY      H1     C         single      1.092    0.020
+ WQY      H2     C         single      1.092    0.020
+ WQY      H9     C9        single      1.083    0.020
+ WQY      H20    C2        single      1.083    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ WQY      HN1    N      HN2     109.500    3.000
+ WQY      HN1    N      C       109.500    3.000
+ WQY      HN2    N      C       109.500    3.000
+ WQY      N      C      H1      109.500    3.000
+ WQY      N      C      H2      109.500    3.000
+ WQY      N      C      C1      109.500    3.000
+ WQY      H1     C      H2      107.900    3.000
+ WQY      H1     C      C1      109.470    3.000
+ WQY      H2     C      C1      109.470    3.000
+ WQY      C      C1     C9      120.000    3.000
+ WQY      C      C1     C2      120.000    3.000
+ WQY      C9     C1     C2      120.000    3.000
+ WQY      C1     C9     H9      120.000    3.000
+ WQY      C1     C9     N1      120.000    3.000
+ WQY      H9     C9     N1      120.000    3.000
+ WQY      C9     N1     C8      120.000    3.000
+ WQY      C1     C2     H20     120.000    3.000
+ WQY      C1     C2     C3      120.000    3.000
+ WQY      H20    C2     C3      120.000    3.000
+ WQY      C2     C3     C4      120.000    3.000
+ WQY      C2     C3     C8      120.000    3.000
+ WQY      C4     C3     C8      120.000    3.000
+ WQY      C3     C4     H4      120.000    3.000
+ WQY      C3     C4     C5      120.000    3.000
+ WQY      H4     C4     C5      120.000    3.000
+ WQY      C3     C8     C7      120.000    3.000
+ WQY      C3     C8     N1      120.000    3.000
+ WQY      C7     C8     N1      120.000    3.000
+ WQY      C8     C7     H7      120.000    3.000
+ WQY      C8     C7     C6      120.000    3.000
+ WQY      H7     C7     C6      120.000    3.000
+ WQY      C7     C6     H6      120.000    3.000
+ WQY      C7     C6     C5      120.000    3.000
+ WQY      H6     C6     C5      120.000    3.000
+ WQY      C6     C5     H5      120.000    3.000
+ WQY      C6     C5     C4      120.000    3.000
+ WQY      H5     C5     C4      120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ WQY      var_1            HN2    N      C      C1               180.000           20.000   3
+ WQY      var_2            N      C      C1     C2                 0.000           20.000   2
+ WQY      CONST_1          C      C1     C9     N1                 0.000            0.000   0
+ WQY      CONST_2          C1     C9     N1     C8                 0.000            0.000   0
+ WQY      CONST_3          C9     N1     C8     C3               180.000            0.000   0
+ WQY      CONST_4          C      C1     C2     C3                 0.000            0.000   0
+ WQY      CONST_5          C1     C2     C3     C8               180.000            0.000   0
+ WQY      CONST_6          C2     C3     C4     C5               180.000            0.000   0
+ WQY      CONST_7          C3     C4     C5     C6                 0.000            0.000   0
+ WQY      CONST_8          C2     C3     C8     C7               176.233            0.000   0
+ WQY      CONST_9          C3     C8     C7     C6               180.000            0.000   0
+ WQY      CONST_10         C8     C7     C6     C5                 0.000            0.000   0
+ WQY      CONST_11         C7     C6     C5     C4                 0.000            0.000   0
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ WQY      plan-1            N1        0.020
+ WQY      plan-1            C8        0.020
+ WQY      plan-1            C9        0.020
+ WQY      plan-1            C1        0.020
+ WQY      plan-1            C2        0.020
+ WQY      plan-1            C7        0.020
+ WQY      plan-1            C3        0.020
+ WQY      plan-1            C         0.020
+ WQY      plan-1            H9        0.020
+ WQY      plan-1            C4        0.020
+ WQY      plan-1            H20       0.020
+ WQY      plan-1            C5        0.020
+ WQY      plan-1            C6        0.020
+ WQY      plan-1            H4        0.020
+ WQY      plan-1            H5        0.020
+ WQY      plan-1            H6        0.020
+ WQY      plan-1            H7        0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

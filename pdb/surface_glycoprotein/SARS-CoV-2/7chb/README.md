@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 RBD in complex with the antibody BD-236. Non polymer only trimer, spike with one chain, antibody with one heavy and one light chain. Antibody binds to the RBD, one related structure 7che, it shows the antibody together with the anitbody BD-368-2. 
 
 ## Basefolder
 

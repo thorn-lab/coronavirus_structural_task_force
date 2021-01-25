@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Complex Structure of SARS-CoV-2 3CL Protease with TG-0203770. Cyclic homo-2-mer with one unique protein chain. Ligand is ethyl (4R)-4-[[(2S)-4-methyl-2-[[(2S,3R)-3-[(2-methylpropan-2-yl)oxy]-2-(phenylmethoxycarbonylamino)butanoyl]amino]pentanoyl]amino]-5-[(3S)-2-oxidanylidenepyrrolidin-3-yl]pentanoate.
 
 ## Basefolder
 

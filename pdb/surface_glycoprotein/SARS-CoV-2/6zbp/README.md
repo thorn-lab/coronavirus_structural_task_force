@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal Structure of SARS-CoV-2 RBD in complex with the nanobody H11-H4. Non polymer only dimer, spike with an EEE chain and Nanobody with an FFF chain. 
 
 ## Basefolder
 

@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 RBD in complex with the antibodies S304, S309 and S2H14. Non polymer only heptamer spike protein with one chain, each antibody has one heavy and one light chain. S304 recognizes a cryptic epitope the residues of this epitopes are shown in this structure. 
 
 ## Basefolder
 

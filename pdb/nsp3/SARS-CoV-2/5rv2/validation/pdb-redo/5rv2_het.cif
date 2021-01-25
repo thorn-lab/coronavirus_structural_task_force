@@ -1,0 +1,255 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+W7S      W7S '.                                   ' .                  29  16 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_W7S
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ W7S           O01    O    OH1       0.000    -47.966  -29.063    1.827
+ W7S           HO01   H    H         0.000    -48.863  -28.859    2.060
+ W7S           C02    C    CH1       0.000    -47.377  -29.155    2.841
+ W7S           H02    H    H         0.000    -47.176  -28.075    2.861
+ W7S           C11    C    CR6       0.000    -48.062  -29.101    4.213
+ W7S           C12    C    CR16      0.000    -49.439  -29.073    4.284
+ W7S           H12    H    H         0.000    -50.015  -29.056    3.367
+ W7S           N13    N    NRD6      0.000    -50.063  -29.066    5.424
+ W7S           C14    C    CR16      0.000    -49.359  -29.094    6.546
+ W7S           H14    H    H         0.000    -49.858  -29.078    7.507
+ W7S           N16    N    NRD6      0.000    -47.362  -29.136    5.311
+ W7S           C15    C    CR16      0.000    -47.971  -29.144    6.474
+ W7S           H15    H    H         0.000    -47.388  -29.190    7.385
+ W7S           N03    N    NT1       0.000    -45.980  -29.460    2.835
+ W7S           HN03   H    H         0.000    -45.455  -29.594    3.714
+ W7S           C04    C    CH2       0.000    -45.341  -29.572    1.561
+ W7S           H041   H    H         0.000    -44.310  -29.242    1.701
+ W7S           H042   H    H         0.000    -45.856  -28.879    0.893
+ W7S           C05    C    CR6       0.000    -45.351  -30.974    0.950
+ W7S           C06    C    CR16      0.000    -46.295  -31.930    1.251
+ W7S           H06    H    H         0.000    -47.073  -31.724    1.976
+ W7S           C07    C    CR16      0.000    -46.237  -33.165    0.611
+ W7S           H07    H    H         0.000    -46.974  -33.920    0.855
+ W7S           C08    C    CR16      0.000    -45.275  -33.451   -0.317
+ W7S           H08    H    H         0.000    -45.250  -34.418   -0.805
+ W7S           C09    C    CR16      0.000    -44.338  -32.488   -0.621
+ W7S           H09    H    H         0.000    -43.578  -32.687   -1.367
+ W7S           C10    C    CR16      0.000    -44.369  -31.271    0.026
+ W7S           H10    H    H         0.000    -43.608  -30.533   -0.195
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ W7S      O01    n/a    C02    START
+ W7S      HO01   O01    .      .
+ W7S      C02    O01    N03    .
+ W7S      H02    C02    .      .
+ W7S      C11    C02    N16    .
+ W7S      C12    C11    N13    .
+ W7S      H12    C12    .      .
+ W7S      N13    C12    C14    .
+ W7S      C14    N13    H14    .
+ W7S      H14    C14    .      .
+ W7S      N16    C11    C15    .
+ W7S      C15    N16    H15    .
+ W7S      H15    C15    .      .
+ W7S      N03    C02    C04    .
+ W7S      HN03   N03    .      .
+ W7S      C04    N03    C05    .
+ W7S      H041   C04    .      .
+ W7S      H042   C04    .      .
+ W7S      C05    C04    C06    .
+ W7S      C06    C05    C07    .
+ W7S      H06    C06    .      .
+ W7S      C07    C06    C08    .
+ W7S      H07    C07    .      .
+ W7S      C08    C07    C09    .
+ W7S      H08    C08    .      .
+ W7S      C09    C08    C10    .
+ W7S      H09    C09    .      .
+ W7S      C10    C09    H10    .
+ W7S      H10    C10    .      END
+ W7S      C10    C05    .    ADD
+ W7S      C15    C14    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ W7S      C10    C05       aromatic    1.390    0.020
+ W7S      C10    C09       aromatic    1.390    0.020
+ W7S      C15    C14       aromatic    1.390    0.020
+ W7S      C15    N16       aromatic    1.337    0.020
+ W7S      C11    C02       single      1.480    0.020
+ W7S      N03    C02       single      1.475    0.020
+ W7S      C02    O01       single      1.432    0.020
+ W7S      C05    C04       single      1.511    0.020
+ W7S      C04    N03       single      1.472    0.020
+ W7S      C06    C05       aromatic    1.390    0.020
+ W7S      C07    C06       aromatic    1.390    0.020
+ W7S      C08    C07       aromatic    1.390    0.020
+ W7S      C09    C08       aromatic    1.390    0.020
+ W7S      C12    C11       aromatic    1.390    0.020
+ W7S      N16    C11       aromatic    1.350    0.020
+ W7S      N13    C12       aromatic    1.337    0.020
+ W7S      C14    N13       deloc       1.337    0.020
+ W7S      H10    C10       single      1.083    0.020
+ W7S      H15    C15       single      1.083    0.020
+ W7S      H02    C02       single      1.099    0.020
+ W7S      H041   C04       single      1.092    0.020
+ W7S      H042   C04       single      1.092    0.020
+ W7S      H06    C06       single      1.083    0.020
+ W7S      H07    C07       single      1.083    0.020
+ W7S      H08    C08       single      1.083    0.020
+ W7S      H09    C09       single      1.083    0.020
+ W7S      H12    C12       single      1.083    0.020
+ W7S      H14    C14       single      1.083    0.020
+ W7S      HN03   N03       single      1.033    0.020
+ W7S      HO01   O01       single      0.967    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ W7S      HO01   O01    C02     109.470    3.000
+ W7S      O01    C02    H02     109.470    3.000
+ W7S      O01    C02    C11     109.470    3.000
+ W7S      O01    C02    N03     109.500    3.000
+ W7S      H02    C02    C11     109.470    3.000
+ W7S      H02    C02    N03     109.500    3.000
+ W7S      C11    C02    N03     109.500    3.000
+ W7S      C02    C11    C12     120.000    3.000
+ W7S      C02    C11    N16     120.000    3.000
+ W7S      C12    C11    N16     120.000    3.000
+ W7S      C11    C12    H12     120.000    3.000
+ W7S      C11    C12    N13     120.000    3.000
+ W7S      H12    C12    N13     120.000    3.000
+ W7S      C12    N13    C14     120.000    3.000
+ W7S      N13    C14    H14     120.000    3.000
+ W7S      N13    C14    C15     120.000    3.000
+ W7S      H14    C14    C15     120.000    3.000
+ W7S      C11    N16    C15     120.000    3.000
+ W7S      N16    C15    H15     120.000    3.000
+ W7S      N16    C15    C14     120.000    3.000
+ W7S      H15    C15    C14     120.000    3.000
+ W7S      C02    N03    HN03    109.500    3.000
+ W7S      C02    N03    C04     109.500    3.000
+ W7S      HN03   N03    C04     109.500    3.000
+ W7S      N03    C04    H041    109.500    3.000
+ W7S      N03    C04    H042    109.500    3.000
+ W7S      N03    C04    C05     109.500    3.000
+ W7S      H041   C04    H042    107.900    3.000
+ W7S      H041   C04    C05     109.470    3.000
+ W7S      H042   C04    C05     109.470    3.000
+ W7S      C04    C05    C06     120.000    3.000
+ W7S      C04    C05    C10     120.000    3.000
+ W7S      C06    C05    C10     120.000    3.000
+ W7S      C05    C06    H06     120.000    3.000
+ W7S      C05    C06    C07     120.000    3.000
+ W7S      H06    C06    C07     120.000    3.000
+ W7S      C06    C07    H07     120.000    3.000
+ W7S      C06    C07    C08     120.000    3.000
+ W7S      H07    C07    C08     120.000    3.000
+ W7S      C07    C08    H08     120.000    3.000
+ W7S      C07    C08    C09     120.000    3.000
+ W7S      H08    C08    C09     120.000    3.000
+ W7S      C08    C09    H09     120.000    3.000
+ W7S      C08    C09    C10     120.000    3.000
+ W7S      H09    C09    C10     120.000    3.000
+ W7S      C09    C10    H10     120.000    3.000
+ W7S      C09    C10    C05     120.000    3.000
+ W7S      H10    C10    C05     120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ W7S      var_1            HO01   O01    C02    N03              180.000           20.000   3
+ W7S      var_2            O01    C02    C11    N16             -176.330           20.000   3
+ W7S      CONST_1          C02    C11    C12    N13                0.000            0.000   0
+ W7S      CONST_2          C11    C12    N13    C14                0.000            0.000   0
+ W7S      CONST_3          C12    N13    C14    C15                0.000            0.000   0
+ W7S      CONST_4          C02    C11    N16    C15                0.000            0.000   0
+ W7S      CONST_5          C11    N16    C15    C14                0.000            0.000   0
+ W7S      CONST_6          N16    C15    C14    N13                0.000            0.000   0
+ W7S      var_3            O01    C02    N03    C04                3.225           20.000   3
+ W7S      var_4            C02    N03    C04    C05              -89.757           20.000   3
+ W7S      var_5            N03    C04    C05    C06                0.000           20.000   2
+ W7S      CONST_7          C04    C05    C06    C07                0.000            0.000   0
+ W7S      CONST_8          C05    C06    C07    C08                0.000            0.000   0
+ W7S      CONST_9          C06    C07    C08    C09                0.000            0.000   0
+ W7S      CONST_10         C07    C08    C09    C10                0.000            0.000   0
+ W7S      CONST_11         C08    C09    C10    C05                0.000            0.000   0
+ W7S      CONST_12         C09    C10    C05    C04                0.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ W7S      chir_01          C02    C11    N03    O01       negativ
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ W7S      plan-1            C10       0.020
+ W7S      plan-1            C05       0.020
+ W7S      plan-1            C09       0.020
+ W7S      plan-1            H10       0.020
+ W7S      plan-1            C06       0.020
+ W7S      plan-1            C07       0.020
+ W7S      plan-1            C08       0.020
+ W7S      plan-1            C04       0.020
+ W7S      plan-1            H06       0.020
+ W7S      plan-1            H07       0.020
+ W7S      plan-1            H08       0.020
+ W7S      plan-1            H09       0.020
+ W7S      plan-2            C15       0.020
+ W7S      plan-2            C14       0.020
+ W7S      plan-2            N16       0.020
+ W7S      plan-2            H15       0.020
+ W7S      plan-2            C11       0.020
+ W7S      plan-2            C12       0.020
+ W7S      plan-2            N13       0.020
+ W7S      plan-2            C02       0.020
+ W7S      plan-2            H12       0.020
+ W7S      plan-2            H14       0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

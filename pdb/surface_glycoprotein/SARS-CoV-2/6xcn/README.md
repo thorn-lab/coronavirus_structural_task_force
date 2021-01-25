@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of the SARS-CoV-2 spike glycoprotein in complex with the neutralizing antibody C105 fab fragment, symmetric trimer with three RBDs in up conformation. Non polymer only nonamer, spike protein with three chains, antibody with a heavy and a light chain with three chains each. There are two states of C105 this one is state 2 state 1 is in the structure 6xcm. 
 
 ## Basefolder
 

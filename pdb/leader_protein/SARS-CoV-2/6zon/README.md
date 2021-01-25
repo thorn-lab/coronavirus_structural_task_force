@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Electron Microscopy. Structure of nsp1 ("leader-protein) of SARS-CoV-2, bound to the human 43S preinitiation ribosome complex - state 1.
 
 ## Basefolder
 

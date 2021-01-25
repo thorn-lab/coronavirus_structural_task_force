@@ -91,7 +91,7 @@ Poster on Spike protein function<br>
 ## Contributors
 
 This is a collaborative effort. These are the current contributors (in order of joining):<br><br>
-University of Wuerzburg, Germany -<br>
+Universitaet Hamburg, Germany -<br>
 [Andrea Thorn - Group leader](https://www.uni-wuerzburg.de/en/rvz/research/associated-research-groups/thorn-group/)<br>
 Yunyun Gao - Postdoc in the AUSPEX project (www.auspex.de)<br>
 Kristopher Nolte - Biochemistry B.Sc. student<br>
@@ -132,10 +132,10 @@ WHATCHECK: Hooft, R.W.W., Vriend, G., Sander, C., Abola, E.E. WHATCHECK: Errors 
 If you would like to contact us, please write to:
 <br>
 Dr. Andrea Thorn<br>
-andrea.thorn@uni-wuerzburg.de<br>
-Rudolf Virchow Center, University of Wuerzburg<br>
-Josef-Schneider-Str. 2<br>
-97080 Wuerzburg<br>
-Germany<br>
+andrea.thorn@uni-hamburg.de<br>
+HARBOR (Institute for Nanostructure and Solid State Physics), Universität Hamburg<br>
+Luruper Chaussee 149 / Bldg. 610 | 22761 Hamburg | Germany<br>
+Tel. +49 (0)40 42838 3651<br>
+www.thorn-lab.de | www.insidecorona.de<br>
 <br>
 The contents of this repository website are for research and educational purposes only. As a general rule, we do not render any medical advice.

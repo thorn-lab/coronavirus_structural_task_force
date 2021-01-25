@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 3Q-2P full lenght spike vaccine candidate prefusion spike trimer in C3 symmetry. Homo trimer with three chains. This protein was engineered from the full length SARS-CoV-2 spike gene and modified at the S1/S2 polybasic cleavage site. 
 
 ## Basefolder
 

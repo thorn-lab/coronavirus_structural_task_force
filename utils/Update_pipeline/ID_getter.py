@@ -1,7 +1,7 @@
 import requests
 from datetime import date, timedelta
 import json
-yesterday = date.today() - timedelta(days=1)
+yesterday = date.today() - timedelta(days=6)
 time = "20"+yesterday.strftime('%y-%m-%d')
 
 import os.path as path

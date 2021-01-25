@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2-3Q-2P full length dimers of spike trimers. Homo hexamer with six chains. 3Q-2P-spike is a vaccine candidate that was engineered from the full lenght SARS-CoV-2 spike gene. 
 
 ## Basefolder
 

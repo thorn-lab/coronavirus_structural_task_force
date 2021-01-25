@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 spike protein at pH 5.5 used as a consensus sequence. Homo trimer with three chains. Related to the structures, 6xm3, 6xm4 and 6xm5. This structures tested a pH dependent mechanism of conformational masking. 
 
 ## Basefolder
 
@@ -20,7 +22,7 @@
 
 
 
-
+**validation** - contains validation reports. This structure has been analyzed by <br>     [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6xm0/validation/ccpem-validation)
 
 
 

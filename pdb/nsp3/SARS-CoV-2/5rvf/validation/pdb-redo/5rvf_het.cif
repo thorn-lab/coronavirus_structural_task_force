@@ -1,0 +1,250 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+W8D      W8D '.                                   ' .                  27  16 .
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_W8D
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ W8D           N01    N    NH2       0.000    -48.546  -28.818    6.531
+ W8D           H011   H    H         0.000    -48.179  -28.796    7.487
+ W8D           H012   H    H         0.000    -49.559  -28.716    6.416
+ W8D           C02    C    CR6       0.000    -47.680  -28.984    5.403
+ W8D           N16    N    NRD6      0.000    -48.140  -28.967    4.218
+ W8D           C15    C    CR16      0.000    -47.287  -29.101    3.183
+ W8D           H15    H    H         0.000    -47.693  -29.072    2.179
+ W8D           C03    C    CR56      0.000    -46.259  -29.124    5.612
+ W8D           N04    N    NRD5      0.000    -45.494  -29.149    6.759
+ W8D           C05    C    CR15      0.000    -44.262  -29.362    6.325
+ W8D           H05    H    H         0.000    -43.396  -29.475    6.966
+ W8D           N06    N    NRD5      0.000    -44.229  -29.418    5.011
+ W8D           C07    C    CR56      0.000    -45.489  -29.282    4.583
+ W8D           N08    N    NR6       0.000    -45.987  -29.265    3.323
+ W8D           C09    C    CH2       0.000    -45.110  -29.422    2.091
+ W8D           H091   H    H         0.000    -45.720  -29.829    1.282
+ W8D           H092   H    H         0.000    -44.305  -30.122    2.326
+ W8D           C10    C    C         0.000    -44.521  -28.102    1.663
+ W8D           O11    O    O2        0.000    -45.691  -27.287    1.016
+ W8D           C12    C    CH2       0.000    -45.188  -26.395    0.177
+ W8D           H122   H    H         0.000    -45.283  -25.384    0.579
+ W8D           H121   H    H         0.000    -45.686  -26.448   -0.793
+ W8D           C14    C    C1        0.000    -43.584  -28.097    0.655
+ W8D           H14    H    H         0.000    -42.912  -28.895    0.386
+ W8D           C13    C    CH2       0.000    -43.695  -26.746    0.010
+ W8D           H132   H    H         0.000    -43.442  -26.769   -1.052
+ W8D           H131   H    H         0.000    -43.084  -25.993    0.512
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ W8D      N01    n/a    C02    START
+ W8D      H011   N01    .      .
+ W8D      H012   N01    .      .
+ W8D      C02    N01    C03    .
+ W8D      N16    C02    C15    .
+ W8D      C15    N16    H15    .
+ W8D      H15    C15    .      .
+ W8D      C03    C02    N04    .
+ W8D      N04    C03    C05    .
+ W8D      C05    N04    N06    .
+ W8D      H05    C05    .      .
+ W8D      N06    C05    C07    .
+ W8D      C07    N06    N08    .
+ W8D      N08    C07    C09    .
+ W8D      C09    N08    C10    .
+ W8D      H091   C09    .      .
+ W8D      H092   C09    .      .
+ W8D      C10    C09    C14    .
+ W8D      O11    C10    C12    .
+ W8D      C12    O11    H121   .
+ W8D      H122   C12    .      .
+ W8D      H121   C12    .      .
+ W8D      C14    C10    C13    .
+ W8D      H14    C14    .      .
+ W8D      C13    C14    H131   .
+ W8D      H132   C13    .      .
+ W8D      H131   C13    .      END
+ W8D      C13    C12    .    ADD
+ W8D      C15    N08    .    ADD
+ W8D      C03    C07    .    ADD
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ W8D      C10    C09       single      1.510    0.020
+ W8D      C14    C10       aromatic    1.340    0.020
+ W8D      O11    C10       single      1.454    0.020
+ W8D      C13    C12       single      1.524    0.020
+ W8D      C13    C14       single      1.510    0.020
+ W8D      C15    N08       single      1.337    0.020
+ W8D      C15    N16       aromatic    1.337    0.020
+ W8D      C03    C02       aromatic    1.390    0.020
+ W8D      C02    N01       single      1.355    0.020
+ W8D      N16    C02       double      1.350    0.020
+ W8D      C03    C07       double      1.490    0.020
+ W8D      N04    C03       aromatic    1.350    0.020
+ W8D      C05    N04       aromatic    1.350    0.020
+ W8D      N06    C05       aromatic    1.350    0.020
+ W8D      C07    N06       aromatic    1.350    0.020
+ W8D      N08    C07       single      1.337    0.020
+ W8D      C09    N08       single      1.465    0.020
+ W8D      C12    O11       single      1.426    0.020
+ W8D      H131   C13       single      1.092    0.020
+ W8D      H132   C13       single      1.092    0.020
+ W8D      H15    C15       single      1.083    0.020
+ W8D      H05    C05       single      1.083    0.020
+ W8D      H091   C09       single      1.092    0.020
+ W8D      H092   C09       single      1.092    0.020
+ W8D      H121   C12       single      1.092    0.020
+ W8D      H122   C12       single      1.092    0.020
+ W8D      H14    C14       single      1.077    0.020
+ W8D      H011   N01       single      1.010    0.020
+ W8D      H012   N01       single      1.010    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ W8D      H011   N01    H012    120.000    3.000
+ W8D      H011   N01    C02     120.000    3.000
+ W8D      H012   N01    C02     120.000    3.000
+ W8D      N01    C02    N16     120.000    3.000
+ W8D      N01    C02    C03     120.000    3.000
+ W8D      N16    C02    C03     120.000    3.000
+ W8D      C02    N16    C15     120.000    3.000
+ W8D      N16    C15    H15     120.000    3.000
+ W8D      N16    C15    N08     120.000    3.000
+ W8D      H15    C15    N08     120.000    3.000
+ W8D      C02    C03    N04     132.000    3.000
+ W8D      C02    C03    C07     120.000    3.000
+ W8D      N04    C03    C07     108.000    3.000
+ W8D      C03    N04    C05     108.000    3.000
+ W8D      N04    C05    H05     126.000    3.000
+ W8D      N04    C05    N06     108.000    3.000
+ W8D      H05    C05    N06     126.000    3.000
+ W8D      C05    N06    C07     108.000    3.000
+ W8D      N06    C07    N08     120.000    3.000
+ W8D      N06    C07    C03     108.000    3.000
+ W8D      N08    C07    C03     120.000    3.000
+ W8D      C07    N08    C09     120.000    3.000
+ W8D      C07    N08    C15     120.000    3.000
+ W8D      C09    N08    C15     120.000    3.000
+ W8D      N08    C09    H091    109.470    3.000
+ W8D      N08    C09    H092    109.470    3.000
+ W8D      N08    C09    C10     109.500    3.000
+ W8D      H091   C09    H092    107.900    3.000
+ W8D      H091   C09    C10     109.470    3.000
+ W8D      H092   C09    C10     109.470    3.000
+ W8D      C09    C10    O11     120.000    3.000
+ W8D      C09    C10    C14     120.000    3.000
+ W8D      O11    C10    C14     120.000    3.000
+ W8D      C10    O11    C12     120.000    3.000
+ W8D      O11    C12    H122    109.470    3.000
+ W8D      O11    C12    H121    109.470    3.000
+ W8D      O11    C12    C13     109.470    3.000
+ W8D      H122   C12    H121    107.900    3.000
+ W8D      H122   C12    C13     109.470    3.000
+ W8D      H121   C12    C13     109.470    3.000
+ W8D      C10    C14    H14     120.000    3.000
+ W8D      C10    C14    C13     120.500    3.000
+ W8D      H14    C14    C13     120.000    3.000
+ W8D      C14    C13    H132    109.470    3.000
+ W8D      C14    C13    H131    109.470    3.000
+ W8D      C14    C13    C12     109.470    3.000
+ W8D      H132   C13    H131    107.900    3.000
+ W8D      H132   C13    C12     109.470    3.000
+ W8D      H131   C13    C12     109.470    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ W8D      CONST_1          H012   N01    C02    C03              180.000            0.000   0
+ W8D      CONST_2          N01    C02    N16    C15                0.000            0.000   0
+ W8D      CONST_3          C02    N16    C15    N08                0.000            0.000   0
+ W8D      CONST_4          N16    C15    N08    C07                0.000            0.000   0
+ W8D      CONST_5          N01    C02    C03    N04              180.000            0.000   0
+ W8D      CONST_6          C02    C03    C07    N06              180.000            0.000   0
+ W8D      CONST_7          C02    C03    N04    C05              180.000            0.000   0
+ W8D      CONST_8          C03    N04    C05    N06                0.000            0.000   0
+ W8D      CONST_9          N04    C05    N06    C07                0.000            0.000   0
+ W8D      CONST_10         C05    N06    C07    N08              180.000            0.000   0
+ W8D      CONST_11         N06    C07    N08    C09              180.000            0.000   0
+ W8D      var_1            C07    N08    C09    C10              -85.183           20.000   3
+ W8D      var_2            N08    C09    C10    C14              180.000           20.000   3
+ W8D      var_3            C09    C10    O11    C12             -155.688           20.000   3
+ W8D      var_4            C10    O11    C12    C13               10.789           20.000   3
+ W8D      var_5            C09    C10    C14    C13              152.845           20.000   3
+ W8D      var_6            C10    C14    C13    C12              -31.585           20.000   3
+ W8D      var_7            C14    C13    C12    O11              180.000           20.000   3
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ W8D      plan-1            C10       0.020
+ W8D      plan-1            C09       0.020
+ W8D      plan-1            C14       0.020
+ W8D      plan-1            O11       0.020
+ W8D      plan-1            H14       0.020
+ W8D      plan-2            C15       0.020
+ W8D      plan-2            N08       0.020
+ W8D      plan-2            N16       0.020
+ W8D      plan-2            H15       0.020
+ W8D      plan-2            C02       0.020
+ W8D      plan-2            C03       0.020
+ W8D      plan-2            N01       0.020
+ W8D      plan-2            C07       0.020
+ W8D      plan-2            N04       0.020
+ W8D      plan-2            C05       0.020
+ W8D      plan-2            N06       0.020
+ W8D      plan-2            H05       0.020
+ W8D      plan-2            C09       0.020
+ W8D      plan-2            H011      0.020
+ W8D      plan-2            H012      0.020
+ W8D      plan-3            C14       0.020
+ W8D      plan-3            C10       0.020
+ W8D      plan-3            C13       0.020
+ W8D      plan-3            H14       0.020
+ W8D      plan-4            N01       0.020
+ W8D      plan-4            C02       0.020
+ W8D      plan-4            H011      0.020
+ W8D      plan-4            H012      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------

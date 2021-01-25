@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 receptor binding domain in complex with the neutralizing antibody CV07-250. Non polymer only trimer, spike with one chain. Antibody with one heavy and one light chain. CV07-250 reduces ACE2 binding to the RBD to 58.3%. 
 
 ## Basefolder
 

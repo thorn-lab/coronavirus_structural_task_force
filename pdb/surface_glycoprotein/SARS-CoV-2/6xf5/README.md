@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Cryo-EM structure of a biotinylated SARS-CoV-2 spike probe in the prefusion state with RBDs down. Homo trimer with three chains. Biotin labeled probes comprising specific regions of the SARS-CoV-2 spike are helpful in the isolation and characterization of antibodies. 
 
 ## Basefolder
 
@@ -20,7 +22,7 @@
 
 
 
-
+**validation** - contains validation reports. This structure has been analyzed by <br>     [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6xf5/validation/ccpem-validation)
 
 
 

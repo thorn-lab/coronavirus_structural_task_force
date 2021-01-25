@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 spike protein in complex with the antibody CR3022 Fab. Non polymer only hexamer, spike with two chains and antibody with a heavy and a light chain with two chains each. Antibody that was prepared for SARS-CoV-1 it binds to SARS-CoV-2 but does not neutralize it. 
 
 ## Basefolder
 
@@ -20,7 +22,7 @@
 
 
 
-
+**validation** - contains validation reports. This structure has been analyzed by <br>     [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7a5r/validation/ccpem-validation)
 
 
 

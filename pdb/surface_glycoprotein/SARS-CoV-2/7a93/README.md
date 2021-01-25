@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of the SARS-CoV-2 spike glycoprotein with two erect RBDs. Homo trimer with three chains. Structure is part of a graphic that shows the sequential steps in ACE2 binding, related Structures to this graphic are 7a98, 7a97, 7a92, 7a91, 7a94, 7a95 and 7a96. 
 
 ## Basefolder
 

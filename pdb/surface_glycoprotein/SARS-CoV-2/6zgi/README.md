@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of a furin cleaved spike protein of SARS-CoV-2 in a closed conformation. Homo trimer with three chains. Structure was used for a comparison between SARS-CoV-2 and bat RatG13 structures. 
 
 ## Basefolder
 

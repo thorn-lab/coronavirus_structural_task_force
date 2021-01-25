@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+X-ray diffraction data. Structure of the main-protease of SARS-CoV-2, in complex with an inhibitor 11a.
 
 ## Basefolder
 

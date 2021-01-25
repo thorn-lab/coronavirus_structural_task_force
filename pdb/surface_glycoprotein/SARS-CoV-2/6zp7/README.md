@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 spike protein in prefusion state with one open up conformation. Homo trimer with three chains. Structure was used for a flexibility analysis. 
 
 ## Basefolder
 

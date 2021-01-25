@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 spike protein with the D614G mutation and without the RBD. Homo trimer with three chains. The S2 subunit of D614G overlapped with the published structures of D614 and a deviation with the S1 subunit. 
 
 ## Basefolder
 

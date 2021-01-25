@@ -10,6 +10,8 @@ From: https://www.ncbi.nlm.nih.gov/protein/1796318598
 Sequence identity: 76.00%
 
 ## Useful Information
+InsideCorona Blog: [**Spike**](https://insidecorona.net/the-virus/spike/)
+
 InsideCorona Blog: [**Spike Glycoprotein: The Key to Invade the Host Cell**](https://insidecorona.net/spike-glycoprotein-the-key-to-invade-the-host-cell/)
 
 InsideCorona Blog: [**Spike Glycoprotein: Corona’s Key for Invasion**](https://insidecorona.net/spike-glycoprotein-coronas-key-for-invasion/)

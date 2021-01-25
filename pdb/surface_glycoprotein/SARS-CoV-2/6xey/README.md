@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Cryo EM structure of SARS-CoV-2 spike glycoprotein bound to the antibody fab 2-4. Non polymer only nonamer, spike protein with three chains and antibody three chains on the heavy and the light chain each. Fab 2-4 binds the spike protein near the apex, with all RBDs in the down orientation.
 
 ## Basefolder
 
