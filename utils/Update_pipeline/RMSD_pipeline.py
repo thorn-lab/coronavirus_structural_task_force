@@ -51,7 +51,8 @@ def matrix_maker (protein, pdb_id, repo_path, taxo):
     doc = open(repo_path + "heatmap_{}.txt".format(protein), "w+")
     #Parse all .pdb files
     for iden in pdb_id:
-        pdb_entrys[iden] = parsePDB(repo_path + iden + "/{}.pdb".format(iden))
+        try: pdb_entrys[iden] = parsePDB(repo_path + iden + "/{}.pdb".format(iden))
+        except OSError: pass
 
     l = itertools.product(pdb_id, repeat=2)
     matrix = np.array(list(l))
@@ -64,7 +65,7 @@ def matrix_maker (protein, pdb_id, repo_path, taxo):
                 pdb1 = pdb_entrys[element[0]]
                 pdb2 = pdb_entrys[element[1]]
                 rmsd_matrix[i][j] = rmsdler(pdb1, pdb2, doc)
-            except OSError:
+            except (OSError, KeyError):
                 doc.write("OSError\n")
                 rmsd_matrix[i][j] = None
 
