@@ -3,7 +3,7 @@ data_7K6E
 _entry.id   7K6E 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.333 
+_audit_conform.dict_version    5.337 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
@@ -135,17 +135,17 @@ _entity.pdbx_ec
 _entity.pdbx_mutation 
 _entity.pdbx_fragment 
 _entity.details 
-1 polymer     man '3C-like proteinase' 33825.547 1  
-3.4.19.12,3.4.22.-,3.4.22.69,2.7.7.48,3.6.4.12,3.6.4.13,3.1.13.-,3.1.-.-,2.1.1.- ? ? ? 
-2 non-polymer syn 'DIMETHYL SULFOXIDE' 78.133    1  ? ? ? ? 
+1 polymer     man '3C-like proteinase' 33825.547 1  3.4.22.69 ? ? ? 
+2 non-polymer syn 'DIMETHYL SULFOXIDE' 78.133    1  ?         ? ? ? 
 3 non-polymer syn 
 ;(1S,3aR,6aS)-2-[(2S)-2-({(2S)-2-cyclohexyl-2-[(pyrazin-2-ylcarbonyl)amino]acetyl}amino)-3,3-dimethylbutanoyl]-N-[(2R,3S)-1-(cyclopropylamino)-2-hydroxy-1-oxohexan-3-yl]octahydrocyclopenta[c]pyrrole-1-carboxamide
 ;
-681.865   1  ?                                                                                ? ? ? 
-4 water       nat water 18.015    54 ?                                                                                ? ? ? 
+681.865   1  ?         ? ? ? 
+4 water       nat water 18.015    54 ?         ? ? ? 
 # 
 _entity_name_com.entity_id   1 
-_entity_name_com.name        'SARS-CoV-2 3CL protease' 
+_entity_name_com.name        
+'SARS-CoV-2 3CL protease,3CL-PRO,3CLp,Main protease,Mpro,Non-structural protein 5,nsp5,SARS coronavirus main proteinase' 
 # 
 _entity_poly.entity_id                      1 
 _entity_poly.type                           'polypeptide(L)' 
@@ -4135,14 +4135,11 @@ D 4 HOH 52 552 43  HOH HOH A .
 D 4 HOH 53 553 41  HOH HOH A . 
 D 4 HOH 54 554 50  HOH HOH A . 
 # 
-loop_
-_pdbx_molecule_features.prd_id 
-_pdbx_molecule_features.name 
-_pdbx_molecule_features.type 
-_pdbx_molecule_features.class 
-_pdbx_molecule_features.details 
-PRD_002447 'TELAPREVIR, bound form' ?            ?         ? 
-PRD_002448 'TELAPREVIR, bound form' Peptide-like Antiviral ? 
+_pdbx_molecule_features.prd_id    PRD_002448 
+_pdbx_molecule_features.name      'TELAPREVIR, bound form' 
+_pdbx_molecule_features.type      Peptide-like 
+_pdbx_molecule_features.class     Antiviral 
+_pdbx_molecule_features.details   ? 
 # 
 _pdbx_molecule.instance_id   1 
 _pdbx_molecule.prd_id        PRD_002448 
@@ -4189,11 +4186,15 @@ _pdbx_struct_oper_list.vector[3]
 2 'crystal symmetry operation' 2_555 -x,y,-z -1.0000000000 0.0000000000 0.0000000000 0.0000000000 0.0000000000 1.0000000000 
 0.0000000000 0.0000000000 0.0000000000 0.0000000000 -1.0000000000 0.0000000000 
 # 
-_pdbx_audit_revision_history.ordinal             1 
-_pdbx_audit_revision_history.data_content_type   'Structure model' 
-_pdbx_audit_revision_history.major_revision      1 
-_pdbx_audit_revision_history.minor_revision      0 
-_pdbx_audit_revision_history.revision_date       2020-09-30 
+loop_
+_pdbx_audit_revision_history.ordinal 
+_pdbx_audit_revision_history.data_content_type 
+_pdbx_audit_revision_history.major_revision 
+_pdbx_audit_revision_history.minor_revision 
+_pdbx_audit_revision_history.revision_date 
+1 'Structure model' 1 0 2020-09-30 
+2 'Structure model' 1 1 2020-10-14 
+3 'Structure model' 1 2 2021-01-27 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -4202,6 +4203,34 @@ _pdbx_audit_revision_details.provider            repository
 _pdbx_audit_revision_details.type                'Initial release' 
 _pdbx_audit_revision_details.description         ? 
 _pdbx_audit_revision_details.details             ? 
+# 
+loop_
+_pdbx_audit_revision_group.ordinal 
+_pdbx_audit_revision_group.revision_ordinal 
+_pdbx_audit_revision_group.data_content_type 
+_pdbx_audit_revision_group.group 
+1 2 'Structure model' 'Author supporting evidence' 
+2 2 'Structure model' 'Structure summary'          
+3 3 'Structure model' 'Structure summary'          
+# 
+loop_
+_pdbx_audit_revision_category.ordinal 
+_pdbx_audit_revision_category.revision_ordinal 
+_pdbx_audit_revision_category.data_content_type 
+_pdbx_audit_revision_category.category 
+1 2 'Structure model' pdbx_audit_support     
+2 2 'Structure model' pdbx_molecule_features 
+3 3 'Structure model' entity                 
+4 3 'Structure model' entity_name_com        
+# 
+loop_
+_pdbx_audit_revision_item.ordinal 
+_pdbx_audit_revision_item.revision_ordinal 
+_pdbx_audit_revision_item.data_content_type 
+_pdbx_audit_revision_item.item 
+1 2 'Structure model' '_pdbx_audit_support.funding_organization' 
+2 3 'Structure model' '_entity.pdbx_ec'                          
+3 3 'Structure model' '_entity_name_com.name'                    
 # 
 loop_
 _software.citation_id 
@@ -4334,9 +4363,9 @@ _pdbx_audit_support.ordinal
 1 
 'Department of Energy (DOE, United States)'                                                'United States' KP1605010               
 2 
-'Department of Energy (DOE, United States)'                                                'United States' 'LDRD 20-042'           
+'Brookhaven National Laboratory (BNL)'                                                     'United States' 'LDRD 20-042'           
 3 
-'Department of Energy (DOE, United States)'                                                'United States' 'Coronavirus CARES Act' 
+'National Virtual Biotechnology Laboratory (NVBL'                                          'United States' 'Coronavirus CARES Act' 
 4 
 # 
 _pdbx_entity_instance_feature.ordinal        1 

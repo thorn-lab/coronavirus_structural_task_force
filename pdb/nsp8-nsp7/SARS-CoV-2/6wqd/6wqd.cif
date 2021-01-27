@@ -3,7 +3,7 @@ data_6WQD
 _entry.id   6WQD 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.325 
+_audit_conform.dict_version    5.337 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
@@ -142,10 +142,16 @@ _entity.pdbx_ec
 _entity.pdbx_mutation 
 _entity.pdbx_fragment 
 _entity.details 
-1 polymer     man 'SARS-CoV-2 NSP7' 9521.062  2  ? ? 'UNP residues 3860-3942'                     ? 
-2 polymer     man 'SARS-CoV-2 NSP8' 13515.529 2  ? ? 'C-terminal domain (UNP residues 4019-4140)' ? 
-3 non-polymer syn 1,2-ETHANEDIOL    62.068    3  ? ? ?                                            ? 
-4 water       nat water             18.015    84 ? ? ?                                            ? 
+1 polymer     man 'Non-structural protein 7' 9521.062  2  ? ? 'UNP residues 3860-3942'                     ? 
+2 polymer     man 'Non-structural protein 8' 13515.529 2  ? ? 'C-terminal domain (UNP residues 4019-4140)' ? 
+3 non-polymer syn 1,2-ETHANEDIOL             62.068    3  ? ? ?                                            ? 
+4 water       nat water                      18.015    84 ? ? ?                                            ? 
+# 
+loop_
+_entity_name_com.entity_id 
+_entity_name_com.name 
+1 'nsp7,SARS-CoV-2 NSP7' 
+2 'nsp8,SARS-CoV-2 NSP8' 
 # 
 loop_
 _entity_poly.entity_id 
@@ -1062,6 +1068,7 @@ _struct_conn.pdbx_ptnr3_PDB_ins_code       ?
 _struct_conn.details                       ? 
 _struct_conn.pdbx_dist_value               2.082 
 _struct_conn.pdbx_value_order              ? 
+_struct_conn.pdbx_role                     ? 
 # 
 _struct_conn_type.id          disulf 
 _struct_conn_type.criteria    ? 
@@ -7940,11 +7947,14 @@ _pdbx_struct_oper_list.matrix[3][2]         0.0000000000
 _pdbx_struct_oper_list.matrix[3][3]         1.0000000000 
 _pdbx_struct_oper_list.vector[3]            0.0000000000 
 # 
-_pdbx_audit_revision_history.ordinal             1 
-_pdbx_audit_revision_history.data_content_type   'Structure model' 
-_pdbx_audit_revision_history.major_revision      1 
-_pdbx_audit_revision_history.minor_revision      0 
-_pdbx_audit_revision_history.revision_date       2020-05-06 
+loop_
+_pdbx_audit_revision_history.ordinal 
+_pdbx_audit_revision_history.data_content_type 
+_pdbx_audit_revision_history.major_revision 
+_pdbx_audit_revision_history.minor_revision 
+_pdbx_audit_revision_history.revision_date 
+1 'Structure model' 1 0 2020-05-06 
+2 'Structure model' 1 1 2021-01-27 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -7953,6 +7963,24 @@ _pdbx_audit_revision_details.provider            repository
 _pdbx_audit_revision_details.type                'Initial release' 
 _pdbx_audit_revision_details.description         ? 
 _pdbx_audit_revision_details.details             ? 
+# 
+_pdbx_audit_revision_group.ordinal             1 
+_pdbx_audit_revision_group.revision_ordinal    2 
+_pdbx_audit_revision_group.data_content_type   'Structure model' 
+_pdbx_audit_revision_group.group               'Structure summary' 
+# 
+loop_
+_pdbx_audit_revision_category.ordinal 
+_pdbx_audit_revision_category.revision_ordinal 
+_pdbx_audit_revision_category.data_content_type 
+_pdbx_audit_revision_category.category 
+1 2 'Structure model' entity          
+2 2 'Structure model' entity_name_com 
+# 
+_pdbx_audit_revision_item.ordinal             1 
+_pdbx_audit_revision_item.revision_ordinal    2 
+_pdbx_audit_revision_item.data_content_type   'Structure model' 
+_pdbx_audit_revision_item.item                '_entity.pdbx_description' 
 # 
 loop_
 _pdbx_refine_tls.id 
