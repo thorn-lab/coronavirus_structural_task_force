@@ -32,6 +32,18 @@ Download all reflection files for all PDB entries to /home/user: ```python git_f
 <br>
 Download all data in the methyltransferase subdirectory: ```python git_fetch.py -A methyltransferase```
 
+## Total number of structures by experimental methods
+
+X-ray Crystallography: 891
+<br><br>
+3D Electron Microscopy: 217
+<br><br>
+Solution NMR: 31
+<br><br>
+Solid-State NMR: 1
+<br><br>
+Neutron Diffraction: 2
+
 ## Folder stucture 
 
 In each folder, is a file **directory_info.txt**. It contains information on the file formats used in this directory, and where they came from.
