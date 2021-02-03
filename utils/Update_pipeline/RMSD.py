@@ -143,31 +143,3 @@ def heatmap (matrix, color, pdb_id, protein, repo_path):
         figure = heat_map.get_figure()
         figure.savefig(repo_path+'heatmap_{}.png'.format(protein), dpi=800)
         figure.savefig(repo_path+'heatmap_{}.pdf'.format(protein), dpi=800)
-
-repo_path = osp.abspath(osp.join(__file__ ,"../../..","pdb"))
-id_dict = {}
-id_dict["endornase"] = []
-id_dict["3c_like_proeinase"] = []
-id_dict["exonuclease-nsp10"] = []
-id_dict["helicase"] = []
-id_dict["hypothetical_protein_sars7a"] = []
-id_dict["leader_protein"] = []
-id_dict["methyltransferase-nsp10"] = []
-id_dict["nsp10"] = []
-id_dict["nsp3"] = []
-id_dict["nsp7"] = []
-id_dict["nsp8-nsp7"] = []
-id_dict["nsp8"] = []
-id_dict["nsp9"] = []
-id_dict["nucleocapsid_protein"] = []
-id_dict["orf3a_protein"] = []
-id_dict["orf8"] = []
-id_dict["orf9b"] = []
-id_dict["protein_e"] = []
-id_dict["rna_polymerase-nsp7-nsp8"] = []
-id_dict["rna_polymerase-nsp8"] = []
-id_dict["rna"] = []
-id_dict["helicase-rna_polymerase-nsp7-nsp8"] = []
-id_dict["rna_polymerase"] = []
-id_dict["surface_glycoprotein"] = []
-main(id_dict, repo_path)

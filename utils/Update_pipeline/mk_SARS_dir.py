@@ -7,7 +7,7 @@ import datetime
 import ID_getter
 import to_old
 import mk_Alignment_strc_vs_seq
-import RMSD_pipeline
+import RMSD
 import organizer
 import json
 import os.path as osp
@@ -95,7 +95,7 @@ def main():
     #create a protocol .txt file
     doc = open("weekly_reports/new_structures_{}.txt".format(time), "w+")
     doc.write("{} revised structures: \n".format(len(pdb_id_rev)))
-    doc.write("{}".format(", ".join(pdb_id_rev)))
+    doc.write("{}\n".format(", ".join(pdb_id_rev)))
     doc.write("{} new structures: \n".format(len(pdb_id)))
     is_sorted = []
     id_dict = {}
@@ -149,7 +149,7 @@ def main():
     mk_Alignment_strc_vs_seq.main(id_dict, pdb_id, repo_path)
     print("Alignment up to date, now updating RMSD")
     #Make RMSD
-    RMSD_pipeline.main(id_dict, repo_path)
+    RMSD.main(id_dict, repo_path)
     #Download not assigned
 
 
