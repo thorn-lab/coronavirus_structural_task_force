@@ -51,7 +51,17 @@ def rmsdler (pdb1, pdb2, doc):
             doc.write("Chain[{}] superposed to Chain[{}]: {} \n".format(comb[0], comb[1],str(rmsd)))
         except ValueError: pass
     if rmsd_lst != [] and comb_lst != [] and atom_lst != []:
-        return min(rmsd_lst),  comb_lst[rmsd_lst.index(min(rmsd_lst))], atom_lst[rmsd_lst.index(min(rmsd_lst))]
+        i = 0
+        #goes through rmsd list returns the highest rmsd value for which more than 5 atoms were superposed
+        while i in range(len(rmsd_lst)):
+            best_rmsd = sorted(rmsd_lst)[i]
+            index_of_best = rmsd_lst.index(best_rmsd)
+            atomn_of_best = atom_lst[index_of_best]
+            if atomn_of_best > 5:
+                comb_of_best =  comb_lst[index_of_best]
+                return best_rmsd, comb_of_best, atomn_of_best
+            i = i + 1
+
 
 def matrix_maker (protein, pdb_id, repo_path):
     doc = open(repo_path + "{}_RMSD_by_chain.txt".format(protein), "w+")
@@ -143,3 +153,8 @@ def heatmap (matrix, color, pdb_id, protein, repo_path):
         figure = heat_map.get_figure()
         figure.savefig(repo_path+'heatmap_{}.png'.format(protein), dpi=800)
         figure.savefig(repo_path+'heatmap_{}.pdf'.format(protein), dpi=800)
+
+
+id_dict = {}
+id_dict["surface_glycoprotein"] = []
+main(id_dict, osp.abspath(osp.join(__file__ ,"../../..","pdb")))
