@@ -51,22 +51,26 @@ def rmsdler (pdb1, pdb2, doc):
     :return: float: highest rmsd value, string: chain combination with best rmsd value, int: amount of atoms comapred in chains with highest rmsd
     """
     rmsd_lst, comb_lst, atom_lst = [], [], []
-
     #Get the combinations of all chains, each chain index has a respective alphabetic index
+    #ToDo: Get the chain names directly from the pdb file
     combi_lst = abc_lst[:max(len(pdb1),len(pdb2))]
-    iter_chain = np.asarray(list(itertools.permutations(combi_lst,2)))
+    iter_chain = np.asarray(list(itertools.combinations_with_replacement(combi_lst,2)))
+
     for comb in iter_chain:
+        print(comb)
         try:
             chain1 = pdb1[comb[0]].get_polymer()
             chain2 = pdb2[comb[1]].get_polymer()
-            ptype = chain1.check_polymer_type()
-            sup = gm.calculate_superposition(chain1, chain2, ptype, gm.SupSelect.CaP)
-            rmsd = round(sup.rmsd , 3)
+            #ToDo: minimum chain lenght dependend on len(sequence)
+            if len(chain1) > 5 and len(chain2) > 5:
+                ptype = chain1.check_polymer_type()
+                sup = gm.calculate_superposition(chain1, chain2, ptype, gm.SupSelect.CaP)
+                rmsd = round(sup.rmsd , 3)
 
-            atom_lst.append(sup.count)
-            comb_lst.append(comb)
-            rmsd_lst.append(rmsd)
-            doc.write("Chain[{}] superposed to Chain[{}]: {} \n".format(comb[0], comb[1],str(rmsd)))
+                atom_lst.append(sup.count)
+                comb_lst.append(comb)
+                rmsd_lst.append(rmsd)
+                doc.write("Chain[{}] superposed to Chain[{}]: {} \n".format(comb[0], comb[1],str(rmsd)))
         except ValueError: pass
     if rmsd_lst != [] and comb_lst != [] and atom_lst != []:
         i = 0
@@ -113,6 +117,7 @@ def matrix_maker (protein, pdb_id, repo_path):
     #superpose each combination of pdb to calculate rmsd
     for i in range(len(id_arr["PDB-1"])):
         doc.write("\n>{}-{}<\n".format(str(id_arr["PDB-1"][i]),str(id_arr["PDB-2"][i])))
+        print(id_arr["PDB-1"][i], id_arr["PDB-2"][i])
         try:
             result = rmsdler(pdb_entrys[id_arr["PDB-1"][i]],pdb_entrys[id_arr["PDB-2"][i]],doc)
             if result != None:
