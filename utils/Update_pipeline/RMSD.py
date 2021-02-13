@@ -13,17 +13,27 @@ import prody as pry
 pry.confProDy(verbosity='none')
 
 def main (id_dict, path):
-    #RMSD is not done for 3c_like_proteinase, surface_glycoprotein, nsp3
-    #for protein in all_proteins:
+    """
+    :param id_dict: dict: keys contain the proteins which have to be analysed
+    :param path: string: path to repo
+    :return:
+    """
+    #get all ids out of list.txt
     pdb_id = open(path + "/list.txt")
     pdb_id = pdb_id.read().split("\n")
     for protein in id_dict:
         #Here exceptions can be added, e.g. for proteins which have to many entries
         repo_path = path+"/"+protein
-        file_walker(protein, pdb_id, repo_path+"/SARS-CoV-2/", "SARS-CoV-2")
+        file_walker(protein, pdb_id, repo_path+"/SARS-CoV-2/")
 
-def file_walker(protein, pdb_id, repo_path, taxo):
+def file_walker(protein, pdb_id, repo_path):
+    """
+    :param protein: string: name of protein
+    :param pdb_id: list: all pdb ids in the repo
+    :param repo_path: string:path to the repo
+    """
     protein_id = []
+    #get all ids of the given proteins out of the list(pdb_id)
     for dirpath, dirnames, files in os.walk(repo_path):
         for key in pdb_id:
             if dirpath.endswith(key):
@@ -34,7 +44,15 @@ def file_walker(protein, pdb_id, repo_path, taxo):
     else: pass
 
 def rmsdler (pdb1, pdb2, doc):
+    """
+    :param pdb1: Parsed pdb structure
+    :param pdb2: Parsed pdb structure
+    :param doc: .txt document
+    :return: float: highest rmsd value, string: chain combination with best rmsd value, int: amount of atoms comapred in chains with highest rmsd
+    """
     rmsd_lst, comb_lst, atom_lst = [], [], []
+
+    #Get the combinations of all chains, each chain index has a respective alphabetic index
     combi_lst = abc_lst[:max(len(pdb1),len(pdb2))]
     iter_chain = np.asarray(list(itertools.permutations(combi_lst,2)))
     for comb in iter_chain:
@@ -53,6 +71,7 @@ def rmsdler (pdb1, pdb2, doc):
     if rmsd_lst != [] and comb_lst != [] and atom_lst != []:
         i = 0
         #goes through rmsd list returns the highest rmsd value for which more than 5 atoms were superposed
+        #ToDo: change higher than 5 to 25% of len(sequence)
         while i in range(len(rmsd_lst)):
             best_rmsd = sorted(rmsd_lst)[i]
             index_of_best = rmsd_lst.index(best_rmsd)
@@ -64,6 +83,11 @@ def rmsdler (pdb1, pdb2, doc):
 
 
 def matrix_maker (protein, pdb_id, repo_path):
+    """
+    :param protein: string: name of protein
+    :param pdb_id: list: all pdb-ids of the given protein
+    :param repo_path: path to protein/taxo folder
+    """
     doc = open(repo_path + "{}_RMSD_by_chain.txt".format(protein), "w+")
     doc.write("This document contains the RMSD of every combination of chains of this protein."
               "Only use this document if you what you are searching for."
@@ -86,6 +110,7 @@ def matrix_maker (protein, pdb_id, repo_path):
     id_arr["PDB-2"] = iter_id[:,1]
     rmsd_lst, best_chain_lst, n_atom_lst = [], [], []
 
+    #superpose each combination of pdb to calculate rmsd
     for i in range(len(id_arr["PDB-1"])):
         doc.write("\n>{}-{}<\n".format(str(id_arr["PDB-1"][i]),str(id_arr["PDB-2"][i])))
         try:
@@ -103,6 +128,7 @@ def matrix_maker (protein, pdb_id, repo_path):
             best_chain_lst.append([None,None])
             n_atom_lst.append(None)
 
+    #save values to DataFrame
     id_arr["RMSD"] = np.asarray(rmsd_lst)
     id_arr["Aligned atoms"] = np.asarray(n_atom_lst)
     id_arr["Chain-1"] = np.asarray(best_chain_lst)[:,0]
@@ -121,39 +147,6 @@ def matrix_maker (protein, pdb_id, repo_path):
     id_arr = id_arr.sort_values(by=['RMSD'])
     id_arr.to_excel("{}{}_best_RMSD.xlsx".format(repo_path, protein), index=False)
     doc.close()
-
-def heatmap (matrix, color, pdb_id, protein, repo_path):
-    if len(pdb_id) > 1:
-        harvest = np.array(matrix)
-        harvest = np.where(harvest=="X", np.nan, harvest)
-        harvest = harvest.astype(float)
-
-        #CREATING HEATMAP
-        fig, ax = plt.subplots()
-
-        #colorbar
-        if len(pdb_id) > 12:
-            heat_map = sb.heatmap(harvest, cmap= color, annot=False, cbar=True, cbar_kws={'label': '[Å]', "orientation":"vertical"})
-            plt.xticks(rotation=90)
-        else:
-            heat_map = sb.heatmap(harvest, cmap=color, annot=True, cbar=True, cbar_kws={'label': '[Å]', "orientation": "vertical"})
-        #linewidth=0.5
-
-        #Lenght of Label
-        heat_map.set_xticks(np.arange(len(pdb_id))+0.5)
-        heat_map.set_yticks(np.arange(len(pdb_id))+0.5)
-
-        #Labels
-        heat_map.set_xticklabels(pdb_id, rotation = 45)
-        heat_map.set_yticklabels(pdb_id, rotation = 0)
-        ax.set_title("{} overlap weighted RMSD".format(protein))
-
-        #Show and Save
-        plt.show()
-        figure = heat_map.get_figure()
-        figure.savefig(repo_path+'heatmap_{}.png'.format(protein), dpi=800)
-        figure.savefig(repo_path+'heatmap_{}.pdf'.format(protein), dpi=800)
-
 
 id_dict = {}
 id_dict["surface_glycoprotein"] = []
