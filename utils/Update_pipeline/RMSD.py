@@ -1,9 +1,6 @@
 import itertools
 import gemmi as gm
 import numpy as np
-import os.path as osp
-import seaborn as sb
-import matplotlib.pyplot as plt
 import pandas as pd
 import os
 
@@ -75,7 +72,7 @@ def rmsdler (pdb1, pdb2, doc):
     if rmsd_lst != [] and comb_lst != [] and atom_lst != []:
         i = 0
         #goes through rmsd list returns the highest rmsd value for which more than 5 atoms were superposed
-        #ToDo: change higher than 5 to 25% of len(sequence)
+        #ToDo: change higher than 5 to 50% of len(depposited_sequence)
         while i in range(len(rmsd_lst)):
             best_rmsd = sorted(rmsd_lst)[i]
             index_of_best = rmsd_lst.index(best_rmsd)
@@ -152,7 +149,3 @@ def matrix_maker (protein, pdb_id, repo_path):
     id_arr = id_arr.sort_values(by=['RMSD'])
     id_arr.to_excel("{}{}_best_RMSD.xlsx".format(repo_path, protein), index=False)
     doc.close()
-
-id_dict = {}
-id_dict["surface_glycoprotein"] = []
-main(id_dict, osp.abspath(osp.join(__file__ ,"../../..","pdb")))

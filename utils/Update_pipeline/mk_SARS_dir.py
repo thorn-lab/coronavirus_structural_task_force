@@ -181,6 +181,6 @@ def twice_assigned (id_dict, multi_assign_ids):
         except KeyError: id_dict[multi_prot_folder] = []
         mover(id, multi_ids_prot, multi_prot_folder)
 
-#main()
+main()
 to_old.main(pdb_id_rev, repo_path)
 print("Done")
