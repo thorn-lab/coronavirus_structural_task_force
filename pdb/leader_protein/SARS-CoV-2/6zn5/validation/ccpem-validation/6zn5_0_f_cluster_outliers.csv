@@ -2,14 +2,16 @@
 #CaBLAM: Backbone geometry outliers reported by molprobity.
 #SMOC: local fit to map outliers reported by TEMPy SMOC.
 #Jpred: Secondary structure prediction from sequence inconsistent with model.
-Cluster,Residue,CaBLAM_outliers,Molprobity_outliers
-1,10,-,Bond angle:N:CA
-1,6,CA Geom Outlier,Ramachandran*Bond angle:C*Dihedral angle:CA:C
-1,7,Outlier,Rotamer*Bond angle:N:CA*Bond angle:CA:CB:CG*Dihedral angle:N:CA
-1,8,Outlier,-
-1,9,-,Bond angle:C
--,14,CA Geom Outlier,-
--,17,Outlier,-
--,23,-,Rotamer
--,36,Outlier,-
--,49,-,Dihedral angle:CA:CB:CG:OD1
+Cluster,Residue,Molprobity_outliers,CaBLAM_outliers,SMOC_outliers
+1,10,Bond angle:N:CA,-,-
+1,6,Ramachandran*Bond angle:C*Dihedral angle:CA:C,CA Geom Outlier,-
+1,7,Rotamer*Bond angle:N:CA*Bond angle:CA:CB:CG*Dihedral angle:N:CA,Outlier,Outlier
+1,8,-,Outlier,-
+1,9,Bond angle:C,-,-
+-,14,-,CA Geom Outlier,-
+-,17,-,Outlier,-
+-,23,Rotamer,-,-
+-,36,-,Outlier,-
+-,49,Dihedral angle:CA:CB:CG:OD1,-,-
+-,52,-,-,Outlier
+-,56,-,-,Outlier
