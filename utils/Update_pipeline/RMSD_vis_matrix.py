@@ -5,6 +5,9 @@ import numpy as np
 import seaborn as sb
 import matplotlib.pyplot as plt
 import os
+import string
+import gemmi as gm
+abc_lst = string.ascii_uppercase
 
 def main (id_dict, path):
     #RMSD is not done for 3c_like_proteinase, surface_glycoprotein, nsp3
@@ -31,28 +34,57 @@ def file_walker(protein, pdb_id, repo_path, taxo):
     else: pass
 
 def rmsdler (pdb1, pdb2, doc):
-    try:
-        t1_chA, t2_chA, seqid, overlap = matchChains(pdb1, pdb2)[0]
-        t2_chA, transformation = superpose(t2_chA, t1_chA)
-        # Calculate RMSD
-        rmsd = calcRMSD(t1_chA, t2_chA)
-        rmsd_weighted = round(rmsd / overlap * 100, 2)
-        doc.write("RMSD: " + str(rmsd) + "\n")
-        doc.write("seqid: {} \n".format(seqid))
-        doc.write("overlap: {}\n".format(overlap))
-        doc.write("weighted-RMSD: {}\n".format(rmsd_weighted))
-        return rmsd_weighted
-    except TypeError:
-        doc.write("ProDy could not calculate a RMSD value\n")
-        return None
+    """
+        :param pdb1: Parsed pdb structure
+        :param pdb2: Parsed pdb structure
+        :param doc: .txt document
+        :return: float: highest rmsd value, string: chain combination with best rmsd value, int: amount of atoms comapred in chains with highest rmsd
+        """
+    rmsd_lst, comb_lst, atom_lst = [], [], []
+    # Get the combinations of all chains, each chain index has a respective alphabetic index
+    # ToDo: Get the chain names directly from the pdb file
+    combi_lst = abc_lst[:max(len(pdb1), len(pdb2))]
+    iter_chain = np.asarray(list(itertools.combinations_with_replacement(combi_lst, 2)))
+
+    for comb in iter_chain:
+        print(comb)
+        try:
+            chain1 = pdb1[comb[0]].get_polymer()
+            chain2 = pdb2[comb[1]].get_polymer()
+            # ToDo: minimum chain lenght dependend on len(sequence)
+            if len(chain1) > 5 and len(chain2) > 5:
+                ptype = chain1.check_polymer_type()
+                sup = gm.calculate_superposition(chain1, chain2, ptype, gm.SupSelect.CaP)
+                rmsd = round(sup.rmsd, 3)
+
+                atom_lst.append(sup.count)
+                comb_lst.append(comb)
+                rmsd_lst.append(rmsd)
+                doc.write("Chain[{}] superposed to Chain[{}]: {} \n".format(comb[0], comb[1], str(rmsd)))
+        except ValueError:
+            pass
+    if rmsd_lst != [] and comb_lst != [] and atom_lst != []:
+        i = 0
+        # goes through rmsd list returns the highest rmsd value for which more than 5 atoms were superposed
+        # ToDo: change higher than 5 to 50% of len(depposited_sequence)
+        while i in range(len(rmsd_lst)):
+            best_rmsd = sorted(rmsd_lst)[i]
+            index_of_best = rmsd_lst.index(best_rmsd)
+            atomn_of_best = atom_lst[index_of_best]
+            if atomn_of_best > 5:
+                comb_of_best = comb_lst[index_of_best]
+                return best_rmsd, comb_of_best, atomn_of_best
+            i = i + 1
 
 def matrix_maker (protein, pdb_id, repo_path, taxo):
     pdb_entrys = {}
     doc = open(repo_path + "heatmap_{}.txt".format(protein), "w+")
     #Parse all .pdb files
-    for iden in pdb_id:
-        try: pdb_entrys[iden] = parsePDB(repo_path + iden + "/{}.pdb".format(iden))
-        except OSError: pass
+    for id in pdb_id:
+        try:
+            pdb_entrys[id] = gm.read_structure(repo_path + id + "/{}.pdb".format(id))[0]
+        except RuntimeError:
+            pass
 
     l = itertools.product(pdb_id, repeat=2)
     matrix = np.array(list(l))
@@ -64,7 +96,7 @@ def matrix_maker (protein, pdb_id, repo_path, taxo):
             try:
                 pdb1 = pdb_entrys[element[0]]
                 pdb2 = pdb_entrys[element[1]]
-                rmsd_matrix[i][j] = rmsdler(pdb1, pdb2, doc)
+                rmsd_matrix[i][j] = rmsdler(pdb1, pdb2, doc)[0]
             except (OSError, KeyError):
                 doc.write("OSError\n")
                 rmsd_matrix[i][j] = None
@@ -103,3 +135,9 @@ def heatmap (matrix, color, pdb_id, protein, repo_path):
         figure = heat_map.get_figure()
         figure.savefig(repo_path+'heatmap_{}.png'.format(protein), dpi=800)
         figure.savefig(repo_path+'heatmap_{}.pdf'.format(protein), dpi=800)
+
+
+id_dict = {}
+id_dict["endornase"] = []
+import os.path as osp
+main(id_dict, osp.abspath(osp.join(__file__ ,"../../..","pdb")))
