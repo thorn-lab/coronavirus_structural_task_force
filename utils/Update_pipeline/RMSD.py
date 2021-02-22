@@ -2,6 +2,9 @@ import itertools
 import gemmi as gm
 import numpy as np
 import pandas as pd
+import seaborn as sb
+import matplotlib.pyplot as plt
+import os.path as osp
 import os
 
 import string
@@ -82,6 +85,15 @@ def rmsdler (pdb1, pdb2, doc):
                 return best_rmsd, comb_of_best, atomn_of_best
             i = i + 1
 
+def heatmap(id_arr, repo_path, protein):
+    hmap = id_arr.pivot(index="PDB-1", columns="PDB-2", values="RMSD")
+    sb_hmap = sb.heatmap(hmap, cmap='viridis', cbar=True, linewidths=.1, cbar_kws={'label': '[Å]', "orientation":"vertical"})
+    fig = sb_hmap.get_figure()
+    plt.xticks(rotation=35)
+    plt.title(protein+" best RMSD")
+    plt.show()
+    fig.savefig(repo_path + 'heatmap_{}.png'.format(protein), dpi=800)
+    fig.savefig(repo_path + 'heatmap_{}.pdf'.format(protein), dpi=800)
 
 def matrix_maker (protein, pdb_id, repo_path):
     """
@@ -146,6 +158,12 @@ def matrix_maker (protein, pdb_id, repo_path):
     inv_id_arr["Chain-2"] = id_arr["Chain-1"]
     id_arr = id_arr.append(inv_id_arr)
 
+    heatmap(id_arr, repo_path, protein)
+
     id_arr = id_arr.sort_values(by=['RMSD'])
     id_arr.to_excel("{}{}_best_RMSD.xlsx".format(repo_path, protein), index=False)
     doc.close()
+
+id_dict = {}
+id_dict["endornase"] = []
+main(id_dict, osp.abspath(osp.join(__file__ ,"../../..","pdb")))
