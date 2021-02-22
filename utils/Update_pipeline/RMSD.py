@@ -57,7 +57,6 @@ def rmsdler (pdb1, pdb2, doc):
     iter_chain = np.asarray(list(itertools.combinations_with_replacement(combi_lst,2)))
 
     for comb in iter_chain:
-        print(comb)
         try:
             chain1 = pdb1[comb[0]].get_polymer()
             chain2 = pdb2[comb[1]].get_polymer()
@@ -85,15 +84,22 @@ def rmsdler (pdb1, pdb2, doc):
                 return best_rmsd, comb_of_best, atomn_of_best
             i = i + 1
 
-def heatmap(id_arr, repo_path, protein):
-    hmap = id_arr.pivot(index="PDB-1", columns="PDB-2", values="RMSD")
-    sb_hmap = sb.heatmap(hmap, cmap='viridis', cbar=True, linewidths=.1, cbar_kws={'label': '[Å]', "orientation":"vertical"})
-    fig = sb_hmap.get_figure()
-    plt.xticks(rotation=35)
-    plt.title(protein+" best RMSD")
-    plt.show()
-    fig.savefig(repo_path + 'heatmap_{}.png'.format(protein), dpi=800)
-    fig.savefig(repo_path + 'heatmap_{}.pdf'.format(protein), dpi=800)
+def heatmap(id_arr, repo_path, protein, pdb_id):
+    if len(pdb_id) < 60:
+        hmap_arr = id_arr.drop_duplicates()
+        hmap = hmap_arr.pivot(index="PDB-1", columns="PDB-2", values="RMSD")
+        hmap = hmap.fillna(value=np.nan)
+        sb_hmap = sb.heatmap(hmap, cmap='viridis', cbar=True, cbar_kws={'label': '[Å]', "orientation":"vertical"}, xticklabels=True, yticklabels=True)
+        fontsize = -0.2*len(pdb_id)+16
+        plt.xticks(rotation=45, fontsize=fontsize)
+        plt.yticks(rotation=0, fontsize=fontsize)
+        plt.title(protein+" best RMSD")
+        plt.show()
+        fig = sb_hmap.get_figure()
+        fig.savefig(repo_path + 'heatmap_{}.png'.format(protein), dpi=800)
+        fig.savefig(repo_path + 'heatmap_{}.pdf'.format(protein), dpi=800)
+    else:
+        pass
 
 def matrix_maker (protein, pdb_id, repo_path):
     """
@@ -126,7 +132,6 @@ def matrix_maker (protein, pdb_id, repo_path):
     #superpose each combination of pdb to calculate rmsd
     for i in range(len(id_arr["PDB-1"])):
         doc.write("\n>{}-{}<\n".format(str(id_arr["PDB-1"][i]),str(id_arr["PDB-2"][i])))
-        print(id_arr["PDB-1"][i], id_arr["PDB-2"][i])
         try:
             result = rmsdler(pdb_entrys[id_arr["PDB-1"][i]],pdb_entrys[id_arr["PDB-2"][i]],doc)
             if result != None:
@@ -158,12 +163,13 @@ def matrix_maker (protein, pdb_id, repo_path):
     inv_id_arr["Chain-2"] = id_arr["Chain-1"]
     id_arr = id_arr.append(inv_id_arr)
 
-    heatmap(id_arr, repo_path, protein)
+    heatmap(id_arr, repo_path, protein, pdb_id)
 
     id_arr = id_arr.sort_values(by=['RMSD'])
     id_arr.to_excel("{}{}_best_RMSD.xlsx".format(repo_path, protein), index=False)
     doc.close()
 
-id_dict = {}
-id_dict["endornase"] = []
-main(id_dict, osp.abspath(osp.join(__file__ ,"../../..","pdb")))
+def test ():
+    id_dict = {}
+    id_dict["3c_like_proteinase"] = []
+    main(id_dict, osp.abspath(osp.join(__file__ ,"../../..","pdb")))
