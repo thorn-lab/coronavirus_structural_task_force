@@ -1,0 +1,2491 @@
+************************************************************************
+********** REPORT OF PROTEIN ANALYSIS  by the WHAT IF program **********
+************************************************************************
+
+Date : 2021-02-18
+This report was created by WHAT IF version WHATCHECK15.0
+
+This document is a WHAT_CHECK 14.0 report for a PDB-file. Each reported
+fact has an assigned severity, one of:
+
+error  : Items marked as errors are considered severe problems requiring
+         immediate attention.
+warning: Either less severe problems or uncommon structural features. These
+         still need special attention.
+note   : Statistical values, plots, or other verbose results of tests and
+         analyses that have been performed.
+
+If alternate conformations are present, only the first is evaluated. Hydrogen
+atoms are only included if explicitly requested, and even then they are not
+used in all checks. The software functions less well for non-canonical amino
+acids and exotic ligands than for the 20 canonical residues and canonical
+nucleic acids.
+
+Some remarks regarding the output:
+
+Residues/atoms in tables are normally given in a few parts:
+
+A number. This is the internal sequence number of the residue used by WHAT IF.
+    The first residues in the file get number 1, 2, etc.
+The residue type. Normally this is a three letter amino acid type.
+The sequence number, between brackets. This is the residue number as it was
+    given in the input file. It can be followed by the insertion code.
+The chain identifier. A single character. If no chain identifier was given in
+    the input file, this will be a minus sign or a blank.
+A model number. If no model number exists, like in most X-ray files, this will
+    be a blank or occasionally a minus sign.
+In case an atom is part of the output, the atom will be listed using the PDB
+    nomenclature for type and identifier.
+
+To indicate the normality of a score, the score may be expressed as a Z-value
+   or Z-score. This is just the number of standard deviations that the score
+   deviates from the expected value. A property of Z-values is that the
+   root-mean-square of a group of Z-values (the RMS Z-value) is expected to be
+   1.0. Z-values above 4.0 and below -4.0 are very uncommon. If a Z-score is
+   used in WHAT IF, the accompanying text will explain how the expected value
+   and standard deviation were obtained.
+The names of nucleic acids are DGUA, DTHY, OCYT, OADE, etc. The first character
+   is a D or O for DNA or RNA respectively. This circumvents ambiguities in the
+   many old PDB files in which DNA and RNA were both called A, C, G, and T.
+
+
+
+=========================================
+==== Compound code /zata/tempdir/7l0n/wctemp_0cyc/7l0n_0cyc.pdb     ====
+=========================================
+ 
+# 1 # Note: Introduction
+WHAT CHECK needs to read a PDB file before it can check it. It does a
+series of checks upon reading the file. The results of these checks are
+reported in this section (section 2.1). The rest of the report will be more
+systematic in that section 2.2 reports on administrative problems. Section
+2.3 gives descriptive output that is not directly validating things but
+more telling you how WHAT CHECK interpreted the input file. Section 2.4
+looks at B-factors, occupancies, and the presence/absence of (spurious)
+atoms. Section 2.5 deals with nomenclature problems. Section 2.6 deals with
+geometric problems like bond lengths and bond angles. Section 2.7 deals with
+torsion angle issues. Section 2.8 looks at atomic clashes. Section 2.9 deals
+with packing, accessibility, etc, issues. Section 2.10 deals with hydrogen
+bonds, ion packing, and other things that can be summarized under the common
+name charge-charge interactions. Section 2.11 gives a summary of whole report
+and tells you (if applicable) which symmetry matrices were used. Section 2.12
+tells the crystallographer which are the things most in need of manual
+correction. And the last section, section 2.13, lists all residues sorted
+by their need for visual inspection in light of the electron density.
+ 
+# 2 # Note: Header records from PDB file
+Header records from PDB file.
+ 
+HEADER    VIRAL PROTEIN/HYDROLASE                 11-DEC-20   7L0N
+ EVADING ANTIBODY-MEDIATED IMMUNITY
+ 
+# 3 # Note: Non crystallographic symmetry RMS plot
+The plot shows the RMS differences between two similar chains on a residue-
+by-residue basis. Individual "spikes" can be indicative of interesting or
+wrong residues. If all residues show a high RMS value, the structure could
+be incorrectly refined.
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifiers of the two chains: B and D
+ 
+ All-atom RMS fit for the two chains : 0.872
+ CA-only RMS fit for the two chains : 0.405
+ 
+# 4 # Note: Non crystallographic symmetry backbone difference plot
+The plot shows the differences in backbone torsion angles between two
+similar chains on a residue-by-residue basis. Individual "spikes" can be
+indicative of interesting or wrong residues. If all residues show high
+differences, the structure could be incorrectly refined.
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifiers of the two chains: B and D
+ 
+# 5 # Note: Non crystallographic symmetry RMS plot
+The plot shows the RMS differences between two similar chains on a residue-
+by-residue basis. Individual "spikes" can be indicative of interesting or
+wrong residues. If all residues show a high RMS value, the structure could
+be incorrectly refined.
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifiers of the two chains: L and N
+ 
+ All-atom RMS fit for the two chains : 0.866
+ CA-only RMS fit for the two chains : 0.447
+ 
+# 6 # Note: Non crystallographic symmetry backbone difference plot
+The plot shows the differences in backbone torsion angles between two
+similar chains on a residue-by-residue basis. Individual "spikes" can be
+indicative of interesting or wrong residues. If all residues show high
+differences, the structure could be incorrectly refined.
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifiers of the two chains: L and N
+ 
+# 7 # Note: Non crystallographic symmetry RMS plot
+The plot shows the RMS differences between two similar chains on a residue-
+by-residue basis. Individual "spikes" can be indicative of interesting or
+wrong residues. If all residues show a high RMS value, the structure could
+be incorrectly refined.
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifiers of the two chains: R and S
+ 
+ All-atom RMS fit for the two chains : 0.878
+ CA-only RMS fit for the two chains : 0.488
+ 
+# 8 # Note: Non crystallographic symmetry backbone difference plot
+The plot shows the differences in backbone torsion angles between two
+similar chains on a residue-by-residue basis. Individual "spikes" can be
+indicative of interesting or wrong residues. If all residues show high
+differences, the structure could be incorrectly refined.
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifiers of the two chains: R and S
+ 
+# 9 # Warning: Problem detected upon counting molecules and matrices
+The parameter Z as given on the CRYST card represents the molecular
+multiplicity in the crystallographic cell. Normally, Z equals the number of
+matrices of the space group multiplied by the number of NCS relations. The
+value of Z is multiplied by the integrated molecular weight of the molecules
+in the file to determine the Matthews coefficient. This relation is being
+validated in this option. Be aware that the validation can get confused if
+both multiple copies of the molecule are present in the ATOM records and
+MTRIX records are present in the header of the PDB file.
+ 
+ Space group as read from CRYST card: P 1 21 1
+ Number of matrices in space group: 2
+ Highest polymer chain multiplicity in structure: 2
+ Highest polymer chain multiplicity according to SEQRES: 2
+ No explicit MTRIX NCS matrices found in the input file
+ Value of Z as found on the CRYST1 card: 0
+ BIOMT matrices have been found but not enough to explain the difference
+ 
+# 10 # Error: Matthews Coefficient (Vm) very high
+ 
+The Matthews coefficient [REF] is defined as the density of the protein
+structure in cubic Angstroms per Dalton. Normal values are between 1.5
+(tightly packed, little room for solvent) and 4.0 (loosely packed, much
+space for solvent). Some very loosely packed structures can get values a bit
+higher than that.
+ 
+Numbers this high are almost always caused by giving the wrong value for Z
+on the CRYST1 card (or not giving this number at all).
+ 
+ Molecular weight of all polymer chains: 368258.656
+ Volume of the Unit Cell V= 2812349.0
+ Space group multiplicity: 2
+ No NCS symmetry matrices (MTRIX records) found in PDB file
+ Matthews coefficient for observed atoms and Z is high: Vm= 15.274
+ BIOMT matrices observed in the PDB file: 2
+ But accounting for these BIOMT matrices does not make Vm reasonable yet
+ Matthews coefficient read from REMARK 280 Vm= 3.760
+ Vm by authors and this calculated Vm do not agree very well
+ 
+# 11 # Note: Z missing on CRYST1 card
+The messages above seem likely caused by the fact that Z is missing from the
+CRYST1 card.
+ 
+# 12 # Note: All atoms are sufficiently far away from symmetry axes
+None of the atoms in the structure is closer than 0.77 Angstrom to a proper
+symmetry axis.
+ 
+# 13 # Note: Chain identifiers OK
+WHAT CHECK has not detected any serious chain identifier problems. But be
+aware that WHAT CHECK doesn't care about the chain identifiers of waters.
+ 
+# 14 # Warning: Ligands for which a topology was generated automatically
+The topology for the ligands in the table below were determined
+automatically. WHAT CHECK uses a local copy of the CCP4 monomer library to
+generate topology information for ligands. Be aware that automatic topology
+generation is a complicated task. So, if you get messages that you fail to
+understand or that you believe are wrong, and one of these ligands is
+involved, then check the ligand topology entry first. This topology is either
+present in the monomer library, or as a libcheck-generated file in the local
+directory.
+ 
+ 3321 BMA  (   3-) G  -
+ 3322 MAN  (   4-) G  -
+ 3323 MAN  (   5-) G  -
+ 3324 BMA  (   3-) I  -
+ 3325 MAN  (   4-) I  -
+ 3333 PG5  ( 702-) H  -
+ 3342 PG4  ( 703-) N  -
+ 3349 PGE  ( 706-) E  -
+ 3364 PGE  ( 602-) S  -
+ 
+# 15 # Warning: Covalently bound ligands
+The ligands in this table are covalently bound to something else. It is
+already difficult to automatically generate topologies for ligands,
+but when they are covalently bound to something it becomes even more
+complicated to do everything right. So, if you get weird error messages
+that seem related to this covalent bond, then please feel free to
+ignore those, or even better, make a topology entry by hand.
+ 
+The comment `Other ligand` indicates that the covalent bond is to another
+ligand. In that case you might want to convert the two ligands into one
+bigger ligand.
+ 
+ 3321 BMA  (   3-) G  -          Other ligand
+ 3322 MAN  (   4-) G  -          Other ligand
+ 3323 MAN  (   5-) G  -          Other ligand
+ 3324 BMA  (   3-) I  -          Other ligand
+ 3325 MAN  (   4-) I  -          Other ligand
+ 
+# 16 # Note: No strange inter-chain connections detected
+No covalent bonds have been detected between molecules with non-identical
+chain identifiers.
+ 
+# 17 # Note: No duplicate atom names in ligands
+All atom names in ligands (if any) seem adequately unique.
+ 
+# 18 # Note: In all cases the primary alternate atom was used
+WHAT CHECK saw no need to make any alternate atom corrections (which means
+they either are all correct, or there are none).
+ 
+# 19 # Note: No residues detected inside ligands
+Either this structure does not contain ligands with amino acid groups inside
+it, or their naming is proper (enough).
+ 
+# 20 # Warning: Groups attached to potentially hydrogen-bonding atoms
+Residues were observed with groups attached to (or very near to) atoms that
+potentially can form hydrogen bonds. WHAT CHECK is not very good at dealing
+with such exceptional cases (Mainly because it's author is not...). So be
+warned that the hydrogen-bonding related analyses of these residues
+might be in error.
+ 
+For example, an aspartic acid can be protonated on one of its delta
+oxygens. This is possible because the one delta oxygen 'helps' the
+other one holding that proton. However, if a delta oxygen has a group
+bound to it, then it can no longer 'help' the other delta oxygen
+bind the proton. However, both delta oxygens, in principle, can still
+be hydrogen bond acceptors. Such problems can occur in the amino acids
+Asp, Glu, and His. I have opted, for now to simply allow no hydrogen
+bonds at all for any atom in any side chain that somewhere has a 'funny'
+group attached to it. I know this is wrong, but there are only 12 hours
+in a day.
+ 
+ 3306 NAG  (   2-) G  -    O4  bound to  3321 BMA  (   3-) G  -    C1
+ 3309 NAG  (   2-) I  -    O4  bound to  3324 BMA  (   3-) I  -    C1
+ 
+# 21 # Note: No probable side chain atoms with zero occupancy detected.
+Either there are no side chain atoms with zero occupancy, or the side chain
+atoms with zero occupancy were not present in the input PDB file (in which
+case they are listed as missing atoms), or their positions are sufficiently
+improbable to warrant a zero occupancy.
+ 
+# 22 # Note: No probable backbone atoms with zero occupancy detected.
+Either there are no backbone atoms with zero occupancy, or the backbone
+atoms with zero occupancy were left out of the input PDB file (in
+which case they are listed as missing atoms), or their positions are
+sufficiently improbable to warrant a zero occupancy.
+ 
+# 23 # Note: All residues have a complete backbone.
+No residues have missing backbone atoms.
+ 
+# 24 # Note: No C-alpha only residues
+There are no residues that consist of only an alpha carbon atom.
+ 
+# 25 # Note: Content of the PDB file as interpreted by WHAT CHECK
+Content of the PDB file as interpreted by WHAT CHECK.
+WHAT CHECK has read your PDB file, and stored it internally in what is called
+'the soup'. The content of this soup is listed here. An extensive explanation
+of all frequently used WHAT CHECK output formats can be found at
+swift.cmbi.ru.nl. Look under output formats. A course on reading this
+'Molecules' table is part of the WHAT CHECK website.
+ 
+     1     1 (    1)   213 (  213) B Protein             /zata/tempdir/7l0...
+     2   214 (    1)   426 (  213) D Protein             /zata/tempdir/7l0...
+     3   427 (    2)   648 (  228) A Protein             /zata/tempdir/7l0...
+     4   649 (    1)   872 (  228) C Protein             /zata/tempdir/7l0...
+     5   873 (    1)  1085 (  213) L Protein             /zata/tempdir/7l0...
+     6  1086 (    1)  1298 (  213) N Protein             /zata/tempdir/7l0...
+     7  1299 (    2)  1510 (  221) H Protein             /zata/tempdir/7l0...
+     8  1511 (    1)  1725 (  222) M Protein             /zata/tempdir/7l0...
+     9  1726 (   19)  2304 (  614) E Protein             /zata/tempdir/7l0...
+    10  2305 (   19)  2900 (  614) F Protein             /zata/tempdir/7l0...
+    11  2901 (  329)  3103 (  531) R Protein             /zata/tempdir/7l0...
+    12  3104 (  328)  3304 (  528) S Protein             /zata/tempdir/7l0...
+    13  3305 (    1)  3305 (    1) G Sugar               /zata/tempdir/7l0...
+    14  3306 (    2)  3306 (    2) G Sugar<-             /zata/tempdir/7l0...
+    15  3307 (    6)  3307 (    6) G Sugar               /zata/tempdir/7l0...
+And so on for a total of    86 lines.
+MODELs skipped upon reading PDB file: 0
+X-ray structure. No MODELs found
+The total number of amino acids found is 3304
+of which 745 have poor or (essentially) missing atoms
+No nucleic acids observed in input file
+Number of (recognized) sugars: 15
+of which 10 have poor or (essentially) missing atoms
+Number of water molecules: 232
+Residue numbers increase monotonously OK
+ 
+# 26 # Note: Chain identifiers seem OK
+All ions seem to have a logical chain identifier, or there are no ions
+present in the input file.
+ 
+# 27 # Note: Ramachandran plot
+In this Ramachandran plot x-signs represent glycines, squares represent
+prolines, and plus-signs represent the other residues. If too many
+plus-signs fall outside the contoured areas then the molecule is poorly
+refined (or worse). Proline can only occur in the narrow region around
+phi=-60 that also falls within the other contour islands.
+ 
+In a colour picture, the residues that are part of a helix are shown in blue,
+strand residues in red. Preferred regions for helical residues are drawn in
+blue, for strand residues in red, and for all other residues in green. A full
+explanation of the Ramachandran plot together with a series of examples can
+be found at the WHAT CHECK website [REF].
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: B
+ 
+# 28 # Note: Ramachandran plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: D
+ 
+# 29 # Note: Ramachandran plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: A
+ 
+# 30 # Note: Ramachandran plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: C
+ 
+# 31 # Note: Ramachandran plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: L
+ 
+# 32 # Note: Ramachandran plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: N
+ 
+# 33 # Note: Ramachandran plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: H
+ 
+# 34 # Note: Ramachandran plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: M
+ 
+# 35 # Note: Ramachandran plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: E
+ 
+# 36 # Note: Ramachandran plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: F
+ 
+# 37 # Note: Ramachandran plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: R
+ 
+# 38 # Note: Ramachandran plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: S
+ 
+# 39 # Note: Secondary structure
+This is the secondary structure according to DSSP. Only helix (H), overwound
+or 3/10-helix (3), strand (S), turn (T) and coil (blank) are shown [REF].
+All DSSP related information can be found at swift.cmbi.ru.nl/gv/dssp/
+This is not really a structure validation option, but a very scattered
+secondary structure (i.e. many strands of only a few residues length, many
+Ts inside helices, etc) tends to indicate a poor structure. A full
+explanation of the DSSP secondary structure determination program together
+with a series of examples can be found at the WHAT CHECK website [REF].
+ 
+Secondary structure assignment
+                     10        20        30        40        50        60
+                      |         |         |         |         |         |
+    1 -   60 EIVLTQSPGTLSLSPGERATLSCRASQTVSSTSLAWYQQKPGQAPRLLIYGASSRATGIP
+(   1)-(  60)   SS    SSSS TT  SSSSSSSSSSS HHHSSSSSS TT   SS SSTTTSS TT
+                     70        80        90       100       110       120
+                      |         |         |         |         |         |
+   61 -  120 DRFSGSGSGTDFTLTISRLEPEDFAVYYCQQHDTSLTFGGGTKVEIKRTVAAPSVFIFPP
+(  61)-( 120)  SSSSSSSSSSSSSS    TTT  SSSSSS     SS   SSSSS       SSSSS
+                    130       140       150       160       170       180
+                      |         |         |         |         |         |
+  121 -  180 SDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLT
+( 121)-( 180) HHHHHTTSSSSSSSSSSS     SSSSSSTTSSS TTSSSSS         SSSSSSSS
+                    190       200       210
+                      |         |         |
+  181 -  213 LSKADYEKHKVYACEVTHQGLSSPVTKSFNRGE
+( 181)-( 213)SSHHHHTT  SSSSSSS TT    SSSSSSTT
+                 220       230       240       250       260       270
+                   |         |         |         |         |         |
+  214 -  273 EIVLTQSPGTLSLSPGERATLSCRASQTVSSTSLAWYQQKPGQAPRLLIYGASSRATGIP
+(   1)-(  60)   SSSS  SSSS TT  SSSSSSS     HHHSSSSSS TT   SSSSSTTTSS TT
+                 280       290       300       310       320       330
+                   |         |         |         |         |         |
+  274 -  333 DRFSGSGSGTDFTLTISRLEPEDFAVYYCQQHDTSLTFGGGTKVEIKRTVAAPSVFIFPP
+(  61)-( 120)TTSSSSSSTTSSSSSS    TTT  SSSSSS     SS   SSSSS       SSSSS
+                 340       350       360       370       380       390
+                   |         |         |         |         |         |
+  334 -  393 SDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLT
+( 121)-( 180) HHHHHHTSSSSSSSSSSS     SSSSSSTTSSS   SSSSS         SSSSSSSS
+                 400       410       420
+                   |         |         |
+  394 -  426 LSKADYEKHKVYACEVTHQGLSSPVTKSFNRGE
+( 181)-( 213)SSHHHHTT  SSSSSSS TT    SSSSSSTT
+              430       440       450       460       470       480
+                |         |         |         |         |         |
+  427 -  486 VQLVQSGAEVKKPGASVKVSCKASGYPFTSYGISWVRQAPGQGLEWMGWISTYNGNTNYA
+(   2)-(  61) SSSS   SSS TT  SSSSSSSS   TTT SSSSSSS TT  SSSSSSS      SSS
+              490       500       510       520       530       540
+                |         |         |         |         |         |
+  487 -  546 QKFQGRVTMTTDTSTTTGYMELRRLRSDDTAVYYCARDYTRGAWFGESLIGGFDNWGQGT
+(  62)-( 121)HHHTTTSSSSSSTTTTSSSSSS    HHH SSSSSSSS    TTT       SSSS   S
+              550       560       570       580       590       600
+                |         |         |         |         |         |
+  547 -  606 LVTVSSASTKGPSVFPLAPSSGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQS
+( 122)-( 186)SSSS        SSSSS       SSSSSSSSS     SSSSHHHT  TTSSSSSSSS T
+              610       620       630       640
+                |         |         |         |
+  607 -  648 SGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPK
+( 187)-( 228)T  SSSSSSSS  HHHTTT   SSSSSSTTTTSSSSSS
+            650       660       670       680       690       700
+              |         |         |         |         |         |
+  649 -  708 QVQLVQSGAEVKKPGASVKVSCKASGYPFTSYGISWVRQAPGQGLEWMGWISTYNGNTNY
+(   1)-(  60)  SSSS   SSS TT  SSSSSSSS   TTT SSSSSSS TT  SSSSSSS      SSS
+            710       720       730       740       750       760
+              |         |         |         |         |         |
+  709 -  768 AQKFQGRVTMTTDTSTTTGYMELRRLRSDDTAVYYCARDYTRGAWFGESLIGGFDNWGQG
+(  61)-( 120) HHHTTTSSSSSSTTTTSSSSSS    HHH SSSSSSSS              SSSS
+            770       780       790       800       810       820
+              |         |         |         |         |         |
+  769 -  828 TLVTVSSASTKGPSVFPLAPSSKGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVL
+( 121)-( 184)SSSSS        SSSSS      SSSSSSSSSSS     SSSSHHHT  TTSSS   SS
+            830       840       850       860       870
+              |         |         |         |         |
+  829 -  872 QSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPK
+( 185)-( 228) TT  SSSSSSSSSSHHHTTT  SSSSSSSHHHTSSSSSSS
+                  880       890       900       910       920       930
+                    |         |         |         |         |         |
+  873 -  932 DIQMTQSPSSLSAAVGDRVTITCRASQSIGSYLNWYQQKPGKAPKLLIYAASSLQSGVPS
+(   1)-(  60)   SSSS  SSSSSTT  SSSSSSS    TT SSSSSS TT   SSSSSTTTSS TT  T
+                  940       950       960       970       980       990
+                    |         |         |         |         |         |
+  933 -  992 RFSGSGSGTDFTLTISSLQPEDFAIYYCQQSYVSPTYTFGPGTKVDIKRTVAAPSVFIFP
+(  61)-( 120)TSSSSSSTTSSSSSS    HHH SSSSSSS       SS   SSSSSS      SSSSS
+                 1000      1010      1020      1030      1040      1050
+                    |         |         |         |         |         |
+  993 - 1052 PSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTL
+( 121)-( 180)  TTTTTTTSSSSSSSSSSS     SSSSSSTTSSS   SSSSS         SSSSSSS
+                 1060      1070      1080
+                    |         |         |
+ 1053 - 1085 TLSKADYEKHKVYACEVTHQGLSSPVTKSFNRG
+( 181)-( 213)SSSHHHH    SSSSSSS TT    SSSSSS
+              1090      1100      1110      1120      1130      1140
+                 |         |         |         |         |         |
+ 1086 - 1145 DIQMTQSPSSLSAAVGDRVTITCRASQSIGSYLNWYQQKPGKAPKLLIYAASSLQSGVPS
+(   1)-(  60)   SSSS  SSSSSTT  SSSSSSS    TT SSSSSS TT   SSSSSTTTSS TT  T
+              1150      1160      1170      1180      1190      1200
+                 |         |         |         |         |         |
+ 1146 - 1205 RFSGSGSGTDFTLTISSLQPEDFAIYYCQQSYVSPTYTFGPGTKVDIKRTVAAPSVFIFP
+(  61)-( 120)TSSSSSSTTSSSSSS    HHH SSSSSSS       SS   SSSSSS      SSSSS
+              1210      1220      1230      1240      1250      1260
+                 |         |         |         |         |         |
+ 1206 - 1265 PSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTL
+( 121)-( 180)  HHHHTT SSSSSSSSSSS     SSSSSSTTSSS   SSSSS         SSSSSSS
+              1270      1280      1290
+                 |         |         |
+ 1266 - 1298 TLSKADYEKHKVYACEVTHQGLSSPVTKSFNRG
+( 181)-( 213)SSSHHHHTT  SSSSSSS TT    SSSSSS
+           1300      1310      1320      1330      1340      1350
+              |         |         |         |         |         |
+ 1299 - 1358 VQLVESGGGLVQPGGSLRLSCAASGFTFSSYDMHWVRQTTGKGLEWVSTIGTAGDTYYPD
+(   2)-(  61) SSSSS   SS TT SSSSSSSSS   HHH SSSSSSSSTTTSSSSSSSS TT  SS  T
+           1360      1370      1380      1390      1400      1410
+              |         |         |         |         |         |
+ 1359 - 1418 SVKGRFTISREDAKNSLYLQMNSLRAGDTAVYYCARGDSSGYYYYFDYWGQGTLLTVSSA
+(  62)-( 121)TT TTSSSSSSTTTTSSSSSSS   HHH SSSSSSSSSSSTTSSS       SSSSS
+           1420      1430      1440      1450      1460      1470
+              |         |         |         |         |         |
+ 1419 - 1478 STKGPSVFPLAPTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVV
+( 122)-( 189)     SSSSS   SSSSSSSSSS     SSSSHHHT  TTSSS   SS     SSSSSSS
+           1480      1490      1500      1510
+              |         |         |         |
+ 1479 - 1510 TVPSSSLGTQTYICNVNHKPSNTKVDKKVEPK
+( 190)-( 221)SS HHH     SSSSSSSHHHTSSSSSSS
+                   1520      1530      1540      1550      1560      1570
+                      |         |         |         |         |         |
+ 1511 - 1570 EVQLVESGGGLVQPGGSLRLSCAASGFTFSSYDMHWVRQTTGKGLEWVSTIGTAGDTYYP
+(   1)-(  60)  SSSSS   SS TTSSSSSSSSSS   HHH SSSSSSSSTTTSSSSSSSS     SS
+                   1580      1590      1600      1610      1620      1630
+                      |         |         |         |         |         |
+ 1571 - 1630 DSVKGRFTISREDAKNSLYLQMNSLRAGDTAVYYCARGDSSGYYYYFDYWGQGTLLTVSS
+(  61)-( 120)TTTTTTSSSSSSTTTTSSSSSSSSS HHH SSSSSSSSSSSTTSSS       SSSSS
+                   1640      1650      1660      1670      1680      1690
+                      |         |         |         |         |         |
+ 1631 - 1690 ASTKGPSVFPLAPGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSS
+( 121)-( 187)      SSSSS   SSSSSSSSSSS     SSSSHHHT  TTSSS   SS TT  SSSSS
+                   1700      1710      1720
+                      |         |         |
+ 1691 - 1725 VVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKS
+( 188)-( 222)SSSSSTT      SSSSSSSHHHTSSSSSSS
+              1730      1740      1750      1760      1770      1780
+                 |         |         |         |         |         |
+ 1726 - 1785 STIEEQAKTFLDKFNHEAEDLFYQSSLASWNYNTNITEENVQNMNNAGDKWSAFLKEQST
+(  19)-(  78)  HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH   TTHHHHHHHHHHHHHHHHHHHHH
+              1790      1800      1810      1820      1830      1840
+                 |         |         |         |         |         |
+ 1786 - 1845 LAQMYPLQEIQNLTVKLQLQALQQNGSSVLSEDKSKRLNTILNTMSTIYSTGPGLNEIMA
+(  79)-( 153)HHTT  HHH   HHHHHHHHHH     TT  HHHHHHHHHHHHHHHHHHH   HHHHHHH
+              1850      1860      1870      1880      1890      1900
+                 |         |         |         |         |         |
+ 1846 - 1905 NSLDYNERLWAWESWRSEVGKQLRPLYEEYVVLKNEMARANHYEDYGDYWRGDYEVNGVD
+( 154)-( 213)H   HHHHHHHHHHHHHHHHHH HHHHHHHHHHHHHHHHTTT   HHHHHHHHH     T
+              1910      1920      1930      1940      1950      1960
+                 |         |         |         |         |         |
+ 1906 - 1965 GYDYSRGQLIEDVEHTFEEIKPLYEHLHAYVRAKLMNAYPSYISPCLPAHLLGDMWGRFW
+( 214)-( 275)TT   TTHHHHHHHHHHHHHHHHHHHHHHHHHHHHTTT TT     SSTT         H
+              1970      1980      1990      2000      2010      2020
+                 |         |         |         |         |         |
+ 1966 - 2025 TNLYSLTVPFGQKPNIDVTDAMVDQAWDAQRIFKEAEKFFVSVGLPNMTQGFWENSMLTD
+( 276)-( 335)HHHTTT           THHHHHHTT  HHHHHHHHHHHHHTTT     HHHHHH
+              2030      2040      2050      2060      2070      2080
+                 |         |         |         |         |         |
+ 2026 - 2085 PGNVQKAVCHPTAWDLGKGDFRILMCTKVTMDDFLTAHHEMGHIQYDMAYAAQPFLLRNG
+( 336)-( 395) TTT       SSSSSSTTSSSSS      HHHHHHHHHHHHHHHHHHHHHH  HHH
+              2090      2100      2110      2120      2130      2140
+                 |         |         |         |         |         |
+ 2086 - 2145 ANEGFHEAVGEIMSLSAATPKHLKSIGLLSPDFQEDNETEINFLLKQALTIVGTLPFTYM
+( 396)-( 455)  TTTHHHHHHHHHHH   HHHHHHTT   TT    TTHHHHHHHHHHHHHTTTHHHHHH
+              2150      2160      2170      2180      2190      2200
+                 |         |         |         |         |         |
+ 2146 - 2205 LEKWRWMVFKGEIPKDQWMKKWWEMKREIVGVVEPVPHDETYCDPASLFHVSNDYSFIRY
+( 456)-( 515)HHHHHHHHHHT   HHHHHHHHHHHHHHHH SS      TT   HHH HHHHHT   THH
+              2210      2220      2230      2240      2250      2260
+                 |         |         |         |         |         |
+ 2206 - 2265 YTRTLYQFQFQEALCQAAKHEGPLHKCDISNSTEAGQKLFNMLRLGKSEPWTLALENVVG
+( 516)-( 575)HHHHHHHHHHHHHHHHHTT    HHH      HHHHHHHHHHHTT TT  HHHHHHTTT
+              2270      2280      2290      2300
+                 |         |         |         |
+ 2266 - 2304 AKNMNVRPLLNYFEPLFTWLKDQNKNSFVGWSTDWSPYA
+( 576)-( 614)      HHHHHHTHHHHHHHHHHT        TT  TT
+               2310      2320      2330      2340      2350      2360
+                  |         |         |         |         |         |
+ 2305 - 2364 STIEEQAKTFLDKFNHEAEDLFYQSSLASWNYNTNITEENVQNMNNAGDKWSAFLKEQST
+(  19)-(  78)  HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH    HHHHHHHHHHHHHHHHHHHHHH
+               2370      2380      2390      2400      2410      2420
+                  |         |         |         |         |         |
+ 2365 - 2424 LAQMYPLQEIQNLTVKLQLQALQQNGSSVLSEDKSKRLNTILNTMSTIYSTGKVCNPDNP
+(  79)-( 138)HHTT  HHH   HHHHHHHHHH    TT  HHHHHHHHHHHHHHHHHHHH   SS    T
+               2430      2440      2450      2460      2470      2480
+                  |         |         |         |         |         |
+ 2425 - 2484 QECLLLEPGLNEIMANSLDYNERLWAWESWRSEVGKQLRPLYEEYVVLKNEMARANHYED
+( 139)-( 198)T SS HHHHHHHHHHH   HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHTT
+               2490      2500      2510      2520      2530      2540
+                  |         |         |         |         |         |
+ 2485 - 2544 YGDYWRGDYEVNGVDGYDYSRGQLIEDVEHTFEEIKPLYEHLHAYVRAKLMNAYPSYISP
+( 199)-( 258)HHHHHHTT      TTT   HHHHHHHHHHHHTTTHHHHHHHHHHHHHHHHHH TTT
+               2550      2560      2570      2580      2590      2600
+                  |         |         |         |         |         |
+ 2545 - 2604 IGCLPAHLLGDMWGRFWTNLYSLTVPFGQKPNIDVTDAMVDQAWDAQRIFKEAEKFFVSV
+( 259)-( 318)   SSTT          HHHHHHH   TT      HHHHHHTT  HHHHHHHHHHHHHHT
+               2610      2620      2630      2640      2650      2660
+                  |         |         |         |         |         |
+ 2605 - 2664 GLPNMTQGFWENSMLTDPGNVQKAVCHPTAWDLGKGDFRILMCTKVTMDDFLTAHHEMGH
+( 319)-( 378)T     TTHHHH      TT        SSSSSSTTSSSSS      HHHHHHHHHHHHH
+               2670      2680      2690      2700      2710      2720
+                  |         |         |         |         |         |
+ 2665 - 2724 IQYDMAYAAQPFLLRNGANEGFHEAVGEIMSLSAATPKHLKSIGLLSPDFQEDNETEINF
+( 379)-( 438)HHHHHHHHH  HHH     TTTHHHHHHHHHHHHT HHHHTTTT         HHHHHHH
+               2730      2740      2750      2760      2770      2780
+                  |         |         |         |         |         |
+ 2725 - 2784 LLKQALTIVGTLPFTYMLEKWRWMVFKGEIPKDQWMKKWWEMKREIVGVVEPVPHDETYC
+( 439)-( 498)HHHHHHHTTTTHHHHHHHHHHHHHHHTT   HHHHHHHHHHHHHHHH SS      TT
+               2790      2800      2810      2820      2830      2840
+                  |         |         |         |         |         |
+ 2785 - 2844 DPASLFHVSNDYSFIRYYTRTLYQFQFQEALCQAAKHEGPLHKCDISNSTEAGQKLFNML
+( 499)-( 558) HHH HHHHTT   THHHHHHHHHHHHHHHHHHTTT    HHH   TT HHHHHHHHHHH
+               2850      2860      2870      2880      2890      2900
+                  |         |         |         |         |         |
+ 2845 - 2900 RLGKSEPWTLALENVVGAKNMNVRPLLNYFEPLFTWLKDQNKNSFVGWSTDWSPYA
+( 559)-( 614)TTTT   HHHHHHTTT       HHHHHHTHHHHHHHHHHTT           TT
+                   2910      2920      2930      2940      2950      2960
+                      |         |         |         |         |         |
+ 2901 - 2960 FPNITNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLN
+( 329)-( 388)  TT     HHHHHT      HHH SSSSS       TTTTT   SSSSSSS   HHH T
+                   2970      2980      2990      3000      3010      3020
+                      |         |         |         |         |         |
+ 2961 - 3020 DLCFTNVYADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSKNLDSKVGGN
+( 389)-( 448)T SS  SSSSSSSSSHHHHHH  TT   HHHHHT    TT  SSSSSSS HHHH  TT
+                   3030      3040      3050      3060      3070      3080
+                      |         |         |         |         |         |
+ 3021 - 3080 YNYLYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQPTNGVGYQPY
+( 449)-( 508)   SSS        TT        SS      TT   TTSS  SSS    TT  HHH SS
+                   3090      3100
+                      |         |
+ 3081 - 3103 RVVVLSFELLHAPATVCGPKKST
+( 509)-( 531)SSSSSSS        SS  TTT
+                3110      3120      3130      3140      3150      3160
+                   |         |         |         |         |         |
+ 3104 - 3163 RFPNITNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKL
+( 328)-( 387)          HHHHHT      HHH SSSSS  SS  HHHHTT TTSSSSSSS   HHHH
+                3170      3180      3190      3200      3210      3220
+                   |         |         |         |         |         |
+ 3164 - 3223 NDLCFTNVYADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSKNLDSKVGG
+( 388)-( 447)HH SS SSSSSSSSSS TT TT       HHHHTT    TT  SSSSSSS HHHH  TT
+                3230      3240      3250      3260      3270      3280
+                   |         |         |         |         |         |
+ 3224 - 3283 NYNYLYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYGFQPTNGVGYQP
+( 448)-( 507)    SSS        TT        SS             SS  SSS    TT  HHH S
+                3290      3300
+                   |         |
+ 3284 - 3304 YRVVVLSFELLHAPATVCGPK
+( 508)-( 528)SSSSSSSSS       SS
+ 
+ 
+ 
+ 
+# 40 # Note: No rounded coordinates detected
+No significant rounding of atom coordinates has been detected.
+ 
+# 41 # Warning: Artificial side chains detected
+At least two residues (listed in the table below) were detected with chi-1
+equal to 0.00 or 180.00. Since this is highly unlikely to occur accidentally,
+the listed residues have probably not been refined.
+ 
+   22 SER  (  22-) B  -
+ 1980 ASN  ( 290-) E  -
+ 
+# 42 # Note: No missing atoms detected in residues
+All expected atoms are present in residues. This validation option has not
+looked at 'things' that can or should be attached to the elementary building
+blocks (amino acids, nucleotides). Even the C-terminal oxygens are treated
+separately.
+ 
+# 43 # Warning: B-factors outside the range 0.0 - 100.0
+In principle, B-factors can have a very wide range of values, but in
+practice, B-factors should not be zero while B-factors above 100.0
+are a good indicator that the location of that atom is meaningless. Be
+aware that the cutoff at 100.0 is arbitrary. 'High' indicates that atoms
+with a B-factor > 100.0 were observed; 'Zero' indicates that atoms with
+a B-factor of zero were observed.
+ 
+   15 PRO  (  15-) B  -   High
+   16 GLY  (  16-) B  -   High
+   17 GLU  (  17-) B  -   High
+   18 ARG  (  18-) B  -   High
+   59 ILE  (  59-) B  -   High
+   60 PRO  (  60-) B  -   High
+   61 ASP  (  61-) B  -   High
+   62 ARG  (  62-) B  -   High
+   63 PHE  (  63-) B  -   High
+   78 ARG  (  78-) B  -   High
+   79 LEU  (  79-) B  -   High
+   80 GLU  (  80-) B  -   High
+  165 GLU  ( 165-) B  -   High
+  170 ASP  ( 170-) B  -   High
+  229 GLY  (  16-) D  -   High
+And so on for a total of   751 lines.
+ 
+# 44 # Note: C-terminus capping
+The residues listed in the table below are either C-terminal or pseudo
+C-terminal (i.e. last residue before a missing residue).
+In X-ray the coordinates must be located in density. Mobility or disorder
+sometimes cause this density to be so poor that the positions of the atoms
+cannot be determined. Crystallographers tend to leave out the atoms in such
+cases. In many cases the N- or C-terminal residues are too disordered to see.
+In case of the N-terminus, you can often see from the residue numbers if
+there are missing residues; at the C-terminus this is impossible. Therefore,
+often the position of the backbone nitrogen of the first residue missing
+at the C-terminal end is calculated and added to indicate that there
+are missing residues. As a single N causes validation trouble, we remove
+these single-N-residues before doing the validation. If this happened,
+the label -N is added to the pseudo C-terminus. Other labels can be +X
+in case something weird is bound to the backbone C, or +OXT if a spurious
+OXT atom is found. -OXT indicates that an expected OXT is missing. 'Swap'
+means that the O' and O'' (O and OXT in PDB files) have been swapped in
+terms of nomenclature. 'Bad' means that something bad happened that WHAT IF
+does not understand. In such cases you might get three residue numbers in
+square brackets; one of those might be what WHAT IF had expected to find,
+but then it also might not). In case of chain breaks the number of missing
+residues is listen in round brackets. OK means what it suggests...
+ 
+Be aware that we cannot easily see the difference between these errors and
+errors in the chain and residue numbering schemes. So do not blindly trust
+the table below. If you get weird errors at, or near, the left-over
+incomplete C-terminal residue, please check by hand if a missing Oxt or
+a removed single N is the cause. Also, many peptidic ligands get the same
+chain identifier as the larger protein they are bound to. In such cases there
+are more than one C-termini and OXTs with the same ID. WHAT IF gives some
+random warnings about these cases. So, don't take everything at face value,
+but think for yourself.
+ 
+  213 GLU  ( 213-) B  -        OK
+  426 GLU  ( 213-) D  -        OK
+  567 SER  ( 142-) A  -        OK (5)
+  648 LYS  ( 228-) A  -        OK
+  791 LYS  ( 143-) C  -        OK (4)
+  872 LYS  ( 228-) C  -        OK
+ 1085 GLY  ( 213-) L  -        OK
+ 1298 GLY  ( 213-) N  -        OK
+ 1430 PRO  ( 133-) H  -        OK (8)
+ 1510 LYS  ( 221-) H  -        OK
+ 1643 PRO  ( 133-) M  -        OK (7)
+ 1725 SER  ( 222-) M  -        OK
+ 1837 GLY  ( 130-) E  -        OK (15)
+ 1950 PRO  ( 258-) E  -        OK (2)
+ 2304 ALA  ( 614-) E  -        OK
+ 2900 ALA  ( 614-) F  -        OK
+ 3103 THR  ( 531-) R  -        +OXT [3103 ; 214 ; 531]
+ 3304 LYS  ( 528-) S  -        OK
+ 
+# 45 # Note: Weights administratively correct
+All atomic occupancy factors ('weights') fall in the 0.0--1.0 range, which
+makes them administratively correct.
+ 
+# 46 # Note: Normal distribution of occupancy values
+ 
+The distribution of the occupancy values in this file seems 'normal'.
+ 
+Be aware that this evaluation is merely the result of comparing this file
+with about 500 well-refined high-resolution files in the PDB. If this file
+has much higher or much lower resolution than the PDB files used
+in WHAT CHECK's training set, non-normal values might very well be perfectly
+fine, or normal values might actually be not so normal. So, this check is
+actually more an indicator and certainly not a check in which I have great
+confidence.
+ 
+# 47 # Note: All occupancies seem to add up to 0.0 - 1.0.
+In principle, the occupancy of all alternates of one atom should add up till
+0.0 - 1.0. 0.0 is used for the missing atom (i.e. an atom not seen in the
+electron density). Obviously, there is nothing terribly wrong when a few
+occupancies add up to a bit more than 1.0, because the mathematics of
+refinement allow for that. However, if it happens often, it seems worth
+evaluating this in light of the refinement protocol used.
+ 
+# 48 # Warning: What type of B-factor?
+WHAT CHECK does not yet know well how to cope with B-factors in case TLS has
+been used. It simply assumes that the B-factor listed on the ATOM and HETATM
+cards are the total B-factors. When TLS refinement is used that assumption
+sometimes is not correct. The header of the PDB file states that TLS groups
+were used. So, if WHAT CHECK complains about your  B-factors, while you think
+that they are OK, then check for TLS related B-factor problems first.
+ 
+Number of TLS groups mentione in PDB file header: 0
+ 
+Crystal temperature (K) :100.000
+ 
+# 49 # Note: Number of buried atoms with low B-factor is OK
+For protein structures determined at room temperature, no more than about 1
+percent of the B factors of buried atoms is below 5.0. In liquid
+nitrogen this percentage is allowed to be higher, of course.
+ 
+Percentage of buried atoms with B less than 5 :   0.00
+ 
+# 50 # Note: B-factor distribution normal
+The distribution of B-factors within residues is within expected ranges.
+A value over 1.5 here would mean that the B-factors show signs of
+over-refinement.
+ 
+RMS Z-score :  0.361 over   18304 bonds
+Average difference in B over a bond :    0.77
+RMS difference in B over a bond :    1.02
+ 
+# 51 # Note: B-factor plot
+The average atomic B-factor per residue is plotted as function of the residue
+number.
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifiers: B - S
+ 
+# 52 # Note: B-factor plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifiers: B - S
+ 
+# 53 # Note: B-factor plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifiers: B - S
+ 
+# 54 # Note: B-factor plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifiers: B - S
+ 
+# 55 # Note: B-factor plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifiers: B - S
+ 
+# 56 # Note: B-factor plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifiers: B - S
+ 
+# 57 # Note: B-factor plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifiers: B - S
+ 
+# 58 # Note: B-factor plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifiers: B - S
+ 
+# 59 # Note: B-factor plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifiers: B - S
+ 
+# 60 # Note: B-factor plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifiers: B - S
+ 
+# 61 # Note: B-factor plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifiers: B - S
+ 
+# 62 # Note: B-factor plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifiers: B - S
+ 
+Content of the SOUP. See the writeup for an explanation.
+ Molecule      Range              Type              Set name
+     1    1 (    1)  213 (  213)B Protein           /zata/tempdir/7l0...
+     2  214 (    1)  426 (  213)D Protein           /zata/tempdir/7l0...
+     3  427 (    2)  567 (  142)A Protein           /zata/tempdir/7l0...
+     4  568 (  148)  648 (  228)A Protein           /zata/tempdir/7l0...
+     5  649 (    1)  791 (  143)C Protein           /zata/tempdir/7l0...
+     6  792 (  148)  872 (  228)C Protein           /zata/tempdir/7l0...
+     7  873 (    1) 1085 (  213)L Protein           /zata/tempdir/7l0...
+     8 1086 (    1) 1298 (  213)N Protein           /zata/tempdir/7l0...
+     9 1299 (    2) 1430 (  133)H Protein           /zata/tempdir/7l0...
+    10 1431 (  142) 1510 (  221)H Protein           /zata/tempdir/7l0...
+    11 1511 (    1) 1643 (  133)M Protein           /zata/tempdir/7l0...
+    12 1644 (  141) 1725 (  222)M Protein           /zata/tempdir/7l0...
+    13 1726 (   19) 1837 (  130)E Protein           /zata/tempdir/7l0...
+    14 1838 (  146) 1950 (  258)E Protein           /zata/tempdir/7l0...
+    15 1951 (  261) 2304 (  614)E Protein           /zata/tempdir/7l0...
+    16 2305 (   19) 2900 (  614)F Protein           /zata/tempdir/7l0...
+    17 2901 (  329) 3103 (  531)R Protein           /zata/tempdir/7l0...
+    18 3104 (  328) 3304 (  528)S Protein           /zata/tempdir/7l0...
+    19 3305 (    1) 3305 (    1)G Sugar             /zata/tempdir/7l0...
+    20 3306 (    2) 3306 (    2)G Sugar<-           /zata/tempdir/7l0...
+    21 3307 (    6) 3307 (    6)G Sugar             /zata/tempdir/7l0...
+    22 3308 (    1) 3308 (    1)I Sugar             /zata/tempdir/7l0...
+    23 3309 (    2) 3309 (    2)I Sugar<-           /zata/tempdir/7l0...
+    24 3310 (    5) 3310 (    5)I Sugar             /zata/tempdir/7l0...
+    25 3311 (  702) 3311 (  702)E Sugar             /zata/tempdir/7l0...
+    26 3312 (  703) 3312 (  703)E Sugar             /zata/tempdir/7l0...
+    27 3313 (  704) 3313 (  704)E Sugar             /zata/tempdir/7l0...
+    28 3314 (  705) 3314 (  705)E Sugar             /zata/tempdir/7l0...
+    29 3315 (  702) 3315 (  702)F Sugar             /zata/tempdir/7l0...
+    30 3316 (  703) 3316 (  703)F Sugar             /zata/tempdir/7l0...
+    31 3317 (  704) 3317 (  704)F Sugar             /zata/tempdir/7l0...
+    32 3318 (  705) 3318 (  705)F Sugar             /zata/tempdir/7l0...
+    33 3319 (  706) 3319 (  706)F Sugar             /zata/tempdir/7l0...
+    34 3320 (  531) 3320 (  531)R T O2 <-  3103     /zata/tempdir/7l0...
+    35 3321 (    3) 3321 (    3)G BMA  <-           /zata/tempdir/7l0...
+    36 3322 (    4) 3322 (    4)G MAN  <-           /zata/tempdir/7l0...
+    37 3323 (    5) 3323 (    5)G MAN  <-           /zata/tempdir/7l0...
+    38 3324 (    3) 3324 (    3)I BMA  <-           /zata/tempdir/7l0...
+    39 3325 (    4) 3325 (    4)I MAN  <-           /zata/tempdir/7l0...
+    40 3326 (  700) 3326 (  700)B CL                /zata/tempdir/7l0...
+    41 3327 (  301) 3327 (  301)A CL                /zata/tempdir/7l0...
+    42 3328 (  700) 3328 (  700)D CL                /zata/tempdir/7l0...
+    43 3329 (  700) 3329 (  700)C CL                /zata/tempdir/7l0...
+    44 3330 (  701) 3330 (  701)C CL                /zata/tempdir/7l0...
+    45 3331 (  700) 3331 (  700)L SO4               /zata/tempdir/7l0...
+    46 3332 (  701) 3332 (  701)H NA                /zata/tempdir/7l0...
+    47 3333 (  702) 3333 (  702)H PG5               /zata/tempdir/7l0...
+    48 3334 (  703) 3334 (  703)H CL                /zata/tempdir/7l0...
+    49 3335 (  704) 3335 (  704)H NA                /zata/tempdir/7l0...
+    50 3336 (  705) 3336 (  705)H NA                /zata/tempdir/7l0...
+    51 3337 (  706) 3337 (  706)H CL                /zata/tempdir/7l0...
+    52 3338 (  707) 3338 (  707)H CL                /zata/tempdir/7l0...
+    53 3339 (  700) 3339 (  700)N SO4               /zata/tempdir/7l0...
+    54 3340 (  701) 3340 (  701)N CL                /zata/tempdir/7l0...
+    55 3341 (  702) 3341 (  702)N CL                /zata/tempdir/7l0...
+    56 3342 (  703) 3342 (  703)N PG4               /zata/tempdir/7l0...
+    57 3343 (  301) 3343 (  301)M CL                /zata/tempdir/7l0...
+    58 3344 (  302) 3344 (  302)M CL                /zata/tempdir/7l0...
+    59 3345 (  303) 3345 (  303)M CL                /zata/tempdir/7l0...
+    60 3346 (  304) 3346 (  304)M CL                /zata/tempdir/7l0...
+    61 3347 (  305) 3347 (  305)M CL                /zata/tempdir/7l0...
+    62 3348 (  701) 3348 (  701)E ZN                /zata/tempdir/7l0...
+    63 3349 (  706) 3349 (  706)E PGE               /zata/tempdir/7l0...
+    64 3350 (  707) 3350 (  707)E CL                /zata/tempdir/7l0...
+    65 3351 (  701) 3351 (  701)F ZN                /zata/tempdir/7l0...
+    66 3352 (  707) 3352 (  707)F CL                /zata/tempdir/7l0...
+    67 3353 (  708) 3353 (  708)F NA                /zata/tempdir/7l0...
+    68 3354 (  709) 3354 (  709)F CL                /zata/tempdir/7l0...
+    69 3355 (  710) 3355 (  710)F CL                /zata/tempdir/7l0...
+    70 3356 (  711) 3356 (  711)F NA                /zata/tempdir/7l0...
+    71 3357 (  712) 3357 (  712)F CL                /zata/tempdir/7l0...
+    72 3358 (  713) 3358 (  713)F CL                /zata/tempdir/7l0...
+    73 3359 (  714) 3359 (  714)F CL                /zata/tempdir/7l0...
+    74 3360 (  601) 3360 (  601)R CL                /zata/tempdir/7l0...
+    75 3361 (  602) 3361 (  602)R CL                /zata/tempdir/7l0...
+    76 3362 (  603) 3362 (  603)R NA                /zata/tempdir/7l0...
+    77 3363 (  601) 3363 (  601)S CL                /zata/tempdir/7l0...
+    78 3364 (  602) 3364 (  602)S PGE               /zata/tempdir/7l0...
+    79 3365 (  603) 3365 (  603)S CL                /zata/tempdir/7l0...
+    80 3366 (  604) 3366 (  604)S CL                /zata/tempdir/7l0...
+    81 3367 ( HOH ) 3367 ( HOH )B water   (   32)   /zata/tempdir/7l0...
+    82 3368 ( HOH ) 3368 ( HOH )A water   (    8)   /zata/tempdir/7l0...
+    83 3369 ( HOH ) 3369 ( HOH )D water   (   19)   /zata/tempdir/7l0...
+    84 3370 ( HOH ) 3370 ( HOH )C water   (    8)   /zata/tempdir/7l0...
+    85 3371 ( HOH ) 3371 ( HOH )L water   (   22)   /zata/tempdir/7l0...
+    86 3372 ( HOH ) 3372 ( HOH )H water   (   12)   /zata/tempdir/7l0...
+    87 3373 ( HOH ) 3373 ( HOH )N water   (   11)   /zata/tempdir/7l0...
+    88 3374 ( HOH ) 3374 ( HOH )M water   (   15)   /zata/tempdir/7l0...
+    89 3375 ( HOH ) 3375 ( HOH )E water   (   15)   /zata/tempdir/7l0...
+    90 3376 ( HOH ) 3376 ( HOH )F water   (   37)   /zata/tempdir/7l0...
+    91 3377 ( HOH ) 3377 ( HOH )R water   (   24)   /zata/tempdir/7l0...
+    92 3378 ( HOH ) 3378 ( HOH )S water   (   29)   /zata/tempdir/7l0...
+ 
+# 63 # Note: B-factor plot
+A large B-factor difference was observed between individual chains. This is
+not wrong or so, but it is a bit strange...
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifiers: B - S
+ 
+# 64 # Note: Introduction to the nomenclature section.
+Nomenclature problems seem, at first, rather unimportant. After all who
+cares if we call the delta atoms in leucine delta2 and delta1 rather than
+the other way around. Chemically speaking that is correct. But structures
+have not been solved and deposited just for chemists to look at them. Most
+times a structure is used, it is by software in a bioinformatics lab. And
+if they compare structures in which the one used C delta1 and delta2 and the
+other uses C delta2 and delta1, then that comparison will fail. Also, we
+recalculate all structures every so many years to make sure that everybody
+always can get access to the best coordinates that can be obtained from
+the (your?) experimental data. These recalculations will be troublesome if
+there are nomenclature problems.
+ 
+Several nomenclature problems actually are worse than that. At the
+WHAT CHECK website [REF] you can get an overview of the importance of all
+nomenclature problems that we list.
+ 
+# 65 # Note: Valine nomenclature OK
+No errors were detected in valine nomenclature.
+ 
+# 66 # Note: Threonine nomenclature OK
+No errors were detected in threonine nomenclature.
+ 
+# 67 # Note: Isoleucine nomenclature OK
+No errors were detected in isoleucine nomenclature.
+ 
+# 68 # Note: Leucine nomenclature OK
+No errors were detected in leucine nomenclature.
+ 
+# 69 # Warning: Arginine nomenclature problem
+The arginine residues listed in the table below have their NH1 and NH2
+swapped.
+ 
+  231 ARG  (  18-) D  -
+  259 ARG  (  46-) D  -
+  715 ARG  (  67-) C  -
+  890 ARG  (  18-) L  -
+ 1103 ARG  (  18-) N  -
+ 1109 ARG  (  24-) N  -
+ 1146 ARG  (  61-) N  -
+ 1548 ARG  (  38-) M  -
+ 1822 ARG  ( 115-) E  -
+ 1853 ARG  ( 161-) E  -
+ 1869 ARG  ( 177-) E  -
+ 1896 ARG  ( 204-) E  -
+ 1937 ARG  ( 245-) E  -
+ 1963 ARG  ( 273-) E  -
+ 2047 ARG  ( 357-) E  -
+ 2083 ARG  ( 393-) E  -
+ 2208 ARG  ( 518-) E  -
+ 2249 ARG  ( 559-) E  -
+ 2455 ARG  ( 169-) F  -
+ 2463 ARG  ( 177-) F  -
+ 2505 ARG  ( 219-) F  -
+ 2531 ARG  ( 245-) F  -
+ 2559 ARG  ( 273-) F  -
+ 2643 ARG  ( 357-) F  -
+ 2804 ARG  ( 518-) F  -
+ 2929 ARG  ( 357-) R  -
+ 2980 ARG  ( 408-) R  -
+ 3133 ARG  ( 357-) S  -
+ 3179 ARG  ( 403-) S  -
+ 3184 ARG  ( 408-) S  -
+ 
+# 70 # Note: Tyrosine torsion conventions OK
+No errors were detected in tyrosine torsion angle conventions.
+ 
+# 71 # Warning: Phenylalanine convention problem
+The phenylalanine residues listed in the table below have their chi-2 not
+between -90.0 and 90.0.
+ 
+ 1012 PHE  ( 140-) L  -
+ 
+# 72 # Note: Aspartic acid torsion conventions OK
+No errors were detected in aspartic acid torsion angle conventions.
+ 
+# 73 # Note: Glutamic acid torsion conventions OK
+No errors were detected in glutamic acid torsion angle conventions.
+ 
+# 74 # Note: Phosphate group names OK in DNA/RNA
+No errors were detected in nucleic acid phosphate group naming conventions
+(or this structure contains no nucleic acids).
+ 
+# 75 # Warning: SO4/PO4 problem
+There is something wrong with the SO4 and/or PO4 groups listed in the table.
+The message 'geometry' is listed if an SO4 or PO4 group is deformed in any
+way. 'Hand' is listed if two atoms have been swapped so that it is the
+nomenclature technical mirror image of a standard SO4/PO4. 'Incomplete' is
+listed if atoms are missing. This often happens if the group is located
+at a symmetry axis (a so-called special position); if that is the case
+'Special position' is listed to indicate that the missing atoms might be
+genuinely missing. 'Bound' is listed if the SO4 is observed bound to
+something; this, of course, is not an error of any kind, but SO4 groups
+bound to something often are a cause of hard to detect problems...
+ 
+ 3331 SO4  ( 700-) L  - Hand
+ 
+# 76 # Note: Heavy atom naming OK
+No errors were detected in the atom names for non-hydrogen atoms. Please
+be aware that the PDB wants us to deliberately make some nomenclature errors;
+especially in non-canonical amino acids.
+ 
+# 77 # Note: No decreasing residue numbers
+All residue numbers are strictly increasing within each chain.
+ 
+# 78 # Note: All bond lengths OK
+All bond lengths are in agreement with standard bond lengths using a
+tolerance of 4 sigma (both standard values and sigma for amino acids
+have been taken from Engh and Huber [REF], for DNA/RNA from Parkinson
+et al [REF]).
+ 
+# 79 # Warning: Low bond length variability
+Bond lengths were found to deviate less than normal from the mean Engh and
+Huber [REF] and/or Parkinson et al [REF] standard bond lengths. The RMS
+Z-score given below is expected to be near 1.0 for a normally restrained
+data set. The fact that it is lower than 0.667 in this structure might
+indicate that too-strong restraints have been used in the refinement. This
+can only be a problem  for high resolution X-ray structures.
+ 
+ RMS Z-score for bond lengths: 0.308
+ RMS-deviation in bond distances: 0.007
+ 
+# 80 # Note: No bond length directionality
+Comparison of bond distances with Engh and Huber [REF] standard values for
+protein residues and Parkinson et al [REF] values for DNA/RNA does not show
+significant systematic deviations.
+ 
+# 81 # Note: All bond angles OK
+All bond angles are in agreement with standard bond angles using a tolerance
+of 4 sigma (both standard values and sigma for protein residues have been
+taken from Engh and Huber [REF], for DNA/RNA from Parkinson et al. [REF]).
+Please note that disulphide bridges are neglected.
+ 
+# 82 # Warning: Low bond angle variability
+Bond angles were found to deviate less than normal from the standard bond
+angles (normal values for protein residues were taken from Engh and Huber
+[REF], for DNA/RNA from Parkinson et al [REF]). The RMS Z-score given below
+is expected to be near 1.0 for a normally restrained data set. The fact that
+it is lower than 0.667 in this structure might indicate that too-strong
+restraints have been used in the refinement. This can only be a problem for
+high resolution X-ray structures.
+ 
+ RMS Z-score for bond angles: 0.638
+ RMS-deviation in bond angles: 1.177
+ 
+# 83 # Error: Nomenclature error(s)
+Checking for a hand-check. WHAT CHECK has over the course of this session
+already corrected the handedness of atoms in several residues. These were
+administrative corrections. These residues are listed here.
+ 
+  231 ARG  (  18-) D  -
+  259 ARG  (  46-) D  -
+  715 ARG  (  67-) C  -
+  890 ARG  (  18-) L  -
+ 1103 ARG  (  18-) N  -
+ 1109 ARG  (  24-) N  -
+ 1146 ARG  (  61-) N  -
+ 1548 ARG  (  38-) M  -
+ 1822 ARG  ( 115-) E  -
+ 1853 ARG  ( 161-) E  -
+ 1869 ARG  ( 177-) E  -
+ 1896 ARG  ( 204-) E  -
+ 1937 ARG  ( 245-) E  -
+ 1963 ARG  ( 273-) E  -
+ 2047 ARG  ( 357-) E  -
+ 2083 ARG  ( 393-) E  -
+ 2208 ARG  ( 518-) E  -
+ 2249 ARG  ( 559-) E  -
+ 2455 ARG  ( 169-) F  -
+ 2463 ARG  ( 177-) F  -
+ 2505 ARG  ( 219-) F  -
+ 2531 ARG  ( 245-) F  -
+ 2559 ARG  ( 273-) F  -
+ 2643 ARG  ( 357-) F  -
+ 2804 ARG  ( 518-) F  -
+ 2929 ARG  ( 357-) R  -
+ 2980 ARG  ( 408-) R  -
+ 3133 ARG  ( 357-) S  -
+ 3179 ARG  ( 403-) S  -
+ 3184 ARG  ( 408-) S  -
+ 
+# 84 # Note: Chirality OK
+All protein atoms have proper chirality. But, look at the previous table to
+see a series of administrative chirality problems that were corrected
+automatically upon reading-in the PDB file.
+The average deviation= 0.601
+ 
+# 85 # Note: Improper dihedral angle distribution OK
+The RMS Z-score for all improper dihedrals in the structure is within normal
+ranges.
+ 
+ Improper dihedral RMS Z-score : 0.534
+ 
+# 86 # Note: Tau angles OK
+All of the tau angles (N-C-alpha-C) of amino acids fall within expected
+RMS deviations.
+ 
+# 87 # Note: Normal tau angle deviations
+The RMS Z-score for the tau angles (N-C-alpha-C) in the structure falls
+within the normal range that we guess to be 0.5 - 1.5. Be aware, we
+determined the tau normal distributions from 500 high-resolution X-ray
+structures, rather than from CSD data, so we cannot be 100 percent certain
+about these numbers.
+ 
+ Tau angle RMS Z-score : 0.648
+ 
+# 88 # Note: Side chain planarity OK
+All of the side chains of residues that have an intact planar group are
+planar within expected RMS deviations.
+ 
+# 89 # Note: Atoms connected to aromatic rings OK
+All of the atoms that are connected to planar aromatic rings in side chains
+of amino-acid residues are in the plane within expected RMS deviations.
+Since there is no DNA and no protein with hydrogens, no uncalibrated
+planarity check was performed.
+ 
+# 90 # Note: Ramachandran Z-score OK
+The score expressing how well the backbone conformations of all residues
+correspond to the known allowed areas in the Ramachandran plot is within
+expected ranges for well-refined structures.
+ 
+ Ramachandran Z-score : -2.750
+ 
+# 91 # Note: Ramachandran check
+The list contains per-residue Z-scores describing how well each residue
+fits into the allowed areas of the Ramachandran plot will not be printed
+because WHAT CHECK found no reason to cry.
+ 
+# 92 # Warning: Torsion angle evaluation shows unusual residues
+The residues listed in the table below contain bad or abnormal
+torsion angles.
+ 
+These scores give an impression of how `normal' the torsion angles in
+protein residues are. All torsion angles except omega are used for
+calculating a `normality' score. Average values and standard deviations were
+obtained from the residues in the WHAT CHECK database. These are used to
+calculate Z-scores. A residue with a Z-score of below -2.0 is poor, and a
+score of less than -3.0 is worrying. For such residues more than one torsion
+angle is in a highly unlikely position.
+ 
+   10 THR  (  10-) B  -   -3.2
+  807 PRO  ( 163-) C  -   -3.1
+  583 PRO  ( 163-) A  -   -3.0
+ 1443 PRO  ( 154-) H  -   -3.0
+ 1657 PRO  ( 154-) M  -   -2.9
+ 2432 PRO  ( 146-) F  -   -2.9
+  805 PRO  ( 161-) C  -   -2.9
+ 1659 PRO  ( 156-) M  -   -2.8
+  221 PRO  (   8-) D  -   -2.7
+  581 PRO  ( 161-) A  -   -2.7
+  270 THR  (  57-) D  -   -2.7
+  967 PRO  (  95-) L  -   -2.7
+ 1445 PRO  ( 156-) H  -   -2.7
+ 1434 LEU  ( 145-) H  -   -2.7
+ 1948 ILE  ( 256-) E  -   -2.6
+And so on for a total of    81 lines.
+ 
+# 93 # Warning: Backbone evaluation reveals unusual conformations
+The residues listed in the table below have abnormal backbone torsion
+angles.
+ 
+Residues with `forbidden' phi-psi combinations are listed, as well as
+residues with unusual omega angles (deviating by more than 3 sigma from the
+normal value). Please note that it is normal if about 5 percent of the
+residues is listed here as having unusual phi-psi combinations.
+ 
+    7 SER  (   7-) B  - Omega to (next) Pro poor
+    9 GLY  (   9-) B  - Poor phi/psi
+   14 SER  (  14-) B  - Omega to (next) Pro poor
+   16 GLY  (  16-) B  - Poor phi/psi
+   40 LYS  (  40-) B  - Omega to (next) Pro poor
+   42 GLY  (  42-) B  - Poor phi/psi
+   44 ALA  (  44-) B  - Omega to (next) Pro poor
+   51 GLY  (  51-) B  - Poor phi/psi
+   52 ALA  (  52-) B  - Poor phi/psi
+   59 ILE  (  59-) B  - Omega to (next) Pro poor
+   67 GLY  (  67-) B  - Poor phi/psi
+   69 GLY  (  69-) B  - Poor phi/psi
+   80 GLU  (  80-) B  - Omega to (next) Pro poor
+   85 ALA  (  85-) B  - Poor phi/psi
+   95 SER  (  95-) B  - Poor phi/psi
+And so on for a total of   392 lines.
+ 
+# 94 # Error: Chi-1/chi-2 rotamer problems
+List of residues with a poor chi-1/chi-2 combination. Be aware that for this
+validation option the individual scores are far less important than the
+overall score that is given below the table.
+ 
+ 1211 LEU  ( 126-) N  -    -1.44
+ 1746 LEU  (  39-) E  -    -1.43
+ 1786 LEU  (  79-) E  -    -1.44
+ 1871 LEU  ( 179-) E  -    -1.44
+ 2130 LEU  ( 440-) E  -    -1.44
+ 2146 LEU  ( 456-) E  -    -1.43
+ 2210 LEU  ( 520-) E  -    -1.42
+ 2274 LEU  ( 584-) E  -    -1.41
+ 2325 LEU  (  39-) F  -    -1.41
+ 2331 LEU  (  45-) F  -    -1.41
+ 2377 LEU  (  91-) F  -    -1.44
+ 2381 LEU  (  95-) F  -    -1.44
+ 2430 LEU  ( 144-) F  -    -1.40
+ 2726 LEU  ( 440-) F  -    -1.44
+ 2742 LEU  ( 456-) F  -    -1.42
+And so on for a total of  1479 lines.
+ 
+# 95 # Error: chi-1/chi-2 angle correlation Z-score very low
+The score expressing how well the chi-1/chi-2 angles of all residues
+correspond to the populated areas in the database is
+very low.
+ 
+ chi-1/chi-2 correlation Z-score : -4.249
+ 
+# 96 # Warning: Unusual rotamers
+The residues listed in the table below have a rotamer that is not seen very
+often in the database of solved protein structures. This option determines
+for every residue the position specific chi-1 rotamer distribution.
+Thereafter it verified whether the actual residue in the molecule has the
+most preferred rotamer or not. If the actual rotamer is the preferred one,
+the score is 1.0. If the actual rotamer is unique, the score is 0.0. If
+there are two preferred rotamers, with a population distribution of 3:2 and
+your rotamer sits in the lesser populated rotamer, the score will be 0.667.
+No value will be given if insufficient hits are found in the database.
+ 
+It is not necessarily an error if a few residues have rotamer values below
+0.3, but careful inspection of all residues with these low values could be
+worth it.
+ 
+ 1574 LYS  (  64-) M  -   0.35
+ 1687 SER  ( 184-) M  -   0.35
+ 1690 SER  ( 187-) M  -   0.35
+ 1831 SER  ( 124-) E  -   0.35
+ 2356 SER  (  70-) F  -   0.35
+ 3175 SER  ( 399-) S  -   0.35
+ 2971 SER  ( 399-) R  -   0.35
+ 1488 GLN  ( 199-) H  -   0.36
+ 1049 SER  ( 177-) L  -   0.36
+ 1246 GLN  ( 161-) N  -   0.36
+ 2966 ASN  ( 394-) R  -   0.36
+ 3097 CYS  ( 525-) R  -   0.36
+ 1315 LEU  (  18-) H  -   0.37
+ 1359 SER  (  62-) H  -   0.38
+ 2410 SER  ( 124-) F  -   0.38
+ 2697 SER  ( 411-) F  -   0.38
+   97 THR  (  97-) B  -   0.39
+  884 SER  (  12-) L  -   0.39
+ 1097 SER  (  12-) N  -   0.39
+ 3301 CYS  ( 525-) S  -   0.39
+ 1925 ILE  ( 233-) E  -   0.39
+ 3193 LYS  ( 417-) S  -   0.39
+ 3245 SER  ( 469-) S  -   0.39
+ 
+# 97 # Warning: Unusual backbone conformations
+For the residues listed in the table below, the backbone formed by itself and
+two neighbouring residues on either side is in a conformation that is not
+seen very often in the database of solved protein structures. The number
+given in the table is the number of similar backbone conformations in the
+database with the same amino acid in the centre.
+ 
+For this check, backbone conformations are compared with database structures
+using C-alpha superpositions with some restraints on the backbone oxygen
+positions.
+ 
+A residue mentioned in the table can be part of a strange loop, or there
+might be something wrong with it or its directly surrounding residues. There
+are a few of these in every protein, but in any case it is worth looking at,
+especially if a regular DSSP secondary structure (H or S for helix or strand,
+respectively) is indicated!
+ 
+   94 THR  (  94-) B  -       0
+  307 THR  (  94-) D  -       0
+  510 ARG  (  85-) A  -       0
+  655 SER  (   7-) C  -       0
+ 1808 GLN  ( 101-) E  -       0
+ 2028 ASN  ( 338-) E  -       0
+ 2431 GLU  ( 145-) F  - H     0
+ 3262 PHE  ( 486-) S  -       0
+ 3294 LEU  ( 518-) S  -       0
+   95 SER  (  95-) B  -       1
+  151 ASP  ( 151-) B  -       1
+  308 SER  (  95-) D  -       1
+  432 SER  (   7-) A  -       1
+  536 ILE  ( 111-) A  -       1
+  725 THR  (  77-) C  -       1
+And so on for a total of    70 lines.
+ 
+# 98 # Note: Backbone conformation Z-score OK
+The backbone conformation analysis gives a score that is normal for well
+refined protein structures.
+ 
+ Backbone conformation Z-score : 0.105
+ 
+# 99 # Note: Omega angle restraint OK
+The omega angles for trans-peptide bonds in a structure is expected to give a
+gaussian distribution with the average around +178 degrees, and a standard
+deviation around 5.5. In the current structure the standard deviation agrees
+with this expectation.
+ 
+Omega average and std. deviation= 180.400 5.348
+ 
+# 100 # Note: PRO puckering amplitude OK
+Puckering amplitudes for all PRO residues are within normal ranges.
+ 
+# 101 # Warning: Unusual PRO puckering phases
+The proline residues listed in the table below have a puckering phase that is
+not expected to occur in protein structures. Puckering parameters were
+calculated by the method of Cremer and Pople [REF]. Normal PRO rings
+approximately show a so-called envelope conformation with the C-gamma atom
+above the plane of the ring (phi=+72 degrees), or a half-chair conformation
+with C-gamma below and C-beta above the plane of the ring (phi=-90 degrees).
+If phi deviates strongly from these values, this is indicative of a very
+strange conformation for a PRO residue, and definitely requires a manual
+check of the data. Be aware that this is a warning with a low confidence
+level. See: Who checks the checkers? Four validation tools applied to eight
+atomic resolution structures [REF].
+ 
+  221 PRO  (   8-) D  -  -61.4 half-chair C-beta/C-alpha (-54 degrees)
+  581 PRO  ( 161-) A  -  -65.4 envelop C-beta (-72 degrees)
+  583 PRO  ( 163-) A  -  -46.0 half-chair C-beta/C-alpha (-54 degrees)
+  805 PRO  ( 161-) C  -  -61.9 half-chair C-beta/C-alpha (-54 degrees)
+  807 PRO  ( 163-) C  -  -42.9 envelop C-alpha (-36 degrees)
+  912 PRO  (  40-) L  -  103.7 envelop C-beta (108 degrees)
+  967 PRO  (  95-) L  -  -64.8 envelop C-beta (-72 degrees)
+ 1014 PRO  ( 142-) L  -  -65.0 envelop C-beta (-72 degrees)
+ 1125 PRO  (  40-) N  -  101.3 envelop C-beta (108 degrees)
+ 1443 PRO  ( 154-) H  -  -52.9 half-chair C-beta/C-alpha (-54 degrees)
+ 1445 PRO  ( 156-) H  -  -49.2 half-chair C-beta/C-alpha (-54 degrees)
+ 1657 PRO  ( 154-) M  -  -57.4 half-chair C-beta/C-alpha (-54 degrees)
+ 1659 PRO  ( 156-) M  -  -49.4 half-chair C-beta/C-alpha (-54 degrees)
+ 1723 PRO  ( 220-) M  - -116.7 envelop C-gamma (-108 degrees)
+ 2079 PRO  ( 389-) E  - -117.6 half-chair C-delta/C-gamma (-126 degrees)
+ 2255 PRO  ( 565-) E  -  109.0 envelop C-beta (108 degrees)
+ 2432 PRO  ( 146-) F  -  -49.4 half-chair C-beta/C-alpha (-54 degrees)
+ 2786 PRO  ( 500-) F  - -119.2 half-chair C-delta/C-gamma (-126 degrees)
+ 2851 PRO  ( 565-) F  - -120.7 half-chair C-delta/C-gamma (-126 degrees)
+ 3303 PRO  ( 527-) S  - -112.0 envelop C-gamma (-108 degrees)
+ 
+# 102 # Warning: Backbone oxygen evaluation
+The residues listed in the table below have an unusual backbone oxygen
+position.
+ 
+For each of the residues in the structure, a search was performed to find
+5-residue stretches in the WHAT CHECK database with superposable C-alpha
+coordinates, and some restraints on the neighbouring backbone oxygens.
+ 
+In the following table the RMS distance between the backbone oxygen positions
+of these matching structures in the database and the position of the backbone
+oxygen atom in the current residue is given. If this number is larger than
+1.5 a significant number of structures in the database show an alternative
+position for the backbone oxygen. If the number is larger than 2.0 most
+matching backbone fragments in the database have the peptide plane flipped.
+A manual check needs to be performed to assess whether the experimental data
+can support that alternative as well. The number in the last column is the
+number of database hits (maximum 80) used in the calculation. It is "normal"
+that some glycine residues show up in this list, but they are still worth
+checking!
+ 
+  537 GLY  ( 112-) A  -  2.24   25
+ 1612 GLY  ( 102-) M  -  2.21   57
+ 2027 GLY  ( 337-) E  -  2.17   25
+  760 GLY  ( 112-) C  -  2.01   24
+ 1214 GLY  ( 129-) N  -  1.71   16
+ 1813 SER  ( 106-) E  -  1.66   22
+ 1408 GLY  ( 111-) H  -  1.65   33
+   69 GLY  (  69-) B  -  1.62   43
+ 1552 GLY  (  42-) M  -  1.61   42
+ 2623 GLY  ( 337-) F  -  1.60   47
+ 1844 MET  ( 152-) E  -  1.52   80
+ 3052 CYS  ( 480-) R  -  1.51   18
+ 
+# 103 # Warning: Possible peptide flips
+For the residues listed in the table below, the backbone formed by the
+residue mentioned and the one N-terminal of it show systematic deviations
+from normality that are consistent with a peptide flip. This can either
+be a 180 degree flip of the entire peptide plane or a trans to cis flip.
+(Cis to trans flips cannot be detected yet). The type can be TT+, TC-,
+or TC+:
+TT+ indicates a 180 degree flip of the entire peptide plane.
+TC- indicates a trans to cis conversion that requires a flip of the N atom.
+TC+ indicates a trans to cis conversion that requires a flip of the O atom.
+Note that the method will only work correctly for PDB files with full
+isotropic B-factors.
+ 
+ 1573 VAL  (  63-) M  - TT+   Highly likely
+ 3182 GLU  ( 406-) S  - TT+   Highly likely
+   52 ALA  (  52-) B  - TT+   Likely
+   53 SER  (  53-) B  - TT+   Likely
+  152 ASN  ( 152-) B  - TT+   Likely
+  170 ASP  ( 170-) B  - TT+   Likely
+  171 SER  ( 171-) B  - TT+   Likely
+  265 ALA  (  52-) D  - TT+   Likely
+  308 SER  (  95-) D  - TT+   Likely
+  365 ASN  ( 152-) D  - TT+   Likely
+  384 SER  ( 171-) D  - TT+   Likely
+  400 GLU  ( 187-) D  - TT+   Likely
+  480 ASN  (  55-) A  - TT+   Likely
+  489 PHE  (  64-) A  - TT+   Likely
+  510 ARG  (  85-) A  - TT+   Likely
+And so on for a total of    82 lines.
+ 
+# 104 # Error: Abnormally short interatomic distances
+The pairs of atoms listed in the table below have an unusually short
+distance; each bump is listed in only one direction,
+ 
+The contact distances of all atom pairs have been checked. Two atoms are
+said to `bump' if they are closer than the sum of their Van der Waals radii
+minus 0.40 Angstrom. For hydrogen bonded pairs a tolerance of 0.55 Angstrom
+is used. The first number in the table tells you how much shorter that
+specific contact is than the acceptable limit. The second distance is the
+distance between the centres of the two atoms.
+ 
+The last text-item on each line represents the status of the atom pair. The
+text `INTRA' means that the bump is between atoms that are explicitly listed
+in the PDB file. `INTER' means it is an inter-symmetry bump. If the final
+column contains the text 'HB', the bump criterion was relaxed because there
+could be a hydrogen bond. Similarly relaxed criteria are used for 1--3 and
+1--4 interactions (listed as 'B2' and 'B3', respectively). If the last column
+is 'BF', the sum of the B-factors of the atoms is higher than 80, which makes
+the appearance of the bump somewhat less severe because the atoms probably
+are not there anyway. BL, on the other hand, indicates that the bumping atoms
+both have a low B-factor, and that makes the bumps more worrisome.
+ 
+It seems likely that at least some of the reported bumps are caused by
+administrative errors in the chain names. I.e. covalently bound atoms with
+different non-blank chain-names are reported as bumps. In rare cases this is
+not an error.
+ 
+Bumps between atoms for which the sum of their occupancies is lower than one
+are not reported. If the MODEL number does not exist (as is the case in most
+X-ray files), a minus sign is printed instead.
+ 
+ 2832 ASN  ( 546-) F  -    ND2  <-->   3315 NAG  ( 702-) F  -    C1   1.66    1.44  INTRA BF
+ 1760 ASN  (  53-) E  -    ND2  <-->   3314 NAG  ( 705-) E  -    C1   1.66    1.44  INTRA BF
+ 2339 ASN  (  53-) F  -    ND2  <-->   3318 NAG  ( 705-) F  -    C1   1.66    1.44  INTRA BF
+ 3119 ASN  ( 343-) S  -    ND2  <-->   3308 NAG  (   1-) I  -    C1   1.66    1.44  INTRA BL
+ 2915 ASN  ( 343-) R  -    ND2  <-->   3305 NAG  (   1-) G  -    C1   1.66    1.44  INTRA BL
+ 2236 ASN  ( 546-) E  -    ND2  <-->   3311 NAG  ( 702-) E  -    C1   1.66    1.44  INTRA BF
+ 2718 ASN  ( 432-) F  -    ND2  <-->   3319 NAG  ( 706-) F  -    C1   1.66    1.44  INTRA BF
+ 2376 ASN  (  90-) F  -    ND2  <-->   3316 NAG  ( 703-) F  -    C1   1.66    1.44  INTRA BF
+ 2608 ASN  ( 322-) F  -    ND2  <-->   3317 NAG  ( 704-) F  -    C1   1.66    1.44  INTRA BF
+ 1797 ASN  (  90-) E  -    ND2  <-->   3312 NAG  ( 703-) E  -    C1   1.66    1.44  INTRA BF
+ 2012 ASN  ( 322-) E  -    ND2  <-->   3313 NAG  ( 704-) E  -    C1   1.65    1.45  INTRA BF
+ 3308 NAG  (   1-) I  -    O6   <-->   3310 FUC  (   5-) I  -    C1   1.35    1.45  INTRA BL
+ 3305 NAG  (   1-) G  -    O6   <-->   3307 FUC  (   6-) G  -    C1   1.35    1.45  INTRA BL
+ 3305 NAG  (   1-) G  -    O4   <-->   3306 NAG  (   2-) G  -    C1   1.17    1.43  INTRA BF
+ 3308 NAG  (   1-) I  -    O4   <-->   3309 NAG  (   2-) I  -    C1   1.17    1.43  INTRA BF
+And so on for a total of   204 lines.
+ 
+# 105 # Note: Some notes regarding these bumps
+The bumps have been binned in 5 categories ranging from 'please look at'
+till 'must fix'. Additionally, the integrated sum of all bumps, the squared
+sum of all bumps, and these latter two values normalized by the number of
+contacts are listed too for comparison purposes between, for example, small
+and large proteins.
+ 
+Total bump value: 54.527
+Total bump value per residue: 0.061
+Total number of bumps: 204
+Total squared bump value: 50.604
+Total number of bumps in the mildest bin: 147
+Total number of bumps in the second bin: 19
+Total number of bumps in the middle bin: 17
+Total number of bumps in the fourth bin: 6
+Total number of bumps in the worst bin: 15
+ 
+# 106 # Note: Inside/outside distribution check
+The following list contains per-residue Z-scores describing how well the
+residue's observed accessibility fits the expected one. A positive Z-score
+indicates "more exposure than usual", whereas a negative Z-score means
+"more buried than usual". The absolute value of the Z-score must be used to
+judge the quality. Today WHAT CHECK saw no reason to complain.
+ 
+# 107 # Note: Inside/Outside residue distribution normal
+The distribution of residue types over the inside and the outside of the
+protein is normal.
+ 
+inside/outside RMS Z-score : 0.975
+ 
+# 108 # Note: Inside/Outside RMS Z-score plot
+The Inside/Outside distribution normality RMS Z-score over a 15 residue
+window is plotted as function of the residue number. High areas in the plot
+(above 1.5) indicate unusual inside/outside patterns.
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: B
+ 
+# 109 # Note: Inside/Outside RMS Z-score plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: D
+ 
+# 110 # Note: Inside/Outside RMS Z-score plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: A
+ 
+# 111 # Note: Inside/Outside RMS Z-score plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: C
+ 
+# 112 # Note: Inside/Outside RMS Z-score plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: L
+ 
+# 113 # Note: Inside/Outside RMS Z-score plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: N
+ 
+# 114 # Note: Inside/Outside RMS Z-score plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: H
+ 
+# 115 # Note: Inside/Outside RMS Z-score plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: M
+ 
+# 116 # Note: Inside/Outside RMS Z-score plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: E
+ 
+# 117 # Note: Inside/Outside RMS Z-score plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: F
+ 
+# 118 # Note: Inside/Outside RMS Z-score plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: R
+ 
+# 119 # Note: Inside/Outside RMS Z-score plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: S
+ 
+# 120 # Warning: Abnormal packing environment for some residues
+The residues listed in the table below have an unusual packing environment.
+ 
+The packing environment of the residues is compared with the average packing
+environment for all residues of the same type in good PDB files. A low
+packing score can indicate one of several things: Poor packing, misthreading
+of the sequence through the density, crystal contacts, contacts with a
+co-factor, or the residue is part of the active site. It is not uncommon to
+see a few of these, but in any case this requires further inspection of the
+residue.
+ 
+ 1297 ARG  ( 212-) N  -  -7.43
+  256 GLN  (  43-) D  -  -6.59
+ 1084 ARG  ( 212-) L  -  -6.58
+ 2899 TYR  ( 613-) F  -  -6.58
+ 1977 GLN  ( 287-) E  -  -6.55
+ 2573 GLN  ( 287-) F  -  -6.49
+ 1724 LYS  ( 221-) M  -  -6.35
+ 1947 TYR  ( 255-) E  -  -6.27
+ 3091 HIS  ( 519-) R  -  -6.21
+   43 GLN  (  43-) B  -  -6.16
+ 2986 GLN  ( 414-) R  -  -6.06
+ 2303 TYR  ( 613-) E  -  -6.01
+ 2226 GLU  ( 536-) E  -  -5.98
+ 1809 GLN  ( 102-) E  -  -5.96
+ 3295 HIS  ( 519-) S  -  -5.95
+And so on for a total of    66 lines.
+ 
+# 121 # Warning: Abnormal packing environment for sequential residues
+A stretch of at least three sequential residues with a questionable packing
+environment was found. This could indicate that these residues are part
+of a strange loop. It might also be an indication of misthreading in the
+density. However, it can also indicate that one or more residues in this
+stretch have other problems such as, for example, missing atoms, very
+weird angles or bond lengths, etc.
+ 
+The table below lists the first and last residue in each stretch found,
+as well as the average residue score of the series.
+ 
+ 2018 TRP  ( 328-) E  -     2020 --- ASN   330- (E ) -       -4.66
+ 2614 TRP  ( 328-) F  -     2616 --- ASN   330- (F ) -       -4.65
+ 2714 PHE  ( 428-) F  -     2716 --- GLU   430- (F ) -       -4.97
+ 
+# 122 # Note: Structural average packing environment OK
+The structural average packing score is within normal ranges.
+ 
+ 
+Average for range     1 - 3319 :  -0.763
+ 
+# 123 # Note: Quality value plot
+The quality value smoothed over a 10 residue window is plotted as function
+of the residue number. Low areas in the plot (below -2.0) indicate unusual
+packing.
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: B
+ 
+# 124 # Note: Quality value plot
+The quality value smoothed over a 10 residue window is plotted as function
+of the residue number. Low areas in the plot (below -2.0) indicate unusual
+packing.
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: D
+ 
+# 125 # Note: Quality value plot
+The quality value smoothed over a 10 residue window is plotted as function
+of the residue number. Low areas in the plot (below -2.0) indicate unusual
+packing.
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: A
+ 
+# 126 # Note: Quality value plot
+The quality value smoothed over a 10 residue window is plotted as function
+of the residue number. Low areas in the plot (below -2.0) indicate unusual
+packing.
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: C
+ 
+# 127 # Note: Quality value plot
+The quality value smoothed over a 10 residue window is plotted as function
+of the residue number. Low areas in the plot (below -2.0) indicate unusual
+packing.
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: L
+ 
+# 128 # Note: Quality value plot
+The quality value smoothed over a 10 residue window is plotted as function
+of the residue number. Low areas in the plot (below -2.0) indicate unusual
+packing.
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: N
+ 
+# 129 # Note: Quality value plot
+The quality value smoothed over a 10 residue window is plotted as function
+of the residue number. Low areas in the plot (below -2.0) indicate unusual
+packing.
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: H
+ 
+# 130 # Note: Quality value plot
+The quality value smoothed over a 10 residue window is plotted as function
+of the residue number. Low areas in the plot (below -2.0) indicate unusual
+packing.
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: M
+ 
+# 131 # Note: Quality value plot
+The quality value smoothed over a 10 residue window is plotted as function
+of the residue number. Low areas in the plot (below -2.0) indicate unusual
+packing.
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: E
+ 
+# 132 # Note: Quality value plot
+The quality value smoothed over a 10 residue window is plotted as function
+of the residue number. Low areas in the plot (below -2.0) indicate unusual
+packing.
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: F
+ 
+# 133 # Note: Quality value plot
+The quality value smoothed over a 10 residue window is plotted as function
+of the residue number. Low areas in the plot (below -2.0) indicate unusual
+packing.
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: R
+ 
+# 134 # Note: Quality value plot
+The quality value smoothed over a 10 residue window is plotted as function
+of the residue number. Low areas in the plot (below -2.0) indicate unusual
+packing.
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: S
+ 
+# 135 # Warning: Low packing Z-score for some residues
+The residues listed in the table below have an unusual packing
+environment according to the 2nd generation packing check. The score
+listed in the table is a packing normality Z-score: positive means
+better than average, negative means worse than average. Only residues
+scoring less than -2.50 are listed here. These are the unusual
+residues in the structure, so it will be interesting to take a
+special look at them.
+ 
+ 2846 LEU  ( 560-) F  -  -2.90
+ 3145 TYR  ( 369-) S  -  -2.72
+ 3252 GLY  ( 476-) S  -  -2.66
+ 2008 VAL  ( 318-) E  -  -2.57
+ 2229 LEU  ( 539-) E  -  -2.54
+ 
+# 136 # Note: No series of residues with abnormal new packing environment
+There are no stretches of four or more residues each having a packing
+Z-score worse than -1.75.
+ 
+# 137 # Note: Second generation quality Z-score plot
+The second generation quality Z-score smoothed over a 10 residue window
+is plotted as function of the residue number. Low areas in the plot (below
+-1.3) indicate unusual packing.
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: B
+ 
+# 138 # Note: Second generation quality Z-score plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: D
+ 
+# 139 # Note: Second generation quality Z-score plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: A
+ 
+# 140 # Note: Second generation quality Z-score plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: C
+ 
+# 141 # Note: Second generation quality Z-score plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: L
+ 
+# 142 # Note: Second generation quality Z-score plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: N
+ 
+# 143 # Note: Second generation quality Z-score plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: H
+ 
+# 144 # Note: Second generation quality Z-score plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: M
+ 
+# 145 # Note: Second generation quality Z-score plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: E
+ 
+# 146 # Note: Second generation quality Z-score plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: F
+ 
+# 147 # Note: Second generation quality Z-score plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: R
+ 
+# 148 # Note: Second generation quality Z-score plot
+ 
+ 
+In the TeX file, a plot has been inserted here
+ 
+Chain identifier: S
+ 
+# 149 # Note: Crystallisation conditions from REMARK 280
+Crystallisation conditions as found in the PDB file header.
+ 
+CRYSTAL
+SOLVENT CONTENT, VS   (%): 67.29
+MATTHEWS COEFFICIENT, VM (ANGSTROMS**3/DA): 3.76
+CRYSTALLIZATION CONDITIONS: 0.09 M BUFFER SYSTEM 3 PH 8.5 CONTAINS
+TRIS (BASE); BICINE 27% PRECIPITANT MIX 2 CONTAINS ETHYLENE GLYCOL
+AND PEG8000 0.1 M AMMONIUM SULFATE, VAPOR DIFFUSION, SITTING DROP,
+TEMPERATURE 293K, PH 8.5
+ 
+# 150 # Error: Water clusters without contacts with non-water atoms
+The water molecules listed in the table below are part of water molecule
+clusters that do not make contacts with non-waters. These water molecules are
+part of clusters that have a distance at least 1 Angstrom larger than the
+sum of the Van der Waals radii to the nearest non-solvent atom. Because
+these kinds of water clusters usually are not observed with X-ray diffraction
+their presence could indicate a refinement artifact. The number in brackets
+is the identifier of the water molecule in the input file.
+ 
+ 3376 HOH  ( 836 ) F  -    O
+ 
+# 151 # Note: No waters need moving
+All water molecules are sufficiently close to the asymmetric unit given in
+the input file.
+ 
+# 152 # Error: Water molecules without hydrogen bonds
+The water molecules listed in the table below do not form any hydrogen bonds,
+neither with the protein or DNA/RNA, nor with other water molecules. This is
+a strong indication of a refinement problem.
+ 
+ 3367 HOH  ( 828 ) B  -    O
+ 3372 HOH  ( 811 ) H  -    O
+ 3376 HOH  ( 833 ) F  -    O
+ 
+# 153 # Error: His, Asn, Gln side chain flips
+Listed here are Histidine, Asparagine or Glutamine residues for
+which the orientation determined from hydrogen bonding analysis are
+different from the assignment given in the input. Either they could
+form energetically more favourable hydrogen bonds if the terminal
+group was rotated by 180 degrees, or there is no assignment in the
+input file (atom type 'A') but an assignment could be made. Be aware,
+though, that if the topology could not be determined for one or more
+ligands, then this option will make errors.
+ 
+  256 GLN  (  43-) D  -
+  490 GLN  (  65-) A  -
+  857 ASN  ( 213-) C  -
+ 1033 GLN  ( 161-) L  -
+ 1140 GLN  (  55-) N  -
+ 1224 ASN  ( 139-) N  -
+ 1500 ASN  ( 211-) H  -
+ 1545 HIS  (  35-) M  -
+ 1702 GLN  ( 199-) M  -
+ 1867 GLN  ( 175-) E  -
+ 1931 HIS  ( 239-) E  -
+ 1955 HIS  ( 265-) E  -
+ 2183 HIS  ( 493-) E  -
+ 2230 HIS  ( 540-) E  -
+ 2496 ASN  ( 210-) F  -
+ 2507 GLN  ( 221-) F  -
+ 2536 ASN  ( 250-) F  -
+ 2826 HIS  ( 540-) F  -
+ 
+# 154 # Note: Histidine type assignments
+For all complete HIS residues in the structure a tentative assignment to
+HIS-D (protonated on ND1), HIS-E (protonated on NE2), or HIS-H (protonated
+on both ND1 and NE2, positively charged) is made based on the hydrogen bond
+network. A second assignment is made based on which of the Engh and Huber
+[REF] histidine geometries fits best to the structure.
+ 
+In the table below all normal histidine residues are listed. The assignment
+based on the geometry of the residue is listed first, together with the RMS
+Z-score for the fit to the Engh and Huber parameters. For all residues where
+the H-bond assignment is different, the assignment is listed in the last
+columns, together with its RMS Z-score to the Engh and Huber parameters.
+ 
+As always, the RMS Z-scores should be close to 1.0 if the residues were
+restrained to the Engh and Huber parameters during refinement, and if
+enough (high resolution) data is available.
+ 
+Please note that because the differences between the geometries of the
+different types are small it is possible that the geometric assignment given
+here does not correspond to the type used in refinement. This is especially
+true if the RMS Z-scores are much higher than 1.0.
+ 
+If the two assignments differ, or the `geometry' RMS Z-score is high, it is
+advisable to verify the hydrogen bond assignment, check the HIS type used
+during the refinement and possibly adjust it.
+ 
+   92 HIS  (  92-) B  -   HIS-E   0.42
+  189 HIS  ( 189-) B  -   HIS-E   0.42 HIS-D   0.97
+  198 HIS  ( 198-) B  -   HIS-E   0.42
+  305 HIS  (  92-) D  -   HIS-E   0.41
+  402 HIS  ( 189-) D  -   HIS-E   0.41 HIS-D   0.96
+  411 HIS  ( 198-) D  -   HIS-E   0.40
+  598 HIS  ( 178-) A  -   HIS-E   0.42
+  634 HIS  ( 214-) A  -   HIS-E   0.41
+  822 HIS  ( 178-) C  -   HIS-E   0.41
+  858 HIS  ( 214-) C  -   HIS-E   0.40
+ 1062 HIS  ( 190-) L  -   HIS-E   0.42 HIS-D   0.97
+ 1071 HIS  ( 199-) L  -   HIS-E   0.42
+ 1275 HIS  ( 190-) N  -   HIS-E   0.41 HIS-D   0.96
+ 1284 HIS  ( 199-) N  -   HIS-E   0.41
+ 1332 HIS  (  35-) H  -   HIS-E   0.42
+And so on for a total of    54 lines.
+ 
+# 155 # Warning: Buried unsatisfied hydrogen bond donors
+The buried hydrogen bond donors listed in the table below have a hydrogen
+atom that is not involved in a hydrogen bond in the optimized hydrogen bond
+network.
+ 
+Hydrogen bond donors that are buried inside the protein normally use all of
+their hydrogens to form hydrogen bonds within the protein. If there are any
+non hydrogen bonded buried hydrogen bond donors in the structure they will
+be listed here. In very good structures the number of listed atoms will tend
+to zero.
+ 
+Waters are not listed by this option.
+ 
+    9 GLY  (   9-) B  -    N
+   10 THR  (  10-) B  -    N
+   27 GLN  (  27-) B  -    N
+   36 TRP  (  36-) B  -    NE1
+   62 ARG  (  62-) B  -    N
+   63 PHE  (  63-) B  -    N
+   84 PHE  (  84-) B  -    N
+  108 ARG  ( 108-) B  -    N
+  121 SER  ( 121-) B  -    OG
+  131 SER  ( 131-) B  -    OG
+  143 GLU  ( 143-) B  -    N
+  171 SER  ( 171-) B  -    N
+  172 THR  ( 172-) B  -    N
+  174 SER  ( 174-) B  -    OG
+  215 ILE  (   2-) D  -    N
+And so on for a total of   327 lines.
+ 
+# 156 # Warning: Buried unsatisfied hydrogen bond acceptors
+The buried side-chain hydrogen bond acceptors listed in the table below are
+not involved in a hydrogen bond in the optimized hydrogen bond network.
+ 
+Side-chain hydrogen bond acceptors buried inside the protein normally form
+hydrogen bonds within the protein. If there are any not hydrogen bonded in
+the optimized hydrogen bond network they will be listed here.
+ 
+Waters are not listed by this option.
+ 
+  605 GLN  ( 185-) A  -    OE1
+  634 HIS  ( 214-) A  -    ND1
+  858 HIS  ( 214-) C  -    ND1
+  866 ASP  ( 222-) C  -    OD1
+ 1740 ASN  (  33-) E  -    OD1
+ 1933 HIS  ( 241-) E  -    ND1
+ 1955 HIS  ( 265-) E  -    ND1
+ 2063 HIS  ( 373-) E  -    NE2
+ 2107 HIS  ( 417-) E  -    NE2
+ 2183 HIS  ( 493-) E  -    ND1
+ 2189 ASP  ( 499-) E  -    OD1
+ 2195 HIS  ( 505-) E  -    ND1
+ 2389 ASN  ( 103-) F  -    OD1
+ 2484 ASP  ( 198-) F  -    OD1
+ 2527 HIS  ( 241-) F  -    ND1
+ 2659 HIS  ( 373-) F  -    NE2
+ 2687 HIS  ( 401-) F  -    ND1
+ 2779 HIS  ( 493-) F  -    ND1
+ 2785 ASP  ( 499-) F  -    OD1
+ 2864 ASN  ( 578-) F  -    OD1
+ 2906 ASN  ( 334-) R  -    OD1
+ 
+# 157 # Note: Some notes regarding these donors and acceptors
+The donors and acceptors have been counted, also as function of their
+accessibility. The buried donors and acceptors have been binned in five
+categories ranging from not forming any hydrogen bond till forming a poor
+till perfect hydrogen bond. Obviously, the buried donors and acceptors
+with no or just a poor hydrogen bond should be a topic of concern. As every
+protein contains more acceptors than donors, unsatisfied donors are more in
+need of attention than unsatisfied acceptors.
+ 
+Total number of donors: 4895
+- of which buried: 2526
+Total number of acceptors: 5256
+- of which buried: 2043
+Total number of donor+acceptors: 804
+  (e.g. the Ser Ogamma that can donate and accept)
+- of which buried: 158
+Buried donors: 2526
+- without H-bond: 300
+- essentially without H-bond: 0
+- with only a very poor H-bond: 39
+- with a poor H-bond: 67
+- with a H-bond: 2120
+Buried acceptors: 2043
+- without H-bond: 345
+- essentially without H-bond: 0
+- with only a very poor H-bond: 36
+- with a poor H-bond: 121
+- with a H-bond: 1541
+ 
+# 158 # Note: Content of the PDB file as interpreted by WHAT CHECK
+Content of the PDB file as interpreted by WHAT CHECK.
+WHAT CHECK has read your PDB file, and stored it internally in what is called
+'the soup'. The content of this soup is listed here. An extensive explanation
+of all frequently used WHAT CHECK output formats can be found at
+swift.cmbi.ru.nl. Look under output formats. A course on reading this
+'Molecules' table is part of the WHAT CHECK website.
+ 
+     1     1 (    1)   213 (  213) B Protein             /zata/tempdir/7l0...
+     2   214 (    1)   426 (  213) D Protein             /zata/tempdir/7l0...
+     3   427 (    2)   567 (  142) A Protein             /zata/tempdir/7l0...
+     4   568 (  148)   648 (  228) A Protein             /zata/tempdir/7l0...
+     5   649 (    1)   791 (  143) C Protein             /zata/tempdir/7l0...
+     6   792 (  148)   872 (  228) C Protein             /zata/tempdir/7l0...
+     7   873 (    1)  1085 (  213) L Protein             /zata/tempdir/7l0...
+     8  1086 (    1)  1298 (  213) N Protein             /zata/tempdir/7l0...
+     9  1299 (    2)  1430 (  133) H Protein             /zata/tempdir/7l0...
+    10  1431 (  142)  1510 (  221) H Protein             /zata/tempdir/7l0...
+    11  1511 (    1)  1643 (  133) M Protein             /zata/tempdir/7l0...
+    12  1644 (  141)  1725 (  222) M Protein             /zata/tempdir/7l0...
+    13  1726 (   19)  1837 (  130) E Protein             /zata/tempdir/7l0...
+    14  1838 (  146)  1950 (  258) E Protein             /zata/tempdir/7l0...
+    15  1951 (  261)  2304 (  614) E Protein             /zata/tempdir/7l0...
+And so on for a total of    92 lines.
+ 
+# 159 # Note: Summary report
+This is an overall summary of the quality of the structure as compared with
+current reliable structures. Numbers in brackets are the average and standard
+deviation observed for a large number of files determined with a similar
+resolution.
+ 
+The second table mostly gives an impression of how well the model conforms
+to common refinement restraint values. These numbers are less than 1.0 if the
+spread in data is too little, and larger than 1.0 when the spread is too
+large. The former does not need to be a problem, the latter always is bad.
+ 
+ Structure Z-scores, positive is better than average:
+  Resolution read from PDB file  :   2.780
+  1st generation packing quality :  -0.658 (          (  -0.8,  2.5))
+  2nd generation packing quality :  -0.785 (          (  -1.7,  1.3))
+  Ramachandran plot appearance   :  -2.750 (          (  -3.4,  1.7))
+  chi-1/chi-2 rotamer normality  :  -4.249 (bad       (  -5.0,  1.9))
+  Backbone conformation          :   0.105 (          (  -1.0,  3.7))
+  Inside/Outside distribution    :   0.975
+ 
+ RMS Z-scores, should be close to 1.0:
+  Bond lengths                   :   0.308 (tight)
+  Bond angles                    :   0.638 (tight)
+  Omega angle restraints         :   0.972
+  Side chain planarity           :   0.197 (tight)
+  Improper dihedral distribution :   0.534
+  B-factor distribution          :   0.361
+ 
+# 160 # Note: Introduction to refinement recommendations
+First, be aware that the recommendations for crystallographers listed below
+are produced by a computer program that was written by a guy who got his
+PhD in NMR...
+ 
+We have tried to convert the messages written in this report into a small
+set of things you can do with your refinement software to get a better
+structure. The things you should do first are listed first. And in some
+cases you should first fix that problem, then refine a bit further, and
+then run WHAT CHECK again before looking at other problems. If, for example,
+WHAT CHECK has found a problem with the SCALE and CRYST cards, then you must
+first fix that problem, refine the structure a bit further, and run WHAT
+CHECK again because errors in the SCALE and or CRYST card can lead to many
+problems elsewhere in the validation process.
+ 
+It is also important to keep in mind that WHAT CHECK is software and that it
+occasionally totally misunderstands what is the cause of a problem. But, if
+WHAT CHECK lists a problem there normally is a problem albeit that it not
+always is the actual problem that gets listed.
+ 
+# 161 # Note: Matthews coefficient problem
+WHAT CHECK detected a Matthews coefficient problem. Most times this is an
+administrative problem caused by typing the wrong cell multiplicity number
+on the CRYST card (or not typing it at all). Occasionally it is caused by
+typing the wrong space group on the CRYST card. You better fix this problem,
+but normally this problem does not cause WHAT CHECK to give any erroneous
+error messages further down in the report.
+ 
+# 162 # Error: Bumps in your structure
+Upon analysing the bumps in your structure, WHAT CHECK got very, very
+worried. Sometimes this means that you have forgotten to lower the
+occupancy of overlapping ligands, residues, or water molecules. But,
+whatever is the origin of this problem, you have to analyse it and
+fix it.
+ 
+# 163 # Note: His, Asn, Gln side chain flips.
+His, Asn, and Gln have an asymmetry in their side chain that is hard to
+detect unless you have data at much better than 1.0 Angstrom resolution.
+WHAT CHECK thinks that your structure contains His, Asn, or Gln residues that
+will make better hydrogen bonds when flipped around their chi-2, chi-2, or
+chi-3 side chain torsion angle, respectively. You better
+check these Asn, His, and Gln residues, and if you use a refinement program
+that includes molecular dynamics, then you must (after the
+flips were made) refine a bit further before running WHAT CHECK again.
+ 
+# 164 # Note: Free floating waters
+Your structure contains a few water molecules that make no hydrogen bonds at
+all. These waters must be removed, and you must then refine a bit further
+before running WHAT CHECK again.
+ 
+# 165 # Warning: Troublesome residues
+The residues listed in the table below need to be inspected
+ 
+This table is a very rough attempt to sort the residues according to how
+badly they need your attention. The idea is that when you sit in  in front
+of the graphics screen and study the residues with the electron density
+present that you improve the structure most by dealing with the top residues
+in this list first.
+ 
+ 3305 NAG  (   1-) G  -     91.13
+ 3308 NAG  (   1-) I  -     90.18
+ 3119 ASN  ( 343-) S  -     57.81
+ 2915 ASN  ( 343-) R  -     56.74
+ 3307 FUC  (   6-) G  -     33.72
+ 3310 FUC  (   5-) I  -     31.74
+ 3104 ARG  ( 328-) S  -     15.71
+  256 GLN  (  43-) D  -     15.17
+ 1297 ARG  ( 212-) N  -     14.98
+  872 LYS  ( 228-) C  -     14.20
+ 2899 TYR  ( 613-) F  -     14.15
+ 1510 LYS  ( 221-) H  -     13.92
+ 3304 LYS  ( 528-) S  -     13.32
+ 1084 ARG  ( 212-) L  -     13.15
+ 1977 GLN  ( 287-) E  -     13.10
+And so on for a total of   274 lines.
+==============
+ 
+ 
+WHAT IF
+    G.Vriend,
+      WHAT IF: a molecular modelling and drug design program,
+    J. Mol. Graph. 8, 52--56 (1990).
+ 
+WHAT_CHECK (verification routines from WHAT IF)
+    R.W.W.Hooft, G.Vriend, C.Sander and E.E.Abola,
+      Errors in protein structures
+    Nature 381, 272 (1996).
+    (see also http://swift.cmbi.ru.nl/gv/whatcheck for a course and extra
+    information)
+ 
+PDB facilities
+    Touw WG, Baakman C, Black J, te Beek TA, Krieger E, Joosten RP, Vriend G.
+      A series of PDB-related databanks for everyday needs.
+    Nucleic Acids Research D364-368 Database issue (2015).
+ 
+Bond lengths and angles, protein residues
+    R.Engh and R.Huber,
+      Accurate bond and angle parameters for X-ray protein structure
+      refinement,
+    Acta Crystallogr. A47, 392--400 (1991) and
+    R.Engh and R.Huber,
+    International Tables for Crystallography (2001)
+ 
+ 
+Bond lengths and angles, DNA/RNA
+    G.Parkinson, J.Voitechovsky, L.Clowney, A.T.Bruenger and H.Berman,
+      New parameters for the refinement of nucleic acid-containing structures
+    Acta Crystallogr. D52, 57--64 (1996).
+ 
+DSSP
+    W.Kabsch and C.Sander,
+      Dictionary of protein secondary structure: pattern
+      recognition of hydrogen bond and geometrical features
+    Biopolymers 22, 2577--2637 (1983).
+ 
+Hydrogen bond networks
+    R.W.W.Hooft, C.Sander and G.Vriend,
+      Positioning hydrogen atoms by optimizing hydrogen bond networks in
+      protein structures
+    PROTEINS, 26, 363--376 (1996).
+ 
+Matthews' Coefficient
+    B.W.Matthews
+      Solvent content of Protein Crystals
+    J. Mol. Biol. 33, 491--497 (1968).
+ 
+Peptide flips
+    Touw WG, Joosten RP, Vriend G.
+      Detection of trans-cis flips and peptide-plane flips in protein
+      structures.
+    Acta Crystallogr D Biological Crystallograhy 71, 1604-1614 (2015).
+ 
+Protein side chain planarity
+    R.W.W. Hooft, C. Sander and G. Vriend,
+      Verification of protein structures: side-chain planarity
+    J. Appl. Cryst. 29, 714--716 (1996).
+ 
+Puckering parameters
+    D.Cremer and J.A.Pople,
+      A general definition of ring puckering coordinates
+    J. Am. Chem. Soc. 97, 1354--1358 (1975).
+ 
+Quality Control
+    G.Vriend and C.Sander,
+      Quality control of protein models: directional atomic
+      contact analysis,
+    J. Appl. Cryst. 26, 47--60 (1993).
+ 
+Ramachandran plot
+    G.N.Ramachandran, C.Ramakrishnan and V.Sasisekharan,
+      Stereochemistry of Polypeptide Chain Conformations
+    J. Mol. Biol. 7, 95--99 (1963).
+    R.W.W. Hooft, C.Sander and G.Vriend,
+      Objectively judging the quality of a protein structure from a
+      Ramachandran plot
+    CABIOS (1997), 13, 425--430.
+ 
+Symmetry Checks
+    R.W.W.Hooft, C.Sander and G.Vriend,
+      Reconstruction of symmetry related molecules from protein
+      data bank (PDB) files
+    J. Appl. Cryst. 27, 1006--1009 (1994).
+ 
+Tau angle
+    W.G.Touw and G.Vriend
+      On the complexity of Engh and Huber refinement restraints: the angle
+      tau as example.
+    Acta Crystallogr D 66, 1341--1350 (2010).
+ 
+Ion Checks
+    I.D.Brown and K.K.Wu,
+      Empirical Parameters for Calculating Cation-Oxygen Bond Valences
+    Acta Cryst. B32, 1957--1959 (1975).
+ 
+    M.Nayal and E.Di Cera,
+      Valence Screening of Water in Protein Crystals Reveals Potential Na+
+      Binding Sites
+    J.Mol.Biol. 256 228--234 (1996).
+ 
+    P.Mueller, S.Koepke and G.M.Sheldrick,
+      Is the bond-valence method able to identify metal atoms in protein
+      structures?
+    Acta Cryst. D 59 32--37 (2003).
+ 
+Checking checks
+    K.Wilson, C.Sander, R.W.W.Hooft, G.Vriend, et al.
+      Who checks the checkers
+    J.Mol.Biol. (1998) 276,417-436.
+==============
+ 
+ 
+WHAT IF
+    G.Vriend,
+      WHAT IF: a molecular modelling and drug design program,
+    J. Mol. Graph. 8, 52--56 (1990).
+ 
+WHAT_CHECK (verification routines from WHAT IF)
+    R.W.W.Hooft, G.Vriend, C.Sander and E.E.Abola,
+      Errors in protein structures
+    Nature 381, 272 (1996).
+    (see also http://swift.cmbi.ru.nl/gv/whatcheck for a course and extra
+    information)
+ 
+PDB facilities
+    Touw WG, Baakman C, Black J, te Beek TA, Krieger E, Joosten RP, Vriend G.
+      A series of PDB-related databanks for everyday needs.
+    Nucleic Acids Research D364-368 Database issue (2015).
+ 
+Bond lengths and angles, protein residues
+    R.Engh and R.Huber,
+      Accurate bond and angle parameters for X-ray protein structure
+      refinement,
+    Acta Crystallogr. A47, 392--400 (1991) and
+    R.Engh and R.Huber,
+    International Tables for Crystallography (2001)
+ 
+ 
+Bond lengths and angles, DNA/RNA
+    G.Parkinson, J.Voitechovsky, L.Clowney, A.T.Bruenger and H.Berman,
+      New parameters for the refinement of nucleic acid-containing structures
+    Acta Crystallogr. D52, 57--64 (1996).
+ 
+DSSP
+    W.Kabsch and C.Sander,
+      Dictionary of protein secondary structure: pattern
+      recognition of hydrogen bond and geometrical features
+    Biopolymers 22, 2577--2637 (1983).
+ 
+Hydrogen bond networks
+    R.W.W.Hooft, C.Sander and G.Vriend,
+      Positioning hydrogen atoms by optimizing hydrogen bond networks in
+      protein structures
+    PROTEINS, 26, 363--376 (1996).
+ 
+Matthews' Coefficient
+    B.W.Matthews
+      Solvent content of Protein Crystals
+    J. Mol. Biol. 33, 491--497 (1968).
+ 
+Peptide flips
+    Touw WG, Joosten RP, Vriend G.
+      Detection of trans-cis flips and peptide-plane flips in protein
+      structures.
+    Acta Crystallogr D Biological Crystallograhy 71, 1604-1614 (2015).
+ 
+Protein side chain planarity
+    R.W.W. Hooft, C. Sander and G. Vriend,
+      Verification of protein structures: side-chain planarity
+    J. Appl. Cryst. 29, 714--716 (1996).
+ 
+Puckering parameters
+    D.Cremer and J.A.Pople,
+      A general definition of ring puckering coordinates
+    J. Am. Chem. Soc. 97, 1354--1358 (1975).
+ 
+Quality Control
+    G.Vriend and C.Sander,
+      Quality control of protein models: directional atomic
+      contact analysis,
+    J. Appl. Cryst. 26, 47--60 (1993).
+ 
+Ramachandran plot
+    G.N.Ramachandran, C.Ramakrishnan and V.Sasisekharan,
+      Stereochemistry of Polypeptide Chain Conformations
+    J. Mol. Biol. 7, 95--99 (1963).
+    R.W.W. Hooft, C.Sander and G.Vriend,
+      Objectively judging the quality of a protein structure from a
+      Ramachandran plot
+    CABIOS (1997), 13, 425--430.
+ 
+Symmetry Checks
+    R.W.W.Hooft, C.Sander and G.Vriend,
+      Reconstruction of symmetry related molecules from protein
+      data bank (PDB) files
+    J. Appl. Cryst. 27, 1006--1009 (1994).
+ 
+Tau angle
+    W.G.Touw and G.Vriend
+      On the complexity of Engh and Huber refinement restraints: the angle
+      tau as example.
+    Acta Crystallogr D 66, 1341--1350 (2010).
+ 
+Ion Checks
+    I.D.Brown and K.K.Wu,
+      Empirical Parameters for Calculating Cation-Oxygen Bond Valences
+    Acta Cryst. B32, 1957--1959 (1975).
+ 
+    M.Nayal and E.Di Cera,
+      Valence Screening of Water in Protein Crystals Reveals Potential Na+
+      Binding Sites
+    J.Mol.Biol. 256 228--234 (1996).
+ 
+    P.Mueller, S.Koepke and G.M.Sheldrick,
+      Is the bond-valence method able to identify metal atoms in protein
+      structures?
+    Acta Cryst. D 59 32--37 (2003).
+ 
+Checking checks
+    K.Wilson, C.Sander, R.W.W.Hooft, G.Vriend, et al.
+      Who checks the checkers
+    J.Mol.Biol. (1998) 276,417-436.
