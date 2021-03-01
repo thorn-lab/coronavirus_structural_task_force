@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Protein name**: human interaction partners
+**Protein name**: ../../../../../../../scratch/works/convid/coronavirus structural task force/pdb/human interaction partners
 
 **Organism**: Cathepsin_L
 
@@ -24,7 +24,7 @@
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/human_interaction_partners/Cathepsin_L/6jd8/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/human_interaction_partners/Cathepsin_L/6jd8/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/human_interaction_partners/Cathepsin_L/6jd8/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/Cathepsin_L/6jd8/validation/Xtriage_output.log)  
+**validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/human_interaction_partners/Cathepsin_L/6jd8/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/human_interaction_partners/Cathepsin_L/6jd8/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/human_interaction_partners/Cathepsin_L/6jd8/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/Cathepsin_L/6jd8/validation/Xtriage_output.log)  
 
 
 
@@ -39,7 +39,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|--------------:|
 |   |1.46 Å|94.3  %|<img width=50/>14.30|
 
-**Discrepancy between model and data (the lower the better)**
+**Discrepancy between model and data (the lower, the better)**
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
@@ -51,7 +51,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  2.55|  0.65 %|
 
-**Auspex Pathologies**<br> all good (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/Cathepsin_L/6jd8/validation/auspex/6jd8_auspex_comments.txt))
+**Auspex Pathologies**<br> <br>Click [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/Cathepsin_L/6jd8/validation/auspex/6jd8_auspex_comments.txt)  for results
 
  
 
@@ -64,5 +64,5 @@ No public deposition. --<br>
  
 **PDBr**: https://www.rcsb.org/structure/6jd8 
 
-**Structure view with 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=6jd8
+**View structures in 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=6jd8
 

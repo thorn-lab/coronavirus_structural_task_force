@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Protein name**: human interaction partners
+**Protein name**: ../../../../../../../scratch/works/convid/coronavirus structural task force/pdb/human interaction partners
 
 **Organism**: Cathepsin_L
 

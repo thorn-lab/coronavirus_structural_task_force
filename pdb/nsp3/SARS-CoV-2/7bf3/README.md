@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Protein name**: ../../../../../../../scratch/works/convid/coronavirus structural task force/pdb/nsp3
+**Protein name**: nsp3
 
 **Organism**: SARS-CoV-2
 

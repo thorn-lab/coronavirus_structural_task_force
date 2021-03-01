@@ -33,13 +33,13 @@ Primary map emd_22007.map available. **Click** [here](http://ftp.wwpdb.org/pub/e
 
 |   | Reported Resolution | Imposed Symmetry | Number of Particles |
 |---|-------------:|----------------:|--------------:|
-|   |3.7 Å|n/a|101646|
+|   |3.2 Å|n/a|329104|
 
 **Experiments**
 
 |   | Frame Sampling | Electron Dose |
 |---|-------------:|----------------:|
-|   |0.8 Å|60.0 e<sup>-</sup>/Å<sup>2</sup>|
+|   |1.0 Å|60.0 e<sup>-</sup>/Å<sup>2</sup>|
 
 ## HARUSPEX results
 

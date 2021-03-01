@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Protein name**: ../../../../../../../scratch/works/convid/coronavirus structural task force/pdb/nucleocapsid protein
+**Protein name**: nucleocapsid protein
 
 **Organism**: SARS-CoV-2
 
@@ -60,7 +60,7 @@ No public deposition. --<br>
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/7kgs
 
-**PDBe-KB**:  
+**PDBe-KB**: https://www.ebi.ac.uk/pdbe/pdbe-kb/covid19/P0DTC9 
  
 **PDBr**: https://www.rcsb.org/structure/7kgs 
 

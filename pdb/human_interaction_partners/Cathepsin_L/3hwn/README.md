@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Protein name**: human interaction partners
+**Protein name**: ../../../../../../../scratch/works/convid/coronavirus structural task force/pdb/human interaction partners
 
 **Organism**: Cathepsin_L
 
@@ -24,7 +24,7 @@
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/human_interaction_partners/Cathepsin_L/3hwn/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/human_interaction_partners/Cathepsin_L/3hwn/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/human_interaction_partners/Cathepsin_L/3hwn/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/Cathepsin_L/3hwn/validation/Xtriage_output.log)  
+**validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/human_interaction_partners/Cathepsin_L/3hwn/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/human_interaction_partners/Cathepsin_L/3hwn/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/human_interaction_partners/Cathepsin_L/3hwn/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/Cathepsin_L/3hwn/validation/Xtriage_output.log)  
 
 
 
@@ -39,7 +39,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|--------------:|
 |   |2.33 Å|100.0 %|<img width=50/>NULL |
 
-**Discrepancy between model and data (the lower the better)**
+**Discrepancy between model and data (the lower, the better)**
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
@@ -51,7 +51,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  2.51|  0.83 %|
 
- 
+**Auspex Pathologies**<br> [bad or missing beamstop mask](https://www.auspex.de/pathol/#2), [ice rings](https://www.auspex.de/pathol/#1)<br>Click [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/Cathepsin_L/3hwn/validation/auspex/3hwn_auspex_comments.txt)  for results
 
  
 
@@ -64,5 +64,5 @@ No public deposition. --<br>
  
 **PDBr**: https://www.rcsb.org/structure/3hwn 
 
-**Structure view with 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=3hwn
+**View structures in 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=3hwn
 

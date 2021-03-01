@@ -22,7 +22,7 @@ The spike receptor-binding domain S attaches the virus to ACE2, mediated by a re
 
 
 
-
+**validation** - contains validation reports. This structure has been analyzed by <br>     [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV/5x58/validation/ccpem-validation)
 
 
 

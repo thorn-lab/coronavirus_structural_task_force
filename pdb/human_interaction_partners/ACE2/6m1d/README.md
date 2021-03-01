@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Protein name**: human interaction partners
+**Protein name**: ../../../../../../../scratch/works/convid/coronavirus structural task force/pdb/human interaction partners
 
 **Organism**: ACE2
 
@@ -20,7 +20,7 @@
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by   [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/human_interaction_partners/ACE2/6m1d/validation/molprobity)   [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/human_interaction_partners/ACE2/6m1d/validation/ccpem-validation)
+**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/human_interaction_partners/ACE2/6m1d/validation/molprobity)   [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/human_interaction_partners/ACE2/6m1d/validation/ccpem-validation)
 
 
 
@@ -41,9 +41,9 @@ Primary map emd_30041.map available. **Click** [here](http://ftp.wwpdb.org/pub/e
 |---|-------------:|----------------:|
 |   |1.087 Å|50.0 e<sup>-</sup>/Å<sup>2</sup>|
 
-## HARUSPEX Annotation
+## HARUSPEX results
 
-Available. **Click** [here](https://zenodo.org/record/3820197)
+Available. This separates the deposited map into individual maps for alpha-helical, beta sheet and RNA/DNA. You can download the maps [here](https://zenodo.org/record/3820197)
 
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/6m1d

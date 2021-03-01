@@ -24,7 +24,7 @@ C-terminal domain of NSP8 in complex with NSP7 from SARS-CoV2. This X-ray crysta
 
 
 
-
+**old** - contains files from historical revisions
 
 **validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp8-nsp7/SARS-CoV-2/6wtc/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp8-nsp7/SARS-CoV-2/6wtc/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp8-nsp7/SARS-CoV-2/6wtc/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp8-nsp7/SARS-CoV-2/6wtc/validation/Xtriage_output.log)  
 

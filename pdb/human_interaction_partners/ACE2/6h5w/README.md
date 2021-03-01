@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Protein name**: human interaction partners
+**Protein name**: ../../../../../../../scratch/works/convid/coronavirus structural task force/pdb/human interaction partners
 
 **Organism**: ACE2
 
@@ -24,7 +24,7 @@
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/human_interaction_partners/ACE2/6h5w/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/human_interaction_partners/ACE2/6h5w/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/human_interaction_partners/ACE2/6h5w/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/ACE2/6h5w/validation/Xtriage_output.log)  
+**validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/human_interaction_partners/ACE2/6h5w/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/human_interaction_partners/ACE2/6h5w/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/human_interaction_partners/ACE2/6h5w/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/ACE2/6h5w/validation/Xtriage_output.log)  
 
 
 
@@ -39,7 +39,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|--------------:|
 |   |1.37 Å|99.8  %|<img width=50/>13.20|
 
-**Discrepancy between model and data (the lower the better)**
+**Discrepancy between model and data (the lower, the better)**
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
@@ -51,7 +51,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  0.98|  0.17 %|
 
- 
+**Auspex Pathologies**<br> <br>Click [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/ACE2/6h5w/validation/auspex/6h5w_auspex_comments.txt)  for results
 
  
 
@@ -64,5 +64,5 @@ No public deposition. --<br>
  
 **PDBr**: https://www.rcsb.org/structure/6h5w 
 
-**Structure view with 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=6h5w
+**View structures in 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=6h5w
 

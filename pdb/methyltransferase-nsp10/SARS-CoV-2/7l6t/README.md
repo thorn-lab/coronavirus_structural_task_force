@@ -24,7 +24,7 @@
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/methyltransferase-nsp10/SARS-CoV-2/7l6t/validation/auspex)     
+**validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/methyltransferase-nsp10/SARS-CoV-2/7l6t/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/methyltransferase-nsp10/SARS-CoV-2/7l6t/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/methyltransferase-nsp10/SARS-CoV-2/7l6t/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/methyltransferase-nsp10/SARS-CoV-2/7l6t/validation/Xtriage_output.log)  
 
 
 
@@ -43,13 +43,13 @@ No public deposition. --<br>
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
-||--|--|
+||  0.1410|  0.1620|
 
 **Geometry validation (the lower, the better)**
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
-||--|--|
+||  1.14|  0.00 %|
 
  
 

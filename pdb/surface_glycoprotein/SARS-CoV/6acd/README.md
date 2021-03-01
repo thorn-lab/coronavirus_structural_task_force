@@ -22,7 +22,7 @@ Trypsin-cleaved and low pH-treated SARS-CoV spike glycoprotein with one RBD in u
 
 
 
-
+**validation** - contains validation reports. This structure has been analyzed by <br>     [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV/6acd/validation/ccpem-validation)
 
 
 

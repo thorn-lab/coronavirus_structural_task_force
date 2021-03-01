@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Protein name**: human interaction partners
+**Protein name**: ../../../../../../../scratch/works/convid/coronavirus structural task force/pdb/human interaction partners
 
 **Organism**: ACE2
 
@@ -26,7 +26,7 @@ The spike receptor-binding domain S attaches the virus to ACE2. The non-polymer 
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by [**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/human_interaction_partners/ACE2/3d0h/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/human_interaction_partners/ACE2/3d0h/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/human_interaction_partners/ACE2/3d0h/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/ACE2/3d0h/validation/Xtriage_output.log) [**BUSTER**](https://www.globalphasing.com/buster/wiki/index.cgi?Covid19Pdb3D0H) 
+**validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/human_interaction_partners/ACE2/3d0h/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/human_interaction_partners/ACE2/3d0h/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/human_interaction_partners/ACE2/3d0h/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/ACE2/3d0h/validation/Xtriage_output.log) [**BUSTER**](https://www.globalphasing.com/buster/wiki/index.cgi?Covid19Pdb3D0H) 
 
 
 
@@ -41,7 +41,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|--------------:|
 |   |3.10 Å|90.3  %|<img width=50/>NULL |
 
-**Discrepancy between model and data (the lower the better)**
+**Discrepancy between model and data (the lower, the better)**
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
@@ -53,7 +53,7 @@ No public deposition. --<br>
 |---|-------------:|----------------:|
 ||  3.20|  2.88 %|
 
-**Auspex Pathologies**<br> ice rings (For more information, read [this](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/ACE2/3d0h/validation/auspex/3d0h_auspex_comments.txt))
+**Auspex Pathologies**<br> [ice rings](https://www.auspex.de/pathol/#1)<br>Click [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/human_interaction_partners/ACE2/3d0h/validation/auspex/3d0h_auspex_comments.txt)  for results
 
  
 
@@ -66,5 +66,5 @@ No public deposition. --<br>
  
 **PDBr**: https://www.rcsb.org/structure/3d0h 
 
-**Structure view with 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=3d0h
+**View structures in 3D Bionotes**: https://3dbionotes.cnb.csic.es/?queryId=3d0h
 

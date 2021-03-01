@@ -22,7 +22,7 @@ SARS-CoV ORF7a accessory protein, a unique type I transmembrane protein of unkno
 
 ## Subfolders
 
-
+**isolde** - contains manual re-refinements from ISOLDE in ChimeraX, done by Tristan Croll. See details [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/hypothetical_protein_sars7a/SARS-CoV/1xak/isolde/directory_info.txt)
 
 
 

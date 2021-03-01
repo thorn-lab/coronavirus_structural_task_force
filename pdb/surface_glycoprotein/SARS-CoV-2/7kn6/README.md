@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Protein name**: ../../../../../../../scratch/works/convid/coronavirus structural task force/pdb/surface glycoprotein
+**Protein name**: surface glycoprotein
 
 **Organism**: SARS-CoV-2
 
@@ -22,7 +22,7 @@
 
 
 
-
+**old** - contains files from historical revisions
 
 **validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7kn6/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7kn6/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7kn6/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/surface_glycoprotein/SARS-CoV-2/7kn6/validation/Xtriage_output.log)  
 
@@ -60,7 +60,7 @@ No public deposition. --<br>
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/7kn6
 
-**PDBe-KB**:  
+**PDBe-KB**: https://www.ebi.ac.uk/pdbe/pdbe-kb/covid19/P0DTC2 
  
 **PDBr**: https://www.rcsb.org/structure/7kn6 
 
