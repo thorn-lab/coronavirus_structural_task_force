@@ -1,18 +1,19 @@
-USER  MOD reduce.3.3.160602 H: found=0, std=0, add=2315, rem=0, adj=70
+USER  MOD reduce.3.7.201124 H: found=0, std=0, add=2329, rem=0, adj=72
 HEADER    HYDROLASE                               15-JUN-20   6XFN
 TITLE     CRYSTAL STRUCTURE OF THE SARS-COV-2 (COVID-19) MAIN PROTEASE IN
 TITLE    2 COMPLEX WITH UAW243
 COMPND    MOL_ID: 1;
-COMPND   2 MOLECULE: MAIN PROTEASE;
+COMPND   2 MOLECULE: 3C-LIKE PROTEINASE;
 COMPND   3 CHAIN: A;
 COMPND   4 FRAGMENT: UNP RESIDUES 3264-3569;
-COMPND   5 SYNONYM: 3C-LIKE PROTEINASE;
-COMPND   6 EC: 3.4.22.69;
-COMPND   7 ENGINEERED: YES;
-COMPND   8 MOL_ID: 2;
-COMPND   9 MOLECULE: UAW243;
-COMPND   0 CHAIN: B;
-COMPND   1 ENGINEERED: YES
+COMPND   5 SYNONYM: 3CL-PRO,3CLP,MAIN PROTEASE,MPRO,NON-STRUCTURAL PROTEIN 5,
+COMPND   6 NSP5,SARS CORONAVIRUS MAIN PROTEINASE;
+COMPND   7 EC: 3.4.22.69;
+COMPND   8 ENGINEERED: YES;
+COMPND   9 MOL_ID: 2;
+COMPND   0 MOLECULE: UAW243;
+COMPND   1 CHAIN: B;
+COMPND   2 ENGINEERED: YES
 SOURCE    MOL_ID: 1;
 SOURCE   2 ORGANISM_SCIENTIFIC: SEVERE ACUTE RESPIRATORY SYNDROME CORONAVIRUS
 SOURCE   3 2;
@@ -33,12 +34,20 @@ KEYWDS   5 ALPHEKETOAMIDE, ALPHA, KETOAMIDE, PEPTIDOMIMETIC, PROTEASE,
 KEYWDS   6 CYSTEINE, HYDROLASE
 EXPDTA    X-RAY DIFFRACTION
 AUTHOR    M.SACCO,C.MA,J.WANG,Y.CHEN
+REVDAT   4   27-JAN-21 6XFN    1       COMPND
+REVDAT   3   23-DEC-20 6XFN    1       JRNL
+REVDAT   2   18-NOV-20 6XFN    1       JRNL
 REVDAT   1   24-JUN-20 6XFN    0
-JRNL        AUTH   M.SACCO,Y.CHEN,C.MA
-JRNL        TITL   CRYSTAL STRUCTURE OF THE SARS-COV-2 (COVID-19) MAIN PROTEASE
-JRNL        TITL 2 IN COMPLEX WITH UAW243
-JRNL        REF    TO BE PUBLISHED
-JRNL        REFN
+JRNL        AUTH   M.D.SACCO,C.MA,P.LAGARIAS,A.GAO,J.A.TOWNSEND,X.MENG,P.DUBE,
+JRNL        AUTH 2 X.ZHANG,Y.HU,N.KITAMURA,B.HURST,B.TARBET,M.T.MARTY,
+JRNL        AUTH 3 A.KOLOCOURIS,Y.XIANG,Y.CHEN,J.WANG
+JRNL        TITL   STRUCTURE AND INHIBITION OF THE SARS-COV-2 MAIN PROTEASE
+JRNL        TITL 2 REVEAL STRATEGY FOR DEVELOPING DUAL INHIBITORS AGAINST M PRO
+JRNL        TITL 3 AND CATHEPSIN L.
+JRNL        REF    SCI ADV                       V.   6       2020
+JRNL        REFN                   ESSN 2375-2548
+JRNL        PMID   33158912
+JRNL        DOI    10.1126/SCIADV.ABE0751
 REMARK   2
 REMARK   2 RESOLUTION.    1.70 ANGSTROMS.
 REMARK   3
@@ -442,6 +451,9 @@ USER  MOD scores for adjustable sidechains, with "set" totals for H,N and Q
 USER  MOD "o" means original, "f" means flipped, "180deg" is methyl default
 USER  MOD "!" flags a clash with an overlap of 0.40A or greater
 USER  MOD flip categories: "K"=keep, "C"=clashes, "X"=uncertain, "F"=flip
+USER  MOD NoAdj-H: B   3 V1V H9  : B   3 V1V N05 : B   2 LEU C   :(H bumps)
+USER  MOD NoAdj-H: B   3 V1V H12 : B   3 V1V C23 : A 145 CYS SG  :(H bumps)
+USER  MOD NoAdj-H: B   3 V1V H10 : B   3 V1V N05 : B   2 LEU C   :(H bumps)
 USER  MOD NoAdj-H: B   4 APY HN2 : B   4 APY N   : B   3 V1V C26 :(H bumps)
 USER  MOD NoAdj-H: B   4 APY HN1 : B   4 APY N   : B   3 V1V C26 :(H bumps)
 USER  MOD Set 1.1: A  64 HIS     :     no HE2:sc=    0.79  K(o=1.8,f=-10!)
@@ -463,12 +475,14 @@ USER  MOD Set 7.2: A 113 SER OG  :   rot    1:sc=    1.53
 USER  MOD Set 7.3: A 127 GLN     :      amide:sc=    1.48  K(o=5.4,f=0.52!)
 USER  MOD Set 8.1: A  83 GLN     :      amide:sc=    1.58  K(o=2.1,f=-1.6)
 USER  MOD Set 8.2: A  88 LYS NZ  :NH3+   -171:sc=    0.49   (180deg=0)
-USER  MOD Set 9.1: A  21 THR OG1 :   rot  180:sc=    0.71
-USER  MOD Set 9.2: A  26 THR OG1 :   rot  -89:sc=    1.11
-USER  MOD Set10.1: A  22 CYS SG  :   rot  127:sc=   -1.33
-USER  MOD Set10.2: A  61 LYS NZ  :NH3+    180:sc=       0   (180deg=0)
-USER  MOD Set11.1: A  19 GLN     :      amide:sc=  -0.223  X(o=-0.65,f=-0.75)
-USER  MOD Set11.2: A 119 ASN     :      amide:sc=  -0.429  X(o=-0.65,f=-0.26)
+USER  MOD Set 9.1: A  41 HIS     :     no HE2:sc=    1.26! C(o=2.1!,f=-17!)
+USER  MOD Set 9.2: B   3 V1V O24 :   rot  102:sc=   0.809
+USER  MOD Set10.1: A  21 THR OG1 :   rot  180:sc=    0.71
+USER  MOD Set10.2: A  26 THR OG1 :   rot  -89:sc=    1.11
+USER  MOD Set11.1: A  22 CYS SG  :   rot  127:sc=   -1.33
+USER  MOD Set11.2: A  61 LYS NZ  :NH3+    180:sc=       0   (180deg=0)
+USER  MOD Set12.1: A  19 GLN     :      amide:sc=  -0.223  X(o=-0.65,f=-0.75)
+USER  MOD Set12.2: A 119 ASN     :      amide:sc=  -0.429  X(o=-0.65,f=-0.26)
 USER  MOD Single : A   5 LYS NZ  :NH3+   -113:sc=    1.77   (180deg=-0.613)
 USER  MOD Single : A  10 SER OG  :   rot   66:sc=    1.05
 USER  MOD Single : A  12 LYS NZ  :NH3+   -142:sc=  0.0922   (180deg=0.00487)
@@ -478,7 +492,6 @@ USER  MOD Single : A  25 THR OG1 :   rot  170:sc=   0.593
 USER  MOD Single : A  28 ASN     :      amide:sc=    1.04  K(o=1,f=-4.1!)
 USER  MOD Single : A  37 TYR OH  :   rot  180:sc=       0
 USER  MOD Single : A  38 CYS SG  :   rot  150:sc=       0
-USER  MOD Single : A  41 HIS     :     no HD1:sc=    1.91  K(o=2,f=-10!)
 USER  MOD Single : A  44 CYS SG  :   rot  180:sc=  -0.201
 USER  MOD Single : A  45 THR OG1 :   rot  180:sc=   0.133
 USER  MOD Single : A  46 SER OG  :   rot  180:sc=       0
@@ -1166,9 +1179,9 @@ ATOM      0  H   HIS A  41      15.416  -7.376  21.082  1.00 21.80           H  
 ATOM      0  HA  HIS A  41      15.441  -7.524  23.723  1.00 21.01           H   new
 ATOM      0  HB2 HIS A  41      14.326  -5.602  23.872  1.00 22.47           H   new
 ATOM      0  HB3 HIS A  41      15.452  -5.443  22.805  1.00 22.47           H   new
+ATOM      0  HD1 HIS A  41      14.801  -4.835  20.458  1.00 23.28           H   new
 ATOM      0  HD2 HIS A  41      11.737  -5.396  22.840  1.00 23.36           H   new
 ATOM      0  HE1 HIS A  41      12.900  -4.075  19.279  1.00 25.77           H   new
-ATOM      0  HE2 HIS A  41      11.040  -4.381  20.758  1.00 23.29           H   new
 ATOM    307  N   VAL A  42      13.226  -9.234  22.589  1.00 23.44           N
 ATOM    308  CA  VAL A  42      12.113 -10.138  23.034  1.00 24.18           C
 ATOM    309  C   VAL A  42      12.470 -10.674  24.441  1.00 28.30           C
@@ -5204,6 +5217,11 @@ HETATM 2355  C10 UZ7 B   1       3.024   3.074  24.070  1.00 67.57           C
 HETATM 2356  C07 UZ7 B   1       5.241   1.501  23.513  1.00 46.86           C
 HETATM 2357  O08 UZ7 B   1       6.235   2.117  23.262  1.00 39.57           O
 HETATM 2358  O09 UZ7 B   1       3.903   2.124  23.217  1.00 61.62           O
+HETATM    0  H5  UZ7 B   1       4.139   4.828  24.094  1.00 68.52           H   new
+HETATM    0  H4  UZ7 B   1       1.439   1.709  24.245  1.00 65.49           H   new
+HETATM    0  H3  UZ7 B   1       2.611   6.151  25.340  1.00 65.90           H   new
+HETATM    0  H2  UZ7 B   1       0.505   5.313  26.033  1.00 68.05           H   new
+HETATM    0  H1  UZ7 B   1      -0.046   3.063  25.496  1.00 68.35           H   new
 ATOM   2359  N   LEU B   2       5.317   0.122  23.911  1.00 41.81           N
 ATOM   2360  CA  LEU B   2       6.623  -0.738  23.642  1.00 42.12           C
 ATOM   2361  C   LEU B   2       6.169  -2.021  22.741  1.00 39.13           C
@@ -5231,6 +5249,15 @@ HETATM 2372  C23 V1V B   3       8.509  -3.686  20.512  1.00 32.56           C
 HETATM 2373  O24 V1V B   3       9.849  -3.292  20.637  1.00 27.84           O
 HETATM 2374  C26 V1V B   3       7.818  -2.598  19.525  1.00 29.30           C
 HETATM 2375  O27 V1V B   3       6.662  -2.538  19.253  1.00 27.48           O
+HETATM    0  H8  V1V B   3       8.583  -2.837  22.592  1.00 36.60           H   new
+HETATM    0  H7  V1V B   3       9.132  -4.860  23.293  1.00 39.04           H   new
+HETATM    0  H6  V1V B   3       8.300  -5.576  22.185  1.00 39.04           H   new
+HETATM    0  H5  V1V B   3       6.923  -4.474  24.365  1.00 39.04           H   new
+HETATM    0  H4  V1V B   3       7.620  -5.856  24.551  1.00 39.04           H   new
+HETATM    0  H3  V1V B   3       5.593  -5.367  22.608  1.00 39.53           H   new
+HETATM    0  H2  V1V B   3       6.301  -6.771  22.797  1.00 39.53           H   new
+HETATM    0  H13 V1V B   3      10.342  -3.972  20.641  1.00 27.84           H   new
+HETATM    0  H1  V1V B   3       5.365  -6.197  23.938  1.00 39.53           H   new
 HETATM 2376  N   APY B   4       8.721  -1.649  18.937  1.00 26.51           N
 HETATM 2377  CM  APY B   4       8.288  -0.686  17.898  1.00 26.21           C
 HETATM 2378  C2  APY B   4       7.290   0.432  18.200  1.00 24.66           C

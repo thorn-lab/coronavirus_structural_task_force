@@ -1,4 +1,4 @@
-USER  MOD reduce.3.3.160602 H: found=2337, std=3013, add=7, rem=0, adj=69
+USER  MOD reduce.3.7.201124 H: found=2337, std=3044, add=7, rem=1, adj=70
 HEADER    PEPTIDE BINDING PROTEIN                 02-OCT-20   7AKU
 TITLE     STRUCTURE OF SARS-COV-2 MAIN PROTEASE BOUND TO CALPEPTIN.
 COMPND    MOL_ID: 1;
@@ -451,6 +451,8 @@ USER  MOD scores for adjustable sidechains, with "set" totals for H,N and Q
 USER  MOD "o" means original, "f" means flipped, "180deg" is methyl default
 USER  MOD "!" flags a clash with an overlap of 0.40A or greater
 USER  MOD flip categories: "K"=keep, "C"=clashes, "X"=uncertain, "F"=flip
+USER  MOD NoAdj-H: A 401 RN2H261 : A 401 RN2 O26 : A 401 RN2 C25 :(short bond)
+USER  MOD NoAdj-H: A 401 RN2H252 : A 401 RN2 C25 : A 145 CYS SG  :(H bumps)
 USER  MOD Set 1.1: A 221 ASN     :      amide:sc=   -1.23  K(o=-1.2,f=-3.2!)
 USER  MOD Set 1.2: A 267 SER OG  :   rot  -31:sc=  0.0424
 USER  MOD Set 2.1: A 164 HIS     :     no HD1:sc=  -0.169  K(o=0.84,f=-0.77)
@@ -487,7 +489,7 @@ USER  MOD Single : A  25 THR OG1 :   rot  180:sc=       0
 USER  MOD Single : A  28 ASN     :      amide:sc=   0.985  K(o=0.98,f=-5.4!)
 USER  MOD Single : A  37 TYR OH  :   rot  165:sc=       0
 USER  MOD Single : A  38 CYS SG  :   rot  150:sc=       0
-USER  MOD Single : A  41 HIS     :     no HE2:sc=  -0.242  X(o=-0.24,f=-0.65)
+USER  MOD Single : A  41 HIS     :     no HE2:sc=  -0.293  X(o=-0.29,f=-0.65)
 USER  MOD Single : A  45 THR OG1 :   rot  180:sc=  0.0115
 USER  MOD Single : A  46 SER OG  :   rot  180:sc=  0.0229
 USER  MOD Single : A  51 ASN     :      amide:sc=  -0.224  X(o=-0.22,f=0)
@@ -528,7 +530,7 @@ USER  MOD Single : A 169 THR OG1 :   rot  180:sc=       0
 USER  MOD Single : A 172 HIS     :     no HD1:sc=  -0.914  K(o=-0.91,f=-1.6)
 USER  MOD Single : A 180 ASN     :      amide:sc=    1.27  X(o=1.3,f=1.3)
 USER  MOD Single : A 182 TYR OH  :   rot   30:sc=   0.076
-USER  MOD Single : A 189 GLN     :      amide:sc=   -3.86! C(o=-3.9!,f=-7.5!)
+USER  MOD Single : A 189 GLN     :      amide:sc=    -3.8! C(o=-3.8!,f=-7.5!)
 USER  MOD Single : A 190 THR OG1 :   rot  180:sc=       0
 USER  MOD Single : A 192 GLN     :      amide:sc=  0.0463  K(o=0.046,f=-1.6)
 USER  MOD Single : A 196 THR OG1 :   rot  180:sc=       0
@@ -565,6 +567,7 @@ USER  MOD Single : A 299 GLN     :      amide:sc=     1.2  K(o=1.2,f=-6.1!)
 USER  MOD Single : A 300 CYS SG  :   rot  180:sc=       0
 USER  MOD Single : A 301 SER OG  :   rot   -6:sc=   0.393!
 USER  MOD Single : A 304 THR OG1 :   rot   37:sc=  0.0273
+USER  MOD Single : A 401 RN2 O26 :   rot  180:sc=       0
 USER  MOD -----------------------------------------------------------------
 ATOM      1  N   SER A   1      -3.127   4.590 -16.755  1.00 20.99           N
 ANISOU    1  N   SER A   1     3047   2414   2514   -156   -664     23       N
@@ -7633,37 +7636,36 @@ HETATM 4697  O08 RN2 A 401       8.683  -0.581  22.224  1.00 28.61           O
 HETATM 4698  O16 RN2 A 401       9.592   1.779  20.658  1.00 26.14           O
 HETATM 4699  O17 RN2 A 401      10.124   3.341  22.141  1.00 19.86           O
 HETATM 4700  O26 RN2 A 401       7.294  -4.338  19.876  1.00 26.92           O
-HETATM 4701 H102 RN2 A 401      11.553  -2.174  22.487  1.00 26.95           H
-HETATM 4702 H101 RN2 A 401      11.240  -1.180  23.613  1.00 26.95           H
-HETATM 4703 H133 RN2 A 401      14.537  -1.294  24.369  1.00 41.91           H
-HETATM 4704 H131 RN2 A 401      13.550  -2.463  24.265  1.00 41.91           H
-HETATM 4705 H132 RN2 A 401      13.127  -1.161  24.957  1.00 41.91           H
-HETATM 4706 H201 RN2 A 401       7.893   5.493  21.658  1.00 33.79           H
-HETATM 4707 H211 RN2 A 401       5.768   5.577  20.741  1.00 37.32           H
-HETATM 4708 H221 RN2 A 401       4.321   3.783  20.973  1.00 34.59           H
-HETATM 4709 H241 RN2 A 401       7.122   1.795  23.030  1.00 36.88           H
-HETATM 4710 H013 RN2 A 401       4.861   2.829  18.618  1.00 31.49           H
-HETATM 4711 H011 RN2 A 401       6.002   2.465  17.660  1.00 31.49           H
-HETATM 4712 H012 RN2 A 401       6.315   2.888  19.101  1.00 31.49           H
-HETATM 4713 H022 RN2 A 401       5.439   0.432  18.250  1.00 29.06           H
-HETATM 4714 H021 RN2 A 401       4.918   0.884  19.619  1.00 29.06           H
-HETATM 4715 H032 RN2 A 401       6.816   0.411  20.585  1.00 25.86           H
-HETATM 4716 H031 RN2 A 401       7.624   1.088  19.471  1.00 25.86           H
-HETATM 4717 H041 RN2 A 401       7.793  -0.735  18.312  1.00 31.39           H
-HETATM 4718 H042 RN2 A 401       6.402  -1.224  18.733  1.00 31.39           H
-HETATM 4719 H051 RN2 A 401       7.542  -2.077  20.842  1.00 26.05           H
-HETATM 4720 H091 RN2 A 401      11.510  -0.365  20.989  1.00 21.37           H
-HETATM 4721 H111 RN2 A 401      13.254  -0.052  22.873  1.00 34.40           H
-HETATM 4722 H121 RN2 A 401      14.100  -2.555  22.045  1.00 39.57           H
-HETATM 4723 H123 RN2 A 401      14.704  -1.206  21.634  1.00 39.57           H
-HETATM 4724 H122 RN2 A 401      13.385  -1.677  21.011  1.00 39.57           H
-HETATM 4725 H181 RN2 A 401       9.302   4.361  23.505  1.00 31.61           H
-HETATM 4726 H182 RN2 A 401       9.139   2.846  23.678  1.00 31.61           H
-HETATM 4727 H231 RN2 A 401       5.001   1.897  22.119  1.00 33.11           H
-HETATM 4728  H1  RN2 A 401       6.863  -2.994  18.773  1.00 24.48           H
-HETATM 4729 H061 RN2 A 401       9.840  -1.734  19.620  1.00 36.13           H
-HETATM 4730 H141 RN2 A 401      11.345   1.139  23.085  1.00 22.15           H
-HETATM 4731 H261 RN2 A 401       7.388  -4.189  20.690  1.00 32.92           H
+HETATM 4701 H102 RN2 A 401      11.550  -2.203  22.477  1.00 26.95           H   std
+HETATM 4702 H101 RN2 A 401      11.226  -1.176  23.641  1.00 26.95           H   std
+HETATM 4703 H133 RN2 A 401      14.567  -1.286  24.373  1.00 41.91           H   std
+HETATM 4704 H131 RN2 A 401      13.547  -2.494  24.265  1.00 41.91           H   std
+HETATM 4705 H132 RN2 A 401      13.111  -1.149  24.980  1.00 41.91           H   std
+HETATM 4706 H201 RN2 A 401       7.918   5.525  21.654  1.00 33.79           H   std
+HETATM 4707 H211 RN2 A 401       5.756   5.610  20.721  1.00 37.32           H   std
+HETATM 4708 H221 RN2 A 401       4.284   3.785  20.957  1.00 34.59           H   std
+HETATM 4709 H241 RN2 A 401       7.134   1.761  23.050  1.00 36.88           H   std
+HETATM 4710 H013 RN2 A 401       4.833   2.842  18.620  1.00 31.49           H   std
+HETATM 4711 H011 RN2 A 401       6.012   2.466  17.631  1.00 31.49           H   std
+HETATM 4712 H012 RN2 A 401       6.335   2.903  19.119  1.00 31.49           H   std
+HETATM 4713 H022 RN2 A 401       5.433   0.414  18.225  1.00 29.06           H   std
+HETATM 4714 H021 RN2 A 401       4.895   0.881  19.640  1.00 29.06           H   std
+HETATM 4715 H032 RN2 A 401       6.812   0.409  20.615  1.00 25.86           H   std
+HETATM 4716 H031 RN2 A 401       7.647   1.108  19.465  1.00 25.86           H   std
+HETATM 4717 H041 RN2 A 401       7.812  -0.730  18.288  1.00 31.39           H   std
+HETATM 4718 H042 RN2 A 401       6.375  -1.236  18.723  1.00 31.39           H   std
+HETATM 4719 H051 RN2 A 401       7.531  -2.081  20.871  1.00 26.05           H   std
+HETATM 4720 H091 RN2 A 401      11.526  -0.365  20.964  1.00 21.37           H   std
+HETATM 4721 H111 RN2 A 401      13.258  -0.021  22.872  1.00 34.40           H   std
+HETATM 4722 H121 RN2 A 401      14.106  -2.583  22.053  1.00 39.57           H   std
+HETATM 4723 H123 RN2 A 401      14.731  -1.191  21.629  1.00 39.57           H   std
+HETATM 4724 H122 RN2 A 401      13.368  -1.677  20.985  1.00 39.57           H   std
+HETATM 4725 H181 RN2 A 401       9.308   4.388  23.520  1.00 31.61           H   std
+HETATM 4726 H182 RN2 A 401       9.139   2.823  23.698  1.00 31.61           H   std
+HETATM 4727 H231 RN2 A 401       4.975   1.865  22.123  1.00 33.11           H   std
+HETATM 4728  H1  RN2 A 401       6.847  -2.990  18.763  1.00 24.48           H   std
+HETATM 4729 H061 RN2 A 401       9.835  -1.732  19.625  1.00 36.13           H   std
+HETATM 4730 H141 RN2 A 401      11.341   1.137  23.078  1.00 22.15           H   std
 HETATM 4732 CL    CL A 402       0.000  16.453   0.000  0.50 28.11          CL
 HETATM 4733  O   HOH A 501      10.100 -30.679  17.622  1.00 55.06           O
 HETATM 4734  O   HOH A 502      16.412  30.456  -2.951  1.00 43.57           O

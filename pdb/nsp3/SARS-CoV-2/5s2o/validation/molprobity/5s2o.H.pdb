@@ -1,4 +1,4 @@
-USER  MOD reduce.3.3.160602 H: found=0, std=0, add=2641, rem=0, adj=77
+USER  MOD reduce.3.7.201124 H: found=0, std=0, add=2655, rem=0, adj=78
 HEADER    VIRAL PROTEIN                           02-NOV-20   5S2O
 TITLE     PANDDA ANALYSIS GROUP DEPOSITION -- CRYSTAL STRUCTURE OF SARS-COV-2
 TITLE    2 NSP3 MACRODOMAIN IN COMPLEX WITH Z645232558
@@ -6,8 +6,10 @@ COMPND    MOL_ID: 1;
 COMPND   2 MOLECULE: NON-STRUCTURAL PROTEIN 3;
 COMPND   3 CHAIN: A, B;
 COMPND   4 FRAGMENT: MACRODOMAIN;
-COMPND   5 SYNONYM: NSP3;
-COMPND   6 ENGINEERED: YES
+COMPND   5 SYNONYM: NSP3,PL2-PRO,PAPAIN-LIKE PROTEASE,PAPAIN-LIKE PROTEINASE,PL
+COMPND   6 PRO;
+COMPND   7 EC: 3.4.19.121, 3.4.22.-;
+COMPND   8 ENGINEERED: YES
 SOURCE    MOL_ID: 1;
 SOURCE   2 ORGANISM_SCIENTIFIC: SEVERE ACUTE RESPIRATORY SYNDROME CORONAVIRUS
 SOURCE   3 2;
@@ -22,6 +24,7 @@ EXPDTA    X-RAY DIFFRACTION
 AUTHOR    D.FEARON,M.SCHULLER,V.L.RANGEL,A.DOUANGAMATH,J.G.M.RACK,K.ZHU,
 AUTHOR   2 A.AIMON,J.BRANDAO-NETO,A.DIAS,L.DUNNET,T.J.GORRIE-STONE,A.J.POWELL,
 AUTHOR   3 T.KROJER,R.SKYNER,W.THOMPSON,I.AHEL,F.VON DELFT
+REVDAT   2   27-JAN-21 5S2O    1       COMPND
 REVDAT   1   13-JAN-21 5S2O    0
 JRNL        AUTH   D.FEARON,M.SCHULLER,V.L.RANGEL,A.DOUANGAMATH,J.G.M.RACK,
 JRNL        AUTH 2 K.ZHU,A.AIMON,J.BRANDAO-NETO,A.DIAS,L.DUNNET,
@@ -423,6 +426,7 @@ USER  MOD scores for adjustable sidechains, with "set" totals for H,N and Q
 USER  MOD "o" means original, "f" means flipped, "180deg" is methyl default
 USER  MOD "!" flags a clash with an overlap of 0.40A or greater
 USER  MOD flip categories: "K"=keep, "C"=clashes, "X"=uncertain, "F"=flip
+USER  MOD NoAdj-H: A 401 NXS H11 : A 401 NXS C2  : A 401 NXS C1  :(H bumps)
 USER  MOD Set 1.1: B 113 TYR OH  :   rot  176:sc=    1.43
 USER  MOD Set 1.2: B 139 SER OG  :   rot  153:sc=    2.42
 USER  MOD Set 2.1: B 110 LYS NZ  :NH3+   -165:sc=    2.64   (180deg=1.52)
@@ -503,6 +507,7 @@ USER  MOD Single : A 163 LYS NZ  :NH3+    180:sc=       0   (180deg=0)
 USER  MOD Single : A 166 SER OG A:   rot  180:sc=       0
 USER  MOD Single : A 166 SER OG B:   rot  -69:sc=   0.539
 USER  MOD Single : A 167 SER OG  :   rot  -78:sc=    2.38
+USER  MOD Single : A 401 NXS O1  :   rot  180:sc=       0
 USER  MOD Single : B   1 SER N   :NH3+    180:sc=       0   (180deg=0)
 USER  MOD Single : B   1 SER OG  :   rot  180:sc=       0
 USER  MOD Single : B   5 SER OG A:   rot  180:sc=       0
@@ -8384,6 +8389,20 @@ HETATM 2599  N2  NXS A 401      -1.014  14.785   1.687  0.85 36.20           N
 ANISOU 2599  N2  NXS A 401     4246   4937   4571   -371   -228   -549       N
 HETATM 2600  O1  NXS A 401      -8.352  14.712   0.446  0.85 32.44           O
 ANISOU 2600  O1  NXS A 401     4277   4445   3606   -546   -268     10       O
+HETATM    0  H9  NXS A 401      -7.694  14.287   2.253  0.85 35.72           H   new
+HETATM    0  H8  NXS A 401       0.427  14.394  -1.705  0.85 35.04           H   new
+HETATM    0  H7  NXS A 401       0.889  14.786   2.270  0.85 36.68           H   new
+HETATM    0  H6  NXS A 401      -5.443  15.860  -0.329  0.85 36.12           H   new
+HETATM    0  H5  NXS A 401      -5.992  14.528  -0.927  0.85 36.12           H   new
+HETATM    0  H4  NXS A 401      -3.643  14.763  -1.218  0.85 35.80           H   new
+HETATM    0  H3  NXS A 401      -4.033  13.427  -0.514  0.85 35.80           H   new
+HETATM    0  H2  NXS A 401      -3.794  13.510   2.176  0.85 37.64           H   new
+HETATM    0  H15 NXS A 401      -9.130  14.437   0.605  0.85 32.44           H   new
+HETATM    0  H14 NXS A 401       1.862  14.618   0.138  0.85 36.33           H   new
+HETATM    0  H13 NXS A 401      -5.457  14.906   3.095  0.85 37.19           H   new
+HETATM    0  H12 NXS A 401      -5.048  16.064   2.134  0.85 37.19           H   new
+HETATM    0  H10 NXS A 401      -7.493  13.124   1.234  0.85 35.72           H   new
+HETATM    0  H1  NXS A 401      -3.130  14.809   2.728  0.85 37.64           H   new
 HETATM 2601  O   HOH A 501     -10.571  18.726   9.142  1.00 42.78           O
 ANISOU 2601  O   HOH A 501     6024   4993   5238  -1134    -58    619       O
 HETATM 2602  O   HOH A 502      -2.876  22.801  13.905  1.00 69.34           O

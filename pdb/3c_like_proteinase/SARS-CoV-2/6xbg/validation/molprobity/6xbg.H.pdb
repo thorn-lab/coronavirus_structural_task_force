@@ -1,18 +1,19 @@
-USER  MOD reduce.3.3.160602 H: found=0, std=0, add=4797, rem=0, adj=156
+USER  MOD reduce.3.7.201124 H: found=0, std=0, add=4843, rem=0, adj=160
 HEADER    HYDROLASE/HYDROLASE INHIBITOR           05-JUN-20   6XBG
 TITLE     CRYSTAL STRUCTURE OF THE SARS-COV-2 (COVID-19) MAIN PROTEASE IN
 TITLE    2 COMPLEX WITH INHIBITOR UAW246
 COMPND    MOL_ID: 1;
-COMPND   2 MOLECULE: MAIN PROTEASE;
+COMPND   2 MOLECULE: 3C-LIKE PROTEINASE;
 COMPND   3 CHAIN: A, B;
 COMPND   4 FRAGMENT: UNP RESIDUES 3264-3569;
-COMPND   5 SYNONYM: 3C-LIKE PROTEINASE;
-COMPND   6 EC: 3.4.22.69;
-COMPND   7 ENGINEERED: YES;
-COMPND   8 MOL_ID: 2;
-COMPND   9 MOLECULE: INHIBITOR UAW246;
-COMPND   0 CHAIN: C, E;
-COMPND   1 ENGINEERED: YES
+COMPND   5 SYNONYM: 3CL-PRO,3CLP,MAIN PROTEASE,MPRO,NON-STRUCTURAL PROTEIN 5,
+COMPND   6 NSP5,SARS CORONAVIRUS MAIN PROTEINASE;
+COMPND   7 EC: 3.4.22.69;
+COMPND   8 ENGINEERED: YES;
+COMPND   9 MOL_ID: 2;
+COMPND   0 MOLECULE: INHIBITOR UAW246;
+COMPND   1 CHAIN: C, E;
+COMPND   2 ENGINEERED: YES
 SOURCE    MOL_ID: 1;
 SOURCE   2 ORGANISM_SCIENTIFIC: SEVERE ACUTE RESPIRATORY SYNDROME CORONAVIRUS
 SOURCE   3 2;
@@ -33,12 +34,20 @@ KEYWDS   5 ALPHEKETOAMIDE, ALPHA, KETOAMIDE, PEPTIDOMIMETIC, PROTEASE,
 KEYWDS   6 CYSTEINE, HYDROLASE-HYDROLASE INHIBITOR COMPLEX
 EXPDTA    X-RAY DIFFRACTION
 AUTHOR    M.SACCO,C.MA,J.WANG,Y.CHEN
+REVDAT   4   27-JAN-21 6XBG    1       COMPND
+REVDAT   3   23-DEC-20 6XBG    1       JRNL
+REVDAT   2   18-NOV-20 6XBG    1       JRNL
 REVDAT   1   17-JUN-20 6XBG    0
-JRNL        AUTH   C.MA,M.SACCO,Y.CHEN,J.WANG
-JRNL        TITL   CRYSTAL STRUCTURE OF THE SARS-COV-2 (COVID-19) MAIN PROTEASE
-JRNL        TITL 2 IN COMPLEX WITH INHIBITOR UAW246
-JRNL        REF    TO BE PUBLISHED
-JRNL        REFN
+JRNL        AUTH   M.D.SACCO,C.MA,P.LAGARIAS,A.GAO,J.A.TOWNSEND,X.MENG,P.DUBE,
+JRNL        AUTH 2 X.ZHANG,Y.HU,N.KITAMURA,B.HURST,B.TARBET,M.T.MARTY,
+JRNL        AUTH 3 A.KOLOCOURIS,Y.XIANG,Y.CHEN,J.WANG
+JRNL        TITL   STRUCTURE AND INHIBITION OF THE SARS-COV-2 MAIN PROTEASE
+JRNL        TITL 2 REVEAL STRATEGY FOR DEVELOPING DUAL INHIBITORS AGAINST M PRO
+JRNL        TITL 3 AND CATHEPSIN L.
+JRNL        REF    SCI ADV                       V.   6       2020
+JRNL        REFN                   ESSN 2375-2548
+JRNL        PMID   33158912
+JRNL        DOI    10.1126/SCIADV.ABE0751
 REMARK   2
 REMARK   2 RESOLUTION.    1.45 ANGSTROMS.
 REMARK   3
@@ -520,6 +529,14 @@ USER  MOD scores for adjustable sidechains, with "set" totals for H,N and Q
 USER  MOD "o" means original, "f" means flipped, "180deg" is methyl default
 USER  MOD "!" flags a clash with an overlap of 0.40A or greater
 USER  MOD flip categories: "K"=keep, "C"=clashes, "X"=uncertain, "F"=flip
+USER  MOD NoAdj-H: C   3 UZ4 H2  : C   3 UZ4 N19 : C   2 LEU C   :(H bumps)
+USER  MOD NoAdj-H: C   3 UZ4 H13 : C   3 UZ4 C28 : A 145 CYS SG  :(H bumps)
+USER  MOD NoAdj-H: C   3 UZ4 H1  : C   3 UZ4 N19 : C   2 LEU C   :(H bumps)
+USER  MOD NoAdj-H: C   4 UZ1 H2  : C   4 UZ1 N33 : C   3 UZ4 C31 :(H bumps)
+USER  MOD NoAdj-H: E   3 UZ4 H2  : E   3 UZ4 N19 : E   2 LEU C   :(H bumps)
+USER  MOD NoAdj-H: E   3 UZ4 H13 : E   3 UZ4 C28 : B 145 CYS SG  :(H bumps)
+USER  MOD NoAdj-H: E   3 UZ4 H1  : E   3 UZ4 N19 : E   2 LEU C   :(H bumps)
+USER  MOD NoAdj-H: E   4 UZ1 H2  : E   4 UZ1 N33 : E   3 UZ4 C31 :(H bumps)
 USER  MOD Set 1.1: B 243 THR OG1 :   rot -165:sc=   0.845
 USER  MOD Set 1.2: B 246 HIS     :     no HD1:sc=   0.762  K(o=1.6,f=-3.1!)
 USER  MOD Set 2.1: B 164 HIS     :     no HE2:sc=   0.674  K(o=1.5,f=-0.85)
@@ -545,40 +562,44 @@ USER  MOD Set 9.3: B  65 ASN     :      amide:sc=    1.24  K(o=2.8,f=-2.3!)
 USER  MOD Set 9.4: B 501 GOL O3 B:   rot  107:sc=    1.43
 USER  MOD Set10.1: B  44 CYS SG  :   rot  180:sc=  -0.133
 USER  MOD Set10.2: B  54 TYR OH  :   rot -176:sc=    1.25
-USER  MOD Set11.1: B  28 ASN     :      amide:sc=    1.03  K(o=0.72,f=-3.9!)
-USER  MOD Set11.2: B 117 CYS SG B:   rot  -92:sc=  -0.315
-USER  MOD Set12.1: B  21 THR OG1 :   rot   88:sc=    2.17
-USER  MOD Set12.2: B  26 THR OG1 :   rot  -75:sc=    2.15
-USER  MOD Set13.1: A  10 SER OG  :   rot   70:sc=    1.45
-USER  MOD Set13.2: B  10 SER OG  :   rot   57:sc=    1.44
-USER  MOD Set14.1: A 225 THR OG1 :   rot  -75:sc=       1
-USER  MOD Set14.2: A 269 LYS NZ  :NH3+   -149:sc=   0.619   (180deg=0)
-USER  MOD Set15.1: A 243 THR OG1 :   rot -171:sc=    1.48
-USER  MOD Set15.2: A 246 HIS     :     no HD1:sc=   0.546  K(o=2,f=-2.5!)
-USER  MOD Set16.1: A 190 THR OG1 :   rot  164:sc=   0.255
-USER  MOD Set16.2: A 192 GLN     :      amide:sc=    1.18  K(o=1.4,f=-3.8!)
-USER  MOD Set17.1: A 164 HIS     :     no HD1:sc= -0.0365  K(o=0.7,f=-0.69)
-USER  MOD Set17.2: A 175 THR OG1 :   rot   85:sc=   0.735
-USER  MOD Set18.1: A 144 SER OG  :   rot  -82:sc=   0.413
-USER  MOD Set18.2: A 161 TYR OH  :   rot -158:sc=    1.07
-USER  MOD Set18.3: A 163 HIS     :     no HD1:sc=    1.36  K(o=2.8,f=-6.5!)
-USER  MOD Set19.1: A 133 ASN     :      amide:sc=    1.34  K(o=3.4,f=-0.68!)
-USER  MOD Set19.2: A 135 THR OG1 :   rot  -75:sc=    2.07
-USER  MOD Set20.1: A 113 SER OG  :   rot  -17:sc=    1.65
-USER  MOD Set20.2: A 127 GLN     :      amide:sc=    1.04  K(o=2.7,f=-0.78)
-USER  MOD Set21.1: A  19 GLN     :      amide:sc=  -0.645  K(o=-0.65,f=-2.6)
-USER  MOD Set21.2: A 119 ASN     :      amide:sc=-0.00323  X(o=-0.65,f=-0.65)
-USER  MOD Set22.1: A 102 LYS NZ  :NH3+   -126:sc=   0.993   (180deg=0)
-USER  MOD Set22.2: A 158 SER OG  :   rot   68:sc=    2.16
-USER  MOD Set23.1: A  83 GLN     :      amide:sc=    2.83  K(o=3.1,f=0.15)
-USER  MOD Set23.2: A  88 LYS NZ  :NH3+    180:sc=   0.305   (180deg=0)
-USER  MOD Set24.1: A  63 ASN     :      amide:sc=   0.948  K(o=3.3,f=-3.1)
-USER  MOD Set24.2: A  80 HIS     :     no HE2:sc=    2.32  K(o=3.3,f=-9.6!)
-USER  MOD Set25.1: A  62 SER OG  :   rot -120:sc=  -0.257
-USER  MOD Set25.2: A  64 HIS     :     no HD1:sc=  -0.347  X(o=0.059,f=-0.23)
-USER  MOD Set25.3: A  65 ASN     :      amide:sc=   0.664  K(o=0.059,f=-5.2!)
-USER  MOD Set26.1: A  21 THR OG1 :   rot  -83:sc=    1.57
-USER  MOD Set26.2: A  26 THR OG1 :   rot  180:sc=   0.484
+USER  MOD Set11.1: B  41 HIS     :     no HE2:sc=    1.66  K(o=3.5,f=-9.4!)
+USER  MOD Set11.2: E   3 UZ4 O29 :   rot -107:sc=    1.84
+USER  MOD Set12.1: B  28 ASN     :      amide:sc=    1.03  K(o=0.72,f=-3.9!)
+USER  MOD Set12.2: B 117 CYS SG B:   rot  -92:sc=  -0.315
+USER  MOD Set13.1: B  21 THR OG1 :   rot   88:sc=    2.17
+USER  MOD Set13.2: B  26 THR OG1 :   rot  -75:sc=    2.15
+USER  MOD Set14.1: A  10 SER OG  :   rot   70:sc=    1.45
+USER  MOD Set14.2: B  10 SER OG  :   rot   57:sc=    1.44
+USER  MOD Set15.1: A 225 THR OG1 :   rot  -75:sc=       1
+USER  MOD Set15.2: A 269 LYS NZ  :NH3+   -149:sc=   0.619   (180deg=0)
+USER  MOD Set16.1: A 243 THR OG1 :   rot -171:sc=    1.48
+USER  MOD Set16.2: A 246 HIS     :     no HD1:sc=   0.546  K(o=2,f=-2.5!)
+USER  MOD Set17.1: A 190 THR OG1 :   rot  164:sc=   0.255
+USER  MOD Set17.2: A 192 GLN     :      amide:sc=    1.18  K(o=1.4,f=-3.8!)
+USER  MOD Set18.1: A 164 HIS     :     no HD1:sc= -0.0365  K(o=0.7,f=-0.69)
+USER  MOD Set18.2: A 175 THR OG1 :   rot   85:sc=   0.735
+USER  MOD Set19.1: A 144 SER OG  :   rot  -82:sc=   0.413
+USER  MOD Set19.2: A 161 TYR OH  :   rot -158:sc=    1.07
+USER  MOD Set19.3: A 163 HIS     :     no HD1:sc=    1.36  K(o=2.8,f=-6.5!)
+USER  MOD Set20.1: A 133 ASN     :      amide:sc=    1.34  K(o=3.4,f=-0.68!)
+USER  MOD Set20.2: A 135 THR OG1 :   rot  -75:sc=    2.07
+USER  MOD Set21.1: A 113 SER OG  :   rot  -17:sc=    1.65
+USER  MOD Set21.2: A 127 GLN     :      amide:sc=    1.04  K(o=2.7,f=-0.78)
+USER  MOD Set22.1: A  19 GLN     :      amide:sc=  -0.645  K(o=-0.65,f=-2.6)
+USER  MOD Set22.2: A 119 ASN     :      amide:sc=-0.00323  X(o=-0.65,f=-0.65)
+USER  MOD Set23.1: A 102 LYS NZ  :NH3+   -126:sc=   0.993   (180deg=0)
+USER  MOD Set23.2: A 158 SER OG  :   rot   68:sc=    2.16
+USER  MOD Set24.1: A  83 GLN     :      amide:sc=    2.83  K(o=3.1,f=0.15)
+USER  MOD Set24.2: A  88 LYS NZ  :NH3+    180:sc=   0.305   (180deg=0)
+USER  MOD Set25.1: A  63 ASN     :      amide:sc=   0.948  K(o=3.3,f=-3.1)
+USER  MOD Set25.2: A  80 HIS     :     no HE2:sc=    2.32  K(o=3.3,f=-9.6!)
+USER  MOD Set26.1: A  62 SER OG  :   rot -120:sc=  -0.257
+USER  MOD Set26.2: A  64 HIS     :     no HD1:sc=  -0.347  X(o=0.059,f=-0.23)
+USER  MOD Set26.3: A  65 ASN     :      amide:sc=   0.664  K(o=0.059,f=-5.2!)
+USER  MOD Set27.1: A  41 HIS     :     no HE2:sc=    2.25  K(o=3.5,f=-12!)
+USER  MOD Set27.2: C   3 UZ4 O29 :   rot -133:sc=    1.27
+USER  MOD Set28.1: A  21 THR OG1 :   rot  -83:sc=    1.57
+USER  MOD Set28.2: A  26 THR OG1 :   rot  180:sc=   0.484
 USER  MOD Single : A   5 LYS NZ  :NH3+   -157:sc=   0.917   (180deg=-0.205)
 USER  MOD Single : A  12 LYS NZ  :NH3+    163:sc=   0.598   (180deg=0.185)
 USER  MOD Single : A  16 CYS SG  :   rot   84:sc=  -0.281
@@ -589,7 +610,6 @@ USER  MOD Single : A  25 THR OG1 :   rot  172:sc=    0.33
 USER  MOD Single : A  28 ASN     :      amide:sc=   0.883  K(o=0.88,f=-3.7!)
 USER  MOD Single : A  37 TYR OH  :   rot  144:sc=    2.15
 USER  MOD Single : A  38 CYS SG  :   rot  160:sc=-0.000369
-USER  MOD Single : A  41 HIS     :     no HD1:sc=    2.21  K(o=2.2,f=-7.9!)
 USER  MOD Single : A  44 CYS SG  :   rot  180:sc= -0.0298
 USER  MOD Single : A  45 THR OG1 :   rot  180:sc=0.000134
 USER  MOD Single : A  46 SER OG  :   rot  180:sc=       0
@@ -624,7 +644,7 @@ USER  MOD Single : A 128 CYS SG B:   rot  180:sc=       0
 USER  MOD Single : A 137 LYS NZ  :NH3+    147:sc=   0.239   (180deg=0.0694)
 USER  MOD Single : A 139 SER OG A:   rot -100:sc=    1.43
 USER  MOD Single : A 139 SER OG B:   rot  -90:sc=   -2.61!
-USER  MOD Single : A 142 ASN     :      amide:sc= -0.0713  K(o=-0.071,f=-2.1!)
+USER  MOD Single : A 142 ASN     :      amide:sc=  -0.236  K(o=-0.24,f=-3.8!)
 USER  MOD Single : A 147 SER OG  :   rot   83:sc=    1.26
 USER  MOD Single : A 151 ASN     :      amide:sc=    2.31  K(o=2.3,f=-0.24!)
 USER  MOD Single : A 156 CYS SG  :   rot  180:sc=  -0.129
@@ -676,7 +696,6 @@ USER  MOD Single : B  24 THR OG1B:   rot  -60:sc=    2.54
 USER  MOD Single : B  25 THR OG1 :   rot  101:sc=    2.96
 USER  MOD Single : B  37 TYR OH  :   rot  142:sc=    2.07
 USER  MOD Single : B  38 CYS SG  :   rot  160:sc=  -0.221
-USER  MOD Single : B  41 HIS     :     no HD1:sc=    2.23  K(o=2.2,f=-6!)
 USER  MOD Single : B  45 THR OG1 :   rot  154:sc=   0.629
 USER  MOD Single : B  46 SER OG  :   rot -103:sc=0.000146
 USER  MOD Single : B  51 ASN     :      amide:sc=   0.663  K(o=0.66,f=-1.5!)
@@ -710,7 +729,7 @@ USER  MOD Single : B 126 TYR OH  :   rot  156:sc=   0.348
 USER  MOD Single : B 128 CYS SG A:   rot   69:sc=-0.00455
 USER  MOD Single : B 128 CYS SG B:   rot   43:sc=   -4.53!
 USER  MOD Single : B 137 LYS NZ  :NH3+    180:sc=       0   (180deg=0)
-USER  MOD Single : B 142 ASN     :      amide:sc=  -0.211  K(o=-0.21,f=-1.2!)
+USER  MOD Single : B 142 ASN     :      amide:sc=  -0.211  K(o=-0.21,f=-2.2!)
 USER  MOD Single : B 147 SER OG  :   rot   82:sc=    1.19
 USER  MOD Single : B 151 ASN     :      amide:sc=    2.61  K(o=2.6,f=0.38)
 USER  MOD Single : B 154 TYR OH  :   rot  180:sc=       0
@@ -1409,9 +1428,9 @@ ATOM      0  H   HIS A  41      16.785   7.423  30.215  1.00 17.04           H  
 ATOM      0  HA  HIS A  41      17.549   9.003  32.136  1.00 17.82           H   new
 ATOM      0  HB2 HIS A  41      16.081  10.561  31.392  1.00 19.02           H   new
 ATOM      0  HB3 HIS A  41      16.816   9.931  30.169  1.00 19.02           H   new
+ATOM      0  HD1 HIS A  41      15.429   8.637  28.496  1.00 20.09           H   new
 ATOM      0  HD2 HIS A  41      13.342  10.144  31.416  1.00 19.25           H   new
 ATOM      0  HE1 HIS A  41      13.161   8.447  27.836  1.00 18.70           H   new
-ATOM      0  HE2 HIS A  41      11.892   9.452  29.590  1.00 20.15           H   new
 ATOM    324  N   VAL A  42      15.396   7.106  33.177  1.00 20.97           N
 ATOM    325  CA  VAL A  42      14.653   6.735  34.425  1.00 20.77           C
 ATOM    326  C   VAL A  42      15.534   7.091  35.640  1.00 25.13           C
@@ -6181,9 +6200,9 @@ ATOM      0  H   HIS B  41     -23.437 -18.764   9.995  1.00 14.96           H  
 ATOM      0  HA  HIS B  41     -24.279 -20.551   8.252  1.00 15.29           H   new
 ATOM      0  HB2 HIS B  41     -23.518 -19.247   6.543  1.00 17.41           H   new
 ATOM      0  HB3 HIS B  41     -24.272 -18.347   7.569  1.00 17.41           H   new
+ATOM      0  HD1 HIS B  41     -22.981 -16.552   8.724  1.00 19.66           H   new
 ATOM      0  HD2 HIS B  41     -20.796 -18.658   6.305  1.00 18.07           H   new
 ATOM      0  HE1 HIS B  41     -21.000 -15.310   8.386  1.00 19.12           H   new
-ATOM      0  HE2 HIS B  41     -19.623 -16.604   6.954  1.00 19.30           H   new
 ATOM   2736  N   VAL B  42     -21.476 -21.230   9.284  1.00 15.20           N
 ATOM   2737  CA  VAL B  42     -20.467 -22.320   9.235  1.00 14.01           C
 ATOM   2738  C   VAL B  42     -21.163 -23.636   8.853  1.00 15.32           C
@@ -10344,6 +10363,13 @@ HETATM 4842  C25 P6S C   1      11.662  21.897  25.659  1.00 30.07           C
 HETATM 4843  C27 P6S C   1      10.631  20.041  24.462  1.00 29.14           C
 HETATM 4844  O20 P6S C   1      11.629  16.938  26.128  1.00 23.99           O
 HETATM 4845  O28 P6S C   1      10.629  15.055  25.435  1.00 24.25           O
+HETATM    0  H9  P6S C   1      13.023  21.306  27.098  1.00 29.48           H   new
+HETATM    0  H8  P6S C   1      10.261  17.434  24.777  1.00 26.25           H   new
+HETATM    0  H7  P6S C   1      11.703  17.360  24.189  1.00 26.25           H   new
+HETATM    0  H22 P6S C   1      10.004  19.730  23.791  1.00 29.14           H   new
+HETATM    0  H21 P6S C   1      11.754  22.851  25.811  1.00 30.07           H   new
+HETATM    0  H20 P6S C   1      12.775  18.956  26.676  1.00 27.49           H   new
+HETATM    0  H10 P6S C   1      10.262  22.051  24.147  1.00 30.77           H   new
 ATOM   4846  N   LEU C   2      11.905  15.068  27.230  1.00 21.82           N
 ATOM   4847  CA  LEU C   2      11.828  13.644  27.445  1.00 20.07           C
 ATOM   4848  C   LEU C   2      10.495  13.254  28.025  1.00 21.23           C
@@ -10375,10 +10401,26 @@ HETATM 4863  C28 UZ4 C   3       9.258  10.212  28.778  1.00 19.61           C
 HETATM 4864  O29 UZ4 C   3      10.448  10.555  29.564  1.00 22.23           O
 HETATM 4865  C31 UZ4 C   3       8.205   9.759  29.845  1.00 23.31           C
 HETATM 4866  O32 UZ4 C   3       7.094   9.366  29.505  1.00 19.70           O
+HETATM    0  H9  UZ4 C   3       6.089  13.032  28.209  1.00 19.82           H   new
+HETATM    0  H8  UZ4 C   3       7.006  14.226  27.802  1.00 19.82           H   new
+HETATM    0  H7  UZ4 C   3       8.056  12.971  26.162  1.00 16.19           H   new
+HETATM    0  H6  UZ4 C   3       8.027  10.716  26.452  1.00 17.59           H   new
+HETATM    0  H5  UZ4 C   3       6.941  10.881  27.559  1.00 17.59           H   new
+HETATM    0  H4  UZ4 C   3       8.405  12.117  28.855  1.00 18.61           H   new
+HETATM    0  H14 UZ4 C   3      11.064  10.010  29.392  1.00 22.23           H   new
+HETATM    0  H12 UZ4 C   3       4.391  13.170  25.043  1.00 19.00           H   new
+HETATM    0  H11 UZ4 C   3       4.487  14.216  27.131  1.00 18.96           H   new
+HETATM    0  H10 UZ4 C   3       5.528  14.994  26.269  1.00 18.96           H   new
 HETATM 4867  N33 UZ1 C   4       8.604   9.810  31.191  1.00 23.95           N
 HETATM 4868  C34 UZ1 C   4       7.720   9.371  32.273  1.00 27.35           C
 HETATM 4869  C35 UZ1 C   4       7.988   9.798  33.755  1.00 27.41           C
 HETATM 4870  C36 UZ1 C   4       6.820  10.365  33.028  1.00 27.13           C
+HETATM    0  H8  UZ1 C   4       6.801  11.302  32.778  1.00 27.13           H   new
+HETATM    0  H7  UZ1 C   4       5.916  10.120  33.279  1.00 27.13           H   new
+HETATM    0  H6  UZ1 C   4       7.864   9.171  34.485  1.00 27.41           H   new
+HETATM    0  H5  UZ1 C   4       8.750  10.353  33.984  1.00 27.41           H   new
+HETATM    0  H4  UZ1 C   4       7.590   8.537  31.795  1.00 27.35           H   new
+HETATM    0  H1  UZ1 C   4       9.282  10.310  31.366  1.00 23.95           H   new
 TER    4871      UZ1 C   4
 HETATM 4872  C21 P6S E   1     -20.415 -11.026  -0.482  1.00 37.89           C
 HETATM 4873  C22 P6S E   1     -19.078 -11.780  -0.863  1.00 42.56           C
@@ -10390,6 +10432,13 @@ HETATM 4878  C25 P6S E   1     -16.627 -13.092  -1.624  1.00 48.65           C
 HETATM 4879  C27 P6S E   1     -17.968 -11.087  -1.400  1.00 44.65           C
 HETATM 4880  O20 P6S E   1     -21.419 -11.865   0.255  1.00 36.31           O
 HETATM 4881  O28 P6S E   1     -20.335 -11.503   2.183  1.00 31.64           O
+HETATM    0  H9  P6S E   1     -17.623 -14.781  -0.981  1.00 47.18           H   new
+HETATM    0  H8  P6S E   1     -20.193 -10.255   0.063  1.00 37.89           H   new
+HETATM    0  H7  P6S E   1     -20.826 -10.690  -1.294  1.00 37.89           H   new
+HETATM    0  H22 P6S E   1     -18.039 -10.126  -1.515  1.00 44.65           H   new
+HETATM    0  H21 P6S E   1     -15.803 -13.537  -1.877  1.00 48.65           H   new
+HETATM    0  H20 P6S E   1     -19.642 -13.728  -0.372  1.00 42.53           H   new
+HETATM    0  H10 P6S E   1     -16.042 -11.188  -2.140  1.00 45.96           H   new
 ATOM   4882  N   LEU E   2     -21.700 -13.346   2.135  1.00 26.64           N
 ATOM   4883  CA  LEU E   2     -21.222 -13.909   3.371  1.00 25.69           C
 ATOM   4884  C   LEU E   2     -19.737 -14.238   3.316  1.00 23.12           C
@@ -10421,10 +10470,26 @@ HETATM 4899  C28 UZ4 E   3     -17.479 -15.143   5.821  1.00 19.85           C
 HETATM 4900  O29 UZ4 E   3     -18.443 -16.155   5.582  1.00 22.82           O
 HETATM 4901  C31 UZ4 E   3     -16.171 -15.905   5.800  1.00 19.63           C
 HETATM 4902  O32 UZ4 E   3     -15.135 -15.266   5.965  1.00 17.67           O
+HETATM    0  H9  UZ4 E   3     -15.588 -13.292   2.490  1.00 22.82           H   new
+HETATM    0  H8  UZ4 E   3     -16.861 -12.881   1.688  1.00 22.82           H   new
+HETATM    0  H7  UZ4 E   3     -17.714 -11.754   3.443  1.00 19.98           H   new
+HETATM    0  H6  UZ4 E   3     -16.944 -12.468   5.527  1.00 19.48           H   new
+HETATM    0  H5  UZ4 E   3     -15.744 -13.183   4.834  1.00 19.48           H   new
+HETATM    0  H4  UZ4 E   3     -17.226 -14.703   3.749  1.00 20.75           H   new
+HETATM    0  H14 UZ4 E   3     -19.112 -16.026   6.073  1.00 22.82           H   new
+HETATM    0  H12 UZ4 E   3     -14.628  -9.796   2.614  1.00 23.74           H   new
+HETATM    0  H11 UZ4 E   3     -14.542 -11.729   1.264  1.00 24.01           H   new
+HETATM    0  H10 UZ4 E   3     -15.882 -11.030   0.877  1.00 24.01           H   new
 HETATM 4903  N33 UZ1 E   4     -16.164 -17.260   5.590  1.00 18.93           N
 HETATM 4904  C34 UZ1 E   4     -15.007 -18.064   5.633  1.00 19.47           C
 HETATM 4905  C35 UZ1 E   4     -15.076 -19.520   5.141  1.00 19.55           C
 HETATM 4906  C36 UZ1 E   4     -14.282 -18.469   4.349  1.00 19.42           C
+HETATM    0  H8  UZ1 E   4     -14.590 -18.159   3.483  1.00 19.42           H   new
+HETATM    0  H7  UZ1 E   4     -13.313 -18.499   4.311  1.00 19.42           H   new
+HETATM    0  H6  UZ1 E   4     -14.624 -20.232   5.620  1.00 19.55           H   new
+HETATM    0  H5  UZ1 E   4     -15.901 -19.892   4.792  1.00 19.55           H   new
+HETATM    0  H4  UZ1 E   4     -14.737 -17.622   6.453  1.00 19.47           H   new
+HETATM    0  H1  UZ1 E   4     -16.902 -17.584   5.290  1.00 18.93           H   new
 TER    4907      UZ1 E   4
 HETATM 4908  C1 AGOL B 501     -23.203 -36.146  21.425  0.50 36.50           C
 HETATM 4909  C1 BGOL B 501     -23.040 -36.301  21.532  0.50 24.19           C
