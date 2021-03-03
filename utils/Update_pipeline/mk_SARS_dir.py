@@ -81,8 +81,8 @@ def blast_search (i):
 
 def namer (i):
     '''
-    protein_name is the string between the seq.id and the brackets[]
-    taxo_name is the string between the brackets[]
+    protein_name is the string between the seq.id and the brackets []
+    taxo_name is the string between the brackets []
     '''
     protein_name = seq_fasta[i].description.split(" ", 1)
     protein_name = protein_name[1].split(" [", 1)[0]
