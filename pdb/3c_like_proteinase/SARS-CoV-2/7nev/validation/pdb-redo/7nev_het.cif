@@ -1,0 +1,248 @@
+global_
+_lib_name         mon_lib
+_lib_version      5.52
+_lib_update       17/08/20
+# ------------------------------------------------
+#
+# ---   LIST OF MONOMERS ---
+#
+data_comp_list
+loop_
+_chem_comp.id
+_chem_comp.three_letter_code
+_chem_comp.name
+_chem_comp.group
+_chem_comp.number_atoms_all
+_chem_comp.number_atoms_nh
+_chem_comp.desc_level
+AR7      AR7 '.                                   ' .                  23  11 .
+#
+# ---   LIST OF LINKS ---
+#
+data_link_list
+loop_
+_chem_link.id
+_chem_link.comp_id_1
+_chem_link.mod_id_1
+_chem_link.group_comp_1
+_chem_link.comp_id_2
+_chem_link.mod_id_2
+_chem_link.group_comp_2
+_chem_link.name
+CYS-AR7  CYS      .        .        AR7      .        .
+ bond_CYS-SG_=_AR7-C
+LEU-AR7  LEU      .        .        AR7      .        .
+ bond_LEU-C_=_AR7-N
+#
+# --- DESCRIPTION OF MONOMERS ---
+#
+data_comp_AR7
+#
+loop_
+_chem_comp_atom.comp_id
+_chem_comp_atom.atom_id
+_chem_comp_atom.type_symbol
+_chem_comp_atom.type_energy
+_chem_comp_atom.partial_charge
+_chem_comp_atom.x
+_chem_comp_atom.y
+_chem_comp_atom.z
+ AR7           O      O    O         0.000      7.976   -4.253   20.763
+ AR7           C      C    C1        0.000      7.840   -3.369   19.895
+ AR7           H      H    H         0.000      7.809   -3.609   18.845
+ AR7           CA     C    CH1       0.000      7.719   -1.924   20.391
+ AR7           HA     H    H         0.000      7.084   -1.920   21.288
+ AR7           N      N    NT2       0.000      9.055   -1.400   20.764
+ AR7           HN2    H    H         0.000      9.770   -2.129   20.605
+ AR7           HN1    H    H         0.000      8.964   -0.426   21.097
+ AR7           CB     C    CH2       0.000      7.077   -1.009   19.344
+ AR7           HB1    H    H         0.000      6.014   -1.258   19.312
+ AR7           HB2    H    H         0.000      7.536   -1.253   18.383
+ AR7           CG     C    CH2       0.000      7.243    0.479   19.625
+ AR7           HG1    H    H         0.000      7.415    0.980   18.670
+ AR7           HG2    H    H         0.000      8.122    0.601   20.261
+ AR7           CD     C    CH2       0.000      6.033    1.089   20.308
+ AR7           HD1    H    H         0.000      5.168    0.892   19.670
+ AR7           HD2    H    H         0.000      6.203    2.166   20.366
+ AR7           NE     N    N         0.000      5.784    0.562   21.643
+ AR7           CZ     C    C         0.000      4.864    1.038   22.474
+ AR7           NH2    N    N         0.000      4.848    0.651   23.737
+ AR7           HNH2   H    H         0.000      4.187    0.995   24.329
+ AR7           NH1    N    N         0.000      3.887    1.797   22.007
+ AR7           HNH1   H    H         0.000      3.227    2.139   22.601
+loop_
+_chem_comp_tree.comp_id
+_chem_comp_tree.atom_id
+_chem_comp_tree.atom_back
+_chem_comp_tree.atom_forward
+_chem_comp_tree.connect_type
+ AR7      O      n/a    C      START
+ AR7      C      O      CA     .
+ AR7      H      C      .      .
+ AR7      CA     C      CB     .
+ AR7      HA     CA     .      .
+ AR7      N      CA     HN1    .
+ AR7      HN2    N      .      .
+ AR7      HN1    N      .      .
+ AR7      CB     CA     CG     .
+ AR7      HB1    CB     .      .
+ AR7      HB2    CB     .      .
+ AR7      CG     CB     CD     .
+ AR7      HG1    CG     .      .
+ AR7      HG2    CG     .      .
+ AR7      CD     CG     NE     .
+ AR7      HD1    CD     .      .
+ AR7      HD2    CD     .      .
+ AR7      NE     CD     CZ     .
+ AR7      CZ     NE     NH1    .
+ AR7      NH2    CZ     HNH2   .
+ AR7      HNH2   NH2    .      .
+ AR7      NH1    CZ     HNH1   .
+ AR7      HNH1   NH1    .      END
+loop_
+_chem_comp_bond.comp_id
+_chem_comp_bond.atom_id_1
+_chem_comp_bond.atom_id_2
+_chem_comp_bond.type
+_chem_comp_bond.value_dist
+_chem_comp_bond.value_dist_esd
+ AR7      N      CA        single      1.475    0.020
+ AR7      CA     C         single      1.510    0.020
+ AR7      CB     CA        single      1.524    0.020
+ AR7      C      O         deloc       1.220    0.020
+ AR7      CG     CB        single      1.524    0.020
+ AR7      CD     CG        single      1.524    0.020
+ AR7      NE     CD        single      1.455    0.020
+ AR7      CZ     NE        deloc       1.330    0.020
+ AR7      NH1    CZ        deloc       1.330    0.020
+ AR7      NH2    CZ        deloc       1.330    0.020
+ AR7      HN1    N         single      1.033    0.020
+ AR7      HN2    N         single      1.033    0.020
+ AR7      HA     CA        single      1.099    0.020
+ AR7      H      C         single      1.077    0.020
+ AR7      HB1    CB        single      1.092    0.020
+ AR7      HB2    CB        single      1.092    0.020
+ AR7      HG1    CG        single      1.092    0.020
+ AR7      HG2    CG        single      1.092    0.020
+ AR7      HD1    CD        single      1.092    0.020
+ AR7      HD2    CD        single      1.092    0.020
+ AR7      HNH1   NH1       single      0.954    0.020
+ AR7      HNH2   NH2       single      0.954    0.020
+loop_
+_chem_comp_angle.comp_id
+_chem_comp_angle.atom_id_1
+_chem_comp_angle.atom_id_2
+_chem_comp_angle.atom_id_3
+_chem_comp_angle.value_angle
+_chem_comp_angle.value_angle_esd
+ AR7      O      C      H       123.000    3.000
+ AR7      O      C      CA      120.500    3.000
+ AR7      H      C      CA      120.000    3.000
+ AR7      C      CA     HA      108.810    3.000
+ AR7      C      CA     N       109.500    3.000
+ AR7      C      CA     CB      109.470    3.000
+ AR7      HA     CA     N       109.500    3.000
+ AR7      HA     CA     CB      108.340    3.000
+ AR7      N      CA     CB      109.500    3.000
+ AR7      CA     N      HN2     109.500    3.000
+ AR7      CA     N      HN1     109.500    3.000
+ AR7      HN2    N      HN1     109.500    3.000
+ AR7      CA     CB     HB1     109.470    3.000
+ AR7      CA     CB     HB2     109.470    3.000
+ AR7      CA     CB     CG      111.000    3.000
+ AR7      HB1    CB     HB2     107.900    3.000
+ AR7      HB1    CB     CG      109.470    3.000
+ AR7      HB2    CB     CG      109.470    3.000
+ AR7      CB     CG     HG1     109.470    3.000
+ AR7      CB     CG     HG2     109.470    3.000
+ AR7      CB     CG     CD      111.000    3.000
+ AR7      HG1    CG     HG2     107.900    3.000
+ AR7      HG1    CG     CD      109.470    3.000
+ AR7      HG2    CG     CD      109.470    3.000
+ AR7      CG     CD     HD1     109.470    3.000
+ AR7      CG     CD     HD2     109.470    3.000
+ AR7      CG     CD     NE      105.000    3.000
+ AR7      HD1    CD     HD2     107.900    3.000
+ AR7      HD1    CD     NE      109.470    3.000
+ AR7      HD2    CD     NE      109.470    3.000
+ AR7      CD     NE     CZ      127.000    3.000
+ AR7      NE     CZ     NH2     120.000    3.000
+ AR7      NE     CZ     NH1     120.000    3.000
+ AR7      NH2    CZ     NH1     120.000    3.000
+ AR7      CZ     NH2    HNH2    120.000    3.000
+ AR7      CZ     NH1    HNH1    120.000    3.000
+loop_
+_chem_comp_tor.comp_id
+_chem_comp_tor.id
+_chem_comp_tor.atom_id_1
+_chem_comp_tor.atom_id_2
+_chem_comp_tor.atom_id_3
+_chem_comp_tor.atom_id_4
+_chem_comp_tor.value_angle
+_chem_comp_tor.value_angle_esd
+_chem_comp_tor.period
+ AR7      var_1            O      C      CA     CB              -159.802           20.000   3
+ AR7      var_2            C      CA     N      HN1              180.000           20.000   3
+ AR7      var_3            C      CA     CB     CG               180.000           20.000   3
+ AR7      var_4            CA     CB     CG     CD               180.000           20.000   3
+ AR7      var_5            CB     CG     CD     NE               180.000           20.000   3
+ AR7      var_6            CG     CD     NE     CZ               173.181           20.000   3
+ AR7      CONST_1          CD     NE     CZ     NH1              180.000            0.000   0
+ AR7      CONST_2          NE     CZ     NH2    HNH2             180.000            0.000   0
+ AR7      CONST_3          NE     CZ     NH1    HNH1             180.000            0.000   0
+loop_
+_chem_comp_chir.comp_id
+_chem_comp_chir.id
+_chem_comp_chir.atom_id_centre
+_chem_comp_chir.atom_id_1
+_chem_comp_chir.atom_id_2
+_chem_comp_chir.atom_id_3
+_chem_comp_chir.volume_sign
+ AR7      chir_01          CA     N      C      CB        positiv
+loop_
+_chem_comp_plane_atom.comp_id
+_chem_comp_plane_atom.plane_id
+_chem_comp_plane_atom.atom_id
+_chem_comp_plane_atom.dist_esd
+ AR7      plan-1            C         0.020
+ AR7      plan-1            CA        0.020
+ AR7      plan-1            O         0.020
+ AR7      plan-1            H         0.020
+ AR7      plan-2            NE        0.020
+ AR7      plan-2            CD        0.020
+ AR7      plan-2            CZ        0.020
+ AR7      plan-2            NH1       0.020
+ AR7      plan-2            NH2       0.020
+ AR7      plan-2            HNH1      0.020
+ AR7      plan-2            HNH2      0.020
+# ------------------------------------------------------
+# ------------------------------------------------------
+#
+# --- DESCRIPTION OF LINKS ---
+#
+data_link_CYS-AR7
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ CYS-AR7  1 SG      2 C         .           1.690    0.020
+#
+data_link_LEU-AR7
+#
+loop_
+_chem_link_bond.link_id
+_chem_link_bond.atom_1_comp_id
+_chem_link_bond.atom_id_1
+_chem_link_bond.atom_2_comp_id
+_chem_link_bond.atom_id_2
+_chem_link_bond.type
+_chem_link_bond.value_dist
+_chem_link_bond.value_dist_esd
+ LEU-AR7  1 C       2 N         .           1.330    0.020
+# ------------------------------------------------------
