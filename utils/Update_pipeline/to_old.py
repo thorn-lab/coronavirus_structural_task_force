@@ -1,7 +1,7 @@
 import os
 import requests
 import datetime
-import Doi
+import shutil
 
 time = datetime.datetime.now()
 time = time.strftime("%d")+"_"+time.strftime("%m")
@@ -38,6 +38,21 @@ def to_old (key,dirpath,form):
     try: os.replace(dirpath+"/"+key+".{}".format(form), dirpath+"/old/"+key+"_{}.{}".format(time,form))
     except FileNotFoundError: pass
 
+def obsolete_finder(key, dirpath):
+    def deleter(del_path):
+        shutil.rmtree(del_path)
+
+    pdb_path = "".join([dirpath,"/",key,".pdb"])
+    try:
+        with open(pdb_path) as f:
+            for line in f:
+                if line.startswith("SPRSDE"):
+                    sprs_id = line.split("     ")[2][1:].lower()
+                    sprs_path = dirpath[:-4]+"/"+sprs_id
+                    print(sprs_id," is superseded by ", key, " and will be deleted!")
+                    deleter(sprs_path)
+    except FileNotFoundError: pass
+
 def main (pdb_id, repo_path):
     print("New DOIs for: ")
     for dirpath, dirnames, files in os.walk(repo_path):
@@ -51,7 +66,8 @@ def main (pdb_id, repo_path):
                 get_mtz(key,dirpath)
                 get_pdb(key, dirpath,"pdb")
                 get_pdb(key, dirpath,"cif")
-                #Doi.main(dirpath, key)
+                #check for obsolete pdb and del them
+                obsolete_finder(key, dirpath)
     print("{} have been revised".format(pdb_id))
 
 #old1 = 22.04 and before
