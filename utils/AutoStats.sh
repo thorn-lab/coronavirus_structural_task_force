@@ -1,6 +1,6 @@
 #! /bin/bash
 # does everything I usually do
-cd /data/id30a3/inhouse/gianluca/coronavirus_structural_task_force
+cd ..
 
 git pull
 cd utils
