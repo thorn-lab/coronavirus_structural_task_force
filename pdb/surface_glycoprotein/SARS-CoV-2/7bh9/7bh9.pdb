@@ -9,11 +9,10 @@ COMPND   6 CARBOXYPEPTIDASE,METALLOPROTEASE MPROT15;
 COMPND   7 EC: 3.4.17.23,3.4.17.-;                                              
 COMPND   8 ENGINEERED: YES;                                                     
 COMPND   9 MOL_ID: 2;                                                           
-COMPND  10 MOLECULE: SURFACE GLYCOPROTEIN;                                      
+COMPND  10 MOLECULE: SPIKE PROTEIN S1;                                          
 COMPND  11 CHAIN: E;                                                            
-COMPND  12 SYNONYM: SARS-COV-2 RECEPTOR BINDING DOMAIN;                         
-COMPND  13 ENGINEERED: YES;                                                     
-COMPND  14 OTHER_DETAILS: SARS-COV-2 RECEPTOR BINDING DOMAIN                    
+COMPND  12 ENGINEERED: YES;                                                     
+COMPND  13 OTHER_DETAILS: SARS-COV-2 RECEPTOR BINDING DOMAIN                    
 SOURCE    MOL_ID: 1;                                                            
 SOURCE   2 ORGANISM_SCIENTIFIC: HOMO SAPIENS;                                   
 SOURCE   3 ORGANISM_COMMON: HUMAN;                                              
@@ -25,14 +24,16 @@ SOURCE   8 EXPRESSION_SYSTEM_TAXID: 9606;
 SOURCE   9 MOL_ID: 2;                                                           
 SOURCE  10 ORGANISM_SCIENTIFIC: SEVERE ACUTE RESPIRATORY SYNDROME CORONAVIRUS   
 SOURCE  11 2;                                                                   
-SOURCE  12 ORGANISM_COMMON: 2019-NCOV;                                          
+SOURCE  12 ORGANISM_COMMON: 2019-NCOV, SARS-COV-2;                              
 SOURCE  13 ORGANISM_TAXID: 2697049;                                             
-SOURCE  14 EXPRESSION_SYSTEM: HOMO SAPIENS;                                     
-SOURCE  15 EXPRESSION_SYSTEM_COMMON: HUMAN;                                     
-SOURCE  16 EXPRESSION_SYSTEM_TAXID: 9606                                        
+SOURCE  14 GENE: S, 2;                                                          
+SOURCE  15 EXPRESSION_SYSTEM: HOMO SAPIENS;                                     
+SOURCE  16 EXPRESSION_SYSTEM_COMMON: HUMAN;                                     
+SOURCE  17 EXPRESSION_SYSTEM_TAXID: 9606                                        
 KEYWDS    IN VITRO EVOLUTION, COMPLEX, RECEPTOR BINDING DOMAIN, VIRUS           
 EXPDTA    ELECTRON MICROSCOPY                                                   
 AUTHOR    N.ELAD,O.DYM,J.ZAHRADNIK,G.SCHREIBER                                  
+REVDAT   2   10-MAR-21 7BH9    1       COMPND SOURCE DBREF  SEQADV              
 REVDAT   1   17-FEB-21 7BH9    0                                                
 JRNL        AUTH   J.ZAHRADNK,S.MARCIANO,M.SHEMESH,E.ZOLER,J.CHIARAVALLI,       
 JRNL        AUTH 2 B.MEYER,O.DYM,N.ELAD,G.SCHREIBER                             
@@ -329,8 +330,7 @@ REMARK 900 RELATED ENTRIES
 REMARK 900 RELATED ID: EMD-12187   RELATED DB: EMDB                             
 REMARK 900 SARS-COV-2 RBD-62 IN COMPLEX WITH ACE2 PEPTIDASE DOMAIN              
 DBREF  7BH9 A   19   615  UNP    Q9BYF1   ACE2_HUMAN      19    615             
-DBREF1 7BH9 E  333   528  UNP                  A0A7D5UBU9_SARS2                 
-DBREF2 7BH9 E     A0A7D5UBU9                        333         528             
+DBREF  7BH9 E  333   528  UNP    P0DTC2   SPIKE_SARS2    333    528             
 SEQADV 7BH9 GLY A   17  UNP  Q9BYF1              EXPRESSION TAG                 
 SEQADV 7BH9 SER A   18  UNP  Q9BYF1              EXPRESSION TAG                 
 SEQADV 7BH9 GLY A  616  UNP  Q9BYF1              EXPRESSION TAG                 
@@ -344,20 +344,21 @@ SEQADV 7BH9 HIS A  623  UNP  Q9BYF1              EXPRESSION TAG
 SEQADV 7BH9 HIS A  624  UNP  Q9BYF1              EXPRESSION TAG                 
 SEQADV 7BH9 HIS A  625  UNP  Q9BYF1              EXPRESSION TAG                 
 SEQADV 7BH9 HIS A  626  UNP  Q9BYF1              EXPRESSION TAG                 
-SEQADV 7BH9 PHE E  358  UNP  A0A7D5UBU ILE   358 ENGINEERED MUTATION            
-SEQADV 7BH9 LYS E  445  UNP  A0A7D5UBU VAL   445 ENGINEERED MUTATION            
-SEQADV 7BH9 LYS E  460  UNP  A0A7D5UBU ASN   460 ENGINEERED MUTATION            
-SEQADV 7BH9 THR E  468  UNP  A0A7D5UBU ILE   468 ENGINEERED MUTATION            
-SEQADV 7BH9 MET E  470  UNP  A0A7D5UBU THR   470 ENGINEERED MUTATION            
-SEQADV 7BH9 ASN E  477  UNP  A0A7D5UBU SER   477 ENGINEERED MUTATION            
-SEQADV 7BH9 ARG E  498  UNP  A0A7D5UBU GLN   498 ENGINEERED MUTATION            
-SEQADV 7BH9 TYR E  501  UNP  A0A7D5UBU ASN   501 ENGINEERED MUTATION            
-SEQADV 7BH9 HIS E  529  UNP  A0A7D5UBU           EXPRESSION TAG                 
-SEQADV 7BH9 HIS E  530  UNP  A0A7D5UBU           EXPRESSION TAG                 
-SEQADV 7BH9 HIS E  531  UNP  A0A7D5UBU           EXPRESSION TAG                 
-SEQADV 7BH9 HIS E  532  UNP  A0A7D5UBU           EXPRESSION TAG                 
-SEQADV 7BH9 HIS E  533  UNP  A0A7D5UBU           EXPRESSION TAG                 
-SEQADV 7BH9 HIS E  534  UNP  A0A7D5UBU           EXPRESSION TAG                 
+SEQADV 7BH9 PHE E  358  UNP  P0DTC2    ILE   358 ENGINEERED MUTATION            
+SEQADV 7BH9 LYS E  445  UNP  P0DTC2    VAL   445 ENGINEERED MUTATION            
+SEQADV 7BH9 LYS E  460  UNP  P0DTC2    ASN   460 ENGINEERED MUTATION            
+SEQADV 7BH9 THR E  468  UNP  P0DTC2    ILE   468 ENGINEERED MUTATION            
+SEQADV 7BH9 MET E  470  UNP  P0DTC2    THR   470 ENGINEERED MUTATION            
+SEQADV 7BH9 ASN E  477  UNP  P0DTC2    SER   477 ENGINEERED MUTATION            
+SEQADV 7BH9 LYS E  484  UNP  P0DTC2    GLU   484 ENGINEERED MUTATION            
+SEQADV 7BH9 ARG E  498  UNP  P0DTC2    GLN   498 ENGINEERED MUTATION            
+SEQADV 7BH9 TYR E  501  UNP  P0DTC2    ASN   501 ENGINEERED MUTATION            
+SEQADV 7BH9 HIS E  529  UNP  P0DTC2              EXPRESSION TAG                 
+SEQADV 7BH9 HIS E  530  UNP  P0DTC2              EXPRESSION TAG                 
+SEQADV 7BH9 HIS E  531  UNP  P0DTC2              EXPRESSION TAG                 
+SEQADV 7BH9 HIS E  532  UNP  P0DTC2              EXPRESSION TAG                 
+SEQADV 7BH9 HIS E  533  UNP  P0DTC2              EXPRESSION TAG                 
+SEQADV 7BH9 HIS E  534  UNP  P0DTC2              EXPRESSION TAG                 
 SEQRES   1 A  610  GLY SER SER THR ILE GLU GLU GLN ALA LYS THR PHE LEU          
 SEQRES   2 A  610  ASP LYS PHE ASN HIS GLU ALA GLU ASP LEU PHE TYR GLN          
 SEQRES   3 A  610  SER SER LEU ALA SER TRP ASN TYR ASN THR ASN ILE THR          

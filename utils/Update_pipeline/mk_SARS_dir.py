@@ -149,7 +149,7 @@ def main():
     mk_Alignment_strc_vs_seq.main(id_dict, pdb_id, repo_path)
     print("Alignment up to date, now updating RMSD")
     #Make RMSD
-    RMSD.main(id_dict, repo_path)
+    #RMSD.main(id_dict, repo_path)
     #Download not assigned
 
 

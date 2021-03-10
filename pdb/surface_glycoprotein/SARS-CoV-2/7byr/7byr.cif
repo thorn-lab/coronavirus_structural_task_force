@@ -3,7 +3,7 @@ data_7BYR
 _entry.id   7BYR 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.330 
+_audit_conform.dict_version    5.336 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
@@ -158,7 +158,7 @@ _entity.pdbx_ec
 _entity.pdbx_mutation 
 _entity.pdbx_fragment 
 _entity.details 
-1 polymer     man 'SARS-CoV-2 Spike glycoprotein' 138213.016 3  ? 'R682G, R683G, R685S, K986P, V987P' ? ? 
+1 polymer     man 'Spike glycoprotein' 138213.016 3  ? 'R682G, R683G, R685S, K986P, V987P' ? ? 
 2 polymer     man 'Ab23-Fab-Heavy Chain' 13843.308  1  ? ?                                   ? ? 
 3 polymer     man 'Ab23-Fab-Light Chain' 11746.051  1  ? ?                                   ? ? 
 4 branched    man '2-acetamido-2-deoxy-beta-D-glucopyranose-(1-4)-2-acetamido-2-deoxy-beta-D-glucopyranose' 424.401    5  ? ? ? ? 
@@ -168,7 +168,7 @@ _entity.details
 6 non-polymer man 2-acetamido-2-deoxy-beta-D-glucopyranose 221.208    32 ? ?                                   ? ? 
 # 
 _entity_name_com.entity_id   1 
-_entity_name_com.name        'S glycoprotein,E2,Peplomer protein' 
+_entity_name_com.name        'S glycoprotein,E2,Peplomer protein,SARS-CoV-2 Spike glycoprotein' 
 # 
 loop_
 _entity_poly.entity_id 
@@ -1986,7 +1986,8 @@ ALA 'L-peptide linking'          y ALANINE                                  ? 'C
 ARG 'L-peptide linking'          y ARGININE                                 ? 'C6 H15 N4 O2 1' 175.209 
 ASN 'L-peptide linking'          y ASPARAGINE                               ? 'C4 H8 N2 O3'    132.118 
 ASP 'L-peptide linking'          y 'ASPARTIC ACID'                          ? 'C4 H7 N O4'     133.103 
-BMA 'D-saccharide, beta linking' . beta-D-mannopyranose                     ? 'C6 H12 O6'      180.156 
+BMA 'D-saccharide, beta linking' . beta-D-mannopyranose                     'beta-D-mannose; D-mannose; mannose' 'C6 H12 O6'      
+180.156 
 CYS 'L-peptide linking'          y CYSTEINE                                 ? 'C3 H7 N O2 S'   121.158 
 GLN 'L-peptide linking'          y GLUTAMINE                                ? 'C5 H10 N2 O3'   146.144 
 GLU 'L-peptide linking'          y 'GLUTAMIC ACID'                          ? 'C5 H9 N O4'     147.129 
@@ -1996,7 +1997,10 @@ ILE 'L-peptide linking'          y ISOLEUCINE                               ? 'C
 LEU 'L-peptide linking'          y LEUCINE                                  ? 'C6 H13 N O2'    131.173 
 LYS 'L-peptide linking'          y LYSINE                                   ? 'C6 H15 N2 O2 1' 147.195 
 MET 'L-peptide linking'          y METHIONINE                               ? 'C5 H11 N O2 S'  149.211 
-NAG 'D-saccharide, beta linking' . 2-acetamido-2-deoxy-beta-D-glucopyranose ? 'C8 H15 N O6'    221.208 
+NAG 'D-saccharide, beta linking' . 2-acetamido-2-deoxy-beta-D-glucopyranose 
+;N-acetyl-beta-D-glucosamine; 2-acetamido-2-deoxy-beta-D-glucose; 2-acetamido-2-deoxy-D-glucose; 2-acetamido-2-deoxy-glucose; N-ACETYL-D-GLUCOSAMINE
+;
+'C8 H15 N O6'    221.208 
 PHE 'L-peptide linking'          y PHENYLALANINE                            ? 'C9 H11 N O2'    165.189 
 PRO 'L-peptide linking'          y PROLINE                                  ? 'C5 H9 N O2'     115.130 
 SER 'L-peptide linking'          y SERINE                                   ? 'C3 H7 N O3'     105.093 
@@ -31653,6 +31657,7 @@ _pdbx_audit_revision_history.revision_date
 1 'Structure model' 1 0 2020-06-10 
 2 'Structure model' 1 1 2020-07-22 
 3 'Structure model' 2 0 2020-07-29 
+4 'Structure model' 2 1 2021-03-10 
 # 
 loop_
 _pdbx_audit_revision_details.ordinal 
@@ -31675,6 +31680,7 @@ _pdbx_audit_revision_group.group
 3 3 'Structure model' 'Data collection'      
 4 3 'Structure model' 'Derived calculations' 
 5 3 'Structure model' 'Structure summary'    
+6 4 'Structure model' 'Structure summary'    
 # 
 loop_
 _pdbx_audit_revision_category.ordinal 
@@ -31698,6 +31704,9 @@ _pdbx_audit_revision_category.category
 15 3 'Structure model' struct_conn                   
 16 3 'Structure model' struct_site                   
 17 3 'Structure model' struct_site_gen               
+18 4 'Structure model' chem_comp                     
+19 4 'Structure model' entity                        
+20 4 'Structure model' entity_name_com               
 # 
 loop_
 _pdbx_audit_revision_item.ordinal 
@@ -31730,6 +31739,9 @@ _pdbx_audit_revision_item.item
 24 3 'Structure model' '_struct_conn.ptnr2_auth_asym_id'        
 25 3 'Structure model' '_struct_conn.ptnr2_auth_seq_id'         
 26 3 'Structure model' '_struct_conn.ptnr2_label_asym_id'       
+27 4 'Structure model' '_chem_comp.pdbx_synonyms'               
+28 4 'Structure model' '_entity.pdbx_description'               
+29 4 'Structure model' '_entity_name_com.name'                  
 # 
 _software.citation_id            ? 
 _software.classification         refinement 
