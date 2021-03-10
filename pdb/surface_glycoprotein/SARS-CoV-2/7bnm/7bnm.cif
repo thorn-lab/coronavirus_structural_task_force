@@ -3,7 +3,7 @@ data_7BNM
 _entry.id   7BNM 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.338 
+_audit_conform.dict_version    5.339 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
@@ -134,9 +134,12 @@ _entity.pdbx_ec
 _entity.pdbx_mutation 
 _entity.pdbx_fragment 
 _entity.details 
-1 polymer     man 'Surface glycoprotein'                                                                    129792.406 3  ? ? ? ? 
+1 polymer     man 'Spike glycoprotein'                                                                      129792.406 3  ? ? ? ? 
 2 branched    syn '2-acetamido-2-deoxy-beta-D-glucopyranose-(1-4)-2-acetamido-2-deoxy-beta-D-glucopyranose' 424.401    15 ? ? ? ? 
 3 non-polymer syn 2-acetamido-2-deoxy-beta-D-glucopyranose                                                  221.208    33 ? ? ? ? 
+# 
+_entity_name_com.entity_id   1 
+_entity_name_com.name        'S glycoprotein,E2,Peplomer protein' 
 # 
 _entity_poly.entity_id                      1 
 _entity_poly.type                           'polypeptide(L)' 
@@ -1368,9 +1371,9 @@ _entity_src_gen.pdbx_alt_source_flag               sample
 _entity_src_gen.pdbx_seq_type                      'Biological sequence' 
 _entity_src_gen.pdbx_beg_seq_num                   1 
 _entity_src_gen.pdbx_end_seq_num                   1177 
-_entity_src_gen.gene_src_common_name               2019-nCoV 
+_entity_src_gen.gene_src_common_name               '2019-nCoV, SARS-CoV-2' 
 _entity_src_gen.gene_src_genus                     ? 
-_entity_src_gen.pdbx_gene_src_gene                 ? 
+_entity_src_gen.pdbx_gene_src_gene                 'S, 2' 
 _entity_src_gen.gene_src_species                   ? 
 _entity_src_gen.gene_src_strain                    ? 
 _entity_src_gen.gene_src_tissue                    ? 
@@ -1413,8 +1416,8 @@ _entity_src_gen.pdbx_description                   ?
 # 
 _struct_ref.id                         1 
 _struct_ref.db_name                    UNP 
-_struct_ref.db_code                    A0A6V7AL95_SARS2 
-_struct_ref.pdbx_db_accession          A0A6V7AL95 
+_struct_ref.db_code                    SPIKE_SARS2 
+_struct_ref.pdbx_db_accession          P0DTC2 
 _struct_ref.pdbx_db_isoform            ? 
 _struct_ref.entity_id                  1 
 _struct_ref.pdbx_seq_one_letter_code   
@@ -1425,7 +1428,7 @@ LLALHRSYLTPGDSSSGWTAGAAAYYVGYLQPRTFLLKYNENGTITDAVDCALDPLSETKCTLKSFTVEKGIYQTSNFRV
 QPTESIVRFPNITNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSF
 VIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGGNYNYLYRLFRKSNLKPFERDISTEIYQAGSTPC
 NGVEGFNCYFPLQSYGFQPTNGVGYQPYRVVVLSFELLHAPATVCGPKKSTNLVKNKCVNFNFNGLTGTGVLTESNKKFL
-PFQQFGRDIADTTDAVRDPQTLEILDITPCSFGGVSVITPGTNTSNQVAVLYQGVNCTEVPVAIHADQLTPTWRVYSTGS
+PFQQFGRDIADTTDAVRDPQTLEILDITPCSFGGVSVITPGTNTSNQVAVLYQDVNCTEVPVAIHADQLTPTWRVYSTGS
 NVFQTRAGCLIGAEHVNNSYECDIPIGAGICASYQTQTNSPRRARSVASQSIIAYTMSLGAENSVAYSNNSIAIPTNFTI
 SVTTEILPVSMTKTSVDCTMYICGDSTECSNLLLQYGSFCTQLNRALTGIAVEQDKNTQEVFAQVKQIYKTPPIKDFGGF
 NFSQILPDPSKPSKRSFIEDLLFNKVTLADAGFIKQYGDCLGDIAARDLICAQKFNGLTVLPPLLTDEMIAQYTSALLAG
@@ -1434,7 +1437,7 @@ TLVKQLSSNFGAISSVLNDILSRLDKVEAEVQIDRLITGRLQSLQTYVTQQLIRAAEIRASANLAATKMSECVLGQSKRV
 DFCGKGYHLMSFPQSAPHGVVFLHVTYVPAQEKNFTTAPAICHDGKAHFPREGVFVSNGTHWFVTQRNFYEPQIITTDNT
 FVSGNCDVVIGIVNNTVYDPLQPELD
 ;
-_struct_ref.pdbx_align_begin           10 
+_struct_ref.pdbx_align_begin           1 
 # 
 loop_
 _struct_ref_seq.align_id 
@@ -1452,9 +1455,9 @@ _struct_ref_seq.db_align_end
 _struct_ref_seq.pdbx_db_align_end_ins_code 
 _struct_ref_seq.pdbx_auth_seq_align_beg 
 _struct_ref_seq.pdbx_auth_seq_align_end 
-1 1 7BNM A 32 ? 1177 ? A0A6V7AL95 10 ? 1155 ? 1 1146 
-2 1 7BNM B 32 ? 1177 ? A0A6V7AL95 10 ? 1155 ? 1 1146 
-3 1 7BNM C 32 ? 1177 ? A0A6V7AL95 10 ? 1155 ? 1 1146 
+1 1 7BNM A 32 ? 1177 ? P0DTC2 1 ? 1146 ? 1 1146 
+2 1 7BNM B 32 ? 1177 ? P0DTC2 1 ? 1146 ? 1 1146 
+3 1 7BNM C 32 ? 1177 ? P0DTC2 1 ? 1146 ? 1 1146 
 # 
 loop_
 _struct_ref_seq_dif.align_id 
@@ -1470,111 +1473,114 @@ _struct_ref_seq_dif.pdbx_seq_db_seq_num
 _struct_ref_seq_dif.details 
 _struct_ref_seq_dif.pdbx_auth_seq_num 
 _struct_ref_seq_dif.pdbx_ordinal 
-1 7BNM MET A 1    ? UNP A0A6V7AL95 ?   ?   'initiating methionine' -30 1   
-1 7BNM GLY A 2    ? UNP A0A6V7AL95 ?   ?   'expression tag'        -29 2   
-1 7BNM ILE A 3    ? UNP A0A6V7AL95 ?   ?   'expression tag'        -28 3   
-1 7BNM LEU A 4    ? UNP A0A6V7AL95 ?   ?   'expression tag'        -27 4   
-1 7BNM PRO A 5    ? UNP A0A6V7AL95 ?   ?   'expression tag'        -26 5   
-1 7BNM SER A 6    ? UNP A0A6V7AL95 ?   ?   'expression tag'        -25 6   
-1 7BNM PRO A 7    ? UNP A0A6V7AL95 ?   ?   'expression tag'        -24 7   
-1 7BNM GLY A 8    ? UNP A0A6V7AL95 ?   ?   'expression tag'        -23 8   
-1 7BNM MET A 9    ? UNP A0A6V7AL95 ?   ?   'expression tag'        -22 9   
-1 7BNM PRO A 10   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -21 10  
-1 7BNM ALA A 11   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -20 11  
-1 7BNM LEU A 12   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -19 12  
-1 7BNM LEU A 13   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -18 13  
-1 7BNM SER A 14   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -17 14  
-1 7BNM LEU A 15   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -16 15  
-1 7BNM VAL A 16   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -15 16  
-1 7BNM SER A 17   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -14 17  
-1 7BNM LEU A 18   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -13 18  
-1 7BNM LEU A 19   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -12 19  
-1 7BNM SER A 20   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -11 20  
-1 7BNM VAL A 21   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -10 21  
-1 7BNM LEU A 22   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -9  22  
-1 7BNM LEU A 23   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -8  23  
-1 7BNM MET A 24   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -7  24  
-1 7BNM GLY A 25   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -6  25  
-1 7BNM CYS A 26   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -5  26  
-1 7BNM VAL A 27   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -4  27  
-1 7BNM ALA A 28   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -3  28  
-1 7BNM GLU A 29   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -2  29  
-1 7BNM THR A 30   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -1  30  
-1 7BNM GLY A 31   ? UNP A0A6V7AL95 ?   ?   'expression tag'        0   31  
-1 7BNM SER A 713  ? UNP A0A6V7AL95 ARG 691 conflict                682 32  
-1 7BNM SER A 716  ? UNP A0A6V7AL95 ARG 694 conflict                685 33  
-1 7BNM PRO A 1017 ? UNP A0A6V7AL95 LYS 995 conflict                986 34  
-1 7BNM PRO A 1018 ? UNP A0A6V7AL95 VAL 996 conflict                987 35  
-2 7BNM MET B 1    ? UNP A0A6V7AL95 ?   ?   'initiating methionine' -30 36  
-2 7BNM GLY B 2    ? UNP A0A6V7AL95 ?   ?   'expression tag'        -29 37  
-2 7BNM ILE B 3    ? UNP A0A6V7AL95 ?   ?   'expression tag'        -28 38  
-2 7BNM LEU B 4    ? UNP A0A6V7AL95 ?   ?   'expression tag'        -27 39  
-2 7BNM PRO B 5    ? UNP A0A6V7AL95 ?   ?   'expression tag'        -26 40  
-2 7BNM SER B 6    ? UNP A0A6V7AL95 ?   ?   'expression tag'        -25 41  
-2 7BNM PRO B 7    ? UNP A0A6V7AL95 ?   ?   'expression tag'        -24 42  
-2 7BNM GLY B 8    ? UNP A0A6V7AL95 ?   ?   'expression tag'        -23 43  
-2 7BNM MET B 9    ? UNP A0A6V7AL95 ?   ?   'expression tag'        -22 44  
-2 7BNM PRO B 10   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -21 45  
-2 7BNM ALA B 11   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -20 46  
-2 7BNM LEU B 12   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -19 47  
-2 7BNM LEU B 13   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -18 48  
-2 7BNM SER B 14   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -17 49  
-2 7BNM LEU B 15   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -16 50  
-2 7BNM VAL B 16   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -15 51  
-2 7BNM SER B 17   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -14 52  
-2 7BNM LEU B 18   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -13 53  
-2 7BNM LEU B 19   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -12 54  
-2 7BNM SER B 20   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -11 55  
-2 7BNM VAL B 21   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -10 56  
-2 7BNM LEU B 22   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -9  57  
-2 7BNM LEU B 23   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -8  58  
-2 7BNM MET B 24   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -7  59  
-2 7BNM GLY B 25   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -6  60  
-2 7BNM CYS B 26   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -5  61  
-2 7BNM VAL B 27   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -4  62  
-2 7BNM ALA B 28   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -3  63  
-2 7BNM GLU B 29   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -2  64  
-2 7BNM THR B 30   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -1  65  
-2 7BNM GLY B 31   ? UNP A0A6V7AL95 ?   ?   'expression tag'        0   66  
-2 7BNM SER B 713  ? UNP A0A6V7AL95 ARG 691 conflict                682 67  
-2 7BNM SER B 716  ? UNP A0A6V7AL95 ARG 694 conflict                685 68  
-2 7BNM PRO B 1017 ? UNP A0A6V7AL95 LYS 995 conflict                986 69  
-2 7BNM PRO B 1018 ? UNP A0A6V7AL95 VAL 996 conflict                987 70  
-3 7BNM MET C 1    ? UNP A0A6V7AL95 ?   ?   'initiating methionine' -30 71  
-3 7BNM GLY C 2    ? UNP A0A6V7AL95 ?   ?   'expression tag'        -29 72  
-3 7BNM ILE C 3    ? UNP A0A6V7AL95 ?   ?   'expression tag'        -28 73  
-3 7BNM LEU C 4    ? UNP A0A6V7AL95 ?   ?   'expression tag'        -27 74  
-3 7BNM PRO C 5    ? UNP A0A6V7AL95 ?   ?   'expression tag'        -26 75  
-3 7BNM SER C 6    ? UNP A0A6V7AL95 ?   ?   'expression tag'        -25 76  
-3 7BNM PRO C 7    ? UNP A0A6V7AL95 ?   ?   'expression tag'        -24 77  
-3 7BNM GLY C 8    ? UNP A0A6V7AL95 ?   ?   'expression tag'        -23 78  
-3 7BNM MET C 9    ? UNP A0A6V7AL95 ?   ?   'expression tag'        -22 79  
-3 7BNM PRO C 10   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -21 80  
-3 7BNM ALA C 11   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -20 81  
-3 7BNM LEU C 12   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -19 82  
-3 7BNM LEU C 13   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -18 83  
-3 7BNM SER C 14   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -17 84  
-3 7BNM LEU C 15   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -16 85  
-3 7BNM VAL C 16   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -15 86  
-3 7BNM SER C 17   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -14 87  
-3 7BNM LEU C 18   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -13 88  
-3 7BNM LEU C 19   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -12 89  
-3 7BNM SER C 20   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -11 90  
-3 7BNM VAL C 21   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -10 91  
-3 7BNM LEU C 22   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -9  92  
-3 7BNM LEU C 23   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -8  93  
-3 7BNM MET C 24   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -7  94  
-3 7BNM GLY C 25   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -6  95  
-3 7BNM CYS C 26   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -5  96  
-3 7BNM VAL C 27   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -4  97  
-3 7BNM ALA C 28   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -3  98  
-3 7BNM GLU C 29   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -2  99  
-3 7BNM THR C 30   ? UNP A0A6V7AL95 ?   ?   'expression tag'        -1  100 
-3 7BNM GLY C 31   ? UNP A0A6V7AL95 ?   ?   'expression tag'        0   101 
-3 7BNM SER C 713  ? UNP A0A6V7AL95 ARG 691 conflict                682 102 
-3 7BNM SER C 716  ? UNP A0A6V7AL95 ARG 694 conflict                685 103 
-3 7BNM PRO C 1017 ? UNP A0A6V7AL95 LYS 995 conflict                986 104 
-3 7BNM PRO C 1018 ? UNP A0A6V7AL95 VAL 996 conflict                987 105 
+1 7BNM MET A 1    ? UNP P0DTC2 ?   ?   'initiating methionine' -30 1   
+1 7BNM GLY A 2    ? UNP P0DTC2 ?   ?   'expression tag'        -29 2   
+1 7BNM ILE A 3    ? UNP P0DTC2 ?   ?   'expression tag'        -28 3   
+1 7BNM LEU A 4    ? UNP P0DTC2 ?   ?   'expression tag'        -27 4   
+1 7BNM PRO A 5    ? UNP P0DTC2 ?   ?   'expression tag'        -26 5   
+1 7BNM SER A 6    ? UNP P0DTC2 ?   ?   'expression tag'        -25 6   
+1 7BNM PRO A 7    ? UNP P0DTC2 ?   ?   'expression tag'        -24 7   
+1 7BNM GLY A 8    ? UNP P0DTC2 ?   ?   'expression tag'        -23 8   
+1 7BNM MET A 9    ? UNP P0DTC2 ?   ?   'expression tag'        -22 9   
+1 7BNM PRO A 10   ? UNP P0DTC2 ?   ?   'expression tag'        -21 10  
+1 7BNM ALA A 11   ? UNP P0DTC2 ?   ?   'expression tag'        -20 11  
+1 7BNM LEU A 12   ? UNP P0DTC2 ?   ?   'expression tag'        -19 12  
+1 7BNM LEU A 13   ? UNP P0DTC2 ?   ?   'expression tag'        -18 13  
+1 7BNM SER A 14   ? UNP P0DTC2 ?   ?   'expression tag'        -17 14  
+1 7BNM LEU A 15   ? UNP P0DTC2 ?   ?   'expression tag'        -16 15  
+1 7BNM VAL A 16   ? UNP P0DTC2 ?   ?   'expression tag'        -15 16  
+1 7BNM SER A 17   ? UNP P0DTC2 ?   ?   'expression tag'        -14 17  
+1 7BNM LEU A 18   ? UNP P0DTC2 ?   ?   'expression tag'        -13 18  
+1 7BNM LEU A 19   ? UNP P0DTC2 ?   ?   'expression tag'        -12 19  
+1 7BNM SER A 20   ? UNP P0DTC2 ?   ?   'expression tag'        -11 20  
+1 7BNM VAL A 21   ? UNP P0DTC2 ?   ?   'expression tag'        -10 21  
+1 7BNM LEU A 22   ? UNP P0DTC2 ?   ?   'expression tag'        -9  22  
+1 7BNM LEU A 23   ? UNP P0DTC2 ?   ?   'expression tag'        -8  23  
+1 7BNM MET A 24   ? UNP P0DTC2 ?   ?   'expression tag'        -7  24  
+1 7BNM GLY A 25   ? UNP P0DTC2 ?   ?   'expression tag'        -6  25  
+1 7BNM CYS A 26   ? UNP P0DTC2 ?   ?   'expression tag'        -5  26  
+1 7BNM VAL A 27   ? UNP P0DTC2 ?   ?   'expression tag'        -4  27  
+1 7BNM ALA A 28   ? UNP P0DTC2 ?   ?   'expression tag'        -3  28  
+1 7BNM GLU A 29   ? UNP P0DTC2 ?   ?   'expression tag'        -2  29  
+1 7BNM THR A 30   ? UNP P0DTC2 ?   ?   'expression tag'        -1  30  
+1 7BNM GLY A 31   ? UNP P0DTC2 ?   ?   'expression tag'        0   31  
+1 7BNM GLY A 645  ? UNP P0DTC2 ASP 614 conflict                614 32  
+1 7BNM SER A 713  ? UNP P0DTC2 ARG 682 conflict                682 33  
+1 7BNM SER A 716  ? UNP P0DTC2 ARG 685 conflict                685 34  
+1 7BNM PRO A 1017 ? UNP P0DTC2 LYS 986 conflict                986 35  
+1 7BNM PRO A 1018 ? UNP P0DTC2 VAL 987 conflict                987 36  
+2 7BNM MET B 1    ? UNP P0DTC2 ?   ?   'initiating methionine' -30 37  
+2 7BNM GLY B 2    ? UNP P0DTC2 ?   ?   'expression tag'        -29 38  
+2 7BNM ILE B 3    ? UNP P0DTC2 ?   ?   'expression tag'        -28 39  
+2 7BNM LEU B 4    ? UNP P0DTC2 ?   ?   'expression tag'        -27 40  
+2 7BNM PRO B 5    ? UNP P0DTC2 ?   ?   'expression tag'        -26 41  
+2 7BNM SER B 6    ? UNP P0DTC2 ?   ?   'expression tag'        -25 42  
+2 7BNM PRO B 7    ? UNP P0DTC2 ?   ?   'expression tag'        -24 43  
+2 7BNM GLY B 8    ? UNP P0DTC2 ?   ?   'expression tag'        -23 44  
+2 7BNM MET B 9    ? UNP P0DTC2 ?   ?   'expression tag'        -22 45  
+2 7BNM PRO B 10   ? UNP P0DTC2 ?   ?   'expression tag'        -21 46  
+2 7BNM ALA B 11   ? UNP P0DTC2 ?   ?   'expression tag'        -20 47  
+2 7BNM LEU B 12   ? UNP P0DTC2 ?   ?   'expression tag'        -19 48  
+2 7BNM LEU B 13   ? UNP P0DTC2 ?   ?   'expression tag'        -18 49  
+2 7BNM SER B 14   ? UNP P0DTC2 ?   ?   'expression tag'        -17 50  
+2 7BNM LEU B 15   ? UNP P0DTC2 ?   ?   'expression tag'        -16 51  
+2 7BNM VAL B 16   ? UNP P0DTC2 ?   ?   'expression tag'        -15 52  
+2 7BNM SER B 17   ? UNP P0DTC2 ?   ?   'expression tag'        -14 53  
+2 7BNM LEU B 18   ? UNP P0DTC2 ?   ?   'expression tag'        -13 54  
+2 7BNM LEU B 19   ? UNP P0DTC2 ?   ?   'expression tag'        -12 55  
+2 7BNM SER B 20   ? UNP P0DTC2 ?   ?   'expression tag'        -11 56  
+2 7BNM VAL B 21   ? UNP P0DTC2 ?   ?   'expression tag'        -10 57  
+2 7BNM LEU B 22   ? UNP P0DTC2 ?   ?   'expression tag'        -9  58  
+2 7BNM LEU B 23   ? UNP P0DTC2 ?   ?   'expression tag'        -8  59  
+2 7BNM MET B 24   ? UNP P0DTC2 ?   ?   'expression tag'        -7  60  
+2 7BNM GLY B 25   ? UNP P0DTC2 ?   ?   'expression tag'        -6  61  
+2 7BNM CYS B 26   ? UNP P0DTC2 ?   ?   'expression tag'        -5  62  
+2 7BNM VAL B 27   ? UNP P0DTC2 ?   ?   'expression tag'        -4  63  
+2 7BNM ALA B 28   ? UNP P0DTC2 ?   ?   'expression tag'        -3  64  
+2 7BNM GLU B 29   ? UNP P0DTC2 ?   ?   'expression tag'        -2  65  
+2 7BNM THR B 30   ? UNP P0DTC2 ?   ?   'expression tag'        -1  66  
+2 7BNM GLY B 31   ? UNP P0DTC2 ?   ?   'expression tag'        0   67  
+2 7BNM GLY B 645  ? UNP P0DTC2 ASP 614 conflict                614 68  
+2 7BNM SER B 713  ? UNP P0DTC2 ARG 682 conflict                682 69  
+2 7BNM SER B 716  ? UNP P0DTC2 ARG 685 conflict                685 70  
+2 7BNM PRO B 1017 ? UNP P0DTC2 LYS 986 conflict                986 71  
+2 7BNM PRO B 1018 ? UNP P0DTC2 VAL 987 conflict                987 72  
+3 7BNM MET C 1    ? UNP P0DTC2 ?   ?   'initiating methionine' -30 73  
+3 7BNM GLY C 2    ? UNP P0DTC2 ?   ?   'expression tag'        -29 74  
+3 7BNM ILE C 3    ? UNP P0DTC2 ?   ?   'expression tag'        -28 75  
+3 7BNM LEU C 4    ? UNP P0DTC2 ?   ?   'expression tag'        -27 76  
+3 7BNM PRO C 5    ? UNP P0DTC2 ?   ?   'expression tag'        -26 77  
+3 7BNM SER C 6    ? UNP P0DTC2 ?   ?   'expression tag'        -25 78  
+3 7BNM PRO C 7    ? UNP P0DTC2 ?   ?   'expression tag'        -24 79  
+3 7BNM GLY C 8    ? UNP P0DTC2 ?   ?   'expression tag'        -23 80  
+3 7BNM MET C 9    ? UNP P0DTC2 ?   ?   'expression tag'        -22 81  
+3 7BNM PRO C 10   ? UNP P0DTC2 ?   ?   'expression tag'        -21 82  
+3 7BNM ALA C 11   ? UNP P0DTC2 ?   ?   'expression tag'        -20 83  
+3 7BNM LEU C 12   ? UNP P0DTC2 ?   ?   'expression tag'        -19 84  
+3 7BNM LEU C 13   ? UNP P0DTC2 ?   ?   'expression tag'        -18 85  
+3 7BNM SER C 14   ? UNP P0DTC2 ?   ?   'expression tag'        -17 86  
+3 7BNM LEU C 15   ? UNP P0DTC2 ?   ?   'expression tag'        -16 87  
+3 7BNM VAL C 16   ? UNP P0DTC2 ?   ?   'expression tag'        -15 88  
+3 7BNM SER C 17   ? UNP P0DTC2 ?   ?   'expression tag'        -14 89  
+3 7BNM LEU C 18   ? UNP P0DTC2 ?   ?   'expression tag'        -13 90  
+3 7BNM LEU C 19   ? UNP P0DTC2 ?   ?   'expression tag'        -12 91  
+3 7BNM SER C 20   ? UNP P0DTC2 ?   ?   'expression tag'        -11 92  
+3 7BNM VAL C 21   ? UNP P0DTC2 ?   ?   'expression tag'        -10 93  
+3 7BNM LEU C 22   ? UNP P0DTC2 ?   ?   'expression tag'        -9  94  
+3 7BNM LEU C 23   ? UNP P0DTC2 ?   ?   'expression tag'        -8  95  
+3 7BNM MET C 24   ? UNP P0DTC2 ?   ?   'expression tag'        -7  96  
+3 7BNM GLY C 25   ? UNP P0DTC2 ?   ?   'expression tag'        -6  97  
+3 7BNM CYS C 26   ? UNP P0DTC2 ?   ?   'expression tag'        -5  98  
+3 7BNM VAL C 27   ? UNP P0DTC2 ?   ?   'expression tag'        -4  99  
+3 7BNM ALA C 28   ? UNP P0DTC2 ?   ?   'expression tag'        -3  100 
+3 7BNM GLU C 29   ? UNP P0DTC2 ?   ?   'expression tag'        -2  101 
+3 7BNM THR C 30   ? UNP P0DTC2 ?   ?   'expression tag'        -1  102 
+3 7BNM GLY C 31   ? UNP P0DTC2 ?   ?   'expression tag'        0   103 
+3 7BNM GLY C 645  ? UNP P0DTC2 ASP 614 conflict                614 104 
+3 7BNM SER C 713  ? UNP P0DTC2 ARG 682 conflict                682 105 
+3 7BNM SER C 716  ? UNP P0DTC2 ARG 685 conflict                685 106 
+3 7BNM PRO C 1017 ? UNP P0DTC2 LYS 986 conflict                986 107 
+3 7BNM PRO C 1018 ? UNP P0DTC2 VAL 987 conflict                987 108 
 # 
 loop_
 _chem_comp.id 
@@ -1697,7 +1703,7 @@ _refine_ls_restr.pdbx_restraint_function
 # 
 _struct.entry_id                     7BNM 
 _struct.title                        'Closed conformation of D614G SARS-CoV-2 spike protein' 
-_struct.pdbx_descriptor              'Surface glycoprotein' 
+_struct.pdbx_descriptor              'Spike glycoprotein' 
 _struct.pdbx_model_details           ? 
 _struct.pdbx_formula_weight          ? 
 _struct.pdbx_formula_weight_method   ? 
@@ -32256,6 +32262,7 @@ _pdbx_audit_revision_history.minor_revision
 _pdbx_audit_revision_history.revision_date 
 1 'Structure model' 1 0 2021-02-03 
 2 'Structure model' 1 1 2021-02-24 
+3 'Structure model' 1 2 2021-03-10 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -32265,35 +32272,58 @@ _pdbx_audit_revision_details.type                'Initial release'
 _pdbx_audit_revision_details.description         ? 
 _pdbx_audit_revision_details.details             ? 
 # 
-_pdbx_audit_revision_group.ordinal             1 
-_pdbx_audit_revision_group.revision_ordinal    2 
-_pdbx_audit_revision_group.data_content_type   'Structure model' 
-_pdbx_audit_revision_group.group               'Database references' 
+loop_
+_pdbx_audit_revision_group.ordinal 
+_pdbx_audit_revision_group.revision_ordinal 
+_pdbx_audit_revision_group.data_content_type 
+_pdbx_audit_revision_group.group 
+1 2 'Structure model' 'Database references' 
+2 3 'Structure model' 'Database references' 
+3 3 'Structure model' 'Source and taxonomy' 
+4 3 'Structure model' 'Structure summary'   
 # 
 loop_
 _pdbx_audit_revision_category.ordinal 
 _pdbx_audit_revision_category.revision_ordinal 
 _pdbx_audit_revision_category.data_content_type 
 _pdbx_audit_revision_category.category 
-1 2 'Structure model' citation        
-2 2 'Structure model' citation_author 
+1 2 'Structure model' citation           
+2 2 'Structure model' citation_author    
+3 3 'Structure model' entity             
+4 3 'Structure model' entity_name_com    
+5 3 'Structure model' entity_src_gen     
+6 3 'Structure model' struct             
+7 3 'Structure model' struct_ref         
+8 3 'Structure model' struct_ref_seq     
+9 3 'Structure model' struct_ref_seq_dif 
 # 
 loop_
 _pdbx_audit_revision_item.ordinal 
 _pdbx_audit_revision_item.revision_ordinal 
 _pdbx_audit_revision_item.data_content_type 
 _pdbx_audit_revision_item.item 
-1  2 'Structure model' '_citation.country'                 
-2  2 'Structure model' '_citation.journal_abbrev'          
-3  2 'Structure model' '_citation.journal_id_ASTM'         
-4  2 'Structure model' '_citation.journal_id_CSD'          
-5  2 'Structure model' '_citation.journal_id_ISSN'         
-6  2 'Structure model' '_citation.journal_volume'          
-7  2 'Structure model' '_citation.pdbx_database_id_DOI'    
-8  2 'Structure model' '_citation.pdbx_database_id_PubMed' 
-9  2 'Structure model' '_citation.title'                   
-10 2 'Structure model' '_citation.year'                    
-11 2 'Structure model' '_citation_author.identifier_ORCID' 
+1  2 'Structure model' '_citation.country'                    
+2  2 'Structure model' '_citation.journal_abbrev'             
+3  2 'Structure model' '_citation.journal_id_ASTM'            
+4  2 'Structure model' '_citation.journal_id_CSD'             
+5  2 'Structure model' '_citation.journal_id_ISSN'            
+6  2 'Structure model' '_citation.journal_volume'             
+7  2 'Structure model' '_citation.pdbx_database_id_DOI'       
+8  2 'Structure model' '_citation.pdbx_database_id_PubMed'    
+9  2 'Structure model' '_citation.title'                      
+10 2 'Structure model' '_citation.year'                       
+11 2 'Structure model' '_citation_author.identifier_ORCID'    
+12 3 'Structure model' '_entity.pdbx_description'             
+13 3 'Structure model' '_entity_src_gen.gene_src_common_name' 
+14 3 'Structure model' '_entity_src_gen.pdbx_gene_src_gene'   
+15 3 'Structure model' '_struct.pdbx_descriptor'              
+16 3 'Structure model' '_struct_ref.db_code'                  
+17 3 'Structure model' '_struct_ref.pdbx_align_begin'         
+18 3 'Structure model' '_struct_ref.pdbx_db_accession'        
+19 3 'Structure model' '_struct_ref.pdbx_seq_one_letter_code' 
+20 3 'Structure model' '_struct_ref_seq.db_align_beg'         
+21 3 'Structure model' '_struct_ref_seq.db_align_end'         
+22 3 'Structure model' '_struct_ref_seq.pdbx_db_accession'    
 # 
 _software.citation_id            ? 
 _software.classification         refinement 
