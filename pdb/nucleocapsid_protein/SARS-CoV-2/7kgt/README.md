@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Human leukocyte antigen HLA-A*0201 in complex with SARS-CoV-2 N226-234. HLA-A*0201 consists of a MHC-class-I antigen and a Beta-2-microglobulin. The peptide is derived from the nucleocapsid protein of SARS-CoV-2 and bound between the alpha-helices. The structure was solved via X-ray diffraction to determine if and how nucleocapsid derived SARS-CoV-2 peptides trigger immune responses by CD8+ T-cells.
 
 ## Basefolder
 

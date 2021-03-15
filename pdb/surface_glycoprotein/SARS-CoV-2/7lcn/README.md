@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Structure of SARS-CoV-2 S protein in complex with N-terminal domain antibody DH1050.1. Isolated potent NAbs against the receptor-binding domain (RBD) and the N-terminal domain (NTD) of SARS-CoV-2 spike protein from individuals with acute or convalescent SARS-CoV-2 or a history of SARS-CoV-1 infection.
 
 ## Basefolder
 

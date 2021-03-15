@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+C-terminal dimerisation domain of SARS-CoV-2 nucleocapsid protein in dimerized form. It was made via X-ray diffraction.
 
 ## Basefolder
 

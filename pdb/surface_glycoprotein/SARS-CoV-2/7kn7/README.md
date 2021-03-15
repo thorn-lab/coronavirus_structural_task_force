@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 receptor binding domain complexed with nanobody VHH W and antibody Fab CC12.3. Two out of four neutralizing nanobodies that target the receptor-binding domain of the SARS-CoV-2 spike protein.
 
 ## Basefolder
 

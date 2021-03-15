@@ -10,7 +10,7 @@
 
 ## Description
 
- The X-ray Crystal structure of SARS Plpro in complex with beta-mercaptoethanol reported at 1.65 Å. Pl2pro is responsible for the cleaving of nsp1 to nsp4 of the polyprotein and also has a role in reducing the human immune response.
+The X-ray Crystal structure of SARS Plpro in complex with beta-mercaptoethanol reported at 1.65 Å. Pl2pro is responsible for the cleaving of nsp1 to nsp4 of the polyprotein and also has a role in reducing the human immune response.
 
 ## Basefolder
 

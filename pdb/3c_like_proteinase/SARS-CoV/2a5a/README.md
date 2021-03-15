@@ -10,7 +10,7 @@
 
 ## Description
 
-SARS-CoV main protease: a three domain protein with two antiparallel beta-2-barrels in which the substrate binding site is located and one alpha helical. It cleaves the C-terminus of replicase polyprotein at 11 sites as a functional homodimer. The structure is reported in the so-called ""unbound"" conformation and is in the pace group C2.
+SARS-CoV main protease: a three domain protein with two antiparallel beta-2-barrels in which the substrate binding site is located and one alpha helical. It cleaves the C-terminus of replicase polyprotein at 11 sites as a functional homodimer. The structure is reported in the so-called ""unbound
 
 ## Basefolder
 

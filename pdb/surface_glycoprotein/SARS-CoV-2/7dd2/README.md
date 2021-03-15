@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+S-3C1-F2 structure, two RBDs are up and one RBD is down, the two up RBD bind with a 3C1 fab. The study identifies and characterizes two groups of MAbs, 2H2 and 3C1 targeting RBD on the SC2 spike (S) protein. It reveals MAb-triggered stepwise allosteric rearrangements of the S trimer
 
 ## Basefolder
 

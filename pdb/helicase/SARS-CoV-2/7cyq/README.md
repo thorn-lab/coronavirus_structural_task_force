@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Cryo-EM structure of an extended SARS-CoV-2 replication and transcription complex (RTC) reveals an intermediate state in cap structure synthesis. Cryo-EM structure of an extended RTC assembled by nsp7-nsp8 2 -nsp12-nsp13 2 -RNA and a single RNA-binding protein, nsp9. Nsp9 binds tightly to nsp12 (RdRp) NiRAN, allowing nsp9 N terminus inserting into the catalytic center of nsp12 NiRAN, which then inhibits activity.
 
 ## Basefolder
 

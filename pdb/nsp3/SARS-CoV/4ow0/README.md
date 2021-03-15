@@ -10,7 +10,7 @@
 
 ## Description
 
- The X-ray crystal structure of PLpro in complex with N-[(3-fluorophenyl)methyl]-1-[(1R)-1-naphthalen-1-ylethyl]piperidine-4-carboxamide reported at  2.10 Å resolution. Pl2pro is responsible for the cleaving of nsp1 to nsp4 of the polyprotein and also has a role in reducing the human immune response.
+The X-ray crystal structure of PLpro in complex with N-[(3-fluorophenyl)methyl]-1-[(1R)-1-naphthalen-1-ylethyl]piperidine-4-carboxamide reported at  2.10 Å resolution. Pl2pro is responsible for the cleaving of nsp1 to nsp4 of the polyprotein and also has a role in reducing the human immune response.
 
 ## Basefolder
 

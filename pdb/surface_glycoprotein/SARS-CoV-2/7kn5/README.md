@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 receptor binding domain complexed with nanobodies VHH E and U. Two out of four neutralizing nanobodies that target the receptor-binding domain of the SARS-CoV-2 spike protein.
 
 ## Basefolder
 

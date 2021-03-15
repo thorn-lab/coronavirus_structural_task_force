@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+X-ray structure of circulating SARS-CoV-2 spike N439K variants. These may maintain fitness while evading antibody-mediated immunity.
 
 ## Basefolder
 

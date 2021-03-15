@@ -10,7 +10,7 @@
 
 ## Description
 
- Cryo-EM structure of SARS-CoV-2 spike protein trimer in the closed state with a single Arg S1/S2 cleavage site and two mutated stabilizing prolines (K986P, V987P). Related PDB Structures are 6ZOX, 6ZOZ, 6ZOY, 6ZP1, 6ZP0, 6ZP2 referring to disulfide-bonded and non-disulfide-bonded spike structures" 
+Cryo-EM structure of SARS-CoV-2 spike protein trimer in the closed state with a single Arg S1/S2 cleavage site and two mutated stabilizing prolines (K986P, V987P). Related PDB Structures are 6ZOX, 6ZOZ, 6ZOY, 6ZP1, 6ZP0, 6ZP2 referring to disulfide-bonded and non-disulfide-bonded spike structures
 
 ## Basefolder
 

@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Structure of SARS-CoV-2 RdRp/RNA complex at 3.4 Angstroms resolution. Hetero 4-mer - A1B1C1D1 measured by electron microscopy.
 
 ## Basefolder
 

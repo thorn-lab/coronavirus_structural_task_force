@@ -10,7 +10,7 @@
 
 ## Description
 
-NMR structure determinations of the DPUP domain. This domains exact function is unknown to this date." 
+NMR structure determinations of the DPUP domain. This domains exact function is unknown to this date.
 
 ## Basefolder
 

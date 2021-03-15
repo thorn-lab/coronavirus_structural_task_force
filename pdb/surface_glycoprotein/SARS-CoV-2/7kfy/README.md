@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structures of four Fab variants bound to the Receptor binding domain (RBD). The structures explain the basis for changes in RBD affinity. A germline revertant antibody binds tightly to the SC2 RBD and neutralizes SC2. The study clarifies the molecular basis for a heavily germline-biased human antibody response to SC2.
 
 ## Basefolder
 

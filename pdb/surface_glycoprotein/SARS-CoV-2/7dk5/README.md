@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Identification and characterization of two groups of mouse neutralizing monoclonal antibodies (MAbs) targeting the receptor-binding domain (RBD) on the SARS-CoV-2 spike (S) protein. S-2H2-F1 structure, one RBD is up and two RBDs are down, only up RBD binds with a 2H2 Fab.
 
 ## Basefolder
 

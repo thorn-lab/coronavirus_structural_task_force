@@ -8,7 +8,9 @@
 
 **Method**: NMR
 
+## Description
 
+Atomic structure of a SARS-CoV-2 mini RTC, assembled by viral RNA-dependent RNA polymerase (RdRp, nsp12) with a template-primer RNA, nsp7 and nsp8, and two helicase molecules (nsp13-1 and nsp13-2), by cryo-electron microscopy.
 
 ## Basefolder
 

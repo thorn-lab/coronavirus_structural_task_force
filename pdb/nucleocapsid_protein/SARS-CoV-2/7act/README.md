@@ -8,7 +8,9 @@
 
 **Method**: NMR
 
+## Description
 
+N-terminal RNA-binding domain of SARS-CoV-2 nucleocapsid protein. It is in complex with 10mer ssRNA. It was solved with NMR and demonstrates the binding capability of the charged binding groove.
 
 ## Basefolder
 

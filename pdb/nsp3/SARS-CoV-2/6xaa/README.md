@@ -10,7 +10,7 @@
 
 ## Description
 
-The crystal structure of the PLpro domain in complex with ubiquitin propargylamide. Structure reported as Hetero 2-mer.Ubq is one of the targets of PLpro, the structure shows the interaction between PLpro and Ubq" 
+The crystal structure of the PLpro domain in complex with ubiquitin propargylamide. Structure reported as Hetero 2-mer.Ubq is one of the targets of PLpro, the structure shows the interaction between PLpro and Ubq
 
 ## Basefolder
 

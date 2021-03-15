@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+C-terminal dimerisation domain of SARS-CoV-2 nucleocapsid protein in dimerized form. It was made via x-ray diffraction and the resolution is 1.50A. The group published this structure together with an N-terminal domain structure to discuss possible ways how the ribonucleoprotein-complex could form.
 
 ## Basefolder
 

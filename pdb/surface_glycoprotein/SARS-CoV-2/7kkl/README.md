@@ -10,7 +10,7 @@
 
 ## Description
 
-EM structure of SARS-CoV-2 spike protein in complex with the neutralizing nanobody mNb6. Non polymer only hexamer, spike with three chains and nanobody with three chains. mNb6 is a mutated form of Nb6 (7kkk) which binds with an increased affinity." 
+EM structure of SARS-CoV-2 spike protein in complex with the neutralizing nanobody mNb6. Non polymer only hexamer, spike with three chains and nanobody with three chains. mNb6 is a mutated form of Nb6 (7kkk) which binds with an increased affinity.
 
 ## Basefolder
 

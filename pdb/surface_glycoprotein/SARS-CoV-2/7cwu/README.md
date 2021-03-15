@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+SARS-CoV-2 spike proteins trimer in complex with P17 and FC05 Fabs cocktail. Structure with 3.50 Å resolution from electron microscopy (Reconstruction Method: single particle).
 
 ## Basefolder
 

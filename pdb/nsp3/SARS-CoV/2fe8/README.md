@@ -10,7 +10,7 @@
 
 ## Description
 
-In this entry, the 1.85-A crystal structure of the catalytic core of the PLpro domain is shown. Pl2pro is responsible for the cleaving of nsp1 to nsp4 of the polyprotein and also has a role in reducing the human immune response." 
+In this entry, the 1.85-A crystal structure of the catalytic core of the PLpro domain is shown. Pl2pro is responsible for the cleaving of nsp1 to nsp4 of the polyprotein and also has a role in reducing the human immune response.
 
 ## Basefolder
 

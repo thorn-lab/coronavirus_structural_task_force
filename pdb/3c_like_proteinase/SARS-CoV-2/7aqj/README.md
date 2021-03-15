@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Structure of SARS-CoV-2 Main Protease bound to Triglycidyl isocyanurate adopts a covalent and non-covalent binding mode to the Mpro active site. In both modes, the compound’s central ring sits on top of the catalytic dyad (His41, Cys145) and its three epoxypropyl substituents reach into subsites S1’, S1 and S2. The non-covalent binding mode is stabilized by hydrogen bonds to the main chain of Gly143 and Gly166, and to the side chain of His163. In the covalently 190 bound form, one oxirane ring is opened by nucleophilic attack of Cys145 forming a thioether
 
 ## Basefolder
 

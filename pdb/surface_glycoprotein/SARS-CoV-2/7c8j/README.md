@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Structure of COVID-19 virus spike receptor binding domain (RBD) to bat ACE2. It shows a binding mode similar to that of hACE2, the interacting network involving Y41 and E42 of bACE2-Rm showed substantial differences to that of hACE2. The Y41H mutant, attenuates the binding capacity of bACE2-Rm, indicating the central roles of Y41 in the interaction network
 
 ## Basefolder
 

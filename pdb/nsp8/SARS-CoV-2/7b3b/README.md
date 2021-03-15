@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Electron microscopy structure of elongating SARS-CoV-2 RNA-dependent RNA polymerase (Rdrp) with Remdesivir at position -3 (structure 1). Structure of elongating SARS-CoV-2 RNA-dependent RNA polymerase with Remdesivir at position -3 (structure 1). Cryo-electron microscopy is used to establish the molecular mechanism of remdesivir-induced RdRp stalling.
 
 ## Basefolder
 

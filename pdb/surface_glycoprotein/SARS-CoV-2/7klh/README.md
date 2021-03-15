@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+SARS-CoV-2 RBD in complex with Fab 15033-7, protein engineering and modular design principles that have led to the development of synthetic bivalent and tetravalent nAbs against SARS-CoV-2.
 
 ## Basefolder
 

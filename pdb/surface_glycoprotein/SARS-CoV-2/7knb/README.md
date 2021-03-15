@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Cryo-EM structure of single ACE2-bound SARS-CoV-2 trimer spike at pH 7.4, cryo-electron microscopy structures-at serological and endosomal pH-delineating spike recognition of up to three ACE2 molecules.
 
 ## Basefolder
 

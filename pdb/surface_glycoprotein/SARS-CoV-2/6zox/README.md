@@ -10,7 +10,7 @@
 
 ## Description
 
- Cryo-EM structure of a disulfide-stabilized SARS-CoV-2 spike protein trimer containing two disulfide-bond mutants (G413C; V987C) and a single Arg S1/S2 cleavage site. The disulfide-bonded spike protein is trapped in a closed, prefusion state. Related PDB Structures are 6ZOX, 6ZOZ, 6ZOY, 6ZP1, 6ZP0, 6ZP2 referring to disulfide-bonded and non-disulfide-bonded spike structures." 
+Cryo-EM structure of a disulfide-stabilized SARS-CoV-2 spike protein trimer containing two disulfide-bond mutants (G413C; V987C) and a single Arg S1/S2 cleavage site. The disulfide-bonded spike protein is trapped in a closed, prefusion state. Related PDB Structures are 6ZOX, 6ZOZ, 6ZOY, 6ZP1, 6ZP0, 6ZP2 referring to disulfide-bonded and non-disulfide-bonded spike structures.
 
 ## Basefolder
 

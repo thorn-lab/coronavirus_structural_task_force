@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+SARS-CoV-2 Spike protein at close state. Identification and characterization of two groups of mouse neutralizing monoclonal antibodies (MAbs) targeting the receptor-binding domain (RBD) on the SARS-CoV-2 spike (S) protein. MAbs 2H2 and 3C1 bind distinct epitopes and are compatible in formulating a noncompeting antibody cocktail.
 
 ## Basefolder
 

@@ -10,7 +10,7 @@
 
 ## Description
 
-The crystal structure of the SARS-CoV Mac1 domain was determined at 1.8-Angstroms resolution in complex with ADP-ribose. This domain has a function as an ADP ribose 1"-phosphatase." 
+The crystal structure of the SARS-CoV Mac1 domain was determined at 1.8-Angstroms resolution in complex with ADP-ribose. This domain has a function as an ADP ribose 1"-phosphatase.
 
 ## Basefolder
 

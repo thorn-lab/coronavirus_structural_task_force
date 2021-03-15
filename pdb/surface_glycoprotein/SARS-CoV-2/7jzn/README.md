@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+SARS-CoV-2 spike in complex with LCB3 (2RBDs open), interaction between the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) spike protein and the human angiotensin-converting enzyme 2 (ACE2).
 
 ## Basefolder
 

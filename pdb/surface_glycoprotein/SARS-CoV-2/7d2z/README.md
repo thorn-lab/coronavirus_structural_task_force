@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Structure of sy-body SR31 in complex with the SARS-CoV-2 S Receptor Binding domain (RBD). From synthetic construct of Severe acute respiratory syndrome coronavirus 2. 
 
 ## Basefolder
 

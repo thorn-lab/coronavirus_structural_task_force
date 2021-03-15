@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Structure of SARS-CoV-2 Main Protease bound to Ifenprodil. Mpro which cleaves the SC2 polyprotein pp1ab at eleven distinct sites has its core cleavage motif at LeuGln↓(Ser/Ala/Gly)(1). Mpro allosteric site (dimerization domain) is in direct vicinity of the S1 pocket of the adjacent monomer within the native dimer and shows potential for antiviral inhibition when bound to ifenprodil.
 
 ## Basefolder
 

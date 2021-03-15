@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Structure of Main Protease (Mpro) bound at its cysteine C145 active site to MPI3, an inhibitor which contains β-(S-2-oxopyrrolidin-3-yl)-alaninal (Opal). MPI3 is bound to the P1, P2 and P4 cavities of C145 active site via a reversible covalent bond and leaves the P3 binding pocket empty. This binding investigates the inhibition of proteolytic processing of Nsps in SC2
 
 ## Basefolder
 

@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Cryo-EM structure of Favipiravir bound to replicating polymerase complex of SARS-CoV-2 in the pre-catalytic state.
 
 ## Basefolder
 

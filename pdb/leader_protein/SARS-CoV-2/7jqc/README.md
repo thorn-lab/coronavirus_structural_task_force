@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+This electron microscopy structure shows the SARS-CoV-2 leader protein (Nsp1) in a complex with CrPV IRES and rabbit 40S ribosome. The protein inserts its C-terminal domain into the mRNA channel of the ribosome, where it interferes with mRNA binding and inhibits cellular (not viral) translation. Nsp1 effectively blocks retinoic acid-inducible gene I-dependent innate immune responses that would otherwise facilitate clearance of the infection.
 
 ## Basefolder
 

@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Cryo-EM structure of prefusion SC2 spike glycoprotein in complex with 910-30 Fab. 910-30 Fab targets the SC2 ACE2 receptor binding site and binds to RBD in the up position. Bound to the SC2 spike trimer 910-30 recognizes a glycan-independent region. Native heavy:light chain pairings is important for ACE2 binding competition and for spike disassembly.
 
 ## Basefolder
 

@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Closed conformation of D614G SARS-CoV-2 spike protein. In the D614 spike"closed",  conformation, RBD is partly buried and cannot bind to the human ACE2 receptor. The D614G substitution promotes"opening",  of the spike, priming it for binding to the receptor ACE2
 
 ## Basefolder
 

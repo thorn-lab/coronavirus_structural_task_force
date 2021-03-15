@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of 3C-like protease from SARS-CoV-2 (Homodimer) in its apo-form. Structure was refined to a 1.6 Å resolution.
 
 ## Basefolder
 

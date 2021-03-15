@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Cryo-EM structure of protein encoded by vaccine candidate BNT162b2. Preclinical development of two vaccine candidates (BNT162b1 and BNT162b2) that contain nucleoside-modified messenger RNA that encodes immunogens derived from the spike glycoprotein (S) of SARS-CoV-2, formulated in lipid nanoparticles. BNT162b2 encodes the full-length transmembrane S glycoprotein.
 
 ## Basefolder
 

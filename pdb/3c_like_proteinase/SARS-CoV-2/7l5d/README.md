@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+This X-ray crystal structure shows the SARS-CoV-2 main protease in complex with demethylated analog of masitinib.
 
 ## Basefolder
 

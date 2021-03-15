@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of the RBD-Nb20 complex to study neutralization potency against SC2. All three CDRs of Nb20 interact with the RBD by binding to its large extended external loop with two short b strands. RBD forms hydrogen bonds and ionic interactions with Nb20 which constitutes a major polar interaction network at the RBD and Nb20 interface. In addition, packing of CDR2 against RBD to form hydrophobic interactions at the interface occurs and cation p of Nb20 interacts with RBD side chain
 
 ## Basefolder
 

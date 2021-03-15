@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Structure of the SARS-CoV-2 main protease in complex with inhibitor MPI8 to study inhibition of Mpro. MPI8 completely prevented cytopathogenic effect of SC2 in Vero E6 cells however, it had a much higher potency in A549/ACE2 cells which possess different host protease proteomes. As a result, is likely MPI8 inhibit some host proteases that serve critical functions in the SC2 entry into and replication in host cells and therefore exert different SC2 inhibition.
 
 ## Basefolder
 

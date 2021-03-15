@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+SARS-CoV-2 RBD in complex with Fab 15033. Fab 15033 recognize a patch of surface-exposed non-polar residues on the RBD using several non-polar residues in both their heavy and light chain CDRs. In the RBD-15033 complex, Fab 15033 residues bind with RBD residues via Van der Waals interactions as well as a weak hydrogen bond. It follows that direct steric hindrance explains the ability of 15033 to block the RBD-ACE2 interaction.
 
 ## Basefolder
 

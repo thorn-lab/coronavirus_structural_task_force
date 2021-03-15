@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Structural basis for a germline-biased antibody response to SARS-CoV-2 (RBD:C1A-B3 Fab). X-ray crystal structures of four Fab variants bound to the RBD to explain the basis for changes in RBD affinity.
 
 ## Basefolder
 

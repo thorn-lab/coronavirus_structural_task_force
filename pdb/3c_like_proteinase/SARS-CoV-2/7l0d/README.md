@@ -10,7 +10,7 @@
 
 ## Description
 
-Full length 3C-like protease from Sars-Cov-2 in complex with con-covalent inhibitor ML188. It was solved with x-ray diffraction to determine the the potency of ML188"s attachment to the protein. [0EN] (https://www.rcsb.org/ligand/0EN) is bound." 
+Full length 3C-like protease from Sars-Cov-2 in complex with con-covalent inhibitor ML188. It was solved with x-ray diffraction to determine the the potency of ML188"s attachment to the protein. [0EN] (https://www.rcsb.org/ligand/0EN) is bound.
 
 ## Basefolder
 

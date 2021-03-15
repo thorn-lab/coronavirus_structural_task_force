@@ -10,7 +10,7 @@
 
 ## Description
 
-Electron microscopy structure of SARS-CoV2 RNA-dependent RNA polymerase (Rdrp with subunits Nsp7-Nsp8-Nsp12) in complex with template:primer dsRNA and favipiravir-RTP.
+Electron microscopy structure of SARS-CoV2 RNA-dependent RNA polymerase (Rdrp with subunits Nsp7-Nsp8-Nsp12) in complex with template:primer dsRNA and favipiravir-RTP. Structure of favipiravir ribonucleoside triphosphate (favipiravir-RTP) in complex with the SARS-CoV-2 RNA-dependent RNA polymerase (RdRp) bound to a template:primer RNA duplex, determined by electron cryomicroscopy (cryoEM) to a resolution of 2.5 Å.
 
 ## Basefolder
 

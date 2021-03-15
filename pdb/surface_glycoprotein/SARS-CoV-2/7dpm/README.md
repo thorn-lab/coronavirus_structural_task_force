@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 Spike RBD in complex with MW06 Fab. From X-ray diffraction at resolution of 3.30 Å.
 
 ## Basefolder
 

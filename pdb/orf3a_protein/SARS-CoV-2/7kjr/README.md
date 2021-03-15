@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Cryo-EM structure of SARS-CoV-2 ORF3a in dimerized form. The structure consists of two ORF3a chains dimerized and two peripher alpha-helices from membrane scaffold proteins from the lipid nanodiscs.
 
 ## Basefolder
 

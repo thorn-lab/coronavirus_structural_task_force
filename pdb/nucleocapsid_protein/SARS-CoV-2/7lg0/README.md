@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Human leukocyte antigen HLA-B*0702 in complex with SARS-CoV-2 epitope SPRWYFYYL. HLA-B*0702 consists of a MHC-class-I antigen and a Beta-2-microglobulin. The peptide is derived from the nucleocapsid protein of SARS-CoV-2 is bound between the 2 alpha-helices. The structure was solved via X-ray diffraction to dertermine possible immune response to the peptide."   
 
 ## Basefolder
 

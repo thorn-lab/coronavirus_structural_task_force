@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal Structure of COVID-19 virus spike receptor-binding domain complexed with a neutralizing antibody CT-P59, receptor binding domain (RBD) of the viral spike protein via antibody library constructed from peripheral blood mononuclear cells, CT-P59 mAb potently neutralizes SARS-CoV-2 isolates including the D614G variant.
 
 ## Basefolder
 

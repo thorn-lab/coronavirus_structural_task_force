@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Structure of COVID-19 RNA-dependent RNA polymerase bound to suramin. Hetero 4-mer - A2B1C1 measured by electron microscopy.
 
 ## Basefolder
 

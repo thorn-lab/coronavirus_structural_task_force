@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+SARS-CoV-2 S trimer in S-open state. Cryo-EM structures of a tightly closed SARS-CoV-2 S-trimer with packed fusion peptide, and an ACE2-bound S-trimer at 2.7 Å and 3.8 Å resolution.
 
 ## Basefolder
 

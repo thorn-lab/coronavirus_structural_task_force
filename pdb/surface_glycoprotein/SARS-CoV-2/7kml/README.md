@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Cryo-EM structure of SARS-CoV-2 spike in complex with Fab 15033-7, with three RBDs bound.  protein engineering and modular design principles that have led to the development of synthetic bivalent and tetravalent nAbs against SARS-CoV-2.
 
 ## Basefolder
 

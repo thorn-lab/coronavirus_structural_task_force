@@ -10,7 +10,7 @@
 
 ## Description
 
-The x-ray Crystal Structure of Mac1 of NSP3 from SARS-CoV-2 in the apo form. This domain has a function as an ADP ribose 1"-phosphatase." 
+The x-ray Crystal Structure of Mac1 of NSP3 from SARS-CoV-2 in the apo form. This domain has a function as an ADP ribose 1"-phosphatase.
 
 ## Basefolder
 

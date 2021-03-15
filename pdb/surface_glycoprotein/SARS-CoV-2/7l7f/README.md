@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Cryo-EM structure of human ACE2 receptor bound to protein encoded by vaccine candidate BNT162b1. Preclinical vaccine candidates (BNT162b1 and BNT162b2) that contain nucleoside-modified messenger RNA from the spike glycoprotein (S) of SARS-CoV-2, formulated in lipid nanoparticles. BNT162b1 encodes a soluble, secreted trimerized receptor-binding domain (known as the RBD-foldon).
 
 ## Basefolder
 

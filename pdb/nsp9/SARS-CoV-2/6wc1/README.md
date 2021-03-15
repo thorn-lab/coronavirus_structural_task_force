@@ -10,7 +10,7 @@
 
 ## Description
 
-Crystal structure of peptide-bound SARS-CoV-2 Nsp9 RNA-replicase. Studying putative peptide-binding site at the dimer interface of the SARS-CoV-2 Nsp9 RNA-replicase." 
+Crystal structure of peptide-bound SARS-CoV-2 Nsp9 RNA-replicase. Studying putative peptide-binding site at the dimer interface of the SARS-CoV-2 Nsp9 RNA-replicase.
 
 ## Basefolder
 

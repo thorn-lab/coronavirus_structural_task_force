@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Dissociated S1 domain of SARS-CoV-2 Spike bound to ACE2 (Unmasked Refinement). Binding of ACE2 to the furin-cleaved form of the SARS-CoV-2 spike protein using cryo-electron microscopy.
 
 ## Basefolder
 
