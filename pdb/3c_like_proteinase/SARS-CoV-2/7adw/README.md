@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+The crystal structure of the main protease bound to 2,4'-dimethylpropiophenone. Further ligands are dimethyl sulfoxide, imidazole and chloride ions. The data has a resolution of 1.63 Å.
 
 ## Basefolder
 

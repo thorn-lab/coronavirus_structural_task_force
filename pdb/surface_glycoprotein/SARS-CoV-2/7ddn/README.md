@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+This electron microscopy structure shows the SARS-CoV-2 spike protein at open state.
 
 ## Basefolder
 

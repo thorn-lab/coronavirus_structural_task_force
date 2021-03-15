@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+The nsp3 macrodomain in complex with ADP-HPM. Further ligands are D-malate, 1,2-ethanediol and sodium ions.
 
 ## Basefolder
 

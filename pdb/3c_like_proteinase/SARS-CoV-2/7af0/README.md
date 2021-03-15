@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+X-ray diffraction crystal structure of SARS-CoV-2 main protease, which is responsible for cutting the polyprotein into functional parts, in complex with Ipidacrine. Ipidacrine is a reversible acetylcholinesterase inhibitor. Measurement was part of a drug screen to find a suitable inhibitor candidate in already approved drugs.
 
 ## Basefolder
 

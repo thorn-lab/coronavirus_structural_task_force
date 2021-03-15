@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+The crystal structure of the main protease bound to isofloxythepin. The ligands are 9-fluoranyl-3-propan-2-yl-5,6-dihydrobenzo[b][1]benzothiepine, di(hydroxyethyl)ether, dimethyl sulfoxide and imidazole. The data has a resolution of 1.55 Å.
 
 ## Basefolder
 

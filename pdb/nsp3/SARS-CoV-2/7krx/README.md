@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+The crystal structure of the nsp3 papain-like protease with a C111S mutant in complex with PLP_Snyder441. Further ligands are zinc, acetate and chloride ions.
 
 ## Basefolder
 

@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Nsp15 bound to uridine-5'-monophosphate and phosphate ions.
 
 ## Basefolder
 

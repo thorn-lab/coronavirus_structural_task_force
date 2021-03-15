@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of 3C-like protease from SARS CoV2 (Homodimer) in complex with covalent inhibitor narlaprevir. Narlaprevir is an hepatitis C serine protease inhibitor.
 
 ## Basefolder
 

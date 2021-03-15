@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+SARS-CoV-2 Main Protease Co-Crystal Structure with Telaprevir Determined from Crystals Grown with 40 nL Acoustically Ejected Mpro Droplets at 1.63 A Resolution (Direct Vitrification).
 
 ## Basefolder
 

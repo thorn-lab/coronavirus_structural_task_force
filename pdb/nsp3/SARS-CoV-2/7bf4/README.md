@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+The crystal structure of the nsp3 macrodomain in complex with GMP. A further ligand is 1,2-ethanediol and the data has a resolution of 1.55 Å.
 
 ## Basefolder
 

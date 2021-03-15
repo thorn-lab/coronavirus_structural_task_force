@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of 3C-like protease from SARS CoV2 (Homodimer) bound to Tretazicar. It binds non-covalently to the active site. The resolution is 1.63 Å.
 
 ## Basefolder
 

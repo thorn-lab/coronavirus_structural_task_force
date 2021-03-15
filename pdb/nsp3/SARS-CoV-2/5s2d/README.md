@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Part of PanDDA analysis group deposition. SARS-CoV-2 Nsp3 macrodomain crystallographic fragment screen. The potential binding ligand(s): [U0P](https://www.rcsb.org/ligand/U0P).
 
 ## Basefolder
 

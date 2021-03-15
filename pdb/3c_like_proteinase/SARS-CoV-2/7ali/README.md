@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Full length 3C-like protease from Sars-CoV-2 with 1.65A resolution. The spacegroup is P2(1).
 
 ## Basefolder
 

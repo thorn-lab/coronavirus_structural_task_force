@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+This electron microscopy structure shows the SARS-CoV-2 Spike protein in complex with Receptor Binding Domain antibody DH1047.
 
 ## Basefolder
 

@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+The crystal structure of the nsp15 NendoU. As ligands it has phosphate ions.
 
 ## Basefolder
 

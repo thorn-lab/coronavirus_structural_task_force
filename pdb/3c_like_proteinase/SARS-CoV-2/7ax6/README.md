@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of 3C-like protease from SARS CoV2 (Homodimer) bound to Glutathione isopropyl ester. This compound binds covalently to Cys156.
 
 ## Basefolder
 

@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of human leukocyte antigen A*0201 (HLA-A*02) in complex with SARS-CoV2 epitope ALWEIQQVV. HLA-A corresponds to MHC I complex and is central to the cellular immune response." 
 
 ## Basefolder
 

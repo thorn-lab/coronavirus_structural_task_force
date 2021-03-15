@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+X-ray diffraction crystal structure of SARS-CoV-2 main protease, which is responsible for cutting the polyprotein into functional parts, bound to AR-42. AR-42 is a Histone deacetylase inhibitor. Measurement was part of a drug screen to find a suitable inhibitor candidate in already approved drugs.
 
 ## Basefolder
 

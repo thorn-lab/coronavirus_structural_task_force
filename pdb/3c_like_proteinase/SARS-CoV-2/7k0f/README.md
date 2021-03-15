@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Full length 3C-like protease from Sars-Cov-2 in complex with a deuterated GC376 alpha-ketoamide analog. The resolution is 1.65A and it was solved with X-ray diffraction. [VR4](https://www.rcsb.org/ligand/VR4) is bound 
 
 ## Basefolder
 

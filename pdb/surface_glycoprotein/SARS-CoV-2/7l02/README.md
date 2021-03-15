@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+This electron microscopy structure shows the SARS-CoV-2 2P S ectodomain bound to one copy of domain-swapped antibody 2G12. A glycan cluster on the SARS-CoV-2 spike ectodomain is recognized by Fab-dimerized glycan-reactive antibodies.
 
 ## Basefolder
 

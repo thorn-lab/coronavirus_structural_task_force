@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+This electron microscopy structure shows the SARS-CoV spike RBD bound to two neutralizing nanobodies. Nanobodies have size and cost advantages over conventional antibodies. This structure shows an in vitro generated multivalent neutralizing nanobody that targets the receptor-binding domain of the SARS-CoV-2 spike protein.
 
 ## Basefolder
 

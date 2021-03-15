@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Part of PanDDA analysis group deposition. SARS-Cov-2 helicase NSP13 screened against the DSL Fragment Library by X-ray Crystallography at the XChem facility of Diamond Light Source beamline I04-1. The potential binding ligand(s): [ZN](https://www.rcsb.org/ligand/ZN).
 
 ## Basefolder
 

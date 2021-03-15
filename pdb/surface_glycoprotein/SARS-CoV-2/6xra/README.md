@@ -18,7 +18,7 @@ EM structure of the S2 trimer in the postfusion conformation. Homo trimer with t
 
 ## Subfolders
 
-
+**isolde** - contains manual re-refinements from ISOLDE in ChimeraX, done by Tristan Croll. See details [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/surface_glycoprotein/SARS-CoV-2/6xra/isolde/directory_info.txt)
 
 **old** - contains files from historical revisions
 

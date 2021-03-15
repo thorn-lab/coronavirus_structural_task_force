@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+This electron microscopy structure shows the SARS-CoV-2 spike protein in complex with 2H2-F3a fragments. Two RBDs are up and one RBD is down, each up RBD binds with a 2H2 Fab.
 
 ## Basefolder
 

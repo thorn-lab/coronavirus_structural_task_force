@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+This X-ray structure shows the SARS-CoV-2 spike RBD bound to LY-CoV555 neutralizing antibody.
 
 ## Basefolder
 

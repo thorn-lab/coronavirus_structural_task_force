@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Full length 3C-like protease from Sars-Cov-2 with a 1.25A resolution and in complex with inhibitor FRL-2420. It was done via x-ray diffraction and [V7G] (https://www.rcsb.org/ligand/V7G) is bound.
 
 ## Basefolder
 

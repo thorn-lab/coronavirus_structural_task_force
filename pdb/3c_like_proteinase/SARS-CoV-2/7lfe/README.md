@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+SARS-CoV-2 Main protease immature form - F2X Entry Library E03 fragment.
 
 ## Basefolder
 

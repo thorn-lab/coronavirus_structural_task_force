@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Structure of SC2 spike protein receptor binding domain (RBD) and P17 fab complex. The study exploited antibody cooperativity to develop a therapeutic antibody cocktail against SC2.  SC2 spike in complex with H014 and P17 antibodies achieved synergistic neutralization by S1 shielding and conformational locking, blocking receptor attachment and viral membrane fusion, conferring high potency as well as robustness against viral mutation escape.
 
 ## Basefolder
 

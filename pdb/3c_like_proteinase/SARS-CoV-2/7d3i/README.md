@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+X-ray diffraction crystal structure of SARS-CoV-2 main protease, which is responsible for cutting the polyprotein into functional parts, in complex with MI-23. MI-23 is a bicycloproline-containing Mpro inhibitor. Measurement was part of a drug screen of potential inhibitors which are derived from either Boceprevir or Telaprevir.
 
 ## Basefolder
 
@@ -22,7 +24,7 @@
 
 
 
-
+**old** - contains files from historical revisions
 
 **validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/3c_like_proteinase/SARS-CoV-2/7d3i/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/3c_like_proteinase/SARS-CoV-2/7d3i/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/3c_like_proteinase/SARS-CoV-2/7d3i/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV-2/7d3i/validation/Xtriage_output.log)  
 

@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+This X-ray crystal structure shows the SARS-CoV-2 main protease in complex with Narlaprevir. The malleability of the SARS-CoV-2 3CL M pro active-site cavity facilitates the binding of clinical antivirals.
 
 ## Basefolder
 

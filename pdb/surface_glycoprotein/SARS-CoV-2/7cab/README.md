@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+This electron microscopy structure shows the SARS-CoV-2 spike protein bound to the potent therapeutic antibody 2-acetamido-2-deoxy-beta-D-glucopyranose-(1-4)-2-acetamido-2-deoxy-beta-D-glucopyranose. Cryo-electron microscopy characterization of the SARS-CoV-2 S trimer in complex with the H014 Fab fragment unveiled a previously uncharacterized conformational epitope, which was only accessible when the RBD was in an open conformation.
 
 ## Basefolder
 
@@ -18,7 +20,7 @@
 
 
 
-
+**old** - contains files from historical revisions
 
 **validation** - contains validation reports. This structure has been analyzed by <br>     [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7cab/validation/ccpem-validation)
 

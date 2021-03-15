@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+The crystal structure of the nsp3 nucleic acid binding domain (NAB).
 
 ## Basefolder
 

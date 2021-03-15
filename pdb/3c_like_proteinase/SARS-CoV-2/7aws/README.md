@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+The crystal structure of the main protease bound to TH-302. Further ligands are dimethyl sulfoxide and chloride ions. The data has a resolution of 1.81 Å.
 
 ## Basefolder
 

@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Protein name**: 3c like proteinase
+**Protein name**: methyltransferase-nsp10
 
 **Organism**: SARS-CoV-2
 
@@ -24,7 +24,7 @@
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/3c_like_proteinase/SARS-CoV-2/7koa/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/3c_like_proteinase/SARS-CoV-2/7koa/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/3c_like_proteinase/SARS-CoV-2/7koa/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV-2/7koa/validation/Xtriage_output.log)  
+**validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/methyltransferase-nsp10/SARS-CoV-2/7koa/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/methyltransferase-nsp10/SARS-CoV-2/7koa/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/methyltransferase-nsp10/SARS-CoV-2/7koa/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/methyltransferase-nsp10/SARS-CoV-2/7koa/validation/Xtriage_output.log)  
 
 
 
@@ -60,7 +60,7 @@ No public deposition. --<br>
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/7koa
 
-**PDBe-KB**: https://www.ebi.ac.uk/pdbe/pdbe-kb/covid19/PRO_0000449623 
+**PDBe-KB**: https://www.ebi.ac.uk/pdbe/pdbe-kb/covid19/PRO_0000449633 
  
 **PDBr**: https://www.rcsb.org/structure/7koa 
 

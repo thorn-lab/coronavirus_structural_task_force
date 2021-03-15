@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+SARS-CoV-2 spike protein in complex with Fab 15033-7
 
 ## Basefolder
 

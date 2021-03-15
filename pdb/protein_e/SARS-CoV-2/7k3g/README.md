@@ -8,7 +8,9 @@
 
 **Method**: NMR
 
+## Description
 
+The pentameric structure of the SARS-CoV-2 envelope protein transmembrane domain. The structure was determined by solid-state NMR. The e protein is important for the virus pathogenicity.
 
 ## Basefolder
 

@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS CoV2 3C-like protease C145A mutant in complex with its C-terminal autoprocessing sequence. Product bound state at 2.0 Å resolution. Mutation of the catalytic cysteine to alanine (C145A) abolishes activity.
 
 ## Basefolder
 

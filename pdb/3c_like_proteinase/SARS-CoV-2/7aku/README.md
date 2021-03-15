@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of 3C-like protease from SARS CoV2 (Homodimer) bound to Calpeptin. It binds covalently via its aldehyde group to Cys145, forming a thiohemiacetal. This peptidomimetic inhibitor occupies substrate pockets S1 to S3. 
 
 ## Basefolder
 

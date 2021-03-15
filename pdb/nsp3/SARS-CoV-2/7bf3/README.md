@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+The crystal structure of the nsp3 macrodomain in complex with adenosine. Further ligands are 1,2-ethanediol and magnesion ions.
 
 ## Basefolder
 

@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of Acyl-enzyme intermediate structure of SARS-CoV-2 3C-like protease in complex with its native C-terminal autocleavage sequence.
 
 ## Basefolder
 

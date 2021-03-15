@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Part of PanDDA analysis group deposition of SARS-CoV-2 NSP3 macrodomain fragment screen. SARS-CoV-2 NSP3 macrodomain from SARS-CoV-2 screened against the Enamine Essential fragment library (Enamine) and the UCSF_91 fragment library (UCSF) by X-ray Crystallography at UCSF using ALS 8.3.1 and SSRL 12-2. The potential binding ligand(s): [4JQ](https://www.rcsb.org/ligand/4JQ).
 
 ## Basefolder
 

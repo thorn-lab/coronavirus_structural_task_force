@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal Structure of SARS-CoV-2 Main Protease (3CLpro/Mpro) in the Apo Form at 1.2 A Resolution
 
 ## Basefolder
 

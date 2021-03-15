@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Part of PanDDA analysis group deposition. SARS-CoV-2 Nsp3 macrodomain crystallographic fragment screen with EU-OPENSCREEN fragment library. The potential binding ligand(s): [WRJ](https://www.rcsb.org/ligand/WRJ).
 
 ## Basefolder
 

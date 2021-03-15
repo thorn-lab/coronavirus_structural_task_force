@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+The X-ray structure of the nsp3 papain-like protease (PLpro) bound to inhibitor XR8-89. Its ligands are zinc ions, sulfate ions, glycerol and 5-[(azetidin-3-yl)amino]-N-[(1R)-1-{3-[5-({[(1S,3R)-3-hydroxycyclopentyl]amino}methyl)thiophen-2-yl]phenyl}ethyl]-2-methylbenzamide.
 
 ## Basefolder
 
@@ -22,9 +24,9 @@
 
 
 
+**old** - contains files from historical revisions
 
-
-**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp3/SARS-CoV-2/7lbr/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp3/SARS-CoV-2/7lbr/validation/Xtriage_output.log)  
+**validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp3/SARS-CoV-2/7lbr/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp3/SARS-CoV-2/7lbr/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp3/SARS-CoV-2/7lbr/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp3/SARS-CoV-2/7lbr/validation/Xtriage_output.log)  
 
 
 

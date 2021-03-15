@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Full length 3C-like protease from SARS-CoV-2. It has a large beta angle and the spacegroup is C2. This structure was resolved using x-ray crystallography to identify possible binding compounds in approved drugs or drugs in clinical trial. Resolution is 1.40A.
 
 ## Basefolder
 

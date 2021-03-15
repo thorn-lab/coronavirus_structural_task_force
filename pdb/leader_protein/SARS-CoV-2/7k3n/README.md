@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+This X-Ray structure shows the SARS-CoV-2 leader protein (Nsp1) at a resolution of 1.65 Å but with several unmodelled regions. The protein inserts its C-terminal domain into the mRNA channel of the ribosome, where it interferes with mRNA binding and inhibits cellular (not viral) translation. Nsp1 effectively blocks retinoic acid-inducible gene I-dependent innate immune responses that would otherwise facilitate clearance of the infection.
 
 ## Basefolder
 

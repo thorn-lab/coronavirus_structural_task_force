@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of 3C-like protease from SARS CoV2 (Homodimer) bound to potent broad-spectrum non-covalent inhibitor X77. The resolution is 1.46 Å.
 
 ## Basefolder
 

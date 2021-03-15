@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of 3C-like protease from SARS CoV2 (Homodimer) with keton-based N-[(2S)-1-({(2S,3S)-3,4-dihydroxy-1-[(3S)-2-oxopyrrolidin-3-yl]butan-2-yl}amino)-4-methyl-1-oxopentan-2-yl]-4-methoxy-1H-indole-2-carboxamide. The resolution is 1.41 Å
 
 ## Basefolder
 

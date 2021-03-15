@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Electron microscopy structure of elongating SARS-CoV-2 RNA-dependent RNA polymerase (Rdrp) with AMP at position -4 (structure 3).
 
 ## Basefolder
 

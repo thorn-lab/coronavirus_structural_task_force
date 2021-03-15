@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+X-ray diffraction crystal structure of SARS-CoV-2 main protease, which is responsible for cutting the polyprotein into functional parts, in complex with repurposed anti-HCV drug, Boceprevir. This is protease inhibitor which binds covalently to Serine.
 
 ## Basefolder
 

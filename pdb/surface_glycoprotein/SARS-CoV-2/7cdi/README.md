@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+This X-ray structure shows the SARS-CoV-2 spike RBD bound to antibody P2C-1F11.
 
 ## Basefolder
 

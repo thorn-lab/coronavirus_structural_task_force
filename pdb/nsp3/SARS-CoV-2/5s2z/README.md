@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Part of PanDDA analysis group deposition. SARS-CoV-2 Nsp3 macrodomain crystallographic fragment screen. The potential binding ligand(s): [T6J](https://www.rcsb.org/ligand/T6J).
 
 ## Basefolder
 

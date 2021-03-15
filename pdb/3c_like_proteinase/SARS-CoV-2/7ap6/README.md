@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Structure of SARS-CoV-2 Main Protease bound to MUT056399. MUT056399 binds without a covalent bond to active-site Cys145 and reduced viral replication. Its diphenyl ether core blocks access to the catalytic site consisting of Cys145 and His41. The terminal carboxamide group occupies pocket S1 and forms hydrogen bonds to the side chain of His163 and the backbone of Phe140. The other part of the molecule reaches deep into pocket S2, which is enlarged by a 210 shift of the side chain of Met49 out of the substrate binding pocket
 
 ## Basefolder
 

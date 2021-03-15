@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+This electron microscopy structure shows the SARS-CoV-2 Double ACE2-Bound Spike Trimer at pH 5.5. Cryo-EM Structures of SARS-CoV-2 Spike with and without ACE2 reveal a pH-dependent switch to mediate endosomal positioning of RBDs.
 
 ## Basefolder
 

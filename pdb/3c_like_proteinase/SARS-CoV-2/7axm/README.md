@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of 3C-like protease from SARS CoV2 (Homodimer) bound to Pelitinib. Its halogenated benzene ring binds to the hydrophobic groove. The central 3-cyanoquinoline moiety interacts with the end of the C-terminal helix (Ser301). The ethyl ether substituent pushes against Tyr118 and Asn142 (from loop 141-144 of the S1 pocket) of the opposing protomer within the native dimer." 
 
 ## Basefolder
 

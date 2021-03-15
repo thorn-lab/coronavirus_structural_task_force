@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Structure of 3C-like protease from SARS-CoV-2 (Homodimer) bound to Clonidine to study allosteric drug-binding. The resolution is 1.65 Å.
 
 ## Basefolder
 

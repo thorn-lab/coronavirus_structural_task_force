@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+The crystal structure of the nsp3 macrodomain in complex with PARG345. As ligands it has four SO4 and 3-[(1,3-dimethyl-2,6-dioxo-2,3,6,9-tetrahydro-1H-purin-8-yl)sulfanyl]-N-{[2-(morpholin-4-yl)ethyl]sulfonyl}propanamide.
 
 ## Basefolder
 
@@ -22,7 +24,7 @@
 
 
 
-
+**old** - contains files from historical revisions
 
 **validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp3/SARS-CoV-2/7lg7/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp3/SARS-CoV-2/7lg7/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp3/SARS-CoV-2/7lg7/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp3/SARS-CoV-2/7lg7/validation/Xtriage_output.log)  
 

@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of 3C-like protease from SARS-CoV-2 (Homodimer) in complex with Opal‐based inhibitor MP17. The enzyme shows changes (M49, N142, and the P168‐containing loop) to accommodate inhibitors and a covalent interaction. The resolution is 1.65 Å.
 
 ## Basefolder
 

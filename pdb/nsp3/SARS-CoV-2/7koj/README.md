@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+The crystal structure of the nsp3 papain-like protease (PLpro) with a C111S mutant in complex with PLP_Snyder494. The ligands are 2-methyl-N-[(1R)-1-(naphthalen-1-yl)ethyl]-5-{[(prop-2-en-1-yl)carbamoyl]amino}benzamide, 2-(N-MORPHOLINO)-ETHANESULFONIC ACID, and ions of zinc, acetate, chloride and an unknown atom or ion.
 
 ## Basefolder
 

@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Full length 3C-like protease from Sars-Cov-2 with a 1.70A resolution and in complex with inhibitor 7j. It was done via x-ray diffraction to check inhibition potency. [QYS] (https://www.rcsb.org/ligand/QYS) is bound to the cleavage site.
 
 ## Basefolder
 

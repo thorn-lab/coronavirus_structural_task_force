@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of 3C-like protease from SARS CoV2 (Homodimer) with alternative conformation of the active site promoted by methylene-bridged cysteine and lysine residues. The resolution is 1.55 Å.
 
 ## Basefolder
 

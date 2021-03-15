@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+The nsp3 macrodomain in complex with ADP-ribose. A further ligand is a sodium ion, the resolution of the structure is 1.57 Å.
 
 ## Basefolder
 

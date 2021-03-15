@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+The X-ray crystal structure of the nsp3 macrodomain in P43 crystal form and in complex with ADP-ribose. The structure has a resolution of 0.88 Å.
 
 ## Basefolder
 

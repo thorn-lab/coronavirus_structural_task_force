@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of 3C-like protease from SARS CoV2 (Homodimer) bound to SEN1269 ligand. SEN1269 (Amyloid-β aggregation inhibitor) binds to the active site of one protomer in the native dimer. This causes a break in the crystallographic symmetry. The central pyrazine ring forms a hydrogen bond to Gln189.
 
 ## Basefolder
 

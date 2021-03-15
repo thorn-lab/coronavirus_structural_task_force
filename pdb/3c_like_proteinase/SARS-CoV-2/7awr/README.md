@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+1.34 Å X-ray diffraction crystal structure of SARS-CoV-2 main protease, which is responsible for cutting the polyprotein into functional parts. Protein is in complex with allosteric binding drug Tegafur. Measurement was part of a massive drug screen find a candidate drug to repurpose as inhibitor for main protease. 
 
 ## Basefolder
 

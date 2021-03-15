@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+The nsp15 endoribonuclease crystal structure in complex with uridine-3',5'-diphosphate. A further ligand is 1,2-ethanediol.
 
 ## Basefolder
 

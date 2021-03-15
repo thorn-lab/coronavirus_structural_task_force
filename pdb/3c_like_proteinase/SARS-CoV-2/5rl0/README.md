@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Part of PanDDA analysis group deposition SARS-CoV-2 main protease deposition of computational designs of SARS-CoV-2 main protease covalent inhibitors. SARS-CoV-2 main protease from Coronaviridae sp. screened against computationally designed covalent inhibitors by X-ray Crystallography at the XChem facility of Diamond Light Source beamline I04-1. The potential binding ligand(s): [VEG](https://www.rcsb.org/ligand/VEG).
 
 ## Basefolder
 

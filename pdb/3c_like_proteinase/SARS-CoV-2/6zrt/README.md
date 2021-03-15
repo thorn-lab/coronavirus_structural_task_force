@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of 3C-like protease from SARS CoV2 (Homodimer) in complex with inhibitor Telaprevir. Docking studies, enzyme inhibition and co-crystal structure analyses showed that telaprevir does not inhibit.
 
 ## Basefolder
 

@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+X-ray diffraction crystal structure of SARS-CoV-2 main protease immature form. Main protease is responsible for cutting the polyprotein into functional parts.
 
 ## Basefolder
 

@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+The crystal structure of the nsp3 papain-like protease. The structure is in complex with PLP_Snyder496 and has a C111S mutant. Its ligands are 5-[(E)-(hydroxyimino)methyl]-2-methyl-N-[(1R)-1-(naphthalen-1-yl)ethyl]benzamide, 2-(N-MORPHOLINO)-ETHANESULFONIC ACID. Further zinc, acetate and chloride ions as well as an unknown atom or ion.
 
 ## Basefolder
 

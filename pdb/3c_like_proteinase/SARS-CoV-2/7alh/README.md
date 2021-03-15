@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+The crystal structure of the main protease (3CLpro/Mpro) in spacegroup C2. The data has a resolution of 1.65 Å.
 
 ## Basefolder
 

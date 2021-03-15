@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+This electron microscopy structure shows the SARS-CoV-2 spike homo trimer at pH 4.5. A pH-dependent switch mediates conformational masking of SARS-CoV-2 spike. The SARS-CoV-2 spike has 10% the unfolding enthalpy of a globular protein at physiological pH, where it is recognized by antibodies and up to 10-times more unfolding enthalpy at endosomal pH, where it sheds such antibodies, suggesting that the spike evades potentially neutralizing antibody through a pH-dependent mechanism of conformational masking.
 
 ## Basefolder
 

@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of 3C-like protease from SARS CoV2 (Homodimer) with the formation of Cys145-1H-indole-5-carboxylate. The resolution is 1.48 Å.
 
 ## Basefolder
 

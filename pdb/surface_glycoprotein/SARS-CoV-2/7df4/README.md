@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Structure of SC2 S-ACE2 complex. The SC2 trimeric spike (S) glycoprotein interacts with the human ACE2 receptor to mediate viral entry into host cells. The RBD T470-T478 loop and Y505 act as viral determinants for specific recognition of SC2 RBD by ACE2.
 
 ## Basefolder
 

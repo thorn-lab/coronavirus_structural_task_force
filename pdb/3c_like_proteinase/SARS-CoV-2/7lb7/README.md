@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Joint X-ray/neutron structure of SARS-CoV-2 main protease (Homodimer) in complex with Telaprevir. Three active-site histidine residues (His41, His163 and His164) adapt to ligand binding, altering their protonation states to bind telaprevir.
 
 ## Basefolder
 

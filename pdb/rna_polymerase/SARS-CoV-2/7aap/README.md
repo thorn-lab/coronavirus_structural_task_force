@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+Electron microscopy structure of SARS-CoV2 RNA-dependent RNA polymerase (Rdrp with subunits Nsp7-Nsp8-Nsp12) in complex with template:primer dsRNA and favipiravir-RTP.
 
 ## Basefolder
 

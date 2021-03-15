@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+The SARS-CoV-2 RNA-dependent RNA polymerase with nsp7 and nsp8 in complex with 4 Remdesivir monophosphate.
 
 ## Basefolder
 

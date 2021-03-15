@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Structure of SARS-CoV-2 Main Protease bound to Climbazole. Climbazole binds as observed only by van der Waals interactions in a shallow surface pocket, wedged between two crystallographic symmetry-related molecules. One monomer contributes with residues Phe103, Val104, Arg105 and Glu178 to this binding site, while the other monomer contributes Asn228, Asn231, Leu232, Met235 and Pro241.
 
 ## Basefolder
 

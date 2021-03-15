@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+X-ray diffraction crystal structure of SARS-CoV-2 main protease, which is responsible for cutting the polyprotein into functional parts, in complex with MPI5. Part of a drug screen which investigates β‐(S‐2‐oxopyrrolidin‐3‐yl)‐alaninal derivates which reversibly bind Cys145
 
 ## Basefolder
 

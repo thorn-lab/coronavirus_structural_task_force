@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of 3C-like protease from SARS-CoV-2 (Homodimer) bound to PD 168568 to study allosteric drug-binding. PD-168568 employs the hydrophobic pocket (Ile213, Leu253, Gln256, Val297 and Cys300) within the C-terminal dimerization domain by inserting an aromatic moiety. The resolution is 1.59 Å.
 
 ## Basefolder
 

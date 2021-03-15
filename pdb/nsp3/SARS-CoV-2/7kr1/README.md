@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+The crystal structure of the nsp3 macrodomain in C2 crystal form at 310 K. It has a resolution of 1.55 Å.
 
 ## Basefolder
 

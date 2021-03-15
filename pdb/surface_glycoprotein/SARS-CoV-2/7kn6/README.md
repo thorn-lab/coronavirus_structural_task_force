@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+This X-Ray structure shows the SARS-CoV-2 receptor binding domain oft the spike complexed with nanobody VHH V and antibody Fab CC12.3. Nanobodies have size and cost advantages over conventional antibodies. This structure shows an in vitro generated multivalent neutralizing nanobody that targets the receptor-binding domain of the SARS-CoV-2 spike protein.
 
 ## Basefolder
 

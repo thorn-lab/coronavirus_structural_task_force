@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Part of PanDDA analysis group deposition of ground-state model. SARS-CoV-2 Nsp3 macrodomain crystallographic fragment screen. The potential binding ligand(s): [EDO](https://www.rcsb.org/ligand/EDO).
 
 ## Basefolder
 

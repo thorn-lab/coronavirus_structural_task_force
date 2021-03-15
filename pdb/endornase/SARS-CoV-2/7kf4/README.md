@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+The nsp15 NendoU crystal structure. As a ligand it has citric acid.
 
 ## Basefolder
 

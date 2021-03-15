@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+The nsp3 macrodomain in complex with ADP-HPD. The ligands are 5'-O-[(S)-{[(S)-{[(2R,3R,4S)-3,4-DIHYDROXYPYRROLIDIN-2-YL]METHOXY}(HYDROXY)PHOSPHORYL]OXY}(HYDROXY)PHOSPHORYL]ADENOSINE, 3[N-MORPHOLINO]PROPANE SULFONIC ACID, glycerol, 1,2-ethanediol and sodium ions.
 
 ## Basefolder
 

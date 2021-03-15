@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+The crystal structure of the nsp3 macrodomain in C2 crystal form, methylated. The X-ray structure has one modified residue and a resolution of 0.93 Å.
 
 ## Basefolder
 

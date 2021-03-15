@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Full length 3C-like protease from Sars-Cov-2 with 1.68A resolution and in complex with Fusidic Acid.. It was solved with X-ray diffraction and [FUA] (https://www.rcsb.org/ligand/FUA) and [DMS] (https://www.rcsb.org/ligand/DMS) are bound. It was done in scope of a larger drug-binding screen.
 
 ## Basefolder
 

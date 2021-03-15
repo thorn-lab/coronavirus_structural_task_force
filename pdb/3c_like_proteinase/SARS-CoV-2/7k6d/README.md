@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of 3C-like protease from SARS CoV2 (Homodimer) ‒ Co-Crystal Structure with Telaprevir. Determined from Crystals Grown with 40 nL Acoustically Ejected Mpro Droplets. The resolution is 1.48 Å.
 
 ## Basefolder
 

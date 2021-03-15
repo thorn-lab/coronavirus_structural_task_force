@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+The crystal structure of the nsp3 macrodomain in complex with the remdesivir metabolite GS-441524. A further ligand is 1,2-ETHANEDIOL.
 
 ## Basefolder
 

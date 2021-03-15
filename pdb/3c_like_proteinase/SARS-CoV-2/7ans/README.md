@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of 3C-like protease from SARS CoV2 (Homodimer) bound to Adrafinil. Its two phenyl rings are inserted into pockets S1’ and S2 via Van der Waals interactions.
 
 ## Basefolder
 
