@@ -128,7 +128,7 @@ def matrix_maker (protein, pdb_id, repo_path):
     id_arr["PDB-1"] = iter_id[:,0]
     id_arr["PDB-2"] = iter_id[:,1]
     rmsd_lst, best_chain_lst, n_atom_lst = [], [], []
-
+    #ToDo: Check if pair has already been calculated and save results in .pkl
     #superpose each combination of pdb to calculate rmsd
     for i in range(len(id_arr["PDB-1"])):
         doc.write("\n>{}-{}<\n".format(str(id_arr["PDB-1"][i]),str(id_arr["PDB-2"][i])))
