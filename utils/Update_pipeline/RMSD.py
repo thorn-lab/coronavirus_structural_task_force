@@ -6,7 +6,7 @@ import seaborn as sb
 import matplotlib.pyplot as plt
 import os.path as osp
 import os
-
+import warnings
 import string
 abc_lst = string.ascii_uppercase
 import prody as pry
@@ -166,7 +166,11 @@ def matrix_maker (protein, pdb_id, repo_path):
     heatmap(id_arr, repo_path, protein, pdb_id)
 
     id_arr = id_arr.sort_values(by=['RMSD'])
-    id_arr.to_excel("{}{}_best_RMSD.xlsx".format(repo_path, protein), index=False)
+    try:
+        id_arr.to_excel("{}{}_best_RMSD.xlsx".format(repo_path, protein), index=False)
+    except ValueError: warnings.warn("Excel sheet is too large!"
+                                     " Your sheet size is: 5567240, 6 Max sheet size is: 1048576, 16384."
+                                     " Excel file will not be generated!")
     doc.close()
 
 def test ():
