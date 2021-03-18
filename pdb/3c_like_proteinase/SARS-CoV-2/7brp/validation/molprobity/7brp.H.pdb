@@ -1,13 +1,14 @@
-USER  MOD reduce.3.7.201124 H: found=0, std=0, add=4656, rem=0, adj=146
+USER  MOD reduce.3.7.201124 H: found=0, std=0, add=4658, rem=0, adj=148
 HEADER    VIRAL PROTEIN                           29-MAR-20   7BRP
 TITLE     CRYSTAL STRUCTURE OF THE 2019-NCOV MAIN PROTEASE COMPLEXED WITH
 TITLE    2 BOCEPREVIR
 COMPND    MOL_ID: 1;
 COMPND   2 MOLECULE: 3C-LIKE PROTEINASE;
 COMPND   3 CHAIN: B, A;
-COMPND   4 SYNONYM: 3CL-PRO,3CLP;
-COMPND   5 EC: 3.4.22.69;
-COMPND   6 ENGINEERED: YES
+COMPND   4 SYNONYM: 3CL-PRO,3CLP,MAIN PROTEASE,MPRO,NON-STRUCTURAL PROTEIN 5,
+COMPND   5 NSP5,SARS CORONAVIRUS MAIN PROTEINASE;
+COMPND   6 EC: 3.4.22.69;
+COMPND   7 ENGINEERED: YES
 SOURCE    MOL_ID: 1;
 SOURCE   2 ORGANISM_SCIENTIFIC: SEVERE ACUTE RESPIRATORY SYNDROME CORONAVIRUS
 SOURCE   3 2;
@@ -19,12 +20,20 @@ KEYWDS    THE MAIN PROTEASE OF 2019-NCOV COMPLEXED WITH BOCEPREVIR, VIRAL
 KEYWDS   2 PROTEIN
 EXPDTA    X-RAY DIFFRACTION
 AUTHOR    L.F.FU
+REVDAT   4   10-MAR-21 7BRP    1       COMPND
+REVDAT   3   25-NOV-20 7BRP    1       JRNL
+REVDAT   2   04-NOV-20 7BRP    1       COMPND REMARK HET    HETNAM
+REVDAT   2 2                   1       HETSYN FORMUL LINK   SITE
+REVDAT   2 3                   1       ATOM
 REVDAT   1   13-MAY-20 7BRP    0
-JRNL        AUTH   L.F.FU
-JRNL        TITL   CRYSTAL STRUCTURE OF THE 2019-NCOV MAIN PROTEASE COMPLEXED
-JRNL        TITL 2 WITH BOCEPREVIR
-JRNL        REF    TO BE PUBLISHED
-JRNL        REFN
+JRNL        AUTH   L.FU,F.YE,Y.FENG,F.YU,Q.WANG,Y.WU,C.ZHAO,H.SUN,B.HUANG,
+JRNL        AUTH 2 P.NIU,H.SONG,Y.SHI,X.LI,W.TAN,J.QI,G.F.GAO
+JRNL        TITL   BOTH BOCEPREVIR AND GC376 EFFICACIOUSLY INHIBIT SARS-COV-2
+JRNL        TITL 2 BY TARGETING ITS MAIN PROTEASE.
+JRNL        REF    NAT COMMUN                    V.  11  4417 2020
+JRNL        REFN                   ESSN 2041-1723
+JRNL        PMID   32887884
+JRNL        DOI    10.1038/S41467-020-18233-X
 REMARK   2
 REMARK   2 RESOLUTION.    1.80 ANGSTROMS.
 REMARK   3
@@ -333,16 +342,24 @@ REMARK 500 LEU A   32     ASP A   33                 -142.49
 REMARK 500 TYR A  154     ASP A  155                  149.49
 REMARK 500
 REMARK 500 REMARK: NULL
+REMARK 630
+REMARK 630 MOLECULE TYPE: PEPTIDE-LIKE ENZYME INHIBITOR
+REMARK 630 MOLECULE NAME: BOCEPREVIR (BOUND FORM)
+REMARK 630 (M=MODEL NUMBER; RES=RESIDUE NAME; C=CHAIN IDENTIFIER;
+REMARK 630  SSSEQ=SEQUENCE NUMBER; I=INSERTION CODE.)
+REMARK 630
+REMARK 630   M RES C SSSEQI
+REMARK 630     U5G B   401
+REMARK 630     U5G A   401
+REMARK 630 SOURCE: NULL
+REMARK 630 TAXONOMY: NULL
+REMARK 630 SUBCOMP:    TBB TBG 12L 12N NH2
+REMARK 630 DETAILS: NULL
 REMARK 800
 REMARK 800 SITE
 REMARK 800 SITE_IDENTIFIER: AC1
 REMARK 800 EVIDENCE_CODE: SOFTWARE
-REMARK 800 SITE_DESCRIPTION: binding site for residue HU5 B 401
-REMARK 800
-REMARK 800 SITE_IDENTIFIER: AC2
-REMARK 800 EVIDENCE_CODE: SOFTWARE
-REMARK 800 SITE_DESCRIPTION: binding site for Di-peptide HU5 A 401 and CYS A
-REMARK 800  145
+REMARK 800 SITE_DESCRIPTION: binding site for residue U5G B 401
 DBREF  7BRP B    1   306  UNP    P0DTC1   R1A_SARS2     3264   3569
 DBREF  7BRP A    1   306  UNP    P0DTC1   R1A_SARS2     3264   3569
 SEQADV 7BRP GLY B    0  UNP  P0DTC1              EXPRESSION TAG
@@ -395,14 +412,14 @@ SEQRES  21 A  307  ALA VAL LEU ASP MET CYS ALA SER LEU LYS GLU LEU LEU
 SEQRES  22 A  307  GLN ASN GLY MET ASN GLY ARG THR ILE LEU GLY SER ALA
 SEQRES  23 A  307  LEU LEU GLU ASP GLU PHE THR PRO PHE ASP VAL VAL ARG
 SEQRES  24 A  307  GLN CYS SER GLY VAL THR PHE GLN
-HET    HU5  B 401      37
-HET    HU5  A 401      37
-HETNAM     HU5 (1R,2S,5S)-N-[(1S)-3-AMINO-1-(CYCLOBUTYLMETHYL)-2,3-
-HETNAM   2 HU5  DIOXOPROPYL]-3-[(2S)-2-{[(TERT-BUTYLAMINO)
-HETNAM   3 HU5  CARBONYL]AMINO}-3,3-DIMETHYLBUTANOYL]-6,6-DIMETHYL-3-
-HETNAM   4 HU5  AZABICYCLO[3.1.0]HEXANE-2-CARBOXAMIDE
-HETSYN     HU5 KETOAMIDE INHIBITOR SCH503034, BOUND FORM
-FORMUL   3  HU5    2(C27 H45 N5 O5)
+HET    U5G  B 401      37
+HET    U5G  A 401      37
+HETNAM     U5G BOCEPREVIR (BOUND FORM)
+HETSYN     U5G (1R,2S,5S)-N-[(2S,3R)-4-AMINO-1-CYCLOBUTYL-3-HYDROXY-4-
+HETSYN   2 U5G  OXOBUTAN-2-YL]-3-[N-(TERT-BUTYLCARBAMOYL)-3-METHYL-L-
+HETSYN   3 U5G  VALYL]-6,6-DIMETHYL-3-AZABICYCLO[3.1.0]HEXANE-2-
+HETSYN   4 U5G  CARBOXAMIDE
+FORMUL   3  U5G    2(C27 H47 N5 O5)
 FORMUL   5  HOH   *367(H2 O)
 HELIX    1 AA1 SER B   10  GLY B   15  1                                   6
 HELIX    2 AA2 HIS B   41  CYS B   44  5                                   4
@@ -456,17 +473,12 @@ SHEET    5 AA5 5 SER A 121  ALA A 129 -1  O  SER A 123   N  ALA A 116
 SHEET    1 AA6 3 LYS A 100  PHE A 103  0
 SHEET    2 AA6 3 CYS A 156  LEU A 167  1  O  VAL A 157   N  LYS A 100
 SHEET    3 AA6 3 VAL A 171  THR A 175 -1  O  VAL A 171   N  LEU A 167
-LINK         SG  CYS B 145                 C34 HU5 B 401     1555   1555  1.86
-LINK         SG  CYS A 145                 C34 HU5 A 401     1555   1555  1.83
+LINK         SG  CYS B 145                 C03 U5G B 401     1555   1555  1.86
+LINK         SG  CYS A 145                 C03 U5G A 401     1555   1555  1.83
 SITE   *** AC1 15 HIS B  41  MET B  49  ASN B 142  GLY B 143
 SITE   *** AC1 15 SER B 144  CYS B 145  HIS B 164  MET B 165
 SITE   *** AC1 15 GLU B 166  ASP B 187  THR B 190  GLN B 192
 SITE   *** AC1 15 GLY B 251  PRO B 252  HOH B 641
-SITE   *** AC2 20 LEU A  27  ASN A  28  HIS A  41  MET A  49
-SITE   *** AC2 20 ASN A 142  GLY A 143  SER A 144  GLY A 146
-SITE   *** AC2 20 SER A 147  HIS A 163  HIS A 164  MET A 165
-SITE   *** AC2 20 GLU A 166  ASP A 187  THR A 190  GLN A 192
-SITE   *** AC2 20 GLY A 251  PRO A 252  HOH A 510  HOH A 593
 CRYST1   46.367   53.551  113.772  90.00 101.66  90.00 P 1 21 1      4
 ORIGX1      1.000000  0.000000  0.000000        0.00000
 ORIGX2      0.000000  1.000000  0.000000        0.00000
@@ -479,52 +491,58 @@ USER  MOD scores for adjustable sidechains, with "set" totals for H,N and Q
 USER  MOD "o" means original, "f" means flipped, "180deg" is methyl default
 USER  MOD "!" flags a clash with an overlap of 0.40A or greater
 USER  MOD flip categories: "K"=keep, "C"=clashes, "X"=uncertain, "F"=flip
-USER  MOD Set 1.1: A 139 SER OG  :   rot  161:sc=    2.14
-USER  MOD Set 1.2: B 299 GLN     :      amide:sc=     1.4! C(o=3.5!,f=-4.7!)
-USER  MOD Set 2.1: B 243 THR OG1 :   rot  -62:sc=    1.09
-USER  MOD Set 2.2: B 246 HIS     :     no HD1:sc=   0.149  K(o=1.2,f=-0.52)
-USER  MOD Set 3.1: B 164 HIS     :     no HD1:sc= -0.0419  K(o=0.61,f=-0.26)
-USER  MOD Set 3.2: B 175 THR OG1 :   rot   86:sc=   0.648
-USER  MOD Set 4.1: B 161 TYR OH  :   rot -158:sc=   0.312
-USER  MOD Set 4.2: B 163 HIS     :     no HD1:sc=   0.788  K(o=1.1,f=-6.8!)
-USER  MOD Set 5.1: B 100 LYS NZ  :NH3+   -137:sc=  0.0919   (180deg=-0.145)
-USER  MOD Set 5.2: B 156 CYS SG  :   rot  161:sc=   -1.79!
-USER  MOD Set 6.1: B 133 ASN     :      amide:sc=   0.999  K(o=2.6,f=-1.8)
-USER  MOD Set 6.2: B 135 THR OG1 :   rot  -69:sc=    1.64
-USER  MOD Set 7.1: B 113 SER OG  :   rot   -9:sc=     1.8
-USER  MOD Set 7.2: B 127 GLN     :      amide:sc=    1.57  K(o=3.4,f=-3.9!)
-USER  MOD Set 8.1: B  83 GLN     :      amide:sc=    1.94  K(o=2,f=-0.21)
-USER  MOD Set 8.2: B  88 LYS NZ  :NH3+   -167:sc=  0.0873   (180deg=0)
-USER  MOD Set 9.1: B  19 GLN     :      amide:sc=   0.547  K(o=-3.2,f=1.3)
-USER  MOD Set 9.2: B  69 GLN     :      amide:sc=  -0.736  K(o=-3.2,f=1.3)
-USER  MOD Set 9.3: B  74 GLN     :      amide:sc=   -3.03! K(o=-3.2!,f=1.3)
-USER  MOD Set 9.4: B 119 ASN     :      amide:sc=       0  K(o=-3.2,f=0.39)
-USER  MOD Set10.1: B  63 ASN     :      amide:sc=   0.877  K(o=2.9,f=-2.3)
-USER  MOD Set10.2: B  80 HIS     :     no HE2:sc=    1.98  K(o=2.9,f=-13!)
-USER  MOD Set11.1: B  21 THR OG1 :   rot  -88:sc=   0.335
-USER  MOD Set11.2: B  26 THR OG1 :   rot  180:sc=   0.311
-USER  MOD Set12.1: A 299 GLN     :      amide:sc=    1.23  K(o=2.8,f=-5.5!)
-USER  MOD Set12.2: B 139 SER OG  :   rot  158:sc=    1.58
-USER  MOD Set13.1: A 269 LYS NZ  :NH3+    137:sc=  -0.752   (180deg=-0.227)
-USER  MOD Set13.2: A 273 GLN     :      amide:sc=  -0.995  K(o=-1.7,f=-7.8!)
-USER  MOD Set14.1: A 243 THR OG1 :   rot  -61:sc=  0.0263
-USER  MOD Set14.2: A 246 HIS     :     no HD1:sc=   0.114  K(o=0.14,f=-0.64)
-USER  MOD Set15.1: A 164 HIS     :     no HD1:sc=  -0.477  K(o=0.14,f=-0.37)
-USER  MOD Set15.2: A 175 THR OG1 :   rot   86:sc=   0.613
-USER  MOD Set16.1: A 161 TYR OH  :   rot -159:sc=   0.353
-USER  MOD Set16.2: A 163 HIS     :     no HD1:sc=   0.352  K(o=0.71,f=-8.3!)
-USER  MOD Set17.1: A 133 ASN     :      amide:sc=    1.02  K(o=2.4,f=-2.2)
-USER  MOD Set17.2: A 135 THR OG1 :   rot  -71:sc=    1.41
-USER  MOD Set18.1: A 113 SER OG  :   rot   -5:sc=    1.95
-USER  MOD Set18.2: A 127 GLN     :      amide:sc=    1.38  K(o=3.3,f=-3.9!)
-USER  MOD Set19.1: A  83 GLN     :      amide:sc=    1.43  K(o=1.7,f=-0.2)
-USER  MOD Set19.2: A  88 LYS NZ  :NH3+    146:sc=   0.251   (180deg=0.0486)
-USER  MOD Set20.1: A  63 ASN     :      amide:sc=     1.1  K(o=0.92,f=-1.2!)
-USER  MOD Set20.2: A  80 HIS     :     no HE2:sc=  -0.176  X(o=0.92,f=0.51)
-USER  MOD Set21.1: A  22 CYS SG  :   rot   54:sc= 0.00378
-USER  MOD Set21.2: A  61 LYS NZ  :NH3+    180:sc=       0   (180deg=0)
-USER  MOD Set22.1: A  21 THR OG1 :   rot  180:sc=  -0.564
-USER  MOD Set22.2: A  26 THR OG1 :   rot  180:sc=  -0.204
+USER  MOD NoAdj-H: B 401 U5G H45 : B 401 U5G C03 : B 145 CYS SG  :(H bumps)
+USER  MOD NoAdj-H: A 401 U5G H45 : A 401 U5G C03 : A 145 CYS SG  :(H bumps)
+USER  MOD Set 1.1: B  41 HIS     :     no HD1:sc=    2.11  K(o=3.2,f=-12!)
+USER  MOD Set 1.2: B 401 U5G O04 :   rot  160:sc=    1.07
+USER  MOD Set 2.1: A 139 SER OG  :   rot  161:sc=    2.14
+USER  MOD Set 2.2: B 299 GLN     :      amide:sc=     1.4! C(o=3.5!,f=-4.7!)
+USER  MOD Set 3.1: B 243 THR OG1 :   rot  -62:sc=    1.09
+USER  MOD Set 3.2: B 246 HIS     :     no HD1:sc=   0.149  K(o=1.2,f=-0.52)
+USER  MOD Set 4.1: B 164 HIS     :     no HD1:sc= -0.0419  K(o=0.61,f=-0.26)
+USER  MOD Set 4.2: B 175 THR OG1 :   rot   86:sc=   0.648
+USER  MOD Set 5.1: B 161 TYR OH  :   rot -158:sc=   0.312
+USER  MOD Set 5.2: B 163 HIS     :     no HD1:sc=   0.788  K(o=1.1,f=-6.8!)
+USER  MOD Set 6.1: B 100 LYS NZ  :NH3+   -137:sc=  0.0919   (180deg=-0.145)
+USER  MOD Set 6.2: B 156 CYS SG  :   rot  161:sc=   -1.79!
+USER  MOD Set 7.1: B 133 ASN     :      amide:sc=   0.999  K(o=2.6,f=-1.8)
+USER  MOD Set 7.2: B 135 THR OG1 :   rot  -69:sc=    1.64
+USER  MOD Set 8.1: B 113 SER OG  :   rot   -9:sc=     1.8
+USER  MOD Set 8.2: B 127 GLN     :      amide:sc=    1.57  K(o=3.4,f=-3.9!)
+USER  MOD Set 9.1: B  83 GLN     :      amide:sc=    1.94  K(o=2,f=-0.21)
+USER  MOD Set 9.2: B  88 LYS NZ  :NH3+   -167:sc=  0.0873   (180deg=0)
+USER  MOD Set10.1: B  19 GLN     :      amide:sc=   0.547  K(o=-3.2,f=1.3)
+USER  MOD Set10.2: B  69 GLN     :      amide:sc=  -0.736  K(o=-3.2,f=1.3)
+USER  MOD Set10.3: B  74 GLN     :      amide:sc=   -3.03! K(o=-3.2!,f=1.3)
+USER  MOD Set10.4: B 119 ASN     :      amide:sc=       0  K(o=-3.2,f=0.39)
+USER  MOD Set11.1: B  63 ASN     :      amide:sc=   0.877  K(o=2.9,f=-2.3)
+USER  MOD Set11.2: B  80 HIS     :     no HE2:sc=    1.98  K(o=2.9,f=-13!)
+USER  MOD Set12.1: B  21 THR OG1 :   rot  -88:sc=   0.335
+USER  MOD Set12.2: B  26 THR OG1 :   rot  180:sc=   0.311
+USER  MOD Set13.1: A 299 GLN     :      amide:sc=    1.23  K(o=2.8,f=-5.5!)
+USER  MOD Set13.2: B 139 SER OG  :   rot  158:sc=    1.58
+USER  MOD Set14.1: A 269 LYS NZ  :NH3+    137:sc=  -0.752   (180deg=-0.227)
+USER  MOD Set14.2: A 273 GLN     :      amide:sc=  -0.995  K(o=-1.7,f=-7.8!)
+USER  MOD Set15.1: A 243 THR OG1 :   rot  -61:sc=  0.0263
+USER  MOD Set15.2: A 246 HIS     :     no HD1:sc=   0.114  K(o=0.14,f=-0.64)
+USER  MOD Set16.1: A 164 HIS     :     no HD1:sc=  -0.477  K(o=0.14,f=-0.37)
+USER  MOD Set16.2: A 175 THR OG1 :   rot   86:sc=   0.613
+USER  MOD Set17.1: A 161 TYR OH  :   rot -159:sc=   0.353
+USER  MOD Set17.2: A 163 HIS     :     no HD1:sc=   0.352  K(o=0.71,f=-8.3!)
+USER  MOD Set18.1: A 133 ASN     :      amide:sc=    1.02  K(o=2.4,f=-2.2)
+USER  MOD Set18.2: A 135 THR OG1 :   rot  -71:sc=    1.41
+USER  MOD Set19.1: A 113 SER OG  :   rot   -5:sc=    1.95
+USER  MOD Set19.2: A 127 GLN     :      amide:sc=    1.38  K(o=3.3,f=-3.9!)
+USER  MOD Set20.1: A  83 GLN     :      amide:sc=    1.43  K(o=1.7,f=-0.2)
+USER  MOD Set20.2: A  88 LYS NZ  :NH3+    146:sc=   0.251   (180deg=0.0486)
+USER  MOD Set21.1: A  63 ASN     :      amide:sc=     1.1  K(o=0.92,f=-1.2!)
+USER  MOD Set21.2: A  80 HIS     :     no HE2:sc=  -0.176  X(o=0.92,f=0.51)
+USER  MOD Set22.1: A  41 HIS     :     no HD1:sc=    1.66  K(o=2.7,f=-11!)
+USER  MOD Set22.2: A 401 U5G O04 :   rot  147:sc=   0.994
+USER  MOD Set23.1: A  22 CYS SG  :   rot   54:sc= 0.00378
+USER  MOD Set23.2: A  61 LYS NZ  :NH3+    180:sc=       0   (180deg=0)
+USER  MOD Set24.1: A  21 THR OG1 :   rot  180:sc=  -0.564
+USER  MOD Set24.2: A  26 THR OG1 :   rot  180:sc=  -0.204
 USER  MOD Single : A   1 SER N   :NH3+    163:sc=   0.821   (180deg=0.541)
 USER  MOD Single : A   1 SER OG  :   rot  180:sc=       0
 USER  MOD Single : A   5 LYS NZ  :NH3+   -170:sc=   0.278   (180deg=0.218)
@@ -537,7 +555,6 @@ USER  MOD Single : A  25 THR OG1 :   rot  159:sc=       1
 USER  MOD Single : A  28 ASN     :      amide:sc=   0.687  K(o=0.69,f=-3.6!)
 USER  MOD Single : A  37 TYR OH  :   rot    7:sc=    1.35
 USER  MOD Single : A  38 CYS SG  :   rot   64:sc=-0.00949
-USER  MOD Single : A  41 HIS     :     no HD1:sc=    1.66  K(o=1.7,f=-7.8!)
 USER  MOD Single : A  44 CYS SG  :   rot  180:sc= -0.0757
 USER  MOD Single : A  45 THR OG1 :   rot  180:sc= 0.00466
 USER  MOD Single : A  46 SER OG  :   rot  180:sc=       0
@@ -631,7 +648,6 @@ USER  MOD Single : B  25 THR OG1 :   rot  118:sc= -0.0431
 USER  MOD Single : B  28 ASN     :      amide:sc=   0.779  K(o=0.78,f=-4!)
 USER  MOD Single : B  37 TYR OH  :   rot  180:sc=    1.32
 USER  MOD Single : B  38 CYS SG  :   rot  150:sc=  -0.259
-USER  MOD Single : B  41 HIS     :     no HD1:sc=    2.11  K(o=2.1,f=-8!)
 USER  MOD Single : B  44 CYS SG  :   rot  180:sc=  -0.117
 USER  MOD Single : B  45 THR OG1 :   rot  180:sc=       0
 USER  MOD Single : B  46 SER OG  :   rot  180:sc=       0
@@ -14582,244 +14598,246 @@ ATOM      0  HB2 SER A 301     -11.887 -15.297  24.299  1.00 43.60           H  
 ATOM      0  HB3 SER A 301     -11.239 -15.225  25.716  1.00 43.60           H   new
 ATOM      0  HG  SER A 301     -13.769 -15.830  25.665  1.00 55.68           H   new
 TER    4660      SER A 301
-HETATM 4661  C1  HU5 B 401     -13.981  -8.596  44.037  1.00 17.99           C
-ANISOU 4661  C1  HU5 B 401     2218   2543   2073    252    -25    214       C
-HETATM 4662  O2  HU5 B 401     -14.911  -8.843  44.727  1.00 20.73           O
-ANISOU 4662  O2  HU5 B 401     2554   2917   2406    277    -13    237       O
-HETATM 4663  N3  HU5 B 401     -13.016  -7.532  44.377  1.00 13.38           N
-ANISOU 4663  N3  HU5 B 401     1689   1894   1501    277    -30    197       N
-HETATM 4664  C4  HU5 B 401     -13.135  -6.753  45.628  1.00 23.45           C
-ANISOU 4664  C4  HU5 B 401     3017   3127   2766    332    -19    204       C
-HETATM 4665  C5  HU5 B 401     -12.984  -7.766  46.789  1.00 19.60           C
-ANISOU 4665  C5  HU5 B 401     2540   2622   2287    322    -25    181       C
-HETATM 4666  C6  HU5 B 401     -14.495  -6.025  45.751  1.00 21.42           C
-ANISOU 4666  C6  HU5 B 401     2751   2907   2479    391     11    255       C
-HETATM 4667  C7  HU5 B 401     -11.965  -5.737  45.657  1.00 22.86           C
-ANISOU 4667  C7  HU5 B 401     2999   2987   2701    334    -30    182       C
-HETATM 4668  N8  HU5 B 401     -13.759  -9.342  42.782  1.00 14.49           N
-ANISOU 4668  N8  HU5 B 401     1738   2132   1636    191    -36    204       N
-HETATM 4669  C9  HU5 B 401     -14.690 -10.371  42.424  1.00 14.85           C
-ANISOU 4669  C9  HU5 B 401     1737   2240   1665    158    -33    221       C
-HETATM 4670  C10 HU5 B 401     -15.402  -9.997  41.104  1.00 16.62           C
-ANISOU 4670  C10 HU5 B 401     1918   2526   1869    142    -30    258       C
-HETATM 4671  C11 HU5 B 401     -16.236 -11.199  40.602  1.00 20.12           C
-ANISOU 4671  C11 HU5 B 401     2318   3035   2292     88    -33    272       C
-HETATM 4672  C12 HU5 B 401     -16.312  -8.771  41.346  1.00 19.30           C
-ANISOU 4672  C12 HU5 B 401     2252   2889   2190    209    -13    307       C
-HETATM 4673  C13 HU5 B 401     -14.355  -9.628  40.030  1.00 20.18           C
-ANISOU 4673  C13 HU5 B 401     2382   2949   2337    114    -41    233       C
-HETATM 4674  C14 HU5 B 401     -13.929 -11.685  42.294  1.00 19.70           C
-ANISOU 4674  C14 HU5 B 401     2355   2837   2294    100    -44    181       C
-HETATM 4675  O15 HU5 B 401     -13.053 -11.831  41.521  1.00 27.49           O
-ANISOU 4675  O15 HU5 B 401     3348   3803   3295     66    -51    157       O
-HETATM 4676  N16 HU5 B 401     -14.313 -12.824  43.205  1.00 14.99           N
-ANISOU 4676  N16 HU5 B 401     1755   2247   1693     88    -42    173       N
-HETATM 4677  C17 HU5 B 401     -15.384 -12.851  44.300  1.00 24.74           C
-ANISOU 4677  C17 HU5 B 401     2982   3508   2912    127    -32    200       C
-HETATM 4678  C18 HU5 B 401     -13.719 -14.192  43.277  1.00 14.50           C
-ANISOU 4678  C18 HU5 B 401     1701   2168   1642     39    -45    138       C
-HETATM 4679  C19 HU5 B 401     -14.517 -15.177  44.088  1.00 16.02           C
-ANISOU 4679  C19 HU5 B 401     1882   2385   1820     32    -40    144       C
-HETATM 4680  C20 HU5 B 401     -15.721 -14.310  44.548  1.00 18.72           C
-ANISOU 4680  C20 HU5 B 401     2204   2767   2141     84    -33    190       C
-HETATM 4681  C21 HU5 B 401     -14.388 -14.290  45.356  1.00 12.07           C
-ANISOU 4681  C21 HU5 B 401     1409   1846   1331     98    -38    146       C
-HETATM 4682  C22 HU5 B 401     -13.207 -13.260  45.660  1.00 19.53           C
-ANISOU 4682  C22 HU5 B 401     2395   2725   2300    129    -45    126       C
-HETATM 4683  C23 HU5 B 401     -14.656 -15.129  46.646  1.00 20.27           C
-ANISOU 4683  C23 HU5 B 401     2457   2876   2369    107    -35    137       C
-HETATM 4684  C24 HU5 B 401     -13.905 -14.762  41.858  1.00 19.99           C
-ANISOU 4684  C24 HU5 B 401     2370   2901   2322    -20    -46    141       C
-HETATM 4685  O25 HU5 B 401     -14.984 -14.844  41.396  1.00 14.97           O
-ANISOU 4685  O25 HU5 B 401     1702   2326   1659    -36    -44    174       O
-HETATM 4686  N26 HU5 B 401     -12.756 -15.250  41.054  1.00 13.41           N
-ANISOU 4686  N26 HU5 B 401     1555   2034   1506    -62    -48    107       N
-HETATM 4687  C27 HU5 B 401     -13.043 -15.796  39.735  1.00 17.65           C
-ANISOU 4687  C27 HU5 B 401     2076   2608   2022   -120    -46    112       C
-HETATM 4688  C28 HU5 B 401     -12.422 -14.907  38.643  1.00 16.86           C
-ANISOU 4688  C28 HU5 B 401     1976   2498   1932   -121    -50    112       C
-HETATM 4689  C29 HU5 B 401     -13.294 -13.576  38.481  1.00 21.43           C
-ANISOU 4689  C29 HU5 B 401     2528   3117   2499    -80    -54    154       C
-HETATM 4690  C30 HU5 B 401     -12.841 -12.766  37.373  1.00 19.53           C
-ANISOU 4690  C30 HU5 B 401     2284   2873   2262    -85    -57    157       C
-HETATM 4691  C31 HU5 B 401     -14.660 -13.861  38.113  1.00 18.63           C
-ANISOU 4691  C31 HU5 B 401     2135   2836   2108   -103    -53    192       C
-HETATM 4692  C32 HU5 B 401     -14.446 -12.665  36.989  1.00 20.16           C
-ANISOU 4692  C32 HU5 B 401     2319   3038   2304    -93    -56    208       C
-HETATM 4693  O33 HU5 B 401     -12.944 -17.970  40.710  1.00 18.51           O
-ANISOU 4693  O33 HU5 B 401     2210   2695   2126   -164    -34     78       O
-HETATM 4694  C34 HU5 B 401     -12.463 -17.200  39.659  1.00 16.00           C
-ANISOU 4694  C34 HU5 B 401     1890   2373   1815   -167    -37     80       C
-HETATM 4695  O35 HU5 B 401     -12.056 -17.823  37.424  1.00 19.20           O
-ANISOU 4695  O35 HU5 B 401     2303   2791   2200   -255    -29     70       O
-HETATM 4696  N36 HU5 B 401     -14.111 -18.523  38.167  1.00 20.83           N
-ANISOU 4696  N36 HU5 B 401     2474   3082   2358   -276    -34    110       N
-HETATM 4697  C37 HU5 B 401     -12.816 -17.858  38.319  1.00 17.88           C
-ANISOU 4697  C37 HU5 B 401     2122   2646   2025   -234    -33     84       C
-HETATM    0 HN26 HU5 B 401     -11.952 -15.212  41.356  1.00 13.41           H   new
-HETATM    0 H362 HU5 B 401     -14.318 -18.895  37.420  1.00 20.83           H   new
-HETATM    0 H361 HU5 B 401     -14.665 -18.542  38.825  1.00 20.83           H   new
-HETATM    0 H322 HU5 B 401     -14.876 -11.818  37.185  1.00 20.16           H   new
-HETATM    0 H321 HU5 B 401     -14.678 -12.896  36.076  1.00 20.16           H   new
-HETATM    0 H312 HU5 B 401     -14.831 -14.749  37.763  1.00 18.63           H   new
-HETATM    0 H311 HU5 B 401     -15.329 -13.691  38.794  1.00 18.63           H   new
-HETATM    0 H302 HU5 B 401     -12.405 -11.931  37.605  1.00 19.53           H   new
-HETATM    0 H301 HU5 B 401     -12.274 -13.211  36.723  1.00 19.53           H   new
-HETATM    0 H282 HU5 B 401     -11.508 -14.680  38.877  1.00 16.86           H   new
-HETATM    0 H281 HU5 B 401     -12.388 -15.388  37.801  1.00 16.86           H   new
-HETATM    0 H233 HU5 B 401     -15.552 -15.498  46.612  1.00 20.27           H   new
-HETATM    0 H232 HU5 B 401     -14.011 -15.851  46.702  1.00 20.27           H   new
-HETATM    0 H231 HU5 B 401     -14.571 -14.559  47.426  1.00 20.27           H   new
-HETATM    0 H223 HU5 B 401     -12.362 -13.735  45.684  1.00 19.53           H   new
-HETATM    0 H222 HU5 B 401     -13.178 -12.585  44.964  1.00 19.53           H   new
-HETATM    0 H221 HU5 B 401     -13.362 -12.833  46.517  1.00 19.53           H   new
-HETATM    0 H172 HU5 B 401     -15.058 -12.431  45.111  1.00 24.74           H   new
-HETATM    0 H171 HU5 B 401     -16.172 -12.358  44.023  1.00 24.74           H   new
-HETATM    0 H133 HU5 B 401     -13.830  -8.872  40.336  1.00 20.18           H   new
-HETATM    0 H132 HU5 B 401     -13.770 -10.386  39.875  1.00 20.18           H   new
-HETATM    0 H131 HU5 B 401     -14.807  -9.394  39.204  1.00 20.18           H   new
-HETATM    0 H123 HU5 B 401     -16.973  -8.987  42.022  1.00 19.30           H   new
-HETATM    0 H122 HU5 B 401     -15.774  -8.023  41.648  1.00 19.30           H   new
-HETATM    0 H121 HU5 B 401     -16.761  -8.533  40.520  1.00 19.30           H   new
-HETATM    0 H113 HU5 B 401     -15.651 -11.957  40.448  1.00 20.12           H   new
-HETATM    0 H112 HU5 B 401     -16.900 -11.434  41.269  1.00 20.12           H   new
-HETATM    0 H111 HU5 B 401     -16.681 -10.961  39.774  1.00 20.12           H   new
-HETATM    0  HN8 HU5 B 401     -13.086  -9.163  42.277  1.00 14.49           H   new
-HETATM    0  HN3 HU5 B 401     -12.370  -7.361  43.835  1.00 13.38           H   new
-HETATM    0  H9  HU5 B 401     -15.372 -10.468  43.107  1.00 14.85           H   new
-HETATM    0  H73 HU5 B 401     -11.121  -6.214  45.634  1.00 22.86           H   new
-HETATM    0  H72 HU5 B 401     -12.026  -5.151  44.886  1.00 22.86           H   new
-HETATM    0  H71 HU5 B 401     -12.015  -5.208  46.469  1.00 22.86           H   new
-HETATM    0  H63 HU5 B 401     -14.602  -5.411  45.008  1.00 21.42           H   new
-HETATM    0  H62 HU5 B 401     -15.213  -6.677  45.738  1.00 21.42           H   new
-HETATM    0  H61 HU5 B 401     -14.523  -5.530  46.585  1.00 21.42           H   new
-HETATM    0  H53 HU5 B 401     -13.684  -8.435  46.728  1.00 19.60           H   new
-HETATM    0  H52 HU5 B 401     -12.118  -8.199  46.730  1.00 19.60           H   new
-HETATM    0  H51 HU5 B 401     -13.055  -7.300  47.637  1.00 19.60           H   new
-HETATM    0  H29 HU5 B 401     -13.212 -13.137  39.342  1.00 21.43           H   new
-HETATM    0  H27 HU5 B 401     -14.002 -15.825  39.592  1.00 17.65           H   new
-HETATM    0  H20 HU5 B 401     -16.667 -14.522  44.518  1.00 18.72           H   new
-HETATM    0  H19 HU5 B 401     -14.434 -16.097  43.792  1.00 16.02           H   new
-HETATM    0  H18 HU5 B 401     -12.826 -14.100  43.644  1.00 14.50           H   new
-HETATM 4698  C1  HU5 A 401      25.630  -9.049  11.385  1.00 18.36           C
-ANISOU 4698  C1  HU5 A 401     1958   2813   2205    144     55     88       C
-HETATM 4699  O2  HU5 A 401      26.549  -9.317  10.690  1.00 20.82           O
-ANISOU 4699  O2  HU5 A 401     2258   3148   2507    149     66     91       O
-HETATM 4700  N3  HU5 A 401      24.675  -7.979  11.044  1.00 21.11           N
-ANISOU 4700  N3  HU5 A 401     2342   3107   2573    104     45     70       N
-HETATM 4701  C4  HU5 A 401      24.809  -7.194   9.788  1.00 23.42           C
-ANISOU 4701  C4  HU5 A 401     2659   3368   2871     68     50     56       C
-HETATM 4702  C5  HU5 A 401      24.675  -8.154   8.587  1.00 23.90           C
-ANISOU 4702  C5  HU5 A 401     2745   3394   2944     93     58     73       C
-HETATM 4703  C6  HU5 A 401      26.186  -6.490   9.725  1.00 22.91           C
-ANISOU 4703  C6  HU5 A 401     2561   3360   2782     36     58     38       C
-HETATM 4704  C7  HU5 A 401      23.664  -6.153   9.747  1.00 24.02           C
-ANISOU 4704  C7  HU5 A 401     2771   3391   2964     37     41     44       C
-HETATM 4705  N8  HU5 A 401      25.404  -9.783  12.646  1.00 13.97           N
-ANISOU 4705  N8  HU5 A 401     1382   2283   1642    183     52    104       N
-HETATM 4706  C9  HU5 A 401      26.320 -10.828  13.020  1.00 13.84           C
-ANISOU 4706  C9  HU5 A 401     1332   2321   1604    231     64    126       C
-HETATM 4707  C10 HU5 A 401      27.026 -10.411  14.328  1.00 16.92           C
-ANISOU 4707  C10 HU5 A 401     1671   2794   1965    228     57    118       C
-HETATM 4708  C11 HU5 A 401      27.899 -11.580  14.842  1.00 18.39           C
-ANISOU 4708  C11 HU5 A 401     1820   3042   2125    289     70    147       C
-HETATM 4709  C12 HU5 A 401      27.898  -9.160  14.055  1.00 17.14           C
-ANISOU 4709  C12 HU5 A 401     1674   2862   1976    171     53     87       C
-HETATM 4710  C13 HU5 A 401      25.958 -10.067  15.390  1.00 21.50           C
-ANISOU 4710  C13 HU5 A 401     2262   3353   2555    221     43    112       C
-HETATM 4711  C14 HU5 A 401      25.565 -12.132  13.223  1.00 16.22           C
-ANISOU 4711  C14 HU5 A 401     1658   2585   1918    283     75    153       C
-HETATM 4712  O15 HU5 A 401      24.687 -12.237  13.997  1.00 27.68           O
-ANISOU 4712  O15 HU5 A 401     3120   4016   3379    291     68    155       O
-HETATM 4713  N16 HU5 A 401      25.971 -13.323  12.395  1.00 13.80           N
-ANISOU 4713  N16 HU5 A 401     1364   2267   1614    323     98    176       N
-HETATM 4714  C17 HU5 A 401      27.038 -13.393  11.302  1.00 26.11           C
-ANISOU 4714  C17 HU5 A 401     2913   3844   3162    319    111    176       C
-HETATM 4715  C18 HU5 A 401      25.388 -14.697  12.383  1.00 17.26           C
-ANISOU 4715  C18 HU5 A 401     1831   2664   2062    371    120    201       C
-HETATM 4716  C19 HU5 A 401      26.192 -15.707  11.612  1.00 18.54           C
-ANISOU 4716  C19 HU5 A 401     1996   2831   2216    408    148    222       C
-HETATM 4717  C20 HU5 A 401      27.368 -14.857  11.055  1.00 19.37           C
-ANISOU 4717  C20 HU5 A 401     2068   2987   2305    378    140    207       C
-HETATM 4718  C21 HU5 A 401      25.998 -14.884  10.309  1.00 16.14           C
-ANISOU 4718  C21 HU5 A 401     1715   2488   1928    355    137    198       C
-HETATM 4719  C22 HU5 A 401      24.842 -13.831   9.977  1.00 23.49           C
-ANISOU 4719  C22 HU5 A 401     2675   3367   2882    302    113    172       C
-HETATM 4720  C23 HU5 A 401      26.172 -15.819   9.068  1.00 25.28           C
-ANISOU 4720  C23 HU5 A 401     2902   3608   3093    372    164    210       C
-HETATM 4721  C24 HU5 A 401      25.608 -15.161  13.840  1.00 22.52           C
-ANISOU 4721  C24 HU5 A 401     2467   3381   2708    413    122    219       C
-HETATM 4722  O25 HU5 A 401      26.689 -15.159  14.314  1.00 13.99           O
-ANISOU 4722  O25 HU5 A 401     1343   2373   1600    432    124    226       O
-HETATM 4723  N26 HU5 A 401      24.465 -15.621  14.664  1.00 15.32           N
-ANISOU 4723  N26 HU5 A 401     1578   2432   1810    432    123    226       N
-HETATM 4724  C27 HU5 A 401      24.716 -16.065  16.024  1.00 18.18           C
-ANISOU 4724  C27 HU5 A 401     1913   2844   2151    474    127    244       C
-HETATM 4725  C28 HU5 A 401      24.060 -15.090  17.014  1.00 15.83           C
-ANISOU 4725  C28 HU5 A 401     1604   2554   1856    441     99    225       C
-HETATM 4726  C29 HU5 A 401      24.992 -13.802  17.112  1.00 19.93           C
-ANISOU 4726  C29 HU5 A 401     2080   3139   2356    397     78    200       C
-HETATM 4727  C30 HU5 A 401      24.545 -12.888  18.134  1.00 19.96           C
-ANISOU 4727  C30 HU5 A 401     2069   3158   2356    367     56    182       C
-HETATM 4728  C31 HU5 A 401      26.314 -14.155  17.573  1.00 17.73           C
-ANISOU 4728  C31 HU5 A 401     1752   2946   2040    430     86    215       C
-HETATM 4729  C32 HU5 A 401      26.146 -12.819  18.540  1.00 17.69           C
-ANISOU 4729  C32 HU5 A 401     1720   2977   2026    380     59    185       C
-HETATM 4730  O33 HU5 A 401      24.674 -18.327  15.267  1.00 16.56           O
-ANISOU 4730  O33 HU5 A 401     1762   2578   1953    548    184    286       O
-HETATM 4731  C34 HU5 A 401      24.122 -17.453  16.201  1.00 18.17           C
-ANISOU 4731  C34 HU5 A 401     1947   2798   2159    525    156    271       C
-HETATM 4732  O35 HU5 A 401      23.734 -17.891  18.486  1.00 17.36           O
-ANISOU 4732  O35 HU5 A 401     1848   2717   2032    547    150    283       O
-HETATM 4733  N36 HU5 A 401      25.831 -18.531  17.771  1.00 20.80           N
-ANISOU 4733  N36 HU5 A 401     2259   3217   2426    576    170    305       N
-HETATM 4734  C37 HU5 A 401      24.495 -17.962  17.594  1.00 20.72           C
-ANISOU 4734  C37 HU5 A 401     2265   3155   2452    549    158    286       C
-HETATM    0 HN26 HU5 A 401      23.667 -15.625  14.343  1.00 15.32           H   new
-HETATM    0 H362 HU5 A 401      26.074 -18.827  18.541  1.00 20.80           H   new
-HETATM    0 H361 HU5 A 401      26.374 -18.570  17.105  1.00 20.80           H   new
-HETATM    0 H322 HU5 A 401      26.622 -12.025  18.252  1.00 17.69           H   new
-HETATM    0 H321 HU5 A 401      26.351 -12.947  19.479  1.00 17.69           H   new
-HETATM    0 H312 HU5 A 401      26.395 -15.007  18.030  1.00 17.73           H   new
-HETATM    0 H311 HU5 A 401      27.022 -14.119  16.911  1.00 17.73           H   new
-HETATM    0 H302 HU5 A 401      24.146 -12.060  17.823  1.00 19.96           H   new
-HETATM    0 H301 HU5 A 401      23.949 -13.255  18.805  1.00 19.96           H   new
-HETATM    0 H282 HU5 A 401      23.171 -14.845  16.713  1.00 15.83           H   new
-HETATM    0 H281 HU5 A 401      23.960 -15.505  17.885  1.00 15.83           H   new
-HETATM    0 H233 HU5 A 401      27.062 -16.205   9.076  1.00 25.28           H   new
-HETATM    0 H232 HU5 A 401      25.512 -16.529   9.102  1.00 25.28           H   new
-HETATM    0 H231 HU5 A 401      26.051 -15.304   8.255  1.00 25.28           H   new
-HETATM    0 H223 HU5 A 401      23.980 -14.273  10.020  1.00 23.49           H   new
-HETATM    0 H222 HU5 A 401      24.867 -13.108  10.623  1.00 23.49           H   new
-HETATM    0 H221 HU5 A 401      24.977 -13.472   9.086  1.00 23.49           H   new
-HETATM    0 H172 HU5 A 401      26.716 -12.977  10.487  1.00 26.11           H   new
-HETATM    0 H171 HU5 A 401      27.833 -12.908  11.573  1.00 26.11           H   new
-HETATM    0 H133 HU5 A 401      25.406  -9.336  15.070  1.00 21.50           H   new
-HETATM    0 H132 HU5 A 401      25.401 -10.844  15.553  1.00 21.50           H   new
-HETATM    0 H131 HU5 A 401      26.395  -9.804  16.215  1.00 21.50           H   new
-HETATM    0 H123 HU5 A 401      28.561  -9.369  13.378  1.00 17.14           H   new
-HETATM    0 H122 HU5 A 401      27.335  -8.435  13.742  1.00 17.14           H   new
-HETATM    0 H121 HU5 A 401      28.345  -8.892  14.873  1.00 17.14           H   new
-HETATM    0 H113 HU5 A 401      27.338 -12.353  15.011  1.00 18.39           H   new
-HETATM    0 H112 HU5 A 401      28.565 -11.805  14.174  1.00 18.39           H   new
-HETATM    0 H111 HU5 A 401      28.342 -11.316  15.664  1.00 18.39           H   new
-HETATM    0  HN8 HU5 A 401      24.735  -9.589  13.150  1.00 13.97           H   new
-HETATM    0  HN3 HU5 A 401      24.027  -7.805  11.582  1.00 21.11           H   new
-HETATM    0  H9  HU5 A 401      26.977 -10.963  12.319  1.00 13.84           H   new
-HETATM    0  H73 HU5 A 401      22.809  -6.611   9.765  1.00 24.02           H   new
-HETATM    0  H72 HU5 A 401      23.732  -5.566  10.516  1.00 24.02           H   new
-HETATM    0  H71 HU5 A 401      23.732  -5.628   8.934  1.00 24.02           H   new
-HETATM    0  H63 HU5 A 401      26.277  -5.889  10.481  1.00 22.91           H   new
-HETATM    0  H62 HU5 A 401      26.891  -7.155   9.755  1.00 22.91           H   new
-HETATM    0  H61 HU5 A 401      26.254  -5.984   8.900  1.00 22.91           H   new
-HETATM    0  H53 HU5 A 401      25.373  -8.827   8.631  1.00 23.90           H   new
-HETATM    0  H52 HU5 A 401      23.807  -8.587   8.614  1.00 23.90           H   new
-HETATM    0  H51 HU5 A 401      24.761  -7.653   7.761  1.00 23.90           H   new
-HETATM    0  H29 HU5 A 401      24.973 -13.416  16.222  1.00 19.93           H   new
-HETATM    0  H27 HU5 A 401      25.671 -16.091  16.193  1.00 18.18           H   new
-HETATM    0  H20 HU5 A 401      28.316 -15.061  11.033  1.00 19.37           H   new
-HETATM    0  H19 HU5 A 401      26.142 -16.609  11.965  1.00 18.54           H   new
-HETATM    0  H18 HU5 A 401      24.492 -14.654  12.015  1.00 17.26           H   new
+HETATM 4661  C28 U5G B 401     -13.981  -8.596  44.037  1.00 17.99           C
+ANISOU 4661  C28 U5G B 401     2218   2543   2073    252    -25    214       C
+HETATM 4662  N29 U5G B 401     -13.016  -7.532  44.377  1.00 13.38           N
+ANISOU 4662  N29 U5G B 401     1689   1894   1501    277    -30    197       N
+HETATM 4663  O34 U5G B 401     -14.911  -8.843  44.727  1.00 20.73           O
+ANISOU 4663  O34 U5G B 401     2554   2917   2406    277    -13    237       O
+HETATM 4664  C30 U5G B 401     -13.135  -6.753  45.628  1.00 23.45           C
+ANISOU 4664  C30 U5G B 401     3017   3127   2766    332    -19    204       C
+HETATM 4665  C31 U5G B 401     -12.984  -7.766  46.789  1.00 19.60           C
+ANISOU 4665  C31 U5G B 401     2540   2622   2287    322    -25    181       C
+HETATM 4666  C32 U5G B 401     -14.495  -6.025  45.751  1.00 21.42           C
+ANISOU 4666  C32 U5G B 401     2751   2907   2479    391     11    255       C
+HETATM 4667  C33 U5G B 401     -11.965  -5.737  45.657  1.00 22.86           C
+ANISOU 4667  C33 U5G B 401     2999   2987   2701    334    -30    182       C
+HETATM 4668  N27 U5G B 401     -13.759  -9.342  42.782  1.00 14.49           N
+ANISOU 4668  N27 U5G B 401     1738   2132   1636    191    -36    204       N
+HETATM 4669  C22 U5G B 401     -14.690 -10.371  42.424  1.00 14.85           C
+ANISOU 4669  C22 U5G B 401     1737   2240   1665    158    -33    221       C
+HETATM 4670  C23 U5G B 401     -15.402  -9.997  41.104  1.00 16.62           C
+ANISOU 4670  C23 U5G B 401     1918   2526   1869    142    -30    258       C
+HETATM 4671  C24 U5G B 401     -16.236 -11.199  40.602  1.00 20.12           C
+ANISOU 4671  C24 U5G B 401     2318   3035   2292     88    -33    272       C
+HETATM 4672  C25 U5G B 401     -16.312  -8.771  41.346  1.00 19.30           C
+ANISOU 4672  C25 U5G B 401     2252   2889   2190    209    -13    307       C
+HETATM 4673  C26 U5G B 401     -14.355  -9.628  40.030  1.00 20.18           C
+ANISOU 4673  C26 U5G B 401     2382   2949   2337    114    -41    233       C
+HETATM 4674  C21 U5G B 401     -13.929 -11.685  42.294  1.00 19.70           C
+ANISOU 4674  C21 U5G B 401     2355   2837   2294    100    -44    181       C
+HETATM 4675  O35 U5G B 401     -13.053 -11.831  41.521  1.00 27.49           O
+ANISOU 4675  O35 U5G B 401     3348   3803   3295     66    -51    157       O
+HETATM 4676  N20 U5G B 401     -14.313 -12.824  43.205  1.00 14.99           N
+ANISOU 4676  N20 U5G B 401     1755   2247   1693     88    -42    173       N
+HETATM 4677  C19 U5G B 401     -15.384 -12.851  44.300  1.00 24.74           C
+ANISOU 4677  C19 U5G B 401     2982   3508   2912    127    -32    200       C
+HETATM 4678  C13 U5G B 401     -13.719 -14.192  43.277  1.00 14.50           C
+ANISOU 4678  C13 U5G B 401     1701   2168   1642     39    -45    138       C
+HETATM 4679  C14 U5G B 401     -14.517 -15.177  44.088  1.00 16.02           C
+ANISOU 4679  C14 U5G B 401     1882   2385   1820     32    -40    144       C
+HETATM 4680  C15 U5G B 401     -15.721 -14.310  44.548  1.00 18.72           C
+ANISOU 4680  C15 U5G B 401     2204   2767   2141     84    -33    190       C
+HETATM 4681  C16 U5G B 401     -14.388 -14.290  45.356  1.00 12.07           C
+ANISOU 4681  C16 U5G B 401     1409   1846   1331     98    -38    146       C
+HETATM 4682  C17 U5G B 401     -13.207 -13.260  45.660  1.00 19.53           C
+ANISOU 4682  C17 U5G B 401     2395   2725   2300    129    -45    126       C
+HETATM 4683  C18 U5G B 401     -14.656 -15.129  46.646  1.00 20.27           C
+ANISOU 4683  C18 U5G B 401     2457   2876   2369    107    -35    137       C
+HETATM 4684  C12 U5G B 401     -13.905 -14.762  41.858  1.00 19.99           C
+ANISOU 4684  C12 U5G B 401     2370   2901   2322    -20    -46    141       C
+HETATM 4685  O36 U5G B 401     -14.984 -14.844  41.396  1.00 14.97           O
+ANISOU 4685  O36 U5G B 401     1702   2326   1659    -36    -44    174       O
+HETATM 4686  N11 U5G B 401     -12.756 -15.250  41.054  1.00 13.41           N
+ANISOU 4686  N11 U5G B 401     1555   2034   1506    -62    -48    107       N
+HETATM 4687  C05 U5G B 401     -13.043 -15.796  39.735  1.00 17.65           C
+ANISOU 4687  C05 U5G B 401     2076   2608   2022   -120    -46    112       C
+HETATM 4688  C06 U5G B 401     -12.422 -14.907  38.643  1.00 16.86           C
+ANISOU 4688  C06 U5G B 401     1976   2498   1932   -121    -50    112       C
+HETATM 4689  C07 U5G B 401     -13.294 -13.576  38.481  1.00 21.43           C
+ANISOU 4689  C07 U5G B 401     2528   3117   2499    -80    -54    154       C
+HETATM 4690  C10 U5G B 401     -12.841 -12.766  37.373  1.00 19.53           C
+ANISOU 4690  C10 U5G B 401     2284   2873   2262    -85    -57    157       C
+HETATM 4691  C08 U5G B 401     -14.660 -13.861  38.113  1.00 18.63           C
+ANISOU 4691  C08 U5G B 401     2135   2836   2108   -103    -53    192       C
+HETATM 4692  C09 U5G B 401     -14.446 -12.665  36.989  1.00 20.16           C
+ANISOU 4692  C09 U5G B 401     2319   3038   2304    -93    -56    208       C
+HETATM 4693  O04 U5G B 401     -12.944 -17.970  40.710  1.00 18.51           O
+ANISOU 4693  O04 U5G B 401     2210   2695   2126   -164    -34     78       O
+HETATM 4694  C03 U5G B 401     -12.463 -17.200  39.659  1.00 16.00           C
+ANISOU 4694  C03 U5G B 401     1890   2373   1815   -167    -37     80       C
+HETATM 4695  O01 U5G B 401     -12.056 -17.823  37.424  1.00 19.20           O
+ANISOU 4695  O01 U5G B 401     2303   2791   2200   -255    -29     70       O
+HETATM 4696  C02 U5G B 401     -12.816 -17.858  38.319  1.00 17.88           C
+ANISOU 4696  C02 U5G B 401     2122   2646   2025   -234    -33     84       C
+HETATM 4697  N37 U5G B 401     -14.111 -18.523  38.167  1.00 20.83           N
+ANISOU 4697  N37 U5G B 401     2474   3082   2358   -276    -34    110       N
+HETATM    0  H9  U5G B 401     -12.026  -5.151  44.886  1.00 22.86           H   new
+HETATM    0  H8  U5G B 401     -12.015  -5.208  46.469  1.00 22.86           H   new
+HETATM    0  H7  U5G B 401     -14.602  -5.411  45.008  1.00 21.42           H   new
+HETATM    0  H6  U5G B 401     -15.213  -6.677  45.738  1.00 21.42           H   new
+HETATM    0  H5  U5G B 401     -14.523  -5.530  46.585  1.00 21.42           H   new
+HETATM    0  H47 U5G B 401     -14.318 -18.895  37.420  1.00 20.83           H   new
+HETATM    0  H46 U5G B 401     -14.665 -18.542  38.825  1.00 20.83           H   new
+HETATM    0  H44 U5G B 401     -12.855 -18.784  40.524  1.00 18.51           H   new
+HETATM    0  H43 U5G B 401     -14.876 -11.818  37.185  1.00 20.16           H   new
+HETATM    0  H42 U5G B 401     -14.678 -12.896  36.076  1.00 20.16           H   new
+HETATM    0  H41 U5G B 401     -14.831 -14.749  37.763  1.00 18.63           H   new
+HETATM    0  H40 U5G B 401     -15.329 -13.691  38.794  1.00 18.63           H   new
+HETATM    0  H4  U5G B 401     -13.684  -8.435  46.728  1.00 19.60           H   new
+HETATM    0  H39 U5G B 401     -12.405 -11.931  37.605  1.00 19.53           H   new
+HETATM    0  H38 U5G B 401     -12.274 -13.211  36.723  1.00 19.53           H   new
+HETATM    0  H37 U5G B 401     -13.212 -13.137  39.342  1.00 21.43           H   new
+HETATM    0  H36 U5G B 401     -11.508 -14.680  38.877  1.00 16.86           H   new
+HETATM    0  H35 U5G B 401     -12.388 -15.388  37.801  1.00 16.86           H   new
+HETATM    0  H34 U5G B 401     -14.002 -15.825  39.592  1.00 17.65           H   new
+HETATM    0  H33 U5G B 401     -11.952 -15.212  41.356  1.00 13.41           H   new
+HETATM    0  H32 U5G B 401     -15.552 -15.498  46.612  1.00 20.27           H   new
+HETATM    0  H31 U5G B 401     -14.011 -15.851  46.702  1.00 20.27           H   new
+HETATM    0  H30 U5G B 401     -14.571 -14.559  47.426  1.00 20.27           H   new
+HETATM    0  H3  U5G B 401     -12.118  -8.199  46.730  1.00 19.60           H   new
+HETATM    0  H29 U5G B 401     -12.362 -13.735  45.684  1.00 19.53           H   new
+HETATM    0  H28 U5G B 401     -13.178 -12.585  44.964  1.00 19.53           H   new
+HETATM    0  H27 U5G B 401     -13.362 -12.833  46.517  1.00 19.53           H   new
+HETATM    0  H26 U5G B 401     -16.667 -14.522  44.518  1.00 18.72           H   new
+HETATM    0  H25 U5G B 401     -14.434 -16.097  43.792  1.00 16.02           H   new
+HETATM    0  H24 U5G B 401     -12.826 -14.100  43.644  1.00 14.50           H   new
+HETATM    0  H23 U5G B 401     -15.058 -12.431  45.111  1.00 24.74           H   new
+HETATM    0  H22 U5G B 401     -16.172 -12.358  44.023  1.00 24.74           H   new
+HETATM    0  H21 U5G B 401     -13.830  -8.872  40.336  1.00 20.18           H   new
+HETATM    0  H20 U5G B 401     -13.770 -10.386  39.875  1.00 20.18           H   new
+HETATM    0  H2  U5G B 401     -13.055  -7.300  47.637  1.00 19.60           H   new
+HETATM    0  H19 U5G B 401     -14.807  -9.394  39.204  1.00 20.18           H   new
+HETATM    0  H18 U5G B 401     -16.973  -8.987  42.022  1.00 19.30           H   new
+HETATM    0  H17 U5G B 401     -15.774  -8.023  41.648  1.00 19.30           H   new
+HETATM    0  H16 U5G B 401     -16.761  -8.533  40.520  1.00 19.30           H   new
+HETATM    0  H15 U5G B 401     -15.651 -11.957  40.448  1.00 20.12           H   new
+HETATM    0  H14 U5G B 401     -16.900 -11.434  41.269  1.00 20.12           H   new
+HETATM    0  H13 U5G B 401     -16.681 -10.961  39.774  1.00 20.12           H   new
+HETATM    0  H12 U5G B 401     -15.372 -10.468  43.107  1.00 14.85           H   new
+HETATM    0  H11 U5G B 401     -13.086  -9.163  42.277  1.00 14.49           H   new
+HETATM    0  H10 U5G B 401     -11.121  -6.214  45.634  1.00 22.86           H   new
+HETATM    0  H1  U5G B 401     -12.370  -7.361  43.835  1.00 13.38           H   new
+HETATM 4698  C28 U5G A 401      25.630  -9.049  11.385  1.00 18.36           C
+ANISOU 4698  C28 U5G A 401     1958   2813   2205    144     55     88       C
+HETATM 4699  N29 U5G A 401      24.675  -7.979  11.044  1.00 21.11           N
+ANISOU 4699  N29 U5G A 401     2342   3107   2573    104     45     70       N
+HETATM 4700  O34 U5G A 401      26.549  -9.317  10.690  1.00 20.82           O
+ANISOU 4700  O34 U5G A 401     2258   3148   2507    149     66     91       O
+HETATM 4701  C30 U5G A 401      24.809  -7.194   9.788  1.00 23.42           C
+ANISOU 4701  C30 U5G A 401     2659   3368   2871     68     50     56       C
+HETATM 4702  C31 U5G A 401      24.675  -8.154   8.587  1.00 23.90           C
+ANISOU 4702  C31 U5G A 401     2745   3394   2944     93     58     73       C
+HETATM 4703  C32 U5G A 401      26.186  -6.490   9.725  1.00 22.91           C
+ANISOU 4703  C32 U5G A 401     2561   3360   2782     36     58     38       C
+HETATM 4704  C33 U5G A 401      23.664  -6.153   9.747  1.00 24.02           C
+ANISOU 4704  C33 U5G A 401     2771   3391   2964     37     41     44       C
+HETATM 4705  N27 U5G A 401      25.404  -9.783  12.646  1.00 13.97           N
+ANISOU 4705  N27 U5G A 401     1382   2283   1642    183     52    104       N
+HETATM 4706  C22 U5G A 401      26.320 -10.828  13.020  1.00 13.84           C
+ANISOU 4706  C22 U5G A 401     1332   2321   1604    231     64    126       C
+HETATM 4707  C23 U5G A 401      27.026 -10.411  14.328  1.00 16.92           C
+ANISOU 4707  C23 U5G A 401     1671   2794   1965    228     57    118       C
+HETATM 4708  C24 U5G A 401      27.899 -11.580  14.842  1.00 18.39           C
+ANISOU 4708  C24 U5G A 401     1820   3042   2125    289     70    147       C
+HETATM 4709  C25 U5G A 401      27.898  -9.160  14.055  1.00 17.14           C
+ANISOU 4709  C25 U5G A 401     1674   2862   1976    171     53     87       C
+HETATM 4710  C26 U5G A 401      25.958 -10.067  15.390  1.00 21.50           C
+ANISOU 4710  C26 U5G A 401     2262   3353   2555    221     43    112       C
+HETATM 4711  C21 U5G A 401      25.565 -12.132  13.223  1.00 16.22           C
+ANISOU 4711  C21 U5G A 401     1658   2585   1918    283     75    153       C
+HETATM 4712  O35 U5G A 401      24.687 -12.237  13.997  1.00 27.68           O
+ANISOU 4712  O35 U5G A 401     3120   4016   3379    291     68    155       O
+HETATM 4713  N20 U5G A 401      25.971 -13.323  12.395  1.00 13.80           N
+ANISOU 4713  N20 U5G A 401     1364   2267   1614    323     98    176       N
+HETATM 4714  C19 U5G A 401      27.038 -13.393  11.302  1.00 26.11           C
+ANISOU 4714  C19 U5G A 401     2913   3844   3162    319    111    176       C
+HETATM 4715  C13 U5G A 401      25.388 -14.697  12.383  1.00 17.26           C
+ANISOU 4715  C13 U5G A 401     1831   2664   2062    371    120    201       C
+HETATM 4716  C14 U5G A 401      26.192 -15.707  11.612  1.00 18.54           C
+ANISOU 4716  C14 U5G A 401     1996   2831   2216    408    148    222       C
+HETATM 4717  C15 U5G A 401      27.368 -14.857  11.055  1.00 19.37           C
+ANISOU 4717  C15 U5G A 401     2068   2987   2305    378    140    207       C
+HETATM 4718  C16 U5G A 401      25.998 -14.884  10.309  1.00 16.14           C
+ANISOU 4718  C16 U5G A 401     1715   2488   1928    355    137    198       C
+HETATM 4719  C17 U5G A 401      24.842 -13.831   9.977  1.00 23.49           C
+ANISOU 4719  C17 U5G A 401     2675   3367   2882    302    113    172       C
+HETATM 4720  C18 U5G A 401      26.172 -15.819   9.068  1.00 25.28           C
+ANISOU 4720  C18 U5G A 401     2902   3608   3093    372    164    210       C
+HETATM 4721  C12 U5G A 401      25.608 -15.161  13.840  1.00 22.52           C
+ANISOU 4721  C12 U5G A 401     2467   3381   2708    413    122    219       C
+HETATM 4722  O36 U5G A 401      26.689 -15.159  14.314  1.00 13.99           O
+ANISOU 4722  O36 U5G A 401     1343   2373   1600    432    124    226       O
+HETATM 4723  N11 U5G A 401      24.465 -15.621  14.664  1.00 15.32           N
+ANISOU 4723  N11 U5G A 401     1578   2432   1810    432    123    226       N
+HETATM 4724  C05 U5G A 401      24.716 -16.065  16.024  1.00 18.18           C
+ANISOU 4724  C05 U5G A 401     1913   2844   2151    474    127    244       C
+HETATM 4725  C06 U5G A 401      24.060 -15.090  17.014  1.00 15.83           C
+ANISOU 4725  C06 U5G A 401     1604   2554   1856    441     99    225       C
+HETATM 4726  C07 U5G A 401      24.992 -13.802  17.112  1.00 19.93           C
+ANISOU 4726  C07 U5G A 401     2080   3139   2356    397     78    200       C
+HETATM 4727  C10 U5G A 401      24.545 -12.888  18.134  1.00 19.96           C
+ANISOU 4727  C10 U5G A 401     2069   3158   2356    367     56    182       C
+HETATM 4728  C08 U5G A 401      26.314 -14.155  17.573  1.00 17.73           C
+ANISOU 4728  C08 U5G A 401     1752   2946   2040    430     86    215       C
+HETATM 4729  C09 U5G A 401      26.146 -12.819  18.540  1.00 17.69           C
+ANISOU 4729  C09 U5G A 401     1720   2977   2026    380     59    185       C
+HETATM 4730  O04 U5G A 401      24.674 -18.327  15.267  1.00 16.56           O
+ANISOU 4730  O04 U5G A 401     1762   2578   1953    548    184    286       O
+HETATM 4731  C03 U5G A 401      24.122 -17.453  16.201  1.00 18.17           C
+ANISOU 4731  C03 U5G A 401     1947   2798   2159    525    156    271       C
+HETATM 4732  O01 U5G A 401      23.734 -17.891  18.486  1.00 17.36           O
+ANISOU 4732  O01 U5G A 401     1848   2717   2032    547    150    283       O
+HETATM 4733  C02 U5G A 401      24.495 -17.962  17.594  1.00 20.72           C
+ANISOU 4733  C02 U5G A 401     2265   3155   2452    549    158    286       C
+HETATM 4734  N37 U5G A 401      25.831 -18.531  17.771  1.00 20.80           N
+ANISOU 4734  N37 U5G A 401     2259   3217   2426    576    170    305       N
+HETATM    0  H9  U5G A 401      23.732  -5.566  10.516  1.00 24.02           H   new
+HETATM    0  H8  U5G A 401      23.732  -5.628   8.934  1.00 24.02           H   new
+HETATM    0  H7  U5G A 401      26.277  -5.889  10.481  1.00 22.91           H   new
+HETATM    0  H6  U5G A 401      26.891  -7.155   9.755  1.00 22.91           H   new
+HETATM    0  H5  U5G A 401      26.254  -5.984   8.900  1.00 22.91           H   new
+HETATM    0  H47 U5G A 401      26.074 -18.827  18.541  1.00 20.80           H   new
+HETATM    0  H46 U5G A 401      26.374 -18.570  17.105  1.00 20.80           H   new
+HETATM    0  H44 U5G A 401      24.730 -19.096  15.601  1.00 16.56           H   new
+HETATM    0  H43 U5G A 401      26.622 -12.025  18.252  1.00 17.69           H   new
+HETATM    0  H42 U5G A 401      26.351 -12.947  19.479  1.00 17.69           H   new
+HETATM    0  H41 U5G A 401      26.395 -15.007  18.030  1.00 17.73           H   new
+HETATM    0  H40 U5G A 401      27.022 -14.119  16.911  1.00 17.73           H   new
+HETATM    0  H4  U5G A 401      25.373  -8.827   8.631  1.00 23.90           H   new
+HETATM    0  H39 U5G A 401      24.146 -12.060  17.823  1.00 19.96           H   new
+HETATM    0  H38 U5G A 401      23.949 -13.255  18.805  1.00 19.96           H   new
+HETATM    0  H37 U5G A 401      24.973 -13.416  16.222  1.00 19.93           H   new
+HETATM    0  H36 U5G A 401      23.171 -14.845  16.713  1.00 15.83           H   new
+HETATM    0  H35 U5G A 401      23.960 -15.505  17.885  1.00 15.83           H   new
+HETATM    0  H34 U5G A 401      25.671 -16.091  16.193  1.00 18.18           H   new
+HETATM    0  H33 U5G A 401      23.667 -15.625  14.343  1.00 15.32           H   new
+HETATM    0  H32 U5G A 401      27.062 -16.205   9.076  1.00 25.28           H   new
+HETATM    0  H31 U5G A 401      25.512 -16.529   9.102  1.00 25.28           H   new
+HETATM    0  H30 U5G A 401      26.051 -15.304   8.255  1.00 25.28           H   new
+HETATM    0  H3  U5G A 401      23.807  -8.587   8.614  1.00 23.90           H   new
+HETATM    0  H29 U5G A 401      23.980 -14.273  10.020  1.00 23.49           H   new
+HETATM    0  H28 U5G A 401      24.867 -13.108  10.623  1.00 23.49           H   new
+HETATM    0  H27 U5G A 401      24.977 -13.472   9.086  1.00 23.49           H   new
+HETATM    0  H26 U5G A 401      28.316 -15.061  11.033  1.00 19.37           H   new
+HETATM    0  H25 U5G A 401      26.142 -16.609  11.965  1.00 18.54           H   new
+HETATM    0  H24 U5G A 401      24.492 -14.654  12.015  1.00 17.26           H   new
+HETATM    0  H23 U5G A 401      26.716 -12.977  10.487  1.00 26.11           H   new
+HETATM    0  H22 U5G A 401      27.833 -12.908  11.573  1.00 26.11           H   new
+HETATM    0  H21 U5G A 401      25.406  -9.336  15.070  1.00 21.50           H   new
+HETATM    0  H20 U5G A 401      25.401 -10.844  15.553  1.00 21.50           H   new
+HETATM    0  H2  U5G A 401      24.761  -7.653   7.761  1.00 23.90           H   new
+HETATM    0  H19 U5G A 401      26.395  -9.804  16.215  1.00 21.50           H   new
+HETATM    0  H18 U5G A 401      28.561  -9.369  13.378  1.00 17.14           H   new
+HETATM    0  H17 U5G A 401      27.335  -8.435  13.742  1.00 17.14           H   new
+HETATM    0  H16 U5G A 401      28.345  -8.892  14.873  1.00 17.14           H   new
+HETATM    0  H15 U5G A 401      27.338 -12.353  15.011  1.00 18.39           H   new
+HETATM    0  H14 U5G A 401      28.565 -11.805  14.174  1.00 18.39           H   new
+HETATM    0  H13 U5G A 401      28.342 -11.316  15.664  1.00 18.39           H   new
+HETATM    0  H12 U5G A 401      26.977 -10.963  12.319  1.00 13.84           H   new
+HETATM    0  H11 U5G A 401      24.735  -9.589  13.150  1.00 13.97           H   new
+HETATM    0  H10 U5G A 401      22.809  -6.611   9.765  1.00 24.02           H   new
+HETATM    0  H1  U5G A 401      24.027  -7.805  11.582  1.00 21.11           H   new
 HETATM 4735  O   HOH B 501      -9.544 -15.430  36.848  1.00 22.91           O
 HETATM 4736  O   HOH B 502      -8.521 -41.744  39.188  1.00 38.60           O
 HETATM 4737  O   HOH B 503      14.210   0.207  51.433  1.00 38.65           O
@@ -15190,9 +15208,9 @@ HETATM 5101  O   HOH A 671     -18.932   3.001  10.540  1.00 38.54           O
 CONECT 1126 4694
 CONECT 3456 4731
 CONECT 4661 4662 4663 4668
-CONECT 4662 4661
-CONECT 4663 4661 4664
-CONECT 4664 4663 4665 4666 4667
+CONECT 4662 4661 4664
+CONECT 4663 4661
+CONECT 4664 4662 4665 4666 4667
 CONECT 4665 4664
 CONECT 4666 4664
 CONECT 4667 4664
@@ -15222,14 +15240,14 @@ CONECT 4690 4689 4692
 CONECT 4691 4689 4692
 CONECT 4692 4690 4691
 CONECT 4693 4694
-CONECT 4694 1126 4687 4693 4697
-CONECT 4695 4697
-CONECT 4696 4697
-CONECT 4697 4694 4695 4696
+CONECT 4694 1126 4687 4693 4696
+CONECT 4695 4696
+CONECT 4696 4694 4695 4697
+CONECT 4697 4696
 CONECT 4698 4699 4700 4705
-CONECT 4699 4698
-CONECT 4700 4698 4701
-CONECT 4701 4700 4702 4703 4704
+CONECT 4699 4698 4701
+CONECT 4700 4698
+CONECT 4701 4699 4702 4703 4704
 CONECT 4702 4701
 CONECT 4703 4701
 CONECT 4704 4701
@@ -15259,8 +15277,8 @@ CONECT 4727 4726 4729
 CONECT 4728 4726 4729
 CONECT 4729 4727 4728
 CONECT 4730 4731
-CONECT 4731 3456 4724 4730 4734
-CONECT 4732 4734
-CONECT 4733 4734
-CONECT 4734 4731 4732 4733
+CONECT 4731 3456 4724 4730 4733
+CONECT 4732 4733
+CONECT 4733 4731 4732 4734
+CONECT 4734 4733
 END
