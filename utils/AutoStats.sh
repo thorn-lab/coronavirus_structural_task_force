@@ -27,6 +27,14 @@ git commit -m 'new molprobity run'
 
 
 cd utils
+./run_cablam.sh
+
+cd ..
+git add *
+git commit -m 'new cablam run'
+
+
+cd utils
 rm stats*
 rm emList.txt
 rm mxList.txt
