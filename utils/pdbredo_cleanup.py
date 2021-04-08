@@ -2,7 +2,7 @@ import os
 import glob
 import shutil
 
-_prefix = '/data/id30a3/inhouse/gianluca/'    
+_prefix = '/home/gsantoni/Documents/'    
 wc_folder = glob.glob(os.path.join(_prefix, 'coronavirus_structural_task_force/pdb/**/pdb-redo/wc/'),recursive=True)
 dssp = glob.glob(os.path.join(_prefix, 'coronavirus_structural_task_force/pdb/**/pdb-redo/*.dssp'),recursive=True)
 gz = glob.glob(os.path.join(_prefix, 'coronavirus_structural_task_force/pdb/**/pdb-redo/*.gz'),recursive=True)
