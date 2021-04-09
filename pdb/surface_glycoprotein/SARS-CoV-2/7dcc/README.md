@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 spike protein with three RBDs up each bound to a 3C1 Fab. Hetero nonamer, spike with three chains, Fab with three heavy and three light chains. 3C1 bind to RBD through adapting feasible orientation of 3C1 or coordinated conformational changes.
 
 ## Basefolder
 

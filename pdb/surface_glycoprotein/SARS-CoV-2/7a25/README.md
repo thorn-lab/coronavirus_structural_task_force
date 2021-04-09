@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of a SARS-CoV-2 spike protein bound to the neutralizing sybodies Sb23. Hetero hexamer, spike protein with three chains and Sybody with three chains. Sb23 competes with ACE2 for RBD binding of the spike protein.
 
 ## Basefolder
 

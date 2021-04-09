@@ -10,7 +10,7 @@
 
 ## Description
 
-Electron microscopy structure of elongating SARS-CoV-2 RNA-dependent RNA polymerase (Rdrp) with AMP at position -4 (structure 3). Structure of elongating SARS-CoV-2 RNA-dependent RNA polymerase with AMP at position -4 (structure 3). Cryo-electron microscopy is used to establish the molecular mechanism of remdesivir-induced RdRp stalling.
+Electron microscopy structure of elongating SARS-CoV-2 RNA-dependent RNA polymerase (Rdrp) with AMP at position -4 (structure 3). Structure of elongating SARS-CoV-2 RNA-dependent RNA polymerase with AMP at position -4 (structure 3). Cryo-electron microscopy is used to establish the molecular mechanism of remdesivir-induced RdRp stalling. EM structure of SARS-CoV-2 RNA dependent RNA polymerase with AMP at position -4. Hetero pentamer, five macromolecules with one chain each. This structure together with 7b3c and 7b3b is part of a study to analyse the mechanism of the drug Remdesivir.
 
 ## Basefolder
 
@@ -22,7 +22,7 @@ Electron microscopy structure of elongating SARS-CoV-2 RNA-dependent RNA polymer
 
 **old** - contains files from historical revisions
 
-**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/rna_polymerase-nsp7-nsp8/SARS-CoV-2/7b3d/validation/molprobity)   
+**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/rna_polymerase-nsp7-nsp8/SARS-CoV-2/7b3d/validation/molprobity)   [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/rna_polymerase-nsp7-nsp8/SARS-CoV-2/7b3d/validation/ccpem-validation)
 
 
 

@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of the spike gycloprotein S trimer in closed prefusion state. Homo trimer with three chains. The structure shows counterclockwise rotation with an RBD inward shift toward the central axis.
 
 ## Basefolder
 

@@ -10,7 +10,7 @@
 
 ## Description
 
-Electron microscopy structure of SARS-CoV2 RNA-dependent RNA polymerase (Rdrp with subunits Nsp7-Nsp8-Nsp12) in complex with template:primer dsRNA and favipiravir-RTP. Structure of favipiravir ribonucleoside triphosphate (favipiravir-RTP) in complex with the SARS-CoV-2 RNA-dependent RNA polymerase (RdRp) bound to a template:primer RNA duplex, determined by electron cryomicroscopy (cryoEM) to a resolution of 2.5 Å.
+Electron microscopy structure of SARS-CoV2 RNA-dependent RNA polymerase (Rdrp with subunits Nsp7-Nsp8-Nsp12) in complex with template:primer dsRNA and favipiravir-RTP. Structure of favipiravir ribonucleoside triphosphate (favipiravir-RTP) in complex with the SARS-CoV-2 RNA-dependent RNA polymerase (RdRp) bound to a template:primer RNA duplex, determined by electron cryomicroscopy (cryoEM) to a resolution of 2.5 Å. EM structure of SARS-CoV-2 RNA polymerase in complex with dsRNA and favipiravir-RTP. Hetero hexamer, NSP8 with two chains, RNA polymerase, NSP7 and the two RNAs with one chain each. Favipiravir-RTP is an inefficient substrate for the viral RdRp in primer extension assays.
 
 ## Basefolder
 
@@ -22,7 +22,7 @@ Electron microscopy structure of SARS-CoV2 RNA-dependent RNA polymerase (Rdrp wi
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp7/SARS-CoV-2/7aap/validation/molprobity)   
+**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp7/SARS-CoV-2/7aap/validation/molprobity)   [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp7/SARS-CoV-2/7aap/validation/ccpem-validation)
 
 
 

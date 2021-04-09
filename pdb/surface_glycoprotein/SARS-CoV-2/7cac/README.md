@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 S trimer with one RBD open state in complex with one H014 Fab. Hetero pentamer, spike protein with three chains and Fab with one heavy and one light chain. H014 reduces SARS-CoV-2 titers in infected lungs and prevent pulmonary pathology in a human ACE2 mouse model.
 
 ## Basefolder
 
@@ -20,7 +22,7 @@
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7cac/validation/molprobity)   
+**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7cac/validation/molprobity)   [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7cac/validation/ccpem-validation)
 
 
 

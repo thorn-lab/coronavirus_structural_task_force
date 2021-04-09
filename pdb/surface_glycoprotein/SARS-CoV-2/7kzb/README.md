@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 spike protein bound to the antibodies CR3014-C8 and CR3022-B6. Hetero pentamer, spike with one chain, Each antibody has one heavy and one light chain. Antibodies have identical heavy chain bud different light chain, they are binding two completely different epitopes.
 
 ## Basefolder
 

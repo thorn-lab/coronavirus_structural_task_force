@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of a SARS-CoV-2 spike protein receptor binding domain in complex with the Synthetic Nanobody Sb45. Hetero dimer, Spike and Nanobody with one chain each. Sb45 bind the RBD at the ACE2 interface, positioning their CDR2 and CDR3 loops diametrically.
 
 ## Basefolder
 

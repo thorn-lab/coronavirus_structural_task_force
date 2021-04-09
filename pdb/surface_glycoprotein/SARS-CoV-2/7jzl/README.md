@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 spike protein 2 RBDs open in complex with the miniprotein inhibitor LCB1. Hetero hexamer, spike protein with three chains and LCB1 with three chains. The mini-inhibitors show advantages over antibodies as potential therapeutics in terms of storage and production.
 
 ## Basefolder
 

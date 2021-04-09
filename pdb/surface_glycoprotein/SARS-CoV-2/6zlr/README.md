@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 RBD in complex with CR3022 Fab, soaking competent crystal. Hetero trimer, spike with three chains and Fab with heavy and light chain with three chains each. This crystal form shows the accessible space surrounding he target area.
 
 ## Basefolder
 

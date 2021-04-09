@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 NSP 10/16 in complex with methyltransferase and RNA 5' > 3'. Hetero trimer, NSP10 with one chain and methyltransferase and RNA with one chain each.
 
 ## Basefolder
 

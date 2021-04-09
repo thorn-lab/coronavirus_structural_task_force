@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 spike protein RBD bound to antibody P2C-1A3. Hetero trimer, spike with one chain and antibody with one heavy and one light chain.
 
 ## Basefolder
 

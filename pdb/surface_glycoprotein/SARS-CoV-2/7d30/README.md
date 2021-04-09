@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 RBD in complex with the sybody MR17-SR31 fusion. Hetero dimer, sybody with one chain and spike with one chain.
 
 ## Basefolder
 

@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 spike protein one RBD in open state and two RBDs in closed state in complex with Fab P17. Hetero nonamer, spike with three chains and Fab with a heavy and a light chain with three chains each. P17 together with H014 revealed that neutralization was achieved by S1 shielding and conformational locking.
 
 ## Basefolder
 

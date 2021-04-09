@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 spike protein in complex with the antibodiy coctail P17-H014 Fab. Hetero pentadecamer, spike with three chains, P17 and H014 antibody with a heavy and a light chain with three chains each. P17 together with H014 revealed that neutralization was achieved by S1 shielding and conformational locking.
 
 ## Basefolder
 

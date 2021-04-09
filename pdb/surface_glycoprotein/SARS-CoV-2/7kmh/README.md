@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 spike protein in complex with the neutralizing antibody LY-CoV488. Hetero trimer, antiboy with one heavy and one light chain, spike protein with one chain. Literature is about the LY-CoV555 antibody the LyCoV488 isnt mentioned in the literature.
 
 ## Basefolder
 

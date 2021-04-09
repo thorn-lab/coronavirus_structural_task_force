@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 RBD in complex with the antibody STE90-C11 Fab. Hetero trimer, spike with one chain and antibody with one heavy and one light chain. Antibody binds at the same region as ACE2 to the RBD and the binding is not blocked by known RBD mutations.
 
 ## Basefolder
 

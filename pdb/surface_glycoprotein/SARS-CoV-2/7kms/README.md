@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 trimer spike bound to three ACE2 at pH 7,4. Hetero hexamer, ACE2 with three chains and spike with three chains. This structure is part of a study with reveals a pH-dependent switch to mediate endosomal positioning of RBDs.
 
 ## Basefolder
 

@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 spike protein RBD in close state in complex with the P17 fab. Hetero nonamer, fab P17 with a heavy and a light chain with three chains each, spike with three chains. The fab can together with S309 and H014 form a neutralization cluster on the RBD of trimeric S.
 
 ## Basefolder
 
@@ -20,7 +22,7 @@
 
 
 
-
+**validation** - contains validation reports. This structure has been analyzed by <br>     [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7cwl/validation/ccpem-validation)
 
 
 

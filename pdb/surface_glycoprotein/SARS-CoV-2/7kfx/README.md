@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 spike protein bound to human antibody C1A-C2 Fab. Hetero trimer, spike with one chain and antibody with one heavy and light chain each. C1A-C2 contains mutations which increase affinity for the RBD and provides new contacts with the RBD Q474 and K458.
 
 ## Basefolder
 

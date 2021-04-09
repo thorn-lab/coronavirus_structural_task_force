@@ -22,7 +22,7 @@ This electron microscopy structure shows the SARS-CoV spike RBD bound to two neu
 
 **old** - contains files from historical revisions
 
-
+**validation** - contains validation reports. This structure has been analyzed by <br>     [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7b17/validation/ccpem-validation)
 
 
 

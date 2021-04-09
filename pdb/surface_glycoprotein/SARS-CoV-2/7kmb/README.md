@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-Cov-2 trimer spike bound to ACE2. Hetero dimer, ACE2 and spike with one chain each. RBD-ACE2 region in greater detail through focused refinement and particle expansion with C3 symmetry applied.
 
 ## Basefolder
 

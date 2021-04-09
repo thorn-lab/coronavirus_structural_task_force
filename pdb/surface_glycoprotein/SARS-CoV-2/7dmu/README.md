@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 spike protein receptor binding domain in complex with the high affinity ACE2 mutant 3N39. Hetero dimer, spike protein and ACE2 have two chains each. Modified ACE2 fuses to the human IgG1-Fc region which stabilizes the structure and neutralizes SARS-CoV-2 Infections.
 
 ## Basefolder
 

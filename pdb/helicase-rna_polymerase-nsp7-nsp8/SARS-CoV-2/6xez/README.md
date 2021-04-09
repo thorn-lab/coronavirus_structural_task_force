@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 replication transcription complex bound to nsp13 helicase-RTC together with product and template RNA. Hetero octamer, RNA polymerase with one chain, NSP8 and helicase with two chains each and NSP7 and RNAs with one chain each. Structure suggests that the nsp13 helicase could act in the 5' > 3' direction on the tRNA to disrupt stable RNA.
 
 ## Basefolder
 

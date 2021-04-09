@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of the SARS-CoV-2 neutralizing antibody LY-CoV481 bound to the spike protein S1. Hetero dimer, antibody with one heavy and light chain, S1 with one chain.
 
 ## Basefolder
 

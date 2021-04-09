@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 spike protein in complex with T-ACE2. Hetero hexamer, spike with three chains and ACE2 witch three chains. Engineered trimeric ACE2 (T-ACE2) binds to the spike and locks it in Three up conformation.
 
 ## Basefolder
 

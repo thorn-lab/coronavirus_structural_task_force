@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 spike protein in complex with Fab C1A-B12. Hetero trimer, spike with three chains and Fab with heavy and light chain with three chains each. Two conformations for the Fab were observed, it can either contact the side chain of RBD Q493 or the backbone carbonyl of RBD S494.
 
 ## Basefolder
 

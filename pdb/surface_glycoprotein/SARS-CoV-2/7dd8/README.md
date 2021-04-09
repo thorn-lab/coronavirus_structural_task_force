@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 spike protein with one RBD up and two RBDs down, the up RBD is bound with a 3c1 fab. Hetero pentamer, 3C1 with one heavy and one light chain, spike with three chains. The structure shows that the binding of the 3C1 fab could induce a further 32.3° outward tilt of the up RBD.
 
 ## Basefolder
 

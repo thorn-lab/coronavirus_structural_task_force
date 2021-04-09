@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 spike RBD in complex with the synthetic nanobodies SB45 and SB68. Hetero trimer, spike with one chain and nanobodies with one chain each. SB 45 and SB 68 interacting at two different faces of the RBD.
 
 ## Basefolder
 

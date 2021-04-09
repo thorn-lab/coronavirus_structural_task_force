@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 spike protein RBD 2 up and 1 down conformation in complex with Fab 15033-7. Hetero nonamer, spike glycoprotein with three chains and Fab with heavy and light chain with three chains each. 
 
 ## Basefolder
 
@@ -20,7 +22,7 @@
 
 
 
-
+**validation** - contains validation reports. This structure has been analyzed by <br>     [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7kxk/validation/ccpem-validation)
 
 
 

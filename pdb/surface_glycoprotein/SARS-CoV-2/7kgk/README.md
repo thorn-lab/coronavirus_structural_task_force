@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 spike protein receptor binding domain in complex with the synthetic nanobody Sb16. Hetero dimer, spike with one chain and nanobody with one chain. Sb16 reveals a large CDR2 shift when binding the RBD.
 
 ## Basefolder
 

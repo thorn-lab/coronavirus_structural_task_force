@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 spike with three RBDs up and each RBD binds with a 2H2 Fab. Hetero nonamer, spike with three chains, Fab with heavy and light chain with three chains each. 2H2 Fab is bound on the top of the RBD.
 
 ## Basefolder
 

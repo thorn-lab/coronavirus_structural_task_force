@@ -8,7 +8,9 @@
 
 **Method**: X-Ray Diffraction
 
+## Description
 
+Crystal structure of SARS-CoV-2 spike protein receptor binding domain in complex with the neutralizing antibody 2-15. Hetero trimer, spike protein with one chain, antibody with one light and one heavy chain. Antibody utilized VH1-2 encoded motifs to recognize the RBD.
 
 ## Basefolder
 

@@ -8,7 +8,9 @@
 
 **Method**: Cryo-EM
 
+## Description
 
+EM structure of SARS-CoV-2 2P S ectodomain bound to the domain swapped antibody 2G12 from masked 3D refinement. Hetero heptamer, spike with three chains and antobody with a heavy and a light chain with two chains each. Structure is part of a study which reveals a new epitope on the SARS-CoV-2 spike that can be targeted for vaccine design.
 
 ## Basefolder
 
@@ -20,7 +22,7 @@
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7l09/validation/molprobity)   
+**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7l09/validation/molprobity)   [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7l09/validation/ccpem-validation)
 
 
 
