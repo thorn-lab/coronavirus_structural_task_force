@@ -1,16 +1,16 @@
 HEADER    HYDROLASE                               22-SEP-20   7AGA              
 TITLE     STRUCTURE OF SARS-COV-2 MAIN PROTEASE BOUND TO AT7519                 
 COMPND    MOL_ID: 1;                                                            
-COMPND   2 MOLECULE: MAIN PROTEASE;                                             
+COMPND   2 MOLECULE: 3C-LIKE PROTEINASE;                                        
 COMPND   3 CHAIN: A;                                                            
-COMPND   4 SYNONYM: PP1AB,ORF1AB POLYPROTEIN;                                   
-COMPND   5 EC: 3.4.19.12,3.4.22.-,3.4.22.69,2.7.7.48,3.6.4.12,3.6.4.13,3.1.13.-,
-COMPND   6 3.1.-.-,2.1.1.-;                                                     
+COMPND   4 SYNONYM: 3CL-PRO,3CLP,MAIN PROTEASE,MPRO,NON-STRUCTURAL PROTEIN 5,   
+COMPND   5 NSP5,SARS CORONAVIRUS MAIN PROTEINASE;                               
+COMPND   6 EC: 3.4.22.69;                                                       
 COMPND   7 ENGINEERED: YES                                                      
 SOURCE    MOL_ID: 1;                                                            
 SOURCE   2 ORGANISM_SCIENTIFIC: SEVERE ACUTE RESPIRATORY SYNDROME CORONAVIRUS   
 SOURCE   3 2;                                                                   
-SOURCE   4 ORGANISM_COMMON: 2019-NCOV;                                          
+SOURCE   4 ORGANISM_COMMON: 2019-NCOV, SARS-COV-2;                              
 SOURCE   5 ORGANISM_TAXID: 2697049;                                             
 SOURCE   6 GENE: REP, 1A-1B;                                                    
 SOURCE   7 EXPRESSION_SYSTEM: ESCHERICHIA COLI;                                 
@@ -31,25 +31,64 @@ AUTHOR  10 C.FEILER,M.WEISS,E.C.SCHULZ,P.MEHRABI,B.NORTON-BAKER,C.SCHMIDT,
 AUTHOR  11 K.LORENZEN,R.SCHUBERT,H.HAN,A.CHARI,Y.FERNANDEZ GARCIA,D.TURK,       
 AUTHOR  12 R.HILGENFELD,M.RAREY,A.ZALIANI,H.N.CHAPMAN,A.PEARSON,C.BETZEL,       
 AUTHOR  13 A.MEENTS                                                             
+REVDAT   3   14-APR-21 7AGA    1       COMPND SOURCE JRNL   REMARK              
+REVDAT   3 2                   1       SITE   ATOM                              
+REVDAT   2   09-DEC-20 7AGA    1       JRNL                                     
 REVDAT   1   02-DEC-20 7AGA    0                                                
-JRNL        AUTH   S.GUENTHER,P.REINKE,D.OBERTHUER,O.YEFANOV,L.GELISIO,H.GINN,  
-JRNL        AUTH 2 J.LIESKE,W.BREHM,A.RAHMANI MASHOUR,J.KNOSKA,                 
-JRNL        AUTH 3 G.PENA ESPERANZA,F.KOUA,A.TOLSTIKOVA,M.GROESSLER,            
-JRNL        AUTH 4 H.FLECKENSTEIN,F.TROST,M.GALCHENKOVA,Y.GEVORKOV,C.LI,S.AWEL, 
-JRNL        AUTH 5 L.X.PAULRAJ,N.ULLAH,S.FALKE,B.ALVES FRANCA,M.SCHWINZER,      
-JRNL        AUTH 6 H.BROGNARO,N.WERNER,M.PERBANDT,B.SEYCHELL,S.MEIER,H.GISELER, 
-JRNL        AUTH 7 D.MELO,I.DUNKEL,T.J.LANE,A.PECK,S.SAOUANE,J.HAKANPAEAE,      
-JRNL        AUTH 8 J.MEYER,H.NOEI,P.GRIBBON,B.ELLINGER,M.KUZIKOV,M.WOLF,        
-JRNL        AUTH 9 L.ZHANG,C.EHRT,J.PLETZER-ZELGERT,J.WOLLENHAUPT,C.FEILER,     
-JRNL        AUTH10 M.WEISS,E.C.SCHULZ,P.MEHRABI,B.NORTON-BAKER,C.SCHMIDT,       
-JRNL        AUTH11 K.LORENZEN,R.SCHUBERT,H.HAN,A.CHARI,Y.FERNANDEZ GARCIA,      
-JRNL        AUTH12 R.HILGENFELD,M.RAREY,A.ZALIANI,H.N.CHAPMAN,A.PEARSON,        
-JRNL        AUTH13 C.BETZEL,A.MEENTS                                            
-JRNL        TITL   INHIBITION OF SARS-COV-2 MAIN PROTEASE BY ALLOSTERIC         
-JRNL        TITL 2 DRUG-BINDING                                                 
-JRNL        REF    BIORXIV                                    2020              
-JRNL        REFN                                                                
-JRNL        DOI    10.1101/2020.11.12.378422                                    
+JRNL        AUTH   S.GUNTHER,P.Y.A.REINKE,Y.FERNANDEZ-GARCIA,J.LIESKE,T.J.LANE, 
+JRNL        AUTH 2 H.M.GINN,F.H.M.KOUA,C.EHRT,W.EWERT,D.OBERTHUER,O.YEFANOV,    
+JRNL        AUTH 3 S.MEIER,K.LORENZEN,B.KRICHEL,J.D.KOPICKI,L.GELISIO,W.BREHM,  
+JRNL        AUTH 4 I.DUNKEL,B.SEYCHELL,H.GIESELER,B.NORTON-BAKER,               
+JRNL        AUTH 5 B.ESCUDERO-PEREZ,M.DOMARACKY,S.SAOUANE,A.TOLSTIKOVA,         
+JRNL        AUTH 6 T.A.WHITE,A.HANLE,M.GROESSLER,H.FLECKENSTEIN,F.TROST,        
+JRNL        AUTH 7 M.GALCHENKOVA,Y.GEVORKOV,C.LI,S.AWEL,A.PECK,M.BARTHELMESS,   
+JRNL        AUTH 8 F.SCHLUENZEN,P.LOURDU XAVIER,N.WERNER,H.ANDALEEB,N.ULLAH,    
+JRNL        AUTH 9 S.FALKE,V.SRINIVASAN,B.A.FRANCA,M.SCHWINZER,H.BROGNARO,      
+JRNL        AUTH10 C.ROGERS,D.MELO,J.J.ZAITSEVA-DOYLE,J.KNOSKA,                 
+JRNL        AUTH11 G.E.PENA-MURILLO,A.R.MASHHOUR,V.HENNICKE,P.FISCHER,          
+JRNL        AUTH12 J.HAKANPAA,J.MEYER,P.GRIBBON,B.ELLINGER,M.KUZIKOV,M.WOLF,    
+JRNL        AUTH13 A.R.BECCARI,G.BOURENKOV,D.VON STETTEN,G.POMPIDOR,I.BENTO,    
+JRNL        AUTH14 S.PANNEERSELVAM,I.KARPICS,T.R.SCHNEIDER,M.M.GARCIA-ALAI,     
+JRNL        AUTH15 S.NIEBLING,C.GUNTHER,C.SCHMIDT,R.SCHUBERT,H.HAN,J.BOGER,     
+JRNL        AUTH16 D.C.F.MONTEIRO,L.ZHANG,X.SUN,J.PLETZER-ZELGERT,              
+JRNL        AUTH17 J.WOLLENHAUPT,C.G.FEILER,M.S.WEISS,E.C.SCHULZ,P.MEHRABI,     
+JRNL        AUTH18 K.KARNICAR,A.USENIK,J.LOBODA,H.TIDOW,A.CHARI,R.HILGENFELD,   
+JRNL        AUTH19 C.UETRECHT,R.COX,A.ZALIANI,T.BECK,M.RAREY,S.GUNTHER,D.TURK,  
+JRNL        AUTH20 W.HINRICHS,H.N.CHAPMAN,A.R.PEARSON,C.BETZEL,A.MEENTS         
+JRNL        TITL   X-RAY SCREENING IDENTIFIES ACTIVE SITE AND ALLOSTERIC        
+JRNL        TITL 2 INHIBITORS OF SARS-COV-2 MAIN PROTEASE.                      
+JRNL        REF    SCIENCE                                    2021              
+JRNL        REFN                   ESSN 1095-9203                               
+JRNL        PMID   33811162                                                     
+JRNL        DOI    10.1126/SCIENCE.ABF7945                                      
+REMARK   1                                                                      
+REMARK   1 REFERENCE 1                                                          
+REMARK   1  AUTH   S.GUENTHER,P.Y.A.,REINKE,Y.,FERNANDEZ-GARCIA,J.,LIESKE,T.J., 
+REMARK   1  AUTH 2 LANE,H.M.,GINN,F.H.M.,KOUA,C.,EHRT,W.,EWERT,D.,OBERTHUER,O., 
+REMARK   1  AUTH 3 YEFANOV,S.,MEIER,K.,LORENZEN,B.,KRICHEL,J.D.,KOPICKI,L.,     
+REMARK   1  AUTH 4 GELISIO,W.,BREHM,I.,DUNKEL,B.,SEYCHELL,H.,GIESELER,B.,       
+REMARK   1  AUTH 5 NORTON-BAKER,B.,ESCUDERO-PEREZ,M.,DOMARACKY,S.,SAOUANE,A.,   
+REMARK   1  AUTH 6 TOLSTIKOVA,T.A.,WHITE,A.,HANLE,M.,GROESSLER,H.,FLECKENSTEIN, 
+REMARK   1  AUTH 7 F.,TROST,M.,GALCHENKOVA,Y.,GEVORKOV,C.,LI,S.,AWEL,A.PECK,M., 
+REMARK   1  AUTH 8 BARTHELMESS,F.,SCHLUENZEN,L.X.,PAULRAJ,N.,WERNER,H.,         
+REMARK   1  AUTH 9 ANDALEEB,N.,ULLAH,S.,FALKE,V.,SRINIVASAN,B.,FRANCA,M.,       
+REMARK   1  AUTH10 SCHWINZER,H.,BROGNARO,C.,ROGERS,D.,MELO,J.J.,DOYLE,J.,       
+REMARK   1  AUTH11 KNOSKA,G.E.,PENA MURILLO,A.,RAHMANI MASHHOUR,F.,GUICKING,V., 
+REMARK   1  AUTH12 HENNICKE,P.,FISCHER,J.,HAKANPAEAE,J.,MEYER,P.,GRIBBON,B.,    
+REMARK   1  AUTH13 ELLINGER,M.,KUZIKOV,M.,WOLF,G.,BURENKOV,D.,VON STETTEN,G.,   
+REMARK   1  AUTH14 POMPIDOR,I.,BENTO,S.,PANNEERSELVAM,I.,KARPICS,T.R.,          
+REMARK   1  AUTH15 SCHNEIDER,M.,GARCIA ALAI,S.,NIEBLING,C.,GUENTHER,C.,SCHMIDT, 
+REMARK   1  AUTH16 R.,SCHUBERT,H.,HAN,J.,BOGER,D.,MONTEIRO,L.,ZHANG,X.,SUN,J.,  
+REMARK   1  AUTH17 PLETZER-ZELGERT,J.,WOLLENHAUPT,C.,FEILER,M.,WEISS,E.C.,      
+REMARK   1  AUTH18 SCHULZ,P.,MEHRABI,K.,KARNICAR,A.,USENIK,J.,LOBODA,H.,TIDOW,  
+REMARK   1  AUTH19 A.,CHARI,R.,HILGENFELD,C.,UETRECHT,R.,COX,A.,ZALIANI,T.,     
+REMARK   1  AUTH20 BECK,M.,RAREY,S.,GUENTHER,D.,TURK,W.,HINRICHS,H.N.,CHAPMAN,  
+REMARK   1  AUTH21 A.,PEARSON,C.,BETZEL,A.MEENTS                                
+REMARK   1  TITL   INHIBITION OF SARS-COV-2 MAIN PROTEASE BY ALLOSTERIC         
+REMARK   1  TITL 2 DRUG-BINDING                                                 
+REMARK   1  REF    BIORXIV                                    2020              
+REMARK   1  REFN                                                                
+REMARK   1  DOI    10.1101/2020.11.12.378422                                    
 REMARK   2                                                                      
 REMARK   2 RESOLUTION.    1.68 ANGSTROMS.                                       
 REMARK   3                                                                      
@@ -175,7 +214,7 @@ REMARK   3      S11:  -0.0464 S12:   0.0028 S13:   0.0061
 REMARK   3      S21:   0.0199 S22:  -0.0075 S23:  -0.0833                       
 REMARK   3      S31:  -0.0649 S32:   0.0711 S33:   0.0001                       
 REMARK   3   TLS GROUP : 4                                                      
-REMARK   3    SELECTION: CHAIN 'A' AND (RESID 215 THROUGH 306 )                 
+REMARK   3    SELECTION: CHAIN 'A' AND (RESID 215 THROUGH 305 )                 
 REMARK   3    ORIGIN FOR THE GROUP (A):  12.6927  16.1930  -9.7312              
 REMARK   3    T TENSOR                                                          
 REMARK   3      T11:   0.2331 T22:   0.2324                                     
@@ -376,6 +415,47 @@ REMARK 525 NUMBER; I=INSERTION CODE):
 REMARK 525                                                                      
 REMARK 525  M RES CSSEQI                                                        
 REMARK 525    HOH A 729        DISTANCE =  6.22 ANGSTROMS                       
+REMARK 800                                                                      
+REMARK 800 SITE                                                                 
+REMARK 800 SITE_IDENTIFIER: AC1                                                 
+REMARK 800 EVIDENCE_CODE: SOFTWARE                                              
+REMARK 800 SITE_DESCRIPTION: binding site for residue LZE A 401                 
+REMARK 800                                                                      
+REMARK 800 SITE_IDENTIFIER: AC2                                                 
+REMARK 800 EVIDENCE_CODE: SOFTWARE                                              
+REMARK 800 SITE_DESCRIPTION: binding site for residue CL A 402                  
+REMARK 800                                                                      
+REMARK 800 SITE_IDENTIFIER: AC3                                                 
+REMARK 800 EVIDENCE_CODE: SOFTWARE                                              
+REMARK 800 SITE_DESCRIPTION: binding site for residue CL A 403                  
+REMARK 800                                                                      
+REMARK 800 SITE_IDENTIFIER: AC4                                                 
+REMARK 800 EVIDENCE_CODE: SOFTWARE                                              
+REMARK 800 SITE_DESCRIPTION: binding site for residue DMS A 404                 
+REMARK 800                                                                      
+REMARK 800 SITE_IDENTIFIER: AC5                                                 
+REMARK 800 EVIDENCE_CODE: SOFTWARE                                              
+REMARK 800 SITE_DESCRIPTION: binding site for residue DMS A 405                 
+REMARK 800                                                                      
+REMARK 800 SITE_IDENTIFIER: AC6                                                 
+REMARK 800 EVIDENCE_CODE: SOFTWARE                                              
+REMARK 800 SITE_DESCRIPTION: binding site for residue DMS A 406                 
+REMARK 800                                                                      
+REMARK 800 SITE_IDENTIFIER: AC7                                                 
+REMARK 800 EVIDENCE_CODE: SOFTWARE                                              
+REMARK 800 SITE_DESCRIPTION: binding site for residue DMS A 408                 
+REMARK 800                                                                      
+REMARK 800 SITE_IDENTIFIER: AC8                                                 
+REMARK 800 EVIDENCE_CODE: SOFTWARE                                              
+REMARK 800 SITE_DESCRIPTION: binding site for residue DMS A 409                 
+REMARK 800                                                                      
+REMARK 800 SITE_IDENTIFIER: AC9                                                 
+REMARK 800 EVIDENCE_CODE: SOFTWARE                                              
+REMARK 800 SITE_DESCRIPTION: binding site for residue DMS A 410                 
+REMARK 800                                                                      
+REMARK 800 SITE_IDENTIFIER: AD1                                                 
+REMARK 800 EVIDENCE_CODE: SOFTWARE                                              
+REMARK 800 SITE_DESCRIPTION: binding site for residue DMS A 411                 
 REMARK 900                                                                      
 REMARK 900 RELATED ENTRIES                                                      
 REMARK 900 RELATED ID: 7A1U   RELATED DB: PDB                                   
@@ -465,6 +545,24 @@ SHEET    5 AA2 5 SER A 121  ALA A 129 -1  O  SER A 123   N  ALA A 116
 SHEET    1 AA3 3 TYR A 101  PHE A 103  0                                        
 SHEET    2 AA3 3 VAL A 157  GLU A 166  1  O  PHE A 159   N  LYS A 102           
 SHEET    3 AA3 3 HIS A 172  THR A 175 -1  O  ALA A 173   N  MET A 165           
+SITE     1 AC1 14 GLU A  47  LEU A  50  PRO A 108  GLY A 109                    
+SITE     2 AC1 14 GLN A 110  ASP A 153  VAL A 202  ASN A 203                    
+SITE     3 AC1 14 ILE A 249  PRO A 293  PHE A 294  ARG A 298                    
+SITE     4 AC1 14 HOH A 607  HOH A 687                                          
+SITE     1 AC2  1 ALA A 285                                                     
+SITE     1 AC3  4 PRO A  52  ASN A  53  TYR A  54  GLU A  55                    
+SITE     1 AC4  6 MET A   6  PHE A   8  SER A 123  GLN A 127                    
+SITE     2 AC4  6 ARG A 298  HOH A 627                                          
+SITE     1 AC5  8 GLN A  74  LEU A  75  ARG A  76  PHE A 223                    
+SITE     2 AC5  8 THR A 224  ASP A 263  HOH A 532  HOH A 549                    
+SITE     1 AC6  5 PHE A 140  LEU A 141  ASN A 142  HIS A 163                    
+SITE     2 AC6  5 GLU A 166                                                     
+SITE     1 AC7  6 PRO A  96  LYS A  97  THR A  98  LEU A 272                    
+SITE     2 AC7  6 ASN A 274  GLY A 275                                          
+SITE     1 AC8  7 ASP A  56  ILE A  59  PRO A 132  THR A 196                    
+SITE     2 AC8  7 THR A 198  GLU A 240  HOH A 553                               
+SITE     1 AC9  2 LEU A 287  HOH A 542                                          
+SITE     1 AD1  3 GLY A  15  MET A  17  LYS A  97                               
 CRYST1  112.372   52.641   44.585  90.00 102.67  90.00 C 1 2 1       4          
 ORIGX1      1.000000  0.000000  0.000000        0.00000                         
 ORIGX2      0.000000  1.000000  0.000000        0.00000                         
@@ -8108,8 +8206,8 @@ HETATM 5140  O   HOH A 574      29.194  15.844 -12.664  1.00 37.32           O
 HETATM 5141  O   HOH A 575      16.007 -27.792  12.001  1.00 37.85           O  
 HETATM 5142  O   HOH A 576      13.473 -18.606  31.923  1.00 48.71           O  
 HETATM 5143  O   HOH A 577      25.103   9.109  -4.903  1.00 27.80           O  
-HETATM 5144  O   HOH A 578      15.096  -4.819   0.277  1.00 33.23           O  
-HETATM 5145  O   HOH A 579      24.185 -16.183  38.317  1.00 40.82           O  
+HETATM 5144  O   HOH A 578      24.185 -16.183  38.317  1.00 40.82           O  
+HETATM 5145  O   HOH A 579      15.096  -4.819   0.277  1.00 33.23           O  
 HETATM 5146  O   HOH A 580       3.991 -11.888  -2.425  1.00 30.76           O  
 HETATM 5147  O   HOH A 581      17.087 -18.691   7.615  1.00 32.80           O  
 HETATM 5148  O   HOH A 582      -1.575   2.994  -1.378  1.00 33.83           O  
@@ -8249,8 +8347,8 @@ HETATM 5281  O   HOH A 714      24.915  -4.169  19.609  1.00 37.15           O
 HETATM 5282  O   HOH A 715      17.871 -26.064  26.800  1.00 36.43           O  
 HETATM 5283  O   HOH A 716      14.086 -27.713  24.985  1.00 28.63           O  
 HETATM 5284  O   HOH A 717      28.832  -3.912  30.647  1.00 52.39           O  
-HETATM 5285  O   HOH A 718      11.745 -33.822  24.056  1.00 33.18           O  
-HETATM 5286  O   HOH A 719      21.057 -20.254  14.073  1.00 47.83           O  
+HETATM 5285  O   HOH A 718      21.057 -20.254  14.073  1.00 47.83           O  
+HETATM 5286  O   HOH A 719      11.745 -33.822  24.056  1.00 33.18           O  
 HETATM 5287  O   HOH A 720      -4.179  25.555 -11.498  1.00 45.67           O  
 HETATM 5288  O   HOH A 721      16.691 -29.990  21.619  1.00 39.87           O  
 HETATM 5289  O   HOH A 722       5.175   1.448  26.515  1.00 34.86           O  
@@ -8383,5 +8481,5 @@ CONECT 5063 5059
 CONECT 5064 5060                                                                
 CONECT 5065 5060                                                                
 CONECT 5066 5060                                                                
-MASTER      345    0   11   11   15    0    0    6 2646    1  122   24          
+MASTER      414    0   11   11   15    0   18    6 2646    1  122   24          
 END                                                                             

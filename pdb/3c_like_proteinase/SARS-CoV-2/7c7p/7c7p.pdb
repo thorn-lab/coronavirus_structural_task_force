@@ -19,6 +19,9 @@ SOURCE   8 EXPRESSION_SYSTEM_TAXID: 562
 KEYWDS    CORONAVIRUS, PROTEASE, INHIBITOR, COMPLEX., VIRAL PROTEIN             
 EXPDTA    X-RAY DIFFRACTION                                                     
 AUTHOR    R.ZENG,J.X.QIAO,Y.F.WANG,Y.S.LI,R.YAO,S.Y.YANG,J.LEI                  
+REVDAT   4   14-APR-21 7C7P    1       COMPND JRNL   REMARK HET                 
+REVDAT   4 2                   1       HETNAM HETSYN FORMUL LINK                
+REVDAT   4 3                   1       ATOM                                     
 REVDAT   3   10-MAR-21 7C7P    1       COMPND                                   
 REVDAT   2   03-MAR-21 7C7P    1       JRNL                                     
 REVDAT   1   29-JUL-20 7C7P    0                                                
@@ -30,7 +33,7 @@ JRNL        AUTH 5 Y.LIU,G.F.LIN,X.YANG,J.ZOU,L.LI,Y.HU,G.W.LU,W.M.LI,Y.Q.WEI,
 JRNL        AUTH 6 Y.T.ZHENG,J.LEI,S.YANG                                       
 JRNL        TITL   SARS-COV-2 M PRO INHIBITORS WITH ANTIVIRAL ACTIVITY IN A     
 JRNL        TITL 2 TRANSGENIC MOUSE MODEL.                                      
-JRNL        REF    SCIENCE                                    2021              
+JRNL        REF    SCIENCE                       V. 371  1374 2021              
 JRNL        REFN                   ESSN 1095-9203                               
 JRNL        PMID   33602867                                                     
 JRNL        DOI    10.1126/SCIENCE.ABF1611                                      
@@ -349,6 +352,13 @@ REMARK 525    HOH B 712        DISTANCE =  6.77 ANGSTROMS
 REMARK 525    HOH B 713        DISTANCE =  7.43 ANGSTROMS                       
 REMARK 525    HOH B 714        DISTANCE =  7.48 ANGSTROMS                       
 REMARK 525    HOH B 715        DISTANCE =  7.83 ANGSTROMS                       
+REMARK 610                                                                      
+REMARK 610 MISSING HETEROATOM                                                   
+REMARK 610 THE FOLLOWING RESIDUES HAVE MISSING ATOMS (M=MODEL NUMBER;           
+REMARK 610 RES=RESIDUE NAME; C=CHAIN IDENTIFIER; SSEQ=SEQUENCE NUMBER;          
+REMARK 610 I=INSERTION CODE):                                                   
+REMARK 610   M RES C SSEQI                                                      
+REMARK 610     SV6 B  401                                                       
 REMARK 630                                                                      
 REMARK 630 MOLECULE TYPE: NULL                                                  
 REMARK 630 MOLECULE NAME: (1S,3AR,6AS)-2-[(2S)-2-({(2S)-2-CYCLOHEXYL-2-         
@@ -360,6 +370,7 @@ REMARK 630  SSSEQ=SEQUENCE NUMBER; I=INSERTION CODE.)
 REMARK 630                                                                      
 REMARK 630   M RES C SSSEQI                                                     
 REMARK 630     SV6 A   401                                                      
+REMARK 630     SV6 B   401                                                      
 REMARK 630 SOURCE: NULL                                                         
 REMARK 630 TAXONOMY: NULL                                                       
 REMARK 630 SUBCOMP:    VGL CHG TBG 037 03A                                      
@@ -434,7 +445,7 @@ SEQRES  23 B  306  LEU GLU ASP GLU PHE THR PRO PHE ASP VAL VAL ARG GLN
 SEQRES  24 B  306  CYS SER GLY VAL THR PHE GLN                                  
 HET    SV6  A 401      49                                                       
 HET     CL  A 402       1                                                       
-HET    FK3  B 401      25                                                       
+HET    SV6  B 401      25                                                       
 HET     CL  B 402       1                                                       
 HETNAM     SV6 (1S,3AR,6AS)-2-[(2S)-2-({(2S)-2-CYCLOHEXYL-2-[(PYRAZIN-          
 HETNAM   2 SV6  2-YLCARBONYL)AMINO]ACETYL}AMINO)-3,3-                           
@@ -442,14 +453,9 @@ HETNAM   3 SV6  DIMETHYLBUTANOYL]-N-[(2R,3S)-1-(CYCLOPROPYLAMINO)-2-
 HETNAM   4 SV6  HYDROXY-1-OXOHEXAN-3-YL]OCTAHYDROCYCLOPENTA[C]PYRROLE-          
 HETNAM   5 SV6  1-CARBOXAMIDE                                                   
 HETNAM      CL CHLORIDE ION                                                     
-HETNAM     FK3 (3~{S},3~{A}~{S},6~{A}~{R})-~{N}-[(2~{R},3~{S})-1-               
-HETNAM   2 FK3  (CYCLOPROPYLAMINO)-2-OXIDANYL-1-OXIDANYLIDENE-HEXAN-3-          
-HETNAM   3 FK3  YL]-2-METHANOYL-3,3~{A},4,5,6,6~{A}-HEXAHYDRO-1~{H}-            
-HETNAM   4 FK3  CYCLOPENTA[C]PYRROLE-3-CARBOXAMIDE                              
 HETSYN     SV6 TELAPREVIR, BOUND FORM                                           
-FORMUL   3  SV6    C36 H55 N7 O6                                                
+FORMUL   3  SV6    2(C36 H55 N7 O6)                                             
 FORMUL   4   CL    2(CL 1-)                                                     
-FORMUL   5  FK3    C18 H29 N3 O4                                                
 FORMUL   7  HOH   *526(H2 O)                                                    
 HELIX    1 AA1 SER A   10  GLY A   15  1                                   6    
 HELIX    2 AA2 HIS A   41  CYS A   44  5                                   4    
@@ -503,7 +509,7 @@ SHEET    1 AA6 3 TYR B 101  PHE B 103  0
 SHEET    2 AA6 3 CYS B 156  GLU B 166  1  O  PHE B 159   N  LYS B 102           
 SHEET    3 AA6 3 HIS B 172  THR B 175 -1  O  ALA B 173   N  MET B 165           
 LINK         SG  CYS A 145                 CAI SV6 A 401     1555   1555  1.82  
-LINK         SG  CYS B 145                 CAI FK3 B 401     1555   1555  1.86  
+LINK         SG  CYS B 145                 CAI SV6 B 401     1555   1555  1.86  
 SITE     1 AC1 19 THR A  26  HIS A  41  MET A  49  ASN A 142                    
 SITE     2 AC1 19 GLY A 143  SER A 144  CYS A 145  HIS A 164                    
 SITE     3 AC1 19 MET A 165  GLU A 166  LEU A 167  ARG A 188                    
@@ -5278,31 +5284,31 @@ HETATM 4753  CAP SV6 A 401     -24.138  -5.903 -21.687  1.00 30.94           C
 HETATM 4754  OBR SV6 A 401     -23.381  -2.609 -25.484  1.00 33.68           O  
 HETATM 4755  OBS SV6 A 401     -21.601  -3.574 -22.706  1.00 29.60           O  
 HETATM 4756 CL    CL A 402      -5.660  14.648 -31.600  1.00 21.77          CL  
-HETATM 4757  CAV FK3 B 401      17.966  12.478  -2.878  1.00 65.72           C  
-HETATM 4758  OBT FK3 B 401      17.210  12.325  -3.824  1.00 63.36           O  
-HETATM 4759  N   FK3 B 401      17.489  12.540  -1.700  1.00 71.90           N  
-HETATM 4760  CD1 FK3 B 401      18.323  12.946  -0.561  1.00 69.84           C  
-HETATM 4761  CG  FK3 B 401      17.471  12.704   0.676  1.00 68.73           C  
-HETATM 4762  CD2 FK3 B 401      18.053  11.594   1.545  1.00 67.26           C  
-HETATM 4763  CBF FK3 B 401      17.337  10.318   1.126  1.00 65.47           C  
-HETATM 4764  CBE FK3 B 401      15.958  10.805   0.704  1.00 67.52           C  
-HETATM 4765  CB  FK3 B 401      16.116  12.230   0.181  1.00 69.91           C  
-HETATM 4766  CA  FK3 B 401      16.071  12.315  -1.357  1.00 70.44           C  
-HETATM 4767  C   FK3 B 401      15.190  13.417  -1.941  1.00 72.21           C  
-HETATM 4768  O   FK3 B 401      15.351  14.584  -1.559  1.00 67.14           O  
-HETATM 4769  NAE FK3 B 401      14.337  13.094  -2.844  1.00 68.58           N  
-HETATM 4770  CAH FK3 B 401      13.466  14.063  -3.560  1.00 63.82           C  
-HETATM 4771  CAJ FK3 B 401      13.454  13.614  -5.062  1.00 69.85           C  
-HETATM 4772  CAK FK3 B 401      13.454  12.084  -5.303  1.00 76.22           C  
-HETATM 4773  CAL FK3 B 401      13.151  11.675  -6.760  1.00 71.64           C  
-HETATM 4774  CAI FK3 B 401      12.086  14.154  -2.868  0.50 57.30           C  
-HETATM 4775  OBR FK3 B 401      12.253  14.588  -1.488  1.00 56.16           O  
-HETATM 4776  CAM FK3 B 401      11.171  15.110  -3.618  1.00 61.47           C  
-HETATM 4777  OBS FK3 B 401      10.420  14.701  -4.456  1.00 59.49           O  
-HETATM 4778  NAA FK3 B 401      11.130  16.351  -3.405  1.00 77.66           N  
-HETATM 4779  CAN FK3 B 401      11.917  17.162  -2.502  1.00 80.16           C  
-HETATM 4780  CAP FK3 B 401      11.502  18.614  -2.759  1.00 87.30           C  
-HETATM 4781  CAO FK3 B 401      12.857  18.107  -3.239  1.00 85.19           C  
+HETATM 4757  CAV SV6 B 401      17.966  12.478  -2.878  1.00 65.72           C  
+HETATM 4758  OBT SV6 B 401      17.210  12.325  -3.824  1.00 63.36           O  
+HETATM 4759  C   SV6 B 401      15.190  13.417  -1.941  1.00 72.21           C  
+HETATM 4760  N   SV6 B 401      17.489  12.540  -1.700  1.00 71.90           N  
+HETATM 4761  O   SV6 B 401      15.351  14.584  -1.559  1.00 67.14           O  
+HETATM 4762  CA  SV6 B 401      16.071  12.315  -1.357  1.00 70.44           C  
+HETATM 4763  CB  SV6 B 401      16.116  12.230   0.181  1.00 69.91           C  
+HETATM 4764  CG  SV6 B 401      17.471  12.704   0.676  1.00 68.73           C  
+HETATM 4765  CBE SV6 B 401      15.958  10.805   0.704  1.00 67.52           C  
+HETATM 4766  CBF SV6 B 401      17.337  10.318   1.126  1.00 65.47           C  
+HETATM 4767  CD1 SV6 B 401      18.323  12.946  -0.561  1.00 69.84           C  
+HETATM 4768  CD2 SV6 B 401      18.053  11.594   1.545  1.00 67.26           C  
+HETATM 4769  NAA SV6 B 401      11.130  16.351  -3.405  1.00 77.66           N  
+HETATM 4770  NAE SV6 B 401      14.337  13.094  -2.844  1.00 68.58           N  
+HETATM 4771  CAH SV6 B 401      13.466  14.063  -3.560  1.00 63.82           C  
+HETATM 4772  CAI SV6 B 401      12.086  14.154  -2.868  0.50 57.30           C  
+HETATM 4773  CAJ SV6 B 401      13.454  13.614  -5.062  1.00 69.85           C  
+HETATM 4774  CAK SV6 B 401      13.454  12.084  -5.303  1.00 76.22           C  
+HETATM 4775  CAL SV6 B 401      13.151  11.675  -6.760  1.00 71.64           C  
+HETATM 4776  CAM SV6 B 401      11.171  15.110  -3.618  1.00 61.47           C  
+HETATM 4777  CAN SV6 B 401      11.917  17.162  -2.502  1.00 80.16           C  
+HETATM 4778  CAO SV6 B 401      11.502  18.614  -2.759  1.00 87.30           C  
+HETATM 4779  CAP SV6 B 401      12.857  18.107  -3.239  1.00 85.19           C  
+HETATM 4780  OBR SV6 B 401      12.253  14.588  -1.488  1.00 56.16           O  
+HETATM 4781  OBS SV6 B 401      10.420  14.701  -4.456  1.00 59.49           O  
 HETATM 4782 CL    CL B 402      -0.713  -1.453 -21.201  1.00 41.76          CL  
 HETATM 4783  O   HOH A 501      23.631  10.067 -36.709  1.00 44.77           O  
 HETATM 4784  O   HOH A 502      21.977  14.612 -34.956  1.00 38.66           O  
@@ -5831,7 +5837,7 @@ HETATM 5306  O   HOH B 713      27.643  -4.374  -1.203  1.00 58.81           O
 HETATM 5307  O   HOH B 714     -11.329 -25.046  -4.471  1.00 60.01           O  
 HETATM 5308  O   HOH B 715       2.309 -30.439   2.895  1.00 64.31           O  
 CONECT 1130 4746                                                                
-CONECT 3441 4774                                                                
+CONECT 3441 4772                                                                
 CONECT 4707 4710 4711 4713                                                      
 CONECT 4708 4709 4713                                                           
 CONECT 4709 4708 4714                                                           
@@ -5881,30 +5887,30 @@ CONECT 4752 4751 4753
 CONECT 4753 4751 4752                                                           
 CONECT 4754 4746                                                                
 CONECT 4755 4750                                                                
-CONECT 4757 4758 4759                                                           
+CONECT 4757 4758 4760                                                           
 CONECT 4758 4757                                                                
-CONECT 4759 4757 4760 4766                                                      
-CONECT 4760 4759 4761                                                           
-CONECT 4761 4760 4762 4765                                                      
-CONECT 4762 4761 4763                                                           
-CONECT 4763 4762 4764                                                           
-CONECT 4764 4763 4765                                                           
-CONECT 4765 4761 4764 4766                                                      
-CONECT 4766 4759 4765 4767                                                      
-CONECT 4767 4766 4768 4769                                                      
-CONECT 4768 4767                                                                
-CONECT 4769 4767 4770                                                           
-CONECT 4770 4769 4771 4774                                                      
-CONECT 4771 4770 4772                                                           
-CONECT 4772 4771 4773                                                           
-CONECT 4773 4772                                                                
-CONECT 4774 3441 4770 4775 4776                                                 
+CONECT 4759 4761 4762 4770                                                      
+CONECT 4760 4757 4762 4767                                                      
+CONECT 4761 4759                                                                
+CONECT 4762 4759 4760 4763                                                      
+CONECT 4763 4762 4764 4765                                                      
+CONECT 4764 4763 4767 4768                                                      
+CONECT 4765 4763 4766                                                           
+CONECT 4766 4765 4768                                                           
+CONECT 4767 4760 4764                                                           
+CONECT 4768 4764 4766                                                           
+CONECT 4769 4776 4777                                                           
+CONECT 4770 4759 4771                                                           
+CONECT 4771 4770 4772 4773                                                      
+CONECT 4772 3441 4771 4776 4780                                                 
+CONECT 4773 4771 4774                                                           
+CONECT 4774 4773 4775                                                           
 CONECT 4775 4774                                                                
-CONECT 4776 4774 4777 4778                                                      
-CONECT 4777 4776                                                                
-CONECT 4778 4776 4779                                                           
-CONECT 4779 4778 4780 4781                                                      
-CONECT 4780 4779 4781                                                           
-CONECT 4781 4779 4780                                                           
-MASTER      348    0    4   21   30    0   11    6 5252    2   76   48          
+CONECT 4776 4769 4772 4781                                                      
+CONECT 4777 4769 4778 4779                                                      
+CONECT 4778 4777 4779                                                           
+CONECT 4779 4777 4778                                                           
+CONECT 4780 4772                                                                
+CONECT 4781 4776                                                                
+MASTER      356    0    4   21   30    0   11    6 5252    2   76   48          
 END                                                                             
