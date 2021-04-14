@@ -1,16 +1,16 @@
 HEADER    PEPTIDE BINDING PROTEIN                 12-OCT-20   7ANS              
 TITLE     STRUCTURE OF SARS-COV-2 MAIN PROTEASE BOUND TO ADRAFINIL.             
 COMPND    MOL_ID: 1;                                                            
-COMPND   2 MOLECULE: MAIN PROTEASE;                                             
+COMPND   2 MOLECULE: 3C-LIKE PROTEINASE;                                        
 COMPND   3 CHAIN: A;                                                            
-COMPND   4 SYNONYM: PP1AB,ORF1AB POLYPROTEIN;                                   
-COMPND   5 EC: 3.4.19.12,3.4.22.-,3.4.22.69,2.7.7.48,3.6.4.12,3.6.4.13,3.1.13.-,
-COMPND   6 3.1.-.-,2.1.1.-;                                                     
+COMPND   4 SYNONYM: 3CL-PRO,3CLP,MAIN PROTEASE,MPRO,NON-STRUCTURAL PROTEIN 5,   
+COMPND   5 NSP5,SARS CORONAVIRUS MAIN PROTEINASE;                               
+COMPND   6 EC: 3.4.22.69;                                                       
 COMPND   7 ENGINEERED: YES                                                      
 SOURCE    MOL_ID: 1;                                                            
 SOURCE   2 ORGANISM_SCIENTIFIC: SEVERE ACUTE RESPIRATORY SYNDROME CORONAVIRUS   
 SOURCE   3 2;                                                                   
-SOURCE   4 ORGANISM_COMMON: 2019-NCOV;                                          
+SOURCE   4 ORGANISM_COMMON: 2019-NCOV, SARS-COV-2;                              
 SOURCE   5 ORGANISM_TAXID: 2697049;                                             
 SOURCE   6 GENE: REP, 1A-1B;                                                    
 SOURCE   7 EXPRESSION_SYSTEM: ESCHERICHIA COLI;                                 
@@ -29,25 +29,63 @@ AUTHOR   9 L.ZHANG,C.EHRT,J.PLETZER-ZELGERT,J.WOLLENHAUPT,C.FEILER,M.WEISS,
 AUTHOR  10 E.C.SCHULZ,P.MEHRABI,B.NORTON-BAKER,C.SCHMIDT,K.LORENZEN,R.SCHUBERT, 
 AUTHOR  11 H.HAN,A.CHARI,Y.FERNANDEZ GARCIA,D.TURK,R.HILGENFELD,M.RAREY,        
 AUTHOR  12 A.ZALIANI,H.N.CHAPMAN,A.PEARSON,C.BETZEL,A.MEENTS                    
+REVDAT   3   14-APR-21 7ANS    1       COMPND SOURCE JRNL                       
+REVDAT   2   09-DEC-20 7ANS    1       JRNL                                     
 REVDAT   1   02-DEC-20 7ANS    0                                                
-JRNL        AUTH   S.GUENTHER,P.REINKE,D.OBERTHUER,O.YEFANOV,L.GELISIO,H.GINN,  
-JRNL        AUTH 2 J.LIESKE,W.BREHM,A.RAHMANI MASHOUR,J.KNOSKA,                 
-JRNL        AUTH 3 G.PENA ESPERANZA,F.KOUA,A.TOLSTIKOVA,M.GROESSLER,            
-JRNL        AUTH 4 H.FLECKENSTEIN,F.TROST,M.GALCHENKOVA,Y.GEVORKOV,C.LI,S.AWEL, 
-JRNL        AUTH 5 L.X.PAULRAJ,N.ULLAH,S.FALKE,B.ALVES FRANCA,M.SCHWINZER,      
-JRNL        AUTH 6 H.BROGNARO,N.WERNER,M.PERBANDT,B.SEYCHELL,S.MEIER,H.GISELER, 
-JRNL        AUTH 7 D.MELO,I.DUNKEL,T.J.LANE,A.PECK,S.SAOUANE,J.HAKANPAEAE,      
-JRNL        AUTH 8 J.MEYER,H.NOEI,P.GRIBBON,B.ELLINGER,M.KUZIKOV,M.WOLF,        
-JRNL        AUTH 9 L.ZHANG,C.EHRT,J.PLETZER-ZELGERT,J.WOLLENHAUPT,C.FEILER,     
-JRNL        AUTH10 M.WEISS,E.C.SCHULZ,P.MEHRABI,B.NORTON-BAKER,C.SCHMIDT,       
-JRNL        AUTH11 K.LORENZEN,R.SCHUBERT,H.HAN,A.CHARI,Y.FERNANDEZ GARCIA,      
-JRNL        AUTH12 R.HILGENFELD,M.RAREY,A.ZALIANI,H.N.CHAPMAN,A.PEARSON,        
-JRNL        AUTH13 C.BETZEL,A.MEENTS                                            
-JRNL        TITL   INHIBITION OF SARS-COV-2 MAIN PROTEASE BY ALLOSTERIC         
-JRNL        TITL 2 DRUG-BINDING                                                 
-JRNL        REF    BIORXIV                                    2020              
-JRNL        REFN                                                                
-JRNL        DOI    10.1101/2020.11.12.378422                                    
+JRNL        AUTH   S.GUNTHER,P.Y.A.REINKE,Y.FERNANDEZ-GARCIA,J.LIESKE,T.J.LANE, 
+JRNL        AUTH 2 H.M.GINN,F.H.M.KOUA,C.EHRT,W.EWERT,D.OBERTHUER,O.YEFANOV,    
+JRNL        AUTH 3 S.MEIER,K.LORENZEN,B.KRICHEL,J.D.KOPICKI,L.GELISIO,W.BREHM,  
+JRNL        AUTH 4 I.DUNKEL,B.SEYCHELL,H.GIESELER,B.NORTON-BAKER,               
+JRNL        AUTH 5 B.ESCUDERO-PEREZ,M.DOMARACKY,S.SAOUANE,A.TOLSTIKOVA,         
+JRNL        AUTH 6 T.A.WHITE,A.HANLE,M.GROESSLER,H.FLECKENSTEIN,F.TROST,        
+JRNL        AUTH 7 M.GALCHENKOVA,Y.GEVORKOV,C.LI,S.AWEL,A.PECK,M.BARTHELMESS,   
+JRNL        AUTH 8 F.SCHLUENZEN,P.LOURDU XAVIER,N.WERNER,H.ANDALEEB,N.ULLAH,    
+JRNL        AUTH 9 S.FALKE,V.SRINIVASAN,B.A.FRANCA,M.SCHWINZER,H.BROGNARO,      
+JRNL        AUTH10 C.ROGERS,D.MELO,J.J.ZAITSEVA-DOYLE,J.KNOSKA,                 
+JRNL        AUTH11 G.E.PENA-MURILLO,A.R.MASHHOUR,V.HENNICKE,P.FISCHER,          
+JRNL        AUTH12 J.HAKANPAA,J.MEYER,P.GRIBBON,B.ELLINGER,M.KUZIKOV,M.WOLF,    
+JRNL        AUTH13 A.R.BECCARI,G.BOURENKOV,D.VON STETTEN,G.POMPIDOR,I.BENTO,    
+JRNL        AUTH14 S.PANNEERSELVAM,I.KARPICS,T.R.SCHNEIDER,M.M.GARCIA-ALAI,     
+JRNL        AUTH15 S.NIEBLING,C.GUNTHER,C.SCHMIDT,R.SCHUBERT,H.HAN,J.BOGER,     
+JRNL        AUTH16 D.C.F.MONTEIRO,L.ZHANG,X.SUN,J.PLETZER-ZELGERT,              
+JRNL        AUTH17 J.WOLLENHAUPT,C.G.FEILER,M.S.WEISS,E.C.SCHULZ,P.MEHRABI,     
+JRNL        AUTH18 K.KARNICAR,A.USENIK,J.LOBODA,H.TIDOW,A.CHARI,R.HILGENFELD,   
+JRNL        AUTH19 C.UETRECHT,R.COX,A.ZALIANI,T.BECK,M.RAREY,S.GUNTHER,D.TURK,  
+JRNL        AUTH20 W.HINRICHS,H.N.CHAPMAN,A.R.PEARSON,C.BETZEL,A.MEENTS         
+JRNL        TITL   X-RAY SCREENING IDENTIFIES ACTIVE SITE AND ALLOSTERIC        
+JRNL        TITL 2 INHIBITORS OF SARS-COV-2 MAIN PROTEASE.                      
+JRNL        REF    SCIENCE                                    2021              
+JRNL        REFN                   ESSN 1095-9203                               
+JRNL        PMID   33811162                                                     
+JRNL        DOI    10.1126/SCIENCE.ABF7945                                      
+REMARK   1                                                                      
+REMARK   1 REFERENCE 1                                                          
+REMARK   1  AUTH   S.GUENTHER,P.Y.A.,REINKE,Y.,FERNANDEZ-GARCIA,J.,LIESKE,T.J., 
+REMARK   1  AUTH 2 LANE,H.M.,GINN,F.H.M.,KOUA,C.,EHRT,W.,EWERT,D.,OBERTHUER,O., 
+REMARK   1  AUTH 3 YEFANOV,S.,MEIER,K.,LORENZEN,B.,KRICHEL,J.D.,KOPICKI,L.,     
+REMARK   1  AUTH 4 GELISIO,W.,BREHM,I.,DUNKEL,B.,SEYCHELL,H.,GIESELER,B.,       
+REMARK   1  AUTH 5 NORTON-BAKER,B.,ESCUDERO-PEREZ,M.,DOMARACKY,S.,SAOUANE,A.,   
+REMARK   1  AUTH 6 TOLSTIKOVA,T.A.,WHITE,A.,HANLE,M.,GROESSLER,H.,FLECKENSTEIN, 
+REMARK   1  AUTH 7 F.,TROST,M.,GALCHENKOVA,Y.,GEVORKOV,C.,LI,S.,AWEL,A.PECK,M., 
+REMARK   1  AUTH 8 BARTHELMESS,F.,SCHLUENZEN,L.X.,PAULRAJ,N.,WERNER,H.,         
+REMARK   1  AUTH 9 ANDALEEB,N.,ULLAH,S.,FALKE,V.,SRINIVASAN,B.,FRANCA,M.,       
+REMARK   1  AUTH10 SCHWINZER,H.,BROGNARO,C.,ROGERS,D.,MELO,J.J.,DOYLE,J.,       
+REMARK   1  AUTH11 KNOSKA,G.E.,PENA MURILLO,A.,RAHMANI MASHHOUR,F.,GUICKING,V., 
+REMARK   1  AUTH12 HENNICKE,P.,FISCHER,J.,HAKANPAEAE,J.,MEYER,P.,GRIBBON,B.,    
+REMARK   1  AUTH13 ELLINGER,M.,KUZIKOV,M.,WOLF,G.,BURENKOV,D.,VON STETTEN,G.,   
+REMARK   1  AUTH14 POMPIDOR,I.,BENTO,S.,PANNEERSELVAM,I.,KARPICS,T.R.,          
+REMARK   1  AUTH15 SCHNEIDER,M.,GARCIA ALAI,S.,NIEBLING,C.,GUENTHER,C.,SCHMIDT, 
+REMARK   1  AUTH16 R.,SCHUBERT,H.,HAN,J.,BOGER,D.,MONTEIRO,L.,ZHANG,X.,SUN,J.,  
+REMARK   1  AUTH17 PLETZER-ZELGERT,J.,WOLLENHAUPT,C.,FEILER,M.,WEISS,E.C.,      
+REMARK   1  AUTH18 SCHULZ,P.,MEHRABI,K.,KARNICAR,A.,USENIK,J.,LOBODA,H.,TIDOW,  
+REMARK   1  AUTH19 A.,CHARI,R.,HILGENFELD,C.,UETRECHT,R.,COX,A.,ZALIANI,T.,     
+REMARK   1  AUTH20 BECK,M.,RAREY,S.,GUENTHER,D.,TURK,W.,HINRICHS,H.N.,CHAPMAN,  
+REMARK   1  AUTH21 A.,PEARSON,C.,BETZEL,A.MEENTS                                
+REMARK   1  TITL   INHIBITION OF SARS-COV-2 MAIN PROTEASE BY ALLOSTERIC         
+REMARK   1  TITL 2 DRUG-BINDING                                                 
+REMARK   1  REF    BIORXIV                                    2020              
+REMARK   1  REFN                                                                
+REMARK   1  DOI    10.1101/2020.11.12.378422                                    
 REMARK   2                                                                      
 REMARK   2 RESOLUTION.    1.70 ANGSTROMS.                                       
 REMARK   3                                                                      
@@ -5729,5 +5767,5 @@ CONECT 4942 4925
 CONECT 4943 4925                                                                
 CONECT 4944 4926                                                                
 CONECT 4945 4929                                                                
-MASTER      285    0    5   11   15    0   10    6 2696    1   75   24          
+MASTER      313    0    5   11   15    0   10    6 2696    1   75   24          
 END                                                                             
