@@ -22,7 +22,7 @@ Electron microscopy structure of elongating SARS-CoV-2 RNA-dependent RNA polymer
 
 
 
-
+**validation** - contains validation reports. This structure has been analyzed by <br>     
 
 
 

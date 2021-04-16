@@ -24,7 +24,7 @@
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7nx9/validation/auspex)   [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/surface_glycoprotein/SARS-CoV-2/7nx9/validation/Xtriage_output.log)  
+**validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7nx9/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7nx9/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7nx9/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/surface_glycoprotein/SARS-CoV-2/7nx9/validation/Xtriage_output.log)  
 
 
 
@@ -43,13 +43,13 @@ No public deposition. --<br>
 
 |   | **R-work**| **R-free**   
 |---|-------------:|----------------:|           
-||--|--|
+||  0.2000|  0.2290|
 
 **Geometry validation (the lower, the better)**
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
 |---|-------------:|----------------:|
-||--|--|
+||  1.31|  0.10 %|
 
  
 

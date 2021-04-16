@@ -22,7 +22,7 @@ Cryo-EM structure of Favipiravir bound to replicating polymerase complex of SARS
 
 
 
-
+**validation** - contains validation reports. This structure has been analyzed by <br>     
 
 
 

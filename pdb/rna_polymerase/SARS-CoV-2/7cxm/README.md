@@ -22,7 +22,7 @@ Atomic structure of a SARS-CoV-2 mini RTC, assembled by viral RNA-dependent RNA 
 
 
 
-
+**validation** - contains validation reports. This structure has been analyzed by <br>     
 
 
 
