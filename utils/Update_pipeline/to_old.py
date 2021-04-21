@@ -54,7 +54,6 @@ def obsolete_finder(key, dirpath):
     except FileNotFoundError: pass
 
 def main (pdb_id, repo_path):
-    print("New DOIs for: ")
     for dirpath, dirnames, files in os.walk(repo_path):
         for key in pdb_id:
             if dirpath.endswith(key):
