@@ -131,7 +131,7 @@ def main():
     #IDs which were assigned more than once
     multi_ids = [item for item, count in collections.Counter(is_sorted).items() if count > 1]
     doc.write("Assigned twice or more: \n>{}\n".format(multi_ids))
-    twice_assigned(id_dict, multi_ids)
+    #twice_assigned(id_dict, multi_ids)
 
     #IDs which could not be assigned
     not_assigned = set(pdb_id).difference(is_sorted)
@@ -166,6 +166,7 @@ def twice_assigned (id_dict, multi_assign_ids):
         #gets the protein which saved the combined ids and deletes their dict entry
         multi_ids_prot = []
         for key, value in id_dict.items():
+            print(key, val)
             if val in value:
                 multi_ids_prot.append(key)
                 value.remove(val)
