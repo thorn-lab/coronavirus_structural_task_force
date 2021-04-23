@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Protein name**: rna polymerase-nsp8-nsp7
+**Protein name**: rna polymerase-nsp7-nsp8
 
 **Organism**: SARS-CoV-2
 
@@ -22,7 +22,7 @@ The SARS-CoV-2 RNA-dependent RNA polymerase with nsp7 and nsp8 in complex with 4
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by <br>     [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/rna_polymerase-nsp8-nsp7/SARS-CoV-2/7l1f/validation/ccpem-validation)
+**validation** - contains validation reports. This structure has been analyzed by <br>     [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/rna_polymerase-nsp7-nsp8/SARS-CoV-2/7l1f/validation/ccpem-validation)
 
 
 
