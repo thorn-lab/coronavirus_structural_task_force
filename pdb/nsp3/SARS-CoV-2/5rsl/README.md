@@ -51,7 +51,7 @@ No public deposition. --<br>
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
 |---|-------------:|----------------:|----------------:|----------------:|
-||  1.21|  0.30 %|0.9|0.30|
+||  1.21|  0.30 %|0.9 %|0.30 %|
 
  
 

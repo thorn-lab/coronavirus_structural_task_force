@@ -23,7 +23,7 @@ This NMR structure shows the N-terminal RNA binding domain of SARS-CoV-2 nucleoc
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
 |---|-------------:|----------------:|----------------:|----------------:|
-||--|--|5.9|1.47|
+||--|--|5.9 %|1.47 %|
 
 
 ## Other relevant links 

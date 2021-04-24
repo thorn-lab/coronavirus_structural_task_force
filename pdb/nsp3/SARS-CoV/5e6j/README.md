@@ -51,7 +51,7 @@ No public deposition. --<br>
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
 |---|-------------:|----------------:|----------------:|----------------:|
-||  1.39|  0.33 %|3.4|0.33|
+||  1.39|  0.33 %|3.4 %|0.33 %|
 
 **Auspex Pathologies**<br> <br>Click [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp3/SARS-CoV/5e6j/validation/auspex/5e6j_auspex_comments.txt)  for results
 

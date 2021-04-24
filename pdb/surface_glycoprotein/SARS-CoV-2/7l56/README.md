@@ -44,7 +44,7 @@ Primary map emd_23165.map available. **Click** [here](http://ftp.wwpdb.org/pub/e
 **Geometry validation (the lower, the better)**
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
 |---|-------------:|----------------:|----------------:|----------------:|
-||  1.31|  0.00 %|4.2|0.93|
+||  1.31|  0.00 %|4.2 %|0.93 %|
 
 ## HARUSPEX results
 

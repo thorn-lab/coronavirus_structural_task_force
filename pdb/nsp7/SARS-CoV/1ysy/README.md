@@ -23,7 +23,7 @@ SARS-CoV NSP7 NMR structure showing the full length protein. The NSP12-NSP7-NSP8
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
 |---|-------------:|----------------:|----------------:|----------------:|
-||--|--|1.1|2.47|
+||--|--|1.1 %|2.47 %|
 
 
 ## Other relevant links 

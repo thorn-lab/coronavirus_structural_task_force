@@ -23,7 +23,7 @@ SARS Coronavirus ORF 7a coded X4 protein, also known as 7a, U122 or X4. Type-I t
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
 |---|-------------:|----------------:|----------------:|----------------:|
-||  3.68|  4.18 %|3.3|8.43|
+||  3.68|  4.18 %|3.3 %|8.43 %|
 
 
 ## Other relevant links 

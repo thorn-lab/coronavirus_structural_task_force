@@ -23,7 +23,7 @@ This NMR structure exhibits a short part of the monomeric envelope protein (E) o
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
 |---|-------------:|----------------:|----------------:|----------------:|
-||--|--|0.0|0.00|
+||--|--|0.0 %|0.00 %|
 
 
 ## Other relevant links 

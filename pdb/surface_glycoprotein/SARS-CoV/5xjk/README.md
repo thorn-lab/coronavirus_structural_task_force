@@ -23,7 +23,7 @@ The spike receptor-binding domain S attaches the virus its host. The monomeric i
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
 |---|-------------:|----------------:|----------------:|----------------:|
-||  2.88|  2.29 %|0.0|1.64|
+||  2.88|  2.29 %|0.0 %|1.64 %|
 
 
 ## Other relevant links 

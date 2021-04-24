@@ -51,7 +51,7 @@ Available. **Click** [here](https://doi.org/10.18430/m36w4h)
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
 |---|-------------:|----------------:|----------------:|---------------:|
-||  1.19|  0.00 %|1.0|0.00|
+||  1.19|  0.00 %|1.0 %|0.00 %|
 
 **Auspex Pathologies**<br> <br>Click [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/methyltransferase-nsp10/SARS-CoV-2/6w4h/validation/auspex/6w4h_auspex_comments.txt)  for results
 

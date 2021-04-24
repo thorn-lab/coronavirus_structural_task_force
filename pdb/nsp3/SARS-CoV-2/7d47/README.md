@@ -51,7 +51,7 @@ No public deposition. --<br>
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
 |---|-------------:|----------------:|----------------:|----------------:|
-||  1.84|  0.00 %|2.7|1.00|
+||  1.84|  0.00 %|2.7 %|1.00 %|
 
 **Auspex Pathologies**<br> [ice rings](https://www.auspex.de/pathol/#1), [bad or missing beamstop mask](https://www.auspex.de/pathol/#2), [bad or missing beamstop mask](https://www.auspex.de/pathol/#2)<br>Click [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp3/SARS-CoV-2/7d47/validation/auspex/7d47_auspex_comments.txt)  for results
 

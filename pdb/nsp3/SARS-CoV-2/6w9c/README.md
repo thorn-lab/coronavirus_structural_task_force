@@ -51,7 +51,7 @@ Available. **Click** [here](https://doi.org/10.18430/m36w9c)
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
 |---|-------------:|----------------:|----------------:|---------------:|
-||  2.70|  0.54 %|4.6|1.31|
+||  2.70|  0.54 %|4.6 %|1.31 %|
 
 **Auspex Pathologies**<br> <br>Click [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp3/SARS-CoV-2/6w9c/validation/auspex/6w9c_auspex_comments.txt)  for results
 

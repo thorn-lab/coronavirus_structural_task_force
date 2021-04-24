@@ -33,7 +33,7 @@ Similar crystal structures in the PDB which have a similar fold to 2gdt (3zbd an
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
 |---|-------------:|----------------:|----------------:|----------------:|
-||--|--|3.4|1.79|
+||--|--|3.4 %|1.79 %|
 
 
 ## Other relevant links 
