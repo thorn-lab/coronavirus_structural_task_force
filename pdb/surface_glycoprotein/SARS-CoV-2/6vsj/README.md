@@ -22,7 +22,7 @@ Cryo-electron microscopy structure of mouse coronavirus spike protein complexed 
 
 
 
-
+**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6vsj/validation/molprobity)   
 
 
 

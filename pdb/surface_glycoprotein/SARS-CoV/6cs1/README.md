@@ -22,7 +22,7 @@ SARS Spike Glycoprotein, Trypsin-cleaved, Stabilized variant, two S1 CTDs in an 
 
 
 
-
+**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV/6cs1/validation/molprobity)   
 
 
 

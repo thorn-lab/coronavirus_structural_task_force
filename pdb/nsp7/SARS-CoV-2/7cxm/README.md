@@ -22,7 +22,7 @@ Atomic structure of a SARS-CoV-2 mini RTC, assembled by viral RNA-dependent RNA 
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by <br>     [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp7/SARS-CoV-2/7cxm/validation/ccpem-validation)
+**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp7/SARS-CoV-2/7cxm/validation/molprobity)   [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp7/SARS-CoV-2/7cxm/validation/ccpem-validation)
 
 
 

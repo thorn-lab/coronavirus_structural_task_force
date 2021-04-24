@@ -22,7 +22,7 @@ This electron microscopy structure shows the SARS-CoV-2 leader protein (Nsp1) in
 
 **old** - contains files from historical revisions
 
-**validation** - contains validation reports. This structure has been analyzed by <br>     [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/leader_protein/SARS-CoV-2/6zme/validation/ccpem-validation)
+**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/leader_protein/SARS-CoV-2/6zme/validation/molprobity)   [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/leader_protein/SARS-CoV-2/6zme/validation/ccpem-validation)
 
 
 

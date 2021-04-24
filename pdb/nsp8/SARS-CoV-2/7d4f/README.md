@@ -22,7 +22,7 @@ Structure of COVID-19 RNA-dependent RNA polymerase bound to suramin. Hetero 4-me
 
 **old** - contains files from historical revisions
 
-**validation** - contains validation reports. This structure has been analyzed by <br>     
+**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp8/SARS-CoV-2/7d4f/validation/molprobity)   
 
 
 

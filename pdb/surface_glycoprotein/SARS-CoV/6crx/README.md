@@ -22,7 +22,7 @@ SARS Spike Glycoprotein, Stabilized variant, two S1 CTDs in the upwards conforma
 
 
 
-
+**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV/6crx/validation/molprobity)   
 
 
 
