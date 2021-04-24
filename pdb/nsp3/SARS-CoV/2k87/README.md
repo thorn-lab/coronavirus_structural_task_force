@@ -23,7 +23,7 @@ The NMR structure of a globular domain of residues 1071 to 1178 within the previ
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
 |---|-------------:|----------------:|----------------:|----------------:|
-||--|--|||
+||--|--|5.4|0.89|
 
 
 ## Other relevant links 

@@ -23,7 +23,7 @@ The spike glycoprotein S2 is a membrane protein with two heptad repeat domains (
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
 |---|-------------:|----------------:|----------------:|----------------:|
-||  3.73|  1.89 %| 40|:0.0|
+||  3.73|  1.89 %|2.0|0.00|
 
 
 ## Other relevant links 

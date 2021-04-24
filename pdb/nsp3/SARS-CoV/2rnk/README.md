@@ -23,7 +23,7 @@ The NMR structure of a central segment of the Mac3 domain in SARS coronavirus ns
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
 |---|-------------:|----------------:|----------------:|----------------:|
-||  2.66|  2.36 %|MAR| as |
+||  2.66|  2.36 %|0.1|1.44|
 
 
 ## Other relevant links 

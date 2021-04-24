@@ -51,7 +51,7 @@ Available. **Click** [here](https://zenodo.org/record/3730629)
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
 |---|-------------:|----------------:|----------------:|---------------:|
-||  1.52|  0.33 %|||
+||  1.52|  0.33 %|1.7|0.00|
 
 **Auspex Pathologies**<br> <br>Click [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV-2/5ree/validation/auspex/5ree_auspex_comments.txt)  for results
 

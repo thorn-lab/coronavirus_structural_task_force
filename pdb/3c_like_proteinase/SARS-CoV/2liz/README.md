@@ -23,7 +23,7 @@ SARS-CoV main protease C-terminal domain. The structure is reported as a monomer
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
 |---|-------------:|----------------:|----------------:|----------------:|
-||  1.23|  1.13 %|||
+||  1.23|  1.13 %|0.9|0.86|
 
 
 ## Other relevant links 

@@ -23,7 +23,7 @@ The nuclear magnetic resonance (NMR) structure of a central segment of the SARS-
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
 |---|-------------:|----------------:|----------------:|----------------:|
-||  2.43|  0.00 %|||
+||  2.43|  0.00 %|5.6|0.80|
 
 
 ## Other relevant links 

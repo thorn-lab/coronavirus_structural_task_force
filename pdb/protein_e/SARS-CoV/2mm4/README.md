@@ -23,7 +23,7 @@ This NMR structure is a monomer of the SARS-CoV envelope protein (E). It complet
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
 |---|-------------:|----------------:|----------------:|----------------:|
-||  3.15|  0.00 %|||
+||  3.15|  0.00 %|7.4|0.00|
 
 
 ## Other relevant links 

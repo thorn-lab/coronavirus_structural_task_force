@@ -23,7 +23,7 @@ NMR structure determinations of the DPUP domain. This domains exact function is 
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
 |---|-------------:|----------------:|----------------:|----------------:|
-||--|--|||
+||--|--|4.0|0.80|
 
 
 ## Other relevant links 

@@ -23,7 +23,7 @@ N-terminal RNA-binding domain of SARS-CoV-2 nucleocapsid protein. It is in compl
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
 |---|-------------:|----------------:|----------------:|----------------:|
-||  1.47|  3.29 %|(0.||
+||  1.47|  3.29 %|6.0|1.50|
 
 
 ## Other relevant links 

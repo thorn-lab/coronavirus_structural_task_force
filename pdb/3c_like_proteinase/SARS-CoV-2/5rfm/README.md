@@ -51,7 +51,7 @@ Available. **Click** [here](https://zenodo.org/record/3731480)
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
 |---|-------------:|----------------:|----------------:|---------------:|
-||  1.77|  0.33 %|||
+||  1.77|  0.33 %|1.0|0.00|
 
 **Auspex Pathologies**<br> [bad or missing beamstop mask](https://www.auspex.de/pathol/#2)<br>Click [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/3c_like_proteinase/SARS-CoV-2/5rfm/validation/auspex/5rfm_auspex_comments.txt)  for results
 
