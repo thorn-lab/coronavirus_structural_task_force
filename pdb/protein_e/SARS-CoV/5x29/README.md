@@ -18,6 +18,14 @@ This NMR structure is an oligomer of the envelope protein (E) of SARS-CoV. The s
 
 
 
+
+**Geometry validation (the lower, the better)**
+
+|   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
+|---|-------------:|----------------:|----------------:|
+||  2.74|  2.26 %| 41|:0.0|
+
+
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/5x29
  

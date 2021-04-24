@@ -18,6 +18,14 @@ The pentameric structure of the SARS-CoV-2 envelope protein transmembrane domain
 
 
 
+
+**Geometry validation (the lower, the better)**
+
+|   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
+|---|-------------:|----------------:|----------------:|
+||  3.10|  0.77 %|eom|heli|
+
+
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/7k3g
  

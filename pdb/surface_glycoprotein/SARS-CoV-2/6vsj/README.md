@@ -22,7 +22,7 @@ Cryo-electron microscopy structure of mouse coronavirus spike protein complexed 
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6vsj/validation/molprobity)   
+**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6vsj/validation/molprobity)    
 
 
 
@@ -42,6 +42,11 @@ Primary map emd_21377.map available. **Click** [here](http://ftp.wwpdb.org/pub/e
 |   | Frame Sampling | Electron Dose |
 |---|-------------:|----------------:|
 |   |1.06 Å|77.0 e<sup>-</sup>/Å<sup>2</sup>|
+
+**Geometry validation (the lower, the better)**
+|   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
+|---|-------------:|----------------:|----------------:|
+||  2.04|  0.08 %|156|:0.0|
 
 ## HARUSPEX results
 

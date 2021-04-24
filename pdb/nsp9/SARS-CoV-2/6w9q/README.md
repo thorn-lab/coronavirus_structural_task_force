@@ -26,7 +26,7 @@ This X-ray crystal structure of SARS-CoV2 RNA-replicase (NSP9) was phased using 
 
 **old** - contains files from historical revisions
 
-**validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp9/SARS-CoV-2/6w9q/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp9/SARS-CoV-2/6w9q/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp9/SARS-CoV-2/6w9q/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp9/SARS-CoV-2/6w9q/validation/Xtriage_output.log)  
+**validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp9/SARS-CoV-2/6w9q/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp9/SARS-CoV-2/6w9q/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/nsp9/SARS-CoV-2/6w9q/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp9/SARS-CoV-2/6w9q/validation/Xtriage_output.log)   
 
 
 
@@ -49,9 +49,9 @@ No public deposition. --<br>
 
 **Geometry validation (the lower, the better)**
 
-|   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
-|---|-------------:|----------------:|
-||  2.05|  0.00 %|
+|   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
+|---|-------------:|----------------:|----------------:|
+||  2.05|  0.00 %|||
 
 **Auspex Pathologies**<br> <br>Click [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp9/SARS-CoV-2/6w9q/validation/auspex/6w9q_auspex_comments.txt)  for results
 

@@ -26,7 +26,7 @@ nsp16-nsp10 heterodimer from SARS-CoV-2 in complex with SAM (without additional 
 
 **old** - contains files from historical revisions
 
-**validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/methyltransferase-nsp10/SARS-CoV-2/7c2j/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/methyltransferase-nsp10/SARS-CoV-2/7c2j/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/methyltransferase-nsp10/SARS-CoV-2/7c2j/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/methyltransferase-nsp10/SARS-CoV-2/7c2j/validation/Xtriage_output.log)  
+**validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/methyltransferase-nsp10/SARS-CoV-2/7c2j/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/methyltransferase-nsp10/SARS-CoV-2/7c2j/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/methyltransferase-nsp10/SARS-CoV-2/7c2j/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/methyltransferase-nsp10/SARS-CoV-2/7c2j/validation/Xtriage_output.log)   
 
 
 
@@ -49,9 +49,9 @@ No public deposition. --<br>
 
 **Geometry validation (the lower, the better)**
 
-|   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
-|---|-------------:|----------------:|
-||  1.48|  0.00 %|
+|   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
+|---|-------------:|----------------:|----------------:|
+||  1.48|  0.00 %|||
 
 **Auspex Pathologies**<br> [bad or missing beamstop mask](https://www.auspex.de/pathol/#2), [bad or missing beamstop mask](https://www.auspex.de/pathol/#2), [bad or missing beamstop mask](https://www.auspex.de/pathol/#2)<br>Click [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/methyltransferase-nsp10/SARS-CoV-2/7c2j/validation/auspex/7c2j_auspex_comments.txt)  for results
 

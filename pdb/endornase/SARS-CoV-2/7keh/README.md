@@ -26,7 +26,7 @@ The crystal structure of the nsp15 NendoU. As ligands it has sulfate ions.
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/endornase/SARS-CoV-2/7keh/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/endornase/SARS-CoV-2/7keh/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/endornase/SARS-CoV-2/7keh/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/endornase/SARS-CoV-2/7keh/validation/Xtriage_output.log)  
+**validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/endornase/SARS-CoV-2/7keh/validation/auspex) [**PDB-REDO**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/endornase/SARS-CoV-2/7keh/validation/pdb-redo) [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/endornase/SARS-CoV-2/7keh/validation/molprobity) [**XTRIAGE**](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/endornase/SARS-CoV-2/7keh/validation/Xtriage_output.log)   
 
 
 
@@ -49,9 +49,9 @@ No public deposition. --<br>
 
 **Geometry validation (the lower, the better)**
 
-|   |**MolProbity<br>score**| **Ramachandran<br>outliers** 
-|---|-------------:|----------------:|
-||  1.84|  0.00 %|
+|   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
+|---|-------------:|----------------:|----------------:|
+||  1.84|  0.00 %|135|:0.0|
 
  
 

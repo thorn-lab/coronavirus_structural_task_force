@@ -20,7 +20,7 @@
 
 **old** - contains files from historical revisions
 
-**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7l2d/validation/molprobity)   
+**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7l2d/validation/molprobity)    
 
 
 
@@ -40,6 +40,11 @@ Primary map emd_23125.map available. **Click** [here](http://ftp.wwpdb.org/pub/e
 |   | Frame Sampling | Electron Dose |
 |---|-------------:|----------------:|
 |   |1.07 Å|42.0 e<sup>-</sup>/Å<sup>2</sup>|
+
+**Geometry validation (the lower, the better)**
+|   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
+|---|-------------:|----------------:|----------------:|
+||  1.41|  0.00 %|155|:0.2|
 
 ## HARUSPEX results
 

@@ -22,7 +22,7 @@ Cryo-EM structure of SARS-CoV-2 spike in complex with Fab 15033-7, with three RB
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7kml/validation/molprobity)   [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7kml/validation/ccpem-validation)
+**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7kml/validation/molprobity)   [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/7kml/validation/ccpem-validation) 
 
 
 
@@ -42,6 +42,11 @@ Primary map emd_22926.map available. **Click** [here](http://ftp.wwpdb.org/pub/e
 |   | Frame Sampling | Electron Dose |
 |---|-------------:|----------------:|
 |   |1.03 Å|38.08 e<sup>-</sup>/Å<sup>2</sup>|
+
+**Geometry validation (the lower, the better)**
+|   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
+|---|-------------:|----------------:|----------------:|
+||  0.68|  0.00 %|192|:0.1|
 
 ## HARUSPEX results
 

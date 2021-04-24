@@ -22,7 +22,7 @@ EM structure SARS-CoV-2 spike protein trimer disulphide stabilized, disulphide b
 
 **old** - contains files from historical revisions
 
-**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6zoz/validation/molprobity)   [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6zoz/validation/ccpem-validation)
+**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6zoz/validation/molprobity)   [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV-2/6zoz/validation/ccpem-validation) 
 
 
 
@@ -42,6 +42,11 @@ Primary map emd_11331.map available. **Click** [here](http://ftp.wwpdb.org/pub/e
 |   | Frame Sampling | Electron Dose |
 |---|-------------:|----------------:|
 |   |1.061 Å|50.0 e<sup>-</sup>/Å<sup>2</sup>|
+
+**Geometry validation (the lower, the better)**
+|   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
+|---|-------------:|----------------:|----------------:|
+||  1.64|  0.00 %|488|:0.0|
 
 ## HARUSPEX results
 

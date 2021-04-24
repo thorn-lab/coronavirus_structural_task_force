@@ -22,7 +22,7 @@ Electron microscopy structure of SARS-CoV2 RNA-dependent RNA polymerase (Rdrp wi
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/rna_polymerase/SARS-CoV-2/7aap/validation/molprobity)   
+**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/rna_polymerase/SARS-CoV-2/7aap/validation/molprobity)    
 
 
 
@@ -42,6 +42,11 @@ Primary map emd_11692.map available. **Click** [here](http://ftp.wwpdb.org/pub/e
 |   | Frame Sampling | Electron Dose |
 |---|-------------:|----------------:|
 |   |0.65 Å|24.72 e<sup>-</sup>/Å<sup>2</sup>|
+
+**Geometry validation (the lower, the better)**
+|   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
+|---|-------------:|----------------:|----------------:|
+||  1.17|  0.00 %|145|:0.0|
 
 ## HARUSPEX results
 

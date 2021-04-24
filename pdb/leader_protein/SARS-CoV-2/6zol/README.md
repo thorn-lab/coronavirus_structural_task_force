@@ -22,7 +22,7 @@ This electron microscopy structure shows the SARS-CoV-2 leader protein (Nsp1) in
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/leader_protein/SARS-CoV-2/6zol/validation/molprobity)   [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/leader_protein/SARS-CoV-2/6zol/validation/ccpem-validation)
+**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/leader_protein/SARS-CoV-2/6zol/validation/molprobity)   [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/leader_protein/SARS-CoV-2/6zol/validation/ccpem-validation) 
 
 
 
@@ -42,6 +42,11 @@ Primary map emd_11322.map available. **Click** [here](http://ftp.wwpdb.org/pub/e
 |   | Frame Sampling | Electron Dose |
 |---|-------------:|----------------:|
 |   |1.08 Å|60.0 e<sup>-</sup>/Å<sup>2</sup>|
+
+**Geometry validation (the lower, the better)**
+|   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
+|---|-------------:|----------------:|----------------:|
+||  1.49|  0.00 %|144|:0.0|
 
 ## HARUSPEX results
 

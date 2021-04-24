@@ -18,6 +18,14 @@ This SAIL-NMR structure shows the C-terminal dimerization domain of SARS-CoV nuc
 
 
 
+
+**Geometry validation (the lower, the better)**
+
+|   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
+|---|-------------:|----------------:|----------------:|
+||--|--|275|:0.0|
+
+
 ## Other relevant links 
 **PDBe**:  https://www.ebi.ac.uk/pdbe/entry/pdb/2jw8
  

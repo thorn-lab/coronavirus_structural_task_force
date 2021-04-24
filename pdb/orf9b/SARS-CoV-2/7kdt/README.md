@@ -22,7 +22,7 @@ Electron microscopy structure of human Tom70 (mitochondrial import receptor subu
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/orf9b/SARS-CoV-2/7kdt/validation/molprobity)   [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/orf9b/SARS-CoV-2/7kdt/validation/ccpem-validation)
+**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/orf9b/SARS-CoV-2/7kdt/validation/molprobity)   [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/orf9b/SARS-CoV-2/7kdt/validation/ccpem-validation) 
 
 
 
@@ -42,6 +42,11 @@ Primary map emd_22829.map available. **Click** [here](http://ftp.wwpdb.org/pub/e
 |   | Frame Sampling | Electron Dose |
 |---|-------------:|----------------:|
 |   |0.834 Å|66.0 e<sup>-</sup>/Å<sup>2</sup>|
+
+**Geometry validation (the lower, the better)**
+|   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
+|---|-------------:|----------------:|----------------:|
+||  0.55|  0.00 %|250|:0.0|
 
 ## HARUSPEX results
 

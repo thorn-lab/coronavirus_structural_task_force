@@ -22,7 +22,7 @@ Structure of COVID-19 RNA-dependent RNA polymerase bound to suramin. Hetero 4-me
 
 **old** - contains files from historical revisions
 
-**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/rna_polymerase/SARS-CoV-2/7d4f/validation/molprobity)   
+**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/rna_polymerase/SARS-CoV-2/7d4f/validation/molprobity)    
 
 
 
@@ -42,6 +42,11 @@ Primary map emd_30572.map available. **Click** [here](http://ftp.wwpdb.org/pub/e
 |   | Frame Sampling | Electron Dose |
 |---|-------------:|----------------:|
 |   |1.069 Å|68.0 e<sup>-</sup>/Å<sup>2</sup>|
+
+**Geometry validation (the lower, the better)**
+|   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
+|---|-------------:|----------------:|----------------:|
+||  1.34|  0.00 %|166|:0.0|
 
 ## HARUSPEX results
 

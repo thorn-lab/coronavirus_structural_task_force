@@ -22,7 +22,7 @@ The spike receptor-binding domain (RBD) attaches the virus to ACE2. The homo tri
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV/5wrg/validation/molprobity)   [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV/5wrg/validation/ccpem-validation)
+**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV/5wrg/validation/molprobity)   [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV/5wrg/validation/ccpem-validation) 
 
 
 
@@ -42,6 +42,11 @@ Primary map emd_6679.map available. **Click** [here](http://ftp.wwpdb.org/pub/em
 |   | Frame Sampling | Electron Dose |
 |---|-------------:|----------------:|
 |   |1.32 Å|4.7 e<sup>-</sup>/Å<sup>2</sup>|
+
+**Geometry validation (the lower, the better)**
+|   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
+|---|-------------:|----------------:|----------------:|
+||  2.24|  0.69 %|402|:0.0|
 
 ## HARUSPEX results
 

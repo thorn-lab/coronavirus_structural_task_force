@@ -22,7 +22,7 @@ SARS-CoV RNA Polymerase (NSP12) bound with a single NSP8 co-factor. This electro
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/rna_polymerase-nsp8/SARS-CoV-2/6nus/validation/auspex)  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/rna_polymerase-nsp8/SARS-CoV-2/6nus/validation/molprobity)   [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/rna_polymerase-nsp8/SARS-CoV-2/6nus/validation/ccpem-validation)
+**validation** - contains validation reports. This structure has been analyzed by <br>[**AUSPEX**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/rna_polymerase-nsp8/SARS-CoV-2/6nus/validation/auspex)  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/rna_polymerase-nsp8/SARS-CoV-2/6nus/validation/molprobity)   [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/rna_polymerase-nsp8/SARS-CoV-2/6nus/validation/ccpem-validation) 
 
 
 
@@ -42,6 +42,11 @@ Primary map emd_0521.map available. **Click** [here](http://ftp.wwpdb.org/pub/em
 |   | Frame Sampling | Electron Dose |
 |---|-------------:|----------------:|
 |   |1.15 Å|50.5 e<sup>-</sup>/Å<sup>2</sup>|
+
+**Geometry validation (the lower, the better)**
+|   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
+|---|-------------:|----------------:|----------------:|
+||  0.76|  0.00 %|||
 
 ## HARUSPEX results
 

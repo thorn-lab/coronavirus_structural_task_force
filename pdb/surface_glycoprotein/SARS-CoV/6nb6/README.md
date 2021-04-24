@@ -22,7 +22,7 @@ SARS-CoV complex with human neutralizing S230 antibody Fab fragment (state 1). T
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV/6nb6/validation/molprobity)   [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV/6nb6/validation/ccpem-validation)
+**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV/6nb6/validation/molprobity)   [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV/6nb6/validation/ccpem-validation) 
 
 
 
@@ -42,6 +42,11 @@ Primary map emd_0403.map available. **Click** [here](http://ftp.wwpdb.org/pub/em
 |   | Frame Sampling | Electron Dose |
 |---|-------------:|----------------:|
 |   |1.37 Å|45.0 e<sup>-</sup>/Å<sup>2</sup>|
+
+**Geometry validation (the lower, the better)**
+|   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
+|---|-------------:|----------------:|----------------:|
+||  1.06|  0.23 %|196|:0.6|
 
 ## HARUSPEX results
 

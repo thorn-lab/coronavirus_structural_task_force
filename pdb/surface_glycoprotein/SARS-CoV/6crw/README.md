@@ -22,7 +22,7 @@ SARS Spike Glycoprotein, Stabilized variant, single upwards S1 CTD conformation
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV/6crw/validation/molprobity)   
+**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/surface_glycoprotein/SARS-CoV/6crw/validation/molprobity)    
 
 
 
@@ -42,6 +42,11 @@ Primary map emd_7574.map available. **Click** [here](http://ftp.wwpdb.org/pub/em
 |   | Frame Sampling | Electron Dose |
 |---|-------------:|----------------:|
 |   |1.03 Å|65.0 e<sup>-</sup>/Å<sup>2</sup>|
+
+**Geometry validation (the lower, the better)**
+|   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
+|---|-------------:|----------------:|----------------:|
+||  1.76|  0.03 %|159|:0.3|
 
 ## HARUSPEX results
 

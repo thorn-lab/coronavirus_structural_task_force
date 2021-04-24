@@ -22,7 +22,7 @@ SARS-CoV RNA Polymerase (NSP12) bound with NSP7 & two NSP8 co-factors. This elec
 
 
 
-**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/rna_polymerase-nsp7-nsp8/SARS-CoV/6nur/validation/molprobity)   [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/rna_polymerase-nsp7-nsp8/SARS-CoV/6nur/validation/ccpem-validation)
+**validation** - contains validation reports. This structure has been analyzed by <br>  [**MOLPROBITY**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/rna_polymerase-nsp7-nsp8/SARS-CoV/6nur/validation/molprobity)   [**CCPEM**](https://github.com/thorn-lab/coronavirus_structural_task_force/tree/master/pdb/rna_polymerase-nsp7-nsp8/SARS-CoV/6nur/validation/ccpem-validation) 
 
 
 
@@ -42,6 +42,11 @@ Primary map emd_0520.map available. **Click** [here](http://ftp.wwpdb.org/pub/em
 |   | Frame Sampling | Electron Dose |
 |---|-------------:|----------------:|
 |   |1.15 Å|50.5 e<sup>-</sup>/Å<sup>2</sup>|
+
+**Geometry validation (the lower, the better)**
+|   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
+|---|-------------:|----------------:|----------------:|
+||  1.00|  0.00 %|258|:0.0|
 
 ## HARUSPEX results
 
