@@ -50,7 +50,7 @@ No public deposition. --<br>
 **Geometry validation (the lower, the better)**
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
-|---|-------------:|----------------:|----------------:|
+|---|-------------:|----------------:|----------------:|----------------:|
 ||  1.28|  0.00 %|102|:0.0|
 
  

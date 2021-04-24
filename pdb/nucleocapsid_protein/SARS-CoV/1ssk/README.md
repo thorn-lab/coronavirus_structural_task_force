@@ -22,7 +22,7 @@ This NMR structure shows the N-terminal RNA-binding domain of SARS-CoV nucleocap
 **Geometry validation (the lower, the better)**
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
-|---|-------------:|----------------:|----------------:|
+|---|-------------:|----------------:|----------------:|----------------:|
 ||  3.92| 17.31 %|142|:0.0|
 
 

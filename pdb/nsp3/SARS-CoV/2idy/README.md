@@ -22,7 +22,7 @@ NMR strcuture of the Ubl1 of SARS-CoV nsp3. Ubl1 exhibits a ubiquitin-like globu
 **Geometry validation (the lower, the better)**
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
-|---|-------------:|----------------:|----------------:|
+|---|-------------:|----------------:|----------------:|----------------:|
 ||  3.71|  6.36 %|||
 
 

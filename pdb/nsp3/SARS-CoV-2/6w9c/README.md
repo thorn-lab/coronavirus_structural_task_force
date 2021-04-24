@@ -50,7 +50,7 @@ Available. **Click** [here](https://doi.org/10.18430/m36w9c)
 **Geometry validation (the lower, the better)**
 
 |   |**MolProbity<br>score**| **Ramachandran<br>outliers** | **CaBLAM<br>Conformation outliers** | **CaBLAM<br>CA outliers** |
-|---|-------------:|----------------:|----------------:|
+|---|-------------:|----------------:|----------------:|---------------:|
 ||  2.70|  0.54 %|||
 
 **Auspex Pathologies**<br> <br>Click [here](https://github.com/thorn-lab/coronavirus_structural_task_force/blob/master/pdb/nsp3/SARS-CoV-2/6w9c/validation/auspex/6w9c_auspex_comments.txt)  for results
