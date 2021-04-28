@@ -4,7 +4,7 @@ import datetime
 import shutil
 
 time = datetime.datetime.now()
-time = time.strftime("%d")+"_"+time.strftime("%m")
+time = time.strftime("%d")+"_"+time.strftime("%m")+"_"+time.strftime("%y")
 '''
 This script does this task:
 <Takes a list of revised structures and replaces them in the repository with ne >
