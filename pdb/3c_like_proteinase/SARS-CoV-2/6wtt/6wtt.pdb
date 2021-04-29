@@ -20,6 +20,8 @@ KEYWDS   2 PROTEASE 3CL MPRO PRO, VIRAL PROTEIN, GC376, GC-376, PEPTIDOMIMETIC,
 KEYWDS   3 PROTEASE, CYSTEINE                                                   
 EXPDTA    X-RAY DIFFRACTION                                                     
 AUTHOR    M.SACCO,C.MA,Y.CHEN,J.WANG                                            
+REVDAT   5   25-NOV-20 6WTT    1       COMPND REMARK HET    HETNAM              
+REVDAT   5 2                   1       HETSYN FORMUL LINK   ATOM                
 REVDAT   4   12-AUG-20 6WTT    1       JRNL                                     
 REVDAT   3   01-JUL-20 6WTT    1       JRNL                                     
 REVDAT   2   24-JUN-20 6WTT    1       JRNL   HETSYN                            
@@ -452,6 +454,18 @@ REMARK 630 SOURCE: NULL
 REMARK 630 TAXONOMY: NULL                                                       
 REMARK 630 SUBCOMP:    PHQ LEU 04F                                              
 REMARK 630 DETAILS: NULL                                                        
+REMARK 630 MOLECULE TYPE: NULL                                                  
+REMARK 630 MOLECULE NAME: (1R,2S)-2-({N-[(BENZYLOXY)CARBONYL]-L-LEUCYL}AMINO)-  
+REMARK 630 1-HYDROXY-3-[(3S)-2-OXOPYRROLIDIN-3-YL]PROPANE-1-SULFONIC ACID       
+REMARK 630 (M=MODEL NUMBER; RES=RESIDUE NAME; C=CHAIN IDENTIFIER;               
+REMARK 630  SSSEQ=SEQUENCE NUMBER; I=INSERTION CODE.)                           
+REMARK 630                                                                      
+REMARK 630   M RES C SSSEQI                                                     
+REMARK 630     B1S C   401                                                      
+REMARK 630 SOURCE: NULL                                                         
+REMARK 630 TAXONOMY: NULL                                                       
+REMARK 630 SUBCOMP:    PHQ LEU B1Y                                              
+REMARK 630 DETAILS: NULL                                                        
 REMARK 800                                                                      
 REMARK 800 SITE                                                                 
 REMARK 800 SITE_IDENTIFIER: AC1                                                 
@@ -598,7 +612,7 @@ HET     MG  A 407       1
 HET    K36  B 401      29                                                       
 HET     CL  B 402       1                                                       
 HET     MG  B 403       1                                                       
-HET    UCS  C 401      29                                                       
+HET    B1S  C 401      29                                                       
 HET     CL  C 402       1                                                       
 HETNAM     K36 (1S,2S)-2-({N-[(BENZYLOXY)CARBONYL]-L-LEUCYL}AMINO)-1-           
 HETNAM   2 K36  HYDROXY-3-[(3S)-2-OXOPYRROLIDIN-3-YL]PROPANE-1-                 
@@ -607,9 +621,9 @@ HETNAM     PEG DI(HYDROXYETHYL)ETHER
 HETNAM     GOL GLYCEROL                                                         
 HETNAM      CL CHLORIDE ION                                                     
 HETNAM      MG MAGNESIUM ION                                                    
-HETNAM     UCS N~2~-[(BENZYLOXY)CARBONYL]-N-[(1R,2S)-1-HYDROXY-3-               
-HETNAM   2 UCS  [(3S)-2-OXOPYRROLIDIN-3-YL]-1-(TRIMETHYL-LAMBDA~4~-             
-HETNAM   3 UCS  SULFANYL)PROPAN-2-YL]-L-LEUCINAMIDE                             
+HETNAM     B1S (1R,2S)-2-({N-[(BENZYLOXY)CARBONYL]-L-LEUCYL}AMINO)-1-           
+HETNAM   2 B1S  HYDROXY-3-[(3S)-2-OXOPYRROLIDIN-3-YL]PROPANE-1-                 
+HETNAM   3 B1S  SULFONIC ACID                                                   
 HETSYN     K36 GC376                                                            
 HETSYN     GOL GLYCERIN; PROPANE-1,2,3-TRIOL                                    
 FORMUL   4  K36    2(C21 H31 N3 O8 S)                                           
@@ -617,7 +631,7 @@ FORMUL   5  PEG    C4 H10 O3
 FORMUL   6  GOL    C3 H8 O3                                                     
 FORMUL   7   CL    5(CL 1-)                                                     
 FORMUL  10   MG    2(MG 2+)                                                     
-FORMUL  14  UCS    C22 H33 N3 O7 S                                              
+FORMUL  14  B1S    C21 H31 N3 O8 S                                              
 FORMUL  16  HOH   *327(H2 O)                                                    
 HELIX    1 AA1 SER A   10  GLY A   15  1                                   6    
 HELIX    2 AA2 HIS A   41  CYS A   44  5                                   4    
@@ -698,7 +712,7 @@ SHEET    2 AA9 3 CYS C 156  GLU C 166  1  O  VAL C 157   N  LYS C 100
 SHEET    3 AA9 3 HIS C 172  THR C 175 -1  O  ALA C 173   N  MET C 165           
 LINK         SG  CYS A 145                 C21 K36 A 401     1555   1555  1.64  
 LINK         SG  CYS B 145                 C21 K36 B 401     1555   1555  1.64  
-LINK         SG  CYS C 145                 C21 UCS C 401     1555   1555  1.67  
+LINK         SG  CYS C 145                 C21 B1S C 401     1555   1555  1.67  
 LINK         O   ASN B 221                MG    MG B 403     1555   1555  2.82  
 LINK         OD1 ASN B 221                MG    MG B 403     1555   1555  2.35  
 LINK         O   PHE B 223                MG    MG B 403     1555   1555  2.02  
@@ -7798,35 +7812,35 @@ HETATM 7060  C29 K36 B 401     -32.256  41.505  11.195  1.00 68.94           C
 HETATM 7061  O30 K36 B 401     -31.106  41.281  10.898  1.00 81.99           O  
 HETATM 7062 CL    CL B 402     -35.051  63.240  10.905  1.00 93.23          CL  
 HETATM 7063 MG    MG B 403      -4.139  10.177  16.139  1.00 55.11          MG  
-HETATM 7064  C12 UCS C 401      -6.190  26.089  45.072  1.00 62.65           C  
-HETATM 7065  C17 UCS C 401      -3.551  31.381  42.319  1.00 48.92           C  
-HETATM 7066  O18 UCS C 401      -2.538  30.985  41.785  1.00 50.05           O  
-HETATM 7067  C13 UCS C 401      -6.859  25.540  46.176  1.00 68.86           C  
-HETATM 7068  C14 UCS C 401      -6.606  24.194  46.583  1.00 65.41           C  
-HETATM 7069  C15 UCS C 401      -5.701  23.410  45.867  1.00 65.50           C  
-HETATM 7070  C16 UCS C 401      -5.038  23.988  44.748  1.00 68.54           C  
-HETATM 7071  N19 UCS C 401      -4.386  32.274  41.699  1.00 45.61           N  
-HETATM 7072  C20 UCS C 401      -4.147  32.839  40.365  1.00 46.62           C  
-HETATM 7073  C21 UCS C 401      -4.387  34.347  40.433  1.00 50.19           C  
-HETATM 7074  O22 UCS C 401      -3.397  34.855  41.243  1.00 51.66           O  
-HETATM 7075  C24 UCS C 401      -5.076  30.850  39.097  1.00 49.31           C  
-HETATM 7076  C25 UCS C 401      -3.837  30.571  38.245  1.00 50.50           C  
-HETATM 7077  C26 UCS C 401      -4.090  29.195  37.584  1.00 49.35           C  
-HETATM 7078  C01 UCS C 401      -2.977  31.494  47.417  1.00 56.78           C  
-HETATM 7079  C02 UCS C 401      -3.872  31.587  46.238  1.00 52.56           C  
-HETATM 7080  C03 UCS C 401      -5.035  30.646  46.388  1.00 50.09           C  
-HETATM 7081  C04 UCS C 401      -3.093  31.493  44.898  1.00 51.36           C  
-HETATM 7082  C05 UCS C 401      -3.894  30.788  43.713  1.00 51.34           C  
-HETATM 7083  N06 UCS C 401      -3.582  29.383  43.722  1.00 47.51           N  
-HETATM 7084  C07 UCS C 401      -4.264  28.429  43.011  1.00 55.50           C  
-HETATM 7085  O08 UCS C 401      -5.263  28.659  42.296  1.00 48.12           O  
-HETATM 7086  O09 UCS C 401      -3.751  27.142  43.116  1.00 59.01           O  
-HETATM 7087  C10 UCS C 401      -4.545  25.925  43.034  1.00 68.29           C  
-HETATM 7088  C11 UCS C 401      -5.265  25.322  44.339  1.00 60.82           C  
-HETATM 7089  C23 UCS C 401      -5.109  32.297  39.329  1.00 47.10           C  
-HETATM 7090  N27 UCS C 401      -5.533  29.200  37.258  1.00 50.56           N  
-HETATM 7091  C28 UCS C 401      -6.117  30.147  38.122  1.00 49.26           C  
-HETATM 7092  O29 UCS C 401      -7.294  30.431  38.151  1.00 54.36           O  
+HETATM 7064  C7  B1S C 401      -4.545  25.925  43.034  1.00 68.29           C  
+HETATM 7065  O8  B1S C 401      -3.751  27.142  43.116  1.00 59.01           O  
+HETATM 7066  C9  B1S C 401      -4.264  28.429  43.011  1.00 55.50           C  
+HETATM 7067  O10 B1S C 401      -5.263  28.659  42.296  1.00 48.12           O  
+HETATM 7068  C1  B1S C 401      -5.265  25.322  44.339  1.00 60.82           C  
+HETATM 7069  C2  B1S C 401      -6.190  26.089  45.072  1.00 62.65           C  
+HETATM 7070  C3  B1S C 401      -6.859  25.540  46.176  1.00 68.86           C  
+HETATM 7071  C4  B1S C 401      -6.606  24.194  46.583  1.00 65.41           C  
+HETATM 7072  C5  B1S C 401      -5.701  23.410  45.867  1.00 65.50           C  
+HETATM 7073  C6  B1S C 401      -5.038  23.988  44.748  1.00 68.54           C  
+HETATM 7074  N11 B1S C 401      -3.582  29.383  43.722  1.00 47.51           N  
+HETATM 7075  C12 B1S C 401      -3.894  30.788  43.713  1.00 51.34           C  
+HETATM 7076  C17 B1S C 401      -3.551  31.381  42.319  1.00 48.92           C  
+HETATM 7077  O18 B1S C 401      -2.538  30.985  41.785  1.00 50.05           O  
+HETATM 7078  C13 B1S C 401      -3.093  31.493  44.898  1.00 51.36           C  
+HETATM 7079  C14 B1S C 401      -3.872  31.587  46.238  1.00 52.56           C  
+HETATM 7080  C15 B1S C 401      -2.977  31.494  47.417  1.00 56.78           C  
+HETATM 7081  C16 B1S C 401      -5.035  30.646  46.388  1.00 50.09           C  
+HETATM 7082  N19 B1S C 401      -4.386  32.274  41.699  1.00 45.61           N  
+HETATM 7083  C20 B1S C 401      -4.147  32.839  40.365  1.00 46.62           C  
+HETATM 7084  C21 B1S C 401      -4.387  34.347  40.433  1.00 50.19           C  
+HETATM 7085  O22 B1S C 401      -3.397  34.855  41.243  1.00 51.66           O  
+HETATM 7086  C24 B1S C 401      -5.109  32.297  39.329  1.00 47.10           C  
+HETATM 7087  C25 B1S C 401      -5.076  30.850  39.097  1.00 49.31           C  
+HETATM 7088  C26 B1S C 401      -3.837  30.571  38.245  1.00 50.50           C  
+HETATM 7089  C27 B1S C 401      -4.090  29.195  37.584  1.00 49.35           C  
+HETATM 7090  N28 B1S C 401      -5.533  29.200  37.258  1.00 50.56           N  
+HETATM 7091  C29 B1S C 401      -6.117  30.147  38.122  1.00 49.26           C  
+HETATM 7092  O30 B1S C 401      -7.294  30.431  38.151  1.00 54.36           O  
 HETATM 7093 CL    CL C 402     -15.669  21.879  52.113  1.00 89.29          CL  
 HETATM 7094  O   HOH A 501     -16.439  30.170   0.616  1.00 59.25           O  
 HETATM 7095  O   HOH A 502      -8.717  14.297 -19.842  1.00 56.34           O  
@@ -8175,7 +8189,7 @@ CONECT 4036 7063
 CONECT 4052 7063                                                                
 CONECT 4363 7063                                                                
 CONECT 4366 7063                                                                
-CONECT 5781 7073                                                                
+CONECT 5781 7084                                                                
 CONECT 6987 6988 6991                                                           
 CONECT 6988 6987 6989                                                           
 CONECT 6989 6988 6990 6997                                                      
@@ -8249,35 +8263,35 @@ CONECT 7060 7056 7059 7061
 CONECT 7061 7060                                                                
 CONECT 7063 4033 4036 4052 4363                                                 
 CONECT 7063 4366 7255                                                           
-CONECT 7064 7067 7088                                                           
-CONECT 7065 7066 7071 7082                                                      
-CONECT 7066 7065                                                                
-CONECT 7067 7064 7068                                                           
-CONECT 7068 7067 7069                                                           
+CONECT 7064 7065 7068                                                           
+CONECT 7065 7064 7066                                                           
+CONECT 7066 7065 7067 7074                                                      
+CONECT 7067 7066                                                                
+CONECT 7068 7064 7069 7073                                                      
 CONECT 7069 7068 7070                                                           
-CONECT 7070 7069 7088                                                           
-CONECT 7071 7065 7072                                                           
-CONECT 7072 7071 7073 7089                                                      
-CONECT 7073 5781 7072 7074                                                      
-CONECT 7074 7073                                                                
-CONECT 7075 7076 7089 7091                                                      
-CONECT 7076 7075 7077                                                           
-CONECT 7077 7076 7090                                                           
-CONECT 7078 7079                                                                
+CONECT 7070 7069 7071                                                           
+CONECT 7071 7070 7072                                                           
+CONECT 7072 7071 7073                                                           
+CONECT 7073 7068 7072                                                           
+CONECT 7074 7066 7075                                                           
+CONECT 7075 7074 7076 7078                                                      
+CONECT 7076 7075 7077 7082                                                      
+CONECT 7077 7076                                                                
+CONECT 7078 7075 7079                                                           
 CONECT 7079 7078 7080 7081                                                      
 CONECT 7080 7079                                                                
-CONECT 7081 7079 7082                                                           
-CONECT 7082 7065 7081 7083                                                      
-CONECT 7083 7082 7084                                                           
-CONECT 7084 7083 7085 7086                                                      
+CONECT 7081 7079                                                                
+CONECT 7082 7076 7083                                                           
+CONECT 7083 7082 7084 7086                                                      
+CONECT 7084 5781 7083 7085                                                      
 CONECT 7085 7084                                                                
-CONECT 7086 7084 7087                                                           
-CONECT 7087 7086 7088                                                           
-CONECT 7088 7064 7070 7087                                                      
-CONECT 7089 7072 7075                                                           
-CONECT 7090 7077 7091                                                           
-CONECT 7091 7075 7090 7092                                                      
+CONECT 7086 7083 7087                                                           
+CONECT 7087 7086 7088 7091                                                      
+CONECT 7088 7087 7089                                                           
+CONECT 7089 7088 7090                                                           
+CONECT 7090 7089 7091                                                           
+CONECT 7091 7087 7090 7092                                                      
 CONECT 7092 7091                                                                
 CONECT 7255 7063                                                                
-MASTER      462    0   12   32   45    0   23    6 7417    3  111   72          
+MASTER      474    0   12   32   45    0   23    6 7417    3  111   72          
 END                                                                             

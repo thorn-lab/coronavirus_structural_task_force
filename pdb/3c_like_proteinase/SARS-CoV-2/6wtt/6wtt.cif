@@ -3,7 +3,7 @@ data_6WTT
 _entry.id   6WTT 
 # 
 _audit_conform.dict_name       mmcif_pdbx.dic 
-_audit_conform.dict_version    5.331 
+_audit_conform.dict_version    5.336 
 _audit_conform.dict_location   http://mmcif.pdb.org/dictionaries/ascii/mmcif_pdbx.dic 
 # 
 loop_
@@ -156,9 +156,8 @@ _entity.details
 5 non-polymer syn 'CHLORIDE ION' 35.453    5   ?         ? ? ?      
 6 non-polymer syn 'MAGNESIUM ION' 24.305    2   ?         ? ? ?      
 7 non-polymer nat 
-;N~2~-[(benzyloxy)carbonyl]-N-[(1R,2S)-1-hydroxy-3-[(3S)-2-oxopyrrolidin-3-yl]-1-(trimethyl-lambda~4~-sulfanyl)propan-2-yl]-L-leucinamide
-;
-483.578   1   ?         ? ? ?      
+'(1R,2S)-2-({N-[(benzyloxy)carbonyl]-L-leucyl}amino)-1-hydroxy-3-[(3S)-2-oxopyrrolidin-3-yl]propane-1-sulfonic acid' 485.551   1   
+?         ? ? ?      
 8 water       nat water 18.015    327 ?         ? ? ?      
 # 
 _entity_poly.entity_id                      1 
@@ -624,6 +623,9 @@ ALA 'L-peptide linking' y ALANINE ?                               'C3 H7 N O2'  
 ARG 'L-peptide linking' y ARGININE ?                               'C6 H15 N4 O2 1'  175.209 
 ASN 'L-peptide linking' y ASPARAGINE ?                               'C4 H8 N2 O3'     132.118 
 ASP 'L-peptide linking' y 'ASPARTIC ACID' ?                               'C4 H7 N O4'      133.103 
+B1S peptide-like        . 
+'(1R,2S)-2-({N-[(benzyloxy)carbonyl]-L-leucyl}amino)-1-hydroxy-3-[(3S)-2-oxopyrrolidin-3-yl]propane-1-sulfonic acid' ? 
+'C21 H31 N3 O8 S' 485.551 
 CL  non-polymer         . 'CHLORIDE ION' ?                               'Cl -1'           35.453  
 CYS 'L-peptide linking' y CYSTEINE ?                               'C3 H7 N O2 S'    121.158 
 GLN 'L-peptide linking' y GLUTAMINE ?                               'C5 H10 N2 O3'    146.144 
@@ -647,10 +649,6 @@ SER 'L-peptide linking' y SERINE ?                               'C3 H7 N O3'   
 THR 'L-peptide linking' y THREONINE ?                               'C4 H9 N O3'      119.119 
 TRP 'L-peptide linking' y TRYPTOPHAN ?                               'C11 H12 N2 O2'   204.225 
 TYR 'L-peptide linking' y TYROSINE ?                               'C9 H11 N O3'     181.189 
-UCS non-polymer         . 
-;N~2~-[(benzyloxy)carbonyl]-N-[(1R,2S)-1-hydroxy-3-[(3S)-2-oxopyrrolidin-3-yl]-1-(trimethyl-lambda~4~-sulfanyl)propan-2-yl]-L-leucinamide
-;
-?                               'C22 H33 N3 O7 S' 483.578 
 VAL 'L-peptide linking' y VALINE ?                               'C5 H11 N O2'     117.146 
 # 
 _exptl.absorpt_coefficient_mu     ? 
@@ -1219,15 +1217,15 @@ _struct_conn.details
 _struct_conn.pdbx_dist_value 
 _struct_conn.pdbx_value_order 
 _struct_conn.pdbx_role 
-covale1 covale one ? A CYS 145 SG  ? ? ? 1_555 D K36 . C21 ? ? A CYS 145 A K36 401 1_555 ? ? ? ? ? ? ? 1.638 ? ? 
-covale2 covale one ? B CYS 145 SG  ? ? ? 1_555 K K36 . C21 ? ? B CYS 145 B K36 401 1_555 ? ? ? ? ? ? ? 1.637 ? ? 
-covale3 covale one ? C CYS 145 SG  ? ? ? 1_555 N UCS . C21 ? ? C CYS 145 C UCS 401 1_555 ? ? ? ? ? ? ? 1.674 ? ? 
-metalc1 metalc ?   ? B ASN 221 O   ? ? ? 1_555 M MG  . MG  ? ? B ASN 221 B MG  403 1_555 ? ? ? ? ? ? ? 2.817 ? ? 
-metalc2 metalc ?   ? B ASN 221 OD1 ? ? ? 1_555 M MG  . MG  ? ? B ASN 221 B MG  403 1_555 ? ? ? ? ? ? ? 2.353 ? ? 
-metalc3 metalc ?   ? B PHE 223 O   ? ? ? 1_555 M MG  . MG  ? ? B PHE 223 B MG  403 1_555 ? ? ? ? ? ? ? 2.022 ? ? 
-metalc4 metalc ?   ? B ASP 263 O   ? ? ? 1_555 M MG  . MG  ? ? B ASP 263 B MG  403 1_555 ? ? ? ? ? ? ? 2.658 ? ? 
-metalc5 metalc ?   ? B ASP 263 OD1 ? ? ? 1_555 M MG  . MG  ? ? B ASP 263 B MG  403 1_555 ? ? ? ? ? ? ? 2.314 ? ? 
-metalc6 metalc ?   ? M MG  .   MG  ? ? ? 1_555 Q HOH . O   ? ? B MG  403 B HOH 524 1_555 ? ? ? ? ? ? ? 2.372 ? ? 
+covale1 covale one  ? A CYS 145 SG  ? ? ? 1_555 D K36 . C21 ? ? A CYS 145 A K36 401 1_555 ? ? ? ? ? ? ? 1.638 ? ? 
+covale2 covale one  ? B CYS 145 SG  ? ? ? 1_555 K K36 . C21 ? ? B CYS 145 B K36 401 1_555 ? ? ? ? ? ? ? 1.637 ? ? 
+covale3 covale none ? C CYS 145 SG  ? ? ? 1_555 N B1S . C21 ? ? C CYS 145 C B1S 401 1_555 ? ? ? ? ? ? ? 1.674 ? ? 
+metalc1 metalc ?    ? B ASN 221 O   ? ? ? 1_555 M MG  . MG  ? ? B ASN 221 B MG  403 1_555 ? ? ? ? ? ? ? 2.817 ? ? 
+metalc2 metalc ?    ? B ASN 221 OD1 ? ? ? 1_555 M MG  . MG  ? ? B ASN 221 B MG  403 1_555 ? ? ? ? ? ? ? 2.353 ? ? 
+metalc3 metalc ?    ? B PHE 223 O   ? ? ? 1_555 M MG  . MG  ? ? B PHE 223 B MG  403 1_555 ? ? ? ? ? ? ? 2.022 ? ? 
+metalc4 metalc ?    ? B ASP 263 O   ? ? ? 1_555 M MG  . MG  ? ? B ASP 263 B MG  403 1_555 ? ? ? ? ? ? ? 2.658 ? ? 
+metalc5 metalc ?    ? B ASP 263 OD1 ? ? ? 1_555 M MG  . MG  ? ? B ASP 263 B MG  403 1_555 ? ? ? ? ? ? ? 2.314 ? ? 
+metalc6 metalc ?    ? M MG  .   MG  ? ? ? 1_555 Q HOH . O   ? ? B MG  403 B HOH 524 1_555 ? ? ? ? ? ? ? 2.372 ? ? 
 # 
 loop_
 _struct_conn_type.id 
@@ -1434,7 +1432,7 @@ AC6 Software A MG  407 ? 3  'binding site for residue MG A 407'
 AC7 Software B CL  402 ? 1  'binding site for residue CL B 402'                   
 AC8 Software B MG  403 ? 5  'binding site for residue MG B 403'                   
 AC9 Software B K36 401 ? 16 'binding site for Di-peptide K36 B 401 and CYS B 145' 
-AD1 Software C UCS 401 ? 20 'binding site for Di-peptide UCS C 401 and CYS C 145' 
+AD1 Software C B1S 401 ? 20 'binding site for Di-peptide UCS C 401 and CYS C 145' 
 # 
 loop_
 _struct_site_gen.id 
@@ -8647,35 +8645,35 @@ HETATM 7057 C  C29 . K36 K 2 .   ? -32.256 41.505  11.195  1.00 68.94  ? 401 K36
 HETATM 7058 O  O30 . K36 K 2 .   ? -31.106 41.281  10.898  1.00 81.99  ? 401 K36 B O30 1 
 HETATM 7059 CL CL  . CL  L 5 .   ? -35.051 63.240  10.905  1.00 93.23  ? 402 CL  B CL  1 
 HETATM 7060 MG MG  . MG  M 6 .   ? -4.139  10.177  16.139  1.00 55.11  ? 403 MG  B MG  1 
-HETATM 7061 C  C12 . UCS N 7 .   ? -6.190  26.089  45.072  1.00 62.65  ? 401 UCS C C12 1 
-HETATM 7062 C  C17 . UCS N 7 .   ? -3.551  31.381  42.319  1.00 48.92  ? 401 UCS C C17 1 
-HETATM 7063 O  O18 . UCS N 7 .   ? -2.538  30.985  41.785  1.00 50.05  ? 401 UCS C O18 1 
-HETATM 7064 C  C13 . UCS N 7 .   ? -6.859  25.540  46.176  1.00 68.86  ? 401 UCS C C13 1 
-HETATM 7065 C  C14 . UCS N 7 .   ? -6.606  24.194  46.583  1.00 65.41  ? 401 UCS C C14 1 
-HETATM 7066 C  C15 . UCS N 7 .   ? -5.701  23.410  45.867  1.00 65.50  ? 401 UCS C C15 1 
-HETATM 7067 C  C16 . UCS N 7 .   ? -5.038  23.988  44.748  1.00 68.54  ? 401 UCS C C16 1 
-HETATM 7068 N  N19 . UCS N 7 .   ? -4.386  32.274  41.699  1.00 45.61  ? 401 UCS C N19 1 
-HETATM 7069 C  C20 . UCS N 7 .   ? -4.147  32.839  40.365  1.00 46.62  ? 401 UCS C C20 1 
-HETATM 7070 C  C21 . UCS N 7 .   ? -4.387  34.347  40.433  1.00 50.19  ? 401 UCS C C21 1 
-HETATM 7071 O  O22 . UCS N 7 .   ? -3.397  34.855  41.243  1.00 51.66  ? 401 UCS C O22 1 
-HETATM 7072 C  C24 . UCS N 7 .   ? -5.076  30.850  39.097  1.00 49.31  ? 401 UCS C C24 1 
-HETATM 7073 C  C25 . UCS N 7 .   ? -3.837  30.571  38.245  1.00 50.50  ? 401 UCS C C25 1 
-HETATM 7074 C  C26 . UCS N 7 .   ? -4.090  29.195  37.584  1.00 49.35  ? 401 UCS C C26 1 
-HETATM 7075 C  C01 . UCS N 7 .   ? -2.977  31.494  47.417  1.00 56.78  ? 401 UCS C C01 1 
-HETATM 7076 C  C02 . UCS N 7 .   ? -3.872  31.587  46.238  1.00 52.56  ? 401 UCS C C02 1 
-HETATM 7077 C  C03 . UCS N 7 .   ? -5.035  30.646  46.388  1.00 50.09  ? 401 UCS C C03 1 
-HETATM 7078 C  C04 . UCS N 7 .   ? -3.093  31.493  44.898  1.00 51.36  ? 401 UCS C C04 1 
-HETATM 7079 C  C05 . UCS N 7 .   ? -3.894  30.788  43.713  1.00 51.34  ? 401 UCS C C05 1 
-HETATM 7080 N  N06 . UCS N 7 .   ? -3.582  29.383  43.722  1.00 47.51  ? 401 UCS C N06 1 
-HETATM 7081 C  C07 . UCS N 7 .   ? -4.264  28.429  43.011  1.00 55.50  ? 401 UCS C C07 1 
-HETATM 7082 O  O08 . UCS N 7 .   ? -5.263  28.659  42.296  1.00 48.12  ? 401 UCS C O08 1 
-HETATM 7083 O  O09 . UCS N 7 .   ? -3.751  27.142  43.116  1.00 59.01  ? 401 UCS C O09 1 
-HETATM 7084 C  C10 . UCS N 7 .   ? -4.545  25.925  43.034  1.00 68.29  ? 401 UCS C C10 1 
-HETATM 7085 C  C11 . UCS N 7 .   ? -5.265  25.322  44.339  1.00 60.82  ? 401 UCS C C11 1 
-HETATM 7086 C  C23 . UCS N 7 .   ? -5.109  32.297  39.329  1.00 47.10  ? 401 UCS C C23 1 
-HETATM 7087 N  N27 . UCS N 7 .   ? -5.533  29.200  37.258  1.00 50.56  ? 401 UCS C N27 1 
-HETATM 7088 C  C28 . UCS N 7 .   ? -6.117  30.147  38.122  1.00 49.26  ? 401 UCS C C28 1 
-HETATM 7089 O  O29 . UCS N 7 .   ? -7.294  30.431  38.151  1.00 54.36  ? 401 UCS C O29 1 
+HETATM 7061 C  C7  . B1S N 7 .   ? -4.545  25.925  43.034  1.00 68.29  ? 401 B1S C C7  1 
+HETATM 7062 O  O8  . B1S N 7 .   ? -3.751  27.142  43.116  1.00 59.01  ? 401 B1S C O8  1 
+HETATM 7063 C  C9  . B1S N 7 .   ? -4.264  28.429  43.011  1.00 55.50  ? 401 B1S C C9  1 
+HETATM 7064 O  O10 . B1S N 7 .   ? -5.263  28.659  42.296  1.00 48.12  ? 401 B1S C O10 1 
+HETATM 7065 C  C1  . B1S N 7 .   ? -5.265  25.322  44.339  1.00 60.82  ? 401 B1S C C1  1 
+HETATM 7066 C  C2  . B1S N 7 .   ? -6.190  26.089  45.072  1.00 62.65  ? 401 B1S C C2  1 
+HETATM 7067 C  C3  . B1S N 7 .   ? -6.859  25.540  46.176  1.00 68.86  ? 401 B1S C C3  1 
+HETATM 7068 C  C4  . B1S N 7 .   ? -6.606  24.194  46.583  1.00 65.41  ? 401 B1S C C4  1 
+HETATM 7069 C  C5  . B1S N 7 .   ? -5.701  23.410  45.867  1.00 65.50  ? 401 B1S C C5  1 
+HETATM 7070 C  C6  . B1S N 7 .   ? -5.038  23.988  44.748  1.00 68.54  ? 401 B1S C C6  1 
+HETATM 7071 N  N11 . B1S N 7 .   ? -3.582  29.383  43.722  1.00 47.51  ? 401 B1S C N11 1 
+HETATM 7072 C  C12 . B1S N 7 .   ? -3.894  30.788  43.713  1.00 51.34  ? 401 B1S C C12 1 
+HETATM 7073 C  C17 . B1S N 7 .   ? -3.551  31.381  42.319  1.00 48.92  ? 401 B1S C C17 1 
+HETATM 7074 O  O18 . B1S N 7 .   ? -2.538  30.985  41.785  1.00 50.05  ? 401 B1S C O18 1 
+HETATM 7075 C  C13 . B1S N 7 .   ? -3.093  31.493  44.898  1.00 51.36  ? 401 B1S C C13 1 
+HETATM 7076 C  C14 . B1S N 7 .   ? -3.872  31.587  46.238  1.00 52.56  ? 401 B1S C C14 1 
+HETATM 7077 C  C15 . B1S N 7 .   ? -2.977  31.494  47.417  1.00 56.78  ? 401 B1S C C15 1 
+HETATM 7078 C  C16 . B1S N 7 .   ? -5.035  30.646  46.388  1.00 50.09  ? 401 B1S C C16 1 
+HETATM 7079 N  N19 . B1S N 7 .   ? -4.386  32.274  41.699  1.00 45.61  ? 401 B1S C N19 1 
+HETATM 7080 C  C20 . B1S N 7 .   ? -4.147  32.839  40.365  1.00 46.62  ? 401 B1S C C20 1 
+HETATM 7081 C  C21 . B1S N 7 .   ? -4.387  34.347  40.433  1.00 50.19  ? 401 B1S C C21 1 
+HETATM 7082 O  O22 . B1S N 7 .   ? -3.397  34.855  41.243  1.00 51.66  ? 401 B1S C O22 1 
+HETATM 7083 C  C24 . B1S N 7 .   ? -5.109  32.297  39.329  1.00 47.10  ? 401 B1S C C24 1 
+HETATM 7084 C  C25 . B1S N 7 .   ? -5.076  30.850  39.097  1.00 49.31  ? 401 B1S C C25 1 
+HETATM 7085 C  C26 . B1S N 7 .   ? -3.837  30.571  38.245  1.00 50.50  ? 401 B1S C C26 1 
+HETATM 7086 C  C27 . B1S N 7 .   ? -4.090  29.195  37.584  1.00 49.35  ? 401 B1S C C27 1 
+HETATM 7087 N  N28 . B1S N 7 .   ? -5.533  29.200  37.258  1.00 50.56  ? 401 B1S C N28 1 
+HETATM 7088 C  C29 . B1S N 7 .   ? -6.117  30.147  38.122  1.00 49.26  ? 401 B1S C C29 1 
+HETATM 7089 O  O30 . B1S N 7 .   ? -7.294  30.431  38.151  1.00 54.36  ? 401 B1S C O30 1 
 HETATM 7090 CL CL  . CL  O 5 .   ? -15.669 21.879  52.113  1.00 89.29  ? 402 CL  C CL  1 
 HETATM 7091 O  O   . HOH P 8 .   ? -16.439 30.170  0.616   1.00 59.25  ? 501 HOH A O   1 
 HETATM 7092 O  O   . HOH P 8 .   ? -8.717  14.297  -19.842 1.00 56.34  ? 502 HOH A O   1 
@@ -9983,7 +9981,7 @@ J 6 MG  1   407 2   MG  MG  A .
 K 2 K36 1   401 401 K36 K36 B . 
 L 5 CL  1   402 3   CL  CL  B . 
 M 6 MG  1   403 1   MG  MG  B . 
-N 7 UCS 1   401 401 UCS B1S C . 
+N 7 B1S 1   401 401 B1S B1S C . 
 O 5 CL  1   402 6   CL  CL  C . 
 P 8 HOH 1   501 197 HOH HOH A . 
 P 8 HOH 2   502 625 HOH HOH A . 
@@ -10441,6 +10439,7 @@ _pdbx_audit_revision_history.revision_date
 2 'Structure model' 1 1 2020-06-24 
 3 'Structure model' 1 2 2020-07-01 
 4 'Structure model' 1 3 2020-08-12 
+5 'Structure model' 2 0 2020-11-25 
 # 
 _pdbx_audit_revision_details.ordinal             1 
 _pdbx_audit_revision_details.revision_ordinal    1 
@@ -10455,59 +10454,101 @@ _pdbx_audit_revision_group.ordinal
 _pdbx_audit_revision_group.revision_ordinal 
 _pdbx_audit_revision_group.data_content_type 
 _pdbx_audit_revision_group.group 
-1 2 'Structure model' 'Database references'  
-2 2 'Structure model' 'Structure summary'    
-3 3 'Structure model' 'Database references'  
-4 4 'Structure model' 'Database references'  
-5 4 'Structure model' 'Derived calculations' 
+1  2 'Structure model' 'Database references'        
+2  2 'Structure model' 'Structure summary'          
+3  3 'Structure model' 'Database references'        
+4  4 'Structure model' 'Database references'        
+5  4 'Structure model' 'Derived calculations'       
+6  5 'Structure model' 'Atomic model'               
+7  5 'Structure model' 'Author supporting evidence' 
+8  5 'Structure model' 'Data collection'            
+9  5 'Structure model' 'Derived calculations'       
+10 5 'Structure model' 'Non-polymer description'    
+11 5 'Structure model' 'Structure summary'          
 # 
 loop_
 _pdbx_audit_revision_category.ordinal 
 _pdbx_audit_revision_category.revision_ordinal 
 _pdbx_audit_revision_category.data_content_type 
 _pdbx_audit_revision_category.category 
-1 2 'Structure model' chem_comp       
-2 2 'Structure model' citation        
-3 2 'Structure model' citation_author 
-4 3 'Structure model' citation        
-5 3 'Structure model' citation_author 
-6 4 'Structure model' citation        
-7 4 'Structure model' citation_author 
-8 4 'Structure model' struct_conn     
+1  2 'Structure model' chem_comp                    
+2  2 'Structure model' citation                     
+3  2 'Structure model' citation_author              
+4  3 'Structure model' citation                     
+5  3 'Structure model' citation_author              
+6  4 'Structure model' citation                     
+7  4 'Structure model' citation_author              
+8  4 'Structure model' struct_conn                  
+9  5 'Structure model' atom_site                    
+10 5 'Structure model' chem_comp                    
+11 5 'Structure model' entity                       
+12 5 'Structure model' pdbx_entity_instance_feature 
+13 5 'Structure model' pdbx_entity_nonpoly          
+14 5 'Structure model' pdbx_nonpoly_scheme          
+15 5 'Structure model' struct_conn                  
+16 5 'Structure model' struct_site                  
 # 
 loop_
 _pdbx_audit_revision_item.ordinal 
 _pdbx_audit_revision_item.revision_ordinal 
 _pdbx_audit_revision_item.data_content_type 
 _pdbx_audit_revision_item.item 
-1  2 'Structure model' '_chem_comp.pdbx_synonyms'            
-2  2 'Structure model' '_citation.country'                   
-3  2 'Structure model' '_citation.journal_abbrev'            
-4  2 'Structure model' '_citation.journal_id_CSD'            
-5  2 'Structure model' '_citation.journal_id_ISSN'           
-6  2 'Structure model' '_citation.pdbx_database_id_DOI'      
-7  2 'Structure model' '_citation.title'                     
-8  2 'Structure model' '_citation.year'                      
-9  3 'Structure model' '_citation.pdbx_database_id_PubMed'   
-10 3 'Structure model' '_citation.title'                     
-11 3 'Structure model' '_citation_author.identifier_ORCID'   
-12 4 'Structure model' '_struct_conn.conn_type_id'           
-13 4 'Structure model' '_struct_conn.id'                     
-14 4 'Structure model' '_struct_conn.pdbx_dist_value'        
-15 4 'Structure model' '_struct_conn.pdbx_leaving_atom_flag' 
-16 4 'Structure model' '_struct_conn.ptnr1_auth_asym_id'     
-17 4 'Structure model' '_struct_conn.ptnr1_auth_comp_id'     
-18 4 'Structure model' '_struct_conn.ptnr1_auth_seq_id'      
-19 4 'Structure model' '_struct_conn.ptnr1_label_asym_id'    
-20 4 'Structure model' '_struct_conn.ptnr1_label_atom_id'    
-21 4 'Structure model' '_struct_conn.ptnr1_label_comp_id'    
-22 4 'Structure model' '_struct_conn.ptnr1_label_seq_id'     
-23 4 'Structure model' '_struct_conn.ptnr2_auth_asym_id'     
-24 4 'Structure model' '_struct_conn.ptnr2_auth_comp_id'     
-25 4 'Structure model' '_struct_conn.ptnr2_auth_seq_id'      
-26 4 'Structure model' '_struct_conn.ptnr2_label_asym_id'    
-27 4 'Structure model' '_struct_conn.ptnr2_label_atom_id'    
-28 4 'Structure model' '_struct_conn.ptnr2_label_comp_id'    
+1  2 'Structure model' '_chem_comp.pdbx_synonyms'                   
+2  2 'Structure model' '_citation.country'                          
+3  2 'Structure model' '_citation.journal_abbrev'                   
+4  2 'Structure model' '_citation.journal_id_CSD'                   
+5  2 'Structure model' '_citation.journal_id_ISSN'                  
+6  2 'Structure model' '_citation.pdbx_database_id_DOI'             
+7  2 'Structure model' '_citation.title'                            
+8  2 'Structure model' '_citation.year'                             
+9  3 'Structure model' '_citation.pdbx_database_id_PubMed'          
+10 3 'Structure model' '_citation.title'                            
+11 3 'Structure model' '_citation_author.identifier_ORCID'          
+12 4 'Structure model' '_struct_conn.conn_type_id'                  
+13 4 'Structure model' '_struct_conn.id'                            
+14 4 'Structure model' '_struct_conn.pdbx_dist_value'               
+15 4 'Structure model' '_struct_conn.pdbx_leaving_atom_flag'        
+16 4 'Structure model' '_struct_conn.ptnr1_auth_asym_id'            
+17 4 'Structure model' '_struct_conn.ptnr1_auth_comp_id'            
+18 4 'Structure model' '_struct_conn.ptnr1_auth_seq_id'             
+19 4 'Structure model' '_struct_conn.ptnr1_label_asym_id'           
+20 4 'Structure model' '_struct_conn.ptnr1_label_atom_id'           
+21 4 'Structure model' '_struct_conn.ptnr1_label_comp_id'           
+22 4 'Structure model' '_struct_conn.ptnr1_label_seq_id'            
+23 4 'Structure model' '_struct_conn.ptnr2_auth_asym_id'            
+24 4 'Structure model' '_struct_conn.ptnr2_auth_comp_id'            
+25 4 'Structure model' '_struct_conn.ptnr2_auth_seq_id'             
+26 4 'Structure model' '_struct_conn.ptnr2_label_asym_id'           
+27 4 'Structure model' '_struct_conn.ptnr2_label_atom_id'           
+28 4 'Structure model' '_struct_conn.ptnr2_label_comp_id'           
+29 5 'Structure model' '_atom_site.B_iso_or_equiv'                  
+30 5 'Structure model' '_atom_site.Cartn_x'                         
+31 5 'Structure model' '_atom_site.Cartn_y'                         
+32 5 'Structure model' '_atom_site.Cartn_z'                         
+33 5 'Structure model' '_atom_site.auth_atom_id'                    
+34 5 'Structure model' '_atom_site.auth_comp_id'                    
+35 5 'Structure model' '_atom_site.label_atom_id'                   
+36 5 'Structure model' '_atom_site.label_comp_id'                   
+37 5 'Structure model' '_atom_site.type_symbol'                     
+38 5 'Structure model' '_chem_comp.formula'                         
+39 5 'Structure model' '_chem_comp.formula_weight'                  
+40 5 'Structure model' '_chem_comp.id'                              
+41 5 'Structure model' '_chem_comp.mon_nstd_flag'                   
+42 5 'Structure model' '_chem_comp.name'                            
+43 5 'Structure model' '_chem_comp.pdbx_synonyms'                   
+44 5 'Structure model' '_chem_comp.type'                            
+45 5 'Structure model' '_entity.formula_weight'                     
+46 5 'Structure model' '_entity.pdbx_description'                   
+47 5 'Structure model' '_pdbx_entity_instance_feature.auth_comp_id' 
+48 5 'Structure model' '_pdbx_entity_instance_feature.comp_id'      
+49 5 'Structure model' '_pdbx_entity_nonpoly.comp_id'               
+50 5 'Structure model' '_pdbx_entity_nonpoly.name'                  
+51 5 'Structure model' '_pdbx_nonpoly_scheme.mon_id'                
+52 5 'Structure model' '_pdbx_nonpoly_scheme.pdb_mon_id'            
+53 5 'Structure model' '_struct_conn.pdbx_leaving_atom_flag'        
+54 5 'Structure model' '_struct_conn.ptnr2_auth_comp_id'            
+55 5 'Structure model' '_struct_conn.ptnr2_label_comp_id'           
+56 5 'Structure model' '_struct_site.pdbx_auth_comp_id'             
 # 
 loop_
 _software.citation_id 
@@ -10687,7 +10728,7 @@ _pdbx_entity_instance_feature.auth_asym_id
 _pdbx_entity_instance_feature.auth_seq_num 
 _pdbx_entity_instance_feature.feature_type 
 _pdbx_entity_instance_feature.details 
-1 UCS ? ? UCS ? ? 'SUBJECT OF INVESTIGATION' ? 
+1 B1S ? ? B1S ? ? 'SUBJECT OF INVESTIGATION' ? 
 2 K36 ? ? K36 ? ? 'SUBJECT OF INVESTIGATION' ? 
 # 
 loop_
@@ -10695,15 +10736,12 @@ _pdbx_entity_nonpoly.entity_id
 _pdbx_entity_nonpoly.name 
 _pdbx_entity_nonpoly.comp_id 
 2 '(1S,2S)-2-({N-[(benzyloxy)carbonyl]-L-leucyl}amino)-1-hydroxy-3-[(3S)-2-oxopyrrolidin-3-yl]propane-1-sulfonic acid' K36 
-3 'DI(HYDROXYETHYL)ETHER' PEG 
-4 GLYCEROL GOL 
-5 'CHLORIDE ION' CL  
-6 'MAGNESIUM ION' MG  
-7 
-;N~2~-[(benzyloxy)carbonyl]-N-[(1R,2S)-1-hydroxy-3-[(3S)-2-oxopyrrolidin-3-yl]-1-(trimethyl-lambda~4~-sulfanyl)propan-2-yl]-L-leucinamide
-;
-UCS 
-8 water HOH 
+3 'DI(HYDROXYETHYL)ETHER'                                                                                              PEG 
+4 GLYCEROL                                                                                                             GOL 
+5 'CHLORIDE ION'                                                                                                       CL  
+6 'MAGNESIUM ION'                                                                                                      MG  
+7 '(1R,2S)-2-({N-[(benzyloxy)carbonyl]-L-leucyl}amino)-1-hydroxy-3-[(3S)-2-oxopyrrolidin-3-yl]propane-1-sulfonic acid' B1S 
+8 water                                                                                                                HOH 
 # 
 _pdbx_struct_assembly_auth_evidence.id                     1 
 _pdbx_struct_assembly_auth_evidence.assembly_id            1 
