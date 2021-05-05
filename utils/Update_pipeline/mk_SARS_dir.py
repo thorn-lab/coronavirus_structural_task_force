@@ -166,11 +166,12 @@ def twice_assigned (id_dict, multi_assign_ids):
         #gets the protein which saved the combined ids and deletes their dict entry
         multi_ids_prot = []
         for key, value in id_dict.items():
-            print(key, val)
-            if val in value:
-                multi_ids_prot.append(key)
-                value.remove(val)
-                id_dict[key] = value
+            try:
+                if val in value:
+                    multi_ids_prot.append(key)
+                    value.remove(val)
+                    id_dict[key] = value
+            except TypeError: pass
         return multi_ids_prot
 
     for id in multi_assign_ids:
