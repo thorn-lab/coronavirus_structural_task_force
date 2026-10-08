@@ -1,0 +1,53 @@
+This package can be used to download and store data from the protein database.
+
+As input you need an rcsb query (check out rcsbapi.readthedocs.io), 
+a FASTA file that matches the query in some way, and a start and an end date to filter the query.
+
+You can then use the query module to create a dataframe that stores the following 
+information about your query: 
+    protein, release_date, last_revision, version, exp_method,
+    path_in_repo, resolution, title, superseded_by.
+
+Once you have such a dataframe you can update it by adding it to as an argument to query.get_df.
+
+You can use the download module and the previously created dataframe to download cif, pdb and mtz data, 
+and remove directories of superseded PDB entries. 
+
+You can use the report module to write one weekly report per week in a chosen date range.
+Each report lists newly released and revised structures, with new structures additionally grouped by protein.
+
+config.py contains a dictionary that you can update with your own rcbs-queries. 
+utils contains helper functions used throughout the package. Specifically,
+utils.get_time is useful for running weekly updates, by doing start = end = str(utils.get_time()).
+
+More information about each module and function can be found using help(module) or help(module.function).
+
+Typical usage example:
+
+    import pandas as pd
+    from rcsbapi.search import search_attributes as attrs
+    from pathlib import Path
+
+    from lib.update_package import utils, query, io, report
+    
+
+    q1 = attrs.rcsb_entity_source_organism.taxonomy_lineage.id == "2697049"
+    q2 = attrs.rcsb_entity_source_organism.taxonomy_lineage.id != "6645"
+    query = q1 & q2
+    start = end = utils.get_time()
+    #start = '2023-01-14'
+    # end = '2023-04-14'
+    taxonomy = "SARS-CoV-2" 
+    fasta_path = "../data/fasta/seq_SARS-CoV-2.fasta"
+    repo_path = Path.cwd().parent / "data"
+    df = pd.read_pickle(repo_path / "dataframes/repo_database_SARS-CoV-2_copy.pkl")
+
+    ids = query.get_ids(start, end, query)
+    proteins = query.get_proteins(ids, fasta_path)
+    new_df = query.get_df(proteins, taxonomy, df)
+
+    io.download_files(ids, new_df, repo_path)
+    io.delete_superseded(ids, new_df, repo_path)
+
+    report.write_reports(start, end, new_df, taxonomy, repo_path)
+

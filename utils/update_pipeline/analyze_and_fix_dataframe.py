@@ -11,6 +11,9 @@ This contains functions used to analyze the data frame or to fix bugs.
 import os
 import pandas as pd
 
+from update_pipeline import io
+
+
 db_string_1 = "main_repo_database_SARS-CoV.pkl"
 df_SC1 = pd.read_pickle(db_string_1)
 db_string_2 = "main_repo_database_SARS-CoV-2.pkl"
@@ -210,3 +213,38 @@ def run(taxonomy):
         print("look into code of 'analyze_and_fix_dataframe.py' to perform manual "
               + "fixing with the respective functions!")
     # for fixing the errors, call the respective functions from above
+
+
+def change_df_dtype(taxonomy, invert_superseded_by=False, repo_path=None):
+    """
+    This function was used to change the dtypes of the columns of
+    the dataframes, and invert the superseded logic. Previously, the
+    for an id i, the superseded_by column recorded which id j it superseded.
+    After running the function with invert_superseded_by, the superseded_by column
+    of entry j says i, indicating that j was superseded by i.
+    """
+    if taxonomy == "SARS-CoV-2":
+        df = df_SC2
+    else:
+        df = df_SC1
+
+    df = df.set_index("pdb_id")
+    df["release_date"] = pd.to_datetime(df["release_date"]).dt.date
+    df["last_revision"] = pd.to_datetime(df["last_revision"]).dt.date
+    # Replace SARS-CoV-1 with SARS-CoV in paths
+    mask = df["path_in_repo"].str.contains("SARS-CoV-1", na=False)
+    df.loc[mask, "path_in_repo"] = df.loc[mask, "path_in_repo"].str.replace(
+        "SARS-CoV-1", "SARS-CoV"
+    )
+    df.loc[:, ["version", "resolution"]] = df.loc[:, ["version", "resolution"]].astype(
+        float
+    )
+    df[["protein", "path_in_repo"]] = df[["protein", "path_in_repo"]].replace(" ", "_")
+    if invert_superseded_by:
+        ids = df.index[pd.notna(df.superseded_by)].tolist()
+        df.loc[ids, "superseded_by"] = float("NaN")
+        io.download_files(ids, df, repo_path)
+        io.delete_superseded(ids, df, repo_path)
+    df.to_pickle(f"main_repo_database_{taxonomy}_copy.pkl")
+    return df
+
