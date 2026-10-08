@@ -1,14 +1,15 @@
 """
 orchestrator.py
 
-Runs the open-source validation pipeline (xtriage, cablam, clashscore,
-reduce, molprobity, charts) over a batch of PDB entries described by a
+Runs the open-source validation pipeline (pdb-redo, AUSPEX, xtriage,
+cablam, clashscore, reduce, molprobity, charts) over a batch of PDB entries described by a
 DataFrame indexed by PDB ID with a `path_in_repo` column pointing at a
 directory containing one .pdb, .cif, and .mtz file each -- the same
 layout the original run_xtriage.sh / run_cablam.sh /
 run_molprobity.sh scripts walked.
 
-Output layout mirrors the original scripts:
+Outputs are written to :
+    {path_in_repo}/validation/pdb_redo
     {path_in_repo}/validation/Xtriage_output.log
     {path_in_repo}/validation/molprobity/cablam.out
     {path_in_repo}/validation/molprobity/clashscore.txt
@@ -16,6 +17,7 @@ Output layout mirrors the original scripts:
     {path_in_repo}/validation/molprobity/molprobity.out
     {path_in_repo}/validation/molprobity/{pdb_id}_rama.pdf
     {path_in_repo}/validation/molprobity/{pdb_id}_multichart.pdf
+    {path_in_repo}/validation/auspex/amplitudes.jpg
 
 The two PDFs replace the original run_molprobity.sh's `rama_chart_pdf` and
 `multichart` calls. They are matplotlib re-implementations (see charts.py),
@@ -47,11 +49,33 @@ from cstf.validate.phenix_replication import reduce as reduce_mod
 from cstf.validate.phenix_replication import molprobity as molprobity_mod
 from cstf.validate.phenix_replication import fmodel_builder as fmodel_mod
 from cstf.validate.phenix_replication import charts as charts_mod
+from cstf.validate import auspex as auspex_mod
+
+import logging
+from pathlib import Path
+
+log_dir = Path("logs/validation_runs")  # Relative or absolute path
+log_dir.mkdir(parents=True, exist_ok=True)  # Creates folder structure if missing
+
+log_file_path = log_dir / "xtal_validation.log"
 
 logger = logging.getLogger("xtal_validation.orchestrator")
+logger.setLevel(logging.INFO)
+logger.propagate = False
+if logger.hasHandlers():
+    logger.handlers.clear()
+
+file_handler = logging.FileHandler(log_file_path, mode="w")
+formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+file_handler.setFormatter(formatter)
+
+logger.addHandler(file_handler)
+
+logger.info(f"Log saved to: {log_file_path.resolve()}")
 
 STEP_NAMES = [
     "pdb_redo",
+    "auspex",
     "xtriage",
     "cablam",
     "clashscore",
@@ -121,6 +145,7 @@ def process_one(pdb_id, path_in_repo, skip_existing=True):
     model_path = _model_path(files)
 
     validation_dir = path / "validation"
+    auspex_dir = validation_dir / "auspex"
     molprobity_dir = validation_dir / "molprobity"
 
     if model_path is None:
@@ -129,6 +154,7 @@ def process_one(pdb_id, path_in_repo, skip_existing=True):
         return status
 
     validation_dir.mkdir(exist_ok=True)
+    auspex_dir.mkdir(exist_ok=True)
     molprobity_dir.mkdir(exist_ok=True)
 
     # Results kept in memory so the charts step can reuse them when the
@@ -295,6 +321,32 @@ def process_one(pdb_id, path_in_repo, skip_existing=True):
             logger.warning("charts failed for %s: %s", pdb_id, exc)
             logger.debug(traceback.format_exc())
 
+    # --- AUSPEX: amplitudes diagnostic plot ---
+    # AUSPEX uses the existing MTZ as input. It does not copy the MTZ into
+    # validation/auspex; the only output retained by this pipeline is
+    # amplitudes.jpg.
+    amplitudes_jpg = auspex_dir / "amplitudes.jpg"
+    if files["mtz"] is None:
+        status["auspex"] = "no_input: no .mtz file found"
+    elif skip_existing and amplitudes_jpg.exists():
+        status["auspex"] = "skipped"
+    else:
+        try:
+            auspex_mod.run_auspex(
+                mtz_path=str(files["mtz"]),
+                output_dir=str(auspex_dir),
+                output_jpg=str(amplitudes_jpg),
+            )
+            if amplitudes_jpg.exists():
+                status["auspex"] = "done"
+            else:
+                status["auspex"] = "error: AUSPEX did not produce amplitudes.jpg"
+        except Exception as exc:  # noqa: BLE001
+            status["auspex"] = "error: {}".format(exc)
+            logger.warning("AUSPEX failed for %s: %s", pdb_id, exc)
+            logger.debug(traceback.format_exc())
+            print(traceback.format_exc())
+
     return status
 
 
@@ -317,8 +369,8 @@ def run_pipeline(
 
     Returns:
         a DataFrame indexed the same as df, with one column per
-        pipeline step (xtriage, cablam, clashscore, reduce,
-        molprobity, charts) holding a status string for that step.
+        pipeline step (pdb_redo, auspex, xtriage, cablam, clashscore,
+        reduce, molprobity, charts) holding a status string for that step.
         Never raises for individual-entry failures -- check the
         returned DataFrame for 'error: ...' values to find problem
         entries.
