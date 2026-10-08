@@ -1,6 +1,7 @@
 """This module provides functions for downloading structure files and managing superseded entries."""
 
 import asyncio
+import aiofiles
 import aiohttp
 import shutil
 from datetime import date
@@ -90,7 +91,9 @@ async def _download_files_handle_file(
         async with session.get(url) as resp:
             if resp.status == 200:
                 data = await resp.read()
-                file_path.write_bytes(data)
+                # file_path.write_bytes(data)
+                async with aiofiles.open(file_path, "wb") as f:
+                    await f.write(data)
 
 
 def delete_superseded(

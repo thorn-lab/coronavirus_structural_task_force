@@ -5,18 +5,24 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "aiofiles>=25.1.0",
     "aiohttp>=3.14.3",
+    "auspex",
     "bio>=1.8.3",
     "cctbx>=2025.11",
     "gemmi>=0.7.5",
     "grequests>=0.7.0",
     "matplotlib>=3.10.8",
+    "mpi4py>=4.1.2",
+    "mpl-scatter-density>=0.8",
     "numpy>=2.2.6",
     "pandas>=2.3.3",
     "rcsb-api>=1.7.3",
     "regex>=2025.11.3",
+    "scikit-learn>=1.7.2",
     "scipy>=1.15.3",
     "seaborn>=0.13.2",
+    "tabulate>=0.10.0",
 ]
 
 [dependency-groups]
@@ -40,3 +46,6 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/cstf"]
+
+[tool.uv.sources]
+auspex = { git = "https://github.com/YunyunGao/AUSPEX.git" }

@@ -26,8 +26,12 @@ async def test_download_files_handle_file(tmp_path):
 
     # Create a mock aiohttp response
     class MockResponse:
+        def __init__(self, status=200, data=b"NEW FILE CONTENT"):
+            self.status = status
+            self._data = data
+
         async def read(self):
-            return b"NEW FILE CONTENT"
+            return self._data
 
         async def __aenter__(self):
             return self
