@@ -1,11 +1,12 @@
 """
 orchestrator.py
 
-Runs the open-source validation pipeline (pdb-redo, AUSPEX, xtriage,
-cablam, clashscore, reduce, molprobity, charts) over a batch of PDB entries described by a
-DataFrame indexed by PDB ID with a `path_in_repo` column pointing at a
-directory containing one .pdb, .cif, and .mtz file each -- the same
-layout the original run_xtriage.sh / run_cablam.sh /
+Runs the open-source validation pipeline (pdb-redo, AUSPEX, Haruspex,
+xtriage, cablam, clashscore, reduce, molprobity, charts) over a batch of PDB
+entries described by a DataFrame indexed by PDB ID with a `path_in_repo`
+column pointing at a directory containing one .pdb, .cif, and .mtz file each
+(cryo-EM entries: a .pdb/.cif model plus a .mrc/.map/.ccp4 density map) --
+the same layout the original run_xtriage.sh / run_cablam.sh /
 run_molprobity.sh scripts walked.
 
 Outputs are written to :
@@ -18,17 +19,34 @@ Outputs are written to :
     {path_in_repo}/validation/molprobity/{pdb_id}_rama.pdf
     {path_in_repo}/validation/molprobity/{pdb_id}_multichart.pdf
     {path_in_repo}/validation/auspex/amplitudes.jpg
+    {path_in_repo}/validation/haruspex/...            (EM entries only)
 
 The two PDFs replace the original run_molprobity.sh's `rama_chart_pdf` and
 `multichart` calls. They are matplotlib re-implementations (see charts.py),
 so they carry the same information but are not pixel-identical to the
 Phenix/MolProbity originals.
 
+AUSPEX and Haruspex run in Docker (images built by
+setup-validation-docker.sh). Each image is started ONCE per run_pipeline()
+call as a long-lived container and reused via `docker exec` for every entry.
+Containers start lazily, so Haruspex's container never starts if the batch
+contains no ELECTRON MICROSCOPY entries.
+
+Haruspex runs only for entries whose `exp_method` column equals
+"ELECTRON MICROSCOPY" (case/whitespace-insensitive).
+
 Usage:
     import pandas as pd
+    from pathlib import Path
     from orchestrator import run_pipeline
 
-    df = pd.DataFrame({"path_in_repo": [...]}, index=["1abc", "2xyz"])
+    df = pd.DataFrame(
+        {
+            "path_in_repo": [...],
+            "exp_method": ["X-RAY DIFFRACTION", "ELECTRON MICROSCOPY"],
+        },
+        index=["1abc", "2xyz"],
+    )
     summary = run_pipeline(df, repo_path=Path("/data/repo"))
     summary.to_csv("validation_run_summary.csv")
 """
@@ -40,7 +58,6 @@ from pathlib import Path
 
 import pandas as pd
 
-
 from cstf.validate import pdb_redo as pdb_redo_mod
 from cstf.validate.phenix_replication import xtriage as xtriage_mod
 from cstf.validate.phenix_replication import cablam as cablam_mod
@@ -50,9 +67,8 @@ from cstf.validate.phenix_replication import molprobity as molprobity_mod
 from cstf.validate.phenix_replication import fmodel_builder as fmodel_mod
 from cstf.validate.phenix_replication import charts as charts_mod
 from cstf.validate import auspex as auspex_mod
-
-import logging
-from pathlib import Path
+from cstf.validate import haruspex as haruspex_mod
+from cstf.validate.docker_service import ContainerService
 
 log_dir = Path("logs/validation_runs")  # Relative or absolute path
 log_dir.mkdir(parents=True, exist_ok=True)  # Creates folder structure if missing
@@ -76,6 +92,7 @@ logger.info(f"Log saved to: {log_file_path.resolve()}")
 STEP_NAMES = [
     "pdb_redo",
     "auspex",
+    "haruspex",
     "xtriage",
     "cablam",
     "clashscore",
@@ -83,6 +100,14 @@ STEP_NAMES = [
     "molprobity",
     "charts",
 ]
+
+EM_METHOD = "ELECTRON MICROSCOPY"
+
+
+def _is_em(exp_method):
+    """True if exp_method is 'ELECTRON MICROSCOPY' (tolerates NaN/None,
+    case and surrounding whitespace)."""
+    return isinstance(exp_method, str) and exp_method.strip().upper() == EM_METHOD
 
 
 def find_structure_files(path_in_repo):
@@ -93,6 +118,9 @@ def find_structure_files(path_in_repo):
     or None if not found. Matching is by extension only (case
     insensitive), not by filename, since callers may use varying
     PDB-ID casing conventions (e.g. pdb_redo's lowercase entries).
+
+    (Density maps for cryo-EM entries are located separately by
+    haruspex_mod.find_map.)
     """
     path = Path(path_in_repo)
     found = {"pdb": None, "cif": None, "mtz": None}
@@ -118,7 +146,14 @@ def _model_path(files):
     return files["pdb"] or files["cif"]
 
 
-def process_one(pdb_id, path_in_repo, skip_existing=True):
+def process_one(
+    pdb_id,
+    path_in_repo,
+    skip_existing=True,
+    exp_method=None,
+    auspex_service=None,
+    haruspex_service=None,
+):
     """
     Run the full validation pipeline for a single PDB entry.
 
@@ -126,17 +161,24 @@ def process_one(pdb_id, path_in_repo, skip_existing=True):
         pdb_id: identifier, used for output filenames (e.g. the
             {pdb_id}.H.pdb hydrogenated model)
         path_in_repo: directory containing the entry's .pdb/.cif/.mtz
+            (and, for cryo-EM entries, the density map)
         skip_existing: if True (default, matching the original bash
             scripts), skip a step whose output file already exists
             rather than recomputing it
+        exp_method: the entry's experimental method. Haruspex only runs
+            when this is "ELECTRON MICROSCOPY".
+        auspex_service / haruspex_service: ContainerService instances
+            shared across entries by run_pipeline(). If None, the tool
+            wrappers start a temporary container for the single call.
 
     Returns:
         a dict with one status entry per step in STEP_NAMES, each
         either 'done', 'skipped', 'no_input' (required input file
-        missing), or 'error: <message>'. Never raises -- a failure in
-        one step is recorded and the remaining steps for that entry
-        are still attempted where feasible, and failures in one entry
-        never stop processing of other entries in run_pipeline().
+        missing), 'not_applicable' (step doesn't apply to this
+        experimental method), or 'error: <message>'. Never raises -- a
+        failure in one step is recorded and the remaining steps for that
+        entry are still attempted where feasible, and failures in one
+        entry never stop processing of other entries in run_pipeline().
     """
     path = Path(path_in_repo)
     status = {step: "not_run" for step in STEP_NAMES}
@@ -146,6 +188,7 @@ def process_one(pdb_id, path_in_repo, skip_existing=True):
 
     validation_dir = path / "validation"
     auspex_dir = validation_dir / "auspex"
+    haruspex_dir = validation_dir / "haruspex"
     molprobity_dir = validation_dir / "molprobity"
 
     if model_path is None:
@@ -324,7 +367,7 @@ def process_one(pdb_id, path_in_repo, skip_existing=True):
     # --- AUSPEX: amplitudes diagnostic plot ---
     # AUSPEX uses the existing MTZ as input. It does not copy the MTZ into
     # validation/auspex; the only output retained by this pipeline is
-    # amplitudes.jpg.
+    # amplitudes.jpg. Runs in the shared AUSPEX container.
     amplitudes_jpg = auspex_dir / "amplitudes.jpg"
     if files["mtz"] is None:
         status["auspex"] = "no_input: no .mtz file found"
@@ -336,6 +379,8 @@ def process_one(pdb_id, path_in_repo, skip_existing=True):
                 mtz_path=str(files["mtz"]),
                 output_dir=str(auspex_dir),
                 output_jpg=str(amplitudes_jpg),
+                service=auspex_service,
+                keep_extra=True,  # Change this after confirming exact output
             )
             if amplitudes_jpg.exists():
                 status["auspex"] = "done"
@@ -347,11 +392,41 @@ def process_one(pdb_id, path_in_repo, skip_existing=True):
             logger.debug(traceback.format_exc())
             print(traceback.format_exc())
 
+    # --- Haruspex: cryo-EM entries only, run on the deposited density map ---
+    # Runs in the shared Haruspex container. Skipped entirely (and the
+    # container never started) for non-EM entries.
+    if not _is_em(exp_method):
+        status["haruspex"] = "not_applicable: exp_method is {!r}".format(exp_method)
+    else:
+        em_map = haruspex_mod.find_map(path)
+        if em_map is None:
+            status["haruspex"] = "no_input: no .mrc/.map/.ccp4 file found"
+        elif skip_existing and (haruspex_dir / "haruspex_stdout.log").exists():
+            status["haruspex"] = "skipped"
+        else:
+            try:
+                haruspex_dir.mkdir(exist_ok=True)
+                produced = haruspex_mod.run_haruspex(
+                    map_path=str(em_map),
+                    output_dir=str(haruspex_dir),
+                    service=haruspex_service,
+                )
+                status["haruspex"] = "done ({} files)".format(len(produced))
+            except Exception as exc:  # noqa: BLE001
+                status["haruspex"] = "error: {}".format(exc)
+                logger.warning("Haruspex failed for %s: %s", pdb_id, exc)
+                logger.debug(traceback.format_exc())
+
     return status
 
 
 def run_pipeline(
-    df, repo_path, path_column="path_in_repo", skip_existing=True, verbose=True
+    df,
+    repo_path,
+    path_column="path_in_repo",
+    exp_method_column="exp_method",
+    skip_existing=True,
+    verbose=True,
 ):
     """
     Run the validation pipeline for every entry in df.
@@ -359,43 +434,72 @@ def run_pipeline(
     Args:
         df: DataFrame indexed by PDB ID, with a column (default
             'path_in_repo') giving the directory containing that
-            entry's .pdb/.cif/.mtz files
-        repo_path: pathlib.Path root that each path_column value is
-            joined onto (must be a Path, not a str)
+            entry's files, and (optionally) an 'exp_method' column.
+        repo_path: root that each path_column value is joined onto. It is
+            also the directory mounted into the AUSPEX/Haruspex
+            containers, so every entry directory must live under it.
         path_column: name of the column holding the directory path
+        exp_method_column: name of the column holding the experimental
+            method. Haruspex runs only where it equals
+            "ELECTRON MICROSCOPY". If the column is missing, Haruspex is
+            marked not_applicable for every entry.
         skip_existing: skip steps whose output already exists,
             matching the original bash scripts' caching behavior
         verbose: log a line per entry as it's processed
 
     Returns:
         a DataFrame indexed the same as df, with one column per
-        pipeline step (pdb_redo, auspex, xtriage, cablam, clashscore,
-        reduce, molprobity, charts) holding a status string for that step.
-        Never raises for individual-entry failures -- check the
+        pipeline step (see STEP_NAMES) holding a status string for that
+        step. Never raises for individual-entry failures -- check the
         returned DataFrame for 'error: ...' values to find problem
         entries.
     """
     if path_column not in df.columns:
         raise ValueError("df must have a '{}' column".format(path_column))
 
+    has_exp_method = exp_method_column in df.columns
+    if not has_exp_method:
+        logger.warning(
+            "No '%s' column in df; Haruspex will be skipped for all entries",
+            exp_method_column,
+        )
+
+    repo_path = Path(repo_path).resolve()
     records = {}
     total = len(df)
-    for i, (pdb_id, row) in enumerate(df.iterrows(), start=1):
-        if verbose:
-            logger.info("[%d/%d] processing %s", i, total, pdb_id)
-        try:
-            records[pdb_id] = process_one(
-                pdb_id, Path(repo_path / row[path_column]), skip_existing=skip_existing
-            )
-        except Exception as exc:  # noqa: BLE001
-            # process_one is designed not to raise, but guard here too
-            # so one catastrophic entry (e.g. a permissions error
-            # creating the validation dir) never aborts the batch.
-            logger.error("Unhandled failure for %s: %s", pdb_id, exc)
-            logger.debug(traceback.format_exc())
-            records[pdb_id] = {
-                step: "error: unhandled failure - {}".format(exc) for step in STEP_NAMES
-            }
+
+    # One container per tool for the whole batch. Both start lazily on their
+    # first exec() and are stopped when the with-block exits (even on error).
+    with (
+        ContainerService(
+            auspex_mod.AUSPEX_IMAGE, auspex_mod.AUSPEX_PLATFORM, repo_path
+        ) as auspex_svc,
+        ContainerService(
+            haruspex_mod.HARUSPEX_IMAGE, haruspex_mod.HARUSPEX_PLATFORM, repo_path
+        ) as haruspex_svc,
+    ):
+        for i, (pdb_id, row) in enumerate(df.iterrows(), start=1):
+            if verbose:
+                logger.info("[%d/%d] processing %s", i, total, pdb_id)
+            try:
+                records[pdb_id] = process_one(
+                    pdb_id,
+                    repo_path / row[path_column],
+                    skip_existing=skip_existing,
+                    exp_method=row[exp_method_column] if has_exp_method else None,
+                    auspex_service=auspex_svc,
+                    haruspex_service=haruspex_svc,
+                )
+            except Exception as exc:  # noqa: BLE001
+                # process_one is designed not to raise, but guard here too
+                # so one catastrophic entry (e.g. a permissions error
+                # creating the validation dir) never aborts the batch.
+                logger.error("Unhandled failure for %s: %s", pdb_id, exc)
+                logger.debug(traceback.format_exc())
+                records[pdb_id] = {
+                    step: "error: unhandled failure - {}".format(exc)
+                    for step in STEP_NAMES
+                }
 
     summary = pd.DataFrame.from_dict(records, orient="index")
     summary.index.name = df.index.name or "pdb_id"
@@ -406,13 +510,20 @@ def main():
     import argparse
 
     parser = argparse.ArgumentParser(
-        description="Run the validation pipeline over a CSV of "
-        "pdb_id,path_in_repo rows."
+        description="Run the validation pipeline over a CSV with "
+        "pdb_id, path_in_repo and (optionally) exp_method columns."
     )
     parser.add_argument(
-        "csv", help="CSV with pdb_id and path_in_repo " "columns (pdb_id as index)"
+        "csv", help="CSV with pdb_id (as index), path_in_repo and exp_method columns"
+    )
+    parser.add_argument(
+        "--repo-path",
+        required=True,
+        help="Root directory that path_in_repo values are relative to "
+        "(mounted into the AUSPEX/Haruspex containers)",
     )
     parser.add_argument("--path-column", default="path_in_repo")
+    parser.add_argument("--exp-method-column", default="exp_method")
     parser.add_argument(
         "--no-skip-existing",
         action="store_true",
@@ -431,7 +542,9 @@ def main():
     df = pd.read_csv(args.csv, index_col=0)
     summary = run_pipeline(
         df,
+        repo_path=Path(args.repo_path),
         path_column=args.path_column,
+        exp_method_column=args.exp_method_column,
         skip_existing=not args.no_skip_existing,
     )
     summary.to_csv(args.out)

@@ -4,6 +4,7 @@ import asyncio
 import aiofiles
 import aiohttp
 import shutil
+import gemmi
 from datetime import date
 from pathlib import Path
 from tqdm.asyncio import tqdm_asyncio
@@ -62,6 +63,22 @@ async def download_files(
         await tqdm_asyncio.gather(*tasks)
 
 
+def _convert_sf_cif_to_mtz(cif_path: Path, mtz_path: Path, pdb_id: str) -> None:
+    """Blocking conversion of an RCSB structure-factor CIF to MTZ via gemmi."""
+    doc = gemmi.cif.read(str(cif_path))
+    rblocks = gemmi.as_refln_blocks(doc)
+    if not rblocks:
+        raise RuntimeError(
+            f"No reflection data found in structure factor file for {pdb_id}"
+        )
+
+    # Most RCSB entries have one block, but some contain several data sets.
+    # Pick the first block that actually has a usable reflection loop.
+    cif2mtz = gemmi.CifToMtz()
+    mtz = cif2mtz.convert_block_to_mtz(rblocks[0])
+    mtz.write_to_file(str(mtz_path))
+
+
 async def _download_files_handle_file(
     session: aiohttp.ClientSession,
     pdb_id: str,
@@ -72,28 +89,56 @@ async def _download_files_handle_file(
 ):
     async with sem:
         file_dir.mkdir(parents=True, exist_ok=True)
+        pdb_lower = pdb_id.lower()
         file_path = file_dir / f"{pdb_id}.{ext}"
 
+        # Archive existing file if it already exists
         if file_path.exists():
             old_dir = file_dir / "old"
             old_dir.mkdir(exist_ok=True)
             archived_path = old_dir / f"{pdb_id}_{timestamp}.{ext}"
             file_path.replace(archived_path)
 
-        # Build download URL depending on extension
         if ext == "mtz":
-            # Fetch MTZ directly from PDBe archive
-            pdb_lower = pdb_id.lower()
-            url = f"https://www.ebi.ac.uk/pdbe/entry-files/download/r{pdb_lower}sf.ent"
+            cif_url = f"https://files.rcsb.org/download/{pdb_lower}-sf.cif"
+            cif_path = file_dir / f"{pdb_lower}-sf.cif"
+
+            async with session.get(cif_url) as resp:
+                if resp.status != 200:
+                    raise aiohttp.ClientResponseError(
+                        request_info=resp.request_info,
+                        history=resp.history,
+                        status=resp.status,
+                        message=f"Failed to download structure factors for {pdb_id} from RCSB (Status: {resp.status})",
+                    )
+                data = await resp.read()
+
+            async with aiofiles.open(cif_path, "wb") as f:
+                await f.write(data)
+
+            try:
+                await asyncio.to_thread(
+                    _convert_sf_cif_to_mtz, cif_path, file_path, pdb_id
+                )
+            except Exception as e:
+                raise RuntimeError(
+                    f"gemmi CIF->MTZ conversion failed for {pdb_id}: {e}"
+                ) from e
+
         else:
             url = f"https://files.rcsb.org/download/{pdb_id}.{ext}"
-
-        async with session.get(url) as resp:
-            if resp.status == 200:
+            async with session.get(url) as resp:
+                if resp.status != 200:
+                    raise aiohttp.ClientResponseError(
+                        request_info=resp.request_info,
+                        history=resp.history,
+                        status=resp.status,
+                        message=f"Failed to download {ext} for {pdb_id} from RCSB (Status: {resp.status})",
+                    )
                 data = await resp.read()
-                # file_path.write_bytes(data)
-                async with aiofiles.open(file_path, "wb") as f:
-                    await f.write(data)
+
+            async with aiofiles.open(file_path, "wb") as f:
+                await f.write(data)
 
 
 def delete_superseded(

@@ -1,0 +1,17 @@
+FROM python:3.7-slim-bullseye
+
+WORKDIR /opt/hpx
+
+# Keep the numerical stack compatible with TensorFlow 2.8.
+RUN python -m pip install --no-cache-dir --upgrade "pip<24.1" \
+    && python -m pip install --no-cache-dir \
+       "numpy==1.21.6" \
+       "scipy==1.7.3" \
+       "mrcfile" \
+       "tensorflow-aarch64==2.8.4"
+
+COPY source/ /opt/hpx/
+COPY network/ /opt/hpx/
+COPY docker/haruspex_compat.py /opt/hpx/haruspex_compat.py
+
+ENTRYPOINT ["/usr/local/bin/python", "/opt/hpx/haruspex_compat.py", "-n", "/opt/hpx/hpx_190116"]

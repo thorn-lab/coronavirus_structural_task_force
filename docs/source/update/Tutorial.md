@@ -30,11 +30,41 @@ Then import the modules from the update package:
 from cstf.update import config, query, io, report, align, RMSD, utils
 ```
 
-In addition to the Python packages installed by `uv`, the structural-validation tools require the CCTBX `chem_data` reference dataset. This data is downloaded automatically by `scripts/setup_chem_data.py`, verified against the expected CCTBX release checksum, and linked into the virtual environment so that CCTBX/mmtbx can discover it. To download the data run
+In addition to the Python packages installed by `uv`, the structural-validation tools require the CCTBX `chem_data` reference dataset (5GB). This data is downloaded automatically by `scripts/setup_chem_data.py`, verified against the expected CCTBX release checksum, and linked into the virtual environment so that CCTBX/mmtbx can discover it. To download the data run
 
 ```
 uv run --with zstandard python scripts/setup_chem_data.pys
 ```
+
+The validation pipeline can use two additional scientific tools:
+
+Haruspex, for analysis of cryo-EM density maps.
+AUSPEX, for diagnostics of X-ray diffraction data.
+
+These tools run in Docker containers, keeping their dependencies separate from this project's Python environment. You do not need to install Conda or the tools' Python dependencies on your host machine.
+
+Prerequisites
+Install Docker Desktop or Docker Engine for your operating system.
+Start Docker and confirm that it is running.
+Install Git.
+Ensure you have sufficient free disk space for the images and their build caches.
+
+See the Docker installation guide for details.
+
+Build the tool images
+
+From the root of this project's repository, run:
+
+```
+bash scripts/setup_validation_containers.sh
+```
+
+The script clones the tool repositories into .validation-tools/, builds the images locally, and checks that both command-line tools start successfully.
+
+The resulting image names are:
+
+haruspex:local
+auspex:local
 
 ## Example
 
