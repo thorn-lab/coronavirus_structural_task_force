@@ -1,137 +1,94 @@
-"""
-xtriage.py
+"""X-ray reflection diagnostics for one PDB entry."""
 
-Open-source replacement for `phenix.xtriage`, built directly on
-mmtbx.scaling.xtriage.run - the exact function phenix.xtriage's CLI
-calls. Runs data-quality analysis (Wilson statistics, twinning tests,
-anisotropy, translational NCS, ice rings) on reflection data, and
-optionally cross-checks against a structure model.
+from pathlib import Path
 
-Usage:
-    python xtriage.py data.mtz
-    python xtriage.py data.mtz --model model.pdb --out Xtriage_output.log
-"""
-
-import argparse
-import sys
-
+from cstf.validate.base import Entry, ValidationStep
 from iotbx.reflection_file_reader import any_reflection_file
 from mmtbx.scaling import xtriage
 
 
-def get_observed_arrays(mtz_path):
-    """Return candidate observed X-ray arrays from an MTZ."""
-    hkl_in = any_reflection_file(mtz_path)
-    arrays = hkl_in.file_content().as_miller_arrays()
+class XtriageStep(ValidationStep):
+    """Select observed intensities and run the xtriage analysis."""
 
-    candidates = []
+    name = "xtriage"
 
-    for ma in arrays:
-        if not ma.is_xray_intensity_array():
-            continue
+    def check_input(self, entry: Entry):
+        return None if entry.files.get("mtz") else "no_input: no .mtz file found"
 
-        info = ma.info()
-        if info is None:
-            continue
+    def output_dir(self, entry: Entry) -> Path:
+        return entry.validation_dir
 
-        labels = info.labels
-        label_string = info.label_string()
+    def target(self, entry: Entry) -> Path:
+        return entry.validation_dir / "Xtriage_output.log"
 
-        candidates.append((ma, labels, label_string))
+    def is_complete(self, entry: Entry) -> bool:
+        return self.target(entry).is_file()
 
-    return candidates
+    @staticmethod
+    def _get_observed_arrays(mtz_path):
+        """Return candidate observed X-ray arrays from an MTZ."""
+        hkl_in = any_reflection_file(mtz_path)
+        arrays = hkl_in.file_content().as_miller_arrays()
+        candidates = []
+        for miller_array in arrays:
+            if not miller_array.is_xray_intensity_array():
+                continue
+            info = miller_array.info()
+            if info is not None:
+                candidates.append(
+                    (miller_array, info.labels, info.label_string())
+                )
+        return candidates
 
+    @classmethod
+    def _choose_observed_array(cls, mtz_path):
+        """Choose a conventional merged I/SIGI array when possible."""
+        candidates = cls._get_observed_arrays(mtz_path)
+        if not candidates:
+            raise RuntimeError(
+                "No observed X-ray intensity arrays found in {}".format(mtz_path)
+            )
 
-def choose_observed_array(mtz_path):
-    """
-    Select an observed intensity array automatically.
+        for _, labels, label_string in candidates:
+            labels_lower = [label.lower() for label in labels]
+            if any("intensity_meas" in label for label in labels_lower) and not any(
+                "plus" in label or "minus" in label for label in labels_lower
+            ):
+                return "intensity_meas", label_string
 
-    Preference:
-      1. conventional merged I/SIGI
-      2. other single intensity array
+        for _, labels, label_string in candidates:
+            if len(labels) == 2:
+                labels_lower = [label.lower() for label in labels]
+                if any("intensity" in label for label in labels_lower) and any(
+                    "sigma" in label for label in labels_lower
+                ):
+                    return labels[0], label_string
 
-    Returns:
-      label substring suitable for scaling.input.xray_data.obs_labels
-    """
-    candidates = get_observed_arrays(mtz_path)
+        if len(candidates) == 1:
+            _, labels, label_string = candidates[0]
+            return labels[0], label_string
 
-    if not candidates:
+        descriptions = [candidate[2] for candidate in candidates]
         raise RuntimeError(
-            "No observed X-ray intensity arrays found in {}".format(mtz_path)
+            "Multiple observed intensity arrays found in {}:\n  {}\n"
+            "Unable to choose an observed array automatically.".format(
+                mtz_path, "\n  ".join(descriptions)
+            )
         )
 
-    # First preference: conventional merged intensity data.
-    for ma, labels, label_string in candidates:
-        labels_lower = [x.lower() for x in labels]
-
-        if any("intensity_meas" in x for x in labels_lower) and not any(
-            "plus" in x or "minus" in x for x in labels_lower
-        ):
-            return "intensity_meas", label_string
-
-    # Second preference: a simple I/SIGI pair.
-    for ma, labels, label_string in candidates:
-        if len(labels) == 2:
-            labels_lower = [x.lower() for x in labels]
-
-            if any("intensity" in x for x in labels_lower) and any(
-                "sigma" in x for x in labels_lower
-            ):
-                return labels[0], label_string
-
-    # If there is exactly one candidate, use it.
-    if len(candidates) == 1:
-        _, labels, label_string = candidates[0]
-        return labels[0], label_string
-
-    # We don't know how to choose safely.
-    message = ["Multiple observed intensity arrays found in {}:".format(mtz_path)]
-
-    for _, _, label_string in candidates:
-        message.append("  {}".format(label_string))
-
-    message.append("Unable to choose an observed array automatically.")
-
-    raise RuntimeError("\n".join(message))
-
-
-def run_xtriage(mtz_path, out_stream=None):
-    obs_labels, selected_description = choose_observed_array(mtz_path)
-
-    print(
-        "Xtriage observed data: {}".format(selected_description),
-        file=out_stream or sys.stdout,
-    )
-
-    args = [
-        mtz_path,
-        "scaling.input.xray_data.obs_labels={}".format(obs_labels),
-    ]
-
-    return xtriage.run(
-        args=args,
-        command_name="xtriage.py",
-        return_result=True,
-        out=out_stream,
-        data_file_name=mtz_path,
-    )
-
-
-def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-
-    parser.add_argument("mtz", help="Path to reflection file")
-
-    parser.add_argument("--out", help="Write report to this file")
-
-    args = parser.parse_args()
-
-    if args.out:
-        with open(args.out, "w") as fh:
-            run_xtriage(args.mtz, out_stream=fh)
-    else:
-        run_xtriage(args.mtz, out_stream=sys.stdout)
-
-
-if __name__ == "__main__":
-    main()
+    def execute(self, entry: Entry):
+        mtz_path = str(entry.files["mtz"])
+        labels, description = self._choose_observed_array(mtz_path)
+        target = self.target(entry)
+        with target.open("w") as stream:
+            print("Xtriage observed data: {}".format(description), file=stream)
+            return xtriage.run(
+                args=[
+                    mtz_path,
+                    "scaling.input.xray_data.obs_labels={}".format(labels),
+                ],
+                command_name="xtriage.py",
+                return_result=True,
+                out=stream,
+                data_file_name=mtz_path,
+            )

@@ -1,92 +1,53 @@
-"""
-clashscore.py
+"""MolProbity all-atom clashscore validation for one model."""
 
-Open-source replacement for `phenix.clashscore`, built directly on the
-mmtbx.validation.clashscore API (the same code phenix.clashscore calls).
+from pathlib import Path
 
-Computes the MolProbity all-atom clashscore for a PDB/mmCIF model:
-the number of serious steric clashes (>0.4 Angstrom overlap between
-non-bonded atoms) per 1000 atoms.
-
-Uses the integrated CCTBX Probe2 implementation; no external `probe`
-executable is required.
-
-Usage:
-    python clashscore2.py model.pdb
-    python clashscore2.py model.pdb --out clashscore.txt
-
-As a library:
-    from clashscore2 import run_clashscore
-    result = run_clashscore("model.pdb")s
-    print(result.get_clashscore())
-"""
-
-import argparse
-
+from cstf.validate.base import Entry, ValidationStep
 from iotbx.data_manager import DataManager
-
 from mmtbx.reduce.Optimizers import _philLike
 from mmtbx.validation.clashscore2 import clashscore2
 
 
-def run_clashscore(model_path, nuclear=False, keep_hydrogens=False, fast=False):
+class ClashscoreStep(ValidationStep):
+    """Calculate the all-atom clashscore and save its text report."""
 
-    data_manager = DataManager()
-    data_manager.process_model_file(model_path)
+    name = "clashscore"
 
-    # clashscore2 passes this object to mmtbx.reduce.Optimizers.Optimizer
-    # when hydrogens need to be placed and optimized.
-    probe_parameters = _philLike()
+    def check_input(self, entry: Entry):
+        return None if entry.model_path else "no_input: no model file found"
 
-    result = clashscore2(
-        probe_parameters=probe_parameters,
-        data_manager=data_manager,
-        keep_hydrogens=keep_hydrogens,
-        nuclear=nuclear,
-        fast=fast,
-        condensed_probe=True,
-    )
-    return result
+    def output_dir(self, entry: Entry) -> Path:
+        return entry.molprobity_dir
 
+    def target(self, entry: Entry) -> Path:
+        return entry.molprobity_dir / "clashscore.txt"
 
-def format_report(result, model_path):
+    def is_complete(self, entry: Entry) -> bool:
+        return self.target(entry).is_file()
 
-    lines = []
+    def execute(self, entry: Entry):
+        data_manager = DataManager()
+        data_manager.process_model_file(str(entry.model_path))
+        result = clashscore2(
+            probe_parameters=_philLike(),
+            data_manager=data_manager,
+            keep_hydrogens=self.options.get("keep_hydrogens", False),
+            nuclear=self.options.get("nuclear", False),
+            fast=self.options.get("fast", False),
+            condensed_probe=True,
+        )
+        self.target(entry).write_text(self._format_report(result, entry.model_path) + "\n")
+        entry.results[self.name] = result
+        return result
 
-    lines.append("clashscore analysis for {}".format(model_path))
-    lines.append("-" * 60)
-    lines.append("")
-
-    lines.append("Bad Clashes >= 0.4 Angstrom:")
-
-    for clash in result.results:
-        lines.append(clash.format_old())
-
-    lines.append("clashscore = {:.2f}".format(result.get_clashscore()))
-
-    return "\n".join(lines)
-
-
-def main():
-    parser = argparse.ArgumentParser(
-        description="Calculate clashscore using CCTBX/mmtbx Probe2"
-    )
-    parser.add_argument("model", help="Input PDB file")
-    parser.add_argument("--nuclear", action="store_true")
-    parser.add_argument("--keep-hydrogens", action="store_true")
-    parser.add_argument("--fast", action="store_true")
-
-    args = parser.parse_args()
-
-    result = run_clashscore(
-        model_path=args.model,
-        nuclear=args.nuclear,
-        keep_hydrogens=args.keep_hydrogens,
-        fast=args.fast,
-    )
-
-    print(f"Clashscore: {result.clashscore}")
-
-
-if __name__ == "__main__":
-    main()
+    @staticmethod
+    def _format_report(result, model_path):
+        lines = [
+            "clashscore analysis for {}".format(model_path),
+            "-" * 60,
+            "",
+            "Bad Clashes >= 0.4 Angstrom:",
+        ]
+        lines.extend(clash.format_old() for clash in result.results)
+        lines.append("clashscore = {:.2f}".format(result.get_clashscore()))
+        return "\n".join(lines)

@@ -1,157 +1,106 @@
-"""
-reduce.py
+"""Add hydrogens to a model using the available Reduce2 backend."""
 
-Open-source replacement for `phenix.reduce`, which adds hydrogen atoms
-to a model (needed before clashscore/probe analysis can see H-related
-clashes) and optimizes Asn/Gln/His flips.
+from __future__ import annotations
 
-The correct API lives at `mmtbx.command_line.reduce2` (NOT
-`mmtbx.reduce2`, a mistake in an earlier draft of this module) and is
-used as a plain callable that takes an `mmtbx.model.manager` object
-and returns a new manager with hydrogens added -- it is not a class
-you instantiate. This module tries that API first and falls back to
-invoking a `reduce2`/`phenix.reduce` executable via subprocess if the
-API import fails, so it degrades gracefully across CCTBX versions.
-
-Runtime dependency note: reduce2 calls probe2 internally, which needs
-monomer-library restraint data (the `geostd` repo). If you get a
-runtime error about missing restraint/mod definitions rather than an
-ImportError, set the MMTBX_CCP4_MONOMER_LIB environment variable to
-point at a local geostd checkout -- that's a data-path issue, not a
-code issue.
-
-Usage:
-    python reduce.py model.pdb -o model.H.pdb
-    python reduce.py model.pdb -o model.H.pdb --mode electron_cloud
-    python reduce.py --check   # report which backend is available
-"""
-
-import argparse
 import shutil
 import subprocess
 import sys
+from pathlib import Path
+
+from cstf.validate.base import Entry, ValidationStep
 
 
-def _try_api_backend(model_path, out_path, mode="nuclear"):
-    """
-    Attempt to add hydrogens using the mmtbx.command_line.reduce2 API.
-    Returns True on success, False if the API isn't available/usable
-    so the caller can fall back to a subprocess call.
-    """
-    try:
-        from mmtbx.command_line import reduce2
-    except ImportError:
-        return False
+class ReduceStep(ValidationStep):
+    """Add and optimize hydrogen atoms for one model."""
 
-    try:
-        import iotbx.pdb
-        import mmtbx.model
+    name = "reduce"
 
-        pdb_input = iotbx.pdb.input(file_name=model_path)
-        model = mmtbx.model.manager(model_input=pdb_input)
+    def check_input(self, entry: Entry):
+        return None if entry.model_path else "no_input: no model file found"
 
-        # Strip any existing H before re-adding, matching phenix.reduce's
-        # default behavior of a clean re-placement.
-        model = model.remove_hydrogens()
+    def output_dir(self, entry: Entry) -> Path:
+        return entry.molprobity_dir
 
-        model_with_h = reduce2(model=model, mode=mode)
+    def target(self, entry: Entry) -> Path:
+        return entry.molprobity_dir / "{}.H.pdb".format(entry.pdb_id)
 
-        with open(out_path, "w") as fh:
-            fh.write(model_with_h.model_as_pdb())
-        return True
-    except Exception as exc:  # noqa: BLE001
-        sys.stderr.write(
-            "mmtbx.command_line.reduce2 API call failed ({}); "
-            "falling back to subprocess backend.\n".format(exc)
-        )
-        return False
+    def is_complete(self, entry: Entry) -> bool:
+        return self.target(entry).is_file()
 
+    def execute(self, entry: Entry) -> str:
+        mode = self.options.get("mode", "nuclear")
+        if self._try_api_backend(str(entry.model_path), str(self.target(entry)), mode):
+            return "api"
+        self._try_subprocess_backend(str(entry.model_path), str(self.target(entry)), mode)
+        return "subprocess"
 
-def _try_subprocess_backend(model_path, out_path, mode="nuclear"):
-    """
-    Fall back to whatever reduce-family executable is on PATH:
-    tries `mmtbx.reduce2`, then the legacy `phenix.reduce`.
-    (mmtbx.reduce2 is a CLI entry point installed alongside the
-    Python package; it's distinct from the nonexistent
-    `mmtbx.reduce2` *import* path this module used to (wrongly) try.)
-    """
-    candidates = ["mmtbx.reduce2", "phenix.reduce"]
-    exe = next((c for c in candidates if shutil.which(c)), None)
-    if exe is None:
-        raise RuntimeError(
-            "No reduce-family executable found on PATH "
-            "(tried: {})".format(", ".join(candidates))
-        )
+    def format_result(self, result: str) -> str:
+        return "done ({})".format(result)
 
-    if exe == "mmtbx.reduce2":
-        cmd = [exe, model_path, "approach=add",
-               "output.filename={}".format(out_path)]
-        subprocess.run(cmd, check=True)
-    else:
-        cmd = [exe, model_path]
-        with open(out_path, "w") as out_fh:
-            subprocess.run(cmd, stdout=out_fh, check=True)
+    @staticmethod
+    def _try_api_backend(model_path, out_path, mode="nuclear"):
+        """Try the Reduce2 Python API; return false when fallback is needed."""
+        try:
+            from mmtbx.command_line import reduce2
+        except ImportError:
+            return False
 
+        try:
+            import iotbx.pdb
+            import mmtbx.model
 
-def add_hydrogens(model_path, out_path, mode="nuclear"):
-    """
-    Add hydrogens to model_path, writing the result to out_path.
-    Tries the CCTBX Python API first, then falls back to subprocess.
-
-    Args:
-        mode: 'nuclear' (X-H distances for neutron-style geometry,
-            the modern reduce2 default) or 'electron_cloud' (shorter
-            X-H distances matching X-ray scattering, closer to legacy
-            phenix.reduce's default).
-    """
-    if _try_api_backend(model_path, out_path, mode=mode):
-        return "api"
-    _try_subprocess_backend(model_path, out_path, mode=mode)
-    return "subprocess"
-
-
-def check_backends():
-    report = []
-    try:
-        from mmtbx.command_line import reduce2  # noqa: F401
-        report.append("mmtbx.command_line.reduce2 Python API: available")
-    except ImportError as exc:
-        report.append(
-            "mmtbx.command_line.reduce2 Python API: NOT available "
-            "({})".format(exc))
-
-    for exe in ("mmtbx.reduce2", "phenix.reduce"):
-        report.append(
-            "{} executable: {}".format(
-                exe, shutil.which(exe) or "NOT found"
+            pdb_input = iotbx.pdb.input(file_name=model_path)
+            model = mmtbx.model.manager(model_input=pdb_input)
+            model = model.remove_hydrogens()
+            model_with_h = reduce2(model=model, mode=mode)
+            with open(out_path, "w") as output:
+                output.write(model_with_h.model_as_pdb())
+            return True
+        except Exception as exc:  # noqa: BLE001
+            sys.stderr.write(
+                "Reduce2 API failed ({}); falling back to subprocess.\n".format(exc)
             )
-        )
-    return "\n".join(report)
+            return False
 
+    @staticmethod
+    def _try_subprocess_backend(model_path, out_path, mode="nuclear"):
+        """Invoke an installed Reduce2 or legacy Phenix executable."""
+        candidates = ["mmtbx.reduce2", "phenix.reduce"]
+        executable = next((name for name in candidates if shutil.which(name)), None)
+        if executable is None:
+            raise RuntimeError(
+                "No reduce-family executable found on PATH (tried: {})".format(
+                    ", ".join(candidates)
+                )
+            )
+        if executable == "mmtbx.reduce2":
+            subprocess.run(
+                [
+                    executable,
+                    model_path,
+                    "approach=add",
+                    "output.filename={}".format(out_path),
+                ],
+                check=True,
+            )
+        else:
+            with open(out_path, "w") as output:
+                subprocess.run([executable, model_path], stdout=output, check=True)
 
-def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("model", nargs="?", help="Path to input PDB file")
-    parser.add_argument("-o", "--out", help="Path to output PDB with H")
-    parser.add_argument("--mode", default="nuclear",
-                         choices=["nuclear", "electron_cloud"],
-                         help="X-H distance convention (default: nuclear)")
-    parser.add_argument("--check", action="store_true",
-                         help="Report which reduce backend is available "
-                              "and exit")
-    args = parser.parse_args()
-
-    if args.check:
-        print(check_backends())
-        return
-
-    if not args.model or not args.out:
-        parser.error("model and --out are required unless using --check")
-
-    backend = add_hydrogens(args.model, args.out, mode=args.mode)
-    sys.stderr.write("Hydrogens added using '{}' backend -> {}\n".format(
-        backend, args.out))
-
-
-if __name__ == "__main__":
-    main()
+    @staticmethod
+    def check_backends():
+        report = []
+        try:
+            from mmtbx.command_line import reduce2  # noqa: F401
+            report.append("mmtbx.command_line.reduce2 Python API: available")
+        except ImportError as exc:
+            report.append(
+                "mmtbx.command_line.reduce2 Python API: NOT available ({})".format(exc)
+            )
+        for executable in ("mmtbx.reduce2", "phenix.reduce"):
+            report.append(
+                "{} executable: {}".format(
+                    executable, shutil.which(executable) or "NOT found"
+                )
+            )
+        return "\n".join(report)
