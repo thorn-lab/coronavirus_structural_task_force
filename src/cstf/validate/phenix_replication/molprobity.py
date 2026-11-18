@@ -60,6 +60,29 @@ class MolprobityStep(ValidationStep):
         _, fmodel = result
         return "done" if fmodel is not None else "done (model-only, no .mtz found)"
 
+    def summarize(self, entry: Entry, result) -> dict:
+        mp, fmodel = result
+        summary = {
+            "report": entry.rel(self.target(entry)),
+            "molprobity_score": _number(mp.molprobity_score),
+            "clashscore": _number(mp.clashscore),
+            "rama_favored_percent": _number(mp.rama_favored),
+            "rama_outliers_percent": _number(mp.rama_outliers),
+            "rota_outliers_percent": _number(mp.rota_outliers),
+            "cbeta_outliers": _number(mp.cbeta_outliers),
+            "with_experimental_data": fmodel is not None,
+        }
+        # Only R values MolProbity computed against the data; r_work()/r_free()
+        # would otherwise fall back to the values quoted in the model header.
+        data_stats = getattr(mp, "data_stats", None) if fmodel is not None else None
+        if data_stats is not None:
+            summary.update(
+                r_work=_number(lambda: data_stats.r_work),
+                r_free=_number(lambda: data_stats.r_free),
+                d_min=_number(lambda: data_stats.d_min),
+            )
+        return summary
+
     @staticmethod
     def _probe2_geometry_clash(self):
         """
@@ -405,16 +428,6 @@ class MolprobityStep(ValidationStep):
             clashscore.nqh_flips = original_nqh_flips
             model_statistics.geometry.clash = original_geometry_clash
 
-        out = StringIO()
-        result.show(
-            out=out,
-            outliers_only=False,
-            suppress_summary=False,
-        )
-
-        text = out.getvalue()
-        print(text)
-
         return result
 
 
@@ -430,3 +443,15 @@ class MolprobityStep(ValidationStep):
         )
 
         return out.getvalue()
+
+
+def _number(getter):
+    """Call a result accessor, returning a float or None when unavailable."""
+    try:
+        value = getter()
+    except Exception:  # noqa: BLE001 - accessors raise when inputs are absent
+        return None
+    try:
+        return None if value is None else float(value)
+    except (TypeError, ValueError):
+        return None

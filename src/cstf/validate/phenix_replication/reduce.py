@@ -37,6 +37,9 @@ class ReduceStep(ValidationStep):
     def format_result(self, result: str) -> str:
         return "done ({})".format(result)
 
+    def summarize(self, entry: Entry, result: str) -> dict:
+        return {"model": entry.rel(self.target(entry)), "backend": result}
+
     @staticmethod
     def _try_api_backend(model_path, out_path, mode="nuclear"):
         """Try the Reduce2 Python API; return false when fallback is needed."""

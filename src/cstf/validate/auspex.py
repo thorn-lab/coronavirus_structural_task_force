@@ -25,6 +25,8 @@ class AuspexStep(ValidationStep):
         self.service = service
 
     def check_input(self, entry: Entry):
+        if entry.is_em:
+            return "not_applicable: AUSPEX needs X-ray reflection data"
         return None if entry.files.get("mtz") else "no_input: no .mtz file found"
 
     def output_dir(self, entry: Entry) -> Path:
@@ -96,6 +98,9 @@ class AuspexStep(ValidationStep):
                 if path != out_jpg and path.exists():
                     path.unlink()
         return out_jpg
+
+    def summarize(self, entry: Entry, result: Path) -> dict:
+        return {"plot": entry.rel(result)}
 
     @staticmethod
     def _snapshot(directory: Path):

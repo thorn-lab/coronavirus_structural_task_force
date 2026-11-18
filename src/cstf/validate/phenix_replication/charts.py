@@ -231,6 +231,10 @@ class ChartsStep(ValidationStep):
         )
         return written, {"rama", "multichart"} - set(written)
 
+    def summarize(self, entry: Entry, result) -> dict:
+        written, _ = result
+        return {name: entry.rel(path) for name, path in written.items()}
+
     def format_result(self, result) -> str:
         _, missing = result
         if missing:

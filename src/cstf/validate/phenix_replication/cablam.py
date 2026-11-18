@@ -43,6 +43,17 @@ class CablamStep(ValidationStep):
         entry.results[self.name] = result
         return result
 
+    def summarize(self, entry: Entry, result) -> dict:
+        stats = result.summary_stats
+        residues = stats["residue_count"]
+        return {
+            "report": entry.rel(self.target(entry)),
+            "residue_count": int(residues),
+            "outliers_percent": self._percent(stats["cablam_outliers"], residues),
+            "disfavored_percent": self._percent(stats["cablam_disfavored"], residues),
+            "ca_geom_outliers_percent": self._percent(stats["ca_geom_outliers"], residues),
+        }
+
     def _format_report(self, result, model_path):
         lines = []
 

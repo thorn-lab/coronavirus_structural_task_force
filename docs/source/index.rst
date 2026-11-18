@@ -24,4 +24,5 @@ This package builds on work done by the Coronavirus Structural Taskforce to make
    :maxdepth: 2
 
    validate/Tutorial.md
+   validate/em_validation.md
    validate/test

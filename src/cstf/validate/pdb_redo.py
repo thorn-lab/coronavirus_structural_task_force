@@ -6,7 +6,6 @@ import logging
 import shutil
 import urllib.request
 import zipfile
-from dataclasses import dataclass
 from pathlib import Path
 
 from cstf.validate.base import Entry, ValidationStep
@@ -20,17 +19,13 @@ class PDBRedoStep(ValidationStep):
 
     name = "pdb_redo"
 
-    @dataclass(frozen=True)
-    class Result:
-        pdb_id: str
-        entry_path: Path
-        status: str
-        archive_path: Path | None = None
-        pdb_redo_path: Path | None = None
-        error: str | None = None
+    def check_input(self, entry: Entry):
+        if entry.is_em:
+            return "not_applicable: PDB-REDO covers X-ray structures only"
+        return None
 
     def output_dir(self, entry: Entry) -> Path:
-        return entry.validation_dir / "pdb-redo"
+        return self._redo_path(entry.path)
 
     def is_complete(self, entry: Entry) -> bool:
         output_dir = self.output_dir(entry)
@@ -39,31 +34,14 @@ class PDBRedoStep(ValidationStep):
             for path in output_dir.rglob("*")
         )
 
-    def execute(self, entry: Entry) -> Result:
-        timeout = self.options.get("timeout", 120)
-        output_dir = self.output_dir(entry)
+    def execute(self, entry: Entry) -> Path:
         archive = self._archive_path(entry.pdb_id, entry.path)
-        try:
-            if not archive.is_file():
-                self._download_archive(entry.pdb_id, entry.path, timeout)
-            self._extract_archive(entry.pdb_id, entry.path)
-            return self.Result(
-                entry.pdb_id,
-                entry.path,
-                "done",
-                pdb_redo_path=output_dir,
-            )
-        except Exception as exc:  # noqa: BLE001
-            logger.warning("PDB-REDO failed for %s: %s", entry.pdb_id, exc)
-            return self.Result(
-                entry.pdb_id,
-                entry.path,
-                "error: {}".format(exc),
-                error=str(exc),
-            )
+        if not archive.is_file():
+            self._download_archive(entry.pdb_id, entry.path, self.options.get("timeout", 120))
+        return self._extract_archive(entry.pdb_id, entry.path)
 
-    def format_result(self, result: Result) -> str:
-        return result.status
+    def summarize(self, entry: Entry, result: Path) -> dict:
+        return {"directory": entry.rel(result)}
 
     @classmethod
     def _archive_path(cls, pdb_id: str, entry_path: Path) -> Path:

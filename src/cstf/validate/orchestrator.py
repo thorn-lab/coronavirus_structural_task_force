@@ -22,6 +22,13 @@ Outputs are written to :
     {path_in_repo}/validation/haruspex/...            (EM entries only)
     {path_in_repo}/validation/em_validation/model_map_validation.txt (EM only)
     {path_in_repo}/validation/checkmymetal
+    {path_in_repo}/validation/validation_summary.json  (per-step results)
+    {path_in_repo}/README.md                          (readme step)
+
+Each step's findings are persisted in validation_summary.json (see
+ValidationStep.summarize). The readme step, which runs last, renders
+README.md from that file, so running further steps later and re-running
+"readme" updates the README without losing earlier results.
 
 The two PDFs replace the original run_molprobity.sh's `rama_chart_pdf` and
 `multichart` calls. They are matplotlib re-implementations (see charts.py),
@@ -36,7 +43,8 @@ contains no ELECTRON MICROSCOPY entries.
 
 Haruspex and EMMapFitStep run only for entries whose `exp_method` column
 equals "ELECTRON MICROSCOPY" (case/whitespace-insensitive). EMMapFitStep
-uses uv to run EMDA and BioTEMPy in an isolated script environment.
+reproduces CCP-EM's atomic model validation job with servalcat and TEMPy
+(see em_map_fit.py and docs/source/validate/em_validation.md).
 
 Usage:
     import pandas as pd
@@ -77,6 +85,7 @@ from cstf.validate.phenix_replication.clashscore import ClashscoreStep
 from cstf.validate.phenix_replication.molprobity import MolprobityStep
 from cstf.validate.phenix_replication.reduce import ReduceStep
 from cstf.validate.phenix_replication.xtriage import XtriageStep
+from cstf.validate.readme import WriteReadmeStep
 
 log_dir = Path("logs/validation_runs")  # Relative or absolute path
 log_dir.mkdir(parents=True, exist_ok=True)  # Creates folder structure if missing
@@ -97,26 +106,13 @@ logger.addHandler(file_handler)
 
 logger.info(f"Log saved to: {log_file_path.resolve()}")
 
-STEP_NAMES = [
-    "pdb_redo",
-    "auspex",
-    "haruspex",
-    "em_map_fit",
-    "xtriage",
-    "cablam",
-    "clashscore",
-    "reduce",
-    "molprobity",
-    "charts",
-    "checkmymetal",
-]
 
 
 def _step_factory(step_class, service_name=None):
     """Return a named-step factory with the shared constructor interface."""
 
-    def create(*, skip_existing, auspex_service=None, haruspex_service=None):
-        options = {"skip_existing": skip_existing}
+    def create(*, skip_existing, auspex_service=None, haruspex_service=None, **step_options):
+        options = {"skip_existing": skip_existing, **step_options}
         if service_name == "auspex":
             options["service"] = auspex_service
         elif service_name == "haruspex":
@@ -126,21 +122,37 @@ def _step_factory(step_class, service_name=None):
     return create
 
 
+# Validation steps in run order; the README reports on each of them.
+VALIDATION_STEP_CLASSES = {
+    "pdb_redo": PDBRedoStep,
+    "auspex": AuspexStep,
+    "haruspex": HaruspexStep,
+    "em_map_fit": EMMapFitStep,
+    "xtriage": XtriageStep,
+    "cablam": CablamStep,
+    "clashscore": ClashscoreStep,
+    "reduce": ReduceStep,
+    "molprobity": MolprobityStep,
+    "charts": ChartsStep,
+    "checkmymetal": CheckMyMetalStep,
+}
+SERVICES = {"auspex": "auspex", "haruspex": "haruspex"}
+
+
+def _readme_factory(*, skip_existing, auspex_service=None, haruspex_service=None, **step_options):
+    return WriteReadmeStep(
+        skip_existing=skip_existing, step_classes=VALIDATION_STEP_CLASSES, **step_options
+    )
+
+
 # Factories are kept here so the public step names, classes, and optional
 # long-lived services are configured in one place.
 STEP_FACTORIES = {
-    "pdb_redo": _step_factory(PDBRedoStep),
-    "auspex": _step_factory(AuspexStep, "auspex"),
-    "haruspex": _step_factory(HaruspexStep, "haruspex"),
-    "em_map_fit": _step_factory(EMMapFitStep),
-    "xtriage": _step_factory(XtriageStep),
-    "cablam": _step_factory(CablamStep),
-    "clashscore": _step_factory(ClashscoreStep),
-    "reduce": _step_factory(ReduceStep),
-    "molprobity": _step_factory(MolprobityStep),
-    "charts": _step_factory(ChartsStep),
-    "checkmymetal": _step_factory(CheckMyMetalStep),
+    name: _step_factory(step_class, SERVICES.get(name))
+    for name, step_class in VALIDATION_STEP_CLASSES.items()
 }
+STEP_FACTORIES["readme"] = _readme_factory
+STEP_NAMES = [*VALIDATION_STEP_CLASSES, "readme"]
 
 
 def _selected_steps(steps):
@@ -156,15 +168,24 @@ def _selected_steps(steps):
                 ", ".join(sorted(unknown)), ", ".join(STEP_NAMES)
             )
         )
-    return list(dict.fromkeys(selected))
+    # Always run in pipeline order: charts reuses molprobity's result and the
+    # readme must come after every step it reports on.
+    return [name for name in STEP_NAMES if name in selected]
 
 
-def _build_steps(steps, *, skip_existing, auspex_service=None, haruspex_service=None):
+def _build_steps(
+    steps, *, skip_existing, auspex_service=None, haruspex_service=None, step_options=None
+):
+    step_options = step_options or {}
+    unknown = set(step_options) - set(STEP_NAMES)
+    if unknown:
+        raise ValueError("step_options for unknown step(s): {}".format(", ".join(sorted(unknown))))
     return {
         name: STEP_FACTORIES[name](
             skip_existing=skip_existing,
             auspex_service=auspex_service,
             haruspex_service=haruspex_service,
+            **step_options.get(name, {}),
         )
         for name in steps
     }
@@ -190,6 +211,8 @@ def find_structure_files(path_in_repo):
         if not f.is_file():
             continue
         suffix = f.suffix.lower()
+        if f.name.lower().endswith("-sf.cif"):
+            continue  # structure factors, not a model
         if suffix == ".pdb" and found["pdb"] is None:
             found["pdb"] = f
         elif suffix == ".cif" and found["cif"] is None:
@@ -229,6 +252,8 @@ def run_pipeline(
     steps=STEP_NAMES,
     skip_existing=True,
     verbose=True,
+    write_readme=True,
+    step_options=None,
 ):
     """
     Run the validation pipeline for every entry in df.
@@ -249,6 +274,11 @@ def run_pipeline(
             are marked not_applicable for every entry.
         skip_existing: skip steps whose output already exists,
             matching the original bash scripts' caching behavior
+        step_options: per-step keyword options, e.g.
+            {"em_map_fit": {"resolution": 3.5}} (see each step's docstring)
+        write_readme: also run the "readme" step whenever any validation
+            step is selected, so README.md reflects every result recorded
+            for the entry so far (including earlier runs)
         verbose: log a line per entry as it's processed
 
     Returns:
@@ -261,7 +291,10 @@ def run_pipeline(
     if path_column not in df.columns:
         raise ValueError("df must have a '{}' column".format(path_column))
 
-    selected_steps = _selected_steps(steps)
+    selected = list(steps) if steps is not None else steps
+    if write_readme and selected and set(selected) - {"readme"}:
+        selected.append("readme")
+    selected_steps = _selected_steps(selected)
 
     has_exp_method = exp_method_column in df.columns
     if not has_exp_method:
@@ -294,6 +327,7 @@ def run_pipeline(
             skip_existing=skip_existing,
             auspex_service=auspex_svc,
             haruspex_service=haruspex_svc,
+            step_options=step_options,
         )
         for i, (pdb_id, row) in enumerate(df.iterrows(), start=1):
             if verbose:

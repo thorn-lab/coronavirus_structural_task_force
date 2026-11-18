@@ -40,6 +40,12 @@ class ClashscoreStep(ValidationStep):
         entry.results[self.name] = result
         return result
 
+    def summarize(self, entry: Entry, result) -> dict:
+        return {
+            "report": entry.rel(self.target(entry)),
+            "clashscore": float(result.get_clashscore()),
+        }
+
     @staticmethod
     def _format_report(result, model_path):
         lines = [

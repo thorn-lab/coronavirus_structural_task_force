@@ -27,7 +27,14 @@ class CheckMyMetalStep(ValidationStep):
     def format_result(self, result: list[str]) -> str:
         if result:
             return "done ({} files)".format(len(result))
-        return "not_applicable (no metal plots found)"
+        return "done (no metal sites listed)"
+
+    def summarize(self, entry: Entry, result: list[str]) -> dict:
+        return {
+            "directory": entry.rel(self.output_dir(entry)),
+            "files": [entry.rel(self.output_dir(entry) / name) for name in result],
+            "source": "{}/{}/".format(BASE_URL, entry.pdb_id.lower()),
+        }
 
     @staticmethod
     def _download(pdb_id, output_dir, skip_existing=True):
@@ -52,33 +59,21 @@ class CheckMyMetalStep(ValidationStep):
 
         png_files = set()
 
-        try:
-            response = requests.get(dir_url, timeout=30)
-            if response.status_code == 200:
-                # Extract all .png filenames from the directory listing HTML links
-                links = re.findall(
-                    r'href=["\']([^"\']+\.png)["\']', response.text, re.IGNORECASE
-                )
-                for link in links:
-                    filename = Path(link).name
-                    if filename:
-                        png_files.add(filename)
-            elif response.status_code == 404:
-                logger.info(
-                    "No CheckMyMetal directory found (404) for %s (entry likely has no metal sites)",
-                    entry_key,
-                )
-                return processed
-            else:
-                response.raise_for_status()
-        except Exception as exc:
-            logger.warning(
-                "Could not fetch directory listing for %s from %s: %s",
+        # Network/server failures propagate so they are recorded as errors
+        # instead of being mistaken for "no metal sites".
+        response = requests.get(dir_url, timeout=30)
+        if response.status_code == 404:
+            logger.info(
+                "No CheckMyMetal directory found (404) for %s (entry likely has no metal sites)",
                 entry_key,
-                dir_url,
-                exc,
             )
             return processed
+        response.raise_for_status()
+        # Extract all .png filenames from the directory listing HTML links
+        links = re.findall(
+            r'href=["\']([^"\']+\.png)["\']', response.text, re.IGNORECASE
+        )
+        png_files.update(Path(link).name for link in links if Path(link).name)
 
         if not png_files:
             logger.info("No PNG images found in CheckMyMetal directory for %s", entry_key)

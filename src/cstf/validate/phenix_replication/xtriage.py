@@ -13,6 +13,8 @@ class XtriageStep(ValidationStep):
     name = "xtriage"
 
     def check_input(self, entry: Entry):
+        if entry.is_em:
+            return "not_applicable: xtriage needs X-ray reflection data"
         return None if entry.files.get("mtz") else "no_input: no .mtz file found"
 
     def output_dir(self, entry: Entry) -> Path:
@@ -22,67 +24,55 @@ class XtriageStep(ValidationStep):
         return entry.validation_dir / "Xtriage_output.log"
 
     def is_complete(self, entry: Entry) -> bool:
-        return self.target(entry).is_file()
+        target = self.target(entry)
+        return target.is_file() and target.stat().st_size > 0
 
     @staticmethod
-    def _get_observed_arrays(mtz_path):
-        """Return candidate observed X-ray arrays from an MTZ."""
-        hkl_in = any_reflection_file(mtz_path)
-        arrays = hkl_in.file_content().as_miller_arrays()
-        candidates = []
-        for miller_array in arrays:
-            if not miller_array.is_xray_intensity_array():
-                continue
-            info = miller_array.info()
-            if info is not None:
-                candidates.append(
-                    (miller_array, info.labels, info.label_string())
-                )
-        return candidates
+    def _choose_observed_array(mtz_path):
+        """Return (obs_labels, description) of the observed data to analyse.
 
-    @classmethod
-    def _choose_observed_array(cls, mtz_path):
-        """Choose a conventional merged I/SIGI array when possible."""
-        candidates = cls._get_observed_arrays(mtz_path)
+        Intensities are preferred; files that only carry amplitudes (e.g.
+        PanDDA group depositions with just FP,SIGFP) fall back to those, as
+        xtriage itself does. A single candidate is used as is; otherwise the
+        merged, non-anomalous array (e.g. IMEAN,SIGIMEAN rather than
+        I(+),SIGI(+),I(-),SIGI(-)) wins.
+        """
+        arrays = [
+            array
+            for array in any_reflection_file(mtz_path).file_content().as_miller_arrays()
+            if array.info() is not None and array.sigmas() is not None
+        ]
+        candidates = [a for a in arrays if a.is_xray_intensity_array()] or [
+            a for a in arrays if a.is_xray_amplitude_array()
+        ]
         if not candidates:
             raise RuntimeError(
-                "No observed X-ray intensity arrays found in {}".format(mtz_path)
+                "No observed X-ray intensity or amplitude arrays found in {}".format(
+                    mtz_path
+                )
             )
-
-        for _, labels, label_string in candidates:
-            labels_lower = [label.lower() for label in labels]
-            if any("intensity_meas" in label for label in labels_lower) and not any(
-                "plus" in label or "minus" in label for label in labels_lower
-            ):
-                return "intensity_meas", label_string
-
-        for _, labels, label_string in candidates:
-            if len(labels) == 2:
-                labels_lower = [label.lower() for label in labels]
-                if any("intensity" in label for label in labels_lower) and any(
-                    "sigma" in label for label in labels_lower
-                ):
-                    return labels[0], label_string
-
-        if len(candidates) == 1:
-            _, labels, label_string = candidates[0]
-            return labels[0], label_string
-
-        descriptions = [candidate[2] for candidate in candidates]
-        raise RuntimeError(
-            "Multiple observed intensity arrays found in {}:\n  {}\n"
-            "Unable to choose an observed array automatically.".format(
-                mtz_path, "\n  ".join(descriptions)
-            )
-        )
+        if len(candidates) > 1:
+            merged = [array for array in candidates if not array.anomalous_flag()]
+            if len(merged) != 1:
+                raise RuntimeError(
+                    "Multiple observed data arrays found in {}:\n  {}\n"
+                    "Unable to choose an observed array automatically.".format(
+                        mtz_path,
+                        "\n  ".join(a.info().label_string() for a in candidates),
+                    )
+                )
+            candidates = merged
+        info = candidates[0].info()
+        return info.labels[0], info.label_string()
 
     def execute(self, entry: Entry):
         mtz_path = str(entry.files["mtz"])
         labels, description = self._choose_observed_array(mtz_path)
-        target = self.target(entry)
-        with target.open("w") as stream:
+        with self.target(entry).open("w") as stream:
             print("Xtriage observed data: {}".format(description), file=stream)
-            return xtriage.run(
+            # Do not pass data_file_name: xtriage pickles its raw data to that
+            # path, which previously overwrote the input MTZ.
+            result = xtriage.run(
                 args=[
                     mtz_path,
                     "scaling.input.xray_data.obs_labels={}".format(labels),
@@ -90,5 +80,23 @@ class XtriageStep(ValidationStep):
                 command_name="xtriage.py",
                 return_result=True,
                 out=stream,
-                data_file_name=mtz_path,
             )
+        return result, description
+
+    def summarize(self, entry: Entry, result) -> dict:
+        analyses, description = result
+        summary = analyses.data_summary
+        d_max, d_min = summary.d_max_min
+        return {
+            "log": entry.rel(self.target(entry)),
+            "observed_array": description,
+            "d_min": float(d_min),
+            "d_max": float(d_max),
+            "completeness": _percent(summary.completeness),
+            "i_over_sigma": float(analyses.data_strength_and_completeness.overall_i_sig_i),
+            "space_group": str(summary.space_group),
+        }
+
+
+def _percent(fraction):
+    return None if fraction is None else 100.0 * float(fraction)

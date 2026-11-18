@@ -45,11 +45,7 @@ class HaruspexStep(ValidationStep):
         self.map_path = None
 
     def check_input(self, entry: Entry):
-        is_em = (
-            isinstance(entry.exp_method, str)
-            and entry.exp_method.strip().upper() == "ELECTRON MICROSCOPY"
-        )
-        if not is_em:
+        if not entry.is_em:
             return "not_applicable: exp_method is {!r}".format(entry.exp_method)
         self.map_path = self.find_map(entry.path)
         return None if self.map_path else "no_input: no .mrc/.map/.ccp4 file found"
@@ -72,6 +68,15 @@ class HaruspexStep(ValidationStep):
 
     def format_result(self, result: list[Path]) -> str:
         return "done ({} files)".format(len(result))
+
+    def summarize(self, entry: Entry, result: list[Path]) -> dict:
+        render = next((p for p in result if p.name == RENDER_IMAGE_NAME), None)
+        return {
+            "directory": entry.rel(entry.haruspex_dir),
+            "map": entry.rel(self.map_path),
+            "files": [entry.rel(p) for p in result if p.name != RENDER_IMAGE_NAME],
+            "render": entry.rel(render) if render else None,
+        }
 
     @staticmethod
     def find_map(path):
