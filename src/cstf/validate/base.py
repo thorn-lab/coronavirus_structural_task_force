@@ -25,6 +25,7 @@ class Entry:
         self.validation_dir = self.path / "validation"
         self.auspex_dir = self.validation_dir / "auspex"
         self.haruspex_dir = self.validation_dir / "haruspex"
+        self.em_validation_dir = self.validation_dir / "em_validation"
         self.molprobity_dir = self.validation_dir / "molprobity"
         self.model_path = self.files.get("pdb") or self.files.get("cif")
 

@@ -20,6 +20,7 @@ Outputs are written to :
     {path_in_repo}/validation/molprobity/{pdb_id}_multichart.pdf
     {path_in_repo}/validation/auspex/amplitudes.jpg
     {path_in_repo}/validation/haruspex/...            (EM entries only)
+    {path_in_repo}/validation/em_validation/model_map_validation.txt (EM only)
     {path_in_repo}/validation/checkmymetal
 
 The two PDFs replace the original run_molprobity.sh's `rama_chart_pdf` and
@@ -33,8 +34,9 @@ call as a long-lived container and reused via `docker exec` for every entry.
 Containers start lazily, so Haruspex's container never starts if the batch
 contains no ELECTRON MICROSCOPY entries.
 
-Haruspex runs only for entries whose `exp_method` column equals
-"ELECTRON MICROSCOPY" (case/whitespace-insensitive).
+Haruspex and EMMapFitStep run only for entries whose `exp_method` column
+equals "ELECTRON MICROSCOPY" (case/whitespace-insensitive). EMMapFitStep
+uses uv to run EMDA and BioTEMPy in an isolated script environment.
 
 Usage:
     import pandas as pd
@@ -67,6 +69,7 @@ from cstf.validate.base import Entry
 from cstf.validate.auspex import AuspexStep
 from cstf.validate.checkmymetal import CheckMyMetalStep
 from cstf.validate.haruspex import HaruspexStep
+from cstf.validate.em_map_fit import EMMapFitStep
 from cstf.validate.pdb_redo import PDBRedoStep
 from cstf.validate.phenix_replication.cablam import CablamStep
 from cstf.validate.phenix_replication.charts import ChartsStep
@@ -98,6 +101,7 @@ STEP_NAMES = [
     "pdb_redo",
     "auspex",
     "haruspex",
+    "em_map_fit",
     "xtriage",
     "cablam",
     "clashscore",
@@ -128,6 +132,7 @@ STEP_FACTORIES = {
     "pdb_redo": _step_factory(PDBRedoStep),
     "auspex": _step_factory(AuspexStep, "auspex"),
     "haruspex": _step_factory(HaruspexStep, "haruspex"),
+    "em_map_fit": _step_factory(EMMapFitStep),
     "xtriage": _step_factory(XtriageStep),
     "cablam": _step_factory(CablamStep),
     "clashscore": _step_factory(ClashscoreStep),
@@ -239,9 +244,9 @@ def run_pipeline(
             containers, so every entry directory must live under it.
         path_column: name of the column holding the directory path
         exp_method_column: name of the column holding the experimental
-            method. Haruspex runs only where it equals
-            "ELECTRON MICROSCOPY". If the column is missing, Haruspex is
-            marked not_applicable for every entry.
+            method. Haruspex and em_map_fit run only where it equals
+            "ELECTRON MICROSCOPY". If the column is missing, these steps
+            are marked not_applicable for every entry.
         skip_existing: skip steps whose output already exists,
             matching the original bash scripts' caching behavior
         verbose: log a line per entry as it's processed
@@ -261,7 +266,7 @@ def run_pipeline(
     has_exp_method = exp_method_column in df.columns
     if not has_exp_method:
         logger.warning(
-            "No '%s' column in df; Haruspex will be skipped for all entries",
+            "No '%s' column in df; EM-only validation steps will be skipped",
             exp_method_column,
         )
 
